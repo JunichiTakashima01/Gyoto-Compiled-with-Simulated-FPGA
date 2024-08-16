@@ -1,0 +1,230 @@
+\hypertarget{class_gyoto_1_1_smart_pointer}{}\doxysection{Gyoto\+::Smart\+Pointer$<$ T $>$ Class Template Reference}
+\label{class_gyoto_1_1_smart_pointer}\index{Gyoto::SmartPointer$<$ T $>$@{Gyoto::SmartPointer$<$ T $>$}}
+
+
+Pointers performing reference counting.  
+
+
+
+
+{\ttfamily \#include $<$Gyoto\+Smart\+Pointer.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_gyoto_1_1_smart_pointer_a5f322eab04710d46620891312fc93225}{Smart\+Pointer}} (T $\ast$orig=NULL)
+\begin{DoxyCompactList}\small\item\em Constructor from a standard pointer-\/to-\/class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gyoto_1_1_smart_pointer_a038ad0cade67323590306ae90cfedc03}{Smart\+Pointer}} (const \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ T $>$ \&orig)
+\begin{DoxyCompactList}\small\item\em Copy constructor from same type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class U $>$ }\\\mbox{\hyperlink{class_gyoto_1_1_smart_pointer_a866b41012aa41f3db6d1961f88864c5a}{Smart\+Pointer}} (const \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ U $>$ \&orig)
+\begin{DoxyCompactList}\small\item\em Copy constructor from compatible type (used for casting) \end{DoxyCompactList}\item 
+T \& \mbox{\hyperlink{class_gyoto_1_1_smart_pointer_ac07932421e66773bb6332078a9f61d4b}{operator$\ast$}} ()
+\begin{DoxyCompactList}\small\item\em Dereference operator \char`\"{}$\ast$\char`\"{}. \end{DoxyCompactList}\item 
+const T \& \mbox{\hyperlink{class_gyoto_1_1_smart_pointer_afb1c6e177c3bd6117631f34832212387}{operator$\ast$}} () const
+\begin{DoxyCompactList}\small\item\em Dereference operator \char`\"{}$\ast$\char`\"{}. \end{DoxyCompactList}\item 
+T $\ast$ \mbox{\hyperlink{class_gyoto_1_1_smart_pointer_af94feafb5ced1f3fd83fde42d81fb1d9}{operator-\/$>$}} ()
+\begin{DoxyCompactList}\small\item\em Dereference operator \char`\"{}-\/$>$\char`\"{}. \end{DoxyCompactList}\item 
+T $\ast$ \mbox{\hyperlink{class_gyoto_1_1_smart_pointer_a6ba4d5beaa5c6ee51044e59faa98548e}{operator-\/$>$}} () const
+\begin{DoxyCompactList}\small\item\em Dereference operator \char`\"{}-\/$>$\char`\"{} (const) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointer_a27687ea19ff46dee051fff054a4040e9}\label{class_gyoto_1_1_smart_pointer_a27687ea19ff46dee051fff054a4040e9}} 
+bool \mbox{\hyperlink{class_gyoto_1_1_smart_pointer_a27687ea19ff46dee051fff054a4040e9}{operator==}} (const \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ T $>$ \&right)
+\begin{DoxyCompactList}\small\item\em Comparison operator between two \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}} of same kind. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointer_ad4af543c5173b6db3a8e38b28836ef30}\label{class_gyoto_1_1_smart_pointer_ad4af543c5173b6db3a8e38b28836ef30}} 
+bool \mbox{\hyperlink{class_gyoto_1_1_smart_pointer_ad4af543c5173b6db3a8e38b28836ef30}{operator!=}} (const \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ T $>$ \&right)
+\begin{DoxyCompactList}\small\item\em Comparison operator between two \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}} of same kind. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointer_ae291871ceeefecd299a2c90662a7f8a0}\label{class_gyoto_1_1_smart_pointer_ae291871ceeefecd299a2c90662a7f8a0}} 
+\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ T $>$ \& \mbox{\hyperlink{class_gyoto_1_1_smart_pointer_ae291871ceeefecd299a2c90662a7f8a0}{operator=}} (\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ T $>$ \&right)
+\begin{DoxyCompactList}\small\item\em Copy a \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}} to another (already defined) \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}} of same kind. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointer_a052b03f85fe033743276051ebf01ee1e}\label{class_gyoto_1_1_smart_pointer_a052b03f85fe033743276051ebf01ee1e}} 
+\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ T $>$ \& \mbox{\hyperlink{class_gyoto_1_1_smart_pointer_a052b03f85fe033743276051ebf01ee1e}{operator=}} (T $\ast$right)
+\begin{DoxyCompactList}\small\item\em Copy a normal pointer to an (already defined) \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}} of same kind. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointer_a01a1006bfdc662b6931996de5ded484b}\label{class_gyoto_1_1_smart_pointer_a01a1006bfdc662b6931996de5ded484b}} 
+\mbox{\hyperlink{class_gyoto_1_1_smart_pointer_a01a1006bfdc662b6931996de5ded484b}{operator T$\ast$}} () const
+\begin{DoxyCompactList}\small\item\em Cast \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}} to normal pointer. \end{DoxyCompactList}\item 
+const T $\ast$ \mbox{\hyperlink{class_gyoto_1_1_smart_pointer_afec9573b7e22fe700f82b26d779bce65}{operator()}} () const
+\begin{DoxyCompactList}\small\item\em Get standard, non-\/smart pointer to object. Use with care. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointer_a19879c1d9d7c33ae243dad8bcf142839}\label{class_gyoto_1_1_smart_pointer_a19879c1d9d7c33ae243dad8bcf142839}} 
+void \mbox{\hyperlink{class_gyoto_1_1_smart_pointer_a19879c1d9d7c33ae243dad8bcf142839}{dec\+Ref}} ()
+\begin{DoxyCompactList}\small\item\em Decrement the reference counter. Warning\+: don\textquotesingle{}t mess with it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointer_a8c1f4930220a9616d1ff3188a331f79f}\label{class_gyoto_1_1_smart_pointer_a8c1f4930220a9616d1ff3188a331f79f}} 
+T $\ast$ \mbox{\hyperlink{class_gyoto_1_1_smart_pointer_a8c1f4930220a9616d1ff3188a331f79f}{obj}}
+\begin{DoxyCompactList}\small\item\em Real pointer, don\textquotesingle{}t mess with it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class Gyoto\+::\+Smart\+Pointer$<$ T $>$}
+
+Pointers performing reference counting. 
+
+Pointee must inherit from class \mbox{\hyperlink{class_gyoto_1_1_smart_pointee}{Smart\+Pointee}}.
+
+To create an object and a \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}} pointing to it\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{SmartPointer<Gyoto::Metric::Generic> ObjPtr (\textcolor{keyword}{new} \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Gyoto::Metric}}(...));}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Sub-\/class of \mbox{\hyperlink{class_gyoto_1_1_smart_pointee}{Gyoto\+::\+Smart\+Pointee}}. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointer_a5f322eab04710d46620891312fc93225}\label{class_gyoto_1_1_smart_pointer_a5f322eab04710d46620891312fc93225}} 
+\index{Gyoto::SmartPointer$<$ T $>$@{Gyoto::SmartPointer$<$ T $>$}!SmartPointer@{SmartPointer}}
+\index{SmartPointer@{SmartPointer}!Gyoto::SmartPointer$<$ T $>$@{Gyoto::SmartPointer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SmartPointer()}{SmartPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ T $>$\+::\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}} (\begin{DoxyParamCaption}\item[{T $\ast$}]{orig = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor from a standard pointer-\/to-\/class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em orig} & \+: a pointer to an instance of class T, created using new T().\\
+\hline
+\end{DoxyParams}
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{SmartPointer<Gyoto::Metric::Generic> ObjPtr (\textcolor{keyword}{new} \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Gyoto::Metric}}(...)); \textcolor{comment}{// create SmartPointer ObjPtr}}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_gyoto_1_1_smart_pointer_a038ad0cade67323590306ae90cfedc03}\label{class_gyoto_1_1_smart_pointer_a038ad0cade67323590306ae90cfedc03}} 
+\index{Gyoto::SmartPointer$<$ T $>$@{Gyoto::SmartPointer$<$ T $>$}!SmartPointer@{SmartPointer}}
+\index{SmartPointer@{SmartPointer}!Gyoto::SmartPointer$<$ T $>$@{Gyoto::SmartPointer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SmartPointer()}{SmartPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ T $>$\+::\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ T $>$ \&}]{orig }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy constructor from same type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em orig} & \+: a \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}} to an instance of class T\\
+\hline
+\end{DoxyParams}
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{SmartPointer<Gyoto::Metric::Generic> ObjPtr (\textcolor{keyword}{new} \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Gyoto::Metric}}(...)); \textcolor{comment}{// create SmartPointer ObjPtr}}
+\DoxyCodeLine{SmartPointer<Gyoto::Metric::Generic> ObjPtr2 = ObjPtr; \textcolor{comment}{// create SmartPointer ObjPtr2}}
+
+\end{DoxyCode}
+
+
+Obj\+Ptr and Obj\+Ptr2 point to the same instance of class T. Copying increments the reference counter. \mbox{\Hypertarget{class_gyoto_1_1_smart_pointer_a866b41012aa41f3db6d1961f88864c5a}\label{class_gyoto_1_1_smart_pointer_a866b41012aa41f3db6d1961f88864c5a}} 
+\index{Gyoto::SmartPointer$<$ T $>$@{Gyoto::SmartPointer$<$ T $>$}!SmartPointer@{SmartPointer}}
+\index{SmartPointer@{SmartPointer}!Gyoto::SmartPointer$<$ T $>$@{Gyoto::SmartPointer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SmartPointer()}{SmartPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+template$<$class U $>$ \\
+\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ T $>$\+::\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ U $>$ \&}]{orig }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy constructor from compatible type (used for casting) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em orig} & \+: a \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}} to an instance of another class U\\
+\hline
+\end{DoxyParams}
+Example\+: Metric\+Ptr is a Smart\+Poiter$<$\+Metric$>$, but really points to an instance of the child class Gyoto\+::\+Kerr\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{SmartPointer<Gyoto::Kerr> KerrPtr (MetricPtr);}
+
+\end{DoxyCode}
+
+
+Metric\+Ptr and Kerr\+Ptr point to the same instance of class Kerr. The methods specific to class Kerr are available only to Kerr\+Ptr. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointer_afec9573b7e22fe700f82b26d779bce65}\label{class_gyoto_1_1_smart_pointer_afec9573b7e22fe700f82b26d779bce65}} 
+\index{Gyoto::SmartPointer$<$ T $>$@{Gyoto::SmartPointer$<$ T $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!Gyoto::SmartPointer$<$ T $>$@{Gyoto::SmartPointer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const T$\ast$ \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ T $>$\+::operator() (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get standard, non-\/smart pointer to object. Use with care. 
+
+This public method is needed to cast from a \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}} flavor to another. It should almost certainly never be used in user code, except perhaps for debugging purposes.
+
+\begin{DoxyReturn}{Returns}
+usual pointer to object, T$\ast$. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointer_ac07932421e66773bb6332078a9f61d4b}\label{class_gyoto_1_1_smart_pointer_ac07932421e66773bb6332078a9f61d4b}} 
+\index{Gyoto::SmartPointer$<$ T $>$@{Gyoto::SmartPointer$<$ T $>$}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Gyoto::SmartPointer$<$ T $>$@{Gyoto::SmartPointer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T\& \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ T $>$\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Dereference operator \char`\"{}$\ast$\char`\"{}. 
+
+\begin{DoxyReturn}{Returns}
+address of the pointed-\/to-\/object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointer_afb1c6e177c3bd6117631f34832212387}\label{class_gyoto_1_1_smart_pointer_afb1c6e177c3bd6117631f34832212387}} 
+\index{Gyoto::SmartPointer$<$ T $>$@{Gyoto::SmartPointer$<$ T $>$}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Gyoto::SmartPointer$<$ T $>$@{Gyoto::SmartPointer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const T\& \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ T $>$\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Dereference operator \char`\"{}$\ast$\char`\"{}. 
+
+\begin{DoxyReturn}{Returns}
+address of the pointed-\/to-\/object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointer_af94feafb5ced1f3fd83fde42d81fb1d9}\label{class_gyoto_1_1_smart_pointer_af94feafb5ced1f3fd83fde42d81fb1d9}} 
+\index{Gyoto::SmartPointer$<$ T $>$@{Gyoto::SmartPointer$<$ T $>$}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!Gyoto::SmartPointer$<$ T $>$@{Gyoto::SmartPointer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/$>$()}{operator->()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T$\ast$ \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ T $>$\+::operator-\/$>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Dereference operator \char`\"{}-\/$>$\char`\"{}. 
+
+Access to the pointed-\/to-\/object\textquotesingle{}s members. \mbox{\Hypertarget{class_gyoto_1_1_smart_pointer_a6ba4d5beaa5c6ee51044e59faa98548e}\label{class_gyoto_1_1_smart_pointer_a6ba4d5beaa5c6ee51044e59faa98548e}} 
+\index{Gyoto::SmartPointer$<$ T $>$@{Gyoto::SmartPointer$<$ T $>$}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!Gyoto::SmartPointer$<$ T $>$@{Gyoto::SmartPointer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/$>$()}{operator->()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T$\ast$ \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ T $>$\+::operator-\/$>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Dereference operator \char`\"{}-\/$>$\char`\"{} (const) 
+
+Access to the pointed-\/to-\/object\textquotesingle{}s members. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_gyoto_property_8h}{Gyoto\+Property.\+h}}\item 
+\mbox{\hyperlink{_gyoto_smart_pointer_8h}{Gyoto\+Smart\+Pointer.\+h}}\end{DoxyCompactItemize}

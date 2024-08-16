@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_gyoto_1_1_hook_1_1_listener" kind="class" language="C++" prot="public">
+    <compoundname>Gyoto::Hook::Listener</compoundname>
+    <derivedcompoundref refid="class_gyoto_1_1_astrobj_1_1_flared_disk_synchrotron" prot="public" virt="non-virtual">Gyoto::Astrobj::FlaredDiskSynchrotron</derivedcompoundref>
+    <derivedcompoundref refid="class_gyoto_1_1_astrobj_1_1_jet" prot="public" virt="non-virtual">Gyoto::Astrobj::Jet</derivedcompoundref>
+    <derivedcompoundref refid="class_gyoto_1_1_astrobj_1_1_oscil_torus" prot="public" virt="non-virtual">Gyoto::Astrobj::OscilTorus</derivedcompoundref>
+    <derivedcompoundref refid="class_gyoto_1_1_astrobj_1_1_page_thorne_disk" prot="public" virt="non-virtual">Gyoto::Astrobj::PageThorneDisk</derivedcompoundref>
+    <derivedcompoundref refid="class_gyoto_1_1_astrobj_1_1_polish_doughnut" prot="protected" virt="non-virtual">Gyoto::Astrobj::PolishDoughnut</derivedcompoundref>
+    <derivedcompoundref refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion" prot="public" virt="non-virtual">Gyoto::Astrobj::SphericalAccretion</derivedcompoundref>
+    <derivedcompoundref refid="class_gyoto_1_1_astrobj_1_1_thick_disk" prot="public" virt="non-virtual">Gyoto::Astrobj::ThickDisk</derivedcompoundref>
+    <derivedcompoundref refid="class_gyoto_1_1_astrobj_1_1_thin_disk_grid_intensity" prot="public" virt="non-virtual">Gyoto::Astrobj::ThinDiskGridIntensity</derivedcompoundref>
+    <derivedcompoundref refid="class_gyoto_1_1_astrobj_1_1_xillver_reflection" prot="public" virt="non-virtual">Gyoto::Astrobj::XillverReflection</derivedcompoundref>
+    <derivedcompoundref refid="class_gyoto_1_1_metric_1_1_shift" prot="public" virt="non-virtual">Gyoto::Metric::Shift</derivedcompoundref>
+    <derivedcompoundref refid="class_gyoto_1_1_spectrometer_1_1_complex" prot="public" virt="non-virtual">Gyoto::Spectrometer::Complex</derivedcompoundref>
+    <derivedcompoundref refid="class_gyoto_1_1_worldline" prot="protected" virt="non-virtual">Gyoto::Worldline</derivedcompoundref>
+    <includes refid="_gyoto_hooks_8h" local="no">GyotoHooks.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_gyoto_1_1_hook_1_1_listener_1aec1a78d8b9607883c48e5190075da26e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class Gyoto::Hook::Teller</definition>
+        <argsstring></argsstring>
+        <name>Gyoto::Hook::Teller</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_hook_1_1_teller" kindref="compound">Gyoto::Hook::Teller</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHooks.h" line="65" column="3" bodyfile="/home/junichi/Gyoto/include/GyotoHooks.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gyoto_1_1_hook_1_1_listener_1a44482865ba840a67bb5a4de050304913" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Hook::Listener::Listener</definition>
+        <argsstring>()</argsstring>
+        <name>Listener</name>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHooks.h" line="67" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_hook_1_1_listener_1a68ee73f312f9e50d2a4563543ff15a57" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Gyoto::Hook::Listener::~Listener</definition>
+        <argsstring>()</argsstring>
+        <name>~Listener</name>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHooks.h" line="68" column="11"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_gyoto_1_1_hook_1_1_listener_1a900ac53b9f989d3e2de0a917d440d9a1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Hook::Listener::tell</definition>
+        <argsstring>(Gyoto::Hook::Teller *msg)</argsstring>
+        <name>tell</name>
+        <reimplementedby refid="class_gyoto_1_1_worldline_1a8255e38edb46d20eda2d669cfae4d960">tell</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_spectrometer_1_1_complex_1a4a20a269150ee958daa76819b2a28b6c">tell</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a70bf196b683c127441d8f22f5f1d506f">tell</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_page_thorne_disk_1ac064f018902a54fabdd1915ba4624c04">tell</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_polish_doughnut_1aa9b86e321868f68ef17c0b1c06b00593">tell</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_shift_1a14bf173fd9de0ae8cfdf3a8686ef19af">tell</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_xillver_reflection_1aede0d2350b85a96d1f6066691f789406">tell</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_hook_1_1_teller" kindref="compound">Gyoto::Hook::Teller</ref> *</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>This is how a <ref refid="class_gyoto_1_1_hook_1_1_teller" kindref="compound">Teller</ref> tells. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A teller will basically call listener-&gt;tell(this).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Teller* the <ref refid="class_gyoto_1_1_hook_1_1_teller" kindref="compound">Teller</ref> who is telling... Useful if the <ref refid="class_gyoto_1_1_hook_1_1_listener" kindref="compound">Listener</ref> listens to several Tellers. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHooks.h" line="79" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>I might listen to a <ref refid="class_gyoto_1_1_hook_1_1_teller" kindref="compound">Teller</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Whisper to my ear by using my <ref refid="class_gyoto_1_1_hook_1_1_listener_1a900ac53b9f989d3e2de0a917d440d9a1" kindref="member">tell()</ref> method. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="14">
+        <label>Gyoto::Astrobj::EquatorialHotSpot</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_equatorial_hot_spot"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Gyoto::Astrobj::PolishDoughnut</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_polish_doughnut"/>
+        <childnode refid="1" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Gyoto::Spectrometer::Complex</label>
+        <link refid="class_gyoto_1_1_spectrometer_1_1_complex"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Gyoto::Photon::Refined</label>
+        <link refid="class_gyoto_1_1_photon_1_1_refined"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>Gyoto::Photon</label>
+        <link refid="class_gyoto_1_1_photon"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Gyoto::Astrobj::ThickDisk</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_thick_disk"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Gyoto::Metric::Shift</label>
+        <link refid="class_gyoto_1_1_metric_1_1_shift"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Gyoto::Astrobj::ThinDiskGridIntensity</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_thin_disk_grid_intensity"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Gyoto::Astrobj::Blob</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_blob"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gyoto::Astrobj::FlaredDiskSynchrotron</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_flared_disk_synchrotron"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Gyoto::Astrobj::PageThorneDisk</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_page_thorne_disk"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>Gyoto::Astrobj::InflateStar</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_inflate_star"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Gyoto::Astrobj::StarTrace</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_star_trace"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Gyoto::Worldline</label>
+        <link refid="class_gyoto_1_1_worldline"/>
+        <childnode refid="1" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Gyoto::Astrobj::XillverReflection</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_xillver_reflection"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gyoto::Hook::Listener</label>
+        <link refid="class_gyoto_1_1_hook_1_1_listener"/>
+      </node>
+      <node id="4">
+        <label>Gyoto::Astrobj::OscilTorus</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_oscil_torus"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Gyoto::Astrobj::Jet</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_jet"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Gyoto::Astrobj::Star</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_star"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Gyoto::Astrobj::SphericalAccretion</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/junichi/Gyoto/include/GyotoHooks.h" line="64" column="1" bodyfile="/home/junichi/Gyoto/include/GyotoHooks.h" bodystart="64" bodyend="80"/>
+    <listofallmembers>
+      <member refid="class_gyoto_1_1_hook_1_1_listener_1aec1a78d8b9607883c48e5190075da26e" prot="public" virt="non-virtual"><scope>Gyoto::Hook::Listener</scope><name>Gyoto::Hook::Teller</name></member>
+      <member refid="class_gyoto_1_1_hook_1_1_listener_1a44482865ba840a67bb5a4de050304913" prot="public" virt="non-virtual"><scope>Gyoto::Hook::Listener</scope><name>Listener</name></member>
+      <member refid="class_gyoto_1_1_hook_1_1_listener_1a900ac53b9f989d3e2de0a917d440d9a1" prot="protected" virt="virtual"><scope>Gyoto::Hook::Listener</scope><name>tell</name></member>
+      <member refid="class_gyoto_1_1_hook_1_1_listener_1a68ee73f312f9e50d2a4563543ff15a57" prot="public" virt="virtual"><scope>Gyoto::Hook::Listener</scope><name>~Listener</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

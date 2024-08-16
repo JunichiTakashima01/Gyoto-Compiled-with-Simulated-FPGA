@@ -1,0 +1,33 @@
+\hypertarget{_gyoto_thin_disk_8h}{}\doxysection{Gyoto\+Thin\+Disk.\+h File Reference}
+\label{_gyoto_thin_disk_8h}\index{GyotoThinDisk.h@{GyotoThinDisk.h}}
+
+
+Geometrically thin disks and rings.  
+
+
+{\ttfamily \#include $<$Gyoto\+Metric.\+h$>$}\newline
+{\ttfamily \#include $<$Gyoto\+Astrobj.\+h$>$}\newline
+{\ttfamily \#include $<$Gyoto\+Spectrum.\+h$>$}\newline
+{\ttfamily \#include $<$Gyoto\+Functors.\+h$>$}\newline
+{\ttfamily \#include $<$Gyoto\+Register.\+h$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk}{Gyoto\+::\+Astrobj\+::\+Thin\+Disk}}
+\begin{DoxyCompactList}\small\item\em Geometrically thin disks and rings. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_gyoto}{Gyoto}}
+\begin{DoxyCompactList}\small\item\em Namespace for the \mbox{\hyperlink{namespace_gyoto}{Gyoto}} library. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Gyoto\+::\+Astrobj}}
+\begin{DoxyCompactList}\small\item\em Access to astronomical objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Geometrically thin disks and rings. 
+
+\mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk}{Gyoto\+::\+Astrobj\+::\+Thin\+Disk}} is a class to represent geometrically thin, optically thick or thin disks or rings in the equatorial plane of the object. It therefore assumes the metric has an equatorial plane, which orresponds to z==0 in a Cartesian coordinate system or to theta==M\+\_\+\+PI/2 in a sperical coordinate system.
+
+This calls is not abstract and can be used as is (it keeps the very simplistic Generic\+::emission() and Generci\+::transmission()), but it is also a base class to develop classes with more complex emission laws. 

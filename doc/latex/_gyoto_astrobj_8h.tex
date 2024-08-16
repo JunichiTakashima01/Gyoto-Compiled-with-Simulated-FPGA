@@ -1,0 +1,62 @@
+\hypertarget{_gyoto_astrobj_8h}{}\doxysection{Gyoto\+Astrobj.\+h File Reference}
+\label{_gyoto_astrobj_8h}\index{GyotoAstrobj.h@{GyotoAstrobj.h}}
+
+
+Astronomical objects (light emitters)  
+
+
+{\ttfamily \#include \char`\"{}Gyoto\+Config.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$Gyoto\+Defs.\+h$>$}\newline
+{\ttfamily \#include $<$Gyoto\+Smart\+Pointer.\+h$>$}\newline
+{\ttfamily \#include $<$Gyoto\+Converters.\+h$>$}\newline
+{\ttfamily \#include $<$Gyoto\+Object.\+h$>$}\newline
+{\ttfamily \#include $<$eigen3/\+Eigen/\+Dense$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic}{Gyoto\+::\+Astrobj\+::\+Generic}}
+\begin{DoxyCompactList}\small\item\em Base class for astronomical object. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties}{Gyoto\+::\+Astrobj\+::\+Properties}}
+\begin{DoxyCompactList}\small\item\em Observable properties of an Astronomical object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_gyoto}{Gyoto}}
+\begin{DoxyCompactList}\small\item\em Namespace for the \mbox{\hyperlink{namespace_gyoto}{Gyoto}} library. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_register}{Gyoto\+::\+Register}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_gyoto}{Gyoto}} registers. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Gyoto\+::\+Metric}}
+\begin{DoxyCompactList}\small\item\em Access to metrics. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Gyoto\+::\+Astrobj}}
+\begin{DoxyCompactList}\small\item\em Access to astronomical objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef Smart\+Pointer$<$ \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic}{Gyoto\+::\+Astrobj\+::\+Generic}} $>$ \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_aa53c7ada58c8c8f3799c3485b7d8f3bb}{Gyoto\+::\+Astrobj\+::\+Subcontractor\+\_\+t}}(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$, std\+::vector$<$ std\+::string $>$ const \&)
+\begin{DoxyCompactList}\small\item\em A function to build instances of a specific \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic}{Astrobj\+::\+Generic}} sub-\/class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\Smart\+Pointer$<$ Astrobj\+::\+Generic $>$ \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_a889583a9d40c821bd55c4191cb3201ed}{Gyoto\+::\+Astrobj\+::\+Subcontractor}} (Factory\+Messenger $\ast$fmp, std\+::vector$<$ std\+::string $>$ const \&plugin)
+\begin{DoxyCompactList}\small\item\em A template for Subcontractor\+\_\+t functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_gyoto_1_1_astrobj_aa53c7ada58c8c8f3799c3485b7d8f3bb}{Gyoto\+::\+Astrobj\+::\+Subcontractor\+\_\+t}} $\ast$ \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_aff0e3a9c31318709959bb2471a22ff74}{Gyoto\+::\+Astrobj\+::get\+Subcontractor}} (std\+::string name, std\+::vector$<$ std\+::string $>$ \&plugin, int errmode=0)
+\begin{DoxyCompactList}\small\item\em Query the \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}} register. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_a5a349c75469ecf26bf31a03378549466}{Gyoto\+::\+Astrobj\+::init\+Register}} ()
+\begin{DoxyCompactList}\small\item\em Empty the \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}} register. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_abb6caf3023a51cb77b5f6793ac03b188}{Gyoto\+::\+Astrobj\+::\+Register}} (std\+::string name, \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_aa53c7ada58c8c8f3799c3485b7d8f3bb}{Gyoto\+::\+Astrobj\+::\+Subcontractor\+\_\+t}} $\ast$scp)
+\begin{DoxyCompactList}\small\item\em Make an \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}} kind known to the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_gyoto_1_1_register_1_1_entry}{Gyoto\+::\+Register\+::\+Entry}} $\ast$ \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_afbaaaf16f567767a7bd87552a82d1ac8}{Gyoto\+::\+Astrobj\+::\+Register\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}} register. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Astronomical objects (light emitters) 
+
+The target of ray-\/traced \mbox{\hyperlink{class_gyoto_1_1_photon}{Gyoto\+::\+Photon}} 

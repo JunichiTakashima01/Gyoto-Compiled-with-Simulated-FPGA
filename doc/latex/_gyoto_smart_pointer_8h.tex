@@ -1,0 +1,41 @@
+\hypertarget{_gyoto_smart_pointer_8h}{}\doxysection{Gyoto\+Smart\+Pointer.\+h File Reference}
+\label{_gyoto_smart_pointer_8h}\index{GyotoSmartPointer.h@{GyotoSmartPointer.h}}
+
+
+Reference-\/counting pointers.  
+
+
+{\ttfamily \#include \char`\"{}Gyoto\+Utils.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$pthread.\+h$>$}\newline
+{\ttfamily \#include $<$Gyoto\+Error.\+h$>$}\newline
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$typeinfo$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_gyoto_1_1_smart_pointee}{Gyoto\+::\+Smart\+Pointee}}
+\begin{DoxyCompactList}\small\item\em Can be pointed to by a \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer$<$ T $>$}}
+\begin{DoxyCompactList}\small\item\em Pointers performing reference counting. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_gyoto}{Gyoto}}
+\begin{DoxyCompactList}\small\item\em Namespace for the \mbox{\hyperlink{namespace_gyoto}{Gyoto}} library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Reference-\/counting pointers. 
+
+Template class Gyoto\+::\+Smart\+Pointer$<$\+T$>$ performs reference counting on its pointee and makes sure the pointed to object is actually deleted when the number of references to it drops to zero. The pointed-\/to object must inherit from \mbox{\hyperlink{class_gyoto_1_1_smart_pointee}{Gyoto\+::\+Smart\+Pointee}} for this to work and be referenced to only by Smart\+Pointers.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class }\mbox{\hyperlink{namespace_gyoto_1_1_metric}{Gyoto::Metric}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_gyoto_1_1_smart_pointee}{Gyoto::SmartPointee}} \{...\};}
+\DoxyCodeLine{SmartPointer<Gyoto::Metric::Generic> ObjPtr (\textcolor{keyword}{new} \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Gyoto::Metric}}(...));}
+
+\end{DoxyCode}
+ 

@@ -1,0 +1,1092 @@
+\hypertarget{_gyoto_defs_8h}{}\doxysection{Gyoto\+Defs.\+h File Reference}
+\label{_gyoto_defs_8h}\index{GyotoDefs.h@{GyotoDefs.h}}
+
+
+\mbox{\hyperlink{namespace_gyoto}{Gyoto}} ubiquitous macros and typedefs.  
+
+
+{\ttfamily \#include \char`\"{}Gyoto\+Config.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$float.\+h$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_gyoto}{Gyoto}}
+\begin{DoxyCompactList}\small\item\em Namespace for the \mbox{\hyperlink{namespace_gyoto}{Gyoto}} library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a250431c050a760c710e6cbde5939312b}{sincos}}(t,  s,  c)~(undefined)
+\begin{DoxyCompactList}\small\item\em Replacement for GNU extension sincos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Default values for various things}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a9e658b4f56879ea10452d87ae5c58ffa}\label{_gyoto_defs_8h_a9e658b4f56879ea10452d87ae5c58ffa}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a9e658b4f56879ea10452d87ae5c58ffa}{GYOTO\+\_\+\+DEFAULT\+\_\+\+X\+\_\+\+SIZE}}~1024
+\begin{DoxyCompactList}\small\item\em Default size for arrays in a Worldline. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_ad6b16f11a8b1817d7158cc611a411b6a}{GYOTO\+\_\+\+DEFAULT\+\_\+\+DELTA}}~0.\+01
+\begin{DoxyCompactList}\small\item\em Default value for the initial step in the integration loop. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a61e9f37f6e15229a442c03e3928c2ace}\label{_gyoto_defs_8h_a61e9f37f6e15229a442c03e3928c2ace}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a61e9f37f6e15229a442c03e3928c2ace}{GYOTO\+\_\+\+DEFAULT\+\_\+\+DELTA\+\_\+\+MAX}}~DBL\+\_\+\+MAX
+\begin{DoxyCompactList}\small\item\em Default value for the maximum step in the integration loop. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a04b5dbd7385703eed836bcc16dcec539}\label{_gyoto_defs_8h_a04b5dbd7385703eed836bcc16dcec539}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a04b5dbd7385703eed836bcc16dcec539}{GYOTO\+\_\+\+DEFAULT\+\_\+\+DELTA\+\_\+\+MIN}}~DBL\+\_\+\+MIN
+\begin{DoxyCompactList}\small\item\em Default value for the minimum step in the integration loop. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_af5ac2008c7e20891105ed58e4df84c52}{GYOTO\+\_\+\+DEFAULT\+\_\+\+DELTA\+\_\+\+MAX\+\_\+\+OVER\+\_\+R}}~1.
+\begin{DoxyCompactList}\small\item\em Default value for delta\+\_\+max\+\_\+over\+\_\+r\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a27e622f3071a2abd6b19150b714513ee}\label{_gyoto_defs_8h_a27e622f3071a2abd6b19150b714513ee}} 
+\#define {\bfseries GYOTO\+\_\+\+DEFAULT\+\_\+\+ABSTOL}~1e-\/6
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a12ccbef3ea24e6e12d1364db4a475902}\label{_gyoto_defs_8h_a12ccbef3ea24e6e12d1364db4a475902}} 
+\#define {\bfseries GYOTO\+\_\+\+DEFAULT\+\_\+\+RELTOL}~1e-\/6
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a02321ad45c438ab82aae093119d77bfc}\label{_gyoto_defs_8h_a02321ad45c438ab82aae093119d77bfc}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a02321ad45c438ab82aae093119d77bfc}{GYOTO\+\_\+\+DEFAULT\+\_\+\+MAXITER}}~100000
+\begin{DoxyCompactList}\small\item\em Default value for \mbox{\hyperlink{class_gyoto_1_1_worldline_a5e87f0e06855b8dbd4248eeb4110d80f}{Gyoto\+::\+Worldline\+::maxiter\+\_\+}}. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_aa8748e811a2870fae06b0cef44e2dfae}{GYOTO\+\_\+\+T\+\_\+\+TOL}}~1e-\/4
+\begin{DoxyCompactList}\small\item\em Precision on the determination of a date. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a6d25dea8002cb126fbe3ce7790ea08d6}\label{_gyoto_defs_8h_a6d25dea8002cb126fbe3ce7790ea08d6}} 
+\#define {\bfseries GYOTO\+\_\+\+KERR\+\_\+\+HORIZON\+\_\+\+SECURITY}~0.\+01
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a0661b44f6647fc614ef1b8da071dff77}\label{_gyoto_defs_8h_a0661b44f6647fc614ef1b8da071dff77}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a0661b44f6647fc614ef1b8da071dff77}{GYOTO\+\_\+\+SCREEN\+\_\+\+DMAX}}~DBL\+\_\+\+MAX
+\begin{DoxyCompactList}\small\item\em Default value for Screen\+::dmax\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a72968692155c9e8401c86fcd83ab0f37}\label{_gyoto_defs_8h_a72968692155c9e8401c86fcd83ab0f37}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a72968692155c9e8401c86fcd83ab0f37}{GYOTO\+\_\+\+PREC}}~15
+\begin{DoxyCompactList}\small\item\em Precision when outputting double values. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a1b6f11bd78948e6a5b6cb4fa9176dd19}\label{_gyoto_defs_8h_a1b6f11bd78948e6a5b6cb4fa9176dd19}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a1b6f11bd78948e6a5b6cb4fa9176dd19}{GYOTO\+\_\+\+WIDTH}}~25
+\begin{DoxyCompactList}\small\item\em Field width when outputting double values. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a12cb6c9ac9e0bd3b195a478ddff9b44d}\label{_gyoto_defs_8h_a12cb6c9ac9e0bd3b195a478ddff9b44d}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a12cb6c9ac9e0bd3b195a478ddff9b44d}{GYOTO\+\_\+\+DEFAULT\+\_\+\+PLUGINS}}~\char`\"{}stdplug,nofail\+:lorene\char`\"{}
+\begin{DoxyCompactList}\small\item\em Default list of default plug-\/ins to load... \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Physical constants}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a73d3ea58c9ff373de07f5c281ad02f3a}\label{_gyoto_defs_8h_a73d3ea58c9ff373de07f5c281ad02f3a}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a73d3ea58c9ff373de07f5c281ad02f3a}{GYOTO\+\_\+C}}~299792458.
+\begin{DoxyCompactList}\small\item\em Celerity of light (m/s) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_af4dfa30e2b2da1868c97b3ce8a7f13e6}\label{_gyoto_defs_8h_af4dfa30e2b2da1868c97b3ce8a7f13e6}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_af4dfa30e2b2da1868c97b3ce8a7f13e6}{GYOTO\+\_\+\+C\+\_\+\+CGS}}~2.\+99792458e10
+\begin{DoxyCompactList}\small\item\em Celerity of light (cm/s) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a2313f2c384f13e66dadb9efcf36ad100}\label{_gyoto_defs_8h_a2313f2c384f13e66dadb9efcf36ad100}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a2313f2c384f13e66dadb9efcf36ad100}{GYOTO\+\_\+\+C2\+\_\+\+CGS}}~8.\+98755178736817668096e+20
+\begin{DoxyCompactList}\small\item\em Celerity of light squared c$^\wedge$2 in cgs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_afdf6bc1a470a7a16c64a9a0c67681a07}\label{_gyoto_defs_8h_afdf6bc1a470a7a16c64a9a0c67681a07}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_afdf6bc1a470a7a16c64a9a0c67681a07}{GYOTO\+\_\+\+C2\+\_\+\+CGS\+\_\+\+M1}}~1.\+1126500560536184087938986e-\/21
+\begin{DoxyCompactList}\small\item\em Inverse of celerity of light squared in cgs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_ab75ec503d8c40e3005ece3a2dda2afb4}\label{_gyoto_defs_8h_ab75ec503d8c40e3005ece3a2dda2afb4}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_ab75ec503d8c40e3005ece3a2dda2afb4}{GYOTO\+\_\+G}}~6.\+67428e-\/11
+\begin{DoxyCompactList}\small\item\em Gravitational constant (SI = m$^\wedge$3 $\ast$ kg$^\wedge$-\/1 $\ast$ s-\/2) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a94785e2a2fc272e0d982cac020e1e909}\label{_gyoto_defs_8h_a94785e2a2fc272e0d982cac020e1e909}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a94785e2a2fc272e0d982cac020e1e909}{GYOTO\+\_\+\+G\+\_\+\+CGS}}~6.\+67428e-\/8
+\begin{DoxyCompactList}\small\item\em Gravitational constant (cgs\+: cm$^\wedge$3 $\ast$ g$^\wedge$-\/1 $\ast$ s-\/2) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a8947186e190de469b7d912479a374b63}\label{_gyoto_defs_8h_a8947186e190de469b7d912479a374b63}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a8947186e190de469b7d912479a374b63}{GYOTO\+\_\+\+G\+\_\+\+OVER\+\_\+\+C\+\_\+\+SQUARE}}~7.\+4261380161175445989e-\/28
+\begin{DoxyCompactList}\small\item\em G/c$^\wedge$2=6.\+67428e-\/11/299792458.$^\wedge$2. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a83be04a7557b836d57c2507c9b76cf2a}\label{_gyoto_defs_8h_a83be04a7557b836d57c2507c9b76cf2a}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a83be04a7557b836d57c2507c9b76cf2a}{GYOTO\+\_\+\+G\+\_\+\+OVER\+\_\+\+C\+\_\+\+SQUARE\+\_\+\+CGS}}~7.\+4261380161175445989e-\/29
+\begin{DoxyCompactList}\small\item\em G/c$^\wedge$2 in cgs units. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_af3c52bf7276294ce5fb2f0f69baba8b3}\label{_gyoto_defs_8h_af3c52bf7276294ce5fb2f0f69baba8b3}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_af3c52bf7276294ce5fb2f0f69baba8b3}{GYOTO\+\_\+\+PLANCK}}~6.\+62606896e-\/34
+\begin{DoxyCompactList}\small\item\em Planck\textquotesingle{}s constant (h) in SI (J.\+s=kg.\+m$^\wedge$2/s) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_ad8a6d7e4171e4fca333b349c2be99b47}\label{_gyoto_defs_8h_ad8a6d7e4171e4fca333b349c2be99b47}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_ad8a6d7e4171e4fca333b349c2be99b47}{GYOTO\+\_\+\+PLANCK\+\_\+\+CGS}}~6.\+62606896e-\/27
+\begin{DoxyCompactList}\small\item\em Planck\textquotesingle{}s constant (h) in c.\+g.\+s (g.\+cm$^\wedge$2/s) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_ae5c8ea0db89b19745790486d8fc03517}\label{_gyoto_defs_8h_ae5c8ea0db89b19745790486d8fc03517}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_ae5c8ea0db89b19745790486d8fc03517}{GYOTO\+\_\+\+PLANCK\+\_\+\+OVER\+\_\+\+C\+\_\+\+SQUARE}}~7.\+3724959997591407964e-\/51
+\begin{DoxyCompactList}\small\item\em h/c$^\wedge$2 in SI (kg.\+s) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a53412ce7fdfa5267709830bc6c7f5bff}\label{_gyoto_defs_8h_a53412ce7fdfa5267709830bc6c7f5bff}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a53412ce7fdfa5267709830bc6c7f5bff}{GYOTO\+\_\+\+BOLTZMANN}}~1.\+3806504e-\/23
+\begin{DoxyCompactList}\small\item\em Boltzmann\textquotesingle{}s constant (k) in SI (J/K) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a0e80b4276594e4cf55e380ad4564b1d6}\label{_gyoto_defs_8h_a0e80b4276594e4cf55e380ad4564b1d6}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a0e80b4276594e4cf55e380ad4564b1d6}{GYOTO\+\_\+\+BOLTZMANN\+\_\+\+CGS}}~1.\+3806504e-\/16
+\begin{DoxyCompactList}\small\item\em Boltzmann\textquotesingle{}s constant (k) in cgs (erg/K) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_ae24a9f39b410315c6bc095174a8f2176}\label{_gyoto_defs_8h_ae24a9f39b410315c6bc095174a8f2176}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_ae24a9f39b410315c6bc095174a8f2176}{GYOTO\+\_\+\+STEFANBOLTZMANN\+\_\+\+CGS}}~5.\+670373e-\/5
+\begin{DoxyCompactList}\small\item\em Stefan-\/\+Boltzmann\textquotesingle{}s constant (sigma) in cgs (erg/cm2/s/\+K4) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_aff4514667dd5b1436fa19296c0f8041c}\label{_gyoto_defs_8h_aff4514667dd5b1436fa19296c0f8041c}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_aff4514667dd5b1436fa19296c0f8041c}{GYOTO\+\_\+\+PLANCK\+\_\+\+OVER\+\_\+\+BOLTZMANN}}~4.\+7992373449498869688e-\/11
+\begin{DoxyCompactList}\small\item\em h/k (K.\+s = K/\+Hz) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_ae446edb24aab16b8a31d0e387256936f}\label{_gyoto_defs_8h_ae446edb24aab16b8a31d0e387256936f}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_ae446edb24aab16b8a31d0e387256936f}{GYOTO\+\_\+\+GAS\+\_\+\+CST}}~8.\+3144621
+\begin{DoxyCompactList}\small\item\em ideal gas constant R in SI \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a94769b165b3efce9b4f2eab3f0252f7b}\label{_gyoto_defs_8h_a94769b165b3efce9b4f2eab3f0252f7b}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a94769b165b3efce9b4f2eab3f0252f7b}{GYOTO\+\_\+\+GAS\+\_\+\+CST\+\_\+\+CGS}}~8.\+3144621e7
+\begin{DoxyCompactList}\small\item\em ideal gas constant R in erg/(K mol) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a82fe6215507b9458787d49c57a25e3bf}\label{_gyoto_defs_8h_a82fe6215507b9458787d49c57a25e3bf}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a82fe6215507b9458787d49c57a25e3bf}{GYOTO\+\_\+\+AVOGADRO}}~6.\+0221413e23
+\begin{DoxyCompactList}\small\item\em Avogadro constant. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a9901f1f197f6ff559ab1a1be59934fcc}\label{_gyoto_defs_8h_a9901f1f197f6ff559ab1a1be59934fcc}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a9901f1f197f6ff559ab1a1be59934fcc}{GYOTO\+\_\+\+THOMSON\+\_\+\+CGS}}~6.\+6524e-\/25
+\begin{DoxyCompactList}\small\item\em Thomson cross-\/section in cgs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_ad9a0f54c47fd33c93a871308300a8ab7}\label{_gyoto_defs_8h_ad9a0f54c47fd33c93a871308300a8ab7}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_ad9a0f54c47fd33c93a871308300a8ab7}{GYOTO\+\_\+\+ALPHA\+\_\+F}}~0.\+00729927
+\begin{DoxyCompactList}\small\item\em Fine structure constant (=1/137) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a85aecdc650b9f8174c8a6c72996e127d}\label{_gyoto_defs_8h_a85aecdc650b9f8174c8a6c72996e127d}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a85aecdc650b9f8174c8a6c72996e127d}{GYOTO\+\_\+\+PROTON\+\_\+\+MASS\+\_\+\+CGS}}~1.\+67262158e-\/24
+\begin{DoxyCompactList}\small\item\em proton mass in cgs \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_af7f0270d2fbe4ff4e4dbc488a3727aec}\label{_gyoto_defs_8h_af7f0270d2fbe4ff4e4dbc488a3727aec}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_af7f0270d2fbe4ff4e4dbc488a3727aec}{GYOTO\+\_\+\+ELECTRON\+\_\+\+MASS\+\_\+\+CGS}}~9.\+10938188e-\/28
+\begin{DoxyCompactList}\small\item\em electron mass in cgs \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a0d0606bbd80d4bed5447a77058008b5b}\label{_gyoto_defs_8h_a0d0606bbd80d4bed5447a77058008b5b}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a0d0606bbd80d4bed5447a77058008b5b}{GYOTO\+\_\+\+ELECTRON\+\_\+\+CLASSICAL\+\_\+\+RADIUS\+\_\+\+CGS}}~2.\+8179e-\/13
+\begin{DoxyCompactList}\small\item\em electron classical radius in cgs \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a500c07c13204adc9f3d66d5a06ec6dc0}\label{_gyoto_defs_8h_a500c07c13204adc9f3d66d5a06ec6dc0}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a500c07c13204adc9f3d66d5a06ec6dc0}{GYOTO\+\_\+\+ELEMENTARY\+\_\+\+CHARGE\+\_\+\+CGS}}~4.\+80320427e-\/10
+\begin{DoxyCompactList}\small\item\em elementary charge in cgs (erg$^\wedge$\{1/2\} cm$^\wedge$\{1/2\}) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a45ccc7b5c0fc3f49a6c365a3618f33f6}\label{_gyoto_defs_8h_a45ccc7b5c0fc3f49a6c365a3618f33f6}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a45ccc7b5c0fc3f49a6c365a3618f33f6}{GYOTO\+\_\+\+EULER\+\_\+\+MASCHERONI}}~0.\+577216
+\begin{DoxyCompactList}\small\item\em Euler-\/\+Mascheroni constant. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_aadf37ec0eaa9172546d0c0350f23d1cd}\label{_gyoto_defs_8h_aadf37ec0eaa9172546d0c0350f23d1cd}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_aadf37ec0eaa9172546d0c0350f23d1cd}{GYOTO\+\_\+\+ATOMIC\+\_\+\+MASS\+\_\+\+UNIT\+\_\+\+CGS}}~1.\+660537781e-\/24
+\begin{DoxyCompactList}\small\item\em atomic mass unit in cgs \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a12847bc3de3ffe340e7e355440e0bd0b}\label{_gyoto_defs_8h_a12847bc3de3ffe340e7e355440e0bd0b}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a12847bc3de3ffe340e7e355440e0bd0b}{GYOTO\+\_\+\+INU\+\_\+\+CGS\+\_\+\+TO\+\_\+\+SI}}~0.\+001
+\begin{DoxyCompactList}\small\item\em Factor to convert I\textsubscript{{$\nu$}} from c.\+g.\+s. to SI. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a7500ff8e2d45dfa22168dd32ad4e74ca}\label{_gyoto_defs_8h_a7500ff8e2d45dfa22168dd32ad4e74ca}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a7500ff8e2d45dfa22168dd32ad4e74ca}{GYOTO\+\_\+\+JNU\+\_\+\+CGS\+\_\+\+TO\+\_\+\+SI}}~(\mbox{\hyperlink{_gyoto_defs_8h_a12847bc3de3ffe340e7e355440e0bd0b}{GYOTO\+\_\+\+INU\+\_\+\+CGS\+\_\+\+TO\+\_\+\+SI}}  $\ast$ 100.)
+\begin{DoxyCompactList}\small\item\em Factor to convert J\textsubscript{{$\nu$}} from c.\+g.\+s. to SI. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a200594f65d85284c26b1748b6e8d9dea}\label{_gyoto_defs_8h_a200594f65d85284c26b1748b6e8d9dea}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a200594f65d85284c26b1748b6e8d9dea}{GYOTO\+\_\+\+ANU\+\_\+\+CGS\+\_\+\+TO\+\_\+\+SI}}~100.
+\begin{DoxyCompactList}\small\item\em Factor to convert alpha\textsubscript{{$\nu$}} from c.\+g.\+s. to SI. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_ac43145419b26ae5cd5cf1db7612ea503}\label{_gyoto_defs_8h_ac43145419b26ae5cd5cf1db7612ea503}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_ac43145419b26ae5cd5cf1db7612ea503}{GYOTO\+\_\+\+SUN\+\_\+\+MASS}}~1.\+98843e30
+\begin{DoxyCompactList}\small\item\em Sun mass (kg) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a9ecceea44330d1b4d9949a2d635567b4}\label{_gyoto_defs_8h_a9ecceea44330d1b4d9949a2d635567b4}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a9ecceea44330d1b4d9949a2d635567b4}{GYOTO\+\_\+\+SUN\+\_\+\+MASS\+\_\+\+CGS}}~1.\+98843e33
+\begin{DoxyCompactList}\small\item\em Sun mass (g) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a442a3f6d71172a1634802626f61ae123}\label{_gyoto_defs_8h_a442a3f6d71172a1634802626f61ae123}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a442a3f6d71172a1634802626f61ae123}{GYOTO\+\_\+\+SUN\+\_\+\+RADIUS}}~6.\+955e8
+\begin{DoxyCompactList}\small\item\em Sun radius (m) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a5503a5b18b08c637847d61b853ec7853}\label{_gyoto_defs_8h_a5503a5b18b08c637847d61b853ec7853}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a5503a5b18b08c637847d61b853ec7853}{GYOTO\+\_\+\+KPC}}~3.\+08568025e19
+\begin{DoxyCompactList}\small\item\em Kiloparsec (m) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a8fbdd1ab2b7f8e17d8d497e4f222c11c}\label{_gyoto_defs_8h_a8fbdd1ab2b7f8e17d8d497e4f222c11c}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a8fbdd1ab2b7f8e17d8d497e4f222c11c}{GYOTO\+\_\+\+ASTRONOMICAL\+\_\+\+UNIT}}~1.\+49597870700e11
+\begin{DoxyCompactList}\small\item\em Astronomical Unit (m) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_ad452ef5d1e2764595bae3d898914d265}\label{_gyoto_defs_8h_ad452ef5d1e2764595bae3d898914d265}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_ad452ef5d1e2764595bae3d898914d265}{GYOTO\+\_\+\+LIGHT\+\_\+\+YEAR}}~9.\+4607304725808e15
+\begin{DoxyCompactList}\small\item\em Light-\/year (m) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a48f42c7757b73fd13892496c6ba72fe3}\label{_gyoto_defs_8h_a48f42c7757b73fd13892496c6ba72fe3}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a48f42c7757b73fd13892496c6ba72fe3}{GYOTO\+\_\+\+RADEG}}~57.\+2957795130823
+\begin{DoxyCompactList}\small\item\em Convert from radians to degrees. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a89199950700c0e53bfa5b4d800589bf3}\label{_gyoto_defs_8h_a89199950700c0e53bfa5b4d800589bf3}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a89199950700c0e53bfa5b4d800589bf3}{GYOTO\+\_\+\+DEGRAD}}~0.\+0174532925199433
+\begin{DoxyCompactList}\small\item\em Convert from degrees to radians. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a3bfa6c0da6f6dcfd0c01288356c95ece}\label{_gyoto_defs_8h_a3bfa6c0da6f6dcfd0c01288356c95ece}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a3bfa6c0da6f6dcfd0c01288356c95ece}{GYOTO\+\_\+\+MINRAD}}~2.\+908882086657216e-\/04
+\begin{DoxyCompactList}\small\item\em Convert from arcminutes to radians. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a99eb38f18a2004c12b0c6d5a6157bb5d}\label{_gyoto_defs_8h_a99eb38f18a2004c12b0c6d5a6157bb5d}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a99eb38f18a2004c12b0c6d5a6157bb5d}{GYOTO\+\_\+\+SECRAD}}~4.\+848136811095360e-\/06
+\begin{DoxyCompactList}\small\item\em Convert from arcseconds to radians. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a4225b6c277c5b30406c2d170ce2c8dd2}\label{_gyoto_defs_8h_a4225b6c277c5b30406c2d170ce2c8dd2}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a4225b6c277c5b30406c2d170ce2c8dd2}{GYOTO\+\_\+\+MASRAD}}~4.\+848136811095360e-\/09
+\begin{DoxyCompactList}\small\item\em Convert from milliarcseconds to radians. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_af0430bac76ef859ed15d9eca538b20a8}\label{_gyoto_defs_8h_af0430bac76ef859ed15d9eca538b20a8}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_af0430bac76ef859ed15d9eca538b20a8}{GYOTO\+\_\+\+MUASRAD}}~4.\+848136811095360e-\/12
+\begin{DoxyCompactList}\small\item\em Convert from microarcseconds to radians. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_af620ee247742f7551660862de1f2b1e6}\label{_gyoto_defs_8h_af620ee247742f7551660862de1f2b1e6}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_af620ee247742f7551660862de1f2b1e6}{GYOTO\+\_\+e\+V2\+Hz}}~2.\+417989348e+14
+\begin{DoxyCompactList}\small\item\em Convert from eV to Hz. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Observer kind}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_abdc37c8fde52ef588246ff7da367d65c}\label{_gyoto_defs_8h_abdc37c8fde52ef588246ff7da367d65c}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_abdc37c8fde52ef588246ff7da367d65c}{obskind\+\_\+t}}~unsigned int
+\begin{DoxyCompactList}\small\item\em Type for observer kind. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a842df918e8f71dc6128888fb98a50bb8}\label{_gyoto_defs_8h_a842df918e8f71dc6128888fb98a50bb8}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a842df918e8f71dc6128888fb98a50bb8}{GYOTO\+\_\+\+OBSKIND\+\_\+\+ATINFINITY}}~0
+\begin{DoxyCompactList}\small\item\em Observer\+At\+Infinity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a0a765867f95f82f6886b46cb5bb495f2}\label{_gyoto_defs_8h_a0a765867f95f82f6886b46cb5bb495f2}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a0a765867f95f82f6886b46cb5bb495f2}{GYOTO\+\_\+\+OBSKIND\+\_\+\+KEPLERIAN}}~1
+\begin{DoxyCompactList}\small\item\em Keplerian\+Observer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a5bc4d8c5cbca62dd69a7d78f42b2a727}\label{_gyoto_defs_8h_a5bc4d8c5cbca62dd69a7d78f42b2a727}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a5bc4d8c5cbca62dd69a7d78f42b2a727}{GYOTO\+\_\+\+OBSKIND\+\_\+\+ZAMO}}~2
+\begin{DoxyCompactList}\small\item\em ZAMO. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_aa806496e947b0d22333503d3435e8de6}\label{_gyoto_defs_8h_aa806496e947b0d22333503d3435e8de6}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_aa806496e947b0d22333503d3435e8de6}{GYOTO\+\_\+\+OBSKIND\+\_\+\+VELOCITYSPECIFIED}}~3
+\begin{DoxyCompactList}\small\item\em Velocity\+Specified. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_ac80fd124220be66138dfd33cb60ea09c}\label{_gyoto_defs_8h_ac80fd124220be66138dfd33cb60ea09c}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_ac80fd124220be66138dfd33cb60ea09c}{GYOTO\+\_\+\+OBSKIND\+\_\+\+FULLYSPECIFIED}}~4
+\begin{DoxyCompactList}\small\item\em Fully\+Specified. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a2349d4f82e46b37392a9a0fbb72b2dbd}\label{_gyoto_defs_8h_a2349d4f82e46b37392a9a0fbb72b2dbd}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a2349d4f82e46b37392a9a0fbb72b2dbd}{GYOTO\+\_\+\+STRINGIFY}}(a)~\mbox{\hyperlink{_gyoto_defs_8h_a348e96e97c07872060c7af7c2fc183dc}{GYOTO\+\_\+\+STRINGIFY\+\_\+\+ARGUMENT}}(a)
+\begin{DoxyCompactList}\small\item\em Stringify macro content. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a348e96e97c07872060c7af7c2fc183dc}\label{_gyoto_defs_8h_a348e96e97c07872060c7af7c2fc183dc}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a348e96e97c07872060c7af7c2fc183dc}{GYOTO\+\_\+\+STRINGIFY\+\_\+\+ARGUMENT}}(a)~\#a
+\begin{DoxyCompactList}\small\item\em Stringify argument. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Renamed methods}\par
+{\em Define GYOTO\+\_\+\+NO\+\_\+\+DEPRECATED to disable these macros and the warning. For instance\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make CPPFLAGS=-\/DGYOTO\_NO\_DEPRECATED}
+
+\end{DoxyCode}
+ }\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_ad4297a07ee7215c1be470bf19924f249}\label{_gyoto_defs_8h_ad4297a07ee7215c1be470bf19924f249}} 
+\#define {\bfseries get\+Metric}~metric
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a3238c0ef92c6bc0a7f5a3fe2cf2a3f2d}\label{_gyoto_defs_8h_a3238c0ef92c6bc0a7f5a3fe2cf2a3f2d}} 
+\#define {\bfseries set\+Metric}~metric
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a0a624ce397a311a3a40de184d470af58}\label{_gyoto_defs_8h_a0a624ce397a311a3a40de184d470af58}} 
+\#define {\bfseries set\+Screen}~screen
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a25e86daa57b693d787815138eb0fab64}\label{_gyoto_defs_8h_a25e86daa57b693d787815138eb0fab64}} 
+\#define {\bfseries get\+Screen}~screen
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a27eb46281b0a4385f4c677392aa57011}\label{_gyoto_defs_8h_a27eb46281b0a4385f4c677392aa57011}} 
+\#define {\bfseries get\+Rmax}~r\+Max
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_aa633cede0606b312d212e34d6f7db253}\label{_gyoto_defs_8h_aa633cede0606b312d212e34d6f7db253}} 
+\#define {\bfseries set\+Rmax}~r\+Max
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_af0797d8b52a405a88492179a582b5f51}\label{_gyoto_defs_8h_af0797d8b52a405a88492179a582b5f51}} 
+\#define {\bfseries get\+Mass}~mass
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a37ee2433bf9e0bb640360fb55dc9bc24}\label{_gyoto_defs_8h_a37ee2433bf9e0bb640360fb55dc9bc24}} 
+\#define {\bfseries set\+Mass}~mass
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a285510d71e1a551800b49809b7b79fd0}\label{_gyoto_defs_8h_a285510d71e1a551800b49809b7b79fd0}} 
+\#define {\bfseries get\+Coord\+Kind}~coord\+Kind
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a72580008bb21d9d881df68cddbc169e2}\label{_gyoto_defs_8h_a72580008bb21d9d881df68cddbc169e2}} 
+\#define {\bfseries set\+Coord\+Kind}~coord\+Kind
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a650c53089432d169823369acfa7b144e}\label{_gyoto_defs_8h_a650c53089432d169823369acfa7b144e}} 
+\#define {\bfseries get\+Kind}~kind
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a3b0397ec0d772fe408ca63de61d80d71}\label{_gyoto_defs_8h_a3b0397ec0d772fe408ca63de61d80d71}} 
+\#define {\bfseries set\+Kind}~kind
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a5b3b4482dade4f29b7e06f7222b89eee}\label{_gyoto_defs_8h_a5b3b4482dade4f29b7e06f7222b89eee}} 
+\#define {\bfseries get\+Spin}~spin
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a4a4ece5eef7afaeae62e6ff9411555b0}\label{_gyoto_defs_8h_a4a4ece5eef7afaeae62e6ff9411555b0}} 
+\#define {\bfseries set\+Spin}~spin
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a004d28a2a68aeb55dfe628ff013ab2b1}\label{_gyoto_defs_8h_a004d28a2a68aeb55dfe628ff013ab2b1}} 
+\#define {\bfseries get\+Integ\+Kind}~integ\+Kind
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a897a33dbfa2c450330581f0ae5cb71ac}\label{_gyoto_defs_8h_a897a33dbfa2c450330581f0ae5cb71ac}} 
+\#define {\bfseries set\+Integ\+Kind}~integ\+Kind
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_af35a8ae0e8f570d4846b744ec8722c6a}\label{_gyoto_defs_8h_af35a8ae0e8f570d4846b744ec8722c6a}} 
+\#define {\bfseries get\+File\+Name}~file\+Name
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_abdcbb753f8adbe4632798bb818da8ae2}\label{_gyoto_defs_8h_abdcbb753f8adbe4632798bb818da8ae2}} 
+\#define {\bfseries set\+File\+Name}~file\+Name
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a7182b1a6299ac17993e559e72242072e}\label{_gyoto_defs_8h_a7182b1a6299ac17993e559e72242072e}} 
+\#define {\bfseries get\+Distance}~distance
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a71022c019ca8f35af7b90275a0645f54}\label{_gyoto_defs_8h_a71022c019ca8f35af7b90275a0645f54}} 
+\#define {\bfseries set\+Distance}~distance
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a73fa5f9c8d1480bac1d032afb4217608}\label{_gyoto_defs_8h_a73fa5f9c8d1480bac1d032afb4217608}} 
+\#define {\bfseries get\+PALN}~PALN
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a99d91978985415eb038d8683d9a705cb}\label{_gyoto_defs_8h_a99d91978985415eb038d8683d9a705cb}} 
+\#define {\bfseries set\+PALN}~PALN
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a0e0059c0614c088c04b87145f976469a}\label{_gyoto_defs_8h_a0e0059c0614c088c04b87145f976469a}} 
+\#define {\bfseries get\+Argument}~argument
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_add5bd4d93eb9a5daca04f12e2c66d034}\label{_gyoto_defs_8h_add5bd4d93eb9a5daca04f12e2c66d034}} 
+\#define {\bfseries set\+Argument}~argument
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a471287b0b0150191cb81556f8c46a3b5}\label{_gyoto_defs_8h_a471287b0b0150191cb81556f8c46a3b5}} 
+\#define {\bfseries get\+Inclination}~inclination
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a1509566610f6195391de4ae89d563602}\label{_gyoto_defs_8h_a1509566610f6195391de4ae89d563602}} 
+\#define {\bfseries set\+Inclination}~inclination
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a954f3624b55598717752eb605c702255}\label{_gyoto_defs_8h_a954f3624b55598717752eb605c702255}} 
+\#define {\bfseries get\+Astrobj}~astrobj
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_aa1b6293a46fb0289c31636104e0095ec}\label{_gyoto_defs_8h_aa1b6293a46fb0289c31636104e0095ec}} 
+\#define {\bfseries set\+Astrobj}~astrobj
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_abc4ab58ffc17ab418ce705e1dfd6a0e9}\label{_gyoto_defs_8h_abc4ab58ffc17ab418ce705e1dfd6a0e9}} 
+\#define {\bfseries get\+Spectrometer}~spectrometer
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_ac739c3f3000fb03ae751b811a36150b2}\label{_gyoto_defs_8h_ac739c3f3000fb03ae751b811a36150b2}} 
+\#define {\bfseries set\+Spectrometer}~spectrometer
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a4d1227dd4bf65a260c2bdb55856d2fe0}\label{_gyoto_defs_8h_a4d1227dd4bf65a260c2bdb55856d2fe0}} 
+\#define {\bfseries get\+Spectrum}~spectrum
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_ace6db18a88405ab0e21c20215308ae47}\label{_gyoto_defs_8h_ace6db18a88405ab0e21c20215308ae47}} 
+\#define {\bfseries set\+Spectrum}~spectrum
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a924a433ec1b808cf8a580b6f6ed56c78}\label{_gyoto_defs_8h_a924a433ec1b808cf8a580b6f6ed56c78}} 
+\#define {\bfseries get\+Opacity}~opacity
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a7d40d5cd97d7568ec1e3cc4156dd3f90}\label{_gyoto_defs_8h_a7d40d5cd97d7568ec1e3cc4156dd3f90}} 
+\#define {\bfseries set\+Opacity}~opacity
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_adac95f7c7cd3bddb5d5c3ce62dce1224}\label{_gyoto_defs_8h_adac95f7c7cd3bddb5d5c3ce62dce1224}} 
+\#define {\bfseries set\+Delta}~delta
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a62e4fda08ce23c36062c54b461f34c41}\label{_gyoto_defs_8h_a62e4fda08ce23c36062c54b461f34c41}} 
+\#define {\bfseries get\+Delta}~delta
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_adac95f7c7cd3bddb5d5c3ce62dce1224}\label{_gyoto_defs_8h_adac95f7c7cd3bddb5d5c3ce62dce1224}} 
+\#define {\bfseries set\+Delta}~delta
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a62e4fda08ce23c36062c54b461f34c41}\label{_gyoto_defs_8h_a62e4fda08ce23c36062c54b461f34c41}} 
+\#define {\bfseries get\+Delta}~delta
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a1953529543c4e3db21abdfb39f044ddf}\label{_gyoto_defs_8h_a1953529543c4e3db21abdfb39f044ddf}} 
+\#define {\bfseries set\+Dangle2}~dangle2
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a53c2452f89eb3dfa9a3abc6b76a8d621}\label{_gyoto_defs_8h_a53c2452f89eb3dfa9a3abc6b76a8d621}} 
+\#define {\bfseries get\+Dangle2}~dangle2
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a8650101d7ed541143e255683e37d584f}\label{_gyoto_defs_8h_a8650101d7ed541143e255683e37d584f}} 
+\#define {\bfseries set\+Dangle1}~dangle1
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_acd8314c3dccbf684f5323872f24349cb}\label{_gyoto_defs_8h_acd8314c3dccbf684f5323872f24349cb}} 
+\#define {\bfseries get\+Dangle1}~dangle1
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a897a1e15db0822ccff52fdc48309b2b5}\label{_gyoto_defs_8h_a897a1e15db0822ccff52fdc48309b2b5}} 
+\#define {\bfseries set\+Anglekind}~anglekind
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a575c4b486725a3f2931432da590354c8}\label{_gyoto_defs_8h_a575c4b486725a3f2931432da590354c8}} 
+\#define {\bfseries get\+Tmin}~t\+Min
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a1a3b32b31ab8bf4f9535144ef229b1f7}\label{_gyoto_defs_8h_a1a3b32b31ab8bf4f9535144ef229b1f7}} 
+\#define {\bfseries set\+Tmin}~t\+Min
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_adf88142fbf7a4dda694fe56be198f18c}\label{_gyoto_defs_8h_adf88142fbf7a4dda694fe56be198f18c}} 
+\#define {\bfseries get\+Time}~time
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a700422dc859c688a11bb8e607bce5d5c}\label{_gyoto_defs_8h_a700422dc859c688a11bb8e607bce5d5c}} 
+\#define {\bfseries set\+Time}~time
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_ac28a610de36de4c07cbc570164783cd8}\label{_gyoto_defs_8h_ac28a610de36de4c07cbc570164783cd8}} 
+\#define {\bfseries get\+Freq\+Obs}~freq\+Obs
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_ac5bf3d0593eaa99d1c2f21326f8ab6f5}\label{_gyoto_defs_8h_ac5bf3d0593eaa99d1c2f21326f8ab6f5}} 
+\#define {\bfseries set\+Freq\+Obs}~freq\+Obs
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a4f2849168e65a4456a25cca285f0554b}\label{_gyoto_defs_8h_a4f2849168e65a4456a25cca285f0554b}} 
+\#define {\bfseries get\+Field\+Of\+View}~field\+Of\+View
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a5c1985dd51603a1a5721f832d7956fcf}\label{_gyoto_defs_8h_a5c1985dd51603a1a5721f832d7956fcf}} 
+\#define {\bfseries set\+Field\+Of\+View}~field\+Of\+View
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_abf6247b4090e4870dfdd87e7c4e70dd8}\label{_gyoto_defs_8h_abf6247b4090e4870dfdd87e7c4e70dd8}} 
+\#define {\bfseries get\+Radius}~radius
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a2034f55ecae1ccc3b76cdb8715fb7aee}\label{_gyoto_defs_8h_a2034f55ecae1ccc3b76cdb8715fb7aee}} 
+\#define {\bfseries set\+Radius}~radius
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_aa51bc9c64513007832c76a5d4d6c50e9}\label{_gyoto_defs_8h_aa51bc9c64513007832c76a5d4d6c50e9}} 
+\#define {\bfseries get\+Large\+Radius}~large\+Radius
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a20b1faf908c59f0ed5068e826bfddb6a}\label{_gyoto_defs_8h_a20b1faf908c59f0ed5068e826bfddb6a}} 
+\#define {\bfseries set\+Large\+Radius}~large\+Radius
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_ab443d82f2eb420993227477cc1d9a5db}\label{_gyoto_defs_8h_ab443d82f2eb420993227477cc1d9a5db}} 
+\#define {\bfseries get\+Small\+Radius}~small\+Radius
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a4d4b2ae1fdab5b89a2fc3c212c2b1508}\label{_gyoto_defs_8h_a4d4b2ae1fdab5b89a2fc3c212c2b1508}} 
+\#define {\bfseries set\+Small\+Radius}~small\+Radius
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_ade4aef122942548288c108ec676bf11c}\label{_gyoto_defs_8h_ade4aef122942548288c108ec676bf11c}} 
+\#define {\bfseries get\+Central\+Density}~central\+Density
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_aa08638bbf3a7c7aac788501bedc87c63}\label{_gyoto_defs_8h_aa08638bbf3a7c7aac788501bedc87c63}} 
+\#define {\bfseries set\+Central\+Density}~central\+Density
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a99d420b07daaef861802e5f0ed560a33}\label{_gyoto_defs_8h_a99d420b07daaef861802e5f0ed560a33}} 
+\#define {\bfseries get\+Dmax}~d\+Max
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_aa546720ffa64b803c5abff0350a07cdd}\label{_gyoto_defs_8h_aa546720ffa64b803c5abff0350a07cdd}} 
+\#define {\bfseries set\+Dmax}~d\+Max
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_aa2d8b22cb569cc11b34d21d0704178ec}\label{_gyoto_defs_8h_aa2d8b22cb569cc11b34d21d0704178ec}} 
+\#define {\bfseries get\+Temperature}~temperature
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a122947543f349ba93866ecea10d60d48}\label{_gyoto_defs_8h_a122947543f349ba93866ecea10d60d48}} 
+\#define {\bfseries set\+Temperature}~temperature
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a70dd92eacdeb03166231d5fc939c7c80}\label{_gyoto_defs_8h_a70dd92eacdeb03166231d5fc939c7c80}} 
+\#define {\bfseries get\+Scaling}~scaling
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a335034a9d623fa92ea5d81eb2849a591}\label{_gyoto_defs_8h_a335034a9d623fa92ea5d81eb2849a591}} 
+\#define {\bfseries set\+Scaling}~scaling
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a80f8667db74e74c6cbdd01b2cadf4e7a}\label{_gyoto_defs_8h_a80f8667db74e74c6cbdd01b2cadf4e7a}} 
+\#define {\bfseries get\+Pattern\+Velocity}~pattern\+Velocity
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a1838208efc1c5e495a946e2f0d1335d4}\label{_gyoto_defs_8h_a1838208efc1c5e495a946e2f0d1335d4}} 
+\#define {\bfseries set\+Pattern\+Velocity}~pattern\+Velocity
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_ab679c9f4725e11c4e3f985a360625b6e}\label{_gyoto_defs_8h_ab679c9f4725e11c4e3f985a360625b6e}} 
+\#define {\bfseries get\+Lambda}~lambda
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a803cc2863053dd364e85c9da76e7dfc0}\label{_gyoto_defs_8h_a803cc2863053dd364e85c9da76e7dfc0}} 
+\#define {\bfseries set\+Lambda}~lambda
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a28ed509c06032010993b59c71c76b1cd}\label{_gyoto_defs_8h_a28ed509c06032010993b59c71c76b1cd}} 
+\#define {\bfseries get\+Central\+Temp\+Over\+Virial}~central\+Temp\+Over\+Virial
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_ac8e8be959c2f7d695c7630d976a27cfd}\label{_gyoto_defs_8h_ac8e8be959c2f7d695c7630d976a27cfd}} 
+\#define {\bfseries set\+Central\+Temp\+Over\+Virial}~central\+Temp\+Over\+Virial
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a89f8dbfce0246010c2e6bd5382a007ab}\label{_gyoto_defs_8h_a89f8dbfce0246010c2e6bd5382a007ab}} 
+\#define {\bfseries get\+Beta}~beta
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a47ce7c576322ad07378484479c71ed59}\label{_gyoto_defs_8h_a47ce7c576322ad07378484479c71ed59}} 
+\#define {\bfseries set\+Beta}~beta
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a8b68729b8428a08e2024b54124b2ffeb}\label{_gyoto_defs_8h_a8b68729b8428a08e2024b54124b2ffeb}} 
+\#define {\bfseries get\+Constant}~constant
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_ab617703d7d4ba237c3c3b849ff226207}\label{_gyoto_defs_8h_ab617703d7d4ba237c3c3b849ff226207}} 
+\#define {\bfseries set\+Constant}~constant
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a3b3cf1b10bfab4d86a3682c89094d3a1}\label{_gyoto_defs_8h_a3b3cf1b10bfab4d86a3682c89094d3a1}} 
+\#define {\bfseries get\+Exponent}~exponent
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_aa5928185da6bba0ad423725bc78b17cc}\label{_gyoto_defs_8h_aa5928185da6bba0ad423725bc78b17cc}} 
+\#define {\bfseries set\+Exponent}~exponent
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a647887882a73c458cc656b7be94c41bb}\label{_gyoto_defs_8h_a647887882a73c458cc656b7be94c41bb}} 
+\#define {\bfseries get\+Flag\+\_\+radtransf}~optically\+Thin
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_aa9039c000fd3f636528310f4bdd229ce}\label{_gyoto_defs_8h_aa9039c000fd3f636528310f4bdd229ce}} 
+\#define {\bfseries set\+Flag\+\_\+radtransf}~optically\+Thin
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a2c17677f550f38c8afb41690096eecad}\label{_gyoto_defs_8h_a2c17677f550f38c8afb41690096eecad}} 
+\#define {\bfseries get\+NThreads}~n\+Threads
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a5e7aec60988cb7c93b608ef7097f67b8}\label{_gyoto_defs_8h_a5e7aec60988cb7c93b608ef7097f67b8}} 
+\#define {\bfseries set\+NThreads}~n\+Threads
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a44ab2c0ef269e2d0a69a88608b3b4b83}\label{_gyoto_defs_8h_a44ab2c0ef269e2d0a69a88608b3b4b83}} 
+\#define {\bfseries get\+Resolution}~resolution
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a7ddf935f759c4e67bfbc35b8b7e69ce0}\label{_gyoto_defs_8h_a7ddf935f759c4e67bfbc35b8b7e69ce0}} 
+\#define {\bfseries set\+Resolution}~resolution
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a960e5d13b52faffa1e5c68680e06fc59}\label{_gyoto_defs_8h_a960e5d13b52faffa1e5c68680e06fc59}} 
+\#define {\bfseries get\+NSamples}~n\+Samples
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a83a01d902a2ec49abc08b2f4cb7862e3}\label{_gyoto_defs_8h_a83a01d902a2ec49abc08b2f4cb7862e3}} 
+\#define {\bfseries set\+NSamples}~n\+Samples
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_aac1833fc4fb18b8805844841028ba8ea}\label{_gyoto_defs_8h_aac1833fc4fb18b8805844841028ba8ea}} 
+\#define {\bfseries get\+Spectral\+Over\+Sampling}~spectral\+Oversampling
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a372d67abf889a59538900c2553f9cb75}\label{_gyoto_defs_8h_a372d67abf889a59538900c2553f9cb75}} 
+\#define {\bfseries set\+Spectral\+Over\+Sampling}~spectral\+Oversampling
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a27786ea23ea416ab8f38ea9ae34aa750}\label{_gyoto_defs_8h_a27786ea23ea416ab8f38ea9ae34aa750}} 
+\#define {\bfseries set\+Bin\+Spectrum\+Converter}~bin\+Spectrum\+Converter
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a1f1ec35c749c2b02dda32e151e2a5960}\label{_gyoto_defs_8h_a1f1ec35c749c2b02dda32e151e2a5960}} 
+\#define {\bfseries set\+Spectrum\+Converter}~spectrum\+Converter
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a59a06b38d5d457080a3597b9781c4280}\label{_gyoto_defs_8h_a59a06b38d5d457080a3597b9781c4280}} 
+\#define {\bfseries set\+Intensity\+Converter}~intensity\+Converter
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a2ffc9ea9c84a6b0f9b24024343af6ec3}\label{_gyoto_defs_8h_a2ffc9ea9c84a6b0f9b24024343af6ec3}} 
+\#define {\bfseries get\+Safety\+Value}~safety\+Value;
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a5d04ef4986ad2abce68e71d35bfe54c7}\label{_gyoto_defs_8h_a5d04ef4986ad2abce68e71d35bfe54c7}} 
+\#define {\bfseries set\+Safety\+Value}~safety\+Value;
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a194ab6157f28a1fcaa206d4849edaed9}\label{_gyoto_defs_8h_a194ab6157f28a1fcaa206d4849edaed9}} 
+\#define {\bfseries set\+Inner\+Radius}~inner\+Radius;
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a979f8309706ac7cd8c393103c9e04d29}\label{_gyoto_defs_8h_a979f8309706ac7cd8c393103c9e04d29}} 
+\#define {\bfseries get\+Inner\+Radius}~inner\+Radius;
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a4666d8e5c71e8592c783c0439d2cfb3c}\label{_gyoto_defs_8h_a4666d8e5c71e8592c783c0439d2cfb3c}} 
+\#define {\bfseries set\+Outer\+Radius}~outer\+Radius;
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a97b3a089b865c8c8be33d7ab767dc96b}\label{_gyoto_defs_8h_a97b3a089b865c8c8be33d7ab767dc96b}} 
+\#define {\bfseries get\+Outer\+Radius}~outer\+Radius;
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a98e7f91c9c0d0e4886850cc61096298d}\label{_gyoto_defs_8h_a98e7f91c9c0d0e4886850cc61096298d}} 
+\#define {\bfseries set\+Thickness}~thickness;
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a282dd99ec9c4c2c2825daf80b9587f4c}\label{_gyoto_defs_8h_a282dd99ec9c4c2c2825daf80b9587f4c}} 
+\#define {\bfseries get\+Thickness}~thickness;
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a3c3f533e1068ffef21f54c3b3745ca0f}\label{_gyoto_defs_8h_a3c3f533e1068ffef21f54c3b3745ca0f}} 
+\#define {\bfseries set\+Dir}~dir;
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_af2b09b89ba31e8af69a5317475687ff9}\label{_gyoto_defs_8h_af2b09b89ba31e8af69a5317475687ff9}} 
+\#define {\bfseries get\+Dir}~dir;
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a4c7c8f33712e229da813cd4a7967452d}\label{_gyoto_defs_8h_a4c7c8f33712e229da813cd4a7967452d}} 
+\#define {\bfseries set\+Band}~band;
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a2d8eb5e4423647a440c6b0dd6841db94}\label{_gyoto_defs_8h_a2d8eb5e4423647a440c6b0dd6841db94}} 
+\#define {\bfseries set\+Observer\+Kind}~observer\+Kind;
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a322543f74fd566b1dd7646c7bd1f24d8}\label{_gyoto_defs_8h_a322543f74fd566b1dd7646c7bd1f24d8}} 
+\#define {\bfseries get\+Observer\+Kind}~observer\+Kind;
+\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace_gyoto_a57441caf7075eb0276b047f4d192f22c}\label{namespace_gyoto_a57441caf7075eb0276b047f4d192f22c}} 
+typedef std\+::vector$<$ double $>$ {\bfseries Gyoto\+::state\+\_\+t}
+\end{DoxyCompactItemize}
+\doxysubsection*{Observable quantities}
+\label{_amgrp80112e1129d61fa5660bd47a7d8e579c}%
+Individual quantities are represented as a variable of this type. A combination of quantities is an ored list of Quantity\+\_\+t, e.\+g.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_gyoto_defs_8h_a23168295344ed4f17219cb21b97841bc}{GYOTO\_QUANTITY\_INTENSITY}} | \mbox{\hyperlink{_gyoto_defs_8h_a28febae2188fc75a2a1625b5a3e227b0}{GYOTO\_QUANTITY\_EMISSIONTIME}}}
+
+\end{DoxyCode}
+
+
+To check wheter a given quantity is listed in a Quantity\+\_\+t variable quant\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (quant \& GYOTOQUANTITY\_EMISSION) ...}
+
+\end{DoxyCode}
+
+
+List of all possible Quantity\+\_\+t individual values and the corresponding string (see \mbox{\hyperlink{class_gyoto_1_1_scenery}{Gyoto\+::\+Scenery}}) with corresponding XML name\+: \begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a8e2f4907ad195d60c27421b3bec4b56d}\label{_gyoto_defs_8h_a8e2f4907ad195d60c27421b3bec4b56d}} 
+\#define {\bfseries GYOTO\+\_\+\+QUANTITY\+\_\+\+NONE}~0
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a23168295344ed4f17219cb21b97841bc}\label{_gyoto_defs_8h_a23168295344ed4f17219cb21b97841bc}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a23168295344ed4f17219cb21b97841bc}{GYOTO\+\_\+\+QUANTITY\+\_\+\+INTENSITY}}~1$<$$<$0
+\begin{DoxyCompactList}\small\item\em Intensity\+: I\textsubscript{{$\nu$}} at Scenery\+::freq\+\_\+obs\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a28febae2188fc75a2a1625b5a3e227b0}\label{_gyoto_defs_8h_a28febae2188fc75a2a1625b5a3e227b0}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a28febae2188fc75a2a1625b5a3e227b0}{GYOTO\+\_\+\+QUANTITY\+\_\+\+EMISSIONTIME}}~1$<$$<$1
+\begin{DoxyCompactList}\small\item\em Emission\+Time\+: Emission date. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a2c50af72ab9adf3dac7947dc63ce1283}{GYOTO\+\_\+\+QUANTITY\+\_\+\+MIN\+\_\+\+DISTANCE}}~1$<$$<$2
+\begin{DoxyCompactList}\small\item\em Min\+Distance\+: Behaves like minimal distance between Photon and Astrobj. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_ad05910bf0beac9c21d96fbcf8a1e679a}\label{_gyoto_defs_8h_ad05910bf0beac9c21d96fbcf8a1e679a}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_ad05910bf0beac9c21d96fbcf8a1e679a}{GYOTO\+\_\+\+QUANTITY\+\_\+\+FIRST\+\_\+\+DMIN}}~1$<$$<$3
+\begin{DoxyCompactList}\small\item\em First\+Dmin\+: First Photon-\/\+Astrobj distance local minimum while integrating back in time. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a514fa27f9b6373b3984fa9bae4ec34a2}\label{_gyoto_defs_8h_a514fa27f9b6373b3984fa9bae4ec34a2}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a514fa27f9b6373b3984fa9bae4ec34a2}{GYOTO\+\_\+\+QUANTITY\+\_\+\+REDSHIFT}}~1$<$$<$4
+\begin{DoxyCompactList}\small\item\em Redshift\+: {$\nu$}\textsubscript{obs}/{$\nu$}\textsubscript{em}. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_ad62e944b7dc631494efd16c2ac6819fe}{GYOTO\+\_\+\+QUANTITY\+\_\+\+IMPACTCOORDS}}~1$<$$<$5
+\begin{DoxyCompactList}\small\item\em Impact\+Coords\+: Astrobj and Photon 8-\/coordinates at emission. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_ae56e0da2e1c1746d580f7754e32bcf43}\label{_gyoto_defs_8h_ae56e0da2e1c1746d580f7754e32bcf43}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_ae56e0da2e1c1746d580f7754e32bcf43}{GYOTO\+\_\+\+QUANTITY\+\_\+\+SPECTRUM}}~1$<$$<$6
+\begin{DoxyCompactList}\small\item\em Spectrum\+: I\textsubscript{{$\nu$}} at each frequency in Scenery\+::screen\+\_\+-\/$>$get\+Midpoints(). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a470cf1c63755a60f4e3f4d8100f11199}\label{_gyoto_defs_8h_a470cf1c63755a60f4e3f4d8100f11199}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a470cf1c63755a60f4e3f4d8100f11199}{GYOTO\+\_\+\+QUANTITY\+\_\+\+SPECTRUM\+\_\+\+STOKES\+\_\+Q}}~1$<$$<$7
+\begin{DoxyCompactList}\small\item\em Spectrum\+StokesQ. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_acb8d86e4d6558403c57aa2bc53e76bdd}\label{_gyoto_defs_8h_acb8d86e4d6558403c57aa2bc53e76bdd}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_acb8d86e4d6558403c57aa2bc53e76bdd}{GYOTO\+\_\+\+QUANTITY\+\_\+\+SPECTRUM\+\_\+\+STOKES\+\_\+U}}~1$<$$<$8
+\begin{DoxyCompactList}\small\item\em Spectrum\+StokesU. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a0decc3e8bdf68273ac9203b7ad3e481b}\label{_gyoto_defs_8h_a0decc3e8bdf68273ac9203b7ad3e481b}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a0decc3e8bdf68273ac9203b7ad3e481b}{GYOTO\+\_\+\+QUANTITY\+\_\+\+SPECTRUM\+\_\+\+STOKES\+\_\+V}}~1$<$$<$9
+\begin{DoxyCompactList}\small\item\em Spectrum\+StokesV. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a919b6216ca64c675f418d9e4e77d23e9}\label{_gyoto_defs_8h_a919b6216ca64c675f418d9e4e77d23e9}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a919b6216ca64c675f418d9e4e77d23e9}{GYOTO\+\_\+\+QUANTITY\+\_\+\+BINSPECTRUM}}~1$<$$<$10
+\begin{DoxyCompactList}\small\item\em Spectrum\+: {$\int$}\textsubscript{{$\nu$}\textsubscript{1}}\textsuperscript{{$\nu$}\textsubscript{2}}I\textsubscript{{$\nu$}} d{$\nu$} in each frequency channel in Scenery\+::screen\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_ad693b145deacd5b35ce15f45173090a6}\label{_gyoto_defs_8h_ad693b145deacd5b35ce15f45173090a6}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_ad693b145deacd5b35ce15f45173090a6}{GYOTO\+\_\+\+QUANTITY\+\_\+\+NBCROSSEQPLANE}}~1$<$$<$11
+\begin{DoxyCompactList}\small\item\em Nb\+Cross\+Eq\+Plane\+: number of equatorial plane crossings. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a9af21288e94e1e4a445855ec6ac15886}\label{_gyoto_defs_8h_a9af21288e94e1e4a445855ec6ac15886}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a9af21288e94e1e4a445855ec6ac15886}{GYOTO\+\_\+\+QUANTITY\+\_\+\+USER1}}~1$<$$<$31
+\begin{DoxyCompactList}\small\item\em User1\+: \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Gyoto\+::\+Astrobj}} specific \mbox{\hyperlink{namespace_gyoto_a009cbd7f025ce417907a5344a15a1463}{Gyoto\+::\+Quantity\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a255bd2ea6d4b5db1f48136d4ad39e0cc}\label{_gyoto_defs_8h_a255bd2ea6d4b5db1f48136d4ad39e0cc}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a255bd2ea6d4b5db1f48136d4ad39e0cc}{GYOTO\+\_\+\+QUANTITY\+\_\+\+USER2}}~1$<$$<$30
+\begin{DoxyCompactList}\small\item\em User2\+: \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Gyoto\+::\+Astrobj}} specific \mbox{\hyperlink{namespace_gyoto_a009cbd7f025ce417907a5344a15a1463}{Gyoto\+::\+Quantity\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_ab60f8d3d3846f30d858fd84ad3c71f7c}\label{_gyoto_defs_8h_ab60f8d3d3846f30d858fd84ad3c71f7c}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_ab60f8d3d3846f30d858fd84ad3c71f7c}{GYOTO\+\_\+\+QUANTITY\+\_\+\+USER3}}~1$<$$<$29
+\begin{DoxyCompactList}\small\item\em User3\+: \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Gyoto\+::\+Astrobj}} specific \mbox{\hyperlink{namespace_gyoto_a009cbd7f025ce417907a5344a15a1463}{Gyoto\+::\+Quantity\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a57136cf99c40bcb025b38e39d54e0394}\label{_gyoto_defs_8h_a57136cf99c40bcb025b38e39d54e0394}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a57136cf99c40bcb025b38e39d54e0394}{GYOTO\+\_\+\+QUANTITY\+\_\+\+USER4}}~1$<$$<$28
+\begin{DoxyCompactList}\small\item\em User4\+: \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Gyoto\+::\+Astrobj}} specific \mbox{\hyperlink{namespace_gyoto_a009cbd7f025ce417907a5344a15a1463}{Gyoto\+::\+Quantity\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a22bb220feca4f3c4a396186e3a7dab97}\label{_gyoto_defs_8h_a22bb220feca4f3c4a396186e3a7dab97}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a22bb220feca4f3c4a396186e3a7dab97}{GYOTO\+\_\+\+QUANTITY\+\_\+\+USER5}}~1$<$$<$27
+\begin{DoxyCompactList}\small\item\em User5\+: \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Gyoto\+::\+Astrobj}} specific \mbox{\hyperlink{namespace_gyoto_a009cbd7f025ce417907a5344a15a1463}{Gyoto\+::\+Quantity\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_acf38abb2f86aaac97e99c750514aae4e}\label{_gyoto_defs_8h_acf38abb2f86aaac97e99c750514aae4e}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_acf38abb2f86aaac97e99c750514aae4e}{GYOTO\+\_\+\+QUANTITY\+\_\+\+SPECTRAL}}~(\mbox{\hyperlink{_gyoto_defs_8h_ae56e0da2e1c1746d580f7754e32bcf43}{GYOTO\+\_\+\+QUANTITY\+\_\+\+SPECTRUM}} $\vert$ \mbox{\hyperlink{_gyoto_defs_8h_a470cf1c63755a60f4e3f4d8100f11199}{GYOTO\+\_\+\+QUANTITY\+\_\+\+SPECTRUM\+\_\+\+STOKES\+\_\+Q}} $\vert$ \mbox{\hyperlink{_gyoto_defs_8h_acb8d86e4d6558403c57aa2bc53e76bdd}{GYOTO\+\_\+\+QUANTITY\+\_\+\+SPECTRUM\+\_\+\+STOKES\+\_\+U}} $\vert$ \mbox{\hyperlink{_gyoto_defs_8h_a0decc3e8bdf68273ac9203b7ad3e481b}{GYOTO\+\_\+\+QUANTITY\+\_\+\+SPECTRUM\+\_\+\+STOKES\+\_\+V}} $\vert$ \mbox{\hyperlink{_gyoto_defs_8h_a919b6216ca64c675f418d9e4e77d23e9}{GYOTO\+\_\+\+QUANTITY\+\_\+\+BINSPECTRUM}})
+\begin{DoxyCompactList}\small\item\em Bitwise or of all spectral quantities. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a9c91f1b85f593e4d5c3bc76403ed2968}\label{_gyoto_defs_8h_a9c91f1b85f593e4d5c3bc76403ed2968}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a9c91f1b85f593e4d5c3bc76403ed2968}{GYOTO\+\_\+\+QUANTITY\+\_\+\+SPECTRUM\+\_\+\+STOKES}}~(\mbox{\hyperlink{_gyoto_defs_8h_ae56e0da2e1c1746d580f7754e32bcf43}{GYOTO\+\_\+\+QUANTITY\+\_\+\+SPECTRUM}} $\vert$ \mbox{\hyperlink{_gyoto_defs_8h_a470cf1c63755a60f4e3f4d8100f11199}{GYOTO\+\_\+\+QUANTITY\+\_\+\+SPECTRUM\+\_\+\+STOKES\+\_\+Q}} $\vert$ \mbox{\hyperlink{_gyoto_defs_8h_acb8d86e4d6558403c57aa2bc53e76bdd}{GYOTO\+\_\+\+QUANTITY\+\_\+\+SPECTRUM\+\_\+\+STOKES\+\_\+U}} $\vert$ \mbox{\hyperlink{_gyoto_defs_8h_a0decc3e8bdf68273ac9203b7ad3e481b}{GYOTO\+\_\+\+QUANTITY\+\_\+\+SPECTRUM\+\_\+\+STOKES\+\_\+V}})
+\begin{DoxyCompactList}\small\item\em Bitwise or of all the Stokes parameters. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_a009cbd7f025ce417907a5344a15a1463}\label{namespace_gyoto_a009cbd7f025ce417907a5344a15a1463}} 
+typedef unsigned int \mbox{\hyperlink{namespace_gyoto_a009cbd7f025ce417907a5344a15a1463}{Gyoto\+::\+Quantity\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Type for observabke quantities. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Gyoto messages}
+\label{_amgrp72291cbf64c5643733dbccc1ac2446d4}%
+Controling which messages are shown to the user
+
+The user should be able to choose which messages are shown to her. In \mbox{\hyperlink{namespace_gyoto}{Gyoto}}, this is determined by a user-\/settable verbosity level (see \mbox{\hyperlink{namespace_gyoto_ad49d57c2e3b086b864b2ba48ac06e68a}{Gyoto\+::verbose()}}) and a user-\/settable debug mode (see \mbox{\hyperlink{namespace_gyoto_afea7d91793e2e0c2295d8f65f9c454f8}{Goyto\+::debug()}}).
+
+The following macros define various debug and verbosity level and provide short-\/cuts to display formatted messages only at a given verbosity level or in debug mode. \begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a9cc21f0bad79afaf573c899fa72ef8cf}\label{_gyoto_defs_8h_a9cc21f0bad79afaf573c899fa72ef8cf}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a9cc21f0bad79afaf573c899fa72ef8cf}{GYOTO\+\_\+\+DEFAULT\+\_\+\+DEBUG\+\_\+\+MODE}}~0
+\begin{DoxyCompactList}\small\item\em Default debug mode. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a5f89b25cb41ccbc02185e9341c5a1cb2}{GYOTO\+\_\+\+QUIET\+\_\+\+VERBOSITY}}~1
+\begin{DoxyCompactList}\small\item\em Quiet \mbox{\hyperlink{namespace_gyoto_a92c5f4f1cf3a8d67fd199331af40ac39}{Gyoto\+::\+Verbosity\+\_\+t}}. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a954d0ca88bf4207a70ab68b7985f3855}{GYOTO\+\_\+\+SEVERE\+\_\+\+VERBOSITY}}~3
+\begin{DoxyCompactList}\small\item\em Severe warnings. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a1c71dc260ed475aa9fc88adb2806121d}{GYOTO\+\_\+\+WARNING\+\_\+\+VERBOSITY}}~\mbox{\hyperlink{_gyoto_defs_8h_a954d0ca88bf4207a70ab68b7985f3855}{GYOTO\+\_\+\+SEVERE\+\_\+\+VERBOSITY}}
+\begin{DoxyCompactList}\small\item\em Warnings. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a1abd13b21053ac250602cbee0464fc54}{GYOTO\+\_\+\+DEFAULT\+\_\+\+VERBOSITY}}~5
+\begin{DoxyCompactList}\small\item\em Default verbosity level. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_ab873aa45805a3124456f9c5163281c8d}{GYOTO\+\_\+\+INFO\+\_\+\+VERBOSITY}}~10
+\begin{DoxyCompactList}\small\item\em Informative messages. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a24034c4799728d37b442f5b5e6f81979}{GYOTO\+\_\+\+DEBUG\+\_\+\+VERBOSITY}}~3000
+\begin{DoxyCompactList}\small\item\em Maximum verbosity level. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_aebb164c8e8f4fb86d413d574cce455a7}{GYOTO\+\_\+\+QUIET}}~if (\mbox{\hyperlink{namespace_gyoto_ad49d57c2e3b086b864b2ba48ac06e68a}{Gyoto\+::verbose}}() $>$= \mbox{\hyperlink{_gyoto_defs_8h_a5f89b25cb41ccbc02185e9341c5a1cb2}{GYOTO\+\_\+\+QUIET\+\_\+\+VERBOSITY}}) std\+::cout
+\begin{DoxyCompactList}\small\item\em Display a message to stdout even in quiet mode. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a718377bc0c336982042326bbc4ce6dc8}{GYOTO\+\_\+\+SEVERE}}~if(\mbox{\hyperlink{namespace_gyoto_ad49d57c2e3b086b864b2ba48ac06e68a}{Gyoto\+::verbose}}()$>$=\mbox{\hyperlink{_gyoto_defs_8h_a954d0ca88bf4207a70ab68b7985f3855}{GYOTO\+\_\+\+SEVERE\+\_\+\+VERBOSITY}}) std\+::cerr$<$$<$\char`\"{}SEVERE\+: \char`\"{}
+\begin{DoxyCompactList}\small\item\em Display a severe level message to stderr. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a90d3d5dda66fee91cd3bb8f9a76d4f26}{GYOTO\+\_\+\+WARNING}}~if(\mbox{\hyperlink{namespace_gyoto_ad49d57c2e3b086b864b2ba48ac06e68a}{Gyoto\+::verbose}}()$>$=\mbox{\hyperlink{_gyoto_defs_8h_a954d0ca88bf4207a70ab68b7985f3855}{GYOTO\+\_\+\+SEVERE\+\_\+\+VERBOSITY}}) std\+::cerr$<$$<$\char`\"{}WARNING\+: \char`\"{}
+\begin{DoxyCompactList}\small\item\em Display a warning level message to stderr. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a58d6fe083cd3c3b490c1f9c32e6c23b8}{GYOTO\+\_\+\+MSG}}~if (\mbox{\hyperlink{namespace_gyoto_ad49d57c2e3b086b864b2ba48ac06e68a}{Gyoto\+::verbose}}() $>$= \mbox{\hyperlink{_gyoto_defs_8h_a1abd13b21053ac250602cbee0464fc54}{GYOTO\+\_\+\+DEFAULT\+\_\+\+VERBOSITY}}) std\+::cout
+\begin{DoxyCompactList}\small\item\em Display normal message to stdout. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_abc21a8b5b5f253787e04965564254a19}{GYOTO\+\_\+\+INFO}}~if (\mbox{\hyperlink{namespace_gyoto_ad49d57c2e3b086b864b2ba48ac06e68a}{Gyoto\+::verbose}}() $>$= \mbox{\hyperlink{_gyoto_defs_8h_ab873aa45805a3124456f9c5163281c8d}{GYOTO\+\_\+\+INFO\+\_\+\+VERBOSITY}}) std\+::cerr$<$$<$\char`\"{}INFO\+: \char`\"{}
+\begin{DoxyCompactList}\small\item\em Display informative message to stderr. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_ab27bc104166b7d2c876cc2cbcf2d5f18}{GYOTO\+\_\+\+WARNING\+\_\+\+UDUNITS}}(from,  to)
+\begin{DoxyCompactList}\small\item\em Unit ignored because libudunits2 was disabled. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a2ddb771d38a2f9e435a6608126362cad}{GYOTO\+\_\+\+DEBUG\+\_\+\+EXPR}}(a)~\mbox{\hyperlink{_gyoto_defs_8h_a16e0e6bc14859601c47ca51a542913d6}{GYOTO\+\_\+\+DEBUG}} $<$$<$ \#a $<$$<$ \char`\"{}=\char`\"{} $<$$<$ a $<$$<$ std\+::endl
+\begin{DoxyCompactList}\small\item\em Output expression value in debug mode. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_ac1aa18d62f05f7d363e014a2d1cbab0b}{GYOTO\+\_\+\+DEBUG\+\_\+\+THIS\+\_\+\+EXPR}}(a)~\mbox{\hyperlink{_gyoto_defs_8h_ac3b7405d5a86c06581a8ab08d07e81cd}{GYOTO\+\_\+\+DEBUG\+\_\+\+THIS}} $<$$<$ \#a $<$$<$ \char`\"{}=\char`\"{} $<$$<$ a $<$$<$ std\+::endl
+\begin{DoxyCompactList}\small\item\em Output expression value unconditionally. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a7afae1bbc5f6f8ce2178638180a533fb}{GYOTO\+\_\+\+DEBUG\+\_\+\+ARRAY}}(a,  n)
+\begin{DoxyCompactList}\small\item\em Output array content in debug mode. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_ac3b7405d5a86c06581a8ab08d07e81cd}{GYOTO\+\_\+\+DEBUG\+\_\+\+THIS}}~std\+::cerr $<$$<$ \char`\"{}DEBUG\+: \char`\"{} $<$$<$ \+\_\+\+\_\+\+PRETTY\+\_\+\+FUNCTION\+\_\+\+\_\+ $<$$<$ \char`\"{}\+: \char`\"{}
+\begin{DoxyCompactList}\small\item\em Display debug message (unconditionally) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a16e0e6bc14859601c47ca51a542913d6}{GYOTO\+\_\+\+DEBUG}}~if (\mbox{\hyperlink{_gyoto_defs_8h_a03589b1138957c01ce58fcfffa1f4b15}{GYOTO\+\_\+\+DEBUG\+\_\+\+MODE}}) \mbox{\hyperlink{_gyoto_defs_8h_ac3b7405d5a86c06581a8ab08d07e81cd}{GYOTO\+\_\+\+DEBUG\+\_\+\+THIS}}
+\begin{DoxyCompactList}\small\item\em Display debug message (in debug mode) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a542a934cec6f3aaf955495e03880da09}{GYOTO\+\_\+\+IF\+\_\+\+DEBUG}}~if (\mbox{\hyperlink{_gyoto_defs_8h_a03589b1138957c01ce58fcfffa1f4b15}{GYOTO\+\_\+\+DEBUG\+\_\+\+MODE}}) \{
+\begin{DoxyCompactList}\small\item\em Start debug-\/only block. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_ac35a954b274a114a284bb4cef2c4badf}{GYOTO\+\_\+\+ENDIF\+\_\+\+DEBUG}}~\}
+\begin{DoxyCompactList}\small\item\em End debug-\/only block. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a03589b1138957c01ce58fcfffa1f4b15}\label{_gyoto_defs_8h_a03589b1138957c01ce58fcfffa1f4b15}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a03589b1138957c01ce58fcfffa1f4b15}{GYOTO\+\_\+\+DEBUG\+\_\+\+MODE}}~\mbox{\hyperlink{namespace_gyoto_afea7d91793e2e0c2295d8f65f9c454f8}{Gyoto\+::debug}}()
+\begin{DoxyCompactList}\small\item\em Whether debug mode is activated (run-\/time). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_a92c5f4f1cf3a8d67fd199331af40ac39}\label{namespace_gyoto_a92c5f4f1cf3a8d67fd199331af40ac39}} 
+typedef unsigned int \mbox{\hyperlink{namespace_gyoto_a92c5f4f1cf3a8d67fd199331af40ac39}{Gyoto\+::\+Verbosity\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Type for verbosity levels. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Coordinate system kind}
+\label{_amgrp0631e9c8ff1d4a4c5f79b41c1fc830e4}%
+GYOTO\+\_\+\+COORDKIND\+\_\+\+CARTESIAN or GYOTO\+\_\+\+COORDKIND\+\_\+\+SPHERICAL
+
+Every \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Gyoto\+::\+Metric}} has a coordinate system kind. It can be used by functions which need to express coordinates always in spherical or always in Cartesian form, with trivial conversion between the two. \begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a73f7c89f093e9b3d0af14c712128ef53}\label{_gyoto_defs_8h_a73f7c89f093e9b3d0af14c712128ef53}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a73f7c89f093e9b3d0af14c712128ef53}{GYOTO\+\_\+\+COORDKIND\+\_\+\+UNSPECIFIED}}~0
+\begin{DoxyCompactList}\small\item\em Unspecified coordinate kind. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a6d89c6033d04f427aff0152016b3d387}\label{_gyoto_defs_8h_a6d89c6033d04f427aff0152016b3d387}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a6d89c6033d04f427aff0152016b3d387}{GYOTO\+\_\+\+COORDKIND\+\_\+\+CARTESIAN}}~1
+\begin{DoxyCompactList}\small\item\em Cartesian-\/like coordinate system. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_gyoto_defs_8h_a06a56a9fcef3789b32826e87ff74276d}\label{_gyoto_defs_8h_a06a56a9fcef3789b32826e87ff74276d}} 
+\#define \mbox{\hyperlink{_gyoto_defs_8h_a06a56a9fcef3789b32826e87ff74276d}{GYOTO\+\_\+\+COORDKIND\+\_\+\+SPHERICAL}}~2
+\begin{DoxyCompactList}\small\item\em Spherical-\/like coordinate system. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_a5ffc549cbcfb3cb8f1307e130e1482c9}\label{namespace_gyoto_a5ffc549cbcfb3cb8f1307e130e1482c9}} 
+typedef unsigned int \mbox{\hyperlink{namespace_gyoto_a5ffc549cbcfb3cb8f1307e130e1482c9}{Gyoto\+::\+Coord\+Kind\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Type for coordinate system kinds. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{namespace_gyoto}{Gyoto}} ubiquitous macros and typedefs. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_gyoto_defs_8h_a16e0e6bc14859601c47ca51a542913d6}\label{_gyoto_defs_8h_a16e0e6bc14859601c47ca51a542913d6}} 
+\index{GyotoDefs.h@{GyotoDefs.h}!GYOTO\_DEBUG@{GYOTO\_DEBUG}}
+\index{GYOTO\_DEBUG@{GYOTO\_DEBUG}!GyotoDefs.h@{GyotoDefs.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_DEBUG}{GYOTO\_DEBUG}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+DEBUG~if (\mbox{\hyperlink{_gyoto_defs_8h_a03589b1138957c01ce58fcfffa1f4b15}{GYOTO\+\_\+\+DEBUG\+\_\+\+MODE}}) \mbox{\hyperlink{_gyoto_defs_8h_ac3b7405d5a86c06581a8ab08d07e81cd}{GYOTO\+\_\+\+DEBUG\+\_\+\+THIS}}}
+
+
+
+Display debug message (in debug mode) 
+
+Message is displayed only if \mbox{\hyperlink{_gyoto_defs_8h_a03589b1138957c01ce58fcfffa1f4b15}{GYOTO\+\_\+\+DEBUG\+\_\+\+MODE}} is true and is prepended with the word \char`\"{}\+DEBUG\+:\char`\"{} and the signature of the function.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_gyoto_defs_8h_a16e0e6bc14859601c47ca51a542913d6}{GYOTO\_DEBUG}} << \textcolor{stringliteral}{"{}message"{}} << endl;}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{_gyoto_defs_8h_a7afae1bbc5f6f8ce2178638180a533fb}\label{_gyoto_defs_8h_a7afae1bbc5f6f8ce2178638180a533fb}} 
+\index{GyotoDefs.h@{GyotoDefs.h}!GYOTO\_DEBUG\_ARRAY@{GYOTO\_DEBUG\_ARRAY}}
+\index{GYOTO\_DEBUG\_ARRAY@{GYOTO\_DEBUG\_ARRAY}!GyotoDefs.h@{GyotoDefs.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_DEBUG\_ARRAY}{GYOTO\_DEBUG\_ARRAY}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+DEBUG\+\_\+\+ARRAY(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{n }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (\mbox{\hyperlink{_gyoto_defs_8h_a03589b1138957c01ce58fcfffa1f4b15}{GYOTO\_DEBUG\_MODE}}) \{            \(\backslash\)}
+\DoxyCodeLine{    std::cerr << \textcolor{stringliteral}{"{}DEBUG: "{}} << \_\_PRETTY\_FUNCTION\_\_ << \textcolor{stringliteral}{"{}: "{}}         \(\backslash\)}
+\DoxyCodeLine{              << \#a << \textcolor{stringliteral}{"{}=["{}} << a[0] ;                             \(\backslash\)}
+\DoxyCodeLine{    for (\textcolor{keywordtype}{size\_t} \_gyoto\_debug\_array\_i=1; \_gyoto\_debug\_array\_i < n; ++\_gyoto\_debug\_array\_i) \(\backslash\)}
+\DoxyCodeLine{      std::cerr << \textcolor{stringliteral}{"{},"{}} << a[\_gyoto\_debug\_array\_i] ;                     \(\backslash\)}
+\DoxyCodeLine{    std::cerr << \textcolor{stringliteral}{"{}]"{}} << std::endl ;\}}
+
+\end{DoxyCode}
+
+
+Output array content in debug mode. 
+
+Output, only in debug, name and content of array. For instance\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{int} a[]= \{1, 2, 3\};}
+\DoxyCodeLine{\mbox{\hyperlink{_gyoto_defs_8h_a7afae1bbc5f6f8ce2178638180a533fb}{GYOTO\_DEBUG\_ARRAY}}(a,3);}
+
+\end{DoxyCode}
+ will essentially output, only in debug mode\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{DEBUG: <\textcolor{keyword}{function} signature>: a=[1,2,3]}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Array \\
+\hline
+{\em n} & Number of elements to show (array must be at least this size). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_gyoto_defs_8h_a2ddb771d38a2f9e435a6608126362cad}\label{_gyoto_defs_8h_a2ddb771d38a2f9e435a6608126362cad}} 
+\index{GyotoDefs.h@{GyotoDefs.h}!GYOTO\_DEBUG\_EXPR@{GYOTO\_DEBUG\_EXPR}}
+\index{GYOTO\_DEBUG\_EXPR@{GYOTO\_DEBUG\_EXPR}!GyotoDefs.h@{GyotoDefs.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_DEBUG\_EXPR}{GYOTO\_DEBUG\_EXPR}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+DEBUG\+\_\+\+EXPR(\begin{DoxyParamCaption}\item[{}]{a }\end{DoxyParamCaption})~\mbox{\hyperlink{_gyoto_defs_8h_a16e0e6bc14859601c47ca51a542913d6}{GYOTO\+\_\+\+DEBUG}} $<$$<$ \#a $<$$<$ \char`\"{}=\char`\"{} $<$$<$ a $<$$<$ std\+::endl}
+
+
+
+Output expression value in debug mode. 
+
+Output, only in debug mode both code and value that code yield. For instance\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{int} a=1, b=2;}
+\DoxyCodeLine{\mbox{\hyperlink{_gyoto_defs_8h_a2ddb771d38a2f9e435a6608126362cad}{GYOTO\_DEBUG\_EXPR}}(a+b);}
+
+\end{DoxyCode}
+ will essentially output, only in debug mode\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{DEBUG: <\textcolor{keyword}{function} signature>: a+b=3}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{_gyoto_defs_8h_ac3b7405d5a86c06581a8ab08d07e81cd}\label{_gyoto_defs_8h_ac3b7405d5a86c06581a8ab08d07e81cd}} 
+\index{GyotoDefs.h@{GyotoDefs.h}!GYOTO\_DEBUG\_THIS@{GYOTO\_DEBUG\_THIS}}
+\index{GYOTO\_DEBUG\_THIS@{GYOTO\_DEBUG\_THIS}!GyotoDefs.h@{GyotoDefs.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_DEBUG\_THIS}{GYOTO\_DEBUG\_THIS}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+DEBUG\+\_\+\+THIS~std\+::cerr $<$$<$ \char`\"{}DEBUG\+: \char`\"{} $<$$<$ \+\_\+\+\_\+\+PRETTY\+\_\+\+FUNCTION\+\_\+\+\_\+ $<$$<$ \char`\"{}\+: \char`\"{}}
+
+
+
+Display debug message (unconditionally) 
+
+Message is prepended with the word \char`\"{}\+DEBUG\+:\char`\"{} and the signature of the function.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_gyoto_defs_8h_a16e0e6bc14859601c47ca51a542913d6}{GYOTO\_DEBUG}} << \textcolor{stringliteral}{"{}message"{}} << endl;}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{_gyoto_defs_8h_ac1aa18d62f05f7d363e014a2d1cbab0b}\label{_gyoto_defs_8h_ac1aa18d62f05f7d363e014a2d1cbab0b}} 
+\index{GyotoDefs.h@{GyotoDefs.h}!GYOTO\_DEBUG\_THIS\_EXPR@{GYOTO\_DEBUG\_THIS\_EXPR}}
+\index{GYOTO\_DEBUG\_THIS\_EXPR@{GYOTO\_DEBUG\_THIS\_EXPR}!GyotoDefs.h@{GyotoDefs.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_DEBUG\_THIS\_EXPR}{GYOTO\_DEBUG\_THIS\_EXPR}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+DEBUG\+\_\+\+THIS\+\_\+\+EXPR(\begin{DoxyParamCaption}\item[{}]{a }\end{DoxyParamCaption})~\mbox{\hyperlink{_gyoto_defs_8h_ac3b7405d5a86c06581a8ab08d07e81cd}{GYOTO\+\_\+\+DEBUG\+\_\+\+THIS}} $<$$<$ \#a $<$$<$ \char`\"{}=\char`\"{} $<$$<$ a $<$$<$ std\+::endl}
+
+
+
+Output expression value unconditionally. 
+
+Output both code and value that code yield. For instance\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{int} a=1, b=2;}
+\DoxyCodeLine{\mbox{\hyperlink{_gyoto_defs_8h_ac1aa18d62f05f7d363e014a2d1cbab0b}{GYOTO\_DEBUG\_THIS\_EXPR}}(a+b);}
+
+\end{DoxyCode}
+ will essentially output\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{DEBUG: <\textcolor{keyword}{function} signature>: a+b=3}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{_gyoto_defs_8h_a24034c4799728d37b442f5b5e6f81979}\label{_gyoto_defs_8h_a24034c4799728d37b442f5b5e6f81979}} 
+\index{GyotoDefs.h@{GyotoDefs.h}!GYOTO\_DEBUG\_VERBOSITY@{GYOTO\_DEBUG\_VERBOSITY}}
+\index{GYOTO\_DEBUG\_VERBOSITY@{GYOTO\_DEBUG\_VERBOSITY}!GyotoDefs.h@{GyotoDefs.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_DEBUG\_VERBOSITY}{GYOTO\_DEBUG\_VERBOSITY}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+DEBUG\+\_\+\+VERBOSITY~3000}
+
+
+
+Maximum verbosity level. 
+
+In debug mode, all messages are displayed in addition to specific debug information.
+
+To display debug messages, check \mbox{\hyperlink{_gyoto_defs_8h_a03589b1138957c01ce58fcfffa1f4b15}{GYOTO\+\_\+\+DEBUG\+\_\+\+MODE}} or use \mbox{\hyperlink{_gyoto_defs_8h_a16e0e6bc14859601c47ca51a542913d6}{GYOTO\+\_\+\+DEBUG}} for instance. \mbox{\Hypertarget{_gyoto_defs_8h_ad6b16f11a8b1817d7158cc611a411b6a}\label{_gyoto_defs_8h_ad6b16f11a8b1817d7158cc611a411b6a}} 
+\index{GyotoDefs.h@{GyotoDefs.h}!GYOTO\_DEFAULT\_DELTA@{GYOTO\_DEFAULT\_DELTA}}
+\index{GYOTO\_DEFAULT\_DELTA@{GYOTO\_DEFAULT\_DELTA}!GyotoDefs.h@{GyotoDefs.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_DEFAULT\_DELTA}{GYOTO\_DEFAULT\_DELTA}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+DEFAULT\+\_\+\+DELTA~0.\+01}
+
+
+
+Default value for the initial step in the integration loop. 
+
+Since the step is (most of the time) adaptive, this default only has little influence, but sometimes, it matters. Also used in Scenery. \mbox{\Hypertarget{_gyoto_defs_8h_af5ac2008c7e20891105ed58e4df84c52}\label{_gyoto_defs_8h_af5ac2008c7e20891105ed58e4df84c52}} 
+\index{GyotoDefs.h@{GyotoDefs.h}!GYOTO\_DEFAULT\_DELTA\_MAX\_OVER\_R@{GYOTO\_DEFAULT\_DELTA\_MAX\_OVER\_R}}
+\index{GYOTO\_DEFAULT\_DELTA\_MAX\_OVER\_R@{GYOTO\_DEFAULT\_DELTA\_MAX\_OVER\_R}!GyotoDefs.h@{GyotoDefs.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_DEFAULT\_DELTA\_MAX\_OVER\_R}{GYOTO\_DEFAULT\_DELTA\_MAX\_OVER\_R}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+DEFAULT\+\_\+\+DELTA\+\_\+\+MAX\+\_\+\+OVER\+\_\+R~1.}
+
+
+
+Default value for delta\+\_\+max\+\_\+over\+\_\+r\+\_\+. 
+
+For investigations close to the event horizon, 0.\+5 is usually fine. If high accuracy is needed long after deflection (weak lensing), then this must be smaller. A good test is to look at a Min\+Distance map for a Fixed\+Star\+: it must be smooth. \mbox{\Hypertarget{_gyoto_defs_8h_a1abd13b21053ac250602cbee0464fc54}\label{_gyoto_defs_8h_a1abd13b21053ac250602cbee0464fc54}} 
+\index{GyotoDefs.h@{GyotoDefs.h}!GYOTO\_DEFAULT\_VERBOSITY@{GYOTO\_DEFAULT\_VERBOSITY}}
+\index{GYOTO\_DEFAULT\_VERBOSITY@{GYOTO\_DEFAULT\_VERBOSITY}!GyotoDefs.h@{GyotoDefs.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_DEFAULT\_VERBOSITY}{GYOTO\_DEFAULT\_VERBOSITY}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+DEFAULT\+\_\+\+VERBOSITY~5}
+
+
+
+Default verbosity level. 
+
+Normal messages are output to stdout if \mbox{\hyperlink{namespace_gyoto_ad49d57c2e3b086b864b2ba48ac06e68a}{Gyoto\+::verbose()}}{$\ge$}GYOTO\+\_\+\+DEFAULT\+\_\+\+VERBOSITY.
+
+Use \mbox{\hyperlink{_gyoto_defs_8h_a58d6fe083cd3c3b490c1f9c32e6c23b8}{GYOTO\+\_\+\+MSG}} to display messages at this level. \mbox{\Hypertarget{_gyoto_defs_8h_ac35a954b274a114a284bb4cef2c4badf}\label{_gyoto_defs_8h_ac35a954b274a114a284bb4cef2c4badf}} 
+\index{GyotoDefs.h@{GyotoDefs.h}!GYOTO\_ENDIF\_DEBUG@{GYOTO\_ENDIF\_DEBUG}}
+\index{GYOTO\_ENDIF\_DEBUG@{GYOTO\_ENDIF\_DEBUG}!GyotoDefs.h@{GyotoDefs.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_ENDIF\_DEBUG}{GYOTO\_ENDIF\_DEBUG}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+ENDIF\+\_\+\+DEBUG~\}}
+
+
+
+End debug-\/only block. 
+
+Code between \mbox{\hyperlink{_gyoto_defs_8h_a542a934cec6f3aaf955495e03880da09}{GYOTO\+\_\+\+IF\+\_\+\+DEBUG}} and GYOTO\+\_\+\+ENDIF\+\_\+\+DEBUG is only executed in debug mode. \mbox{\Hypertarget{_gyoto_defs_8h_a542a934cec6f3aaf955495e03880da09}\label{_gyoto_defs_8h_a542a934cec6f3aaf955495e03880da09}} 
+\index{GyotoDefs.h@{GyotoDefs.h}!GYOTO\_IF\_DEBUG@{GYOTO\_IF\_DEBUG}}
+\index{GYOTO\_IF\_DEBUG@{GYOTO\_IF\_DEBUG}!GyotoDefs.h@{GyotoDefs.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_IF\_DEBUG}{GYOTO\_IF\_DEBUG}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+IF\+\_\+\+DEBUG~if (\mbox{\hyperlink{_gyoto_defs_8h_a03589b1138957c01ce58fcfffa1f4b15}{GYOTO\+\_\+\+DEBUG\+\_\+\+MODE}}) \{}
+
+
+
+Start debug-\/only block. 
+
+Code between GYOTO\+\_\+\+IF\+\_\+\+DEBUG and \mbox{\hyperlink{_gyoto_defs_8h_ac35a954b274a114a284bb4cef2c4badf}{GYOTO\+\_\+\+ENDIF\+\_\+\+DEBUG}} is only executed in debug mode. \mbox{\Hypertarget{_gyoto_defs_8h_abc21a8b5b5f253787e04965564254a19}\label{_gyoto_defs_8h_abc21a8b5b5f253787e04965564254a19}} 
+\index{GyotoDefs.h@{GyotoDefs.h}!GYOTO\_INFO@{GYOTO\_INFO}}
+\index{GYOTO\_INFO@{GYOTO\_INFO}!GyotoDefs.h@{GyotoDefs.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_INFO}{GYOTO\_INFO}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+INFO~if (\mbox{\hyperlink{namespace_gyoto_ad49d57c2e3b086b864b2ba48ac06e68a}{Gyoto\+::verbose}}() $>$= \mbox{\hyperlink{_gyoto_defs_8h_ab873aa45805a3124456f9c5163281c8d}{GYOTO\+\_\+\+INFO\+\_\+\+VERBOSITY}}) std\+::cerr$<$$<$\char`\"{}INFO\+: \char`\"{}}
+
+
+
+Display informative message to stderr. 
+
+Message will be shown to the user only if \mbox{\hyperlink{namespace_gyoto_ad49d57c2e3b086b864b2ba48ac06e68a}{Gyoto\+::verbose()}} has been explicitely raised.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_gyoto_defs_8h_a58d6fe083cd3c3b490c1f9c32e6c23b8}{GYOTO\_MSG}} << \textcolor{stringliteral}{"{}Message"{}} << std::endl;}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{_gyoto_defs_8h_ab873aa45805a3124456f9c5163281c8d}\label{_gyoto_defs_8h_ab873aa45805a3124456f9c5163281c8d}} 
+\index{GyotoDefs.h@{GyotoDefs.h}!GYOTO\_INFO\_VERBOSITY@{GYOTO\_INFO\_VERBOSITY}}
+\index{GYOTO\_INFO\_VERBOSITY@{GYOTO\_INFO\_VERBOSITY}!GyotoDefs.h@{GyotoDefs.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_INFO\_VERBOSITY}{GYOTO\_INFO\_VERBOSITY}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+INFO\+\_\+\+VERBOSITY~10}
+
+
+
+Informative messages. 
+
+Informative messages are output to stderr if \mbox{\hyperlink{namespace_gyoto_ad49d57c2e3b086b864b2ba48ac06e68a}{Gyoto\+::verbose()}}{$\ge$}GYOTO\+\_\+\+INFO\+\_\+\+VERBOSITY.
+
+Use \mbox{\hyperlink{_gyoto_defs_8h_abc21a8b5b5f253787e04965564254a19}{GYOTO\+\_\+\+INFO}} to display messages at this level. \mbox{\Hypertarget{_gyoto_defs_8h_a58d6fe083cd3c3b490c1f9c32e6c23b8}\label{_gyoto_defs_8h_a58d6fe083cd3c3b490c1f9c32e6c23b8}} 
+\index{GyotoDefs.h@{GyotoDefs.h}!GYOTO\_MSG@{GYOTO\_MSG}}
+\index{GYOTO\_MSG@{GYOTO\_MSG}!GyotoDefs.h@{GyotoDefs.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_MSG}{GYOTO\_MSG}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+MSG~if (\mbox{\hyperlink{namespace_gyoto_ad49d57c2e3b086b864b2ba48ac06e68a}{Gyoto\+::verbose}}() $>$= \mbox{\hyperlink{_gyoto_defs_8h_a1abd13b21053ac250602cbee0464fc54}{GYOTO\+\_\+\+DEFAULT\+\_\+\+VERBOSITY}}) std\+::cout}
+
+
+
+Display normal message to stdout. 
+
+The message will by default be shown to the user. To be reserved to messages shown at most once per \mbox{\hyperlink{class_gyoto_1_1_screen}{Gyoto\+::\+Screen}} row.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_gyoto_defs_8h_a58d6fe083cd3c3b490c1f9c32e6c23b8}{GYOTO\_MSG}} << \textcolor{stringliteral}{"{}Message"{}} << std::endl;}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{_gyoto_defs_8h_ad62e944b7dc631494efd16c2ac6819fe}\label{_gyoto_defs_8h_ad62e944b7dc631494efd16c2ac6819fe}} 
+\index{GyotoDefs.h@{GyotoDefs.h}!GYOTO\_QUANTITY\_IMPACTCOORDS@{GYOTO\_QUANTITY\_IMPACTCOORDS}}
+\index{GYOTO\_QUANTITY\_IMPACTCOORDS@{GYOTO\_QUANTITY\_IMPACTCOORDS}!GyotoDefs.h@{GyotoDefs.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_QUANTITY\_IMPACTCOORDS}{GYOTO\_QUANTITY\_IMPACTCOORDS}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+QUANTITY\+\_\+\+IMPACTCOORDS~1$<$$<$5}
+
+
+
+Impact\+Coords\+: Astrobj and Photon 8-\/coordinates at emission. 
+
+A 16-\/element vector. See \mbox{\hyperlink{namespace_gyoto_a009cbd7f025ce417907a5344a15a1463}{Gyoto\+::\+Quantity\+\_\+t}}. \mbox{\Hypertarget{_gyoto_defs_8h_a2c50af72ab9adf3dac7947dc63ce1283}\label{_gyoto_defs_8h_a2c50af72ab9adf3dac7947dc63ce1283}} 
+\index{GyotoDefs.h@{GyotoDefs.h}!GYOTO\_QUANTITY\_MIN\_DISTANCE@{GYOTO\_QUANTITY\_MIN\_DISTANCE}}
+\index{GYOTO\_QUANTITY\_MIN\_DISTANCE@{GYOTO\_QUANTITY\_MIN\_DISTANCE}!GyotoDefs.h@{GyotoDefs.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_QUANTITY\_MIN\_DISTANCE}{GYOTO\_QUANTITY\_MIN\_DISTANCE}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+QUANTITY\+\_\+\+MIN\+\_\+\+DISTANCE~1$<$$<$2}
+
+
+
+Min\+Distance\+: Behaves like minimal distance between Photon and Astrobj. 
+
+Not always exactly a distance, though. \mbox{\Hypertarget{_gyoto_defs_8h_aebb164c8e8f4fb86d413d574cce455a7}\label{_gyoto_defs_8h_aebb164c8e8f4fb86d413d574cce455a7}} 
+\index{GyotoDefs.h@{GyotoDefs.h}!GYOTO\_QUIET@{GYOTO\_QUIET}}
+\index{GYOTO\_QUIET@{GYOTO\_QUIET}!GyotoDefs.h@{GyotoDefs.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_QUIET}{GYOTO\_QUIET}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+QUIET~if (\mbox{\hyperlink{namespace_gyoto_ad49d57c2e3b086b864b2ba48ac06e68a}{Gyoto\+::verbose}}() $>$= \mbox{\hyperlink{_gyoto_defs_8h_a5f89b25cb41ccbc02185e9341c5a1cb2}{GYOTO\+\_\+\+QUIET\+\_\+\+VERBOSITY}}) std\+::cout}
+
+
+
+Display a message to stdout even in quiet mode. 
+
+Only very few messages may be output to stdout at this level. This should be reserved to messages shown at most once in a run.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_gyoto_defs_8h_aebb164c8e8f4fb86d413d574cce455a7}{GYOTO\_QUIET}} << \textcolor{stringliteral}{"{}Important message displayed once"{}} << std::endl;}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{_gyoto_defs_8h_a5f89b25cb41ccbc02185e9341c5a1cb2}\label{_gyoto_defs_8h_a5f89b25cb41ccbc02185e9341c5a1cb2}} 
+\index{GyotoDefs.h@{GyotoDefs.h}!GYOTO\_QUIET\_VERBOSITY@{GYOTO\_QUIET\_VERBOSITY}}
+\index{GYOTO\_QUIET\_VERBOSITY@{GYOTO\_QUIET\_VERBOSITY}!GyotoDefs.h@{GyotoDefs.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_QUIET\_VERBOSITY}{GYOTO\_QUIET\_VERBOSITY}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+QUIET\+\_\+\+VERBOSITY~1}
+
+
+
+Quiet \mbox{\hyperlink{namespace_gyoto_a92c5f4f1cf3a8d67fd199331af40ac39}{Gyoto\+::\+Verbosity\+\_\+t}}. 
+
+Only very few messages may be output to stdout at this level.
+
+Use \mbox{\hyperlink{_gyoto_defs_8h_aebb164c8e8f4fb86d413d574cce455a7}{GYOTO\+\_\+\+QUIET}} to display messages at this level. \mbox{\Hypertarget{_gyoto_defs_8h_a718377bc0c336982042326bbc4ce6dc8}\label{_gyoto_defs_8h_a718377bc0c336982042326bbc4ce6dc8}} 
+\index{GyotoDefs.h@{GyotoDefs.h}!GYOTO\_SEVERE@{GYOTO\_SEVERE}}
+\index{GYOTO\_SEVERE@{GYOTO\_SEVERE}!GyotoDefs.h@{GyotoDefs.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_SEVERE}{GYOTO\_SEVERE}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+SEVERE~if(\mbox{\hyperlink{namespace_gyoto_ad49d57c2e3b086b864b2ba48ac06e68a}{Gyoto\+::verbose}}()$>$=\mbox{\hyperlink{_gyoto_defs_8h_a954d0ca88bf4207a70ab68b7985f3855}{GYOTO\+\_\+\+SEVERE\+\_\+\+VERBOSITY}}) std\+::cerr$<$$<$\char`\"{}SEVERE\+: \char`\"{}}
+
+
+
+Display a severe level message to stderr. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_gyoto_defs_8h_a718377bc0c336982042326bbc4ce6dc8}{GYOTO\_SEVERE}} << \textcolor{stringliteral}{"{}Important warning"{}} << std::endl;}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{_gyoto_defs_8h_a954d0ca88bf4207a70ab68b7985f3855}\label{_gyoto_defs_8h_a954d0ca88bf4207a70ab68b7985f3855}} 
+\index{GyotoDefs.h@{GyotoDefs.h}!GYOTO\_SEVERE\_VERBOSITY@{GYOTO\_SEVERE\_VERBOSITY}}
+\index{GYOTO\_SEVERE\_VERBOSITY@{GYOTO\_SEVERE\_VERBOSITY}!GyotoDefs.h@{GyotoDefs.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_SEVERE\_VERBOSITY}{GYOTO\_SEVERE\_VERBOSITY}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+SEVERE\+\_\+\+VERBOSITY~3}
+
+
+
+Severe warnings. 
+
+Severe warning messages are output to stderr if \mbox{\hyperlink{namespace_gyoto_ad49d57c2e3b086b864b2ba48ac06e68a}{Gyoto\+::verbose()}}{$\ge$}GYOTO\+\_\+\+SEVERE\+\_\+\+VERBOSITY.
+
+Use \mbox{\hyperlink{_gyoto_defs_8h_a718377bc0c336982042326bbc4ce6dc8}{GYOTO\+\_\+\+SEVERE}} to display messages at this level. \mbox{\Hypertarget{_gyoto_defs_8h_aa8748e811a2870fae06b0cef44e2dfae}\label{_gyoto_defs_8h_aa8748e811a2870fae06b0cef44e2dfae}} 
+\index{GyotoDefs.h@{GyotoDefs.h}!GYOTO\_T\_TOL@{GYOTO\_T\_TOL}}
+\index{GYOTO\_T\_TOL@{GYOTO\_T\_TOL}!GyotoDefs.h@{GyotoDefs.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_T\_TOL}{GYOTO\_T\_TOL}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+T\+\_\+\+TOL~1e-\/4}
+
+
+
+Precision on the determination of a date. 
+
+E.\+g. in \mbox{\hyperlink{class_gyoto_1_1_photon_ada0cf1130b95e983a30b575a51a98c0b}{Gyoto\+::\+Photon\+::find\+Min()}}, \mbox{\hyperlink{class_gyoto_1_1_photon_ac2b9fc31ec0778eefc38c5499db9d508}{Gyoto\+::\+Photon\+::find\+Value()}}. \mbox{\Hypertarget{_gyoto_defs_8h_a90d3d5dda66fee91cd3bb8f9a76d4f26}\label{_gyoto_defs_8h_a90d3d5dda66fee91cd3bb8f9a76d4f26}} 
+\index{GyotoDefs.h@{GyotoDefs.h}!GYOTO\_WARNING@{GYOTO\_WARNING}}
+\index{GYOTO\_WARNING@{GYOTO\_WARNING}!GyotoDefs.h@{GyotoDefs.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_WARNING}{GYOTO\_WARNING}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+WARNING~if(\mbox{\hyperlink{namespace_gyoto_ad49d57c2e3b086b864b2ba48ac06e68a}{Gyoto\+::verbose}}()$>$=\mbox{\hyperlink{_gyoto_defs_8h_a954d0ca88bf4207a70ab68b7985f3855}{GYOTO\+\_\+\+SEVERE\+\_\+\+VERBOSITY}}) std\+::cerr$<$$<$\char`\"{}WARNING\+: \char`\"{}}
+
+
+
+Display a warning level message to stderr. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_gyoto_defs_8h_a90d3d5dda66fee91cd3bb8f9a76d4f26}{GYOTO\_WARNING}} << \textcolor{stringliteral}{"{}Warning"{}} << std::endl;}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{_gyoto_defs_8h_ab27bc104166b7d2c876cc2cbcf2d5f18}\label{_gyoto_defs_8h_ab27bc104166b7d2c876cc2cbcf2d5f18}} 
+\index{GyotoDefs.h@{GyotoDefs.h}!GYOTO\_WARNING\_UDUNITS@{GYOTO\_WARNING\_UDUNITS}}
+\index{GYOTO\_WARNING\_UDUNITS@{GYOTO\_WARNING\_UDUNITS}!GyotoDefs.h@{GyotoDefs.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_WARNING\_UDUNITS}{GYOTO\_WARNING\_UDUNITS}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+WARNING\+\_\+\+UDUNITS(\begin{DoxyParamCaption}\item[{}]{from,  }\item[{}]{to }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \mbox{\hyperlink{_gyoto_defs_8h_a90d3d5dda66fee91cd3bb8f9a76d4f26}{GYOTO\_WARNING}} << \textcolor{stringliteral}{"{}unit ignored (trying to convert from \(\backslash\)"{}"{}} << from \(\backslash\)}
+\DoxyCodeLine{                << \textcolor{stringliteral}{"{}\(\backslash\)"{} to "{}}                                          \(\backslash\)}
+\DoxyCodeLine{                << to \(\backslash\)}
+\DoxyCodeLine{                << \textcolor{stringliteral}{"{}\(\backslash\)"{}), you may have more chance recompiling Gyoto with -\/-\/with-\/udunits\(\backslash\)n"{}}}
+
+\end{DoxyCode}
+
+
+Unit ignored because libudunits2 was disabled. 
+
+Use this warning when a conversion has been dropped due to \mbox{\hyperlink{_gyoto_config_8h_a01033870eca4b44bfc589a1b49aebd3d}{HAVE\+\_\+\+UDUNITS}} being undefined.
+
+
+\begin{DoxyParams}{Parameters}
+{\em from} & From unit. \\
+\hline
+{\em to} & To unit. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_gyoto_defs_8h_a1c71dc260ed475aa9fc88adb2806121d}\label{_gyoto_defs_8h_a1c71dc260ed475aa9fc88adb2806121d}} 
+\index{GyotoDefs.h@{GyotoDefs.h}!GYOTO\_WARNING\_VERBOSITY@{GYOTO\_WARNING\_VERBOSITY}}
+\index{GYOTO\_WARNING\_VERBOSITY@{GYOTO\_WARNING\_VERBOSITY}!GyotoDefs.h@{GyotoDefs.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_WARNING\_VERBOSITY}{GYOTO\_WARNING\_VERBOSITY}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+WARNING\+\_\+\+VERBOSITY~\mbox{\hyperlink{_gyoto_defs_8h_a954d0ca88bf4207a70ab68b7985f3855}{GYOTO\+\_\+\+SEVERE\+\_\+\+VERBOSITY}}}
+
+
+
+Warnings. 
+
+Warning messages are output to stderr if \mbox{\hyperlink{namespace_gyoto_ad49d57c2e3b086b864b2ba48ac06e68a}{Gyoto\+::verbose()}}{$\ge$}GYOTO\+\_\+\+WARNING\+\_\+\+VERBOSITY.
+
+Use \mbox{\hyperlink{_gyoto_defs_8h_a90d3d5dda66fee91cd3bb8f9a76d4f26}{GYOTO\+\_\+\+WARNING}} to display messages at this level. \mbox{\Hypertarget{_gyoto_defs_8h_a250431c050a760c710e6cbde5939312b}\label{_gyoto_defs_8h_a250431c050a760c710e6cbde5939312b}} 
+\index{GyotoDefs.h@{GyotoDefs.h}!sincos@{sincos}}
+\index{sincos@{sincos}!GyotoDefs.h@{GyotoDefs.h}}
+\doxysubsubsection{\texorpdfstring{sincos}{sincos}}
+{\footnotesize\ttfamily \#define sincos(\begin{DoxyParamCaption}\item[{}]{t,  }\item[{}]{s,  }\item[{}]{c }\end{DoxyParamCaption})~(undefined)}
+
+
+
+Replacement for GNU extension sincos. 
+
+If \mbox{\hyperlink{_gyoto_config_8h_afdb5a6cfe5d482d5392535414934ab19}{HAVE\+\_\+\+SINCOS}} is undefined, \mbox{\hyperlink{namespace_gyoto}{Gyoto}} provides a trivial implementation. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em t} & Angle in radian; \\
+\hline
+\mbox{\texttt{ out}}  & {\em s} & Adress where sin(t) should be stored; \\
+\hline
+\mbox{\texttt{ out}}  & {\em c} & Adress where cos(t) should be stored. \\
+\hline
+\end{DoxyParams}

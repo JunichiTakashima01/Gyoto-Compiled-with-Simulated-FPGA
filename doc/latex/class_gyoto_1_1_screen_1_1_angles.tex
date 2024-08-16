@@ -1,0 +1,86 @@
+\hypertarget{class_gyoto_1_1_screen_1_1_angles}{}\doxysection{Gyoto\+::Screen\+::Angles Class Reference}
+\label{class_gyoto_1_1_screen_1_1_angles}\index{Gyoto::Screen::Angles@{Gyoto::Screen::Angles}}
+
+
+1D specifier for an arbitrary angle coordinate set.  
+
+
+
+
+{\ttfamily \#include $<$Gyoto\+Screen.\+h$>$}
+
+Inheritance diagram for Gyoto\+::Screen\+::Angles\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_gyoto_1_1_screen_1_1_angles}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_1_1_angles_ac43294914422bef397928cdadb468d61}\label{class_gyoto_1_1_screen_1_1_angles_ac43294914422bef397928cdadb468d61}} 
+{\bfseries Angles} (double const $\ast$const buf, \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} sz)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_1_1_angles_a4ba9094d47c7543b6872e19a72a59725}\label{class_gyoto_1_1_screen_1_1_angles_a4ba9094d47c7543b6872e19a72a59725}} 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_angles_a4ba9094d47c7543b6872e19a72a59725}{begin}} ()
+\begin{DoxyCompactList}\small\item\em Reset specifier to point to the first value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_1_1_angles_afce50c5dc440e6ff34ad0d393873fd68}\label{class_gyoto_1_1_screen_1_1_angles_afce50c5dc440e6ff34ad0d393873fd68}} 
+bool \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_angles_afce50c5dc440e6ff34ad0d393873fd68}{valid}} ()
+\begin{DoxyCompactList}\small\item\em True if pointing to something, false if end has been reached. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_1_1_angles_ae80abe1739bbe7b5e1e9ef133ddc9635}\label{class_gyoto_1_1_screen_1_1_angles_ae80abe1739bbe7b5e1e9ef133ddc9635}} 
+\mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_angles_ae80abe1739bbe7b5e1e9ef133ddc9635}{size}} ()
+\begin{DoxyCompactList}\small\item\em Number of values in this container. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_1_1_angles_af14f72b3439b06de89e3edd4b3e2fba3}\label{class_gyoto_1_1_screen_1_1_angles_af14f72b3439b06de89e3edd4b3e2fba3}} 
+\mbox{\hyperlink{class_gyoto_1_1_screen_1_1_coord1d_set}{Coord1d\+Set}} \& \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_angles_af14f72b3439b06de89e3edd4b3e2fba3}{operator++}} ()
+\begin{DoxyCompactList}\small\item\em Increment iterator (point to next value) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_1_1_angles_a8a744ee3545d1c7c06f1c9e91f5d983c}\label{class_gyoto_1_1_screen_1_1_angles_a8a744ee3545d1c7c06f1c9e91f5d983c}} 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_angles_a8a744ee3545d1c7c06f1c9e91f5d983c}{angle}} () const
+\begin{DoxyCompactList}\small\item\em Get double value currently pointed to. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_angles_a65844515b23df98cb7dac287faa6e1d6}{index}} () const
+\begin{DoxyCompactList}\small\item\em Get index of value currently pointed to. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_1_1_coord1d_set_afa9b992fd12a2229ed6144184a6806df}\label{class_gyoto_1_1_screen_1_1_coord1d_set_afa9b992fd12a2229ed6144184a6806df}} 
+virtual \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_coord1d_set_afa9b992fd12a2229ed6144184a6806df}{operator$\ast$}} () const
+\begin{DoxyCompactList}\small\item\em Get size\+\_\+t value currently pointed to. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_1_1_coord1d_set_a1726f8ee2c39e25b3476b9e8cc257e1a}\label{class_gyoto_1_1_screen_1_1_coord1d_set_a1726f8ee2c39e25b3476b9e8cc257e1a}} 
+const \mbox{\hyperlink{class_gyoto_1_1_screen_a3d039508310efe3dcbf50204a3619b2f}{Coord\+Type\+\_\+e}} \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_coord1d_set_a1726f8ee2c39e25b3476b9e8cc257e1a}{kind}}
+\begin{DoxyCompactList}\small\item\em Whether this specifier represents angles or pixels. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_1_1_angles_a45eb336d29b98365d1f72b9922d89c3d}\label{class_gyoto_1_1_screen_1_1_angles_a45eb336d29b98365d1f72b9922d89c3d}} 
+double $\ast$ {\bfseries buf\+\_\+}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_1_1_angles_a92a3522987c741d4c357f4d5f42a392f}\label{class_gyoto_1_1_screen_1_1_angles_a92a3522987c741d4c357f4d5f42a392f}} 
+\mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} const {\bfseries sz\+\_\+}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_1_1_angles_ad823cdcb273339b9d7a2c12b299f1c56}\label{class_gyoto_1_1_screen_1_1_angles_ad823cdcb273339b9d7a2c12b299f1c56}} 
+\mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} {\bfseries i\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+1D specifier for an arbitrary angle coordinate set. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_screen_1_1_angles_a65844515b23df98cb7dac287faa6e1d6}\label{class_gyoto_1_1_screen_1_1_angles_a65844515b23df98cb7dac287faa6e1d6}} 
+\index{Gyoto::Screen::Angles@{Gyoto::Screen::Angles}!index@{index}}
+\index{index@{index}!Gyoto::Screen::Angles@{Gyoto::Screen::Angles}}
+\doxysubsubsection{\texorpdfstring{index()}{index()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} Gyoto\+::\+Screen\+::\+Angles\+::index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get index of value currently pointed to. 
+
+Starts at 0 and is implemented each time operator++ is called. Depending on the implementation, this may be a real index or computed on demand. 
+
+Implements \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_coord1d_set_a4788421884ca4bbc0914910956b7f19a}{Gyoto\+::\+Screen\+::\+Coord1d\+Set}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_gyoto_screen_8h}{Gyoto\+Screen.\+h}}\end{DoxyCompactItemize}

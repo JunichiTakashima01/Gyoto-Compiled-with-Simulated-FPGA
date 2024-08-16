@@ -1,0 +1,1525 @@
+\hypertarget{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk}{}\doxysection{Gyoto\+::Astrobj\+::Python\+::Thin\+Disk Class Reference}
+\label{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk}\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+
+
+Coding a \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk}{Gyoto\+::\+Astrobj\+::\+Thin\+Disk}} in \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_1_1_python}{Python}}.  
+
+
+
+
+{\ttfamily \#include $<$Gyoto\+Python.\+h$>$}
+
+Inheritance diagram for Gyoto\+::Astrobj\+::Python\+::Thin\+Disk\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.131991cm]{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_smart_pointee}{Gyoto\+::\+Smart\+Pointee}} $>$ \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}{Subcontractor\+\_\+t}}(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$, std\+::vector$<$ std\+::string $>$ const \&)
+\begin{DoxyCompactList}\small\item\em A subcontractor builds an object upon order from the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const  $\ast$ \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a288b2b142bf3a0445447fa7a52c14e51}{get\+Properties}} () const
+\begin{DoxyCompactList}\small\item\em Get list of properties. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a0eeb4894daa6460f71dd63af4fdd122e}\label{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a0eeb4894daa6460f71dd63af4fdd122e}} 
+{\bfseries Thin\+Disk} (const \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk}{Thin\+Disk}} \&)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a22240f313ecdb0ba2d34962b3b611274}\label{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a22240f313ecdb0ba2d34962b3b611274}} 
+\mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a22240f313ecdb0ba2d34962b3b611274}{$\sim$\+Thin\+Disk}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk}{Thin\+Disk}} $\ast$ \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a9c3053602725f343b0b3132c9fc5ce2d}{clone}} () const
+\begin{DoxyCompactList}\small\item\em Cloner. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a7a34b44aa0fe91618ecdaadd87438d0b}{emission}} (double nu\+\_\+em, double dsem, state\+\_\+t const \&coord\+\_\+ph, double const coord\+\_\+obj\mbox{[}8\mbox{]}=NULL) const
+\begin{DoxyCompactList}\small\item\em Specific intensity I\textsubscript{{$\nu$}} \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a229272a0eec6c7eaeff905a4f4190e2e}{emission}} (double Inu\mbox{[}$\,$\mbox{]}, double const nu\+\_\+em\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} nbnu, double dsem, state\+\_\+t const \&coord\+\_\+ph, double const coord\+\_\+obj\mbox{[}8\mbox{]}=NULL) const
+\begin{DoxyCompactList}\small\item\em Specific intensity I\textsubscript{{$\nu$}} for several values of {$\nu$}\textsubscript{em} \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a6add4c7014e29c3049d1f3b53b700922}{integrate\+Emission}} (double nu1, double nu2, double dsem, state\+\_\+t const \&c\+\_\+ph, double const c\+\_\+obj\mbox{[}8\mbox{]}=NULL) const
+\begin{DoxyCompactList}\small\item\em {$\int$}\textsubscript{{$\nu$}\textsubscript{1}}\textsuperscript{{$\nu$}\textsubscript{2}} I\textsubscript{{$\nu$}} d{$\nu$} (or j\textsubscript{{$\nu$}}) \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_ae7fe80444da7bea77b2cef62ffaaf096}{integrate\+Emission}} (double $\ast$I, double const $\ast$boundaries, \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} const $\ast$chaninds, \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} nbnu, double dsem, state\+\_\+t const \&cph, double const $\ast$co) const
+\begin{DoxyCompactList}\small\item\em {$\int$}\textsubscript{{$\nu$}\textsubscript{1}}\textsuperscript{{$\nu$}\textsubscript{2}} I\textsubscript{{$\nu$}} d{$\nu$} (or j\textsubscript{{$\nu$}}) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_afd4615cb22b1e737069e5b11cfa68a51}\label{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_afd4615cb22b1e737069e5b11cfa68a51}} 
+virtual double {\bfseries transmission} (double nuem, double dsem, state\+\_\+t const \&cph, double const $\ast$co) const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_add1a39b0f127d9bb75ec9dcb3020f5f0}\label{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_add1a39b0f127d9bb75ec9dcb3020f5f0}} 
+virtual double {\bfseries operator()} (double const coord\mbox{[}4\mbox{]})
+\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a3f842d368a3700a1db3b2418239ed40d}{get\+Velocity}} (double const pos\mbox{[}4\mbox{]}, double vel\mbox{[}4\mbox{]})
+\begin{DoxyCompactList}\small\item\em Get fluid 4-\/velocity at point. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_af7d2cfd1dc5f6ba3b8e033c7508b93de}\label{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_af7d2cfd1dc5f6ba3b8e033c7508b93de}} 
+virtual std\+::string \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_af7d2cfd1dc5f6ba3b8e033c7508b93de}{module}} () const
+\begin{DoxyCompactList}\small\item\em Return module\+\_\+. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a6356c48534d038f0aac4f5dd50a9ca7b}{module}} (const std\+::string \&)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a7f6558bf7597b6e6c8f1bd198895b077}{module\+\_\+}} and import the \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_1_1_python}{Python}} module. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a3cd84a0bf6a468b0bf5409b40bf70705}\label{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a3cd84a0bf6a468b0bf5409b40bf70705}} 
+virtual std\+::string \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a3cd84a0bf6a468b0bf5409b40bf70705}{inline\+Module}} () const
+\begin{DoxyCompactList}\small\item\em Return inline\+\_\+module\+\_\+. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a5e0d327f7d7d2718fdd66ce7b41d7856}{inline\+Module}} (const std\+::string \&)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_ae0c6e2e9b883adaa081e7a3b402d3bb2}{inline\+\_\+module\+\_\+}} and import the \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_1_1_python}{Python}} module. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a987a360677d0f4f8ca16bb606cbad1f4}\label{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a987a360677d0f4f8ca16bb606cbad1f4}} 
+virtual std\+::string \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a987a360677d0f4f8ca16bb606cbad1f4}{klass}} () const
+\begin{DoxyCompactList}\small\item\em Retrieve \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}{class\+\_\+}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a2e9e943c6b9c78d08ec6458e68609dce}{klass}} (const std\+::string \&)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}{class\+\_\+}} and instantiate the \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_1_1_python}{Python}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_ad3fd7c2bb76de035b1ba37fad34e9d5b}\label{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_ad3fd7c2bb76de035b1ba37fad34e9d5b}} 
+virtual std\+::vector$<$ double $>$ \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_ad3fd7c2bb76de035b1ba37fad34e9d5b}{parameters}} () const
+\begin{DoxyCompactList}\small\item\em Retrieve \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_aa033dfe530617afb7c7a27e6536bb88c}{parameters\+\_\+}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a581acf6668db9476d28fe60927be3d8d}{parameters}} (const std\+::vector$<$ double $>$ \&)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_aa033dfe530617afb7c7a27e6536bb88c}{parameters\+\_\+}} and send them to \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_aab2145b455aa9848024b643d06016b35}{p\+Instance\+\_\+}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_object_ad4aff23562b0ae6a36e05741eb631c82}\label{class_gyoto_1_1_python_1_1_object_ad4aff23562b0ae6a36e05741eb631c82}} 
+virtual void {\bfseries set} (std\+::string const \&key, \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} val)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_object_ab3aa615a6b576b663f9ee524831280c8}\label{class_gyoto_1_1_python_1_1_object_ab3aa615a6b576b663f9ee524831280c8}} 
+virtual void {\bfseries set} (\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&p, \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} val)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_object_ab601136e5837e6bd99c4bf3b0beee718}\label{class_gyoto_1_1_python_1_1_object_ab601136e5837e6bd99c4bf3b0beee718}} 
+virtual void {\bfseries set} (\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&p, \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} val, std\+::string const \&unit)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_abed03e16a8013699534b802e06751ef8}\label{class_gyoto_1_1_object_abed03e16a8013699534b802e06751ef8}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_abed03e16a8013699534b802e06751ef8}{set}} (std\+::string const \&pname, \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} val, std\+::string const \&unit)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} (expressed in unit) of a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_object_aa91e924b2c7c3e58764f8aee6b174926}\label{class_gyoto_1_1_python_1_1_object_aa91e924b2c7c3e58764f8aee6b174926}} 
+virtual \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} {\bfseries get} (std\+::string const \&key) const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_object_a042952734a5d4bd00b73a4c03cc23af4}\label{class_gyoto_1_1_python_1_1_object_a042952734a5d4bd00b73a4c03cc23af4}} 
+\mbox{\hyperlink{class_gyoto_1_1_value}{Value}} {\bfseries get} (\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&p, std\+::string const \&unit) const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_object_abeaf3c1bd632fda3a48118d30105c871}\label{class_gyoto_1_1_python_1_1_object_abeaf3c1bd632fda3a48118d30105c871}} 
+\mbox{\hyperlink{class_gyoto_1_1_value}{Value}} {\bfseries get} (\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&p) const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_a99544282b6c383b8570a5bc51bed1ecf}\label{class_gyoto_1_1_object_a99544282b6c383b8570a5bc51bed1ecf}} 
+virtual \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} \mbox{\hyperlink{class_gyoto_1_1_object_a99544282b6c383b8570a5bc51bed1ecf}{get}} (std\+::string const \&pname, std\+::string const \&unit) const
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} of a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}, converted to unit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_object_ab4fd3efea9c85b8f8c1aaafa2597dfa4}\label{class_gyoto_1_1_python_1_1_object_ab4fd3efea9c85b8f8c1aaafa2597dfa4}} 
+virtual int {\bfseries set\+Parameter} (std\+::string name, std\+::string content, std\+::string unit)
+\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_a43fe041144add66155668ca88a99fd98}{set\+Parameter}} (\mbox{\hyperlink{class_gyoto_1_1_property}{Gyoto\+::\+Property}} const \&p, std\+::string const \&name, std\+::string const \&content, std\+::string const \&unit)
+\begin{DoxyCompactList}\small\item\em Set parameter by \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} (and name) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_object_a7524ab9c2d51d32f7de7177df5b544a1}\label{class_gyoto_1_1_python_1_1_object_a7524ab9c2d51d32f7de7177df5b544a1}} 
+virtual void {\bfseries fill\+Element} (\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$fmp) const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_object_a84ea2cab6209f1ed0de3a73223c6a5e8}\label{class_gyoto_1_1_python_1_1_object_a84ea2cab6209f1ed0de3a73223c6a5e8}} 
+void {\bfseries set\+Parameters} (\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$fmp)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_thin_disk_a39682f71a293fc667fabbed4ba0d4539}\label{class_gyoto_1_1_astrobj_1_1_thin_disk_a39682f71a293fc667fabbed4ba0d4539}} 
+virtual double \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_a39682f71a293fc667fabbed4ba0d4539}{inner\+Radius}} () const
+\begin{DoxyCompactList}\small\item\em Get rin\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_thin_disk_a42026c48982c6fba67d096eadbcc6a2e}\label{class_gyoto_1_1_astrobj_1_1_thin_disk_a42026c48982c6fba67d096eadbcc6a2e}} 
+virtual double \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_a42026c48982c6fba67d096eadbcc6a2e}{inner\+Radius}} (std\+::string const \&) const
+\begin{DoxyCompactList}\small\item\em Get rin\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_thin_disk_a39fa7eb2a7f92cc08649bc2df22b5447}\label{class_gyoto_1_1_astrobj_1_1_thin_disk_a39fa7eb2a7f92cc08649bc2df22b5447}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_a39fa7eb2a7f92cc08649bc2df22b5447}{inner\+Radius}} (double)
+\begin{DoxyCompactList}\small\item\em Set rin\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_thin_disk_a6e507e84a324a30723c49263520ee642}\label{class_gyoto_1_1_astrobj_1_1_thin_disk_a6e507e84a324a30723c49263520ee642}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_a6e507e84a324a30723c49263520ee642}{inner\+Radius}} (double, std\+::string const \&)
+\begin{DoxyCompactList}\small\item\em Set rin\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_thin_disk_a731919484f8639d505f846b23e743166}\label{class_gyoto_1_1_astrobj_1_1_thin_disk_a731919484f8639d505f846b23e743166}} 
+virtual double \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_a731919484f8639d505f846b23e743166}{outer\+Radius}} () const
+\begin{DoxyCompactList}\small\item\em Get rout\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_thin_disk_ad5f600164766e546a1f2a8ae54007526}\label{class_gyoto_1_1_astrobj_1_1_thin_disk_ad5f600164766e546a1f2a8ae54007526}} 
+virtual double \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_ad5f600164766e546a1f2a8ae54007526}{outer\+Radius}} (std\+::string const \&) const
+\begin{DoxyCompactList}\small\item\em Get rout\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_thin_disk_aba6b80f33eb4cd3a7c00efba346263c0}\label{class_gyoto_1_1_astrobj_1_1_thin_disk_aba6b80f33eb4cd3a7c00efba346263c0}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_aba6b80f33eb4cd3a7c00efba346263c0}{outer\+Radius}} (double)
+\begin{DoxyCompactList}\small\item\em Set rout\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_thin_disk_afb7b3b36178438d0a2c13082265243c2}\label{class_gyoto_1_1_astrobj_1_1_thin_disk_afb7b3b36178438d0a2c13082265243c2}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_afb7b3b36178438d0a2c13082265243c2}{outer\+Radius}} (double, std\+::string const \&)
+\begin{DoxyCompactList}\small\item\em Set rout\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_thin_disk_aa43737ceaa58ea6a65ec238ee4bf19ac}\label{class_gyoto_1_1_astrobj_1_1_thin_disk_aa43737ceaa58ea6a65ec238ee4bf19ac}} 
+virtual double \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_aa43737ceaa58ea6a65ec238ee4bf19ac}{thickness}} () const
+\begin{DoxyCompactList}\small\item\em Get thickness\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_thin_disk_a739d1e7593e2625a06dab0e62bbe213c}\label{class_gyoto_1_1_astrobj_1_1_thin_disk_a739d1e7593e2625a06dab0e62bbe213c}} 
+virtual double \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_a739d1e7593e2625a06dab0e62bbe213c}{thickness}} (std\+::string const \&) const
+\begin{DoxyCompactList}\small\item\em Get thickness\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_thin_disk_a2facb3ffb69b287a8670c420ad679f65}\label{class_gyoto_1_1_astrobj_1_1_thin_disk_a2facb3ffb69b287a8670c420ad679f65}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_a2facb3ffb69b287a8670c420ad679f65}{thickness}} (double)
+\begin{DoxyCompactList}\small\item\em Set thickness\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_thin_disk_a7a7b025f3498cbc63b070ed39e0798c2}\label{class_gyoto_1_1_astrobj_1_1_thin_disk_a7a7b025f3498cbc63b070ed39e0798c2}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_a7a7b025f3498cbc63b070ed39e0798c2}{thickness}} (double, std\+::string const \&)
+\begin{DoxyCompactList}\small\item\em Set thickness\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_thin_disk_a2fa89ef6dd143fe1cba022aacbd693be}\label{class_gyoto_1_1_astrobj_1_1_thin_disk_a2fa89ef6dd143fe1cba022aacbd693be}} 
+virtual int \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_a2fa89ef6dd143fe1cba022aacbd693be}{dir}} () const
+\begin{DoxyCompactList}\small\item\em Get dir\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_thin_disk_af5a68e241aaa4ce948774bcbdf902874}\label{class_gyoto_1_1_astrobj_1_1_thin_disk_af5a68e241aaa4ce948774bcbdf902874}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_af5a68e241aaa4ce948774bcbdf902874}{dir}} (int)
+\begin{DoxyCompactList}\small\item\em Set dir\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_thin_disk_a0a98843d1c1911a3f7d637f9bae9b125}\label{class_gyoto_1_1_astrobj_1_1_thin_disk_a0a98843d1c1911a3f7d637f9bae9b125}} 
+virtual bool {\bfseries corotating} () const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_thin_disk_a65ab6ebca80fb1b25baa74b7d51958ea}\label{class_gyoto_1_1_astrobj_1_1_thin_disk_a65ab6ebca80fb1b25baa74b7d51958ea}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_a65ab6ebca80fb1b25baa74b7d51958ea}{corotating}} (bool t)
+\begin{DoxyCompactList}\small\item\em Get dir\+\_\+==1. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_a33dfa12c0c261cdf6035174b18162570}{velocity\+Kind}} () const
+\begin{DoxyCompactList}\small\item\em Set dir\+\_\+=t?1\+:-\/1. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_thin_disk_aae104e0f341ef6ba87701a5d441b56e4}\label{class_gyoto_1_1_astrobj_1_1_thin_disk_aae104e0f341ef6ba87701a5d441b56e4}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_aae104e0f341ef6ba87701a5d441b56e4}{velocity\+Kind}} (std\+::string const \&)
+\begin{DoxyCompactList}\small\item\em Set Velocity\+Kind. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_a312fb0f3764200c1037564f7fc982e0a}{operator()}} (double const coord\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em theta-\/pi/2 or z \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_thin_disk_a7c5b00c52b1a6ecc64bb538286390a68}\label{class_gyoto_1_1_astrobj_1_1_thin_disk_a7c5b00c52b1a6ecc64bb538286390a68}} 
+virtual double \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_a7c5b00c52b1a6ecc64bb538286390a68}{projected\+Radius}} (double const coord\mbox{[}$\,$\mbox{]}) const
+\begin{DoxyCompactList}\small\item\em Projected radius of position coord on the equatorial plane. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_thin_disk_aa98f508adae7a1692988111a9d2f250b}\label{class_gyoto_1_1_astrobj_1_1_thin_disk_aa98f508adae7a1692988111a9d2f250b}} 
+virtual double \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_aa98f508adae7a1692988111a9d2f250b}{spherical\+Phi}} (double const coord\mbox{[}$\,$\mbox{]}) const
+\begin{DoxyCompactList}\small\item\em Longitude. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_ac6e65aa62859edd4f6380f9c92d35f2c}{Impact}} (\mbox{\hyperlink{class_gyoto_1_1_photon}{Gyoto\+::\+Photon}} $\ast$ph, \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} index, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties}{Astrobj\+::\+Properties}} $\ast$data=NULL)
+\begin{DoxyCompactList}\small\item\em Does a photon at these coordinates impact the object? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_ac66726b8c1271499fddb753e30cf9dee}\label{class_gyoto_1_1_astrobj_1_1_generic_ac66726b8c1271499fddb753e30cf9dee}} 
+virtual \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Metric\+::\+Generic}} $>$ \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_ac66726b8c1271499fddb753e30cf9dee}{metric}} () const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_afb9529bd8da9781af6692d2427b26e34}{gg\+\_\+}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_af5482ea6b3773451ec3e2be56be821fd}\label{class_gyoto_1_1_astrobj_1_1_generic_af5482ea6b3773451ec3e2be56be821fd}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_af5482ea6b3773451ec3e2be56be821fd}{metric}} (\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Metric\+::\+Generic}} $>$)
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_afb9529bd8da9781af6692d2427b26e34}{gg\+\_\+}}. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_ab83c07c91451283c39aa6929db0f97bf}{r\+Max}} ()
+\begin{DoxyCompactList}\small\item\em Get maximal distance from center of coordinate system. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_a35ba85185bc13057dc21824e57a11683}\label{class_gyoto_1_1_astrobj_1_1_generic_a35ba85185bc13057dc21824e57a11683}} 
+virtual double \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a35ba85185bc13057dc21824e57a11683}{r\+Max}} () const
+\begin{DoxyCompactList}\small\item\em Get maximal distance from center of coordinate system. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_ad65201a57dcce6af74e44ff296820130}{r\+Max}} (std\+::string const \&unit)
+\begin{DoxyCompactList}\small\item\em Get rmax\+\_\+ is specified unit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_abdba9cbf2a831d085979d5089742f7d9}\label{class_gyoto_1_1_astrobj_1_1_generic_abdba9cbf2a831d085979d5089742f7d9}} 
+virtual double \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_abdba9cbf2a831d085979d5089742f7d9}{r\+Max}} (std\+::string const \&unit) const
+\begin{DoxyCompactList}\small\item\em Get rmax\+\_\+ is specified unit. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a1fffcd6d1c1e54cf0326a1631dc24639}{r\+Max}} (double val)
+\begin{DoxyCompactList}\small\item\em Set maximal distance from center of coordinate system. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a0edde9b415607a4ef4b79ca8c2e606da}{r\+Max}} (double val, std\+::string const \&unit)
+\begin{DoxyCompactList}\small\item\em Set maximal distance from center of coordinate system. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_ab0cdf8ae0991f0bea86828be5c0cf59e}{delta\+Max}} (double coord\mbox{[}8\mbox{]})
+\begin{DoxyCompactList}\small\item\em Get max step constraint for adaptive integration. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_ac9397fe5d0bea5c5aaf3a006ec433d26}\label{class_gyoto_1_1_astrobj_1_1_generic_ac9397fe5d0bea5c5aaf3a006ec433d26}} 
+{\bfseries GYOTO\+\_\+\+OBJECT\+\_\+\+ACCESSORS\+\_\+\+UNIT} (delta\+Max\+Inside\+RMax)
+\item 
+void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_aa38878504c68d10229dc0729c898c00d}{optically\+Thin}} (bool flag)
+\begin{DoxyCompactList}\small\item\em Set whether the object is optically thin. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a803354ae1c0322599451b31676525b86}{optically\+Thin}} () const
+\begin{DoxyCompactList}\small\item\em Query whether object is optically thin. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_a8ae6d79f0c011ad97da14185553caea4}\label{class_gyoto_1_1_astrobj_1_1_generic_a8ae6d79f0c011ad97da14185553caea4}} 
+void {\bfseries showshadow} (bool flag)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_a939ebc52f5aacc71a5bb4dca803d52ab}\label{class_gyoto_1_1_astrobj_1_1_generic_a939ebc52f5aacc71a5bb4dca803d52ab}} 
+bool {\bfseries showshadow} () const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_af2369945e025692d0df2944ead8c7520}\label{class_gyoto_1_1_astrobj_1_1_generic_af2369945e025692d0df2944ead8c7520}} 
+void {\bfseries redshift} (bool flag)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_ab8f031b279865bed0e448790fb3c1ad2}\label{class_gyoto_1_1_astrobj_1_1_generic_ab8f031b279865bed0e448790fb3c1ad2}} 
+bool {\bfseries redshift} () const
+\item 
+virtual \mbox{\hyperlink{namespace_gyoto_a009cbd7f025ce417907a5344a15a1463}{Gyoto\+::\+Quantity\+\_\+t}} \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_acb8ac9b6955e961ef2baa6366128caa3}{get\+Default\+Quantities}} ()
+\begin{DoxyCompactList}\small\item\em Which quantities to compute if know was requested. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_aa6f20e6d108357f6355493c4fdd5bb2f}{process\+Hit\+Quantities}} (\mbox{\hyperlink{class_gyoto_1_1_photon}{Photon}} $\ast$ph, state\+\_\+t const \&coord\+\_\+ph\+\_\+hit, double const $\ast$coord\+\_\+obj\+\_\+hit, double dt, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties}{Astrobj\+::\+Properties}} $\ast$data) const
+\begin{DoxyCompactList}\small\item\em Fills \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties}{Astrobj\+::\+Properties}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_a1cc43418ef2f68d287f2d4a5e007e558}\label{class_gyoto_1_1_astrobj_1_1_generic_a1cc43418ef2f68d287f2d4a5e007e558}} 
+virtual void {\bfseries process\+Hit\+Quantities} (\mbox{\hyperlink{class_gyoto_1_1_photon}{Photon}} $\ast$ph, double $\ast$coord\+\_\+ph\+\_\+hit, double $\ast$coord\+\_\+obj\+\_\+hit, double dt, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties}{Astrobj\+::\+Properties}} $\ast$data) const =delete
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_a105eb8ad296c08e33977cebb1d5a784e}\label{class_gyoto_1_1_astrobj_1_1_generic_a105eb8ad296c08e33977cebb1d5a784e}} 
+virtual double \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a105eb8ad296c08e33977cebb1d5a784e}{emission}} (double nu\+\_\+em, double dsem, double coord\+\_\+ph\mbox{[}8\mbox{]}, double coord\+\_\+obj\mbox{[}8\mbox{]}=NULL) const =delete
+\begin{DoxyCompactList}\small\item\em Obsolete, update your code;. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_a2ff9e7374e55fb37b1eb6538e65448cf}\label{class_gyoto_1_1_astrobj_1_1_generic_a2ff9e7374e55fb37b1eb6538e65448cf}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a2ff9e7374e55fb37b1eb6538e65448cf}{emission}} (double Inu\mbox{[}$\,$\mbox{]}, double nu\+\_\+em\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} nbnu, double dsem, double coord\+\_\+ph\mbox{[}8\mbox{]}, double coord\+\_\+obj\mbox{[}8\mbox{]}=NULL) const =delete
+\begin{DoxyCompactList}\small\item\em Obsolete, update your code. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_a8c58fba1b8f7683df96afa73243aa9aa}\label{class_gyoto_1_1_astrobj_1_1_generic_a8c58fba1b8f7683df96afa73243aa9aa}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a8c58fba1b8f7683df96afa73243aa9aa}{radiativeQ}} (double Inu\mbox{[}$\,$\mbox{]}, double Taunu\mbox{[}$\,$\mbox{]}, double const nu\+\_\+em\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} nbnu, double dsem, state\+\_\+t const \&coord\+\_\+ph, double const coord\+\_\+obj\mbox{[}8\mbox{]}=NULL) const
+\begin{DoxyCompactList}\small\item\em emission and transmission together \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_ae665ae4574583a715dc442f4de838e13}\label{class_gyoto_1_1_astrobj_1_1_generic_ae665ae4574583a715dc442f4de838e13}} 
+virtual void {\bfseries radiativeQ} (double Inu\mbox{[}$\,$\mbox{]}, double Taunu\mbox{[}$\,$\mbox{]}, double nu\+\_\+em\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} nbnu, double dsem, double coord\+\_\+ph\mbox{[}8\mbox{]}, double coord\+\_\+obj\mbox{[}8\mbox{]}=NULL) const =delete
+\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a0e8a446412b95fc5f764c6456786eb96}{radiativeQ}} (double $\ast$Inu, double $\ast$Qnu, double $\ast$Unu, double $\ast$Vnu, Eigen\+::\+Matrix4d $\ast$Onu, double const $\ast$nuem, \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} nbnu, double dsem, state\+\_\+t const \&cph, double const $\ast$co) const
+\begin{DoxyCompactList}\small\item\em Compute the increment of Stokes parameters and transmission matrix. Polarised version of RadiaveQ. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_a4af35a1083b47e3eb5d2a7b394b4dc02}\label{class_gyoto_1_1_astrobj_1_1_generic_a4af35a1083b47e3eb5d2a7b394b4dc02}} 
+virtual double \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a4af35a1083b47e3eb5d2a7b394b4dc02}{integrate\+Emission}} (double nu1, double nu2, double dsem, double c\+\_\+ph\mbox{[}8\mbox{]}, double c\+\_\+obj\mbox{[}8\mbox{]}=NULL) const =delete
+\begin{DoxyCompactList}\small\item\em Obsolete, update your code. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_a723f1e0d3c99b05be4706e668eb58d3a}\label{class_gyoto_1_1_astrobj_1_1_generic_a723f1e0d3c99b05be4706e668eb58d3a}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a723f1e0d3c99b05be4706e668eb58d3a}{integrate\+Emission}} (double $\ast$I, double const $\ast$boundaries, \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} const $\ast$chaninds, \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} nbnu, double dsem, double $\ast$cph, double $\ast$co) const =delete
+\begin{DoxyCompactList}\small\item\em Obsolete, update your code. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a12691b14048aa4e3aa9fad7a427a198d}{transmission}} (double nuem, double dsem, state\+\_\+t const \&coord\+\_\+ph, double const coord\+\_\+obj\mbox{[}8\mbox{]}) const
+\begin{DoxyCompactList}\small\item\em Transmission\+: exp( {$\alpha$}\textsubscript{{$\nu$}} $\ast$ ds\textsubscript{em} ) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_a3f6b8d4c68855ad66ec479fc0d8f28ea}\label{class_gyoto_1_1_astrobj_1_1_generic_a3f6b8d4c68855ad66ec479fc0d8f28ea}} 
+virtual double \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a3f6b8d4c68855ad66ec479fc0d8f28ea}{transmission}} (double nuem, double dsem, state\+\_\+t const \&coord) const =delete
+\begin{DoxyCompactList}\small\item\em Obsolete, update your code. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_a28efbc072bac5ea345afa966ac052522}\label{class_gyoto_1_1_astrobj_1_1_generic_a28efbc072bac5ea345afa966ac052522}} 
+virtual double \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a28efbc072bac5ea345afa966ac052522}{transmission}} (double nuem, double dsem, double coord\mbox{[}8\mbox{]}) const =delete
+\begin{DoxyCompactList}\small\item\em Obsolete, update your code. \end{DoxyCompactList}\item 
+Eigen\+::\+Matrix4d \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a3129f0e86a5e157a34a3a63b768108b5}{Omatrix}} (double alphanu\mbox{[}4\mbox{]}, double rnu\mbox{[}3\mbox{]}, double Chi, double dsem) const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_afe6de1c283d75d7997eecfc64bb1f626}\label{class_gyoto_1_1_astrobj_1_1_generic_afe6de1c283d75d7997eecfc64bb1f626}} 
+Eigen\+::\+Matrix4d {\bfseries Omatrix} (double alpha\+Inu, double alpha\+Qnu, double alpha\+Unu, double alpha\+Vnu, double r\+Qnu, double r\+Unu, double r\+Vnu, double Chi, double dsem) const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_aeae337b98d2c187c533ab0b0e958ea1c}\label{class_gyoto_1_1_astrobj_1_1_generic_aeae337b98d2c187c533ab0b0e958ea1c}} 
+Eigen\+::\+Matrix4d {\bfseries Omatrix} (double alphanu\mbox{[}4\mbox{]}, double rnu\mbox{[}3\mbox{]}, double sin2\+Chi, double cos2\+Chi, double dsem) const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_a2b1239f8d35bda6cd62fd1cf43724ebe}\label{class_gyoto_1_1_astrobj_1_1_generic_a2b1239f8d35bda6cd62fd1cf43724ebe}} 
+Eigen\+::\+Matrix4d {\bfseries Omatrix} (double alpha\+Inu, double alpha\+Qnu, double alpha\+Unu, double alpha\+Vnu, double r\+Qnu, double r\+Unu, double r\+Vnu, double sin2\+Chi, double cos2\+Chi, double dsem) const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_ac98093215e1253c3ae6f2c73d0949f8c}\label{class_gyoto_1_1_astrobj_1_1_generic_ac98093215e1253c3ae6f2c73d0949f8c}} 
+Eigen\+::\+Matrix4d {\bfseries Pmatrix} (double alpha\+Inu, double alpha\+Qnu, double alpha\+Unu, double alpha\+Vnu, double r\+Qnu, double r\+Unu, double r\+Vnu, double sin2\+Chi, double cos2\+Chi, double dsem) const
+\item 
+Eigen\+::\+Vector4d \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_afaf780270ee0e46750a5372a8c551dbc}{rotate\+Js}} (double j\+Inu, double j\+Qnu, double j\+Unu, double j\+Vnu, double sin2\+Chi, double cos2\+Chi) const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_a526cb261f0cbefda9dec6f69993758e5}\label{class_gyoto_1_1_astrobj_1_1_generic_a526cb261f0cbefda9dec6f69993758e5}} 
+Eigen\+::\+Vector4d {\bfseries rotate\+Js} (double j\+Inu, double j\+Qnu, double j\+Unu, double j\+Vnu, double Chi) const
+\item 
+double \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_afa1fe03d5defb25fe8086a20b247b9e8}{get\+Chi}} (double const fourvect\mbox{[}4\mbox{]}, state\+\_\+t const \&cph, double const vel\mbox{[}4\mbox{]}, bool elec=false) const
+\item 
+void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a44674d0280cad4c25ef93436e17e8dbd}{get\+Sin\+Cos2\+Chi}} (double const fourvect\mbox{[}4\mbox{]}, state\+\_\+t const \&cph, double const vel\mbox{[}4\mbox{]}, double $\ast$sin2\+Chi, double $\ast$cos2\+Chi, bool elec=false) const
+\item 
+void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a6f8b18eb1e9450b234f001ada382e987}{compute\+B4vect}} (double B4vect\mbox{[}4\mbox{]}, std\+::string const magnetic\+Config, double const co\mbox{[}8\mbox{]}, state\+\_\+t const \&cph) const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_af35df1f9264573cb9af2a9f566998ced}\label{class_gyoto_1_1_astrobj_1_1_generic_af35df1f9264573cb9af2a9f566998ced}} 
+void {\bfseries compute\+B4vect\+\_\+ipole} (double B4vect\mbox{[}4\mbox{]}, std\+::string const magnetic\+Config, double const co\mbox{[}8\mbox{]}, state\+\_\+t const \&cph, double spin) const
+\item 
+double \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a8ca5c9ec074c4026b3be52098350e3ac}{interpolate}} (int const N, double $\ast$const array, double $\ast$const Xq, double $\ast$$\ast$const X, int $\ast$const X\+\_\+params, std\+::string const $\ast$cond\+\_\+limits) const
+\item 
+double \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a605191298f2e31f1780b0348dc211618}{interpolate}} (int const N, double $\ast$const array, double $\ast$const Xq, double $\ast$$\ast$const X\+\_\+params, std\+::string const $\ast$cond\+\_\+limits) const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_a9ec09c51fd18dde7c13ef3b03fac1fad}\label{class_gyoto_1_1_smart_pointee_a9ec09c51fd18dde7c13ef3b03fac1fad}} 
+void \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_a9ec09c51fd18dde7c13ef3b03fac1fad}{inc\+Ref\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Increment the reference counter. Warning\+: Don\textquotesingle{}t mess with the counter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_a22a67609fb4690ee8ec0e95e4060e387}\label{class_gyoto_1_1_smart_pointee_a22a67609fb4690ee8ec0e95e4060e387}} 
+int \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_a22a67609fb4690ee8ec0e95e4060e387}{dec\+Ref\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Decrement the reference counter and return current value. Warning\+: Don\textquotesingle{}t mess with the counter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_a9a9cb35cd161bf19ce652f76e0a5bec0}\label{class_gyoto_1_1_smart_pointee_a9a9cb35cd161bf19ce652f76e0a5bec0}} 
+int \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_a9a9cb35cd161bf19ce652f76e0a5bec0}{get\+Ref\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Get the current number of references. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_gyoto_1_1_object_a06ea95dc396053466cdd63d419d1688c}{is\+Thread\+Safe}} () const
+\begin{DoxyCompactList}\small\item\em Whether this class is thread-\/safe. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const  $\ast$ \mbox{\hyperlink{class_gyoto_1_1_object_a424ef3538c714adfafad7eda249e0d58}{property}} (std\+::string const pname) const
+\begin{DoxyCompactList}\small\item\em Find property by name. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_a11892ef308d6f40add51eaea653a394b}{fill\+Property}} (\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$fmp, \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&p) const
+\begin{DoxyCompactList}\small\item\em Output a single \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} to XML. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_gyoto_1_1_object_a741ba678188d7d167ff2e3bb13dd924f}{describe\+Property}} (\mbox{\hyperlink{class_gyoto_1_1_property}{Gyoto\+::\+Property}} const \&p) const
+\begin{DoxyCompactList}\small\item\em Format desrciption for a property. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_object_a13843618d84c49d47bd37ddfa31160c5}{help}} () const
+\begin{DoxyCompactList}\small\item\em Print (to stdout) some help on this class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_a9f46de678c67e9050cf3a8b9677e1d73}\label{class_gyoto_1_1_object_a9f46de678c67e9050cf3a8b9677e1d73}} 
+virtual std\+::string \mbox{\hyperlink{class_gyoto_1_1_object_a9f46de678c67e9050cf3a8b9677e1d73}{kind}} () const
+\begin{DoxyCompactList}\small\item\em Get kind\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_af62c327a27345056f6012b771fa970b8}\label{class_gyoto_1_1_python_1_1_base_af62c327a27345056f6012b771fa970b8}} 
+virtual bool {\bfseries has\+Python\+Property} (std\+::string const \&key) const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_a888b32520799d6f002536e153060b6fe}\label{class_gyoto_1_1_python_1_1_base_a888b32520799d6f002536e153060b6fe}} 
+virtual void {\bfseries set\+Python\+Property} (std\+::string const \&key, \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} val)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_abea99a3924aca45cd00c543fab7bd155}\label{class_gyoto_1_1_python_1_1_base_abea99a3924aca45cd00c543fab7bd155}} 
+virtual \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} {\bfseries get\+Python\+Property} (std\+::string const \&key) const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_a02a869483c7dd153661b7867c892f505}\label{class_gyoto_1_1_python_1_1_base_a02a869483c7dd153661b7867c892f505}} 
+virtual int {\bfseries python\+Property\+Type} (std\+::string const \&key) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a5a973474870c634dbb65625df4cf44ce}\label{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a5a973474870c634dbb65625df4cf44ce}} 
+{\bfseries GYOTO\+\_\+\+OBJECT\+\_\+\+THREAD\+\_\+\+SAFETY}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_aaf6f47a654017d828394c3fa7eb38caf}\label{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_aaf6f47a654017d828394c3fa7eb38caf}} 
+static \mbox{\hyperlink{_gyoto_object_8h_a750e7a43779f63bdb13111eaf0271203}{GYOTO\+\_\+\+OBJECT}} \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const {\bfseries properties} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_aae3b80667884c6620c4796a1b8ef74e5}{kind}} (const std\+::string)
+\begin{DoxyCompactList}\small\item\em Set kind\+\_\+. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_thin_disk_ab3bdeee542ea19159f0ee8518332eaa0}\label{class_gyoto_1_1_astrobj_1_1_thin_disk_ab3bdeee542ea19159f0ee8518332eaa0}} 
+double \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_ab3bdeee542ea19159f0ee8518332eaa0}{rin\+\_\+}}
+\begin{DoxyCompactList}\small\item\em disk inner radius in geometrical units \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_thin_disk_a90c7228f56f446a478bd3a3b952d5858}\label{class_gyoto_1_1_astrobj_1_1_thin_disk_a90c7228f56f446a478bd3a3b952d5858}} 
+double \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_a90c7228f56f446a478bd3a3b952d5858}{rout\+\_\+}}
+\begin{DoxyCompactList}\small\item\em disk outer radius in geometrical units \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_a67090267e51d9cde13ca1002f894a981}{thickness\+\_\+}}
+\begin{DoxyCompactList}\small\item\em disk thickness \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_thin_disk_adc45bb580cbca9fae6da77c9b2ef6aa3}\label{class_gyoto_1_1_astrobj_1_1_thin_disk_adc45bb580cbca9fae6da77c9b2ef6aa3}} 
+int \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_adc45bb580cbca9fae6da77c9b2ef6aa3}{dir\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 1 for corotating (default), -\/1 for counterrotating. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_thin_disk_a0a92f03a93ba1575387c30e2def9a766}\label{class_gyoto_1_1_astrobj_1_1_thin_disk_a0a92f03a93ba1575387c30e2def9a766}} 
+unsigned int \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_a0a92f03a93ba1575387c30e2def9a766}{velocitykind\+\_\+}}
+\begin{DoxyCompactList}\small\item\em tag for Velocity\+Kind \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_afb9529bd8da9781af6692d2427b26e34}\label{class_gyoto_1_1_astrobj_1_1_generic_afb9529bd8da9781af6692d2427b26e34}} 
+\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Gyoto\+::\+Metric\+::\+Generic}} $>$ \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_afb9529bd8da9781af6692d2427b26e34}{gg\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} in this end of the Universe. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a5cc3f2599b83bc21c35e95ded7fab541}{rmax\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Maximum distance to the center of the coordinate system \mbox{[}geometrical units\mbox{]}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a1c219fb083260ed76ce2c67d47edeffd}{deltamaxinsidermax\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Maximum \mbox{\hyperlink{class_gyoto_1_1_photon}{Photon}} integration step inside \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a5cc3f2599b83bc21c35e95ded7fab541}{rmax\+\_\+}} \mbox{[}geometrical units\mbox{]}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_a4c1f589b6795d2f742922245926c37b5}\label{class_gyoto_1_1_astrobj_1_1_generic_a4c1f589b6795d2f742922245926c37b5}} 
+bool \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a4c1f589b6795d2f742922245926c37b5}{flag\+\_\+radtransf\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 1 if radiative transfer inside \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}}, else 0 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_a58018f8c013b1ac60219a4f1cec30edf}\label{class_gyoto_1_1_astrobj_1_1_generic_a58018f8c013b1ac60219a4f1cec30edf}} 
+int \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a58018f8c013b1ac60219a4f1cec30edf}{shadow\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 1 to highlight the shadow region in the image \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_aedee05b6554d7db41d51fcbf0416b04e}\label{class_gyoto_1_1_astrobj_1_1_generic_aedee05b6554d7db41d51fcbf0416b04e}} 
+int \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_aedee05b6554d7db41d51fcbf0416b04e}{noredshift\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 1 to impose redshift factor g = 1 \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_gyoto_1_1_object_ac48ad88e3ef229ba0d0fe68a94a7118f}{kind\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The \char`\"{}kind\char`\"{} that is output in the XML entity. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_gyoto_1_1_object_a01832761cd5f0a12319e3e24ce9a9fba}{plugins\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The plug-\/ins that needs to be loaded to access this instance\textquotesingle{}s class. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a7f6558bf7597b6e6c8f1bd198895b077}{module\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Name of the \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} module that holds the class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_ae0c6e2e9b883adaa081e7a3b402d3bb2}\label{class_gyoto_1_1_python_1_1_base_ae0c6e2e9b883adaa081e7a3b402d3bb2}} 
+std\+::string \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_ae0c6e2e9b883adaa081e7a3b402d3bb2}{inline\+\_\+module\+\_\+}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} source code for module that holds the class. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}{class\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Name of the \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} class that we want to expose. \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_aa033dfe530617afb7c7a27e6536bb88c}{parameters\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Parameters that this class needs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_af652cb4b7a2f473e9a86a4bf1e47e973}\label{class_gyoto_1_1_python_1_1_base_af652cb4b7a2f473e9a86a4bf1e47e973}} 
+Py\+Object $\ast$ \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_af652cb4b7a2f473e9a86a4bf1e47e973}{p\+Module\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Reference to the python module once it has been loaded. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_aab2145b455aa9848024b643d06016b35}\label{class_gyoto_1_1_python_1_1_base_aab2145b455aa9848024b643d06016b35}} 
+Py\+Object $\ast$ \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_aab2145b455aa9848024b643d06016b35}{p\+Instance\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Reference to the python instance once it has been instantiated. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_a7e9289775df2ec09ca222ba290cf35c7}\label{class_gyoto_1_1_python_1_1_base_a7e9289775df2ec09ca222ba290cf35c7}} 
+Py\+Object $\ast$ \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a7e9289775df2ec09ca222ba290cf35c7}{p\+Properties\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Reference to the properties member. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_a8f1ddee73aaa84dcdc1b1d2b0b3d8f7c}\label{class_gyoto_1_1_python_1_1_base_a8f1ddee73aaa84dcdc1b1d2b0b3d8f7c}} 
+Py\+Object $\ast$ \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a8f1ddee73aaa84dcdc1b1d2b0b3d8f7c}{p\+Set\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Reference to the (optional) Set method. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_a758de1b2cdd3d9cd55506b5c599290f1}\label{class_gyoto_1_1_python_1_1_base_a758de1b2cdd3d9cd55506b5c599290f1}} 
+Py\+Object $\ast$ \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a758de1b2cdd3d9cd55506b5c599290f1}{p\+Get\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Reference to the (optional) Get method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a1a6905eff093717438afefe564b30a2e}{interp1d}} (double const x, double const y0, double const y1) const
+\item 
+double \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a0336acd32601879a8a44b6ff41101409}{interp\+Nd}} (int const N, double $\ast$const Xq, double $\ast$$\ast$const X, double $\ast$const Y, std\+::string const $\ast$cond\+\_\+limit) const
+\item 
+int \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_ac52690e1f5bbdf9b851b0b26e121ef72}{get\+Indice}} (double \&xq, std\+::string const cond\+\_\+limit, double const X\+\_\+params\mbox{[}3\mbox{]}, double $\ast$const X=NULL) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a71e0a1f3a35bbab1e593140cb71f8bb4}\label{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a71e0a1f3a35bbab1e593140cb71f8bb4}} 
+Py\+Object $\ast$ {\bfseries p\+Emission\+\_\+}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a1415ebc98ac3f0293fe0e9c872795485}\label{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a1415ebc98ac3f0293fe0e9c872795485}} 
+Py\+Object $\ast$ {\bfseries p\+Integrate\+Emission\+\_\+}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a538065d5c0e50da114140df37b8daa4a}\label{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a538065d5c0e50da114140df37b8daa4a}} 
+Py\+Object $\ast$ {\bfseries p\+Transmission\+\_\+}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a58a0745e712eb62290e5889eb8329c25}\label{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a58a0745e712eb62290e5889eb8329c25}} 
+Py\+Object $\ast$ {\bfseries p\+Call\+\_\+}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a14f3694fbc6d7a07bc52bb8fb925f6e2}\label{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a14f3694fbc6d7a07bc52bb8fb925f6e2}} 
+Py\+Object $\ast$ {\bfseries p\+Get\+Velocity\+\_\+}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_ac4b30a961d49d79509461678b8718468}\label{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_ac4b30a961d49d79509461678b8718468}} 
+Py\+Object $\ast$ {\bfseries p\+Give\+Delta\+\_\+}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a749ff99c217dbd04643f24289232b8d8}\label{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a749ff99c217dbd04643f24289232b8d8}} 
+bool {\bfseries p\+Emission\+\_\+overloaded\+\_\+}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_ae9c0257209b640fb52598667e21bac2f}\label{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_ae9c0257209b640fb52598667e21bac2f}} 
+bool {\bfseries p\+Integrate\+Emission\+\_\+overloaded\+\_\+}
+\item 
+int \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a0b7b8a6576a8df3f46523b34701ea10d}{\+\_\+\+\_\+defaultfeatures}}
+\begin{DoxyCompactList}\small\item\em Whether some virtual methods are implemented. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_aaaf212a70fb1880b70e4d357e843cc85}\label{class_gyoto_1_1_smart_pointee_aaaf212a70fb1880b70e4d357e843cc85}} 
+int \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_aaaf212a70fb1880b70e4d357e843cc85}{ref\+Count}}
+\begin{DoxyCompactList}\small\item\em Reference counter. \end{DoxyCompactList}\item 
+pthread\+\_\+mutex\+\_\+t \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_abf1c1e431cdd4f08f13de581cccb6770}{mutex\+\_\+}}
+\begin{DoxyCompactList}\small\item\em A mutex. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a489102a7455acf7778f07c55489db8d0}\label{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a489102a7455acf7778f07c55489db8d0}} 
+class {\bfseries Gyoto\+::\+Smart\+Pointer$<$ Gyoto\+::\+Astrobj\+::\+Python\+::\+Thin\+Disk $>$}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Coding a \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk}{Gyoto\+::\+Astrobj\+::\+Thin\+Disk}} in \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_1_1_python}{Python}}. 
+
+Sample XML file\+: 
+\begin{DoxyCodeInclude}{0}
+\DoxyCodeLine{<?\textcolor{keyword}{xml} \textcolor{keyword}{version}=\textcolor{stringliteral}{"{}1.0"{}} \textcolor{keyword}{encoding}=\textcolor{stringliteral}{"{}UTF-\/8"{}} \textcolor{keyword}{standalone}=\textcolor{stringliteral}{"{}no"{}}?>}
+\DoxyCodeLine{<\textcolor{keywordtype}{Scenery}>}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keyword}{This} \textcolor{keyword}{example} \textcolor{keyword}{shows} \textcolor{keyword}{how} \textcolor{keyword}{to} \textcolor{keyword}{code} \textcolor{keyword}{a} \textcolor{keyword}{spectrum} \textcolor{keyword}{in} \textcolor{keyword}{Python} \textcolor{keyword}{directly} \textcolor{keyword}{in} \textcolor{keyword}{the}}
+\DoxyCodeLine{  \textcolor{keyword}{XML} \textcolor{keyword}{file.}}
+\DoxyCodeLine{}
+\DoxyCodeLine{  <\textcolor{keywordtype}{Metric} \textcolor{keyword}{kind} = \textcolor{stringliteral}{"{}KerrBL"{}}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{Spin}> 0. </\textcolor{keywordtype}{Spin}>}
+\DoxyCodeLine{  </\textcolor{keywordtype}{Metric}>}
+\DoxyCodeLine{}
+\DoxyCodeLine{  <\textcolor{keywordtype}{Screen}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{Position}> 1000. 100. 1.22 0. </\textcolor{keywordtype}{Position}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{Time} \textcolor{keyword}{unit}=\textcolor{stringliteral}{"{}geometrical\_time"{}}> 1000. </\textcolor{keywordtype}{Time}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{FieldOfView}> 0.314159265358979323846264338327950288419716 </\textcolor{keywordtype}{FieldOfView}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{Resolution}> 32 </\textcolor{keywordtype}{Resolution}>}
+\DoxyCodeLine{  </\textcolor{keywordtype}{Screen}>}
+\DoxyCodeLine{}
+\DoxyCodeLine{  <\textcolor{keywordtype}{Astrobj} \textcolor{keyword}{kind} = \textcolor{stringliteral}{"{}Python::ThinDisk"{}}>}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{Python::ThinDisk} \textcolor{keyword}{inherits} \textcolor{keyword}{from} \textcolor{keyword}{ThinDisk}, \textcolor{keyword}{we} \textcolor{keyword}{can} \textcolor{keyword}{set} \textcolor{keyword}{the} \textcolor{keyword}{usual}}
+\DoxyCodeLine{    \textcolor{keyword}{parameters:}}
+\DoxyCodeLine{    <\textcolor{keywordtype}{InnerRadius}> 3. </\textcolor{keywordtype}{InnerRadius}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{OpticallyThin}/>}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{We} \textcolor{keyword}{could} \textcolor{keyword}{write} \textcolor{keyword}{a} \textcolor{keyword}{python} \textcolor{keyword}{module} \textcolor{keyword}{in} \textcolor{keyword}{a} \textcolor{keyword}{separate} \textcolor{keyword}{file}, \textcolor{keyword}{say}}
+\DoxyCodeLine{    \textcolor{stringliteral}{"{}gyoto\_sample\_spectra.py"{}}, \textcolor{keyword}{and} \textcolor{keyword}{use} \textcolor{keyword}{the} \textcolor{stringliteral}{"{}Module"{}} \textcolor{keyword}{entity} \textcolor{keyword}{to} \textcolor{keyword}{load} \textcolor{keyword}{it:}}
+\DoxyCodeLine{    \textcolor{comment}{<!-\/-\/Module>gyoto\_sample\_spectra</Module-\/-\/>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{Alternatively}, \textcolor{keyword}{we} \textcolor{keyword}{can} \textcolor{keyword}{put} \textcolor{keyword}{the} \textcolor{keyword}{Python} \textcolor{keyword}{code} \textcolor{keyword}{inline} \textcolor{keyword}{using} \textcolor{keyword}{the}}
+\DoxyCodeLine{    \textcolor{stringliteral}{"{}InlineModule"{}} \textcolor{keyword}{entity.} \textcolor{keyword}{Common} \textcolor{keyword}{indentation} \textcolor{keyword}{will} \textcolor{keyword}{be} \textcolor{keyword}{removed} \textcolor{keyword}{so} \textcolor{keyword}{we}}
+\DoxyCodeLine{    \textcolor{keyword}{don}'\textcolor{keyword}{t} \textcolor{keyword}{have} \textcolor{keyword}{to} \textcolor{keyword}{flush} \textcolor{keyword}{everything} \textcolor{keyword}{left} .}
+\DoxyCodeLine{    <\textcolor{keywordtype}{InlineModule}>}
+\DoxyCodeLine{        \textcolor{keyword}{class} \textcolor{keyword}{ThinDisk:}}
+\DoxyCodeLine{            \textcolor{keyword}{def} \textcolor{keyword}{emission}(\textcolor{keyword}{self}, \textcolor{keyword}{nuem}, \textcolor{keyword}{dsem}, \textcolor{keyword}{cph}, \textcolor{keyword}{co}):}
+\DoxyCodeLine{                \textcolor{keyword}{return} \textcolor{keyword}{dsem}}
+\DoxyCodeLine{    </\textcolor{keywordtype}{InlineModule}>}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{Since} \textcolor{keyword}{there} \textcolor{keyword}{is} \textcolor{keyword}{only} \textcolor{keyword}{one} \textcolor{keyword}{class} \textcolor{keyword}{in} \textcolor{keyword}{the} \textcolor{keyword}{module}, \textcolor{keyword}{we} \textcolor{keyword}{do} \textcolor{keyword}{not} \textcolor{keyword}{need} \textcolor{keyword}{to}}
+\DoxyCodeLine{    \textcolor{keyword}{specify} \textcolor{keyword}{the} \textcolor{keyword}{class} \textcolor{keyword}{name} \textcolor{keyword}{here:}}
+\DoxyCodeLine{    \textcolor{comment}{<!-\/-\/Class>ThinDisk</Class-\/-\/>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{  </\textcolor{keywordtype}{Astrobj}>}
+\DoxyCodeLine{}
+\DoxyCodeLine{  <\textcolor{keywordtype}{MinimumTime}> 0. </\textcolor{keywordtype}{MinimumTime}>}
+\DoxyCodeLine{</\textcolor{keywordtype}{Scenery}>}
+
+\end{DoxyCodeInclude}
+ Sample \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_1_1_python}{Python}} module\+: 
+\begin{DoxyCodeInclude}{0}
+\DoxyCodeLine{\textcolor{stringliteral}{'''Sample Astrobj::ThinDisk for using with Gyoto Python plug-\/in}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{   Those classes demonstrate how to use Python classes as Gyoto}}
+\DoxyCodeLine{\textcolor{stringliteral}{   Astrobj::ThibDisk implementations using Gyoto's "{}python"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{   plug-\/in. Note that this plug-\/in can be renamed to whatever matches}}
+\DoxyCodeLine{\textcolor{stringliteral}{   the particular version of Python it has been built against}}
+\DoxyCodeLine{\textcolor{stringliteral}{   (e.g. python3.4).}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{   The goal is to be able to instantiate these from XML, from}}
+\DoxyCodeLine{\textcolor{stringliteral}{   Yorick... and even from Python using the gyoto extension...}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{   Synopsis:}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{   import gyoto.core}}
+\DoxyCodeLine{\textcolor{stringliteral}{   gyoto.core.requirePlugin("{}python"{}) \# or python2.7 or python3.4...}}
+\DoxyCodeLine{\textcolor{stringliteral}{   td=gyoto.core.Astrobj("{}Python::ThinDisk"{})}}
+\DoxyCodeLine{\textcolor{stringliteral}{   td.set("{}Module"{}, "{}gyoto\_sample\_thindisks"{})}}
+\DoxyCodeLine{\textcolor{stringliteral}{   td.set("{}Class"{}, "{}ThinDisk"{})}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{   Classes that aim at implementing the Gyoto::Astrobj::ThinDisk}}
+\DoxyCodeLine{\textcolor{stringliteral}{   interface do so by providing the following methods:}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{   getVelocity, giveDelta, emission, integrateEmission, transmission,}}
+\DoxyCodeLine{\textcolor{stringliteral}{   \_\_setitem\_\_:}}
+\DoxyCodeLine{\textcolor{stringliteral}{              optional.}}
+\DoxyCodeLine{\textcolor{stringliteral}{   emission and integrateEmission can be overloaded by using the}}
+\DoxyCodeLine{\textcolor{stringliteral}{   varargs argument.}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{'''}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{class }ThinDisk:}
+\DoxyCodeLine{    \textcolor{stringliteral}{'''A ThinDisk with trivial emission}}
+\DoxyCodeLine{\textcolor{stringliteral}{    '''}}
+\DoxyCodeLine{    \textcolor{keyword}{def }emission(self, nuem, dsem, cph, co):}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} dsem}
+
+\end{DoxyCodeInclude}
+ 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}\label{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!Subcontractor\_t@{Subcontractor\_t}}
+\index{Subcontractor\_t@{Subcontractor\_t}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{Subcontractor\_t}{Subcontractor\_t}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$\mbox{\hyperlink{class_gyoto_1_1_smart_pointee}{Gyoto\+::\+Smart\+Pointee}}$>$ Gyoto\+::\+Smart\+Pointee\+::\+Subcontractor\+\_\+t(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$, std\+::vector$<$ std\+::string $>$ const \&)\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+A subcontractor builds an object upon order from the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}}. 
+
+Various classes need to provide a subcontractor to be able to instantiate themselves upon order from the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}}. A subcontractor is a function (often a static member function) which accepts a pointer to a \mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}} as unique parameter, communicates with the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}} using this messenger to read an XML description of the object to build, and returns this objet. \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}{Smart\+Pointee\+::\+Subcontractor\+\_\+t}}$\ast$ is just generic enough a typedef to cast to and from other subcontractor types\+: \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_aa53c7ada58c8c8f3799c3485b7d8f3bb}{Astrobj\+::\+Subcontractor\+\_\+t}}, \mbox{\hyperlink{namespace_gyoto_1_1_metric_ad6b33a642cc94ad67855184d2adb95df}{Metric\+::\+Subcontractor\+\_\+t}}, \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a163055eef14aee22dd8fa5188812d889}{Spectrum\+::\+Subcontractor\+\_\+t}}. A subcontractor needs to be registered using the relevant \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_abb6caf3023a51cb77b5f6793ac03b188}{Register()}} function\+: \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_abb6caf3023a51cb77b5f6793ac03b188}{Astrobj\+::\+Register()}}, \mbox{\hyperlink{namespace_gyoto_1_1_metric_a602cba49b001e7470f3d439d1ab3e8f7}{Metric\+::\+Register()}}, \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a517874749d838d7121880e7d9d14c626}{Spectrum\+::\+Register()}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a9c3053602725f343b0b3132c9fc5ce2d}\label{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a9c3053602725f343b0b3132c9fc5ce2d}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!clone@{clone}}
+\index{clone@{clone}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk}{Thin\+Disk}}$\ast$ Gyoto\+::\+Astrobj\+::\+Python\+::\+Thin\+Disk\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Cloner. 
+
+This method must be implemented by the various \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic}{Astrobj\+::\+Generic}} subclasses in order to support cloning\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{SmartPointer<Astrobj> deep\_copy = original-\/>clone();}
+
+\end{DoxyCode}
+
+
+Cloning is necessary for multi-\/threading, recommended for interaction with the Yorick plug-\/in etc.
+
+Implementing it is very straightforward, as long as the copy constructor \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_ae510b9acf41e962b02b2d931afd9e07f}{Generic(const Generic\& )}} has been implemented\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{MyAstrobj* MyAstrobj::clone()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \textcolor{keyword}{new} MyAstrobj(*\textcolor{keyword}{this}); \}}
+
+\end{DoxyCode}
+ 
+
+Reimplemented from \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_a86cacf8d0aed0f6ca8f764dfee2f25ab}{Gyoto\+::\+Astrobj\+::\+Thin\+Disk}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_a6f8b18eb1e9450b234f001ada382e987}\label{class_gyoto_1_1_astrobj_1_1_generic_a6f8b18eb1e9450b234f001ada382e987}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!computeB4vect@{computeB4vect}}
+\index{computeB4vect@{computeB4vect}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{computeB4vect()}{computeB4vect()}}
+{\footnotesize\ttfamily void Gyoto\+::\+Astrobj\+::\+Generic\+::compute\+B4vect (\begin{DoxyParamCaption}\item[{double}]{B4vect\mbox{[}4\mbox{]},  }\item[{std\+::string const}]{magnetic\+Config,  }\item[{double const}]{co\mbox{[}8\mbox{]},  }\item[{state\+\_\+t const \&}]{cph }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+Compute the magnetic field 4-\/vector at a given position and a given configuration
+
+
+\begin{DoxyParams}{Parameters}
+{\em B4vect} & the output 4-\/vector magnetic field \\
+\hline
+{\em magnetic\+Config} & string which determine the wanted configuration (\textquotesingle{}Radial\textquotesingle{}, \textquotesingle{}Azimuthal\textquotesingle{}, \textquotesingle{}Vertical\textquotesingle{}) \\
+\hline
+{\em co} & coordinate of the object which also contain its velocity \\
+\hline
+{\em cph} & coordinate of the photon \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_ab0cdf8ae0991f0bea86828be5c0cf59e}\label{class_gyoto_1_1_astrobj_1_1_generic_ab0cdf8ae0991f0bea86828be5c0cf59e}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!deltaMax@{deltaMax}}
+\index{deltaMax@{deltaMax}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{deltaMax()}{deltaMax()}}
+{\footnotesize\ttfamily virtual double Gyoto\+::\+Astrobj\+::\+Generic\+::delta\+Max (\begin{DoxyParamCaption}\item[{double}]{coord\mbox{[}8\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Get max step constraint for adaptive integration. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em coord} & position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+max step to find this object reliably 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_complex_ac44d8265c9b1206c9b0db08661700bd8}{Gyoto\+::\+Astrobj\+::\+Complex}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_object_a741ba678188d7d167ff2e3bb13dd924f}\label{class_gyoto_1_1_object_a741ba678188d7d167ff2e3bb13dd924f}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!describeProperty@{describeProperty}}
+\index{describeProperty@{describeProperty}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{describeProperty()}{describeProperty()}}
+{\footnotesize\ttfamily std\+::string Gyoto\+::\+Object\+::describe\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_property}{Gyoto\+::\+Property}} const \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Format desrciption for a property. 
+
+Returns a string containing the name(s) and type of the property, as well as whether it supports unit. \mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a229272a0eec6c7eaeff905a4f4190e2e}\label{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a229272a0eec6c7eaeff905a4f4190e2e}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!emission@{emission}}
+\index{emission@{emission}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{emission()}{emission()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Astrobj\+::\+Python\+::\+Thin\+Disk\+::emission (\begin{DoxyParamCaption}\item[{double}]{Inu\mbox{[}$\,$\mbox{]},  }\item[{double const}]{nu\+\_\+em\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}}}]{nbnu,  }\item[{double}]{dsem,  }\item[{state\+\_\+t const \&}]{coord\+\_\+ph,  }\item[{double const}]{coord\+\_\+obj\mbox{[}8\mbox{]} = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Specific intensity I\textsubscript{{$\nu$}} for several values of {$\nu$}\textsubscript{em} 
+
+Called by the default implementation for \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_aa6f20e6d108357f6355493c4fdd5bb2f}{process\+Hit\+Quantities()}}.
+
+\mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a7a34b44aa0fe91618ecdaadd87438d0b}{emission()}} computes the intensity I\textsubscript{{$\nu$}} emitted by the small volume of length dsem. It should take self-\/absorption along dsem into account.
+
+Same as emission(double nu\+\_\+em, double dsem, double coord\+\_\+ph\mbox{[}8\mbox{]}, double coord\+\_\+obj\mbox{[}8\mbox{]}=NULL) const looping on several values of nu\+\_\+em.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Inu\mbox{[}nbnu\mbox{]}} & Output (must be set to a previously allocated array of doubles) \\
+\hline
+{\em nu\+\_\+em\mbox{[}nbnu\mbox{]}} & Frequencies at emission \\
+\hline
+{\em nbnu} & Size of Inu\mbox{[}\mbox{]} and nu\+\_\+em\mbox{[}\mbox{]} \\
+\hline
+{\em dsem} & Length over which to integrate inside the object \\
+\hline
+{\em coord\+\_\+ph} & \mbox{\hyperlink{class_gyoto_1_1_photon}{Photon}} coordinate \\
+\hline
+{\em coord\+\_\+obj} & Emitter coordinate at current photon position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I\textsubscript{{$\nu$}} or dI\textsubscript{{$\nu$}} \mbox{[}W m-\/2 sr-\/2\mbox{]} 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a7e93f0090f640c12a4a295433cbdf9fd}{Gyoto\+::\+Astrobj\+::\+Generic}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a7a34b44aa0fe91618ecdaadd87438d0b}\label{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a7a34b44aa0fe91618ecdaadd87438d0b}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!emission@{emission}}
+\index{emission@{emission}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{emission()}{emission()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual double Gyoto\+::\+Astrobj\+::\+Python\+::\+Thin\+Disk\+::emission (\begin{DoxyParamCaption}\item[{double}]{nu\+\_\+em,  }\item[{double}]{dsem,  }\item[{state\+\_\+t const \&}]{coord\+\_\+ph,  }\item[{double const}]{coord\+\_\+obj\mbox{[}8\mbox{]} = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Specific intensity I\textsubscript{{$\nu$}} 
+
+Called by the default implementation for \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_aa6f20e6d108357f6355493c4fdd5bb2f}{process\+Hit\+Quantities()}}.
+
+\mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a7a34b44aa0fe91618ecdaadd87438d0b}{emission()}} computes the intensity I\textsubscript{{$\nu$}} emitted by the small volume of length ds\textsubscript{em}, in the emitter\textquotesingle{}s frame. It should take self-\/absorption along ds\textsubscript{em} into account.
+
+Reminder \+:
+\begin{DoxyItemize}
+\item intensity = I\textsubscript{{$\nu$}} \mbox{[}J m$^\wedge$-\/2 s$^\wedge$-\/1 ster$^\wedge$-\/1 Hz$^\wedge$-\/1\mbox{]};
+\item invariant intensity = I\textsubscript{{$\nu$}}/{$\nu$}\textsuperscript{3}, which has the same value in any frame;
+\item emission coefficient = j\textsubscript{{$\nu$}} \mbox{[}J m$^\wedge$-\/3 s$^\wedge$-\/1 ster$^\wedge$-\/1 Hz$^\wedge$-\/1\mbox{]} , defined by dI\textsubscript{{$\nu$}} = j\textsubscript{{$\nu$}}$\ast$ds, where ds is the distance travelled by the photon inside the object;
+\item invariant emission coef = j\textsubscript{{$\nu$}}/{$\nu$}\textsuperscript{2}, which has the same value in any frame.
+\end{DoxyItemize}
+
+The equation used for radiative transfer (without absorption) is\+:
+
+d(I\textsubscript{{$\nu$}}/{$\nu$}\textsuperscript{3})/d{$\lambda$} = (j\textsubscript{{$\nu$}}/{$\nu$}\textsuperscript{2}) \mbox{[}$\ast$\mbox{]}
+
+where {$\lambda$} is the integration parameter along the null geodesic.
+
+NB\+: Let us consider a particular observer, with {$\nu$} being the frequency measured by this observer, and ds being the proper distance (as measured by the observer) that the photon travels as it moves from {$\lambda$} to {$\lambda$}+d{$\lambda$} along its geodesic. Then it can be shown that\+:
+
+d{$\lambda$} = ds/{$\nu$}
+
+This shows that Eq. \mbox{[}$\ast$\mbox{]} is homogeneous.
+
+The default implementation returns 1. if optically thick and ds\textsubscript{em} if optically thin. It allows for a quick implementation of your object for visualization purposes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em nu\+\_\+em} & Frequency at emission \mbox{[}Hz\mbox{]} \\
+\hline
+{\em dsem} & length over which to integrate inside the object \mbox{[}geometrical units\mbox{]} \\
+\hline
+{\em coord\+\_\+ph} & \mbox{\hyperlink{class_gyoto_1_1_photon}{Photon}} coordinate \\
+\hline
+{\em coord\+\_\+obj} & Emitter coordinate at current photon position \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a93d130767671c25823d5ec3fd477e28a}{Gyoto\+::\+Astrobj\+::\+Generic}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_object_a11892ef308d6f40add51eaea653a394b}\label{class_gyoto_1_1_object_a11892ef308d6f40add51eaea653a394b}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!fillProperty@{fillProperty}}
+\index{fillProperty@{fillProperty}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{fillProperty()}{fillProperty()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Object\+::fill\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$}]{fmp,  }\item[{\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Output a single \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} to XML. 
+
+The base implementation decides what to do based on the {\itshape p.\+type}. The format matches how set\+Parameters() an set\+Parameter() would interpret the XML descition.
+
+Overriding this method should be avoided, but makes sense in some cases (for instance \mbox{\hyperlink{class_gyoto_1_1_screen_a50f80add154ec088fc9509ba22ef0032}{Screen\+::fill\+Property()}} selects a different unit for {\itshape Distance} based on its magnitude, so that stellar sizes are expressed in solar radii while smaller sizes can be expressed in meters and larger sizes in parsecs).
+
+Overriding implementation should fall-\/back on calling the implementation in the direct parent class\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class }A: \textcolor{keyword}{public} Object \{\};}
+\DoxyCodeLine{\textcolor{keyword}{class }B: \textcolor{keyword}{public} A \{ }
+\DoxyCodeLine{ \textcolor{keyword}{using} B::setParameter;}
+\DoxyCodeLine{ \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_gyoto_1_1_object_a11892ef308d6f40add51eaea653a394b}{fillProperty}}(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto::FactoryMessenger}} *fmp,}
+\DoxyCodeLine{                        Property \textcolor{keyword}{const} \&p) \textcolor{keyword}{const} ;}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{\textcolor{keywordtype}{void} B::fillProperty(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto::FactoryMessenger}} *fmp,}
+\DoxyCodeLine{                        Property \textcolor{keyword}{const} \&p)\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{  \textcolor{keywordflow}{if} (name==\textcolor{stringliteral}{"{}Duff"{}}) fmp-\/>doSomething();}
+\DoxyCodeLine{  \textcolor{keywordflow}{else} A::fillProperty(fmp, p);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_xillver_reflection_a9e8bc6375f3c981042b74d99ee7adf91}{Gyoto\+::\+Astrobj\+::\+Xillver\+Reflection}}, \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_uniform_af5ccaceb5c188a7a0ea11791885919bc}{Gyoto\+::\+Spectrometer\+::\+Uniform}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_star_a152074fdddb29950936d3193d3aea55d}{Gyoto\+::\+Astrobj\+::\+Star}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_shift_a234a2d08bb7918e1bc62e4a710a4df77}{Gyoto\+::\+Metric\+::\+Shift}}, \mbox{\hyperlink{class_gyoto_1_1_screen_a50f80add154ec088fc9509ba22ef0032}{Gyoto\+::\+Screen}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_polish_doughnut_acbe2c229f702905204ea0d822b94e17c}{Gyoto\+::\+Astrobj\+::\+Polish\+Doughnut}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_pattern_disk_acc548bda88d62932275e8d0fcd630ca9}{Gyoto\+::\+Astrobj\+::\+Pattern\+Disk}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_neutron_star_model_atmosphere_a65604453c31dac828adeaeb7c35ca23d}{Gyoto\+::\+Astrobj\+::\+Neutron\+Star\+Model\+Atmosphere}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_equatorial_hot_spot_a5acba2e137e389070bb5f7c71ea31ed5}{Gyoto\+::\+Astrobj\+::\+Equatorial\+Hot\+Spot}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_dynamical_disk_abbc14f98531888e96547665a8a6a20ca}{Gyoto\+::\+Astrobj\+::\+Dynamical\+Disk}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_disk3_d_a160d18feeb44b24f396c1001abec7bd6}{Gyoto\+::\+Astrobj\+::\+Disk3D}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_directional_disk_a42a558bc44010a73986909dd9a2fdd41}{Gyoto\+::\+Astrobj\+::\+Directional\+Disk}}, and \mbox{\hyperlink{class_gyoto_1_1_scenery_a9bc2f2025deb97a71f21f2be5c0f5022}{Gyoto\+::\+Scenery}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_afa1fe03d5defb25fe8086a20b247b9e8}\label{class_gyoto_1_1_astrobj_1_1_generic_afa1fe03d5defb25fe8086a20b247b9e8}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!getChi@{getChi}}
+\index{getChi@{getChi}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{getChi()}{getChi()}}
+{\footnotesize\ttfamily double Gyoto\+::\+Astrobj\+::\+Generic\+::get\+Chi (\begin{DoxyParamCaption}\item[{double const}]{fourvect\mbox{[}4\mbox{]},  }\item[{state\+\_\+t const \&}]{cph,  }\item[{double const}]{vel\mbox{[}4\mbox{]},  }\item[{bool}]{elec = {\ttfamily false} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+Get Chi angle. Return the angle between the parallel transported observer polarization basis (Ephi,Etheta) and the Stokes basis in the rest frame of the emitter defined by the 4-\/vector magnetic/electric field.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fourvect} & 4-\/vector magnetic/electric field depending on elec (false/true) \\
+\hline
+{\em cph} & \mbox{\hyperlink{class_gyoto_1_1_photon}{Photon}} coordinate, must contain the Ephi and Etheta vectors i.\+e. size(cph)==16 \\
+\hline
+{\em vel} & Fluid velocity at the photon coordinate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_acb8ac9b6955e961ef2baa6366128caa3}\label{class_gyoto_1_1_astrobj_1_1_generic_acb8ac9b6955e961ef2baa6366128caa3}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!getDefaultQuantities@{getDefaultQuantities}}
+\index{getDefaultQuantities@{getDefaultQuantities}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{getDefaultQuantities()}{getDefaultQuantities()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_gyoto_a009cbd7f025ce417907a5344a15a1463}{Gyoto\+::\+Quantity\+\_\+t}} Gyoto\+::\+Astrobj\+::\+Generic\+::get\+Default\+Quantities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Which quantities to compute if know was requested. 
+
+Return a \mbox{\hyperlink{namespace_gyoto_a009cbd7f025ce417907a5344a15a1463}{Gyoto\+::\+Quantity\+\_\+t}} suitable as input to \mbox{\hyperlink{class_gyoto_1_1_scenery_acaed08cd4fa2113101d26436cd96aebd}{Gyoto\+::\+Scenery\+::set\+Requested\+Quantities()}} to set de default quantities to compute for this object. The default of these defaults GYOTO\+\_\+\+QUANTITY\+\_\+\+INTENSITY. 
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_page_thorne_disk_a3205ac156dea7d83682d3a890e9604ec}{Gyoto\+::\+Astrobj\+::\+Page\+Thorne\+Disk}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_ac52690e1f5bbdf9b851b0b26e121ef72}\label{class_gyoto_1_1_astrobj_1_1_generic_ac52690e1f5bbdf9b851b0b26e121ef72}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!getIndice@{getIndice}}
+\index{getIndice@{getIndice}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{getIndice()}{getIndice()}}
+{\footnotesize\ttfamily int Gyoto\+::\+Astrobj\+::\+Generic\+::get\+Indice (\begin{DoxyParamCaption}\item[{double \&}]{xq,  }\item[{std\+::string const}]{cond\+\_\+limit,  }\item[{double const}]{X\+\_\+params\mbox{[}3\mbox{]},  }\item[{double $\ast$const}]{X = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+Function that return the closest indice of the query value on an axis.
+
+
+\begin{DoxyParams}{Parameters}
+{\em xq} & query value on the axis. Could be modified in case of periodic boundary condition. \\
+\hline
+{\em cond\+\_\+limit} & boundary conditions that will be applied to the axis. \\
+\hline
+{\em X\+\_\+params\mbox{[}3\mbox{]}} & array which contain the minimum value, the maximum value and the length of the axe. \\
+\hline
+{\em X} & (optional) array which contains the value of the axis points. Usefull for not linearly spaced axis. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a288b2b142bf3a0445447fa7a52c14e51}\label{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a288b2b142bf3a0445447fa7a52c14e51}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!getProperties@{getProperties}}
+\index{getProperties@{getProperties}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{getProperties()}{getProperties()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const$\ast$ Gyoto\+::\+Astrobj\+::\+Python\+::\+Thin\+Disk\+::get\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get list of properties. 
+
+This method is declared automatically by the \mbox{\hyperlink{_gyoto_object_8h_a750e7a43779f63bdb13111eaf0271203}{GYOTO\+\_\+\+OBJECT}} macro and defined automatically by the \mbox{\hyperlink{_gyoto_property_8h_a1356435ea7ee0e18d07201a80e034dcc}{GYOTO\+\_\+\+PROPERTY\+\_\+\+END}} macro. 
+
+Reimplemented from \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_afdf2b814aabc8f939bda736cf9d7da24}{Gyoto\+::\+Astrobj\+::\+Thin\+Disk}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_a44674d0280cad4c25ef93436e17e8dbd}\label{class_gyoto_1_1_astrobj_1_1_generic_a44674d0280cad4c25ef93436e17e8dbd}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!getSinCos2Chi@{getSinCos2Chi}}
+\index{getSinCos2Chi@{getSinCos2Chi}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{getSinCos2Chi()}{getSinCos2Chi()}}
+{\footnotesize\ttfamily void Gyoto\+::\+Astrobj\+::\+Generic\+::get\+Sin\+Cos2\+Chi (\begin{DoxyParamCaption}\item[{double const}]{fourvect\mbox{[}4\mbox{]},  }\item[{state\+\_\+t const \&}]{cph,  }\item[{double const}]{vel\mbox{[}4\mbox{]},  }\item[{double $\ast$}]{sin2\+Chi,  }\item[{double $\ast$}]{cos2\+Chi,  }\item[{bool}]{elec = {\ttfamily false} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+Get the cosinus and sinus of 2$\ast$\+Chi angle. Chi being the angle between the parallel transported observer polarization basis (Ephi,Etheta) and the Stokes basis in the rest frame of the emitter defined by the 4-\/vector magnetic/electric field.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fourvect} & 4-\/vector magnetic/electric field depending on elec (false/true) \\
+\hline
+{\em cph} & \mbox{\hyperlink{class_gyoto_1_1_photon}{Photon}} coordinate, must contain the Ephi and Etheta vectors i.\+e. size(cph)==16 \\
+\hline
+{\em vel} & Fluid velocity at the photon coordinate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a3f842d368a3700a1db3b2418239ed40d}\label{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a3f842d368a3700a1db3b2418239ed40d}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!getVelocity@{getVelocity}}
+\index{getVelocity@{getVelocity}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{getVelocity()}{getVelocity()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Astrobj\+::\+Python\+::\+Thin\+Disk\+::get\+Velocity (\begin{DoxyParamCaption}\item[{double const}]{pos\mbox{[}4\mbox{]},  }\item[{double}]{vel\mbox{[}4\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get fluid 4-\/velocity at point. 
+
+Fill vel with the 4-\/vector velocity of the fluid at 4-\/position pos. \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a3f842d368a3700a1db3b2418239ed40d}{get\+Velocity()}} should work at some distance from the equatorial plane. The default implementation calls \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_afcaf16029a21fff9c110b4171956f079}{Metric\+::\+Generic\+::circular\+Velocity()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pos} & 4-\/position at which to compute velocity; \\
+\hline
+\mbox{\texttt{ out}}  & {\em vel} & 4-\/velocity at pos. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_ae96b3b521a1fd3747eb8cf412ed5945b}{Gyoto\+::\+Astrobj\+::\+Thin\+Disk}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_object_a13843618d84c49d47bd37ddfa31160c5}\label{class_gyoto_1_1_object_a13843618d84c49d47bd37ddfa31160c5}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!help@{help}}
+\index{help@{help}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{help()}{help()}}
+{\footnotesize\ttfamily void Gyoto\+::\+Object\+::help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Print (to stdout) some help on this class. 
+
+Describe all properties that this instance supports. \mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_thin_disk_ac6e65aa62859edd4f6380f9c92d35f2c}\label{class_gyoto_1_1_astrobj_1_1_thin_disk_ac6e65aa62859edd4f6380f9c92d35f2c}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!Impact@{Impact}}
+\index{Impact@{Impact}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{Impact()}{Impact()}}
+{\footnotesize\ttfamily virtual int Gyoto\+::\+Astrobj\+::\+Thin\+Disk\+::\+Impact (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_photon}{Gyoto\+::\+Photon}} $\ast$}]{ph,  }\item[{\mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}}}]{index,  }\item[{\mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties}{Astrobj\+::\+Properties}} $\ast$}]{data = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Does a photon at these coordinates impact the object? 
+
+\mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_ac6e65aa62859edd4f6380f9c92d35f2c}{Impact()}} checks whether a \mbox{\hyperlink{class_gyoto_1_1_photon}{Photon}} impacts the object between two integration steps of the photon\textquotesingle{}s trajectory (those two steps are photon-\/$>$get\+Coord(index, coord1) and photon-\/$>$get\+Coord(index+1, coord2)). Impact returns 1 if the photon impacts the object between these two steps, else 0. In many cases of geometrically thick obects, the implementation \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_standard_a1d1cc899a7919c4369261a83c7656ad7}{Astrobj\+::\+Standard\+::\+Impact()}} will be fine.
+
+Impact will call \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_aa6f20e6d108357f6355493c4fdd5bb2f}{Generic\+::process\+Hit\+Quantities()}} (which is virtual and may be re-\/implemented) to compute observable properties on demand\+: if the data pointer is non-\/\+NULL, the object will look in it for pointers to properties which apply to its kind. If a pointer to a property known to this object is present, then the property is computed and store at the pointed-\/to address. For instance, all objects know the \char`\"{}intensity\char`\"{} property. If data-\/$>$intensity != NULL, the instensity is computed and stored in $\ast$data-\/$>$intensity.
+
+If data is non-\/\+NULL and only in this case, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_aa6f20e6d108357f6355493c4fdd5bb2f}{process\+Hit\+Quantities()}} will also call ph-\/$>$transmit() to update the transmissions of the \mbox{\hyperlink{class_gyoto_1_1_photon}{Photon}} (see \mbox{\hyperlink{class_gyoto_1_1_photon_a90545a8f03ab57524021baf0e19a61d3}{Photon\+::transmit(size\+\_\+t, double)}}). This must not be done if data is NULL (see \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_complex_a1ec0f21fbe89cfdcc1dda5851d0ab209}{Astrobj\+::\+Complex\+::\+Impact()}} for an explanation).
+
+\mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_ac6e65aa62859edd4f6380f9c92d35f2c}{Impact()}} may not extend the ph \mbox{\hyperlink{class_gyoto_1_1_worldline}{Worldline}}. The only two dates that are guaranteed to be defined are at indices index and index+1.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ph} & \mbox{\hyperlink{class_gyoto_1_1_photon}{Gyoto\+::\+Photon}} aimed at the object; \\
+\hline
+{\em index} & Index of the last photon step; \\
+\hline
+{\em data} & Pointer to a structure to hold the observables at impact.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if impact, 0 if not. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a73a731c15af0c247fc4c46ca934b1b14}{Gyoto\+::\+Astrobj\+::\+Generic}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a5e0d327f7d7d2718fdd66ce7b41d7856}\label{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a5e0d327f7d7d2718fdd66ce7b41d7856}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!inlineModule@{inlineModule}}
+\index{inlineModule@{inlineModule}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{inlineModule()}{inlineModule()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Astrobj\+::\+Python\+::\+Thin\+Disk\+::inline\+Module (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_ae0c6e2e9b883adaa081e7a3b402d3bb2}{inline\+\_\+module\+\_\+}} and import the \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_1_1_python}{Python}} module. 
+
+Side effects\+:
+\begin{DoxyItemize}
+\item sets \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a7f6558bf7597b6e6c8f1bd198895b077}{module\+\_\+}} to \char`\"{}\char`\"{};
+\item calls \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a987a360677d0f4f8ca16bb606cbad1f4}{klass}}(\mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}{class\+\_\+}}) if \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}{class\+\_\+}} is already known, so \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a7f6558bf7597b6e6c8f1bd198895b077}{module\+\_\+}} can be set (or reset) after \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}{class\+\_\+}}. 
+\end{DoxyItemize}
+
+Reimplemented from \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a3436f643ba19cb9e53d8a7e95b64f0df}{Gyoto\+::\+Python\+::\+Base}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_ae7fe80444da7bea77b2cef62ffaaf096}\label{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_ae7fe80444da7bea77b2cef62ffaaf096}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!integrateEmission@{integrateEmission}}
+\index{integrateEmission@{integrateEmission}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{integrateEmission()}{integrateEmission()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Astrobj\+::\+Python\+::\+Thin\+Disk\+::integrate\+Emission (\begin{DoxyParamCaption}\item[{double $\ast$}]{I,  }\item[{double const $\ast$}]{boundaries,  }\item[{\mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} const $\ast$}]{chaninds,  }\item[{\mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}}}]{nbnu,  }\item[{double}]{dsem,  }\item[{state\+\_\+t const \&}]{cph,  }\item[{double const $\ast$}]{co }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+{$\int$}\textsubscript{{$\nu$}\textsubscript{1}}\textsuperscript{{$\nu$}\textsubscript{2}} I\textsubscript{{$\nu$}} d{$\nu$} (or j\textsubscript{{$\nu$}}) 
+
+Like double integrate\+Emission(double nu1, double nu2, double dsem, double c\+\_\+ph\mbox{[}8\mbox{]}, double c\+\_\+obj\mbox{[}8\mbox{]}) const for each \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer}{Spectrometer}} channel. 
+
+Reimplemented from \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_aa062f923ced3946778306e4a3e1901bb}{Gyoto\+::\+Astrobj\+::\+Generic}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a6add4c7014e29c3049d1f3b53b700922}\label{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a6add4c7014e29c3049d1f3b53b700922}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!integrateEmission@{integrateEmission}}
+\index{integrateEmission@{integrateEmission}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{integrateEmission()}{integrateEmission()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual double Gyoto\+::\+Astrobj\+::\+Python\+::\+Thin\+Disk\+::integrate\+Emission (\begin{DoxyParamCaption}\item[{double}]{nu1,  }\item[{double}]{nu2,  }\item[{double}]{dsem,  }\item[{state\+\_\+t const \&}]{c\+\_\+ph,  }\item[{double const}]{c\+\_\+obj\mbox{[}8\mbox{]} = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+{$\int$}\textsubscript{{$\nu$}\textsubscript{1}}\textsuperscript{{$\nu$}\textsubscript{2}} I\textsubscript{{$\nu$}} d{$\nu$} (or j\textsubscript{{$\nu$}}) 
+
+Compute the integral of \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a7a34b44aa0fe91618ecdaadd87438d0b}{emission()}} from {$\nu$}\textsubscript{1} to {$\nu$}\textsubscript{2}. The default implementation is a numerical integrator which works well enough and is reasonably fast if \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a7a34b44aa0fe91618ecdaadd87438d0b}{emission()}} is a smooth function (i.\+e. no emission or absorption lines). If possible, it is wise to implement an analytical solution. It is used by process\+Hit\+Quantities to compute the \char`\"{}\+Bin\+Spectrum\char`\"{} quantity which is the most physical\+: it is the only quantity that can be actually measured directly by a real-\/life instrument. 
+
+Reimplemented from \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a320317a0c347ab4317152b93952dab24}{Gyoto\+::\+Astrobj\+::\+Generic}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_a1a6905eff093717438afefe564b30a2e}\label{class_gyoto_1_1_astrobj_1_1_generic_a1a6905eff093717438afefe564b30a2e}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!interp1d@{interp1d}}
+\index{interp1d@{interp1d}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{interp1d()}{interp1d()}}
+{\footnotesize\ttfamily double Gyoto\+::\+Astrobj\+::\+Generic\+::interp1d (\begin{DoxyParamCaption}\item[{double const}]{x,  }\item[{double const}]{y0,  }\item[{double const}]{y1 }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+Function which returns the 1D linear interpolation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x query position along the linear function \mbox{[}0,1\mbox{]}. \\
+\hline
+{\em y0} & the value of the array to be interpolated at the low position. \\
+\hline
+{\em y1} & the value of the array to be interpolated at the high position. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_a0336acd32601879a8a44b6ff41101409}\label{class_gyoto_1_1_astrobj_1_1_generic_a0336acd32601879a8a44b6ff41101409}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!interpNd@{interpNd}}
+\index{interpNd@{interpNd}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{interpNd()}{interpNd()}}
+{\footnotesize\ttfamily double Gyoto\+::\+Astrobj\+::\+Generic\+::interp\+Nd (\begin{DoxyParamCaption}\item[{int const}]{N,  }\item[{double $\ast$const}]{Xq,  }\item[{double $\ast$$\ast$const}]{X,  }\item[{double $\ast$const}]{Y,  }\item[{std\+::string const $\ast$}]{cond\+\_\+limit }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+Function which returns the N-\/ dimension interpolation on an N-\/dimensional cube
+
+
+\begin{DoxyParams}{Parameters}
+{\em N} & number of dimensions \\
+\hline
+{\em Xq} & query position at which the interpolation should be done. 1D array with N elements. \\
+\hline
+{\em X\mbox{[}2$\ast$$\ast$\+N\mbox{]}\mbox{[}\+N\mbox{]}} & 2D array that contains for the 2$\ast$$\ast$N points of the N dimensional cube the associated axes values. \\
+\hline
+{\em Y\mbox{[}2$\ast$$\ast$\+N\mbox{]}} & 1D array that contain the value of the array to be interpolated at each points of the N-\/dimensional cube. \\
+\hline
+{\em cond\+\_\+limit} & 1D array of strings that set the boundary conditions that will be applied to each axes. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_a8ca5c9ec074c4026b3be52098350e3ac}\label{class_gyoto_1_1_astrobj_1_1_generic_a8ca5c9ec074c4026b3be52098350e3ac}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!interpolate@{interpolate}}
+\index{interpolate@{interpolate}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{interpolate()}{interpolate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double Gyoto\+::\+Astrobj\+::\+Generic\+::interpolate (\begin{DoxyParamCaption}\item[{int const}]{N,  }\item[{double $\ast$const}]{array,  }\item[{double $\ast$const}]{Xq,  }\item[{double $\ast$$\ast$const}]{X,  }\item[{int $\ast$const}]{X\+\_\+params,  }\item[{std\+::string const $\ast$}]{cond\+\_\+limits }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+N-\/dimensional linear interpolation function
+
+
+\begin{DoxyParams}{Parameters}
+{\em N} & number of dimensions \\
+\hline
+{\em array} & array that should be interpolated. This array has to be a 1D array with the first dimension evolving the slowest \\
+\hline
+{\em Xq} & query position at which the interpolation should be done. 1D array with N elements. \\
+\hline
+{\em X} & 2D array containing the range of all the axes (for exemple \+: radius, \textbackslash{}theta, \textbackslash{}varphi) at which the array is knwon. Should be built as a pointer of pointers. \\
+\hline
+{\em X\+\_\+params} & 1D array that contain the length of each axes. \\
+\hline
+{\em cond\+\_\+limits} & 1D array of strings that set the boundary conditions that will be applied to each axes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_a605191298f2e31f1780b0348dc211618}\label{class_gyoto_1_1_astrobj_1_1_generic_a605191298f2e31f1780b0348dc211618}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!interpolate@{interpolate}}
+\index{interpolate@{interpolate}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{interpolate()}{interpolate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double Gyoto\+::\+Astrobj\+::\+Generic\+::interpolate (\begin{DoxyParamCaption}\item[{int const}]{N,  }\item[{double $\ast$const}]{array,  }\item[{double $\ast$const}]{Xq,  }\item[{double $\ast$$\ast$const}]{X\+\_\+params,  }\item[{std\+::string const $\ast$}]{cond\+\_\+limits }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+N-\/dimensional linear interpolation function
+
+
+\begin{DoxyParams}{Parameters}
+{\em N} & number of dimensions \\
+\hline
+{\em array} & array that should be interpolated. This array has to be a 1D array with the first dimension evolving the slowest \\
+\hline
+{\em Xq} & query position at which the interpolation should be done. 1D array with N elements. \\
+\hline
+{\em X\+\_\+params\mbox{[}\+N\mbox{]}\mbox{[}3\mbox{]}} & 2D array that contain the minimum value, the maximum value and the length of each axes. The axes will be assumed to be linearly spaced. \\
+\hline
+{\em cond\+\_\+limits} & 1D array of strings that set the boundary conditions that will be applied to each axes. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_object_a06ea95dc396053466cdd63d419d1688c}\label{class_gyoto_1_1_object_a06ea95dc396053466cdd63d419d1688c}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!isThreadSafe@{isThreadSafe}}
+\index{isThreadSafe@{isThreadSafe}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{isThreadSafe()}{isThreadSafe()}}
+{\footnotesize\ttfamily virtual bool Gyoto\+::\+Object\+::is\+Thread\+Safe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Whether this class is thread-\/safe. 
+
+Return True if this object is thread-\/safe, i.\+e. if an instance and its clone can be used in parallel threads (in the context of Scenery\+::raytrace()). Known objects which are not thread-\/safe include Lorene metrics and everything from the \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_1_1_python}{Python}} plug-\/in.
+
+The default implementation considers that the class itself is thread safe and recurses into the declared properties to check whether they are safe too. Classes that abide to the Object/\+Property paradigm and are themselves thread-\/safe have nothing special to do.
+
+Objects that clone children in their copy constructor that are not declared as properties must take these children into account.
+
+Classes that are never thread-\/safe must declare it. It acn be easily done using GYOTO\+\_\+\+OBJECT\+\_\+\+THREAD\+\_\+\+SAFETY in the class declaration and GYOTO\+\_\+\+PROPERTY\+\_\+\+THREAD\+\_\+\+UNSAFE in the class definition. \mbox{\Hypertarget{class_gyoto_1_1_object_aae3b80667884c6620c4796a1b8ef74e5}\label{class_gyoto_1_1_object_aae3b80667884c6620c4796a1b8ef74e5}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!kind@{kind}}
+\index{kind@{kind}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{kind()}{kind()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Object\+::kind (\begin{DoxyParamCaption}\item[{const std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Set kind\+\_\+. 
+
+\mbox{\hyperlink{class_gyoto_1_1_object_aae3b80667884c6620c4796a1b8ef74e5}{kind(const std\+::string)}} is protected because, for most Objects, it should not be changed in runtime. Set kind\+\_\+ \mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a2e9e943c6b9c78d08ec6458e68609dce}\label{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a2e9e943c6b9c78d08ec6458e68609dce}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!klass@{klass}}
+\index{klass@{klass}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{klass()}{klass()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Astrobj\+::\+Python\+::\+Thin\+Disk\+::klass (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}{class\+\_\+}} and instantiate the \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_1_1_python}{Python}} class. 
+
+Sets \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_aab2145b455aa9848024b643d06016b35}{p\+Instance\+\_\+}}.
+
+This generic implementation takes care of the common ground, but does not set \textquotesingle{}this\textquotesingle{} or call \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_ad3fd7c2bb76de035b1ba37fad34e9d5b}{parameters}}(\mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_aa033dfe530617afb7c7a27e6536bb88c}{parameters\+\_\+}}). Therefore, all the derived classes should reimplement this method and at least call Python\+::\+Base\+::klass(c) and \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_ad3fd7c2bb76de035b1ba37fad34e9d5b}{parameters}}(\mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_aa033dfe530617afb7c7a27e6536bb88c}{parameters\+\_\+}}). Between the two is the right moment to check that the \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_1_1_python}{Python}} class implements the required API and to cache Py\+Object$\ast$ pointers to class methods. 
+
+Reimplemented from \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_acce1645b213fe517f73483a99e7789be}{Gyoto\+::\+Python\+::\+Base}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a6356c48534d038f0aac4f5dd50a9ca7b}\label{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a6356c48534d038f0aac4f5dd50a9ca7b}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!module@{module}}
+\index{module@{module}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{module()}{module()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Astrobj\+::\+Python\+::\+Thin\+Disk\+::module (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a7f6558bf7597b6e6c8f1bd198895b077}{module\+\_\+}} and import the \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_1_1_python}{Python}} module. 
+
+Side effects\+:
+\begin{DoxyItemize}
+\item sets \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_ae0c6e2e9b883adaa081e7a3b402d3bb2}{inline\+\_\+module\+\_\+}} to \char`\"{}\char`\"{};
+\item calls \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a987a360677d0f4f8ca16bb606cbad1f4}{klass}}(\mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}{class\+\_\+}}) if \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}{class\+\_\+}} is already known, so \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a7f6558bf7597b6e6c8f1bd198895b077}{module\+\_\+}} can be set (or reset) after \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}{class\+\_\+}}. 
+\end{DoxyItemize}
+
+Reimplemented from \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a4cb3d486914da158dafcd1e562827fed}{Gyoto\+::\+Python\+::\+Base}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_a3129f0e86a5e157a34a3a63b768108b5}\label{class_gyoto_1_1_astrobj_1_1_generic_a3129f0e86a5e157a34a3a63b768108b5}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!Omatrix@{Omatrix}}
+\index{Omatrix@{Omatrix}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{Omatrix()}{Omatrix()}}
+{\footnotesize\ttfamily Eigen\+::\+Matrix4d Gyoto\+::\+Astrobj\+::\+Generic\+::\+Omatrix (\begin{DoxyParamCaption}\item[{double}]{alphanu\mbox{[}4\mbox{]},  }\item[{double}]{rnu\mbox{[}3\mbox{]},  }\item[{double}]{Chi,  }\item[{double}]{dsem }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+\mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a3129f0e86a5e157a34a3a63b768108b5}{Omatrix()}} computes the exponential of the Mueller matrix which contains the absorption and Faraday coefficients and is used in the polarized radiative transfer equation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Onu} & output matrix (must be allocated previously) \\
+\hline
+{\em alphanu\mbox{[}4\mbox{]}} & array containing the 4 absorption coefficients in the Stokes basis (I,Q,U,V) \\
+\hline
+{\em rnu\mbox{[}3\mbox{]}} & array containing the 3 Faraday coefficients in the Stokes basis (Q,U,V) \\
+\hline
+{\em Chi} & angle of rotation between the parallel transported observer polarization basis and the Stokes basis \\
+\hline
+{\em dsem} & geometrical length in geometrical units \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_thin_disk_a312fb0f3764200c1037564f7fc982e0a}\label{class_gyoto_1_1_astrobj_1_1_thin_disk_a312fb0f3764200c1037564f7fc982e0a}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!operator()@{operator()}}
+\index{operator()@{operator()}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily virtual double Gyoto\+::\+Astrobj\+::\+Thin\+Disk\+::operator() (\begin{DoxyParamCaption}\item[{double const}]{coord\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+theta-\/pi/2 or z 
+
+A function which changes sign on the equatorial plane. 
+
+Implements \mbox{\hyperlink{class_gyoto_1_1_functor_1_1_double__const_double_array_a2bf98945b0ee159c57194fabcb0368a9}{Gyoto\+::\+Functor\+::\+Double\+\_\+const\+Double\+Array}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_a803354ae1c0322599451b31676525b86}\label{class_gyoto_1_1_astrobj_1_1_generic_a803354ae1c0322599451b31676525b86}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!opticallyThin@{opticallyThin}}
+\index{opticallyThin@{opticallyThin}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{opticallyThin()}{opticallyThin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Gyoto\+::\+Astrobj\+::\+Generic\+::optically\+Thin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Query whether object is optically thin. 
+
+See \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_aa38878504c68d10229dc0729c898c00d}{optically\+Thin(bool flag)}}. \mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_aa38878504c68d10229dc0729c898c00d}\label{class_gyoto_1_1_astrobj_1_1_generic_aa38878504c68d10229dc0729c898c00d}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!opticallyThin@{opticallyThin}}
+\index{opticallyThin@{opticallyThin}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{opticallyThin()}{opticallyThin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Gyoto\+::\+Astrobj\+::\+Generic\+::optically\+Thin (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Set whether the object is optically thin. 
+
+Set flag indicating that radiative transfer should be integrated, i.\+e. the object is to be considered optically thin. 
+\begin{DoxyParams}{Parameters}
+{\em flag} & 1 if optically thin, 0 if optically thick. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a581acf6668db9476d28fe60927be3d8d}\label{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a581acf6668db9476d28fe60927be3d8d}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!parameters@{parameters}}
+\index{parameters@{parameters}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{parameters()}{parameters()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Astrobj\+::\+Python\+::\+Thin\+Disk\+::parameters (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_aa033dfe530617afb7c7a27e6536bb88c}{parameters\+\_\+}} and send them to \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_aab2145b455aa9848024b643d06016b35}{p\+Instance\+\_\+}}. 
+
+The parameters are sent to the class instance using the {\bfseries{setitem}} method with numerical keys. 
+
+Reimplemented from \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_ad60df11071a344829956610aa8015a58}{Gyoto\+::\+Python\+::\+Base}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_aa6f20e6d108357f6355493c4fdd5bb2f}\label{class_gyoto_1_1_astrobj_1_1_generic_aa6f20e6d108357f6355493c4fdd5bb2f}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!processHitQuantities@{processHitQuantities}}
+\index{processHitQuantities@{processHitQuantities}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{processHitQuantities()}{processHitQuantities()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Astrobj\+::\+Generic\+::process\+Hit\+Quantities (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_photon}{Photon}} $\ast$}]{ph,  }\item[{state\+\_\+t const \&}]{coord\+\_\+ph\+\_\+hit,  }\item[{double const $\ast$}]{coord\+\_\+obj\+\_\+hit,  }\item[{double}]{dt,  }\item[{\mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties}{Astrobj\+::\+Properties}} $\ast$}]{data }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Fills \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties}{Astrobj\+::\+Properties}}. 
+
+process\+Hit\+Quantities fills the requested data in Impact. To use it, you need to call it in the \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_ac6e65aa62859edd4f6380f9c92d35f2c}{Impact()}} method for your object in case of hit. It will fill Redshift, Intensity, \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}}, Bin\+Spectrum and update the \mbox{\hyperlink{class_gyoto_1_1_photon}{Photon}}\textquotesingle{}s transmission by calling \mbox{\hyperlink{class_gyoto_1_1_photon_a90545a8f03ab57524021baf0e19a61d3}{Photon\+::transmit()}}, only if data==NULL.
+
+You can overload it for your \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}}. The generic implementation calls \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a7a34b44aa0fe91618ecdaadd87438d0b}{emission()}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a6add4c7014e29c3049d1f3b53b700922}{integrate\+Emission()}} and transmission() below. 
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk_profile_a339f1cd765cd173c34c85552e7e4c415}{Gyoto\+::\+Astrobj\+::\+Thin\+Disk\+Profile}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_dynamical_disk_bolometric_a6d49fda70fa23c3d8d9ed4386793a287}{Gyoto\+::\+Astrobj\+::\+Dynamical\+Disk\+Bolometric}}, and \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_page_thorne_disk_a639da6614e85224814af4f2f6622e9ab}{Gyoto\+::\+Astrobj\+::\+Page\+Thorne\+Disk}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_object_a424ef3538c714adfafad7eda249e0d58}\label{class_gyoto_1_1_object_a424ef3538c714adfafad7eda249e0d58}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!property@{property}}
+\index{property@{property}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{property()}{property()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const$\ast$ Gyoto\+::\+Object\+::property (\begin{DoxyParamCaption}\item[{std\+::string const}]{pname }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Find property by name. 
+
+Look into the \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} list for a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} whose {\itshape name} (or {\itshape name\+\_\+false}, for a boolean \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}) is {\itshape pname}. Return a const pointer to the first such property found, or NULL if none is found. \mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_a0e8a446412b95fc5f764c6456786eb96}\label{class_gyoto_1_1_astrobj_1_1_generic_a0e8a446412b95fc5f764c6456786eb96}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!radiativeQ@{radiativeQ}}
+\index{radiativeQ@{radiativeQ}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{radiativeQ()}{radiativeQ()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Astrobj\+::\+Generic\+::radiativeQ (\begin{DoxyParamCaption}\item[{double $\ast$}]{Inu,  }\item[{double $\ast$}]{Qnu,  }\item[{double $\ast$}]{Unu,  }\item[{double $\ast$}]{Vnu,  }\item[{Eigen\+::\+Matrix4d $\ast$}]{Onu,  }\item[{double const $\ast$}]{nuem,  }\item[{\mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}}}]{nbnu,  }\item[{double}]{dsem,  }\item[{state\+\_\+t const \&}]{cph,  }\item[{double const $\ast$}]{co }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Compute the increment of Stokes parameters and transmission matrix. Polarised version of RadiaveQ. 
+
+First function to be called for radiative quantities. If exist, i.\+e. implemented in an \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}}, return the Stokes parameters emitted by the small volume of length dsem.
+
+Warning \+:
+\begin{DoxyItemize}
+\item The basis used to determine the Stokes coefficients is different from the observer parallel transported polarisation basis. One should use get\+Chi function to compute the angle between these two basis.
+\item The non polarized case must also be implemented in this function to avoid error.
+\end{DoxyItemize}
+
+See exemple in Simple\+Polar\+Star.\+C.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Inu\mbox{[}nbnu\mbox{]}} & Output increment of intensity (must be set to a previously allocated array of doubles) \\
+\hline
+{\em Qnu\mbox{[}nbnu\mbox{]}} & Output increment of Stokes parameter Q (must be set to a previously allocated array of doubles) \\
+\hline
+{\em Unu\mbox{[}nbnu\mbox{]}} & Output increment of Stokes parameter U (must be set to a previously allocated array of doubles) \\
+\hline
+{\em Vnu\mbox{[}nbnu\mbox{]}} & Output increment of Stokes parameter V (must be set to a previously allocated array of doubles) \\
+\hline
+{\em Onu\mbox{[}nbnu\mbox{]}} & Output transmission (Eigen) matrix (must be set to a previously allocated array of Matrix4d) \\
+\hline
+{\em nu\+\_\+em\mbox{[}nbnu\mbox{]}} & Frequencies at emission \\
+\hline
+{\em nbnu} & Size of nu\+\_\+em\mbox{[}\mbox{]}, Inu\mbox{[}\mbox{]}, Qnu\mbox{[}\mbox{]}, Unu\mbox{[}\mbox{]}, Vnu\mbox{[}\mbox{]}, and Onu\mbox{[}\mbox{]} \\
+\hline
+{\em dsem} & Length over which to integrate inside the object \\
+\hline
+{\em cph} & \mbox{\hyperlink{class_gyoto_1_1_photon}{Photon}} coordinate \\
+\hline
+{\em co} & Emitter coordinate at current photon position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Increment of the Stokes parameters (I,Q,U,V) and local Transmission matrix (O). 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thick_disk_a099bdffa842fea620d36006f680052e3}{Gyoto\+::\+Astrobj\+::\+Thick\+Disk}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_star_a327a6e5590cdf412e5cfef2f9372260c}{Gyoto\+::\+Astrobj\+::\+Star}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_page_thorne_disk_a15a271cca8f57aab8a920720e78bc8e2}{Gyoto\+::\+Astrobj\+::\+Page\+Thorne\+Disk}}, and \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_equatorial_hot_spot_ac70d4cc58245764c6a76026755dac088}{Gyoto\+::\+Astrobj\+::\+Equatorial\+Hot\+Spot}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_ab83c07c91451283c39aa6929db0f97bf}\label{class_gyoto_1_1_astrobj_1_1_generic_ab83c07c91451283c39aa6929db0f97bf}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!rMax@{rMax}}
+\index{rMax@{rMax}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{rMax()}{rMax()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily virtual double Gyoto\+::\+Astrobj\+::\+Generic\+::r\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Get maximal distance from center of coordinate system. 
+
+Get maximal distance from center of coordinate system at which a \mbox{\hyperlink{class_gyoto_1_1_photon}{Photon}} may hit the object.
+
+Child classes may use the \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a5cc3f2599b83bc21c35e95ded7fab541}{rmax\+\_\+}} member to cache this value, if its current value is DBL\+\_\+\+MAX.
+
+It can also be set using \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_ab83c07c91451283c39aa6929db0f97bf}{r\+Max()}}.
+
+\begin{DoxyReturn}{Returns}
+rmax\+\_\+ in geometrical units 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_torus_af4dfb2b79fe0879c0871ea9828d79f19}{Gyoto\+::\+Astrobj\+::\+Torus}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_star_a7a8d4d8dc49f8d2a19cddba2e12a04e1}{Gyoto\+::\+Astrobj\+::\+Star}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_fixed_star_aea16e485a51f46b322b7e27bd8f95ebf}{Gyoto\+::\+Astrobj\+::\+Fixed\+Star}}, and \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_complex_a59fde26fc4e4542108e714cc5e2cadac}{Gyoto\+::\+Astrobj\+::\+Complex}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_a1fffcd6d1c1e54cf0326a1631dc24639}\label{class_gyoto_1_1_astrobj_1_1_generic_a1fffcd6d1c1e54cf0326a1631dc24639}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!rMax@{rMax}}
+\index{rMax@{rMax}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{rMax()}{rMax()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Astrobj\+::\+Generic\+::r\+Max (\begin{DoxyParamCaption}\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Set maximal distance from center of coordinate system. 
+
+Set maximal distance from center of coordinate system at which a \mbox{\hyperlink{class_gyoto_1_1_photon}{Photon}} may hit the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & new \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a5cc3f2599b83bc21c35e95ded7fab541}{rmax\+\_\+}} in geometrical units. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_a0edde9b415607a4ef4b79ca8c2e606da}\label{class_gyoto_1_1_astrobj_1_1_generic_a0edde9b415607a4ef4b79ca8c2e606da}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!rMax@{rMax}}
+\index{rMax@{rMax}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{rMax()}{rMax()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Astrobj\+::\+Generic\+::r\+Max (\begin{DoxyParamCaption}\item[{double}]{val,  }\item[{std\+::string const \&}]{unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Set maximal distance from center of coordinate system. 
+
+Call \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a1fffcd6d1c1e54cf0326a1631dc24639}{Generic\+::r\+Max(double val)}} after converting val from unit to geometrical units.
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a5cc3f2599b83bc21c35e95ded7fab541}{rmax\+\_\+}} expressed in unit \char`\"{}unit\char`\"{}; \\
+\hline
+{\em unit} & string... \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_ad65201a57dcce6af74e44ff296820130}\label{class_gyoto_1_1_astrobj_1_1_generic_ad65201a57dcce6af74e44ff296820130}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!rMax@{rMax}}
+\index{rMax@{rMax}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{rMax()}{rMax()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily virtual double Gyoto\+::\+Astrobj\+::\+Generic\+::r\+Max (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Get rmax\+\_\+ is specified unit. 
+
+Call \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_ab83c07c91451283c39aa6929db0f97bf}{r\+Max()}} and convert result to unit.
+
+
+\begin{DoxyParams}{Parameters}
+{\em unit} & string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double rmax converted to unit 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_afaf780270ee0e46750a5372a8c551dbc}\label{class_gyoto_1_1_astrobj_1_1_generic_afaf780270ee0e46750a5372a8c551dbc}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!rotateJs@{rotateJs}}
+\index{rotateJs@{rotateJs}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{rotateJs()}{rotateJs()}}
+{\footnotesize\ttfamily Eigen\+::\+Vector4d Gyoto\+::\+Astrobj\+::\+Generic\+::rotate\+Js (\begin{DoxyParamCaption}\item[{double}]{j\+Inu,  }\item[{double}]{j\+Qnu,  }\item[{double}]{j\+Unu,  }\item[{double}]{j\+Vnu,  }\item[{double}]{sin2\+Chi,  }\item[{double}]{cos2\+Chi }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+Apply the rotation matrix with angle Chi to the emission Stokes vector constructed in the fonction from the individual coefficients \mbox{\Hypertarget{class_gyoto_1_1_object_a43fe041144add66155668ca88a99fd98}\label{class_gyoto_1_1_object_a43fe041144add66155668ca88a99fd98}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!setParameter@{setParameter}}
+\index{setParameter@{setParameter}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{setParameter()}{setParameter()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Object\+::set\+Parameter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_property}{Gyoto\+::\+Property}} const \&}]{p,  }\item[{std\+::string const \&}]{name,  }\item[{std\+::string const \&}]{content,  }\item[{std\+::string const \&}]{unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Set parameter by \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} (and name) 
+
+This function is used when parsing an XML description, if \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} ({\itshape p}) of this {\itshape name} is found (i.\+e. either {\itshape p.\+name} or {\itshape p.\+name\+\_\+false} is equal to {\itshape name}). Implementation should fall-\/back on calling the direct\textquotesingle{}s parent implementation\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class }A: \textcolor{keyword}{public} Object \{\};}
+\DoxyCodeLine{\textcolor{keyword}{class }B: \textcolor{keyword}{public} A \{ }
+\DoxyCodeLine{ \textcolor{keyword}{using} B::setParameter;}
+\DoxyCodeLine{ \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} setParameter(\mbox{\hyperlink{class_gyoto_1_1_property}{Gyoto::Property}} \textcolor{keyword}{const} \&p,}
+\DoxyCodeLine{                           std::string name,}
+\DoxyCodeLine{                        std::string content,}
+\DoxyCodeLine{                        std::string unit);}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{\textcolor{keywordtype}{void} B::setParameter(\mbox{\hyperlink{class_gyoto_1_1_property}{Gyoto::Property}} \textcolor{keyword}{const} \&p,}
+\DoxyCodeLine{                          std::string name,}
+\DoxyCodeLine{                  std::string content,}
+\DoxyCodeLine{                  std::string unit) \{}
+\DoxyCodeLine{  \textcolor{keywordflow}{if} (name==\textcolor{stringliteral}{"{}Duff"{}}) doSomething(content, unit);}
+\DoxyCodeLine{  \textcolor{keywordflow}{else} A::setParameter(p, name, content, unit);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} that matches {\itshape name} ({\itshape p.\+name} == {\itshape name} or {\itshape p.\+name\+\_\+false} == {\itshape name}) \\
+\hline
+{\em name} & XML name of the parameter (XML entity) \\
+\hline
+{\em content} & string representation of the value \\
+\hline
+{\em unit} & string representation of the unit \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_polish_doughnut_a13a8a59bd3738f5739db0550dbb42003}{Gyoto\+::\+Astrobj\+::\+Polish\+Doughnut}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_a12691b14048aa4e3aa9fad7a427a198d}\label{class_gyoto_1_1_astrobj_1_1_generic_a12691b14048aa4e3aa9fad7a427a198d}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!transmission@{transmission}}
+\index{transmission@{transmission}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{transmission()}{transmission()}}
+{\footnotesize\ttfamily virtual double Gyoto\+::\+Astrobj\+::\+Generic\+::transmission (\begin{DoxyParamCaption}\item[{double}]{nuem,  }\item[{double}]{dsem,  }\item[{state\+\_\+t const \&}]{coord\+\_\+ph,  }\item[{double const}]{coord\+\_\+obj\mbox{[}8\mbox{]} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Transmission\+: exp( {$\alpha$}\textsubscript{{$\nu$}} $\ast$ ds\textsubscript{em} ) 
+
+transmission() computes the transmission of this fluid element or 0 if optically thick. The default implementation returns 1. (no attenuation) if optically thin, 0. if optically thick.
+
+
+\begin{DoxyParams}{Parameters}
+{\em nuem} & frequency in the fluid\textquotesingle{}s frame \\
+\hline
+{\em coord} & \mbox{\hyperlink{class_gyoto_1_1_photon}{Photon}} coordinate \\
+\hline
+{\em dsem} & geometrical length in geometrical units \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_dynamical_disk3_d_ac07397b47b24184dcc353b25329d30cd}{Gyoto\+::\+Astrobj\+::\+Dynamical\+Disk3D}}, and \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_pattern_disk_ad4fc9a40ef19f5af4277853b96a45f3e}{Gyoto\+::\+Astrobj\+::\+Pattern\+Disk}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_thin_disk_a33dfa12c0c261cdf6035174b18162570}\label{class_gyoto_1_1_astrobj_1_1_thin_disk_a33dfa12c0c261cdf6035174b18162570}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!velocityKind@{velocityKind}}
+\index{velocityKind@{velocityKind}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{velocityKind()}{velocityKind()}}
+{\footnotesize\ttfamily virtual std\+::string Gyoto\+::\+Astrobj\+::\+Thin\+Disk\+::velocity\+Kind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Set dir\+\_\+=t?1\+:-\/1. 
+
+Get Velocity\+Kind 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_a0b7b8a6576a8df3f46523b34701ea10d}\label{class_gyoto_1_1_astrobj_1_1_generic_a0b7b8a6576a8df3f46523b34701ea10d}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!\_\_defaultfeatures@{\_\_defaultfeatures}}
+\index{\_\_defaultfeatures@{\_\_defaultfeatures}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{\_\_defaultfeatures}{\_\_defaultfeatures}}
+{\footnotesize\ttfamily int Gyoto\+::\+Astrobj\+::\+Generic\+::\+\_\+\+\_\+defaultfeatures\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+
+
+Whether some virtual methods are implemented. 
+
+The default implementations of some methods call one-\/another. This member is used internally to avoid infinite recursion. \mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}\label{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!class\_@{class\_}}
+\index{class\_@{class\_}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{class\_}{class\_}}
+{\footnotesize\ttfamily std\+::string Gyoto\+::\+Python\+::\+Base\+::class\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Name of the \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_1_1_python}{Python}} class that we want to expose. 
+
+\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} name\+: Class. \mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_a1c219fb083260ed76ce2c67d47edeffd}\label{class_gyoto_1_1_astrobj_1_1_generic_a1c219fb083260ed76ce2c67d47edeffd}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!deltamaxinsidermax\_@{deltamaxinsidermax\_}}
+\index{deltamaxinsidermax\_@{deltamaxinsidermax\_}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{deltamaxinsidermax\_}{deltamaxinsidermax\_}}
+{\footnotesize\ttfamily double Gyoto\+::\+Astrobj\+::\+Generic\+::deltamaxinsidermax\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Maximum \mbox{\hyperlink{class_gyoto_1_1_photon}{Photon}} integration step inside \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a5cc3f2599b83bc21c35e95ded7fab541}{rmax\+\_\+}} \mbox{[}geometrical units\mbox{]}. 
+
+Maximum step for \mbox{\hyperlink{class_gyoto_1_1_photon}{Photon}} integation when inside the sphere of radius \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a5cc3f2599b83bc21c35e95ded7fab541}{rmax\+\_\+}}.
+
+\mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a1c219fb083260ed76ce2c67d47edeffd}{deltamaxinsidermax\+\_\+}} is in geometrical units. \mbox{\Hypertarget{class_gyoto_1_1_object_ac48ad88e3ef229ba0d0fe68a94a7118f}\label{class_gyoto_1_1_object_ac48ad88e3ef229ba0d0fe68a94a7118f}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!kind\_@{kind\_}}
+\index{kind\_@{kind\_}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{kind\_}{kind\_}}
+{\footnotesize\ttfamily std\+::string Gyoto\+::\+Object\+::kind\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+The \char`\"{}kind\char`\"{} that is output in the XML entity. 
+
+E.\+g. for an \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}}, fill\+Element() will ensure 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<Astrobj \mbox{\hyperlink{class_gyoto_1_1_object_a9f46de678c67e9050cf3a8b9677e1d73}{kind}}=\textcolor{stringliteral}{"{}kind\_"{}} ...>...</Astrobj>}
+
+\end{DoxyCode}
+ is written. \mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_a7f6558bf7597b6e6c8f1bd198895b077}\label{class_gyoto_1_1_python_1_1_base_a7f6558bf7597b6e6c8f1bd198895b077}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!module\_@{module\_}}
+\index{module\_@{module\_}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{module\_}{module\_}}
+{\footnotesize\ttfamily std\+::string Gyoto\+::\+Python\+::\+Base\+::module\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Name of the \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_1_1_python}{Python}} module that holds the class. 
+
+For instance, if the class is implemented in toto.\+py, the module name is \char`\"{}toto\char`\"{}. \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} name\+: Module. \mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_abf1c1e431cdd4f08f13de581cccb6770}\label{class_gyoto_1_1_smart_pointee_abf1c1e431cdd4f08f13de581cccb6770}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!mutex\_@{mutex\_}}
+\index{mutex\_@{mutex\_}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{mutex\_}{mutex\_}}
+{\footnotesize\ttfamily pthread\+\_\+mutex\+\_\+t Gyoto\+::\+Smart\+Pointee\+::mutex\+\_\+\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+
+
+A mutex. 
+
+When compiled with libpthread \mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_aa033dfe530617afb7c7a27e6536bb88c}\label{class_gyoto_1_1_python_1_1_base_aa033dfe530617afb7c7a27e6536bb88c}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!parameters\_@{parameters\_}}
+\index{parameters\_@{parameters\_}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{parameters\_}{parameters\_}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ Gyoto\+::\+Python\+::\+Base\+::parameters\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Parameters that this class needs. 
+
+A list of parameters (doubles) can be passed in the \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} Parameters. They will be sent to the \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_1_1_python}{Python}} instance using {\bfseries{setitem}}. \mbox{\Hypertarget{class_gyoto_1_1_object_a01832761cd5f0a12319e3e24ce9a9fba}\label{class_gyoto_1_1_object_a01832761cd5f0a12319e3e24ce9a9fba}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!plugins\_@{plugins\_}}
+\index{plugins\_@{plugins\_}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{plugins\_}{plugins\_}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Gyoto\+::\+Object\+::plugins\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+The plug-\/ins that needs to be loaded to access this instance\textquotesingle{}s class. 
+
+E.\+g. for an \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}}, fill\+Element() will ensure 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<Astrobj ... plugin=\textcolor{stringliteral}{"{}plugins\_"{}}>...</Astrobj>}
+
+\end{DoxyCode}
+ is written. \mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_generic_a5cc3f2599b83bc21c35e95ded7fab541}\label{class_gyoto_1_1_astrobj_1_1_generic_a5cc3f2599b83bc21c35e95ded7fab541}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!rmax\_@{rmax\_}}
+\index{rmax\_@{rmax\_}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{rmax\_}{rmax\_}}
+{\footnotesize\ttfamily double Gyoto\+::\+Astrobj\+::\+Generic\+::rmax\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Maximum distance to the center of the coordinate system \mbox{[}geometrical units\mbox{]}. 
+
+Maximum distance from the center of the coordinate system at which a photon may hit the object. Child classes may compute a decent value for \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a5cc3f2599b83bc21c35e95ded7fab541}{rmax\+\_\+}} at any time if \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a5cc3f2599b83bc21c35e95ded7fab541}{rmax\+\_\+}} is DBL\+\_\+\+MAX. External classes (Photons in particular) must use \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_ab83c07c91451283c39aa6929db0f97bf}{r\+Max()}} to access this information.
+
+\mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a5cc3f2599b83bc21c35e95ded7fab541}{rmax\+\_\+}} is in geometrical units. \mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_thin_disk_a67090267e51d9cde13ca1002f894a981}\label{class_gyoto_1_1_astrobj_1_1_thin_disk_a67090267e51d9cde13ca1002f894a981}} 
+\index{Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}!thickness\_@{thickness\_}}
+\index{thickness\_@{thickness\_}!Gyoto::Astrobj::Python::ThinDisk@{Gyoto::Astrobj::Python::ThinDisk}}
+\doxysubsubsection{\texorpdfstring{thickness\_}{thickness\_}}
+{\footnotesize\ttfamily double Gyoto\+::\+Astrobj\+::\+Thin\+Disk\+::thickness\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+disk thickness 
+
+Geometrical thickness in geometrical units. Used only in the optically thin regime (flag\+\_\+radtransf\+\_\+==1). Should be $<$$<$ rin\+\_\+. Default\+: 1e-\/3. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_gyoto_python_8h}{Gyoto\+Python.\+h}}\end{DoxyCompactItemize}

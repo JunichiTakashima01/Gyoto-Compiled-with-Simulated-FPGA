@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespace_gyoto_1_1_astrobj_1_1_python" kind="namespace" language="C++">
+    <compoundname>Gyoto::Astrobj::Python</compoundname>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard" prot="public">Gyoto::Astrobj::Python::Standard</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk" prot="public">Gyoto::Astrobj::Python::ThinDisk</innerclass>
+    <briefdescription>
+<para>Classes that wrap <ref refid="namespace_gyoto_1_1_astrobj_1_1_python" kindref="compound">Python</ref> classes as <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref> implementations. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="147" column="1"/>
+  </compounddef>
+</doxygen>

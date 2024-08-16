@@ -1,0 +1,99 @@
+\hypertarget{_gyoto_python_8h}{}\doxysection{Gyoto\+Python.\+h File Reference}
+\label{_gyoto_python_8h}\index{GyotoPython.h@{GyotoPython.h}}
+
+
+Extending \mbox{\hyperlink{namespace_gyoto}{Gyoto}} using Python.  
+
+
+{\ttfamily \#include $<$Gyoto\+Spectrum.\+h$>$}\newline
+{\ttfamily \#include $<$Gyoto\+Metric.\+h$>$}\newline
+{\ttfamily \#include $<$Gyoto\+Standard\+Astrobj.\+h$>$}\newline
+{\ttfamily \#include $<$Gyoto\+Thin\+Disk.\+h$>$}\newline
+{\ttfamily \#include $<$Gyoto\+Property.\+h$>$}\newline
+{\ttfamily \#include $<$Gyoto\+Value.\+h$>$}\newline
+{\ttfamily \#include $<$Gyoto\+Screen.\+h$>$}\newline
+{\ttfamily \#include $<$Gyoto\+Factory\+Messenger.\+h$>$}\newline
+{\ttfamily \#include $<$Python.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base}{Gyoto\+::\+Python\+::\+Base}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base}{Base}} class for classes in the \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} plug-\/in. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_python_1_1_object}{Gyoto\+::\+Python\+::\+Object$<$ O $>$}}
+\begin{DoxyCompactList}\small\item\em Class template to implement parts of the \mbox{\hyperlink{class_gyoto_1_1_object}{Gyoto\+::\+Object}} API. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_python}{Gyoto\+::\+Spectrum\+::\+Python}}
+\begin{DoxyCompactList}\small\item\em Loader for \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_python}{Python}} classes implementing the \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}} interface. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python}{Gyoto\+::\+Metric\+::\+Python}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} coded in \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python}{Python}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_standard}{Gyoto\+::\+Astrobj\+::\+Python\+::\+Standard}}
+\begin{DoxyCompactList}\small\item\em Coding a \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_standard}{Gyoto\+::\+Astrobj\+::\+Standard}} in \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_1_1_python}{Python}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk}{Gyoto\+::\+Astrobj\+::\+Python\+::\+Thin\+Disk}}
+\begin{DoxyCompactList}\small\item\em Coding a \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_thin_disk}{Gyoto\+::\+Astrobj\+::\+Thin\+Disk}} in \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_1_1_python}{Python}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_gyoto}{Gyoto}}
+\begin{DoxyCompactList}\small\item\em Namespace for the \mbox{\hyperlink{namespace_gyoto}{Gyoto}} library. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_python}{Gyoto\+::\+Python}}
+\begin{DoxyCompactList}\small\item\em Helpers for the classes deriving from \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base}{Gyoto\+::\+Python\+::\+Base}}. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Gyoto\+::\+Spectrum}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}} of a simple object (e.\+g. a \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_star}{Gyoto\+::\+Astrobj\+::\+Star}}) \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Gyoto\+::\+Metric}}
+\begin{DoxyCompactList}\small\item\em Access to metrics. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Gyoto\+::\+Astrobj}}
+\begin{DoxyCompactList}\small\item\em Access to astronomical objects. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_1_1_python}{Gyoto\+::\+Astrobj\+::\+Python}}
+\begin{DoxyCompactList}\small\item\em Classes that wrap \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_1_1_python}{Python}} classes as \mbox{\hyperlink{namespace_gyoto}{Gyoto}} \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}} implementations. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace_gyoto_1_1_python_acd3feb4e4929c63e9d845a5c2bf927fd}\label{namespace_gyoto_1_1_python_acd3feb4e4929c63e9d845a5c2bf927fd}} 
+Py\+Object $\ast$ \mbox{\hyperlink{namespace_gyoto_1_1_python_acd3feb4e4929c63e9d845a5c2bf927fd}{Gyoto\+::\+Python\+::\+Py\+Object\+\_\+\+From\+Gyoto\+Value}} (const \mbox{\hyperlink{class_gyoto_1_1_value}{Gyoto\+::\+Value}} \&)
+\begin{DoxyCompactList}\small\item\em Convert \mbox{\hyperlink{namespace_gyoto}{Gyoto}} \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} to \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} \mbox{\hyperlink{class_gyoto_1_1_python_1_1_object}{Object}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_1_1_python_a5a630b13b6471dbe150545ea6cd51512}\label{namespace_gyoto_1_1_python_a5a630b13b6471dbe150545ea6cd51512}} 
+Py\+Object $\ast$ \mbox{\hyperlink{namespace_gyoto_1_1_python_a5a630b13b6471dbe150545ea6cd51512}{Gyoto\+::\+Python\+::\+Py\+Instance\+\_\+\+Get\+Method}} (Py\+Object $\ast$p\+Instance, const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Return new reference to method, or NULL if method not found. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_1_1_python_af924bb5bdb5989e445e79444b94105b1}\label{namespace_gyoto_1_1_python_af924bb5bdb5989e445e79444b94105b1}} 
+Py\+Object $\ast$ \mbox{\hyperlink{namespace_gyoto_1_1_python_af924bb5bdb5989e445e79444b94105b1}{Gyoto\+::\+Python\+::\+Py\+Import\+\_\+\+Gyoto}} ()
+\begin{DoxyCompactList}\small\item\em Return refernce to the gyoto module, or NULL. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_1_1_python_a9ebbef049d400c8f608e962b0c84b41b}\label{namespace_gyoto_1_1_python_a9ebbef049d400c8f608e962b0c84b41b}} 
+void \mbox{\hyperlink{namespace_gyoto_1_1_python_a9ebbef049d400c8f608e962b0c84b41b}{Gyoto\+::\+Python\+::\+Py\+Instance\+\_\+\+Set\+This}} (Py\+Object $\ast$p\+Instance, Py\+Object $\ast$p\+New, void $\ast$ptr)
+\begin{DoxyCompactList}\small\item\em Set \char`\"{}this\char`\"{} attribute in instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_1_1_python_af2334e280806d1eb1cace53d40203e4e}\label{namespace_gyoto_1_1_python_af2334e280806d1eb1cace53d40203e4e}} 
+bool \mbox{\hyperlink{namespace_gyoto_1_1_python_af2334e280806d1eb1cace53d40203e4e}{Gyoto\+::\+Python\+::\+Py\+Callable\+\_\+\+Has\+Var\+Arg}} (Py\+Object $\ast$p\+Method)
+\begin{DoxyCompactList}\small\item\em Check whether method accepts the varargs argument. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_1_1_python_a97cc1be1b60b7781faa3c0717db795a7}\label{namespace_gyoto_1_1_python_a97cc1be1b60b7781faa3c0717db795a7}} 
+Py\+Object $\ast$ \mbox{\hyperlink{namespace_gyoto_1_1_python_a97cc1be1b60b7781faa3c0717db795a7}{Gyoto\+::\+Python\+::\+Py\+Module\+\_\+\+New\+From\+Python\+Code}} (const char $\ast$code)
+\begin{DoxyCompactList}\small\item\em Create module from \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} source code in a C string. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_1_1_python_a777bdc01ccd7bcf9b1a9049cf99107c3}\label{namespace_gyoto_1_1_python_a777bdc01ccd7bcf9b1a9049cf99107c3}} 
+Py\+Object $\ast$ \mbox{\hyperlink{namespace_gyoto_1_1_python_a777bdc01ccd7bcf9b1a9049cf99107c3}{Gyoto\+::\+Python\+::p\+Gyoto\+Spectrum}} ()
+\begin{DoxyCompactList}\small\item\em Get reference to the \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}} constructor in the gyoto \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} extension. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_1_1_python_a1e955fe12e8f05c9487ad6a1deae1064}\label{namespace_gyoto_1_1_python_a1e955fe12e8f05c9487ad6a1deae1064}} 
+Py\+Object $\ast$ \mbox{\hyperlink{namespace_gyoto_1_1_python_a1e955fe12e8f05c9487ad6a1deae1064}{Gyoto\+::\+Python\+::p\+Gyoto\+Metric}} ()
+\begin{DoxyCompactList}\small\item\em Get reference to the \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} constructor in the gyoto \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} extension. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_1_1_python_a480f10798e065fd76ee79152d67fe441}\label{namespace_gyoto_1_1_python_a480f10798e065fd76ee79152d67fe441}} 
+Py\+Object $\ast$ \mbox{\hyperlink{namespace_gyoto_1_1_python_a480f10798e065fd76ee79152d67fe441}{Gyoto\+::\+Python\+::p\+Gyoto\+Standard\+Astrobj}} ()
+\begin{DoxyCompactList}\small\item\em Get reference to the Standard\+Astrobj constructor in the gyoto \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} extension. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_1_1_python_af50719b81c5cdbccf038cc49e6161d7a}\label{namespace_gyoto_1_1_python_af50719b81c5cdbccf038cc49e6161d7a}} 
+Py\+Object $\ast$ \mbox{\hyperlink{namespace_gyoto_1_1_python_af50719b81c5cdbccf038cc49e6161d7a}{Gyoto\+::\+Python\+::p\+Gyoto\+Thin\+Disk}} ()
+\begin{DoxyCompactList}\small\item\em Get reference to the Thin\+Disk constructor in the gyoto \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} extension. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Extending \mbox{\hyperlink{namespace_gyoto}{Gyoto}} using Python. 
+
+The classes provided here allow implementing a Spectrum, an Astrobj or a Metric in Python. Together, they form the \char`\"{}python\char`\"{} \mbox{\hyperlink{namespace_gyoto}{Gyoto}} plug-\/in.
+
+This is complementary to, but distinct from the \char`\"{}gyoto\char`\"{} Python extension. Here, we are embedding Python inside \mbox{\hyperlink{namespace_gyoto}{Gyoto}} so that a few functions are coded in Python. The Python extension does the reverse\+: it allows calling \mbox{\hyperlink{namespace_gyoto}{Gyoto}} functions from within Python. Beware of the vocabulary\+: here, we call \char`\"{}plug-\/in\char`\"{} a shared library that extends \mbox{\hyperlink{namespace_gyoto}{Gyoto}}, and \char`\"{}extension\char`\"{} a shared library that extends Python.
+
+The plug-\/in works within the gyoto command-\/line utility as well as when \mbox{\hyperlink{namespace_gyoto}{Gyoto}} is used inside Python or inside Yorick. The only caveat is that the python plug-\/in of \mbox{\hyperlink{namespace_gyoto}{Gyoto}} should not be loaded into a Python interpreter different from the one that was used for building the plug-\/in.
+
+For this reason, the name of this plug-\/in depends on the Python interpreter that was used when building. It can be simply \char`\"{}python\char`\"{}, or a be versionned\+: for instance \char`\"{}python2.\+7\char`\"{} or \char`\"{}python3.\+4\char`\"{}. This way, it is possible to keep several copies of the plug-\/in, one for each version of the Python interpreter that are installed on the machine. Any version can be used in the gyoto command-\/line utility or in Yorick, but when \mbox{\hyperlink{namespace_gyoto}{Gyoto}} is used inside Python, only the matching version of this plug-\/in may be used.
+
+Implementing a Spectrum, Astrobj or Metric kind in Python is much easier than implementing a new C++ plug-\/in for \mbox{\hyperlink{namespace_gyoto}{Gyoto}}. This saves in development time. However, there is a cost in terms of computing time. While this cost may not be noticeable for Spectra and is moderate for Astrobjs (at least for simple ones), it is quite significant for Metrics, because the gmunu and christoffel methods are evaluated several times per integration step, for every photon. On one example using the Minkowski Metric, the integration of a full image with the Python implementation took approx. 150-\/200 more time than the same integration with the C++ implementation. So, for Metrics, the Python implementation can serve as a prototyping test-\/bed, but most users will probably still want to re-\/implement their Metrics in C++ eventually.
+
+Note also that multi-\/threading is not very efficient for the Metric\+::\+Python class, because only one thread may interact with the Python interpreter at any time. MPI multi-\/processing runs much faster. Here again, this limitation is less problematic for Spectra and Astrobjs than it is for Metrics.
+
+The principle of these classes is very simple\+: the plugin embeds a Python interpreter. Each instance of the \mbox{\hyperlink{namespace_gyoto}{Gyoto}} classes \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python}{Gyoto\+::\+Metric\+::\+Python}}, \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_python}{Gyoto\+::\+Spectrum\+::\+Python}}, Gyoto\+::\+Astrobj\+:\+Python\+:\+:Standard and \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk}{Gyoto\+::\+Astrobj\+::\+Python\+::\+Thin\+Disk}} instantiate a Python class in this interpreter, and delegate certain methods from the \mbox{\hyperlink{namespace_gyoto}{Gyoto}} API to this instance.
+
+In simple cases, the Python instance does not even need to know that it is running in \mbox{\hyperlink{namespace_gyoto}{Gyoto}}. It simply exposes an interface that is being called. However, \mbox{\hyperlink{namespace_gyoto}{Gyoto}} sets a few attributes in each method. Most notably, if the \char`\"{}gyoto\char`\"{} python extension is available, \mbox{\hyperlink{namespace_gyoto}{Gyoto}} will set the attribute \char`\"{}this\char`\"{} to the C++ instance that created the Python class instance, so that the Python code can access C++-\/side information. 

@@ -1,0 +1,864 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_gyoto_python_8h" kind="file" language="C++">
+    <compoundname>GyotoPython.h</compoundname>
+    <includes refid="_gyoto_spectrum_8h" local="no">GyotoSpectrum.h</includes>
+    <includes refid="_gyoto_metric_8h" local="no">GyotoMetric.h</includes>
+    <includes refid="_gyoto_standard_astrobj_8h" local="no">GyotoStandardAstrobj.h</includes>
+    <includes refid="_gyoto_thin_disk_8h" local="no">GyotoThinDisk.h</includes>
+    <includes refid="_gyoto_property_8h" local="no">GyotoProperty.h</includes>
+    <includes refid="_gyoto_value_8h" local="no">GyotoValue.h</includes>
+    <includes refid="_gyoto_screen_8h" local="no">GyotoScreen.h</includes>
+    <includes refid="_gyoto_factory_messenger_8h" local="no">GyotoFactoryMessenger.h</includes>
+    <includes local="no">Python.h</includes>
+    <incdepgraph>
+      <node id="20">
+        <label>iomanip</label>
+      </node>
+      <node id="28">
+        <label>GyotoProperty.h</label>
+        <link refid="_gyoto_property_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>float.h</label>
+      </node>
+      <node id="1">
+        <label>GyotoPython.h</label>
+        <link refid="_gyoto_python_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>GyotoUtils.h</label>
+        <link refid="_gyoto_utils_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>GyotoSpectrum.h</label>
+        <link refid="_gyoto_spectrum_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>eigen3/Eigen/Dense</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>GyotoSmartPointer.h</label>
+        <link refid="_gyoto_smart_pointer_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>GyotoObject.h</label>
+        <link refid="_gyoto_object_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>GyotoFactoryMessenger.h</label>
+        <link refid="_gyoto_factory_messenger_8h"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>stddef.h</label>
+      </node>
+      <node id="18">
+        <label>fstream</label>
+      </node>
+      <node id="3">
+        <label>GyotoRegister.h</label>
+        <link refid="_gyoto_register_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>GyotoStandardAstrobj.h</label>
+        <link refid="_gyoto_standard_astrobj_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>GyotoSpectrometer.h</label>
+        <link refid="_gyoto_spectrometer_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>GyotoMetric.h</label>
+        <link refid="_gyoto_metric_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>GyotoDefs.h</label>
+        <link refid="_gyoto_defs_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>pthread.h</label>
+      </node>
+      <node id="15">
+        <label>typeinfo</label>
+      </node>
+      <node id="33">
+        <label>xercesc/dom/DOMElement.hpp</label>
+      </node>
+      <node id="34">
+        <label>Python.h</label>
+      </node>
+      <node id="26">
+        <label>GyotoFunctors.h</label>
+        <link refid="_gyoto_functors_8h"/>
+      </node>
+      <node id="27">
+        <label>GyotoThinDisk.h</label>
+        <link refid="_gyoto_thin_disk_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vector</label>
+      </node>
+      <node id="8">
+        <label>GyotoConfig.h</label>
+        <link refid="_gyoto_config_8h"/>
+      </node>
+      <node id="22">
+        <label>sstream</label>
+      </node>
+      <node id="19">
+        <label>GyotoAstrobj.h</label>
+        <link refid="_gyoto_astrobj_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>iostream</label>
+      </node>
+      <node id="29">
+        <label>GyotoValue.h</label>
+        <link refid="_gyoto_value_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>GyotoError.h</label>
+        <link refid="_gyoto_error_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>GyotoHooks.h</label>
+        <link refid="_gyoto_hooks_8h"/>
+      </node>
+      <node id="30">
+        <label>GyotoScreen.h</label>
+        <link refid="_gyoto_screen_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>GyotoConverters.h</label>
+        <link refid="_gyoto_converters_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_gyoto_1_1_python_1_1_base" prot="public">Gyoto::Python::Base</innerclass>
+    <innerclass refid="class_gyoto_1_1_python_1_1_object" prot="public">Gyoto::Python::Object</innerclass>
+    <innerclass refid="class_gyoto_1_1_spectrum_1_1_python" prot="public">Gyoto::Spectrum::Python</innerclass>
+    <innerclass refid="class_gyoto_1_1_metric_1_1_python" prot="public">Gyoto::Metric::Python</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard" prot="public">Gyoto::Astrobj::Python::Standard</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk" prot="public">Gyoto::Astrobj::Python::ThinDisk</innerclass>
+    <innernamespace refid="namespace_gyoto">Gyoto</innernamespace>
+    <innernamespace refid="namespace_gyoto_1_1_python">Gyoto::Python</innernamespace>
+    <innernamespace refid="namespace_gyoto_1_1_spectrum">Gyoto::Spectrum</innernamespace>
+    <innernamespace refid="namespace_gyoto_1_1_metric">Gyoto::Metric</innernamespace>
+    <innernamespace refid="namespace_gyoto_1_1_astrobj">Gyoto::Astrobj</innernamespace>
+    <innernamespace refid="namespace_gyoto_1_1_astrobj_1_1_python">Gyoto::Astrobj::Python</innernamespace>
+    <briefdescription>
+<para>Extending <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> using Python. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The classes provided here allow implementing a Spectrum, an Astrobj or a Metric in Python. Together, they form the &quot;python&quot; <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> plug-in.</para>
+<para>This is complementary to, but distinct from the &quot;gyoto&quot; Python extension. Here, we are embedding Python inside <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> so that a few functions are coded in Python. The Python extension does the reverse: it allows calling <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> functions from within Python. Beware of the vocabulary: here, we call &quot;plug-in&quot; a shared library that extends <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>, and &quot;extension&quot; a shared library that extends Python.</para>
+<para>The plug-in works within the gyoto command-line utility as well as when <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> is used inside Python or inside Yorick. The only caveat is that the python plug-in of <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> should not be loaded into a Python interpreter different from the one that was used for building the plug-in.</para>
+<para>For this reason, the name of this plug-in depends on the Python interpreter that was used when building. It can be simply &quot;python&quot;, or a be versionned: for instance &quot;python2.7&quot; or &quot;python3.4&quot;. This way, it is possible to keep several copies of the plug-in, one for each version of the Python interpreter that are installed on the machine. Any version can be used in the gyoto command-line utility or in Yorick, but when <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> is used inside Python, only the matching version of this plug-in may be used.</para>
+<para>Implementing a Spectrum, Astrobj or Metric kind in Python is much easier than implementing a new C++ plug-in for <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>. This saves in development time. However, there is a cost in terms of computing time. While this cost may not be noticeable for Spectra and is moderate for Astrobjs (at least for simple ones), it is quite significant for Metrics, because the gmunu and christoffel methods are evaluated several times per integration step, for every photon. On one example using the Minkowski Metric, the integration of a full image with the Python implementation took approx. 150-200 more time than the same integration with the C++ implementation. So, for Metrics, the Python implementation can serve as a prototyping test-bed, but most users will probably still want to re-implement their Metrics in C++ eventually.</para>
+<para>Note also that multi-threading is not very efficient for the Metric::Python class, because only one thread may interact with the Python interpreter at any time. MPI multi-processing runs much faster. Here again, this limitation is less problematic for Spectra and Astrobjs than it is for Metrics.</para>
+<para>The principle of these classes is very simple: the plugin embeds a Python interpreter. Each instance of the <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> classes <ref refid="class_gyoto_1_1_metric_1_1_python" kindref="compound">Gyoto::Metric::Python</ref>, <ref refid="class_gyoto_1_1_spectrum_1_1_python" kindref="compound">Gyoto::Spectrum::Python</ref>, Gyoto::Astrobj:Python::Standard and <ref refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk" kindref="compound">Gyoto::Astrobj::Python::ThinDisk</ref> instantiate a Python class in this interpreter, and delegate certain methods from the <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> API to this instance.</para>
+<para>In simple cases, the Python instance does not even need to know that it is running in <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>. It simply exposes an interface that is being called. However, <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> sets a few attributes in each method. Most notably, if the &quot;gyoto&quot; python extension is available, <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> will set the attribute &quot;this&quot; to the C++ instance that created the Python class instance, so that the Python code can access C++-side information. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/>Copyright<sp/>2015-2016,<sp/>2022<sp/>Thibaut<sp/>Paumard</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>Gyoto.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"></highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>Gyoto.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__GyotoPython_H_<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__GyotoPython_H_<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_spectrum_8h" kindref="compound">GyotoSpectrum.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_metric_8h" kindref="compound">GyotoMetric.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_standard_astrobj_8h" kindref="compound">GyotoStandardAstrobj.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_thin_disk_8h" kindref="compound">GyotoThinDisk.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_property_8h" kindref="compound">GyotoProperty.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_value_8h" kindref="compound">GyotoValue.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_screen_8h" kindref="compound">GyotoScreen.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_factory_messenger_8h" kindref="compound">GyotoFactoryMessenger.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Python.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_gyoto" kindref="compound">Gyoto</ref><sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Python<sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Base;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>O&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Object;</highlight></codeline>
+<codeline lineno="111" refid="namespace_gyoto_1_1_python_1acd3feb4e4929c63e9d845a5c2bf927fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>PyObject<sp/>*<sp/><ref refid="namespace_gyoto_1_1_python_1acd3feb4e4929c63e9d845a5c2bf927fd" kindref="member">PyObject_FromGyotoValue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_value" kindref="compound">Gyoto::Value</ref>&amp;);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="namespace_gyoto_1_1_python_1a5a630b13b6471dbe150545ea6cd51512" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>PyObject<sp/>*<sp/><ref refid="namespace_gyoto_1_1_python_1a5a630b13b6471dbe150545ea6cd51512" kindref="member">PyInstance_GetMethod</ref>(PyObject*<sp/>pInstance,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="namespace_gyoto_1_1_python_1af924bb5bdb5989e445e79444b94105b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>PyObject<sp/>*<sp/><ref refid="namespace_gyoto_1_1_python_1af924bb5bdb5989e445e79444b94105b1" kindref="member">PyImport_Gyoto</ref>();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="namespace_gyoto_1_1_python_1a9ebbef049d400c8f608e962b0c84b41b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_gyoto_1_1_python_1a9ebbef049d400c8f608e962b0c84b41b" kindref="member">PyInstance_SetThis</ref>(PyObject<sp/>*<sp/>pInstance,</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PyObject<sp/>*<sp/>pNew,</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>ptr);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="namespace_gyoto_1_1_python_1af2334e280806d1eb1cace53d40203e4e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_gyoto_1_1_python_1af2334e280806d1eb1cace53d40203e4e" kindref="member">PyCallable_HasVarArg</ref>(PyObject<sp/>*<sp/>pMethod);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="namespace_gyoto_1_1_python_1a97cc1be1b60b7781faa3c0717db795a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>PyObject<sp/>*<sp/><ref refid="namespace_gyoto_1_1_python_1a97cc1be1b60b7781faa3c0717db795a7" kindref="member">PyModule_NewFromPythonCode</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>code);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="namespace_gyoto_1_1_python_1a777bdc01ccd7bcf9b1a9049cf99107c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>PyObject<sp/>*<sp/><ref refid="namespace_gyoto_1_1_python_1a777bdc01ccd7bcf9b1a9049cf99107c3" kindref="member">pGyotoSpectrum</ref>()<sp/>;</highlight></codeline>
+<codeline lineno="133" refid="namespace_gyoto_1_1_python_1a1e955fe12e8f05c9487ad6a1deae1064" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>PyObject<sp/>*<sp/><ref refid="namespace_gyoto_1_1_python_1a1e955fe12e8f05c9487ad6a1deae1064" kindref="member">pGyotoMetric</ref>()<sp/>;</highlight></codeline>
+<codeline lineno="135" refid="namespace_gyoto_1_1_python_1a480f10798e065fd76ee79152d67fe441" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>PyObject<sp/>*<sp/><ref refid="namespace_gyoto_1_1_python_1a480f10798e065fd76ee79152d67fe441" kindref="member">pGyotoStandardAstrobj</ref>()<sp/>;</highlight></codeline>
+<codeline lineno="137" refid="namespace_gyoto_1_1_python_1af50719b81c5cdbccf038cc49e6161d7a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>PyObject<sp/>*<sp/><ref refid="namespace_gyoto_1_1_python_1af50719b81c5cdbccf038cc49e6161d7a" kindref="member">pGyotoThinDisk</ref>()<sp/>;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Spectrum<sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Python;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Metric<sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Python;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Astrobj<sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Python<sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Standard;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ThinDisk;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192" refid="class_gyoto_1_1_python_1_1_base" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_python_1_1_base" kindref="compound">Gyoto::Python::Base</ref><sp/>{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="200" refid="class_gyoto_1_1_python_1_1_base_1a7f6558bf7597b6e6c8f1bd198895b077" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="class_gyoto_1_1_python_1_1_base_1a7f6558bf7597b6e6c8f1bd198895b077" kindref="member">module_</ref>;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206" refid="class_gyoto_1_1_python_1_1_base_1ae0c6e2e9b883adaa081e7a3b402d3bb2" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="class_gyoto_1_1_python_1_1_base_1ae0c6e2e9b883adaa081e7a3b402d3bb2" kindref="member">inline_module_</ref>;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213" refid="class_gyoto_1_1_python_1_1_base_1a69af6b343cb744e7e34022d395f93ab4" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="class_gyoto_1_1_python_1_1_base_1a69af6b343cb744e7e34022d395f93ab4" kindref="member">class_</ref>;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222" refid="class_gyoto_1_1_python_1_1_base_1aa033dfe530617afb7c7a27e6536bb88c" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;double&gt;<sp/><ref refid="class_gyoto_1_1_python_1_1_base_1aa033dfe530617afb7c7a27e6536bb88c" kindref="member">parameters_</ref>;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227" refid="class_gyoto_1_1_python_1_1_base_1af652cb4b7a2f473e9a86a4bf1e47e973" refkind="member"><highlight class="normal"><sp/><sp/>PyObject<sp/>*<sp/><ref refid="class_gyoto_1_1_python_1_1_base_1af652cb4b7a2f473e9a86a4bf1e47e973" kindref="member">pModule_</ref>;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232" refid="class_gyoto_1_1_python_1_1_base_1aab2145b455aa9848024b643d06016b35" refkind="member"><highlight class="normal"><sp/><sp/>PyObject<sp/>*<sp/><ref refid="class_gyoto_1_1_python_1_1_base_1aab2145b455aa9848024b643d06016b35" kindref="member">pInstance_</ref>;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237" refid="class_gyoto_1_1_python_1_1_base_1a7e9289775df2ec09ca222ba290cf35c7" refkind="member"><highlight class="normal"><sp/><sp/>PyObject<sp/>*<sp/><ref refid="class_gyoto_1_1_python_1_1_base_1a7e9289775df2ec09ca222ba290cf35c7" kindref="member">pProperties_</ref>;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242" refid="class_gyoto_1_1_python_1_1_base_1a8f1ddee73aaa84dcdc1b1d2b0b3d8f7c" refkind="member"><highlight class="normal"><sp/><sp/>PyObject<sp/>*<sp/><ref refid="class_gyoto_1_1_python_1_1_base_1a8f1ddee73aaa84dcdc1b1d2b0b3d8f7c" kindref="member">pSet_</ref>;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247" refid="class_gyoto_1_1_python_1_1_base_1a758de1b2cdd3d9cd55506b5c599290f1" refkind="member"><highlight class="normal"><sp/><sp/>PyObject<sp/>*<sp/><ref refid="class_gyoto_1_1_python_1_1_base_1a758de1b2cdd3d9cd55506b5c599290f1" kindref="member">pGet_</ref>;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_python_1_1_base" kindref="compound">Base</ref>();</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_python_1_1_base" kindref="compound">Base</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_python_1_1_base" kindref="compound">Base</ref>&amp;);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/>~<ref refid="class_gyoto_1_1_python_1_1_base" kindref="compound">Base</ref>();</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254" refid="class_gyoto_1_1_python_1_1_base_1a9a814881f2741b5ccdf8ca91d1b4ebf7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_gyoto_1_1_python_1_1_base_1a9a814881f2741b5ccdf8ca91d1b4ebf7" kindref="member">module</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;<sp/></highlight></codeline>
+<codeline lineno="255" refid="class_gyoto_1_1_python_1_1_base_1a79f704f70a42edf5f37d1e28ee88037a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_gyoto_1_1_python_1_1_base_1a79f704f70a42edf5f37d1e28ee88037a" kindref="member">inlineModule</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;<sp/></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265" refid="class_gyoto_1_1_python_1_1_base_1a4cb3d486914da158dafcd1e562827fed" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_python_1_1_base_1a4cb3d486914da158dafcd1e562827fed" kindref="member">module</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275" refid="class_gyoto_1_1_python_1_1_base_1a3436f643ba19cb9e53d8a7e95b64f0df" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_python_1_1_base_1a3436f643ba19cb9e53d8a7e95b64f0df" kindref="member">inlineModule</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278" refid="class_gyoto_1_1_python_1_1_base_1a894cfd1e8f4424b4a27b79020bc95a95" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_gyoto_1_1_python_1_1_base_1a894cfd1e8f4424b4a27b79020bc95a95" kindref="member">klass</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293" refid="class_gyoto_1_1_python_1_1_base_1acce1645b213fe517f73483a99e7789be" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_python_1_1_base_1acce1645b213fe517f73483a99e7789be" kindref="member">klass</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>c);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296" refid="class_gyoto_1_1_python_1_1_base_1a1f83483692c3f761777f5a8a863d0a83" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/><ref refid="class_gyoto_1_1_python_1_1_base_1a1f83483692c3f761777f5a8a863d0a83" kindref="member">parameters</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="303" refid="class_gyoto_1_1_python_1_1_base_1ad60df11071a344829956610aa8015a58" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_python_1_1_base_1ad60df11071a344829956610aa8015a58" kindref="member">parameters</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;&amp;);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hasPythonProperty(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;key)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setPythonProperty(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;key,<sp/><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref><sp/>val);</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref><sp/>getPythonProperty(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;key)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pythonPropertyType(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;key)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>O&gt;</highlight></codeline>
+<codeline lineno="319" refid="class_gyoto_1_1_python_1_1_object" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_python_1_1_object" kindref="compound">Gyoto::Python::Object</ref></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>O,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_python_1_1_base" kindref="compound">Gyoto::Python::Base</ref></highlight></codeline>
+<codeline lineno="321"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_python_1_1_object" kindref="compound">Object</ref>()<sp/>:<sp/>O(),<sp/><ref refid="class_gyoto_1_1_python_1_1_base" kindref="compound">Gyoto::Python::Base</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_python_1_1_object" kindref="compound">Object</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_python_1_1_object" kindref="compound">Object</ref>&amp;<sp/>o)<sp/>:<sp/>O(o),<sp/><ref refid="class_gyoto_1_1_python_1_1_base" kindref="compound">Base</ref>(o)<sp/>{}</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_gyoto_1_1_python_1_1_object" kindref="compound">Object</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>O::set;</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;key,<sp/><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref><sp/>val)<sp/>{</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_gyoto_defs_8h_1a2ddb771d38a2f9e435a6608126362cad" kindref="member">GYOTO_DEBUG_EXPR</ref>(key);</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_gyoto_defs_8h_1a2ddb771d38a2f9e435a6608126362cad" kindref="member">GYOTO_DEBUG_EXPR</ref>(val.<ref refid="class_gyoto_1_1_value_1a00a3df91f3f8ff83a7257151077aab87" kindref="member">type</ref>);</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(hasPythonProperty(key))<sp/>{</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gyoto_defs_8h_1a16e0e6bc14859601c47ca51a542913d6" kindref="member">GYOTO_DEBUG</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Python<sp/>key<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>key<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>exists&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>setPythonProperty(key,<sp/>val);</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gyoto_defs_8h_1a16e0e6bc14859601c47ca51a542913d6" kindref="member">GYOTO_DEBUG</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Python<sp/>key<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>key<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>does<sp/>not<sp/>exist&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>O::set(key,<sp/>val);</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set(<ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;p,<sp/><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref><sp/>val){</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>key=p.<ref refid="class_gyoto_1_1_property_1ab0b88c41cd7307a0d78dc1be29a235d8" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_gyoto_defs_8h_1a2ddb771d38a2f9e435a6608126362cad" kindref="member">GYOTO_DEBUG_EXPR</ref>(key);</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!hasPythonProperty(key))<sp/>{</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gyoto_defs_8h_1a16e0e6bc14859601c47ca51a542913d6" kindref="member">GYOTO_DEBUG</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;calling<sp/>Generic::set&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>O::set(p,<sp/>val);</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/>setPythonProperty(key,<sp/>val);</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set(<ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;p,<sp/><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref><sp/>val,<sp/>std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;unit)<sp/>{</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_gyoto_defs_8h_1a2ddb771d38a2f9e435a6608126362cad" kindref="member">GYOTO_DEBUG_EXPR</ref>(p.<ref refid="class_gyoto_1_1_property_1ab0b88c41cd7307a0d78dc1be29a235d8" kindref="member">name</ref>);</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(hasPythonProperty(p.<ref refid="class_gyoto_1_1_property_1ab0b88c41cd7307a0d78dc1be29a235d8" kindref="member">name</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gyoto_defs_8h_1a16e0e6bc14859601c47ca51a542913d6" kindref="member">GYOTO_DEBUG</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Python<sp/>key<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>p.<ref refid="class_gyoto_1_1_property_1ab0b88c41cd7307a0d78dc1be29a235d8" kindref="member">name</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>exists&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(unit!=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/><ref refid="_gyoto_error_8h_1a3781d05cd11f75afd5d988072c853e02" kindref="member">GYOTO_ERROR</ref>(</highlight><highlight class="stringliteral">&quot;units<sp/>not<sp/>implemented&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>setPythonProperty(p.<ref refid="class_gyoto_1_1_property_1ab0b88c41cd7307a0d78dc1be29a235d8" kindref="member">name</ref>,<sp/>val);</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gyoto_defs_8h_1a16e0e6bc14859601c47ca51a542913d6" kindref="member">GYOTO_DEBUG</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Python<sp/>key<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>p.<ref refid="class_gyoto_1_1_property_1ab0b88c41cd7307a0d78dc1be29a235d8" kindref="member">name</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>does<sp/>not<sp/>exist&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>O::set(p,<sp/>val,<sp/>unit);</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>O::get;</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref><sp/>get(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;key)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_gyoto_defs_8h_1a2ddb771d38a2f9e435a6608126362cad" kindref="member">GYOTO_DEBUG_EXPR</ref>(key);</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!hasPythonProperty(key))<sp/>{</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gyoto_defs_8h_1a16e0e6bc14859601c47ca51a542913d6" kindref="member">GYOTO_DEBUG</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;calling<sp/>Generic::get&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>O::get(key);</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>getPythonProperty(key);</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref><sp/>get(<ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;p,</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;unit)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!hasPythonProperty(p.<ref refid="class_gyoto_1_1_property_1ab0b88c41cd7307a0d78dc1be29a235d8" kindref="member">name</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gyoto_defs_8h_1a16e0e6bc14859601c47ca51a542913d6" kindref="member">GYOTO_DEBUG</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;calling<sp/>Generic::get&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>O::get(p,<sp/>unit);</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>getPythonProperty(p.<ref refid="class_gyoto_1_1_property_1ab0b88c41cd7307a0d78dc1be29a235d8" kindref="member">name</ref>);</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref><sp/>get(<ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;p)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!hasPythonProperty(p.<ref refid="class_gyoto_1_1_property_1ab0b88c41cd7307a0d78dc1be29a235d8" kindref="member">name</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gyoto_defs_8h_1a16e0e6bc14859601c47ca51a542913d6" kindref="member">GYOTO_DEBUG</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;calling<sp/>Generic::get&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>O::get(p);</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>getPythonProperty(p.<ref refid="class_gyoto_1_1_property_1ab0b88c41cd7307a0d78dc1be29a235d8" kindref="member">name</ref>);</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"></highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>O::setParameter;</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>setParameter(std::string<sp/>name,<sp/>std::string<sp/>content,<sp/>std::string<sp/>unit)<sp/>{</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_gyoto_defs_8h_1a2ddb771d38a2f9e435a6608126362cad" kindref="member">GYOTO_DEBUG_EXPR</ref>(name);</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_gyoto_defs_8h_1a2ddb771d38a2f9e435a6608126362cad" kindref="member">GYOTO_DEBUG_EXPR</ref>(content);</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_gyoto_defs_8h_1a2ddb771d38a2f9e435a6608126362cad" kindref="member">GYOTO_DEBUG_EXPR</ref>(unit);</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(hasPythonProperty(name))<sp/>{</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref><sp/>p(NULL);</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>p.<ref refid="class_gyoto_1_1_property_1ab0b88c41cd7307a0d78dc1be29a235d8" kindref="member">name</ref>=name;</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>p.<ref refid="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" kindref="member">type</ref>=pythonPropertyType(name);</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gyoto_defs_8h_1a16e0e6bc14859601c47ca51a542913d6" kindref="member">GYOTO_DEBUG</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Calling<sp/>setParameter(p,<sp/>name,<sp/>content,<sp/>unit)&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>setParameter(p,<sp/>name,<sp/>content,<sp/>unit);</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>O::setParameter(name,<sp/>content,<sp/>unit);</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"></highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fillElement(<ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">Gyoto::FactoryMessenger</ref><sp/>*fmp)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/>O::fillElement(fmp);</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_gyoto_1_1_python_1_1_base_1a7e9289775df2ec09ca222ba290cf35c7" kindref="member">pProperties_</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Py_ssize_t<sp/>pos=0;</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>PyObject<sp/>*pKey,<sp/>*pVal;</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(PyDict_Next(<ref refid="class_gyoto_1_1_python_1_1_base_1a7e9289775df2ec09ca222ba290cf35c7" kindref="member">pProperties_</ref>,<sp/>&amp;pos,<sp/>&amp;pKey,<sp/>&amp;pVal))<sp/>{</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>key=PyUnicode_AsUTF8(pKey);</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>stype=PyUnicode_AsUTF8(pVal);</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8" kindref="member">Property::type_e</ref><sp/>type<sp/>=<sp/><ref refid="class_gyoto_1_1_property_1a16a260cd251dfd99730e562ae9422b3f" kindref="member">Property::typeFromString</ref>(stype);</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref><sp/>p<sp/>(key,<sp/>type);</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;fillProperty(fmp,<sp/>p);</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"></highlight></codeline>
+<codeline lineno="424"><highlight class="normal"></highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setParameters(<ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">Gyoto::FactoryMessenger</ref><sp/>*fmp)<sp/><sp/>{</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>name=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>content=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>unit=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref><sp/>*<sp/>child<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fmp)</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(fmp-&gt;<ref refid="class_gyoto_1_1_factory_messenger_1a716340221e527c61a05af389590b53f4" kindref="member">getNextParameter</ref>(&amp;name,<sp/>&amp;content,<sp/>&amp;unit))<sp/>{</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gyoto_defs_8h_1a16e0e6bc14859601c47ca51a542913d6" kindref="member">GYOTO_DEBUG</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Setting<sp/>&apos;&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>name<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;&apos;<sp/>to<sp/>&apos;&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>content</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;&apos;<sp/>(unit=&apos;&quot;</highlight><highlight class="normal">&lt;&lt;unit&lt;&lt;</highlight><highlight class="stringliteral">&quot;&apos;)&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref><sp/>*<sp/>prop<sp/>=NULL;</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>need_delete=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(hasPythonProperty(name))<sp/>{</highlight></codeline>
+<codeline lineno="435"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>need_delete=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prop<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>(name,<sp/>pythonPropertyType(name));</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>need_delete=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prop<sp/>=<sp/>this-&gt;property(name);</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!prop)<sp/>{;</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gyoto_defs_8h_1a16e0e6bc14859601c47ca51a542913d6" kindref="member">GYOTO_DEBUG</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;&apos;&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>name<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;&apos;<sp/>not<sp/>found,<sp/>calling<sp/>setParameter()&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>specific<sp/>setParameter()<sp/>implementation<sp/>may<sp/>well<sp/>know</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>this<sp/>entity</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setParameter(name,<sp/>content,<sp/>unit);</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gyoto_defs_8h_1a16e0e6bc14859601c47ca51a542913d6" kindref="member">GYOTO_DEBUG</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;&apos;&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>name<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;&apos;<sp/>found<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>plugins;</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(prop-&gt;<ref refid="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" kindref="member">type</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a3b5e845fdb6455c0e111a42882798948" kindref="member">Property::metric_t</ref>:</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set(*prop,<sp/>fmp-&gt;<ref refid="class_gyoto_1_1_factory_messenger_1a20033615402e9d7a7c21fc5ef4ebf386" kindref="member">metric</ref>());</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a59a216803f694032f224e3fc770a9371" kindref="member">Property::astrobj_t</ref>:</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set(*prop,<sp/>fmp-&gt;<ref refid="class_gyoto_1_1_factory_messenger_1aea5108fe2bb15a154883e2776885a593" kindref="member">astrobj</ref>());</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8ae7bb28c4049603af389dc4be0a4093f7" kindref="member">Property::screen_t</ref>:</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set(*prop,<sp/>fmp-&gt;<ref refid="class_gyoto_1_1_factory_messenger_1a59571b4b88162856c69af230f2c11f95" kindref="member">screen</ref>());</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a95d36a0c8134e93cc7e868415c368352" kindref="member">Property::spectrum_t</ref>:</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>content<sp/>=<sp/>fmp<sp/>-&gt;<sp/>getAttribute(</highlight><highlight class="stringliteral">&quot;kind&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>child<sp/>=<sp/>fmp<sp/>-&gt;<sp/>getChild();</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plugins<sp/>=<sp/><ref refid="namespace_gyoto_1aaae2a1ecfc01007e161f8ea6b52bdf31" kindref="member">Gyoto::split</ref>(fmp<sp/>-&gt;<sp/>getAttribute(</highlight><highlight class="stringliteral">&quot;plugin&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set(*prop,<sp/>(*<ref refid="namespace_gyoto_1_1_spectrum_1a757d3ef145cea78a26ae1049f24b3789" kindref="member">Spectrum::getSubcontractor</ref>(content,<sp/>plugins))(child,<sp/>plugins)<sp/>);</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>child;</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a7aed2532777a1a9643f989a987a0ce90" kindref="member">Property::spectrometer_t</ref>:</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>content<sp/>=<sp/>fmp<sp/>-&gt;<sp/>getAttribute(</highlight><highlight class="stringliteral">&quot;kind&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>child<sp/>=<sp/>fmp<sp/>-&gt;<sp/>getChild();</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plugins<sp/>=<sp/><ref refid="namespace_gyoto_1aaae2a1ecfc01007e161f8ea6b52bdf31" kindref="member">Gyoto::split</ref>(fmp<sp/>-&gt;<sp/>getAttribute(</highlight><highlight class="stringliteral">&quot;plugin&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set(*prop,<sp/>(*<ref refid="namespace_gyoto_1_1_spectrometer_1a28bbcf16ab5da826a6ad4310141e3e51" kindref="member">Spectrometer::getSubcontractor</ref>(content,<sp/>plugins))(child,<sp/>plugins)<sp/>);</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>child;</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="474"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a7773049749e0b6f0d83e531f838220a7" kindref="member">Property::filename_t</ref>:</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>content<sp/>=<sp/>fmp-&gt;<ref refid="class_gyoto_1_1_factory_messenger_1a343e324a387d3a30c93bd391828a9858" kindref="member">fullPath</ref>(content);</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>no<sp/>&apos;break;&apos;<sp/>here,<sp/>we<sp/>need<sp/>to<sp/>proceed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setParameter(*prop,<sp/>name,<sp/>content,<sp/>unit);</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="481"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="482"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(need_delete)<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>prop;</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_gyoto_defs_8h_1a16e0e6bc14859601c47ca51a542913d6" kindref="member">GYOTO_DEBUG</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Done<sp/>processing<sp/>parameters&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="486"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"></highlight></codeline>
+<codeline lineno="501" refid="class_gyoto_1_1_spectrum_1_1_python" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_spectrum_1_1_python" kindref="compound">Gyoto::Spectrum::Python</ref></highlight></codeline>
+<codeline lineno="502"><highlight class="normal"><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_python_1_1_object" kindref="compound">Gyoto::Python::Object</ref>&lt;Gyoto::Spectrum::Generic&gt;</highlight></codeline>
+<codeline lineno="503"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt;<ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>::<ref refid="class_gyoto_1_1_spectrum_1_1_python" kindref="compound">Spectrum::Python</ref>&gt;;</highlight></codeline>
+<codeline lineno="505"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"></highlight></codeline>
+<codeline lineno="513" refid="class_gyoto_1_1_spectrum_1_1_python_1a00b43b2412e421a1bdd8f835d268e3f7" refkind="member"><highlight class="normal"><sp/><sp/>PyObject<sp/>*<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1a00b43b2412e421a1bdd8f835d268e3f7" kindref="member">pCall_</ref>;</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"></highlight></codeline>
+<codeline lineno="518" refid="class_gyoto_1_1_spectrum_1_1_python_1af7801d3d37149dce9ddfce239cd7f00f" refkind="member"><highlight class="normal"><sp/><sp/>PyObject<sp/>*<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1af7801d3d37149dce9ddfce239cd7f00f" kindref="member">pIntegrate_</ref>;</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"></highlight></codeline>
+<codeline lineno="537" refid="class_gyoto_1_1_spectrum_1_1_python_1a819e406849dcc75508df713e443caa6f" refkind="member"><highlight class="normal"><sp/><sp/>bool<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1a819e406849dcc75508df713e443caa6f" kindref="member">pCall_overloaded_</ref>;</highlight></codeline>
+<codeline lineno="538"><highlight class="normal"></highlight></codeline>
+<codeline lineno="539"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="540" refid="class_gyoto_1_1_spectrum_1_1_python_1a40953e08d4c833b6ef97ac948285e7f4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" kindref="member">GYOTO_OBJECT</ref>;</highlight></codeline>
+<codeline lineno="541"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_object_8h_1a6806b7f836d51dbe45cdf7bd60377a40" kindref="member">GYOTO_OBJECT_THREAD_SAFETY</ref>;</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"></highlight></codeline>
+<codeline lineno="543"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python" kindref="compound">Python</ref>();</highlight></codeline>
+<codeline lineno="544"><highlight class="normal"></highlight></codeline>
+<codeline lineno="545"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python" kindref="compound">Python</ref>(const<sp/>Python&amp;);</highlight></codeline>
+<codeline lineno="546"><highlight class="normal"></highlight></codeline>
+<codeline lineno="547" refid="class_gyoto_1_1_spectrum_1_1_python_1abd500ec01dcc4cad2f25d9459e698b6d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python" kindref="compound">Python</ref><sp/>*<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1abd500ec01dcc4cad2f25d9459e698b6d" kindref="member">clone</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="548"><highlight class="normal"></highlight></codeline>
+<codeline lineno="549"><highlight class="normal"><sp/><sp/>~<ref refid="class_gyoto_1_1_spectrum_1_1_python" kindref="compound">Python</ref>();</highlight></codeline>
+<codeline lineno="550"><highlight class="normal"></highlight></codeline>
+<codeline lineno="551"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>For<sp/>some<sp/>reason<sp/>we<sp/>need<sp/>to<sp/>implement<sp/>the<sp/>bunch<sp/>although<sp/>only<sp/>one</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="552"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>is<sp/>non-trivial</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="553" refid="class_gyoto_1_1_spectrum_1_1_python_1ad306d8a512881fa5d0eeda24d193bd2d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1ad306d8a512881fa5d0eeda24d193bd2d" kindref="member">module</ref>()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="554" refid="class_gyoto_1_1_spectrum_1_1_python_1a217fab133edf1b0435295112b70e93a8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1ad306d8a512881fa5d0eeda24d193bd2d" kindref="member">module</ref>(const<sp/>std::string&amp;);</highlight></codeline>
+<codeline lineno="555" refid="class_gyoto_1_1_spectrum_1_1_python_1a15f085937942324f8bd30b38993d2328" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1a15f085937942324f8bd30b38993d2328" kindref="member">inlineModule</ref>()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="556" refid="class_gyoto_1_1_spectrum_1_1_python_1aadff9b3ca45129d98dc4012d0c8465d1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1a15f085937942324f8bd30b38993d2328" kindref="member">inlineModule</ref>(const<sp/>std::string&amp;);</highlight></codeline>
+<codeline lineno="557" refid="class_gyoto_1_1_spectrum_1_1_python_1ab6fa56d42ac5c1472b094d865a899357" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1ab6fa56d42ac5c1472b094d865a899357" kindref="member">klass</ref>()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="558" refid="class_gyoto_1_1_spectrum_1_1_python_1acab5164d2806f32ed1beccce64dde497" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1ab6fa56d42ac5c1472b094d865a899357" kindref="member">klass</ref>(const<sp/>std::string&amp;);</highlight></codeline>
+<codeline lineno="559" refid="class_gyoto_1_1_spectrum_1_1_python_1aee2f5c686605b792bfdb382a41846d5e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1aee2f5c686605b792bfdb382a41846d5e" kindref="member">parameters</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="560" refid="class_gyoto_1_1_spectrum_1_1_python_1a640a1029c8e750cc6958894d6c429bea" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1aee2f5c686605b792bfdb382a41846d5e" kindref="member">parameters</ref>(const<sp/>std::vector&lt;double&gt;&amp;);</highlight></codeline>
+<codeline lineno="561"><highlight class="normal"></highlight></codeline>
+<codeline lineno="562" refid="class_gyoto_1_1_spectrum_1_1_python_1afb1ecd7100358238c8ca66ea22e3ea9e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/>operator()(double<sp/>nu)<sp/>const;</highlight></codeline>
+<codeline lineno="563" refid="class_gyoto_1_1_spectrum_1_1_python_1afd16da4e4d099cd074e8f31d79afefd4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/>operator()(double<sp/>nu,<sp/>double<sp/>opacity,<sp/>double<sp/>ds)<sp/>const;</highlight></codeline>
+<codeline lineno="564"><highlight class="normal"></highlight></codeline>
+<codeline lineno="565" refid="class_gyoto_1_1_spectrum_1_1_python_1af5a00c71fbf4c9dfb3af77fa8966456f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1af5a00c71fbf4c9dfb3af77fa8966456f" kindref="member">integrate</ref>(double<sp/>nu1,<sp/>double<sp/>nu2)<sp/>;</highlight></codeline>
+<codeline lineno="566"><highlight class="normal"></highlight></codeline>
+<codeline lineno="567"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="568"><highlight class="normal"></highlight></codeline>
+<codeline lineno="569"><highlight class="normal"></highlight></codeline>
+<codeline lineno="588" refid="class_gyoto_1_1_metric_1_1_python" refkind="compound"><highlight class="normal">class<sp/><ref refid="class_gyoto_1_1_metric_1_1_python" kindref="compound">Gyoto::Metric::Python</ref></highlight></codeline>
+<codeline lineno="589"><highlight class="normal"><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_python_1_1_object" kindref="compound">Gyoto::Python::Object</ref>&lt;Gyoto::Metric::Generic&gt;</highlight></codeline>
+<codeline lineno="590"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="591"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt;<ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>::<ref refid="class_gyoto_1_1_metric_1_1_python" kindref="compound">Metric::Python</ref>&gt;;</highlight></codeline>
+<codeline lineno="592"><highlight class="normal"></highlight></codeline>
+<codeline lineno="593"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="594"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Variables<sp/>to<sp/>cache<sp/>Python<sp/>objects:</highlight></codeline>
+<codeline lineno="598" refid="class_gyoto_1_1_metric_1_1_python_1a5566b08ef5a6a5df3b25fe948080f726" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>PyObject<sp/>*<sp/>pGmunu_;</highlight></codeline>
+<codeline lineno="599"><highlight class="normal"></highlight></codeline>
+<codeline lineno="603" refid="class_gyoto_1_1_metric_1_1_python_1a4a6ab253097db26c0329db8b97e778e2" refkind="member"><highlight class="normal"><sp/><sp/>PyObject<sp/>*<sp/>pChristoffel_;</highlight></codeline>
+<codeline lineno="604"><highlight class="normal"></highlight></codeline>
+<codeline lineno="608" refid="class_gyoto_1_1_metric_1_1_python_1a20796d553e25f9bbefc0bb5559678eff" refkind="member"><highlight class="normal"><sp/><sp/>PyObject<sp/>*<sp/>pGetRmb_;</highlight></codeline>
+<codeline lineno="609"><highlight class="normal"></highlight></codeline>
+<codeline lineno="613" refid="class_gyoto_1_1_metric_1_1_python_1a3de6396e84b76cdda6638fab8660c95a" refkind="member"><highlight class="normal"><sp/><sp/>PyObject<sp/>*<sp/>pGetRms_;</highlight></codeline>
+<codeline lineno="614"><highlight class="normal"></highlight></codeline>
+<codeline lineno="618" refid="class_gyoto_1_1_metric_1_1_python_1ab64d9da5d486a9d3c7ac41a80cd9be1b" refkind="member"><highlight class="normal"><sp/><sp/>PyObject<sp/>*<sp/>pGetSpecificAngularMomentum_;</highlight></codeline>
+<codeline lineno="619"><highlight class="normal"></highlight></codeline>
+<codeline lineno="623" refid="class_gyoto_1_1_metric_1_1_python_1a0dbf2773363eb46c2225e5156efb5798" refkind="member"><highlight class="normal"><sp/><sp/>PyObject<sp/>*<sp/>pGetPotential_;</highlight></codeline>
+<codeline lineno="624"><highlight class="normal"></highlight></codeline>
+<codeline lineno="628" refid="class_gyoto_1_1_metric_1_1_python_1a43469e16d95967540744c2be9bf8ef8c" refkind="member"><highlight class="normal"><sp/><sp/>PyObject<sp/>*<sp/>pIsStopCondition_;</highlight></codeline>
+<codeline lineno="629"><highlight class="normal"></highlight></codeline>
+<codeline lineno="633" refid="class_gyoto_1_1_metric_1_1_python_1a905ed0c6a9c077afaed3bc5161c3a32e" refkind="member"><highlight class="normal"><sp/><sp/>PyObject<sp/>*<sp/>pCircularVelocity_;</highlight></codeline>
+<codeline lineno="634"><highlight class="normal"></highlight></codeline>
+<codeline lineno="635"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="636" refid="class_gyoto_1_1_metric_1_1_python_1af4c7119b0a717a18531d5910bbd10b7d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" kindref="member">GYOTO_OBJECT</ref>;</highlight></codeline>
+<codeline lineno="637"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_object_8h_1a6806b7f836d51dbe45cdf7bd60377a40" kindref="member">GYOTO_OBJECT_THREAD_SAFETY</ref>;</highlight></codeline>
+<codeline lineno="638"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_metric_1_1_python" kindref="compound">Python</ref>();</highlight></codeline>
+<codeline lineno="639"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_metric_1_1_python" kindref="compound">Python</ref>(const<sp/>Python&amp;);</highlight></codeline>
+<codeline lineno="640"><highlight class="normal"><sp/><sp/>~<ref refid="class_gyoto_1_1_metric_1_1_python" kindref="compound">Python</ref>();</highlight></codeline>
+<codeline lineno="641" refid="class_gyoto_1_1_metric_1_1_python_1abecbc101a5656af8643901d67e7bffc9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_metric_1_1_python" kindref="compound">Python</ref>*<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1abd500ec01dcc4cad2f25d9459e698b6d" kindref="member">clone</ref>()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="642"><highlight class="normal"></highlight></codeline>
+<codeline lineno="643"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Accessors<sp/>for<sp/>the<sp/>Gyoto::Property<sp/>members:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="644"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Those<sp/>are<sp/>mere<sp/>wrappers<sp/>arround<sp/>Generic::coordKind(),<sp/>useful<sp/>for</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="645"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>declaring<sp/>a<sp/>boolen<sp/>property<sp/>using<sp/>the<sp/>macro<sp/>GYOTO_PROPERTY_BOOL:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="646"><highlight class="normal"><sp/><sp/>void<sp/>spherical(bool);</highlight></codeline>
+<codeline lineno="647"><highlight class="normal"><sp/><sp/>bool<sp/>spherical()<sp/>const;</highlight></codeline>
+<codeline lineno="648" refid="class_gyoto_1_1_metric_1_1_python_1a1e19d7037aeee1bffb119b8f2c5e5f00" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1ad306d8a512881fa5d0eeda24d193bd2d" kindref="member">module</ref>()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="649" refid="class_gyoto_1_1_metric_1_1_python_1a3718604728f0dce0a8927e45921a7ed8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1ad306d8a512881fa5d0eeda24d193bd2d" kindref="member">module</ref>(const<sp/>std::string&amp;);</highlight></codeline>
+<codeline lineno="650" refid="class_gyoto_1_1_metric_1_1_python_1a5aa16fe612f6ed1e9f7a7172cbe07241" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1a15f085937942324f8bd30b38993d2328" kindref="member">inlineModule</ref>()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="651" refid="class_gyoto_1_1_metric_1_1_python_1a2faed173e725f3192666abb0ad1a054c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1a15f085937942324f8bd30b38993d2328" kindref="member">inlineModule</ref>(const<sp/>std::string&amp;);</highlight></codeline>
+<codeline lineno="652" refid="class_gyoto_1_1_metric_1_1_python_1a9708bdef837a896e529accc4e1720655" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1ab6fa56d42ac5c1472b094d865a899357" kindref="member">klass</ref>()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="653" refid="class_gyoto_1_1_metric_1_1_python_1a41b59b3d5e8f36d0d7d0865ae2efceb1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1ab6fa56d42ac5c1472b094d865a899357" kindref="member">klass</ref>(const<sp/>std::string&amp;);</highlight></codeline>
+<codeline lineno="654" refid="class_gyoto_1_1_metric_1_1_python_1a97c57b0c9a8c22375d8668d1e1b189a8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1aee2f5c686605b792bfdb382a41846d5e" kindref="member">parameters</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="655" refid="class_gyoto_1_1_metric_1_1_python_1a0116ead0d5baed6dbe02f18e7e4a31df" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1aee2f5c686605b792bfdb382a41846d5e" kindref="member">parameters</ref>(const<sp/>std::vector&lt;double&gt;&amp;);</highlight></codeline>
+<codeline lineno="656"><highlight class="normal"><sp/><sp/>using<sp/><ref refid="class_gyoto_1_1_metric_1_1_generic_1a9ae43ad3fcad9bb2ee21a5d8de104eda" kindref="member">Gyoto::Metric::Generic::mass</ref>;</highlight></codeline>
+<codeline lineno="657" refid="class_gyoto_1_1_metric_1_1_python_1a935d32b21af382aeabf85908d1b51517" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/>mass(double<sp/>m);</highlight></codeline>
+<codeline lineno="658"><highlight class="normal"></highlight></codeline>
+<codeline lineno="659"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>minimal<sp/>Gyoto::Metric<sp/>API:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="660"><highlight class="normal"><sp/><sp/>void<sp/>gmunu(double<sp/>g[4][4],<sp/>const<sp/>double<sp/>*<sp/>x)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="661"><highlight class="normal"><sp/><sp/>int<sp/>christoffel(double<sp/>dst[4][4][4],<sp/>const<sp/>double<sp/>*<sp/>x)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="662"><highlight class="normal"></highlight></codeline>
+<codeline lineno="663"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Little<sp/>more</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="664" refid="class_gyoto_1_1_metric_1_1_python_1abf1781d71384204e5fd98bf6e8e43298" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/>getRmb()<sp/>const;</highlight></codeline>
+<codeline lineno="665" refid="class_gyoto_1_1_metric_1_1_python_1a8e052561441fa18973a80d50bef31b8f" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/>getRms()<sp/>const;</highlight></codeline>
+<codeline lineno="666" refid="class_gyoto_1_1_metric_1_1_python_1a1beb709ce0880ad1c42c4876914c7c47" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/>getSpecificAngularMomentum(double<sp/>rr)<sp/>const;</highlight></codeline>
+<codeline lineno="667" refid="class_gyoto_1_1_metric_1_1_python_1a80c01908629bcddb1cbd6ddca98e54d2" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/>getPotential(double<sp/>const<sp/>pos[4],<sp/>double<sp/>l_cst)<sp/>const;</highlight></codeline>
+<codeline lineno="668" refid="class_gyoto_1_1_metric_1_1_python_1af7db3499d2f44b060254681bcde4c278" refkind="member"><highlight class="normal"><sp/><sp/>int<sp/>isStopCondition(double<sp/>const<sp/>coord[8])<sp/>const;</highlight></codeline>
+<codeline lineno="669" refid="class_gyoto_1_1_metric_1_1_python_1a278525ef1d038566b143af16b5ae59fc" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/>circularVelocity(double<sp/>const<sp/>pos[4],<sp/>double<sp/>vel[4],</highlight></codeline>
+<codeline lineno="670"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>dir=1.)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="671"><highlight class="normal"></highlight></codeline>
+<codeline lineno="672"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="673"><highlight class="normal"></highlight></codeline>
+<codeline lineno="683" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard" refkind="compound"><highlight class="normal">class<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard" kindref="compound">Gyoto::Astrobj::Python::Standard</ref></highlight></codeline>
+<codeline lineno="684"><highlight class="normal"><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_python_1_1_object" kindref="compound">Gyoto::Python::Object</ref>&lt;Gyoto::Astrobj::Standard&gt;</highlight></codeline>
+<codeline lineno="685"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="686"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt;<ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>::<ref refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard" kindref="compound">Astrobj::Python::Standard</ref>&gt;;</highlight></codeline>
+<codeline lineno="687"><highlight class="normal"></highlight></codeline>
+<codeline lineno="688"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="689"><highlight class="normal"><sp/><sp/>PyObject<sp/>*pEmission_,<sp/>*pIntegrateEmission_,<sp/>*pTransmission_,<sp/>*<ref refid="class_gyoto_1_1_spectrum_1_1_python_1a00b43b2412e421a1bdd8f835d268e3f7" kindref="member">pCall_</ref>,</highlight></codeline>
+<codeline lineno="690"><highlight class="normal"><sp/><sp/><sp/><sp/>*pGetVelocity_,<sp/>*pGiveDelta_;</highlight></codeline>
+<codeline lineno="691"><highlight class="normal"><sp/><sp/>bool<sp/>pEmission_overloaded_,<sp/>pIntegrateEmission_overloaded_;</highlight></codeline>
+<codeline lineno="692"><highlight class="normal"></highlight></codeline>
+<codeline lineno="693"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="694" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard_1aa01d7fafbb99a0648d923731bdd81585" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" kindref="member">GYOTO_OBJECT</ref>;</highlight></codeline>
+<codeline lineno="695"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_object_8h_1a6806b7f836d51dbe45cdf7bd60377a40" kindref="member">GYOTO_OBJECT_THREAD_SAFETY</ref>;</highlight></codeline>
+<codeline lineno="696"><highlight class="normal"></highlight></codeline>
+<codeline lineno="697"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Birth<sp/>and<sp/>Death*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="698"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard" kindref="compound">Standard</ref>();</highlight></codeline>
+<codeline lineno="699"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard" kindref="compound">Standard</ref>(const<sp/>Standard&amp;);</highlight></codeline>
+<codeline lineno="700" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard_1a2e829065a32cc8a57aed26345e051037" refkind="member"><highlight class="normal"><sp/><sp/>~<ref refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard" kindref="compound">Standard</ref>();</highlight></codeline>
+<codeline lineno="701" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard_1a88be593c3356c17769386bd231bc0724" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard" kindref="compound">Standard</ref>*<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1abd500ec01dcc4cad2f25d9459e698b6d" kindref="member">clone</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="702"><highlight class="normal"></highlight></codeline>
+<codeline lineno="703"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Astrobj::Generic<sp/>API<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="704" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard_1a6b7869cf7524b36d5f775a969b9fc012" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/>emission(double<sp/>nu_em,<sp/>double<sp/>dsem,<sp/>state_t<sp/>const<sp/>&amp;coord_ph,</highlight></codeline>
+<codeline lineno="705"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>const<sp/>coord_obj[8]=NULL)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="706"><highlight class="normal"></highlight></codeline>
+<codeline lineno="707" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard_1a37ef68fc3559f64403cd09e7dd0066aa" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/>emission(double<sp/>Inu[],<sp/>double<sp/>const<sp/>nu_em[],<sp/>size_t<sp/>nbnu,</highlight></codeline>
+<codeline lineno="708"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>dsem,<sp/>state_t<sp/>const<sp/>&amp;coord_ph,</highlight></codeline>
+<codeline lineno="709"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>const<sp/>coord_obj[8]=NULL)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="710"><highlight class="normal"></highlight></codeline>
+<codeline lineno="711" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard_1a868da025a1f70fb2152f8860ce64b514" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/>integrateEmission(double<sp/>nu1,<sp/>double<sp/>nu2,<sp/>double<sp/>dsem,</highlight></codeline>
+<codeline lineno="712"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>state_t<sp/>const<sp/>&amp;c_ph,<sp/>double<sp/>const<sp/>c_obj[8]=NULL)<sp/>const;</highlight></codeline>
+<codeline lineno="713"><highlight class="normal"></highlight></codeline>
+<codeline lineno="714" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard_1a65318a11cd3eb26258deb3dde9942056" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/>integrateEmission(double<sp/>*<sp/>I,<sp/>double<sp/>const<sp/>*<sp/>boundaries,</highlight></codeline>
+<codeline lineno="715"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size_t<sp/>const<sp/>*<sp/>chaninds,<sp/>size_t<sp/>nbnu,</highlight></codeline>
+<codeline lineno="716"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>dsem,<sp/>state_t<sp/>const<sp/>&amp;cph,<sp/>double<sp/>const<sp/>*co)<sp/>const;</highlight></codeline>
+<codeline lineno="717"><highlight class="normal"></highlight></codeline>
+<codeline lineno="718"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/>transmission(double<sp/>nuem,<sp/>double<sp/>dsem,<sp/>state_t<sp/>const<sp/>&amp;cph,<sp/>double<sp/>const<sp/>*co)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="719"><highlight class="normal"></highlight></codeline>
+<codeline lineno="720"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Astrobj::Standard<sp/>API<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="721" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard_1a606a2c0be5e66e0b12ce7c5a2f37ced6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/>operator()(double<sp/>const<sp/>coord[4])<sp/>;</highlight></codeline>
+<codeline lineno="722" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard_1a0e898e0fc20a05c2eec6e070ab9f02bf" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/>getVelocity(double<sp/>const<sp/>pos[4],<sp/>double<sp/>vel[4])<sp/>;</highlight></codeline>
+<codeline lineno="723" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard_1a7923f45423943f81d5daf94a1d1e7e01" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/>giveDelta(double<sp/>coord[8]);</highlight></codeline>
+<codeline lineno="724"><highlight class="normal"></highlight></codeline>
+<codeline lineno="725"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Python::Base<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="726" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard_1a257de97dbef49bd2c6828090eea4de50" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1ad306d8a512881fa5d0eeda24d193bd2d" kindref="member">module</ref>()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="727" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard_1a4a94de855ab50bfb0303b8afc2f2b67a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1ad306d8a512881fa5d0eeda24d193bd2d" kindref="member">module</ref>(const<sp/>std::string&amp;);</highlight></codeline>
+<codeline lineno="728" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard_1a54e22665edcbd570612bd2546e336139" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1a15f085937942324f8bd30b38993d2328" kindref="member">inlineModule</ref>()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="729" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard_1a34ff93e25b631d25445d9c05339e955b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1a15f085937942324f8bd30b38993d2328" kindref="member">inlineModule</ref>(const<sp/>std::string&amp;);</highlight></codeline>
+<codeline lineno="730" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard_1ac37e7398e73e09e1fe4543418d3ce967" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1ab6fa56d42ac5c1472b094d865a899357" kindref="member">klass</ref>()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="731" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard_1a2d173c0c05b4ad4c4642f7823e6e73e8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1ab6fa56d42ac5c1472b094d865a899357" kindref="member">klass</ref>(const<sp/>std::string&amp;);</highlight></codeline>
+<codeline lineno="732" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard_1a57c225357ebfa68bed48e309aaf13ee0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1aee2f5c686605b792bfdb382a41846d5e" kindref="member">parameters</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="733" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard_1adbd242f453a565255460e3fd555457b2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1aee2f5c686605b792bfdb382a41846d5e" kindref="member">parameters</ref>(const<sp/>std::vector&lt;double&gt;&amp;);</highlight></codeline>
+<codeline lineno="734"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/>criticalValue()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="735"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/>criticalValue(double)<sp/>;</highlight></codeline>
+<codeline lineno="736"><highlight class="normal"></highlight></codeline>
+<codeline lineno="737"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="738"><highlight class="normal"></highlight></codeline>
+<codeline lineno="748" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk" refkind="compound"><highlight class="normal">class<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk" kindref="compound">Gyoto::Astrobj::Python::ThinDisk</ref></highlight></codeline>
+<codeline lineno="749"><highlight class="normal"><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_python_1_1_object" kindref="compound">Gyoto::Python::Object</ref>&lt;Gyoto::Astrobj::ThinDisk&gt;</highlight></codeline>
+<codeline lineno="750"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="751"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt;<ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>::<ref refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk" kindref="compound">Astrobj::Python::ThinDisk</ref>&gt;;</highlight></codeline>
+<codeline lineno="752"><highlight class="normal"></highlight></codeline>
+<codeline lineno="753"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="754"><highlight class="normal"><sp/><sp/>PyObject<sp/>*pEmission_,<sp/>*pIntegrateEmission_,<sp/>*pTransmission_,<sp/>*<ref refid="class_gyoto_1_1_spectrum_1_1_python_1a00b43b2412e421a1bdd8f835d268e3f7" kindref="member">pCall_</ref>,</highlight></codeline>
+<codeline lineno="755"><highlight class="normal"><sp/><sp/><sp/><sp/>*pGetVelocity_,<sp/>*pGiveDelta_;</highlight></codeline>
+<codeline lineno="756"><highlight class="normal"><sp/><sp/>bool<sp/>pEmission_overloaded_,<sp/>pIntegrateEmission_overloaded_;</highlight></codeline>
+<codeline lineno="757"><highlight class="normal"></highlight></codeline>
+<codeline lineno="758"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="759" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_1a288b2b142bf3a0445447fa7a52c14e51" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" kindref="member">GYOTO_OBJECT</ref>;</highlight></codeline>
+<codeline lineno="760"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_object_8h_1a6806b7f836d51dbe45cdf7bd60377a40" kindref="member">GYOTO_OBJECT_THREAD_SAFETY</ref>;</highlight></codeline>
+<codeline lineno="761"><highlight class="normal"></highlight></codeline>
+<codeline lineno="762"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Birth<sp/>and<sp/>Death*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="763"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk" kindref="compound">ThinDisk</ref>();</highlight></codeline>
+<codeline lineno="764"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk" kindref="compound">ThinDisk</ref>(const<sp/>ThinDisk&amp;);</highlight></codeline>
+<codeline lineno="765" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_1a22240f313ecdb0ba2d34962b3b611274" refkind="member"><highlight class="normal"><sp/><sp/>~<ref refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk" kindref="compound">ThinDisk</ref>();</highlight></codeline>
+<codeline lineno="766" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_1a9c3053602725f343b0b3132c9fc5ce2d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk" kindref="compound">ThinDisk</ref>*<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1abd500ec01dcc4cad2f25d9459e698b6d" kindref="member">clone</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="767"><highlight class="normal"></highlight></codeline>
+<codeline lineno="768"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Astrobj::Generic<sp/>API<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="769" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_1a7a34b44aa0fe91618ecdaadd87438d0b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/>emission(double<sp/>nu_em,<sp/>double<sp/>dsem,<sp/>state_t<sp/>const<sp/>&amp;coord_ph,</highlight></codeline>
+<codeline lineno="770"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>const<sp/>coord_obj[8]=NULL)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="771"><highlight class="normal"></highlight></codeline>
+<codeline lineno="772" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_1a229272a0eec6c7eaeff905a4f4190e2e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/>emission(double<sp/>Inu[],<sp/>double<sp/>const<sp/>nu_em[],<sp/>size_t<sp/>nbnu,</highlight></codeline>
+<codeline lineno="773"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>dsem,<sp/>state_t<sp/>const<sp/>&amp;coord_ph,</highlight></codeline>
+<codeline lineno="774"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>const<sp/>coord_obj[8]=NULL)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="775"><highlight class="normal"></highlight></codeline>
+<codeline lineno="776" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_1a6add4c7014e29c3049d1f3b53b700922" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/>integrateEmission(double<sp/>nu1,<sp/>double<sp/>nu2,<sp/>double<sp/>dsem,</highlight></codeline>
+<codeline lineno="777"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>state_t<sp/>const<sp/>&amp;c_ph,<sp/>double<sp/>const<sp/>c_obj[8]=NULL)<sp/>const;</highlight></codeline>
+<codeline lineno="778"><highlight class="normal"></highlight></codeline>
+<codeline lineno="779" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_1ae7fe80444da7bea77b2cef62ffaaf096" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/>integrateEmission(double<sp/>*<sp/>I,<sp/>double<sp/>const<sp/>*<sp/>boundaries,</highlight></codeline>
+<codeline lineno="780"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size_t<sp/>const<sp/>*<sp/>chaninds,<sp/>size_t<sp/>nbnu,</highlight></codeline>
+<codeline lineno="781"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>dsem,<sp/>state_t<sp/>const<sp/>&amp;cph,<sp/>double<sp/>const<sp/>*co)<sp/>const;</highlight></codeline>
+<codeline lineno="782"><highlight class="normal"></highlight></codeline>
+<codeline lineno="783"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/>transmission(double<sp/>nuem,<sp/>double<sp/>dsem,<sp/>state_t<sp/>const<sp/>&amp;cph<sp/>,double<sp/>const<sp/>*co)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="784"><highlight class="normal"></highlight></codeline>
+<codeline lineno="785"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Astrobj::ThinDisk<sp/>API<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="786"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/>operator()(double<sp/>const<sp/>coord[4])<sp/>;</highlight></codeline>
+<codeline lineno="787" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_1a3f842d368a3700a1db3b2418239ed40d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/>getVelocity(double<sp/>const<sp/>pos[4],<sp/>double<sp/>vel[4])<sp/>;</highlight></codeline>
+<codeline lineno="788"><highlight class="normal"></highlight></codeline>
+<codeline lineno="789"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Python::Base<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="790" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_1af7d2cfd1dc5f6ba3b8e033c7508b93de" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1ad306d8a512881fa5d0eeda24d193bd2d" kindref="member">module</ref>()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="791" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_1a6356c48534d038f0aac4f5dd50a9ca7b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1ad306d8a512881fa5d0eeda24d193bd2d" kindref="member">module</ref>(const<sp/>std::string&amp;);</highlight></codeline>
+<codeline lineno="792" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_1a3cd84a0bf6a468b0bf5409b40bf70705" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1a15f085937942324f8bd30b38993d2328" kindref="member">inlineModule</ref>()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="793" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_1a5e0d327f7d7d2718fdd66ce7b41d7856" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1a15f085937942324f8bd30b38993d2328" kindref="member">inlineModule</ref>(const<sp/>std::string&amp;);</highlight></codeline>
+<codeline lineno="794" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_1a987a360677d0f4f8ca16bb606cbad1f4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1ab6fa56d42ac5c1472b094d865a899357" kindref="member">klass</ref>()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="795" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_1a2e9e943c6b9c78d08ec6458e68609dce" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1ab6fa56d42ac5c1472b094d865a899357" kindref="member">klass</ref>(const<sp/>std::string&amp;);</highlight></codeline>
+<codeline lineno="796" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_1ad3fd7c2bb76de035b1ba37fad34e9d5b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1aee2f5c686605b792bfdb382a41846d5e" kindref="member">parameters</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="797" refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_1a581acf6668db9476d28fe60927be3d8d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_python_1aee2f5c686605b792bfdb382a41846d5e" kindref="member">parameters</ref>(const<sp/>std::vector&lt;double&gt;&amp;);</highlight></codeline>
+<codeline lineno="798"><highlight class="normal"></highlight></codeline>
+<codeline lineno="799"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="800"><highlight class="normal"></highlight></codeline>
+<codeline lineno="801"><highlight class="normal"></highlight></codeline>
+<codeline lineno="802"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h"/>
+  </compounddef>
+</doxygen>

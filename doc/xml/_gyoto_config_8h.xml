@@ -1,0 +1,1480 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_gyoto_config_8h" kind="file" language="C++">
+    <compoundname>GyotoConfig.h</compoundname>
+    <includedby refid="_gyoto_astrobj_8h" local="yes">GyotoAstrobj.h</includedby>
+    <includedby refid="_gyoto_defs_8h" local="yes">GyotoDefs.h</includedby>
+    <includedby refid="_gyoto_factory_8h" local="yes">GyotoFactory.h</includedby>
+    <includedby refid="_gyoto_object_8h" local="yes">GyotoObject.h</includedby>
+    <includedby refid="_gyoto_property_8h" local="yes">GyotoProperty.h</includedby>
+    <includedby refid="_gyoto_value_8h" local="yes">GyotoValue.h</includedby>
+    <invincdepgraph>
+      <node id="28">
+        <label>GyotoRotStar3_1.h</label>
+        <link refid="_gyoto_rot_star3__1_8h"/>
+      </node>
+      <node id="45">
+        <label>GyotoThinDiskPL.h</label>
+        <link refid="_gyoto_thin_disk_p_l_8h"/>
+      </node>
+      <node id="78">
+        <label>GyotoProperty.h</label>
+        <link refid="_gyoto_property_8h"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>GyotoUniformSphere.h</label>
+        <link refid="_gyoto_uniform_sphere_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>GyotoPatternDisk.h</label>
+        <link refid="_gyoto_pattern_disk_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>GyotoPatternDiskBB.h</label>
+        <link refid="_gyoto_pattern_disk_b_b_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>GyotoFitsRW.h</label>
+        <link refid="_gyoto_fits_r_w_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>GyotoFlaredDiskSynchrotron.h</label>
+        <link refid="_gyoto_flared_disk_synchrotron_8h"/>
+      </node>
+      <node id="34">
+        <label>GyotoPython.h</label>
+        <link refid="_gyoto_python_8h"/>
+      </node>
+      <node id="63">
+        <label>GyotoComplexSpectrometer.h</label>
+        <link refid="_gyoto_complex_spectrometer_8h"/>
+      </node>
+      <node id="51">
+        <label>GyotoJet.h</label>
+        <link refid="_gyoto_jet_8h"/>
+      </node>
+      <node id="10">
+        <label>GyotoFixedStar.h</label>
+        <link refid="_gyoto_fixed_star_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>GyotoBlob.h</label>
+        <link refid="_gyoto_blob_8h"/>
+      </node>
+      <node id="77">
+        <label>GyotoUtils.h</label>
+        <link refid="_gyoto_utils_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>GyotoSpectrum.h</label>
+        <link refid="_gyoto_spectrum_8h"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>GyotoUniformSpectrometer.h</label>
+        <link refid="_gyoto_uniform_spectrometer_8h"/>
+      </node>
+      <node id="68">
+        <label>GyotoKappaDistributionSynchrotronSpectrum.h</label>
+        <link refid="_gyoto_kappa_distribution_synchrotron_spectrum_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>GyotoThermalBremsstrahlungSpectrum.h</label>
+        <link refid="_gyoto_thermal_bremsstrahlung_spectrum_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>GyotoThinDiskProfile.h</label>
+        <link refid="_gyoto_thin_disk_profile_8h"/>
+      </node>
+      <node id="52">
+        <label>GyotoPolishDoughnut.h</label>
+        <link refid="_gyoto_polish_doughnut_8h"/>
+      </node>
+      <node id="37">
+        <label>GyotoDirectionalDisk.h</label>
+        <link refid="_gyoto_directional_disk_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>GyotoPowerLawSynchrotronSpectrum.h</label>
+        <link refid="_gyoto_power_law_synchrotron_spectrum_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>GyotoMinkowski.h</label>
+        <link refid="_gyoto_minkowski_8h"/>
+      </node>
+      <node id="11">
+        <label>GyotoFreeStar.h</label>
+        <link refid="_gyoto_free_star_8h_source"/>
+      </node>
+      <node id="16">
+        <label>GyotoOscilTorus.h</label>
+        <link refid="_gyoto_oscil_torus_8h"/>
+      </node>
+      <node id="58">
+        <label>GyotoSmartPointer.h</label>
+        <link refid="_gyoto_smart_pointer_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>GyotoObject.h</label>
+        <link refid="_gyoto_object_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>GyotoRezzollaZhidenko.h</label>
+        <link refid="_gyoto_rezzolla_zhidenko_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>GyotoFactoryMessenger.h</label>
+        <link refid="_gyoto_factory_messenger_8h"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>GyotoKerrKS.h</label>
+        <link refid="_gyoto_kerr_k_s_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>GyotoRegister.h</label>
+        <link refid="_gyoto_register_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>GyotoThermalSynchrotronSpectrum.h</label>
+        <link refid="_gyoto_thermal_synchrotron_spectrum_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>GyotoStandardAstrobj.h</label>
+        <link refid="_gyoto_standard_astrobj_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>GyotoSpectrometer.h</label>
+        <link refid="_gyoto_spectrometer_8h"/>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>GyotoMetric.h</label>
+        <link refid="_gyoto_metric_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>GyotoStarTrace.h</label>
+        <link refid="_gyoto_star_trace_8h"/>
+      </node>
+      <node id="5">
+        <label>GyotoDeformedTorus.h</label>
+        <link refid="_gyoto_deformed_torus_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>GyotoNeutronStarAnalyticEmission.h</label>
+        <link refid="_gyoto_neutron_star_analytic_emission_8h"/>
+      </node>
+      <node id="56">
+        <label>GyotoDefs.h</label>
+        <link refid="_gyoto_defs_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>GyotoWorldline.h</label>
+        <link refid="_gyoto_worldline_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>GyotoKerrBL.h</label>
+        <link refid="_gyoto_kerr_b_l_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>GyotoThinDiskIronLine.h</label>
+        <link refid="_gyoto_thin_disk_iron_line_8h"/>
+      </node>
+      <node id="75">
+        <label>GyotoGridData2D.h</label>
+        <link refid="_gyoto_grid_data2_d_8h"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>GyotoXillverReflection.h</label>
+        <link refid="_gyoto_xillver_reflection_8h"/>
+      </node>
+      <node id="22">
+        <label>GyotoNeutronStarModelAtmosphere.h</label>
+        <link refid="_gyoto_neutron_star_model_atmosphere_8h"/>
+      </node>
+      <node id="36">
+        <label>GyotoThinDisk.h</label>
+        <link refid="_gyoto_thin_disk_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>GyotoDynamicalDisk3D.h</label>
+        <link refid="_gyoto_dynamical_disk3_d_8h"/>
+      </node>
+      <node id="38">
+        <label>GyotoPageThorneDisk.h</label>
+        <link refid="_gyoto_page_thorne_disk_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>GyotoPlasmoid.h</label>
+        <link refid="_gyoto_plasmoid_8h"/>
+      </node>
+      <node id="13">
+        <label>GyotoInflateStar.h</label>
+        <link refid="_gyoto_inflate_star_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>GyotoChernSimons.h</label>
+        <link refid="_gyoto_chern_simons_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>GyotoThinDiskGridIntensity.h</label>
+        <link refid="_gyoto_thin_disk_grid_intensity_8h"/>
+      </node>
+      <node id="1">
+        <label>GyotoConfig.h</label>
+        <link refid="_gyoto_config_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>GyotoFactory.h</label>
+        <link refid="_gyoto_factory_8h"/>
+      </node>
+      <node id="55">
+        <label>GyotoTorus.h</label>
+        <link refid="_gyoto_torus_8h"/>
+      </node>
+      <node id="72">
+        <label>GyotoPowerLawSpectrum.h</label>
+        <link refid="_gyoto_power_law_spectrum_8h"/>
+      </node>
+      <node id="19">
+        <label>GyotoNumericalMetricLorene.h</label>
+        <link refid="_gyoto_numerical_metric_lorene_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>GyotoComplexAstrobj.h</label>
+        <link refid="_gyoto_complex_astrobj_8h"/>
+      </node>
+      <node id="25">
+        <label>GyotoScenery.h</label>
+        <link refid="_gyoto_scenery_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>GyotoEquatorialHotSpot.h</label>
+        <link refid="_gyoto_equatorial_hot_spot_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>GyotoAstrobj.h</label>
+        <link refid="_gyoto_astrobj_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>GyotoValue.h</label>
+        <link refid="_gyoto_value_8h"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>GyotoComplexMetric.h</label>
+        <link refid="_gyoto_complex_metric_8h_source"/>
+      </node>
+      <node id="41">
+        <label>GyotoDynamicalDisk.h</label>
+        <link refid="_gyoto_dynamical_disk_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>GyotoError.h</label>
+        <link refid="_gyoto_error_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>GyotoSphericalAccretion.h</label>
+        <link refid="_gyoto_spherical_accretion_8h"/>
+      </node>
+      <node id="30">
+        <label>GyotoScreen.h</label>
+        <link refid="_gyoto_screen_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>GyotoConverters.h</label>
+        <link refid="_gyoto_converters_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Gyoto.h</label>
+        <link refid="_gyoto_8h"/>
+      </node>
+      <node id="20">
+        <label>GyotoNeutronStar.h</label>
+        <link refid="_gyoto_neutron_star_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>GyotoSchwarzschildHarmonic.h</label>
+        <link refid="_gyoto_schwarzschild_harmonic_8h"/>
+      </node>
+      <node id="66">
+        <label>GyotoBlackBodySpectrum.h</label>
+        <link refid="_gyoto_black_body_spectrum_8h"/>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>GyotoStar.h</label>
+        <link refid="_gyoto_star_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>GyotoDynamicalDiskBolometric.h</label>
+        <link refid="_gyoto_dynamical_disk_bolometric_8h"/>
+      </node>
+      <node id="23">
+        <label>GyotoPhoton.h</label>
+        <link refid="_gyoto_photon_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>GyotoShift.h</label>
+        <link refid="_gyoto_shift_8h"/>
+      </node>
+      <node id="54">
+        <label>GyotoThickDisk.h</label>
+        <link refid="_gyoto_thick_disk_8h"/>
+      </node>
+      <node id="12">
+        <label>GyotoHayward.h</label>
+        <link refid="_gyoto_hayward_8h"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_gyoto_config_8h_1aa970a29bd0ec4aecaff5f86c8faf73a7" prot="public" static="no">
+        <name>GYOTO_DEBUG_ENABLED</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Whether debugging information gathering code was enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="39" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1ac4ace7fcf64750fc38bb917b15bd4f3f" prot="public" static="no">
+        <name>GYOTO_PLUGIN_SFX</name>
+        <initializer>&quot;so&quot;</initializer>
+        <briefdescription>
+<para>Suffix for <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> plug-ins. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="48" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1a04d1da57fec211ee10fb93baf38415c6" prot="public" static="no">
+        <name>GYOTO_PREFIX</name>
+        <initializer>(undefined)</initializer>
+        <briefdescription>
+<para><ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> prefix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="60" column="11" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1ab28e26a23f8f3797621cd51507d478bb" prot="public" static="no">
+        <name>GYOTO_PKGLIBDIR</name>
+        <initializer>(undefined)</initializer>
+        <briefdescription>
+<para><ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> pkglibdir, usually GYOTO_PREFIX/lib/gyoto. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="69" column="11" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1a16bb65b29af9f49e760c1dff13c9b0fb" prot="public" static="no">
+        <name>GYOTO_SIZE__T_IS_UNSIGNED_LONG</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Define to 1 if size_t and unsigned long are the same. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="75" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1add1b4b7f86e636d1425682b5521973dd" prot="public" static="no">
+        <name>GYOTO_SOVERS</name>
+        <initializer>&quot;9-unreleased&quot;</initializer>
+        <briefdescription>
+<para><ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> ABI version. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Updated in stable releases, not during dev. cycle. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="86" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1a1cb96235fa6c7909929a9a84b6510bda" prot="public" static="no">
+        <name>GYOTO_USE_AEAE</name>
+        <initializer>(undefined)</initializer>
+        <briefdescription>
+<para>Whether aeae support is compiled-in. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>One of ARBLIB or AEAE is necessary for Astrobj::Jet. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="101" column="11" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1a76061d63e3f671609a90ad75b7600421" prot="public" static="no">
+        <name>GYOTO_USE_ARBLIB</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Whether arblib support is compiled-in. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>One of ARBLIB or AEAE is necessary for Astrobj::Jet. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="110" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1ad3f3ceab8da1849e167fc7a7ce5d1774" prot="public" static="no">
+        <name>GYOTO_USE_CFITSIO</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Whether cfitsio support is compiled-in. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Necessary for FITS file format i/o, used in the <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> tool and optional in Gtyoto::PatternDisk. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="123" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1a4fa2f0249abd5198dedb89bfb1a36f44" prot="public" static="no">
+        <name>GYOTO_USE_UDUNITS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Whether libudunits2 support is compiled in. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Foundation for the <ref refid="namespace_gyoto_1_1_units" kindref="compound">Gyoto::Units</ref> framework. <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> ought to build and work without it, but with restricted unit conversion capabilities. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="137" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1a01033870eca4b44bfc589a1b49aebd3d" prot="public" static="no">
+        <name>HAVE_UDUNITS</name>
+        <briefdescription>
+<para>Whether libudunits2 support is compiled in. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Foundation for the <ref refid="namespace_gyoto_1_1_units" kindref="compound">Gyoto::Units</ref> framework. <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> ought to build and work without it, but with restricted unit conversion capabilities. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="152" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1a7af3611aad932dce3e94ccdff4b761e5" prot="public" static="no">
+        <name>GYOTO_USE_XERCES</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Whether Xerces support (XML i/o) is compiled-in. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Used only in the <ref refid="class_gyoto_1_1_factory" kindref="compound">Gyoto::Factory</ref> but <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> build is not often tested without it. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="161" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1a0ee1617ff2f6885ef384a3dd46f9b9d7" prot="public" static="no">
+        <name>HAVE_DLFCN_H</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Whether &lt;dlfcn.h&gt; header file was found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="170" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1ad29ee78caa97a605c7748d87d7e80a15" prot="public" static="no">
+        <name>undefined</name>
+        <initializer>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="173" column="14" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1ab90a030ff2790ebdc176660a6dd2a478" prot="public" static="no">
+        <name>HAVE_INTTYPES_H</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Whether &lt;inttypes.h&gt; header file was found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="179" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1a2a94a915864f604ddd00fb9272c8c0f4" prot="public" static="no">
+        <name>HAVE_LIBDL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Whether the <lsquo/>dl<rsquo/> library (-ldl) was found. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Plug-in support. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="191" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1ae93a78f9d076138897af441c9f86f285" prot="public" static="no">
+        <name>HAVE_MEMORY_H</name>
+        <initializer>(undefined)</initializer>
+        <briefdescription>
+<para>Whether the &lt;memory.h&gt; header file was found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="203" column="11" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1a86e96afa8dc4d5c55f35a8f4034aff49" prot="public" static="no">
+        <name>HAVE_MPI</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Whether MPI support is compiled in. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Message-passing interface, used in multi-process ray-tracing </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="212" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1aac699f6be8f38e3c8a5f375df9a12aaf" prot="public" static="no">
+        <name>HAVE_PTHREAD</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Whether POSIX threads support is compiled-in. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Multi-threading support, see <ref refid="class_gyoto_1_1_scenery_1a6d364f1f7f2b55a5c5ead77461fc6c0d" kindref="member">Gyoto::Scenery::nthreads_</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="224" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1a428591e6b13dacf3451dc891e385f51b" prot="public" static="no">
+        <name>HAVE_PTHREAD_PRIO_INHERIT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Have PTHREAD_PRIO_INHERIT. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="233" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1afdb5a6cfe5d482d5392535414934ab19" prot="public" static="no">
+        <name>HAVE_SINCOS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Whether the <lsquo/>sincos<rsquo/> function is available. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Else <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> provides it as a macro in <ref refid="_gyoto_defs_8h" kindref="compound">GyotoDefs.h</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="245" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1ab6cd6d1c63c1e26ea2d4537b77148354" prot="public" static="no">
+        <name>HAVE_STDINT_H</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Whether the &lt;stdint.h&gt; header file was found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="254" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1a9e0e434ec1a6ddbd97db12b5a32905e0" prot="public" static="no">
+        <name>HAVE_STDLIB_H</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Whether the &lt;stdlib.h&gt; header file was found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="263" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1a405d10d46190bcb0320524c54eafc850" prot="public" static="no">
+        <name>HAVE_STRINGS_H</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Whether the &lt;strings.h&gt; header file was found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="272" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1ad4c234dd1625255dc626a15886306e7d" prot="public" static="no">
+        <name>HAVE_STRING_H</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Whether the &lt;string.h&gt; header file was found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="281" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1ace156430ba007d19b4348a950d0c692b" prot="public" static="no">
+        <name>HAVE_SYS_STAT_H</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Whether the &lt;sys/stat.h&gt; header file was found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="290" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1a69dc70bea5d1f8bd2be9740e974fa666" prot="public" static="no">
+        <name>HAVE_SYS_TYPES_H</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Whether the &lt;sys/types.h&gt; header file was found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="299" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1a668711226a2bc65e6b7beee826c5d671" prot="public" static="no">
+        <name>HAVE_BOOST_MULTIPRECISION_CPP_DEC_FLOAT_HPP</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Whether support for arbitrary precision arithmetics is present. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="310" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1ac1415e421521d365545e71c323b8f241" prot="public" static="no">
+        <name>HAVE_BOOST_ARRAY_HPP</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Whether boost::array is available. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="321" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1aa71e3a49beb0b0ade961c3163d6f2b56" prot="public" static="no">
+        <name>GYOTO_HAVE_BOOST_INTEGRATORS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Whether Boost.odeint is present, as well as C++11. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Advanced integrators from boost/numeric/odeint/. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="333" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1a219b06937831d0da94d801ab13987639" prot="public" static="no">
+        <name>HAVE_UNISTD_H</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Whether the &lt;unistd.h&gt; header file was found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="342" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1a252d609defabf0144cfb8556051c2689" prot="public" static="no">
+        <name>HAVE_FENV_H</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Define to 1 to use fenv.h. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="351" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1a862ffdbac7ac8323712310a418b7d9a3" prot="public" static="no">
+        <name>HAVE__BOOL</name>
+        <initializer>(undefined)</initializer>
+        <briefdescription>
+<para>Whether the system has the type <lsquo/>_Bool<rsquo/>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="363" column="11" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1afb10d234d831c7b57768d62786748bc7" prot="public" static="no">
+        <name>PTHREAD_CREATE_JOINABLE</name>
+        <initializer>(undefined)</initializer>
+        <briefdescription>
+<para>Define to necessary symbol if this constant uses a non-standard name on your system. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="372" column="11" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1a550e5c272cc3cf3814651721167dcd23" prot="public" static="no">
+        <name>STDC_HEADERS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Whether the ANSI C header files were found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="378" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" prot="public" static="no">
+        <name>size_t</name>
+        <initializer>(undefined)</initializer>
+        <briefdescription>
+<para>If not defined in &lt;sys/types.h&gt;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConfig.h" line="390" column="11" bodyfile="/home/junichi/Gyoto/include/GyotoConfig.h" bodystart="390" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Compile-time configuration. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Codes based on <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> and <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> plug-ins must have access to the flags used when compiling <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>. This files is generated by <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>&apos;s configure script and holds influential variables such as HAVE_SINCOS.</para>
+<para>The values determined by configure when this documentation was built are documented, replaced by &quot;(undefined)&quot; if the macro was undefined. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>include/GyotoConfig.h.<sp/><sp/>Generated<sp/>from<sp/>GyotoConfig.h.in<sp/>by<sp/>configure.<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/>Copyright<sp/>2012-2015,<sp/>2018<sp/>Thibaut<sp/>Paumard</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>Gyoto.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"></highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"></highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"></highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>Gyoto.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__GyotoConfig_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__GyotoConfig_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="_gyoto_config_8h_1aa970a29bd0ec4aecaff5f86c8faf73a7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GYOTO_DEBUG_ENABLED<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>GYOTO_DEBUG_ENABLED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>GYOTO_DEBUG_ENABLED<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="_gyoto_config_8h_1ac4ace7fcf64750fc38bb917b15bd4f3f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GYOTO_PLUGIN_SFX<sp/>&quot;so&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>GYOTO_PLUGIN_SFX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>GYOTO_PLUGIN_SFX<sp/>&quot;so&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>#undef<sp/>GYOTO_PREFIX<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>GYOTO_PREFIX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="_gyoto_config_8h_1a04d1da57fec211ee10fb93baf38415c6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>GYOTO_PREFIX<sp/>(undefined)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>#undef<sp/>GYOTO_PKGLIBDIR<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>GYOTO_PKGLIBDIR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="_gyoto_config_8h_1ab28e26a23f8f3797621cd51507d478bb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>GYOTO_PKGLIBDIR<sp/>(undefined)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="_gyoto_config_8h_1a16bb65b29af9f49e760c1dff13c9b0fb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GYOTO_SIZE__T_IS_UNSIGNED_LONG<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>GYOTO_SIZE__T_IS_UNSIGNED_LONG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>GYOTO_SIZE__T_IS_UNSIGNED_LONG<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="_gyoto_config_8h_1add1b4b7f86e636d1425682b5521973dd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GYOTO_SOVERS<sp/>&quot;9-unreleased&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>GYOTO_SOVERS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>GYOTO_SOVERS<sp/>&quot;9-unreleased&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>#undef<sp/>GYOTO_USE_AEAE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>GYOTO_USE_AEAE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="_gyoto_config_8h_1a1cb96235fa6c7909929a9a84b6510bda" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>GYOTO_USE_AEAE<sp/>(undefined)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="_gyoto_config_8h_1a76061d63e3f671609a90ad75b7600421" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GYOTO_USE_ARBLIB<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>GYOTO_USE_ARBLIB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>GYOTO_USE_ARBLIB<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="_gyoto_config_8h_1ad3f3ceab8da1849e167fc7a7ce5d1774" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GYOTO_USE_CFITSIO<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>GYOTO_USE_CFITSIO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>GYOTO_USE_CFITSIO<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="_gyoto_config_8h_1a4fa2f0249abd5198dedb89bfb1a36f44" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GYOTO_USE_UDUNITS<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>GYOTO_USE_UDUNITS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>GYOTO_USE_UDUNITS<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>GYOTO_USE_UDUNITS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="_gyoto_config_8h_1a01033870eca4b44bfc589a1b49aebd3d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>HAVE_UDUNITS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="_gyoto_config_8h_1a7af3611aad932dce3e94ccdff4b761e5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GYOTO_USE_XERCES<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>GYOTO_USE_XERCES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>GYOTO_USE_XERCES<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="_gyoto_config_8h_1a0ee1617ff2f6885ef384a3dd46f9b9d7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAVE_DLFCN_H<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/><sp/>(undefined)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179" refid="_gyoto_config_8h_1ab90a030ff2790ebdc176660a6dd2a478" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAVE_INTTYPES_H<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>HAVE_INTTYPES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>HAVE_INTTYPES_H<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191" refid="_gyoto_config_8h_1a2a94a915864f604ddd00fb9272c8c0f4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAVE_LIBDL<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>HAVE_LIBDL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>HAVE_LIBDL<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>#undef<sp/>HAVE_MEMORY_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>HAVE_MEMORY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203" refid="_gyoto_config_8h_1ae93a78f9d076138897af441c9f86f285" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>HAVE_MEMORY_H<sp/>(undefined)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212" refid="_gyoto_config_8h_1a86e96afa8dc4d5c55f35a8f4034aff49" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAVE_MPI<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>HAVE_MPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>HAVE_MPI<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224" refid="_gyoto_config_8h_1aac699f6be8f38e3c8a5f375df9a12aaf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAVE_PTHREAD<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>HAVE_PTHREAD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>HAVE_PTHREAD<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233" refid="_gyoto_config_8h_1a428591e6b13dacf3451dc891e385f51b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAVE_PTHREAD_PRIO_INHERIT<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>HAVE_PTHREAD_PRIO_INHERIT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>HAVE_PTHREAD_PRIO_INHERIT<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245" refid="_gyoto_config_8h_1afdb5a6cfe5d482d5392535414934ab19" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAVE_SINCOS<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>HAVE_SINCOS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>HAVE_SINCOS<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254" refid="_gyoto_config_8h_1ab6cd6d1c63c1e26ea2d4537b77148354" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAVE_STDINT_H<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>HAVE_STDINT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>HAVE_STDINT_H<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263" refid="_gyoto_config_8h_1a9e0e434ec1a6ddbd97db12b5a32905e0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAVE_STDLIB_H<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>HAVE_STDLIB_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>HAVE_STDLIB_H<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272" refid="_gyoto_config_8h_1a405d10d46190bcb0320524c54eafc850" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAVE_STRINGS_H<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>HAVE_STRINGS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>HAVE_STRINGS_H<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281" refid="_gyoto_config_8h_1ad4c234dd1625255dc626a15886306e7d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAVE_STRING_H<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>HAVE_STRING_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>HAVE_STRING_H<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290" refid="_gyoto_config_8h_1ace156430ba007d19b4348a950d0c692b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAVE_SYS_STAT_H<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>HAVE_SYS_STAT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>HAVE_SYS_STAT_H<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299" refid="_gyoto_config_8h_1a69dc70bea5d1f8bd2be9740e974fa666" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAVE_SYS_TYPES_H<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>HAVE_SYS_TYPES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>HAVE_SYS_TYPES_H<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310" refid="_gyoto_config_8h_1a668711226a2bc65e6b7beee826c5d671" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAVE_BOOST_MULTIPRECISION_CPP_DEC_FLOAT_HPP<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>HAVE_BOOST_MULTIPRECISION_CPP_DEC_FLOAT_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>HAVE_BOOST_MULTIPRECISION_CPP_DEC_FLOAT_HPP<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321" refid="_gyoto_config_8h_1ac1415e421521d365545e71c323b8f241" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAVE_BOOST_ARRAY_HPP<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>HAVE_BOOST_ARRAY_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>HAVE_BOOST_ARRAY_HPP<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="333" refid="_gyoto_config_8h_1aa71e3a49beb0b0ade961c3163d6f2b56" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GYOTO_HAVE_BOOST_INTEGRATORS<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>GYOTO_HAVE_BOOST_INTEGRATORS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>GYOTO_HAVE_BOOST_INTEGRATORS<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342" refid="_gyoto_config_8h_1a219b06937831d0da94d801ab13987639" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAVE_UNISTD_H<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>HAVE_UNISTD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>HAVE_UNISTD_H<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight></codeline>
+<codeline lineno="351" refid="_gyoto_config_8h_1a252d609defabf0144cfb8556051c2689" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAVE_FENV_H<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>HAVE_FENV_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>HAVE_FENV_H<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>#undef<sp/>HAVE__BOOL<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>HAVE__BOOL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="363" refid="_gyoto_config_8h_1a862ffdbac7ac8323712310a418b7d9a3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>HAVE__BOOL<sp/>(undefined)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="366"><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>#undef<sp/>PTHREAD_CREATE_JOINABLE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>PTHREAD_CREATE_JOINABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="372" refid="_gyoto_config_8h_1afb10d234d831c7b57768d62786748bc7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>PTHREAD_CREATE_JOINABLE<sp/>(undefined)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight></codeline>
+<codeline lineno="378" refid="_gyoto_config_8h_1a550e5c272cc3cf3814651721167dcd23" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STDC_HEADERS<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>STDC_HEADERS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>STDC_HEADERS<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="383"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>#undef<sp/>size_t<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="388"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOXYGEN_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="389"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>size_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="390" refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>size_t<sp/>(undefined)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="391"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="393"><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/junichi/Gyoto/include/GyotoConfig.h"/>
+  </compounddef>
+</doxygen>

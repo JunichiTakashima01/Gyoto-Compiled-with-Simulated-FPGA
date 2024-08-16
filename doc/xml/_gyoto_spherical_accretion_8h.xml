@@ -1,0 +1,336 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_gyoto_spherical_accretion_8h" kind="file" language="C++">
+    <compoundname>GyotoSphericalAccretion.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">iomanip</includes>
+    <includes refid="_gyoto_standard_astrobj_8h" local="no">GyotoStandardAstrobj.h</includes>
+    <includes refid="_gyoto_kappa_distribution_synchrotron_spectrum_8h" local="no">GyotoKappaDistributionSynchrotronSpectrum.h</includes>
+    <includes refid="_gyoto_thermal_synchrotron_spectrum_8h" local="no">GyotoThermalSynchrotronSpectrum.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>iomanip</label>
+      </node>
+      <node id="10">
+        <label>float.h</label>
+      </node>
+      <node id="13">
+        <label>GyotoUtils.h</label>
+        <link refid="_gyoto_utils_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>GyotoSpectrum.h</label>
+        <link refid="_gyoto_spectrum_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>GyotoKappaDistributionSynchrotronSpectrum.h</label>
+        <link refid="_gyoto_kappa_distribution_synchrotron_spectrum_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>eigen3/Eigen/Dense</label>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="12">
+        <label>GyotoSmartPointer.h</label>
+        <link refid="_gyoto_smart_pointer_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>GyotoObject.h</label>
+        <link refid="_gyoto_object_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>stddef.h</label>
+      </node>
+      <node id="3">
+        <label>fstream</label>
+      </node>
+      <node id="25">
+        <label>GyotoRegister.h</label>
+        <link refid="_gyoto_register_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>GyotoThermalSynchrotronSpectrum.h</label>
+        <link refid="_gyoto_thermal_synchrotron_spectrum_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>GyotoStandardAstrobj.h</label>
+        <link refid="_gyoto_standard_astrobj_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>GyotoDefs.h</label>
+        <link refid="_gyoto_defs_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>pthread.h</label>
+      </node>
+      <node id="17">
+        <label>typeinfo</label>
+      </node>
+      <node id="22">
+        <label>GyotoFunctors.h</label>
+        <link refid="_gyoto_functors_8h"/>
+      </node>
+      <node id="11">
+        <label>vector</label>
+      </node>
+      <node id="8">
+        <label>GyotoConfig.h</label>
+        <link refid="_gyoto_config_8h"/>
+      </node>
+      <node id="19">
+        <label>sstream</label>
+      </node>
+      <node id="7">
+        <label>GyotoAstrobj.h</label>
+        <link refid="_gyoto_astrobj_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+      <node id="15">
+        <label>GyotoError.h</label>
+        <link refid="_gyoto_error_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>GyotoSphericalAccretion.h</label>
+        <link refid="_gyoto_spherical_accretion_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>GyotoConverters.h</label>
+        <link refid="_gyoto_converters_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>GyotoBlackBodySpectrum.h</label>
+        <link refid="_gyoto_black_body_spectrum_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion" prot="public">Gyoto::Astrobj::SphericalAccretion</innerclass>
+    <innernamespace refid="namespace_gyoto">Gyoto</innernamespace>
+    <innernamespace refid="namespace_gyoto_1_1_astrobj">Gyoto::Astrobj</innernamespace>
+    <briefdescription>
+<para>A spherically-symmetric accretion flow radially falling onto the central object. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Density is assumed to follow a r^{-2} law while temperature is a power law with a specified slope.</para>
+<para>This astrobj emits thermal synchrotron. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/>Copyright<sp/>2021<sp/>Frederic<sp/>Vincent,<sp/>Thibaut<sp/>Paumard</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>Gyoto.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"></highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"></highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>Gyoto.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__GyotoSphericalAccretion_H_<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__GyotoSphericalAccretion_H_<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iomanip&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Astrobj<sp/>{<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SphericalAccretion;<sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_standard_astrobj_8h" kindref="compound">GyotoStandardAstrobj.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_kappa_distribution_synchrotron_spectrum_8h" kindref="compound">GyotoKappaDistributionSynchrotronSpectrum.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_thermal_synchrotron_spectrum_8h" kindref="compound">GyotoThermalSynchrotronSpectrum.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion" kindref="compound">Gyoto::Astrobj::SphericalAccretion</ref></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_standard" kindref="compound">Astrobj::Standard</ref>,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_hook_1_1_listener" kindref="compound">Hook::Listener</ref></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt;<ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>::<ref refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion" kindref="compound">Astrobj::SphericalAccretion</ref>&gt;;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt;Spectrum::ThermalSynchrotron&gt;<sp/>spectrumThermalSynch_;</highlight></codeline>
+<codeline lineno="64" refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion_1adb7d016388e776ce82956d238588c247" refkind="member"><highlight class="normal"><sp/><sp/>bool<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion_1adb7d016388e776ce82956d238588c247" kindref="member">use_selfabsorption_</ref>;<sp/></highlight></codeline>
+<codeline lineno="65" refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion_1af4af66e5d19e71bbaa91048a650a2e03" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion_1af4af66e5d19e71bbaa91048a650a2e03" kindref="member">sphericalAccretionInnerRadius_</ref>;<sp/></highlight></codeline>
+<codeline lineno="66" refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion_1a5ea9259d59288eea9bd711c0f93ca133" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion_1a5ea9259d59288eea9bd711c0f93ca133" kindref="member">numberDensityAtInnerRadius_cgs_</ref>;<sp/></highlight></codeline>
+<codeline lineno="67" refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion_1abcff6a8c76564390670b984a4928a182" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion_1abcff6a8c76564390670b984a4928a182" kindref="member">densitySlope_</ref>;<sp/></highlight></codeline>
+<codeline lineno="68" refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion_1af778ea94c25a5e8fcfacaef21416ccb7" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion_1af778ea94c25a5e8fcfacaef21416ccb7" kindref="member">temperatureAtInnerRadius_</ref>;<sp/></highlight></codeline>
+<codeline lineno="69" refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion_1a14ce525c56303256edc7af1a5b006b72" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion_1a14ce525c56303256edc7af1a5b006b72" kindref="member">temperatureSlope_</ref>;<sp/></highlight></codeline>
+<codeline lineno="70" refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion_1a4585e8efb0fe69337a7327c0cbf17265" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion_1a4585e8efb0fe69337a7327c0cbf17265" kindref="member">magnetizationParameter_</ref>;<sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Constructors<sp/>-<sp/>Destructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>-------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="75" refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion_1ad624c4f4ed894c9d142edd94b0179c67" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" kindref="member">GYOTO_OBJECT</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_object_8h_1a6806b7f836d51dbe45cdf7bd60377a40" kindref="member">GYOTO_OBJECT_THREAD_SAFETY</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="78" refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion_1a83f4db6f428f8db7b1747b9b7040dc36" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion" kindref="compound">SphericalAccretion</ref>();<sp/></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="80" refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion_1ac991b50dba2e44dd49d19f92ec3a5c71" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion" kindref="compound">SphericalAccretion</ref>(const<sp/>SphericalAccretion&amp;<sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="81" refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion_1af1f80a1f6f1f0c1ede8f6c0cc6b7f923" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion" kindref="compound">SphericalAccretion</ref>*<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion_1af1f80a1f6f1f0c1ede8f6c0cc6b7f923" kindref="member">clone</ref><sp/>()<sp/>const;<sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="83" refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion_1a655d7b472d6375507df9a9bee40bd52e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion" kindref="compound">SphericalAccretion</ref>()<sp/>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Accessors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>---------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>void<sp/>useSelfAbsorption(bool<sp/>abs)<sp/>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>bool<sp/>useSelfAbsorption()<sp/>const;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>void<sp/>sphericalAccretionInnerRadius(double<sp/>hh);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>double<sp/>sphericalAccretionInnerRadius()<sp/>const;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>double<sp/>numberDensityAtInnerRadius()<sp/>const;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>double<sp/>numberDensityAtInnerRadius(std::string<sp/>const<sp/>&amp;unit)<sp/>const;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>void<sp/>numberDensityAtInnerRadius(double<sp/>ne);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>void<sp/>numberDensityAtInnerRadius(double<sp/>dens,<sp/>std::string<sp/>const<sp/>&amp;unit);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>void<sp/>densitySlope(double<sp/>ss);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>double<sp/>densitySlope()const;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>void<sp/>temperatureAtInnerRadius(double<sp/>tt);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>double<sp/>temperatureAtInnerRadius()const;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>void<sp/>temperatureSlope(double<sp/>ss);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>double<sp/>temperatureSlope()const;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>void<sp/>magnetizationParameter(double<sp/>rr);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>double<sp/>magnetizationParameter()const;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/>using<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_generic_1ac66726b8c1271499fddb753e30cf9dee" kindref="member">Generic::metric</ref>;</highlight></codeline>
+<codeline lineno="107" refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion_1afdcc4ad5350f57175c9f891fe9b7a655" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion_1ac66726b8c1271499fddb753e30cf9dee" kindref="member">metric</ref>(SmartPointer&lt;Metric::Generic&gt;);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="109" refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion_1a7691c49d0b15ab3f67fa097d2503f1dd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/>operator()(double<sp/>const<sp/>coord[4])<sp/>;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion_1a2d502412d04b57a692afeed26eebd8b5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion_1a2d502412d04b57a692afeed26eebd8b5" kindref="member">radiativeQ</ref>(double<sp/>Inu[],<sp/>double<sp/>Taunu[],<sp/></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>const<sp/>nu_em[],<sp/>size_t<sp/>nbnu,</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>dsem,<sp/>state_t<sp/>const<sp/>&amp;coord_ph,</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>const<sp/>coord_obj[8]=NULL)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="115" refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion_1ab8737e9a39f5285970caeb5b429e7903" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion_1ab8737e9a39f5285970caeb5b429e7903" kindref="member">getVelocity</ref>(double<sp/>const<sp/>pos[4],<sp/>double<sp/>vel[4])<sp/>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/junichi/Gyoto/include/GyotoSphericalAccretion.h"/>
+  </compounddef>
+</doxygen>

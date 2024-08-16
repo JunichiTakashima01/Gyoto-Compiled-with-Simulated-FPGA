@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespace_gyoto_1_1_spectrometer" kind="namespace" language="C++">
+    <compoundname>Gyoto::Spectrometer</compoundname>
+    <innerclass refid="class_gyoto_1_1_spectrometer_1_1_complex" prot="public">Gyoto::Spectrometer::Complex</innerclass>
+    <innerclass refid="class_gyoto_1_1_spectrometer_1_1_generic" prot="public">Gyoto::Spectrometer::Generic</innerclass>
+    <innerclass refid="class_gyoto_1_1_spectrometer_1_1_uniform" prot="public">Gyoto::Spectrometer::Uniform</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespace_gyoto_1_1_spectrometer_1a3d95097c93312ff6df68f56b4fe829ee" prot="public" static="no">
+        <type>char const  *</type>
+        <definition>typedef char const* Gyoto::Spectrometer::kind_t</definition>
+        <argsstring></argsstring>
+        <name>kind_t</name>
+        <briefdescription>
+<para>Type for <ref refid="namespace_gyoto_1_1_spectrometer" kindref="compound">Spectrometer</ref> kind. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="namespace_gyoto_1_1_spectrometer" kindref="compound">Spectrometer</ref> kindid is a unique numerical identifier for that kind, produced as the address to a static C string variable holding the kind&apos;s name. Most of the time, the address is the only significant part as this is more reliable and allows for direct numerical comparison instead of slower string comparison. The value of the string variable can be used for printing and as anchor name for <ref refid="namespace_gyoto_1_1_spectrometer_1a86b5778d46f54fc06ff22bc060987c6b" kindref="member">Register()</ref>, although the anchor name could be different. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSpectrometer.h" line="85" column="25" bodyfile="/home/junichi/Gyoto/include/GyotoSpectrometer.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_gyoto_1_1_spectrometer_1a63d8c94e41e4be8a817c095b457de8a5" prot="public" static="no">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_spectrometer_1_1_generic" kindref="compound">Gyoto::Spectrometer::Generic</ref> &gt;</type>
+        <definition>typedef SmartPointer&lt;Gyoto::Spectrometer::Generic&gt; Gyoto::Spectrometer::Subcontractor_t(Gyoto::FactoryMessenger *, std::vector&lt; std::string &gt; const &amp;)</definition>
+        <argsstring>(Gyoto::FactoryMessenger *, std::vector&lt; std::string &gt; const &amp;)</argsstring>
+        <name>Subcontractor_t</name>
+        <briefdescription>
+<para>A function to build instances of a specific <ref refid="class_gyoto_1_1_astrobj_1_1_generic" kindref="compound">Astrobj::Generic</ref> sub-class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a more specific version of the <ref refid="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" kindref="member">SmartPointee::Subcontractor_t</ref> type. A Spectrometer::Subcontrator_t is called by the <ref refid="class_gyoto_1_1_factory" kindref="compound">Gyoto::Factory</ref> to build an instance of the kind of spectrometer specified in an XML file (see <ref refid="namespace_gyoto_1_1_spectrometer_1a86b5778d46f54fc06ff22bc060987c6b" kindref="member">Register()</ref>). The <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref> and Subcontractor_t function communicate through a <ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">Gyoto::FactoryMessenger</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSpectrometer.h" line="96" column="7" bodyfile="/home/junichi/Gyoto/include/GyotoSpectrometer.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespace_gyoto_1_1_spectrometer_1a04be050062c41417229fd78d9a7daed6" prot="public" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_register_1_1_entry" kindref="compound">Gyoto::Register::Entry</ref> *</type>
+        <definition>Gyoto::Register::Entry* Gyoto::Spectrometer::Register_</definition>
+        <argsstring></argsstring>
+        <name>Register_</name>
+        <briefdescription>
+<para>The <ref refid="namespace_gyoto_1_1_spectrometer" kindref="compound">Spectrometer</ref> register. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use the <ref refid="namespace_gyoto_1_1_spectrometer_1abb2d42f08c4acd63763f0714ddca0bd7" kindref="member">Spectrometer::initRegister()</ref> once in your program to initiliaze it, the <ref refid="namespace_gyoto_1_1_spectrometer_1a86b5778d46f54fc06ff22bc060987c6b" kindref="member">Spectrometer::Register()</ref> function to fill it, and the <ref refid="namespace_gyoto_1_1_spectrometer_1a28bbcf16ab5da826a6ad4310141e3e51" kindref="member">Spectrometer::getSubcontractor()</ref> function to query it. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSpectrometer.h" line="149" column="36" declfile="/home/junichi/Gyoto/include/GyotoSpectrometer.h" declline="149" declcolumn="36"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_gyoto_1_1_spectrometer_1a28bbcf16ab5da826a6ad4310141e3e51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_gyoto_1_1_spectrometer_1a63d8c94e41e4be8a817c095b457de8a5" kindref="member">Gyoto::Spectrometer::Subcontractor_t</ref> *</type>
+        <definition>Gyoto::Spectrometer::Subcontractor_t* Gyoto::Spectrometer::getSubcontractor</definition>
+        <argsstring>(std::string name, std::vector&lt; std::string &gt; &amp;plugins, int errmode=0)</argsstring>
+        <name>getSubcontractor</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; &amp;</type>
+          <declname>plugins</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errmode</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Query the <ref refid="namespace_gyoto_1_1_spectrometer" kindref="compound">Spectrometer</ref> register. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the <ref refid="namespace_gyoto_1_1_spectrometer_1a63d8c94e41e4be8a817c095b457de8a5" kindref="member">Spectrometer::Subcontractor_t</ref> correspondig to a given kind name. This function is normally called only from the <ref refid="class_gyoto_1_1_factory" kindref="compound">Gyoto::Factory</ref>. If plugin is specified, only a subcontractor matching both name and plugin will be returned, loading the plug-in if necessary. If plugin is the empty string, then the first subcontractor matching name will be returned, and the name of the plug-in it belongs to will be returned in plugin upon output.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the subclass to build, e.g. &quot;Complex&quot; or &quot;wave&quot;. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">plugin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>e.g. &quot;stdplug&quot;. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>errmode[in]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If name is not registered, <ref refid="namespace_gyoto_1_1_spectrometer_1a28bbcf16ab5da826a6ad4310141e3e51" kindref="member">getSubcontractor()</ref> return NULL errmode==1, throws a <ref refid="class_gyoto_1_1_error" kindref="compound">Gyoto::Error</ref> if errmode==0. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the corresponding subcontractor. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSpectrometer.h" line="119" column="42" declfile="/home/junichi/Gyoto/include/GyotoSpectrometer.h" declline="119" declcolumn="42"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_spectrometer_1a4688afd585727b4ec02a97f7ec27c086" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_spectrometer_1_1_generic" kindref="compound">Spectrometer::Generic</ref> &gt;</type>
+        <definition>SmartPointer&lt;Spectrometer::Generic&gt; Gyoto::Spectrometer::Subcontractor</definition>
+        <argsstring>(FactoryMessenger *fmp, std::vector&lt; std::string &gt; const &amp;plugins)</argsstring>
+        <name>Subcontractor</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref> *</type>
+          <declname>fmp</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; const &amp;</type>
+          <declname>plugins</declname>
+        </param>
+        <briefdescription>
+<para>A template for Subcontractor_t functions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Instead of reimplementing the wheel, your subcontractor can simply be <ref refid="namespace_gyoto_1_1_spectrometer_1a4688afd585727b4ec02a97f7ec27c086" kindref="member">Gyoto::Spectrometer::Subcontractor&lt;MyKind&gt;</ref>. It must however implement setParameters().</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A <ref refid="class_gyoto_1_1_spectrometer_1_1_generic" kindref="compound">Spectrometer::Generic</ref> sub-class. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSpectrometer.h" line="132" column="29" bodyfile="/home/junichi/Gyoto/include/GyotoSpectrometer.h" bodystart="133" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_spectrometer_1abb2d42f08c4acd63763f0714ddca0bd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Spectrometer::initRegister</definition>
+        <argsstring>()</argsstring>
+        <name>initRegister</name>
+        <briefdescription>
+<para>Initialize the <ref refid="namespace_gyoto_1_1_spectrometer" kindref="compound">Spectrometer</ref> register This must be called once. It initializes Register_ and registers the standard kinds (<ref refid="class_gyoto_1_1_spectrometer_1_1_uniform" kindref="compound">Uniform</ref> and <ref refid="class_gyoto_1_1_spectrometer_1_1_complex" kindref="compound">Complex</ref>). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSpectrometer.h" line="156" column="10" declfile="/home/junichi/Gyoto/include/GyotoSpectrometer.h" declline="156" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_spectrometer_1a86b5778d46f54fc06ff22bc060987c6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Spectrometer::Register</definition>
+        <argsstring>(std::string name, Gyoto::Spectrometer::Subcontractor_t *scp)</argsstring>
+        <name>Register</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_gyoto_1_1_spectrometer_1a63d8c94e41e4be8a817c095b457de8a5" kindref="member">Gyoto::Spectrometer::Subcontractor_t</ref> *</type>
+          <declname>scp</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="namespace_gyoto_1_1_register" kindref="compound">Register</ref> a new <ref refid="namespace_gyoto_1_1_spectrometer" kindref="compound">Spectrometer</ref> kind. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="namespace_gyoto_1_1_register" kindref="compound">Register</ref> a new <ref refid="class_gyoto_1_1_spectrometer_1_1_generic" kindref="compound">Spectrometer::Generic</ref> sub-class so that the <ref refid="class_gyoto_1_1_factory" kindref="compound">Gyoto::Factory</ref> knows it.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The kind name which identifies this object type in an XML file, as in &lt;<ref refid="namespace_gyoto_1_1_spectrometer" kindref="compound">Spectrometer</ref> kind=&quot;name&quot;&gt;. For clarity, this should be the same as the value of kindid_ for this object, but it is not mandatory.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the subcontractor, which will communicate with the <ref refid="class_gyoto_1_1_factory" kindref="compound">Gyoto::Factory</ref> to build an instance of the class from its XML description. If all parameters can be set using setParameter(), this can be: <programlisting><codeline><highlight class="normal">&amp;(Gyoto::Spectrometer::Subcontractor&lt;Myind&gt;)</highlight></codeline>
+</programlisting> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSpectrometer.h" line="177" column="10" declfile="/home/junichi/Gyoto/include/GyotoSpectrometer.h" declline="177" declcolumn="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Access to spectrometers. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Objects which describe spectrometers (including one-channel devices, a.k.a cameras) must inherit from the <ref refid="class_gyoto_1_1_spectrometer_1_1_generic" kindref="compound">Gyoto::Spectrometer::Generic</ref> class.</para>
+<para>To be usable, a <ref refid="class_gyoto_1_1_spectrometer_1_1_generic" kindref="compound">Spectrometer::Generic</ref> sub-class should register a <ref refid="namespace_gyoto_1_1_spectrometer_1a63d8c94e41e4be8a817c095b457de8a5" kindref="member">Spectrometer::Subcontractor_t</ref> function using the <ref refid="namespace_gyoto_1_1_spectrometer_1a86b5778d46f54fc06ff22bc060987c6b" kindref="member">Spectrometer::Register()</ref> function. See also <ref refid="writing_plugins_page" kindref="compound">Writing plug-ins for Gyoto</ref> . </para>
+    </detaileddescription>
+    <location file="/home/junichi/Gyoto/include/GyotoComplexSpectrometer.h" line="34" column="3"/>
+  </compounddef>
+</doxygen>

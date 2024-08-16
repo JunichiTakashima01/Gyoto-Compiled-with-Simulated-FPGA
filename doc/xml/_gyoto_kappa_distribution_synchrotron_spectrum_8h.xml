@@ -1,0 +1,291 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_gyoto_kappa_distribution_synchrotron_spectrum_8h" kind="file" language="C++">
+    <compoundname>GyotoKappaDistributionSynchrotronSpectrum.h</compoundname>
+    <includes refid="_gyoto_spectrum_8h" local="yes">GyotoSpectrum.h</includes>
+    <includes refid="_gyoto_black_body_spectrum_8h" local="no">GyotoBlackBodySpectrum.h</includes>
+    <includedby refid="_gyoto_blob_8h" local="no">GyotoBlob.h</includedby>
+    <includedby refid="_gyoto_flared_disk_synchrotron_8h" local="no">GyotoFlaredDiskSynchrotron.h</includedby>
+    <includedby refid="_gyoto_jet_8h" local="no">GyotoJet.h</includedby>
+    <includedby refid="_gyoto_plasmoid_8h" local="no">GyotoPlasmoid.h</includedby>
+    <includedby refid="_gyoto_spherical_accretion_8h" local="no">GyotoSphericalAccretion.h</includedby>
+    <includedby refid="_gyoto_thick_disk_8h" local="no">GyotoThickDisk.h</includedby>
+    <incdepgraph>
+      <node id="9">
+        <label>float.h</label>
+      </node>
+      <node id="6">
+        <label>GyotoUtils.h</label>
+        <link refid="_gyoto_utils_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>GyotoSpectrum.h</label>
+        <link refid="_gyoto_spectrum_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>GyotoKappaDistributionSynchrotronSpectrum.h</label>
+        <link refid="_gyoto_kappa_distribution_synchrotron_spectrum_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>GyotoSmartPointer.h</label>
+        <link refid="_gyoto_smart_pointer_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>GyotoObject.h</label>
+        <link refid="_gyoto_object_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>stddef.h</label>
+      </node>
+      <node id="3">
+        <label>GyotoRegister.h</label>
+        <link refid="_gyoto_register_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>GyotoDefs.h</label>
+        <link refid="_gyoto_defs_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>pthread.h</label>
+      </node>
+      <node id="15">
+        <label>typeinfo</label>
+      </node>
+      <node id="10">
+        <label>vector</label>
+      </node>
+      <node id="8">
+        <label>GyotoConfig.h</label>
+        <link refid="_gyoto_config_8h"/>
+      </node>
+      <node id="14">
+        <label>iostream</label>
+      </node>
+      <node id="12">
+        <label>GyotoError.h</label>
+        <link refid="_gyoto_error_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>GyotoBlackBodySpectrum.h</label>
+        <link refid="_gyoto_black_body_spectrum_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>GyotoFlaredDiskSynchrotron.h</label>
+        <link refid="_gyoto_flared_disk_synchrotron_8h"/>
+      </node>
+      <node id="4">
+        <label>GyotoJet.h</label>
+        <link refid="_gyoto_jet_8h"/>
+      </node>
+      <node id="2">
+        <label>GyotoBlob.h</label>
+        <link refid="_gyoto_blob_8h"/>
+      </node>
+      <node id="1">
+        <label>GyotoKappaDistributionSynchrotronSpectrum.h</label>
+        <link refid="_gyoto_kappa_distribution_synchrotron_spectrum_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>GyotoPlasmoid.h</label>
+        <link refid="_gyoto_plasmoid_8h"/>
+      </node>
+      <node id="6">
+        <label>GyotoSphericalAccretion.h</label>
+        <link refid="_gyoto_spherical_accretion_8h"/>
+      </node>
+      <node id="7">
+        <label>GyotoThickDisk.h</label>
+        <link refid="_gyoto_thick_disk_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron" prot="public">Gyoto::Spectrum::KappaDistributionSynchrotron</innerclass>
+    <innernamespace refid="namespace_gyoto">Gyoto</innernamespace>
+    <innernamespace refid="namespace_gyoto_1_1_spectrum">Gyoto::Spectrum</innernamespace>
+    <briefdescription>
+<para>Powerlaw synchrotron spectrum. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>Copyright<sp/>2018<sp/>Frederic<sp/>Vincent,<sp/>Thibaut<sp/>Paumard</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>Gyoto.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"></highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>Gyoto.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__GyotoKappaDistributionSynchrotronSpectrum_H_<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__GyotoKappaDistributionSynchrotronSpectrum_H_<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_gyoto_spectrum_8h" kindref="compound">GyotoSpectrum.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_black_body_spectrum_8h" kindref="compound">GyotoBlackBodySpectrum.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_gyoto" kindref="compound">Gyoto</ref><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Spectrum<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">KappaDistributionSynchrotron;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron" kindref="compound">Gyoto::Spectrum::KappaDistributionSynchrotron</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_spectrum_1_1_generic" kindref="compound">Gyoto::Spectrum::Generic</ref><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt;<ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>::<ref refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron" kindref="compound">Spectrum::KappaDistributionSynchrotron</ref>&gt;;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="52" refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a555741b0bc736c6486318ca77048daa4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt;Spectrum::BlackBody&gt;<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a555741b0bc736c6486318ca77048daa4" kindref="member">spectrumBB_</ref>;<sp/></highlight></codeline>
+<codeline lineno="53" refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1ab7cfd2d2553752024736c7e739feb6bb" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1ab7cfd2d2553752024736c7e739feb6bb" kindref="member">numberdensityCGS_</ref>;<sp/></highlight></codeline>
+<codeline lineno="54" refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a65ff91f98d13957ae1108088d2ac8259" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a65ff91f98d13957ae1108088d2ac8259" kindref="member">angle_B_pem_</ref>;<sp/></highlight></codeline>
+<codeline lineno="55" refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a939386223b70acee57f9a60e88b1ecac" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a939386223b70acee57f9a60e88b1ecac" kindref="member">cyclotron_freq_</ref>;<sp/></highlight></codeline>
+<codeline lineno="56" refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a94f84f10e7dc7342496a82f09b489266" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a94f84f10e7dc7342496a82f09b489266" kindref="member">thetae_</ref>;<sp/></highlight></codeline>
+<codeline lineno="57" refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1abe490341724952d5f87d44bb1ae3514a" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1abe490341724952d5f87d44bb1ae3514a" kindref="member">kappaindex_</ref>;<sp/></highlight></codeline>
+<codeline lineno="58" refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a119e80e7a57447c44ee6533478f0743e" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a119e80e7a57447c44ee6533478f0743e" kindref="member">hypergeometric_</ref>;<sp/></highlight></codeline>
+<codeline lineno="59" refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a03275495341c3c1deabd0fbc66ca7c93" refkind="member"><highlight class="normal"><sp/><sp/>bool<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a03275495341c3c1deabd0fbc66ca7c93" kindref="member">angle_averaged_</ref>;<sp/></highlight></codeline>
+<codeline lineno="60" refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a056d09f1ef2c20941a8b92814ab7853a" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a056d09f1ef2c20941a8b92814ab7853a" kindref="member">gamma_max_</ref>;<sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="63" refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1ae04da73acf294f0ffd3c301490c8c9ee" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" kindref="member">GYOTO_OBJECT</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron" kindref="compound">KappaDistributionSynchrotron</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron" kindref="compound">KappaDistributionSynchrotron</ref>(const<sp/>KappaDistributionSynchrotron<sp/>&amp;);</highlight></codeline>
+<codeline lineno="67" refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a6f566206ed329b00363490afc566bd6b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron" kindref="compound">KappaDistributionSynchrotron</ref><sp/>*<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a6f566206ed329b00363490afc566bd6b" kindref="member">clone</ref>()<sp/>const;<sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>using<sp/>Gyoto::Spectrum::Generic::operator();</highlight></codeline>
+<codeline lineno="76" refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a7955e91b15b6e150ba9b4a2393987f8f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/>operator()(double<sp/>nu)<sp/>const;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GYOTO_SWIGIMPORTED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a48dd87d1705b1bda95f3ff4cbeab1f3e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/>operator()(double<sp/>nu,double<sp/>,double<sp/>ds)<sp/>const;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>NB:<sp/>the<sp/>second<sp/>argument,<sp/>opacity<sp/>in<sp/>the<sp/>Spectrum<sp/>API</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>is<sp/>useless<sp/>here</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>double<sp/>numberdensityCGS()<sp/>const;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>void<sp/>numberdensityCGS(double<sp/>rho);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>double<sp/>angle_B_pem()<sp/>const;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>void<sp/>angle_B_pem(double<sp/>aa);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>double<sp/>cyclotron_freq()<sp/>const;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>void<sp/>cyclotron_freq(double<sp/>ff);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>double<sp/>thetae()<sp/>const;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>void<sp/>thetae(double<sp/>th);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>double<sp/>kappaindex()<sp/>const;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>void<sp/>kappaindex(double<sp/>ind);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>double<sp/>hypergeometric()<sp/>const;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>void<sp/>hypergeometric(double<sp/>hh);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>bool<sp/>angle_averaged()<sp/>const;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>void<sp/>angle_averaged(bool<sp/>ang);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/>double<sp/>gamma_max()<sp/>const;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/>void<sp/>gamma_max(double<sp/>gammaMax);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="114" refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a1ccbba4e8ea4f81fa1878daf389fc78a" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a1ccbba4e8ea4f81fa1878daf389fc78a" kindref="member">jnuCGS</ref>(double<sp/>nu)<sp/>const;</highlight></codeline>
+<codeline lineno="121" refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a013eebcb6ee4b581ffd4b77d1f67139e" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a013eebcb6ee4b581ffd4b77d1f67139e" kindref="member">jQnuCGS</ref>(double<sp/>nu)<sp/>const;</highlight></codeline>
+<codeline lineno="128" refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1acd8cee086758f9427fef630c2747ee52" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1acd8cee086758f9427fef630c2747ee52" kindref="member">jUnuCGS</ref>(double<sp/>nu)<sp/>const;</highlight></codeline>
+<codeline lineno="135" refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a8253aaad25925c878d17ebe0e418ab24" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a8253aaad25925c878d17ebe0e418ab24" kindref="member">jVnuCGS</ref>(double<sp/>nu)<sp/>const;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a07e8c6977c07ad7478966266c592506f" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a07e8c6977c07ad7478966266c592506f" kindref="member">alphanuCGS</ref>(double<sp/>nu)<sp/>const;</highlight></codeline>
+<codeline lineno="148" refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a6c83529f7523d53188735473822fadec" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a6c83529f7523d53188735473822fadec" kindref="member">alphaQnuCGS</ref>(double<sp/>nu)<sp/>const;</highlight></codeline>
+<codeline lineno="154" refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a0a216cf50d6621bb326387cedb5ec91b" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a0a216cf50d6621bb326387cedb5ec91b" kindref="member">alphaUnuCGS</ref>(double<sp/>nu)<sp/>const;</highlight></codeline>
+<codeline lineno="160" refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1af2619d016f75a4973fe7d008b379bf5c" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1af2619d016f75a4973fe7d008b379bf5c" kindref="member">alphaVnuCGS</ref>(double<sp/>nu)<sp/>const;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1afce7ccf43c3097ac7b0809e31bfedc16" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1afce7ccf43c3097ac7b0809e31bfedc16" kindref="member">rQnuCGS</ref>(double<sp/>nu)<sp/>const;</highlight></codeline>
+<codeline lineno="173" refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a1ef1f9dbf48a08eecc9f72eb3b58589b" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a1ef1f9dbf48a08eecc9f72eb3b58589b" kindref="member">rUnuCGS</ref>(double<sp/>nu)<sp/>const;</highlight></codeline>
+<codeline lineno="179" refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1aa4f880b158060c577996fdc04794f44f" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1aa4f880b158060c577996fdc04794f44f" kindref="member">rVnuCGS</ref>(double<sp/>nu)<sp/>const;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185" refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a96c5f3f58c0d169a3a53263945bd5148" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a96c5f3f58c0d169a3a53263945bd5148" kindref="member">radiativeQ</ref>(double<sp/>jnu[],<sp/></highlight><highlight class="comment">//<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>anu[],<sp/></highlight><highlight class="comment">//<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>const<sp/>nu_ems[],</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size_t<sp/>nbnu</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="194" refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1ad60638757322c56e10fac8268a797e1b" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a96c5f3f58c0d169a3a53263945bd5148" kindref="member">radiativeQ</ref>(double<sp/>jInu[],<sp/>double<sp/>jQnu[],<sp/>double<sp/>jUnu[],<sp/>double<sp/>jVnu[],</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>aInu[],<sp/>double<sp/>aQnu[],<sp/>double<sp/>aUnu[],<sp/>double<sp/>aVnu[],</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>rQnu[],<sp/>double<sp/>rUnu[],<sp/>double<sp/>rVnu[],</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>const<sp/>nu_ems[],</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size_t<sp/>nbnu<sp/>);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/junichi/Gyoto/include/GyotoKappaDistributionSynchrotronSpectrum.h"/>
+  </compounddef>
+</doxygen>

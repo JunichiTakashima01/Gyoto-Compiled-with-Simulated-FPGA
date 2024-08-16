@@ -1,0 +1,433 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_gyoto_star_trace_8h" kind="file" language="C++">
+    <compoundname>GyotoStarTrace.h</compoundname>
+    <includes refid="_gyoto_star_8h" local="no">GyotoStar.h</includes>
+    <incdepgraph>
+      <node id="19">
+        <label>iomanip</label>
+      </node>
+      <node id="25">
+        <label>GyotoUniformSphere.h</label>
+        <link refid="_gyoto_uniform_sphere_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>float.h</label>
+      </node>
+      <node id="9">
+        <label>GyotoUtils.h</label>
+        <link refid="_gyoto_utils_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>GyotoSpectrum.h</label>
+        <link refid="_gyoto_spectrum_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>eigen3/Eigen/Dense</label>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="8">
+        <label>GyotoSmartPointer.h</label>
+        <link refid="_gyoto_smart_pointer_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>GyotoObject.h</label>
+        <link refid="_gyoto_object_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>stddef.h</label>
+      </node>
+      <node id="5">
+        <label>fstream</label>
+      </node>
+      <node id="23">
+        <label>GyotoRegister.h</label>
+        <link refid="_gyoto_register_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>GyotoThermalSynchrotronSpectrum.h</label>
+        <link refid="_gyoto_thermal_synchrotron_spectrum_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>GyotoStandardAstrobj.h</label>
+        <link refid="_gyoto_standard_astrobj_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>GyotoSpectrometer.h</label>
+        <link refid="_gyoto_spectrometer_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>GyotoMetric.h</label>
+        <link refid="_gyoto_metric_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>GyotoStarTrace.h</label>
+        <link refid="_gyoto_star_trace_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>GyotoDefs.h</label>
+        <link refid="_gyoto_defs_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>GyotoWorldline.h</label>
+        <link refid="_gyoto_worldline_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>pthread.h</label>
+      </node>
+      <node id="16">
+        <label>typeinfo</label>
+      </node>
+      <node id="27">
+        <label>GyotoFunctors.h</label>
+        <link refid="_gyoto_functors_8h"/>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+      <node id="11">
+        <label>GyotoConfig.h</label>
+        <link refid="_gyoto_config_8h"/>
+      </node>
+      <node id="21">
+        <label>sstream</label>
+      </node>
+      <node id="18">
+        <label>GyotoAstrobj.h</label>
+        <link refid="_gyoto_astrobj_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="14">
+        <label>GyotoError.h</label>
+        <link refid="_gyoto_error_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>GyotoHooks.h</label>
+        <link refid="_gyoto_hooks_8h"/>
+      </node>
+      <node id="30">
+        <label>GyotoScreen.h</label>
+        <link refid="_gyoto_screen_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>GyotoConverters.h</label>
+        <link refid="_gyoto_converters_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>GyotoBlackBodySpectrum.h</label>
+        <link refid="_gyoto_black_body_spectrum_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>GyotoStar.h</label>
+        <link refid="_gyoto_star_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_star_trace" prot="public">Gyoto::Astrobj::StarTrace</innerclass>
+    <innernamespace refid="namespace_gyoto">Gyoto</innernamespace>
+    <innernamespace refid="namespace_gyoto_1_1_astrobj">Gyoto::Astrobj</innernamespace>
+    <briefdescription>
+<para>Like a Star that would be on all points of its orbit at all time. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A StarTrace is a Star that is considerred to be simultaneously on all the points of its orbit at all time. The purpose is to precompute quickly an integrated image that can later be used as a mask to efficiently compute many images of the underlying Star at varying observing dates. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/>Copyright<sp/>2013-2015<sp/>Thibaut<sp/>Paumard</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>Gyoto.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"></highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"></highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>Gyoto.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__GyotoStarTrace_H_<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__GyotoStarTrace_H_<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Astrobj<sp/>{<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">StarTrace;<sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_star_8h" kindref="compound">GyotoStar.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="class_gyoto_1_1_astrobj_1_1_star_trace" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_astrobj_1_1_star_trace" kindref="compound">Gyoto::Astrobj::StarTrace</ref><sp/>:</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_star" kindref="compound">Gyoto::Astrobj::Star</ref><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt;<ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>::<ref refid="class_gyoto_1_1_astrobj_1_1_star_trace" kindref="compound">Astrobj::StarTrace</ref>&gt;;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Data<sp/>:<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>-----</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="76" refid="class_gyoto_1_1_astrobj_1_1_star_trace_1a3d7bf155651b5ae834a00b27dbfcd324" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_star_trace_1a3d7bf155651b5ae834a00b27dbfcd324" kindref="member">tmin_</ref>;<sp/></highlight></codeline>
+<codeline lineno="77" refid="class_gyoto_1_1_astrobj_1_1_star_trace_1a6564f70f0d1166175d8351177e3763f5" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_star_trace_1a6564f70f0d1166175d8351177e3763f5" kindref="member">tmax_</ref>;<sp/></highlight></codeline>
+<codeline lineno="78" refid="class_gyoto_1_1_astrobj_1_1_star_trace_1a7fadee90009a466246aa0aec5749768a" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/>*<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_star_trace_1a7fadee90009a466246aa0aec5749768a" kindref="member">x_</ref>;<sp/></highlight></codeline>
+<codeline lineno="79" refid="class_gyoto_1_1_astrobj_1_1_star_trace_1ad9dcacdc8e557af41991657f304e806b" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/>*<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_star_trace_1ad9dcacdc8e557af41991657f304e806b" kindref="member">y_</ref>;<sp/></highlight></codeline>
+<codeline lineno="80" refid="class_gyoto_1_1_astrobj_1_1_star_trace_1ab6936214eb4223b5bb88aa62739a67ac" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/>*<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_star_trace_1ab6936214eb4223b5bb88aa62739a67ac" kindref="member">z_</ref>;<sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Constructors<sp/>-<sp/>Destructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>-------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="85" refid="class_gyoto_1_1_astrobj_1_1_star_trace_1aa37e430dfb273f6cba60a0fd6369330f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" kindref="member">GYOTO_OBJECT</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="class_gyoto_1_1_astrobj_1_1_star_trace_1a28299746add4024968647032e16debdd" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_star_trace" kindref="compound">StarTrace</ref>(SmartPointer&lt;Metric::Generic&gt;<sp/>gg,<sp/>double<sp/>radius,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>const<sp/>pos[4],<sp/>double<sp/>const<sp/>v[3])<sp/>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="class_gyoto_1_1_astrobj_1_1_star_trace_1aca6d0484b93534c7846be7bdfaed349b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_star_trace" kindref="compound">StarTrace</ref>();<sp/></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="106" refid="class_gyoto_1_1_astrobj_1_1_star_trace_1ae8d38d2e241724c27a4bac22458bfdc9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_star_trace" kindref="compound">StarTrace</ref>(const<sp/>StarTrace&amp;<sp/>orig);<sp/></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="class_gyoto_1_1_astrobj_1_1_star_trace_1a2931ef5fe751211c6a62e0454ee5cd6c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_star_trace" kindref="compound">StarTrace</ref>(const<sp/>Star&amp;<sp/>o,<sp/>double<sp/>tmin,<sp/>double<sp/>tmax);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="class_gyoto_1_1_astrobj_1_1_star_trace_1ad2157ce460d6db614dc9d66f5fc09594" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_star_trace" kindref="compound">StarTrace</ref><sp/>*<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_star_trace_1ad2157ce460d6db614dc9d66f5fc09594" kindref="member">clone</ref>()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="class_gyoto_1_1_astrobj_1_1_star_trace_1ae187425a7ca581bcaca12b3916d8ccb4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_gyoto_1_1_astrobj_1_1_star_trace" kindref="compound">StarTrace</ref>()<sp/>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>using<sp/><ref refid="class_gyoto_1_1_worldline_1a467de7cc54b7a999d58f3e3347d73392" kindref="member">Star::xAllocate</ref>;</highlight></codeline>
+<codeline lineno="117" refid="class_gyoto_1_1_astrobj_1_1_star_trace_1a9bf4ca6d5087771e0b0a0e588cd2614c" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_worldline_1a467de7cc54b7a999d58f3e3347d73392" kindref="member">xAllocate</ref>(size_t);</highlight></codeline>
+<codeline lineno="118" refid="class_gyoto_1_1_astrobj_1_1_star_trace_1adbe0bddf1bc8ef31f373e7629cd83cc2" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_star_trace_1adbe0bddf1bc8ef31f373e7629cd83cc2" kindref="member">xAllocateXYZ</ref>();<sp/></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>using<sp/><ref refid="class_gyoto_1_1_worldline_1ac5643cc01a45e5041fe7e331c663226f" kindref="member">Star::xExpand</ref>;</highlight></codeline>
+<codeline lineno="120" refid="class_gyoto_1_1_astrobj_1_1_star_trace_1a1a5c7d3c5c9e12c54117b1b55ad0c649" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_star_trace_1a1a5c7d3c5c9e12c54117b1b55ad0c649" kindref="member">xExpand</ref>(int);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="class_gyoto_1_1_astrobj_1_1_star_trace_1ade43119f7e01c047427729a2da76467a" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_star_trace_1a5c2996bb925592c69b535d78596de5ed" kindref="member">computeXYZ</ref>(size_t<sp/>i);<sp/></highlight></codeline>
+<codeline lineno="123" refid="class_gyoto_1_1_astrobj_1_1_star_trace_1a5c2996bb925592c69b535d78596de5ed" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_star_trace_1a5c2996bb925592c69b535d78596de5ed" kindref="member">computeXYZ</ref>();<sp/></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>using<sp/><ref refid="class_gyoto_1_1_worldline_1ac6de9fe246a1eaa986fdab7b9b72150a" kindref="member">Star::setInitCoord</ref>;</highlight></codeline>
+<codeline lineno="126" refid="class_gyoto_1_1_astrobj_1_1_star_trace_1a41a600e082a425252729f342f044b54b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_star_trace_1a41a600e082a425252729f342f044b54b" kindref="member">setInitCoord</ref>(const<sp/>double<sp/>coord[8],<sp/>int<sp/>dir<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>using<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_generic_1ac66726b8c1271499fddb753e30cf9dee" kindref="member">Generic::metric</ref>;</highlight></codeline>
+<codeline lineno="129" refid="class_gyoto_1_1_astrobj_1_1_star_trace_1a05ceb0db36380a273c987ac5288ef6b7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_star_trace_1ac66726b8c1271499fddb753e30cf9dee" kindref="member">metric</ref>(SmartPointer&lt;Metric::Generic&gt;<sp/>gg);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="class_gyoto_1_1_astrobj_1_1_star_trace_1afbaa9ce4e719143d2f4591dd9641243b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_star_trace_1afbaa9ce4e719143d2f4591dd9641243b" kindref="member">xStore</ref>(size_t<sp/>ind,<sp/>state_t<sp/>const<sp/>&amp;coord,<sp/>double<sp/>tau)<sp/>;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Accessors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>---------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="136" refid="class_gyoto_1_1_astrobj_1_1_star_trace_1a43082752778971b1550325bfc8d82d5b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_star_trace_1a43082752778971b1550325bfc8d82d5b" kindref="member">className</ref>()<sp/>const<sp/>;<sp/></highlight></codeline>
+<codeline lineno="137" refid="class_gyoto_1_1_astrobj_1_1_star_trace_1ac14a0ce2fb159a84c80b5f9f02241447" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_star_trace_1ac14a0ce2fb159a84c80b5f9f02241447" kindref="member">className_l</ref>()<sp/>const<sp/>;<sp/></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="class_gyoto_1_1_astrobj_1_1_star_trace_1a468e49be75c38df0b1ae5023a2529563" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_star_trace_1a468e49be75c38df0b1ae5023a2529563" kindref="member">TMin</ref>()const;<sp/></highlight></codeline>
+<codeline lineno="140" refid="class_gyoto_1_1_astrobj_1_1_star_trace_1a13c4bb13769d0a24e5c4bccb26a4e897" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_star_trace_1a468e49be75c38df0b1ae5023a2529563" kindref="member">TMin</ref>(double);<sp/></highlight></codeline>
+<codeline lineno="141" refid="class_gyoto_1_1_astrobj_1_1_star_trace_1a6375782111d7222e4f9b0ee5127da0e1" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_star_trace_1a6375782111d7222e4f9b0ee5127da0e1" kindref="member">TMax</ref>()const;<sp/></highlight></codeline>
+<codeline lineno="142" refid="class_gyoto_1_1_astrobj_1_1_star_trace_1a169c5348a1d75565fbbdf58ecdf99be5" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_star_trace_1a6375782111d7222e4f9b0ee5127da0e1" kindref="member">TMax</ref>(double);<sp/></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/>using<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_star_1aa6b4cfca9a76e9ab8a0793d9b95ce4ba" kindref="member">Star::setInitialCondition</ref>;</highlight></codeline>
+<codeline lineno="145" refid="class_gyoto_1_1_astrobj_1_1_star_trace_1a3735d6f7d779665d5775da44b7546f0e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_star_trace_1aa6b4cfca9a76e9ab8a0793d9b95ce4ba" kindref="member">setInitialCondition</ref>(double<sp/>const<sp/>coord[8]);<sp/></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147" refid="class_gyoto_1_1_astrobj_1_1_star_trace_1a01c91b96424b05f2062d05c8a5e61852" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/>operator()(double<sp/>const<sp/>coord[4])<sp/>;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/junichi/Gyoto/include/GyotoStarTrace.h"/>
+  </compounddef>
+</doxygen>

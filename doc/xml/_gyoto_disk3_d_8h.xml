@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_gyoto_disk3_d_8h" kind="file" language="C++">
+    <compoundname>GyotoDisk3D.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">iomanip</includes>
+    <includedby refid="_gyoto_8h" local="no">Gyoto.h</includedby>
+    <includedby refid="_gyoto_dynamical_disk3_d_8h" local="no">GyotoDynamicalDisk3D.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>iomanip</label>
+      </node>
+      <node id="3">
+        <label>fstream</label>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+      <node id="1">
+        <label>GyotoDisk3D.h</label>
+        <link refid="_gyoto_disk3_d_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>GyotoDynamicalDisk3D.h</label>
+        <link refid="_gyoto_dynamical_disk3_d_8h"/>
+      </node>
+      <node id="2">
+        <label>Gyoto.h</label>
+        <link refid="_gyoto_8h"/>
+      </node>
+      <node id="1">
+        <label>GyotoDisk3D.h</label>
+        <link refid="_gyoto_disk3_d_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_disk3_d" prot="public">Gyoto::Astrobj::Disk3D</innerclass>
+    <innernamespace refid="namespace_gyoto">Gyoto</innernamespace>
+    <innernamespace refid="namespace_gyoto_1_1_astrobj">Gyoto::Astrobj</innernamespace>
+    <briefdescription>
+<para>A geometrically thick, optically thin disk. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The target of ray-traced <ref refid="class_gyoto_1_1_photon" kindref="compound">Gyoto::Photon</ref> </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>Copyright<sp/>2011<sp/>Frederic<sp/>Vincent,<sp/>Thibaut<sp/>Paumard</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>Gyoto.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"></highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>Gyoto.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__GyotoDisk3D_H_<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__GyotoDisk3D_H_<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iomanip&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Astrobj<sp/>{<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Disk3D;<sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="class_gyoto_1_1_astrobj_1_1_disk3_d" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d" kindref="compound">Gyoto::Astrobj::Disk3D</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_generic" kindref="compound">Gyoto::Astrobj::Generic</ref><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt;<ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>::<ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d" kindref="compound">Astrobj::Disk3D</ref>&gt;;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="59" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1abea9d19957b967a5d7c3256ccbe2f2de" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1abea9d19957b967a5d7c3256ccbe2f2de" kindref="member">filename_</ref>;<sp/></highlight></codeline>
+<codeline lineno="66" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1ab5f035a9f4e463a1d65d2c132a5c3a98" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/>*<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1ab5f035a9f4e463a1d65d2c132a5c3a98" kindref="member">emissquant_</ref>;<sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a185d287fb8f306e209f287c4b82c5f70" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/>*<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a185d287fb8f306e209f287c4b82c5f70" kindref="member">opacity_</ref>;<sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1ad63646c669da83cb5498bc664062fefe" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/>*<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1ad63646c669da83cb5498bc664062fefe" kindref="member">velocity_</ref>;<sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a9890077e54296622807b306293611a85" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a9890077e54296622807b306293611a85" kindref="member">dnu_</ref>;<sp/></highlight></codeline>
+<codeline lineno="78" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1aa479ab401ec23a582338e4a4851136af" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1aa479ab401ec23a582338e4a4851136af" kindref="member">nu0_</ref>;<sp/></highlight></codeline>
+<codeline lineno="79" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a4d41cbf9b15b6b1d8c473dd0a09b8db2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a4d41cbf9b15b6b1d8c473dd0a09b8db2" kindref="member">nnu_</ref>;<sp/></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a7072d9de4e41546d797f5d27e0084e5d" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a7072d9de4e41546d797f5d27e0084e5d" kindref="member">dphi_</ref>;<sp/></highlight></codeline>
+<codeline lineno="82" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a76c9e3aab695be2d28ea9abf6698c831" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a76c9e3aab695be2d28ea9abf6698c831" kindref="member">phimin_</ref>;</highlight></codeline>
+<codeline lineno="83" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a2723fca241e743a9811af9a58890e947" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a2723fca241e743a9811af9a58890e947" kindref="member">nphi_</ref>;<sp/></highlight></codeline>
+<codeline lineno="84" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1aa42b6f92b99cc795808e6dd411fcc466" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1aa42b6f92b99cc795808e6dd411fcc466" kindref="member">phimax_</ref>;<sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1abe216ea1d13d97ea0b2efb9d07c137d9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1abe216ea1d13d97ea0b2efb9d07c137d9" kindref="member">repeat_phi_</ref>;<sp/></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//double<sp/>phi0_==0,<sp/>phi<sp/>max<sp/>is<sp/>always<sp/>2*M_PI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a532e44453d143491d8a1a9674d2b8dc2" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a532e44453d143491d8a1a9674d2b8dc2" kindref="member">dz_</ref>;<sp/></highlight></codeline>
+<codeline lineno="94" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a7888a03d69469a3142a14982ab022f0f" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a7888a03d69469a3142a14982ab022f0f" kindref="member">zmin_</ref>;<sp/></highlight></codeline>
+<codeline lineno="95" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1ad4234dfb10632b419617d5533436771a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1ad4234dfb10632b419617d5533436771a" kindref="member">nz_</ref>;<sp/></highlight></codeline>
+<codeline lineno="96" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a3ce5bb46e6ddba319d5be75442073979" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a3ce5bb46e6ddba319d5be75442073979" kindref="member">zmax_</ref>;<sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a053404c9ca308386ea2fe5c76b8af379" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a053404c9ca308386ea2fe5c76b8af379" kindref="member">dr_</ref>;<sp/></highlight></codeline>
+<codeline lineno="99" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1abecf9c4e93e4eb71ca1c2a96308f2d33" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1abecf9c4e93e4eb71ca1c2a96308f2d33" kindref="member">rin_</ref>;<sp/></highlight></codeline>
+<codeline lineno="100" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1ade5dd2b964d2834335d72b60369bb5c6" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1ade5dd2b964d2834335d72b60369bb5c6" kindref="member">nr_</ref>;<sp/></highlight></codeline>
+<codeline lineno="101" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a0e1cf6f1bd46b2933b60988652025f4f" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a0e1cf6f1bd46b2933b60988652025f4f" kindref="member">rout_</ref>;<sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1abfae2f3e8c822e64ff47524c0ee2a764" refkind="member"><highlight class="normal"><sp/><sp/>int<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1abfae2f3e8c822e64ff47524c0ee2a764" kindref="member">zsym_</ref>;<sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1ab153b1767e80474322ed8b451478590b" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1ab153b1767e80474322ed8b451478590b" kindref="member">tPattern_</ref>;<sp/></highlight></codeline>
+<codeline lineno="106" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1ae3ebffcf88f6fa6754bdf939622863ba" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1ae3ebffcf88f6fa6754bdf939622863ba" kindref="member">omegaPattern_</ref>;<sp/></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Constructors<sp/>-<sp/>Destructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>-------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="111" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a7b50c212395e0d0417ecc6f415931649" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" kindref="member">GYOTO_OBJECT</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>fillProperty<sp/>is<sp/>overridden<sp/>to<sp/>remove<sp/>leading<sp/>&quot;!&quot;<sp/>from<sp/>FITS<sp/>filename</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a160d18feeb44b24f396c1001abec7bd6" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a160d18feeb44b24f396c1001abec7bd6" kindref="member">fillProperty</ref>(Gyoto::FactoryMessenger<sp/>*fmp,<sp/>Property<sp/>const<sp/>&amp;p)<sp/>const;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a4339c5b7a11f1ffde34798f4caf341a5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d" kindref="compound">Disk3D</ref>();<sp/></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="117" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1adefde507d0ec9470cb154c828d797bb4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d" kindref="compound">Disk3D</ref>(const<sp/>Disk3D&amp;<sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="118" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1af435515a9706dcabbb238abba5f9f728" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d" kindref="compound">Disk3D</ref>*<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1af435515a9706dcabbb238abba5f9f728" kindref="member">clone</ref><sp/>()<sp/>const;<sp/></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="120" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a8b39d1747218abe28dd3835e7386ea93" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d" kindref="compound">Disk3D</ref>()<sp/>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Accessors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>---------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>GYOTO_USE_CFITSIO</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/>fitsRead(std::string<sp/>filename_);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/>fitsWrite(std::string<sp/>filename_);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>void<sp/>file(std::string<sp/>const<sp/>&amp;f);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/>std::string<sp/>file()<sp/>const;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/>void<sp/>zsym(bool<sp/>t);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>bool<sp/>zsym()<sp/>const;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/>void<sp/>tPattern(double<sp/>t);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/>double<sp/>tPattern()<sp/>const;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/>void<sp/>omegaPattern(double<sp/>t);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/>double<sp/>omegaPattern()<sp/>const;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1ac7d3523d0e323042abbdcbcffe16923d" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1ac7d3523d0e323042abbdcbcffe16923d" kindref="member">setEmissquant</ref>(double<sp/>*<sp/>pattern);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1acece8b8408b51389eab459f3b3335864" kindref="member">opacity</ref>(double<sp/>*<sp/>pattern);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1acb0f8dcf419a4cdd9995938df2238d1f" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1acb0f8dcf419a4cdd9995938df2238d1f" kindref="member">setVelocity</ref>(double<sp/>*<sp/>pattern);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a0603a6f0240410bd7b3c6bca5c272bc0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a0603a6f0240410bd7b3c6bca5c272bc0" kindref="member">copyEmissquant</ref>(double<sp/>const<sp/>*<sp/>const<sp/>pattern<sp/>=<sp/>NULL,</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size_t<sp/>const<sp/>naxes[4]<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a9282dec57d31fc3d647a01c5183c0964" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/>const<sp/>*<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a9282dec57d31fc3d647a01c5183c0964" kindref="member">getEmissquant</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1ad9df8176868391a3eb2715d90dbf6202" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1ad9df8176868391a3eb2715d90dbf6202" kindref="member">getEmissquantNaxes</ref>(<sp/>size_t<sp/>naxes[4]<sp/>)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/>copyOpacity(double<sp/>const<sp/>*<sp/>const<sp/>pattern<sp/>=<sp/>NULL,</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size_t<sp/>const<sp/>naxes[4]<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1acece8b8408b51389eab459f3b3335864" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/>const<sp/>*<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1acece8b8408b51389eab459f3b3335864" kindref="member">opacity</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1ad0fde4198c590fd4f5d092555cb1b60f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1ad0fde4198c590fd4f5d092555cb1b60f" kindref="member">copyVelocity</ref>(double<sp/>const<sp/>*<sp/>const<sp/>pattern<sp/>=<sp/>NULL,</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size_t<sp/>const<sp/>naxes[3]<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="213" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a1ec38f70c794ac42b6a4712289f84837" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/>const<sp/>*<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a1ec38f70c794ac42b6a4712289f84837" kindref="member">getVelocity</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1ade48526a1cfc147be99ebac20627d56b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1ac1067c4e37cb1213d00d380960ddc03e" kindref="member">repeatPhi</ref>(size_t<sp/>n);</highlight></codeline>
+<codeline lineno="218" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1ac1067c4e37cb1213d00d380960ddc03e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1ac1067c4e37cb1213d00d380960ddc03e" kindref="member">repeatPhi</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a6b3d6fef861323c24c238bb06628418c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1abae5c73fe159e44cd4724cf1f77eeb58" kindref="member">nu0</ref>(double<sp/>freq);</highlight></codeline>
+<codeline lineno="223" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1abae5c73fe159e44cd4724cf1f77eeb58" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1abae5c73fe159e44cd4724cf1f77eeb58" kindref="member">nu0</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1ad0ccf737c5df9bb4708b723fb19d8eda" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a3b8c3532e143b70c6c0f51ff62663932" kindref="member">dnu</ref>(double<sp/>dfreq);</highlight></codeline>
+<codeline lineno="228" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a3b8c3532e143b70c6c0f51ff62663932" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a3b8c3532e143b70c6c0f51ff62663932" kindref="member">dnu</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a7033957a9e6393d203f9f4649843c122" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1ab267c8918f10f9a9dace7479b70b7a2a" kindref="member">rin</ref>(double<sp/>rrin);</highlight></codeline>
+<codeline lineno="233" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1ab267c8918f10f9a9dace7479b70b7a2a" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1ab267c8918f10f9a9dace7479b70b7a2a" kindref="member">rin</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1afea59313d7d115d275a07e90bd306c59" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1af60eca1b1cd7f28a3686afef96f09fb0" kindref="member">rout</ref>(double<sp/>rout);</highlight></codeline>
+<codeline lineno="238" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1af60eca1b1cd7f28a3686afef96f09fb0" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1af60eca1b1cd7f28a3686afef96f09fb0" kindref="member">rout</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1aa47e61115aaebddc9ff4a8f647a05aff" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a12fa7fd74df3c3f55395ff60e3fbd004" kindref="member">zmin</ref>(double<sp/>zmin);</highlight></codeline>
+<codeline lineno="243" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a12fa7fd74df3c3f55395ff60e3fbd004" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a12fa7fd74df3c3f55395ff60e3fbd004" kindref="member">zmin</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1abadeddb80cac7e5e20faf9a92df47489" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1ab45e8b9f7d05d8ce928dcade4f76ea6f" kindref="member">zmax</ref>(double<sp/>zmax);</highlight></codeline>
+<codeline lineno="248" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1ab45e8b9f7d05d8ce928dcade4f76ea6f" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1ab45e8b9f7d05d8ce928dcade4f76ea6f" kindref="member">zmax</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a23bbf990853c462c6518d88223c5355b" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a87563518aec780eae15a6a3bf6477b8d" kindref="member">phimin</ref>(double<sp/>phimin);</highlight></codeline>
+<codeline lineno="253" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a87563518aec780eae15a6a3bf6477b8d" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a87563518aec780eae15a6a3bf6477b8d" kindref="member">phimin</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1abe278bd613fc9e835538966270f00a8a" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1abdd90ee5a87e09e5dcf790a7f25dc288" kindref="member">phimax</ref>(double<sp/>phimax);</highlight></codeline>
+<codeline lineno="258" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1abdd90ee5a87e09e5dcf790a7f25dc288" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1abdd90ee5a87e09e5dcf790a7f25dc288" kindref="member">phimax</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="261" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1ab3008d0d3d4ddee330f1a006f4113a06" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1ab3008d0d3d4ddee330f1a006f4113a06" kindref="member">getIndices</ref>(size_t<sp/>i[4],<sp/>double<sp/>const<sp/>co[4],<sp/>double<sp/>nu=0.)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="265" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a88f58b8244ee5ec4cdade4ba38cba23b" refkind="member"><highlight class="normal"><sp/><sp/>int<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a88f58b8244ee5ec4cdade4ba38cba23b" kindref="member">Impact</ref>(Photon<sp/>*ph,<sp/>size_t<sp/>index,<sp/>Astrobj::Properties<sp/>*data);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275" refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a69249bf633036c0a4bd3935ef8a4ca70" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a1ec38f70c794ac42b6a4712289f84837" kindref="member">getVelocity</ref>(double<sp/>const<sp/>pos[4],<sp/>double<sp/>vel[4])<sp/><sp/>;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/junichi/Gyoto/include/GyotoDisk3D.h"/>
+  </compounddef>
+</doxygen>

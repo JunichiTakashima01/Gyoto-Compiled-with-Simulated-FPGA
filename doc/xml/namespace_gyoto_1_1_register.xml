@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespace_gyoto_1_1_register" kind="namespace" language="C++">
+    <compoundname>Gyoto::Register</compoundname>
+    <innerclass refid="class_gyoto_1_1_register_1_1_entry" prot="public">Gyoto::Register::Entry</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_gyoto_1_1_register_1ab550850763355e20c312f60e1698e4c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Register::init</definition>
+        <argsstring>(char const *pluglist=NULL)</argsstring>
+        <name>init</name>
+        <param>
+          <type>char const *</type>
+          <declname>pluglist</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Initialise the various registers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Normally called once at application start-up, <ref refid="namespace_gyoto_1_1_register_1ab550850763355e20c312f60e1698e4c6" kindref="member">Register::init()</ref> initiaizes the registers, loads the plug-ins, and fills the registers as appropriate.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pluglist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coma-separated list of plug-ins to load. If NULL, default to the environment variable GYOTO_PLUGINS, if it exists. Else use GYOTO_DEFAULT_PLUGINS. Failing to load a plug-in prepended with &quot;nofail:&quot; is not fatal. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoRegister.h" line="61" column="10" declfile="/home/junichi/Gyoto/include/GyotoRegister.h" declline="61" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_register_1a3406e0df28d0e5ee028ed9b1621e3ed6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Register::list</definition>
+        <argsstring>()</argsstring>
+        <name>list</name>
+        <briefdescription>
+<para>List the various registers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoRegister.h" line="66" column="10" declfile="/home/junichi/Gyoto/include/GyotoRegister.h" declline="66" declcolumn="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> registers. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="class_gyoto_1_1_register_1_1_entry" kindref="compound">Gyoto::Register::Entry</ref> instances are used to map kind names to <ref refid="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" kindref="member">Gyoto::SmartPointee::Subcontractor_t</ref> functions used to instantiate objects from XML files through the <ref refid="class_gyoto_1_1_factory" kindref="compound">Gyoto::Factory</ref>. </para>
+    </detaileddescription>
+    <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="46" column="3"/>
+  </compounddef>
+</doxygen>

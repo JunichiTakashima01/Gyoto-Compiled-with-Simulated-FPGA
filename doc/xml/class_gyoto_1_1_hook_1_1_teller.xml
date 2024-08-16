@@ -1,0 +1,307 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_gyoto_1_1_hook_1_1_teller" kind="class" language="C++" prot="public">
+    <compoundname>Gyoto::Hook::Teller</compoundname>
+    <derivedcompoundref refid="class_gyoto_1_1_metric_1_1_generic" prot="public" virt="non-virtual">Gyoto::Metric::Generic</derivedcompoundref>
+    <derivedcompoundref refid="class_gyoto_1_1_spectrometer_1_1_generic" prot="public" virt="non-virtual">Gyoto::Spectrometer::Generic</derivedcompoundref>
+    <includes refid="_gyoto_hooks_8h" local="no">GyotoHooks.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_gyoto_1_1_hook_1_1_teller_1a65a9e1acf2d66b8c8b371265476e35e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class Gyoto::Hook::Listener</definition>
+        <argsstring></argsstring>
+        <name>Gyoto::Hook::Listener</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_hook_1_1_listener" kindref="compound">Gyoto::Hook::Listener</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHooks.h" line="83" column="3" bodyfile="/home/junichi/Gyoto/include/GyotoHooks.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_hook_1_1_teller_1ae336573bbbf1b8a5b71d8fbac1408030" prot="private" static="no" mutable="no">
+        <type><ref refid="class_listener_item" kindref="compound">ListenerItem</ref> *</type>
+        <definition>ListenerItem* Gyoto::Hook::Teller::listeners_</definition>
+        <argsstring></argsstring>
+        <name>listeners_</name>
+        <briefdescription>
+<para>Linked list of <ref refid="class_gyoto_1_1_hook_1_1_listener" kindref="compound">Listener</ref> items. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHooks.h" line="94" column="16" bodyfile="/home/junichi/Gyoto/include/GyotoHooks.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gyoto_1_1_hook_1_1_teller_1adb1af4c097a95ac19070cb452e280abb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Hook::Teller::Teller</definition>
+        <argsstring>()</argsstring>
+        <name>Teller</name>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHooks.h" line="97" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_hook_1_1_teller_1add28f0a06265233ccacf5e9ac8537bf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Hook::Teller::Teller</definition>
+        <argsstring>(const Teller &amp;)</argsstring>
+        <name>Teller</name>
+        <param>
+          <type>const <ref refid="class_gyoto_1_1_hook_1_1_teller" kindref="compound">Teller</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHooks.h" line="98" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_hook_1_1_teller_1a7228f637ed7a007a0c6a810a89f3b188" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Gyoto::Hook::Teller::~Teller</definition>
+        <argsstring>()</argsstring>
+        <name>~Teller</name>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHooks.h" line="99" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_hook_1_1_teller_1a55dca3f3b9707bd18ae4a0dd98befd70" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Hook::Teller::hook</definition>
+        <argsstring>(Listener *listener)</argsstring>
+        <name>hook</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_hook_1_1_listener" kindref="compound">Listener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+<para>Start listening. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use from a <ref refid="class_gyoto_1_1_hook_1_1_listener" kindref="compound">Hook::Listener</ref> object method: <programlisting><codeline><highlight class="normal">teller-&gt;hook(this)</highlight></codeline>
+</programlisting> where &quot;this&quot; is a <ref refid="class_gyoto_1_1_hook_1_1_listener" kindref="compound">Listener</ref> and &quot;teller&quot; is a <ref refid="class_gyoto_1_1_hook_1_1_teller" kindref="compound">Teller</ref>.</para>
+<para>Use <ref refid="class_gyoto_1_1_hook_1_1_teller_1a8bcbb785f92fefe4e76afe76eb175f8a" kindref="member">unhook()</ref> later to stop listening to a given <ref refid="class_gyoto_1_1_hook_1_1_teller" kindref="compound">Teller</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>listener</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the new listener </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHooks.h" line="114" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_hook_1_1_teller_1a8bcbb785f92fefe4e76afe76eb175f8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Hook::Teller::unhook</definition>
+        <argsstring>(Listener *listener)</argsstring>
+        <name>unhook</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_hook_1_1_listener" kindref="compound">Listener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+<para>Stop listening. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use from a <ref refid="class_gyoto_1_1_hook_1_1_listener" kindref="compound">Hook::Listener</ref> object method: <programlisting><codeline><highlight class="normal">teller-&gt;unhook(this)</highlight></codeline>
+</programlisting></para>
+<para>where &quot;this&quot; is a <ref refid="class_gyoto_1_1_hook_1_1_listener" kindref="compound">Listener</ref>, &quot;teller&quot; is a <ref refid="class_gyoto_1_1_hook_1_1_teller" kindref="compound">Teller</ref>, and &quot;this&quot; has called teller-&gt;hook(this) previously.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>listener</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the listener </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHooks.h" line="129" column="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_gyoto_1_1_hook_1_1_teller_1af9a1daa629900f00538096987e398a13" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Hook::Teller::tellListeners</definition>
+        <argsstring>()</argsstring>
+        <name>tellListeners</name>
+        <briefdescription>
+<para>Call tell() on each hooked <ref refid="class_gyoto_1_1_hook_1_1_listener" kindref="compound">Listener</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Whenever a <ref refid="class_gyoto_1_1_hook_1_1_teller" kindref="compound">Teller</ref> mutates, it should warn any <ref refid="class_gyoto_1_1_hook_1_1_listener" kindref="compound">Listener</ref> hooked to it using <ref refid="class_gyoto_1_1_hook_1_1_teller_1af9a1daa629900f00538096987e398a13" kindref="member">tellListeners()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHooks.h" line="138" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Listen to me and I&apos;ll warn you when I change. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Listen to me by calling my <ref refid="class_gyoto_1_1_hook_1_1_teller_1a55dca3f3b9707bd18ae4a0dd98befd70" kindref="member">hook()</ref> method. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="17">
+        <label>Gyoto::Spectrometer::Complex</label>
+        <link refid="class_gyoto_1_1_spectrometer_1_1_complex"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Gyoto::Python::Object&lt; Gyoto::Metric::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_python_1_1_object"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Gyoto::Metric::Minkowski</label>
+        <link refid="class_gyoto_1_1_metric_1_1_minkowski"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Gyoto::Metric::Shift</label>
+        <link refid="class_gyoto_1_1_metric_1_1_shift"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Gyoto::Metric::KerrBL</label>
+        <link refid="class_gyoto_1_1_metric_1_1_kerr_b_l"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Gyoto::Metric::RotStar3_1</label>
+        <link refid="class_gyoto_1_1_metric_1_1_rot_star3__1"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Gyoto::Metric::SchwarzschildHarmonic</label>
+        <link refid="class_gyoto_1_1_metric_1_1_schwarzschild_harmonic"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Gyoto::Metric::Complex</label>
+        <link refid="class_gyoto_1_1_metric_1_1_complex"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Gyoto::Metric::Hayward</label>
+        <link refid="class_gyoto_1_1_metric_1_1_hayward"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Gyoto::Metric::NumericalMetricLorene</label>
+        <link refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Gyoto::Metric::ChernSimons</label>
+        <link refid="class_gyoto_1_1_metric_1_1_chern_simons"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Gyoto::Metric::KerrKS</label>
+        <link refid="class_gyoto_1_1_metric_1_1_kerr_k_s"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gyoto::Hook::Teller</label>
+        <link refid="class_gyoto_1_1_hook_1_1_teller"/>
+      </node>
+      <node id="16">
+        <label>Gyoto::Spectrometer::Generic</label>
+        <link refid="class_gyoto_1_1_spectrometer_1_1_generic"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Gyoto::Metric::Python</label>
+        <link refid="class_gyoto_1_1_metric_1_1_python"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Gyoto::Metric::RezzollaZhidenko</label>
+        <link refid="class_gyoto_1_1_metric_1_1_rezzolla_zhidenko"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gyoto::Metric::Generic</label>
+        <link refid="class_gyoto_1_1_metric_1_1_generic"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Gyoto::Spectrometer::Uniform</label>
+        <link refid="class_gyoto_1_1_spectrometer_1_1_uniform"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ListenerItem</label>
+        <link refid="class_listener_item"/>
+      </node>
+      <node id="1">
+        <label>Gyoto::Hook::Teller</label>
+        <link refid="class_gyoto_1_1_hook_1_1_teller"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>listeners_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/junichi/Gyoto/include/GyotoHooks.h" line="82" column="1" bodyfile="/home/junichi/Gyoto/include/GyotoHooks.h" bodystart="82" bodyend="139"/>
+    <listofallmembers>
+      <member refid="class_gyoto_1_1_hook_1_1_teller_1a65a9e1acf2d66b8c8b371265476e35e1" prot="public" virt="non-virtual"><scope>Gyoto::Hook::Teller</scope><name>Gyoto::Hook::Listener</name></member>
+      <member refid="class_gyoto_1_1_hook_1_1_teller_1a55dca3f3b9707bd18ae4a0dd98befd70" prot="public" virt="virtual"><scope>Gyoto::Hook::Teller</scope><name>hook</name></member>
+      <member refid="class_gyoto_1_1_hook_1_1_teller_1ae336573bbbf1b8a5b71d8fbac1408030" prot="private" virt="non-virtual"><scope>Gyoto::Hook::Teller</scope><name>listeners_</name></member>
+      <member refid="class_gyoto_1_1_hook_1_1_teller_1adb1af4c097a95ac19070cb452e280abb" prot="public" virt="non-virtual"><scope>Gyoto::Hook::Teller</scope><name>Teller</name></member>
+      <member refid="class_gyoto_1_1_hook_1_1_teller_1add28f0a06265233ccacf5e9ac8537bf2" prot="public" virt="non-virtual"><scope>Gyoto::Hook::Teller</scope><name>Teller</name></member>
+      <member refid="class_gyoto_1_1_hook_1_1_teller_1af9a1daa629900f00538096987e398a13" prot="protected" virt="virtual"><scope>Gyoto::Hook::Teller</scope><name>tellListeners</name></member>
+      <member refid="class_gyoto_1_1_hook_1_1_teller_1a8bcbb785f92fefe4e76afe76eb175f8a" prot="public" virt="virtual"><scope>Gyoto::Hook::Teller</scope><name>unhook</name></member>
+      <member refid="class_gyoto_1_1_hook_1_1_teller_1a7228f637ed7a007a0c6a810a89f3b188" prot="public" virt="virtual"><scope>Gyoto::Hook::Teller</scope><name>~Teller</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

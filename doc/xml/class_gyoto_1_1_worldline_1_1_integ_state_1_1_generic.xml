@@ -1,0 +1,702 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Gyoto::Worldline::IntegState::Generic</compoundname>
+    <basecompoundref refid="class_gyoto_1_1_smart_pointee" prot="public" virt="non-virtual">Gyoto::SmartPointee</basecompoundref>
+    <derivedcompoundref refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy" prot="public" virt="non-virtual">Gyoto::Worldline::IntegState::Legacy</derivedcompoundref>
+    <includes refid="_gyoto_worldline_8h" local="no">GyotoWorldline.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1af3031e29fc6ccfa25439864124376962" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class Gyoto::SmartPointer&lt; Gyoto::Worldline::IntegState::Generic &gt;</definition>
+        <argsstring></argsstring>
+        <name>Gyoto::SmartPointer&lt; Gyoto::Worldline::IntegState::Generic &gt;</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic" kindref="compound">Gyoto::Worldline::IntegState::Generic</ref> &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoWorldline.h" line="862" column="16" bodyfile="/home/junichi/Gyoto/include/GyotoWorldline.h" bodystart="871" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1a57e9e3c1f31d6ae7a515747b0589fc98" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_worldline" kindref="compound">Worldline</ref> *</type>
+        <definition>Worldline* Gyoto::Worldline::IntegState::Generic::line_</definition>
+        <argsstring></argsstring>
+        <name>line_</name>
+        <briefdescription>
+<para><ref refid="class_gyoto_1_1_worldline" kindref="compound">Worldline</ref> that we are integrating. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Beware this is not a <ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>. Make sure line_ still exists when calling nestStep(). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoWorldline.h" line="879" column="14" bodyfile="/home/junichi/Gyoto/include/GyotoWorldline.h" bodystart="879" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1a004fb7268dbb75bc233393fc6568af44" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gyoto::Worldline::IntegState::Generic::integ_31_</definition>
+        <argsstring></argsstring>
+        <name>integ_31_</name>
+        <briefdescription>
+<para>Whether to integrate the 3+1 equation of geodesics instead of the 4D one. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoWorldline.h" line="881" column="8" bodyfile="/home/junichi/Gyoto/include/GyotoWorldline.h" bodystart="881" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1a19448d508d0b3980a4067587e00f317d" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::Worldline::IntegState::Generic::delta_</definition>
+        <argsstring></argsstring>
+        <name>delta_</name>
+        <briefdescription>
+<para>Integration step (current in case of <ref refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1a03137679ed079b378696edf7853d21eb" kindref="member">adaptive_</ref>). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoWorldline.h" line="882" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoWorldline.h" bodystart="882" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1a03137679ed079b378696edf7853d21eb" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gyoto::Worldline::IntegState::Generic::adaptive_</definition>
+        <argsstring></argsstring>
+        <name>adaptive_</name>
+        <briefdescription>
+<para>Whether to use an adaptive step. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoWorldline.h" line="883" column="8" bodyfile="/home/junichi/Gyoto/include/GyotoWorldline.h" bodystart="883" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1ad5b35f3774495cde108a9e3ec8cb7b97" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gyoto::Worldline::IntegState::Generic::parallel_transport_</definition>
+        <argsstring></argsstring>
+        <name>parallel_transport_</name>
+        <briefdescription>
+<para>Whether to parallel-transport base vectors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoWorldline.h" line="884" column="8" bodyfile="/home/junichi/Gyoto/include/GyotoWorldline.h" bodystart="884" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1af415f5c1117a09164eccd4a199ae052b" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::Worldline::IntegState::Generic::norm_</definition>
+        <argsstring></argsstring>
+        <name>norm_</name>
+        <briefdescription>
+<para>Current norm of the 4-velocity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoWorldline.h" line="885" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoWorldline.h" bodystart="885" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1a9c61f5cd02866df7e907a7f42821c811" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::Worldline::IntegState::Generic::normref_</definition>
+        <argsstring></argsstring>
+        <name>normref_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initial norm of the 4-velocity. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoWorldline.h" line="886" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoWorldline.h" bodystart="886" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1a6773dd1c0cf82434d22c38056dcc9a78" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_metric_1_1_generic" kindref="compound">Gyoto::Metric::Generic</ref> &gt;</type>
+        <definition>Gyoto::SmartPointer&lt;Gyoto::Metric::Generic&gt; Gyoto::Worldline::IntegState::Generic::gg_</definition>
+        <argsstring></argsstring>
+        <name>gg_</name>
+        <briefdescription>
+<para>The <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> in this end of the Universe. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Taken from Worldline::line_, never updated. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoWorldline.h" line="891" column="23" bodyfile="/home/junichi/Gyoto/include/GyotoWorldline.h" bodystart="891" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1ae067749aef7d03cf6c10a454370ce378" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Worldline::IntegState::Generic::Generic</definition>
+        <argsstring>(Worldline *parent)</argsstring>
+        <name>Generic</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_worldline" kindref="compound">Worldline</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Normal constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets <ref refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1a57e9e3c1f31d6ae7a515747b0589fc98" kindref="member">line_</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoWorldline.h" line="899" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1a05d8dbfea5f4c788f2d2104f8484fe53" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Gyoto::Worldline::IntegState::Generic::~Generic</definition>
+        <argsstring>()</argsstring>
+        <name>~Generic</name>
+        <briefdescription>
+<para>Virtual destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoWorldline.h" line="904" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1a06f8617830511baa2ac862fa7ffeb8d5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic" kindref="compound">Generic</ref> *</type>
+        <definition>virtual Generic* Gyoto::Worldline::IntegState::Generic::clone</definition>
+        <argsstring>(Worldline *newparent) const =0</argsstring>
+        <name>clone</name>
+        <reimplementedby refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_1a9da98f282e9dfc6bc598dc431991f57d">clone</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_worldline" kindref="compound">Worldline</ref> *</type>
+          <declname>newparent</declname>
+        </param>
+        <briefdescription>
+<para>Deep copy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Derived classes must implement it </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoWorldline.h" line="911" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1ad89e14f105937314f77211fbf129265e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Worldline::IntegState::Generic::init</definition>
+        <argsstring>(Worldline *line, const state_t &amp;coord, const double delta)</argsstring>
+        <name>init</name>
+        <reimplementedby refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_1a95a79ae3e773b737568b05e605df3d9c">init</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_worldline" kindref="compound">Worldline</ref> *</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const state_t &amp;</type>
+          <declname>coord</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="class_gyoto_1_1_worldline" kindref="compound">Worldline</ref> that we are integrating. Sets: Worldline::line_, Worldline::gg_, <ref refid="class_gyoto_1_1_worldline_1a94d491367025a7acf30301cc57c3db06" kindref="member">Worldline::adaptive_</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>coord</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Initial coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integration step. Sign determines direction. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoWorldline.h" line="919" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1a4ea0058a6ad6553a01bf12ec8600ef8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Worldline::IntegState::Generic::init</definition>
+        <argsstring>(Worldline *line, const double *coord, const double delta)=delete</argsstring>
+        <name>init</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_worldline" kindref="compound">Worldline</ref> *</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>coord</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+<para>Obsolete, update your code. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoWorldline.h" line="921" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1a086190858c7e26c85c161a4ef39f9b5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Worldline::IntegState::Generic::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <reimplementedby refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_1a086190858c7e26c85c161a4ef39f9b5a">init</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_1a4ea0058a6ad6553a01bf12ec8600ef8b">init</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_1ad89e14f105937314f77211fbf129265e">init</reimplementedby>
+        <briefdescription>
+<para>Cache whatever needs to be cached. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is called by all the methods in <ref refid="class_gyoto_1_1_worldline" kindref="compound">Worldline</ref> each time an member that could be cached in <ref refid="class_gyoto_1_1_worldline_1a3edacdf2600826da936645fe00ad014e" kindref="member">Worldline::state_</ref> changes. Therefore, user code should normally not have to call it. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoWorldline.h" line="931" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1a895da680fb6ccdc12783d245c546de84" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Worldline::IntegState::Generic::checkNorm</definition>
+        <argsstring>(double coord[8])</argsstring>
+        <name>checkNorm</name>
+        <param>
+          <type>double</type>
+          <declname>coord</declname>
+          <array>[8]</array>
+        </param>
+        <briefdescription>
+<para>Check norm. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Issue a warning using <ref refid="_gyoto_defs_8h_1a718377bc0c336982042326bbc4ce6dc8" kindref="member">GYOTO_SEVERE</ref> if norm is drifting. <ref refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1a6dbc9ed5fe9f4f29e618908244dc253e" kindref="member">nextStep()</ref> implementations should call it. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoWorldline.h" line="939" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1a9db347319bf294478d27ff258df1fadf" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string Gyoto::Worldline::IntegState::Generic::kind</definition>
+        <argsstring>()=0</argsstring>
+        <name>kind</name>
+        <reimplementedby refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_1ab301be97824d28bf1f8c0f0b1ed3b43a">kind</reimplementedby>
+        <briefdescription>
+<para>Return the integrator kind. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoWorldline.h" line="944" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1ab734cff7e08626e0a04142255fc6cd90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Worldline::IntegState::Generic::integ31</definition>
+        <argsstring>(bool integ)</argsstring>
+        <name>integ31</name>
+        <param>
+          <type>bool</type>
+          <declname>integ</declname>
+        </param>
+        <briefdescription>
+<para>Defines the kind of geodesic equation to integrate (3+1, 4D) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoWorldline.h" line="949" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1accfa54b735404d12e125a79c2b939b93" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gyoto::Worldline::IntegState::Generic::integ31</definition>
+        <argsstring>() const</argsstring>
+        <name>integ31</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoWorldline.h" line="950" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1a6dbc9ed5fe9f4f29e618908244dc253e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int Gyoto::Worldline::IntegState::Generic::nextStep</definition>
+        <argsstring>(state_t &amp;coord, double &amp;tau, double h1max=GYOTO_DEFAULT_DELTA_MAX)=0</argsstring>
+        <name>nextStep</name>
+        <reimplementedby refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_1a6a8582ff5dc03d550cf5259a78e51417">nextStep</reimplementedby>
+        <param>
+          <type>state_t &amp;</type>
+          <declname>coord</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>tau</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>h1max</declname>
+          <defval><ref refid="_gyoto_defs_8h_1a61e9f37f6e15229a442c03e3928c2ace" kindref="member">GYOTO_DEFAULT_DELTA_MAX</ref></defval>
+        </param>
+        <briefdescription>
+<para>Make one step. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">coord</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Next position-velocity; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">tau</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Next proper time or affine parameter </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">h1max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum step in case of adaptive integration </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoWorldline.h" line="958" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1a3acf655c1fc5a009d950e2fe703dfc68" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int Gyoto::Worldline::IntegState::Generic::nextStep</definition>
+        <argsstring>(double *coord, double h1max=GYOTO_DEFAULT_DELTA_MAX)=delete</argsstring>
+        <name>nextStep</name>
+        <param>
+          <type>double *</type>
+          <declname>coord</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>h1max</declname>
+          <defval><ref refid="_gyoto_defs_8h_1a61e9f37f6e15229a442c03e3928c2ace" kindref="member">GYOTO_DEFAULT_DELTA_MAX</ref></defval>
+        </param>
+        <briefdescription>
+<para>Obsolete, update your code. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoWorldline.h" line="960" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1ac9cad0c9e6c5466b8fce5a7c012ee657" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Worldline::IntegState::Generic::doStep</definition>
+        <argsstring>(state_t const &amp;coordin, double step, state_t &amp;coordout)=0</argsstring>
+        <name>doStep</name>
+        <reimplementedby refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_1a660e2f2f387a0ea04b619cdd3e8564a9">doStep</reimplementedby>
+        <param>
+          <type>state_t const &amp;</type>
+          <declname>coordin</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>step</declname>
+        </param>
+        <param>
+          <type>state_t &amp;</type>
+          <declname>coordout</declname>
+        </param>
+        <briefdescription>
+<para>Make one step of exactly this size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1ac9cad0c9e6c5466b8fce5a7c012ee657" kindref="member">doStep()</ref> is meant to refine a computation made using <ref refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1a6dbc9ed5fe9f4f29e618908244dc253e" kindref="member">nextStep()</ref>. In particular, there is no checking for norm conservation.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">coordin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current position-velocity; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">step</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>exact step to use. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">coordout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>next position-velocity; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoWorldline.h" line="972" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1ac52496bae61e40f3ac7a86b6dfe70410" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Worldline::IntegState::Generic::doStep</definition>
+        <argsstring>(double const coordin[8], double step, double coordout[8])=delete</argsstring>
+        <name>doStep</name>
+        <param>
+          <type>double const</type>
+          <declname>coordin</declname>
+          <array>[8]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>step</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>coordout</declname>
+          <array>[8]</array>
+        </param>
+        <briefdescription>
+<para>Obsolete, update your code. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoWorldline.h" line="976" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_smart_pointee_1a9ec09c51fd18dde7c13ef3b03fac1fad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::SmartPointee::incRefCount</definition>
+        <argsstring>()</argsstring>
+        <name>incRefCount</name>
+        <briefdescription>
+<para>Increment the reference counter. Warning: Don&apos;t mess with the counter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="96" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_smart_pointee_1a22a67609fb4690ee8ec0e95e4060e387" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gyoto::SmartPointee::decRefCount</definition>
+        <argsstring>()</argsstring>
+        <name>decRefCount</name>
+        <briefdescription>
+<para>Decrement the reference counter and return current value. Warning: Don&apos;t mess with the counter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="97" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_smart_pointee_1a9a9cb35cd161bf19ce652f76e0a5bec0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gyoto::SmartPointee::getRefCount</definition>
+        <argsstring>()</argsstring>
+        <name>getRefCount</name>
+        <briefdescription>
+<para>Get the current number of references. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="98" column="7"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" prot="public" static="no">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_smart_pointee" kindref="compound">Gyoto::SmartPointee</ref> &gt;</type>
+        <definition>typedef Gyoto::SmartPointer&lt;Gyoto::SmartPointee&gt; Gyoto::SmartPointee::Subcontractor_t(Gyoto::FactoryMessenger *, std::vector&lt; std::string &gt; const &amp;)</definition>
+        <argsstring>(Gyoto::FactoryMessenger *, std::vector&lt; std::string &gt; const &amp;)</argsstring>
+        <name>Subcontractor_t</name>
+        <briefdescription>
+<para>A subcontractor builds an object upon order from the <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Various classes need to provide a subcontractor to be able to instantiate themselves upon order from the <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref>. A subcontractor is a function (often a static member function) which accepts a pointer to a <ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref> as unique parameter, communicates with the <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref> using this messenger to read an XML description of the object to build, and returns this objet. <ref refid="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" kindref="member">SmartPointee::Subcontractor_t</ref>* is just generic enough a typedef to cast to and from other subcontractor types: <ref refid="namespace_gyoto_1_1_astrobj_1aa53c7ada58c8c8f3799c3485b7d8f3bb" kindref="member">Astrobj::Subcontractor_t</ref>, <ref refid="namespace_gyoto_1_1_metric_1ad6b33a642cc94ad67855184d2adb95df" kindref="member">Metric::Subcontractor_t</ref>, <ref refid="namespace_gyoto_1_1_spectrum_1a163055eef14aee22dd8fa5188812d889" kindref="member">Spectrum::Subcontractor_t</ref>. A subcontractor needs to be registered using the relevant <ref refid="namespace_gyoto_1_1_astrobj_1abb6caf3023a51cb77b5f6793ac03b188" kindref="member">Register()</ref> function: <ref refid="namespace_gyoto_1_1_astrobj_1abb6caf3023a51cb77b5f6793ac03b188" kindref="member">Astrobj::Register()</ref>, <ref refid="namespace_gyoto_1_1_metric_1a602cba49b001e7470f3d439d1ab3e8f7" kindref="member">Metric::Register()</ref>, <ref refid="namespace_gyoto_1_1_spectrum_1a517874749d838d7121880e7d9d14c626" kindref="member">Spectrum::Register()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="114" column="5" bodyfile="/home/junichi/Gyoto/include/GyotoSmartPointer.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_smart_pointee_1aaaf212a70fb1880b70e4d357e843cc85" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gyoto::SmartPointee::refCount</definition>
+        <argsstring></argsstring>
+        <name>refCount</name>
+        <briefdescription>
+<para>Reference counter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="83" column="7" bodyfile="/home/junichi/Gyoto/include/GyotoSmartPointer.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_smart_pointee_1abf1c1e431cdd4f08f13de581cccb6770" prot="private" static="no" mutable="no">
+        <type>pthread_mutex_t</type>
+        <definition>pthread_mutex_t Gyoto::SmartPointee::mutex_</definition>
+        <argsstring></argsstring>
+        <name>mutex_</name>
+        <briefdescription>
+<para>A mutex. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>When compiled with libpthread </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="89" column="19" bodyfile="/home/junichi/Gyoto/include/GyotoSmartPointer.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Current state of a geodesic integration. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Gyoto::Worldline::IntegState::Legacy</label>
+        <link refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gyoto::Worldline::IntegState::Generic</label>
+        <link refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gyoto::SmartPointee</label>
+        <link refid="class_gyoto_1_1_smart_pointee"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Gyoto::Worldline::IntegState::Generic</label>
+        <link refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>gg_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>line_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Metric::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="2">
+        <label>Gyoto::SmartPointee</label>
+        <link refid="class_gyoto_1_1_smart_pointee"/>
+      </node>
+      <node id="4">
+        <label>Gyoto::Worldline</label>
+        <link refid="class_gyoto_1_1_worldline"/>
+        <childnode refid="5" relation="protected-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>metric_</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Gyoto::Hook::Listener</label>
+        <link refid="class_gyoto_1_1_hook_1_1_listener"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/junichi/Gyoto/include/GyotoWorldline.h" line="870" column="1" bodyfile="/home/junichi/Gyoto/include/GyotoWorldline.h" bodystart="870" bodyend="980"/>
+    <listofallmembers>
+      <member refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1a03137679ed079b378696edf7853d21eb" prot="protected" virt="non-virtual"><scope>Gyoto::Worldline::IntegState::Generic</scope><name>adaptive_</name></member>
+      <member refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1a895da680fb6ccdc12783d245c546de84" prot="public" virt="virtual"><scope>Gyoto::Worldline::IntegState::Generic</scope><name>checkNorm</name></member>
+      <member refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1a06f8617830511baa2ac862fa7ffeb8d5" prot="public" virt="pure-virtual"><scope>Gyoto::Worldline::IntegState::Generic</scope><name>clone</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1a22a67609fb4690ee8ec0e95e4060e387" prot="public" virt="non-virtual"><scope>Gyoto::Worldline::IntegState::Generic</scope><name>decRefCount</name></member>
+      <member refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1a19448d508d0b3980a4067587e00f317d" prot="protected" virt="non-virtual"><scope>Gyoto::Worldline::IntegState::Generic</scope><name>delta_</name></member>
+      <member refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1ac9cad0c9e6c5466b8fce5a7c012ee657" prot="public" virt="pure-virtual"><scope>Gyoto::Worldline::IntegState::Generic</scope><name>doStep</name></member>
+      <member refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1ac52496bae61e40f3ac7a86b6dfe70410" prot="public" virt="virtual"><scope>Gyoto::Worldline::IntegState::Generic</scope><name>doStep</name></member>
+      <member refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1ae067749aef7d03cf6c10a454370ce378" prot="public" virt="non-virtual"><scope>Gyoto::Worldline::IntegState::Generic</scope><name>Generic</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1a9a9cb35cd161bf19ce652f76e0a5bec0" prot="public" virt="non-virtual"><scope>Gyoto::Worldline::IntegState::Generic</scope><name>getRefCount</name></member>
+      <member refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1a6773dd1c0cf82434d22c38056dcc9a78" prot="protected" virt="non-virtual"><scope>Gyoto::Worldline::IntegState::Generic</scope><name>gg_</name></member>
+      <member refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1af3031e29fc6ccfa25439864124376962" prot="public" virt="non-virtual"><scope>Gyoto::Worldline::IntegState::Generic</scope><name>Gyoto::SmartPointer&lt; Gyoto::Worldline::IntegState::Generic &gt;</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1a9ec09c51fd18dde7c13ef3b03fac1fad" prot="public" virt="non-virtual"><scope>Gyoto::Worldline::IntegState::Generic</scope><name>incRefCount</name></member>
+      <member refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1ad89e14f105937314f77211fbf129265e" prot="public" virt="virtual"><scope>Gyoto::Worldline::IntegState::Generic</scope><name>init</name></member>
+      <member refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1a4ea0058a6ad6553a01bf12ec8600ef8b" prot="public" virt="virtual"><scope>Gyoto::Worldline::IntegState::Generic</scope><name>init</name></member>
+      <member refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1a086190858c7e26c85c161a4ef39f9b5a" prot="public" virt="virtual"><scope>Gyoto::Worldline::IntegState::Generic</scope><name>init</name></member>
+      <member refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1ab734cff7e08626e0a04142255fc6cd90" prot="public" virt="non-virtual"><scope>Gyoto::Worldline::IntegState::Generic</scope><name>integ31</name></member>
+      <member refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1accfa54b735404d12e125a79c2b939b93" prot="public" virt="non-virtual"><scope>Gyoto::Worldline::IntegState::Generic</scope><name>integ31</name></member>
+      <member refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1a004fb7268dbb75bc233393fc6568af44" prot="protected" virt="non-virtual"><scope>Gyoto::Worldline::IntegState::Generic</scope><name>integ_31_</name></member>
+      <member refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1a9db347319bf294478d27ff258df1fadf" prot="public" virt="pure-virtual"><scope>Gyoto::Worldline::IntegState::Generic</scope><name>kind</name></member>
+      <member refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1a57e9e3c1f31d6ae7a515747b0589fc98" prot="protected" virt="non-virtual"><scope>Gyoto::Worldline::IntegState::Generic</scope><name>line_</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1abf1c1e431cdd4f08f13de581cccb6770" prot="private" virt="non-virtual"><scope>Gyoto::Worldline::IntegState::Generic</scope><name>mutex_</name></member>
+      <member refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1a6dbc9ed5fe9f4f29e618908244dc253e" prot="public" virt="pure-virtual"><scope>Gyoto::Worldline::IntegState::Generic</scope><name>nextStep</name></member>
+      <member refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1a3acf655c1fc5a009d950e2fe703dfc68" prot="public" virt="virtual"><scope>Gyoto::Worldline::IntegState::Generic</scope><name>nextStep</name></member>
+      <member refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1af415f5c1117a09164eccd4a199ae052b" prot="protected" virt="non-virtual"><scope>Gyoto::Worldline::IntegState::Generic</scope><name>norm_</name></member>
+      <member refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1a9c61f5cd02866df7e907a7f42821c811" prot="protected" virt="non-virtual"><scope>Gyoto::Worldline::IntegState::Generic</scope><name>normref_</name></member>
+      <member refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1ad5b35f3774495cde108a9e3ec8cb7b97" prot="protected" virt="non-virtual"><scope>Gyoto::Worldline::IntegState::Generic</scope><name>parallel_transport_</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1aaaf212a70fb1880b70e4d357e843cc85" prot="private" virt="non-virtual"><scope>Gyoto::Worldline::IntegState::Generic</scope><name>refCount</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1a7d212bcd7d3ac4147e18683c47ca910d" prot="public" virt="non-virtual"><scope>Gyoto::Worldline::IntegState::Generic</scope><name>SmartPointee</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1adc075b08ca5d3c0635bc97f843835f8a" prot="public" virt="non-virtual"><scope>Gyoto::Worldline::IntegState::Generic</scope><name>SmartPointee</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" prot="public" virt="non-virtual"><scope>Gyoto::Worldline::IntegState::Generic</scope><name>Subcontractor_t</name></member>
+      <member refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_1a05d8dbfea5f4c788f2d2104f8484fe53" prot="public" virt="virtual"><scope>Gyoto::Worldline::IntegState::Generic</scope><name>~Generic</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1a4301d456d1d36ed7912d073b742c74e1" prot="public" virt="virtual"><scope>Gyoto::Worldline::IntegState::Generic</scope><name>~SmartPointee</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

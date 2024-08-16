@@ -1,0 +1,832 @@
+\hypertarget{class_gyoto_1_1_spectrometer_1_1_generic}{}\doxysection{Gyoto\+::Spectrometer\+::Generic Class Reference}
+\label{class_gyoto_1_1_spectrometer_1_1_generic}\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+
+
+Base class for spectrometers.  
+
+
+
+
+{\ttfamily \#include $<$Gyoto\+Spectrometer.\+h$>$}
+
+Inheritance diagram for Gyoto\+::Spectrometer\+::Generic\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.978723cm]{class_gyoto_1_1_spectrometer_1_1_generic}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_smart_pointee}{Gyoto\+::\+Smart\+Pointee}} $>$ \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}{Subcontractor\+\_\+t}}(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$, std\+::vector$<$ std\+::string $>$ const \&)
+\begin{DoxyCompactList}\small\item\em A subcontractor builds an object upon order from the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const  $\ast$ \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_afe4eca833e1f41126d186253fe097aec}{get\+Properties}} () const
+\begin{DoxyCompactList}\small\item\em Get list of properties. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_a171359b9e05d91b191735545b10a7d51}{Generic}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_a52a4e2654922d75c2a5926e2f76f793e}{Generic}} (\mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a3d95097c93312ff6df68f56b4fe829ee}{kind\+\_\+t}} \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_ab1a9738c5823db9c79d685b3cd2d1d86}{kindid}})
+\begin{DoxyCompactList}\small\item\em Constructor setting kindid. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_ae3fdc433c381812fa05701d365a557e8}{Generic}} (const \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic}{Generic}} \&)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic}{Generic}} $\ast$ \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_a8a63025581f96f463e2fc24932783981}{clone}} () const =0
+\begin{DoxyCompactList}\small\item\em Clone an instance. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_a3962a12d3d34bedf16708a6ad6c6530b}{$\sim$\+Generic}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a3d95097c93312ff6df68f56b4fe829ee}{kind\+\_\+t}} \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_ab1a9738c5823db9c79d685b3cd2d1d86}{kindid}} () const
+\begin{DoxyCompactList}\small\item\em Get kindid\+\_\+. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_a63c8212b30359dd8588359b9201b275c}{kindid}} (\mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a3d95097c93312ff6df68f56b4fe829ee}{kind\+\_\+t}})
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_aae47201273f20c8fb3a0761c5e631336}{Generic\+::kindid\+\_\+}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrometer_1_1_generic_a65f7a6762e3c2b629a5991910f36ba98}\label{class_gyoto_1_1_spectrometer_1_1_generic_a65f7a6762e3c2b629a5991910f36ba98}} 
+virtual \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_a65f7a6762e3c2b629a5991910f36ba98}{n\+Samples}} () const
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_a787ad3d8cd46683e34d964310cca163e}{Generic\+::nsamples\+\_\+}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrometer_1_1_generic_a2824f6a0258c7cb29caa5b5ed6811068}\label{class_gyoto_1_1_spectrometer_1_1_generic_a2824f6a0258c7cb29caa5b5ed6811068}} 
+virtual \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_a2824f6a0258c7cb29caa5b5ed6811068}{get\+NBoundaries}} () const
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_a9205cc1114c7acddf96d115a9f03cc57}{Generic\+::nboundaries\+\_\+}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrometer_1_1_generic_a20157612af1f51e4d3f8d5d5390ce6f3}\label{class_gyoto_1_1_spectrometer_1_1_generic_a20157612af1f51e4d3f8d5d5390ce6f3}} 
+virtual double const  $\ast$ \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_a20157612af1f51e4d3f8d5d5390ce6f3}{get\+Midpoints}} () const
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_a3939be859b97c8e4c352da02e00170d9}{Generic\+::midpoints\+\_\+}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_aad78f9b4e02974d2b569333010951876}{get\+Midpoints}} (double data\mbox{[}$\,$\mbox{]}, std\+::string unit)
+\begin{DoxyCompactList}\small\item\em Copy \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_a3939be859b97c8e4c352da02e00170d9}{Generic\+::midpoints\+\_\+}}, converting to unit. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_a3f2229fb10aeac14b362065350ac33e6}{get\+Channel\+Boundaries}} (double data\mbox{[}$\,$\mbox{]}, std\+::string unit)
+\begin{DoxyCompactList}\small\item\em Copy \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_a5275ae247243743e2847852da44d4399}{Generic\+::boundaries\+\_\+}}, converting to unit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrometer_1_1_generic_a0b08629005046f228db9db987ec8f05a}\label{class_gyoto_1_1_spectrometer_1_1_generic_a0b08629005046f228db9db987ec8f05a}} 
+virtual double const  $\ast$ \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_a0b08629005046f228db9db987ec8f05a}{get\+Channel\+Boundaries}} () const
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_a5275ae247243743e2847852da44d4399}{Generic\+::boundaries\+\_\+}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrometer_1_1_generic_a7752fe757512a5970a1d5251b6f1b19f}\label{class_gyoto_1_1_spectrometer_1_1_generic_a7752fe757512a5970a1d5251b6f1b19f}} 
+virtual \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} const  $\ast$ \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_a7752fe757512a5970a1d5251b6f1b19f}{get\+Channel\+Indices}} () const
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_aa1af0adc2e534f7bb517f880d2b66bfd}{Generic\+::chanind\+\_\+}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrometer_1_1_generic_af76be4b12e7bba26d0954075fefecdce}\label{class_gyoto_1_1_spectrometer_1_1_generic_af76be4b12e7bba26d0954075fefecdce}} 
+virtual double const  $\ast$ \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_af76be4b12e7bba26d0954075fefecdce}{get\+Widths}} () const
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_ac1eebc615915693215c1a7f8a6086e7a}{Generic\+::widths\+\_\+}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_a6d53073cf96fe552175c7dcd9379acae}{get\+Widths}} (double data\mbox{[}$\,$\mbox{]}, std\+::string unit)
+\begin{DoxyCompactList}\small\item\em Copy \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_ac1eebc615915693215c1a7f8a6086e7a}{Generic\+::widths\+\_\+}}, converting to unit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_a9ec09c51fd18dde7c13ef3b03fac1fad}\label{class_gyoto_1_1_smart_pointee_a9ec09c51fd18dde7c13ef3b03fac1fad}} 
+void \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_a9ec09c51fd18dde7c13ef3b03fac1fad}{inc\+Ref\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Increment the reference counter. Warning\+: Don\textquotesingle{}t mess with the counter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_a22a67609fb4690ee8ec0e95e4060e387}\label{class_gyoto_1_1_smart_pointee_a22a67609fb4690ee8ec0e95e4060e387}} 
+int \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_a22a67609fb4690ee8ec0e95e4060e387}{dec\+Ref\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Decrement the reference counter and return current value. Warning\+: Don\textquotesingle{}t mess with the counter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_a9a9cb35cd161bf19ce652f76e0a5bec0}\label{class_gyoto_1_1_smart_pointee_a9a9cb35cd161bf19ce652f76e0a5bec0}} 
+int \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_a9a9cb35cd161bf19ce652f76e0a5bec0}{get\+Ref\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Get the current number of references. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_gyoto_1_1_object_a06ea95dc396053466cdd63d419d1688c}{is\+Thread\+Safe}} () const
+\begin{DoxyCompactList}\small\item\em Whether this class is thread-\/safe. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_a58c4ecdaae1873dc6912e164b61826e0}\label{class_gyoto_1_1_object_a58c4ecdaae1873dc6912e164b61826e0}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_a58c4ecdaae1873dc6912e164b61826e0}{set}} (\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&p, \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} val)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} of a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_aa063e0df7c2e4b22207a784c76c6681f}\label{class_gyoto_1_1_object_aa063e0df7c2e4b22207a784c76c6681f}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_aa063e0df7c2e4b22207a784c76c6681f}{set}} (\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&p, \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} val, std\+::string const \&unit)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} (expressed in unit) of a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_aba6d35c5bbf814912ed84549109e117a}\label{class_gyoto_1_1_object_aba6d35c5bbf814912ed84549109e117a}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_aba6d35c5bbf814912ed84549109e117a}{set}} (std\+::string const \&pname, \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} val)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} of a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_abed03e16a8013699534b802e06751ef8}\label{class_gyoto_1_1_object_abed03e16a8013699534b802e06751ef8}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_abed03e16a8013699534b802e06751ef8}{set}} (std\+::string const \&pname, \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} val, std\+::string const \&unit)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} (expressed in unit) of a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_a8232112e660216a61caa15fab27b889f}\label{class_gyoto_1_1_object_a8232112e660216a61caa15fab27b889f}} 
+virtual \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} \mbox{\hyperlink{class_gyoto_1_1_object_a8232112e660216a61caa15fab27b889f}{get}} (\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&p) const
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} of a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_ad61a061d2073c841e9911be0395d4494}\label{class_gyoto_1_1_object_ad61a061d2073c841e9911be0395d4494}} 
+virtual \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} \mbox{\hyperlink{class_gyoto_1_1_object_ad61a061d2073c841e9911be0395d4494}{get}} (std\+::string const \&pname) const
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} of a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_ad4189c2c103030e9d91ee0f29ebcf13d}\label{class_gyoto_1_1_object_ad4189c2c103030e9d91ee0f29ebcf13d}} 
+virtual \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} \mbox{\hyperlink{class_gyoto_1_1_object_ad4189c2c103030e9d91ee0f29ebcf13d}{get}} (\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&p, std\+::string const \&unit) const
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} of a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}, converted to unit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_a99544282b6c383b8570a5bc51bed1ecf}\label{class_gyoto_1_1_object_a99544282b6c383b8570a5bc51bed1ecf}} 
+virtual \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} \mbox{\hyperlink{class_gyoto_1_1_object_a99544282b6c383b8570a5bc51bed1ecf}{get}} (std\+::string const \&pname, std\+::string const \&unit) const
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} of a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}, converted to unit. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const  $\ast$ \mbox{\hyperlink{class_gyoto_1_1_object_a424ef3538c714adfafad7eda249e0d58}{property}} (std\+::string const pname) const
+\begin{DoxyCompactList}\small\item\em Find property by name. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_a11892ef308d6f40add51eaea653a394b}{fill\+Property}} (\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$fmp, \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&p) const
+\begin{DoxyCompactList}\small\item\em Output a single \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} to XML. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_a0ffc3f84b4c2372d639eb848605fb1f3}{fill\+Element}} (\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$fmp) const
+\begin{DoxyCompactList}\small\item\em Fill the XML element for this \mbox{\hyperlink{class_gyoto_1_1_object}{Object}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_aa0a8b119e7aa95b21be081f8c97e1626}{set\+Parameters}} (\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$fmp)
+\begin{DoxyCompactList}\small\item\em Main loop for parsing Properties from XML description. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_gyoto_1_1_object_a45969ac469cf6979037229c2741b226b}{set\+Parameter}} (std\+::string name, std\+::string content, std\+::string unit)
+\begin{DoxyCompactList}\small\item\em Set parameter by name. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_a43fe041144add66155668ca88a99fd98}{set\+Parameter}} (\mbox{\hyperlink{class_gyoto_1_1_property}{Gyoto\+::\+Property}} const \&p, std\+::string const \&name, std\+::string const \&content, std\+::string const \&unit)
+\begin{DoxyCompactList}\small\item\em Set parameter by \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} (and name) \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_gyoto_1_1_object_a741ba678188d7d167ff2e3bb13dd924f}{describe\+Property}} (\mbox{\hyperlink{class_gyoto_1_1_property}{Gyoto\+::\+Property}} const \&p) const
+\begin{DoxyCompactList}\small\item\em Format desrciption for a property. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_object_a13843618d84c49d47bd37ddfa31160c5}{help}} () const
+\begin{DoxyCompactList}\small\item\em Print (to stdout) some help on this class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_a9f46de678c67e9050cf3a8b9677e1d73}\label{class_gyoto_1_1_object_a9f46de678c67e9050cf3a8b9677e1d73}} 
+virtual std\+::string \mbox{\hyperlink{class_gyoto_1_1_object_a9f46de678c67e9050cf3a8b9677e1d73}{kind}} () const
+\begin{DoxyCompactList}\small\item\em Get kind\+\_\+. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller_a55dca3f3b9707bd18ae4a0dd98befd70}{hook}} (Listener $\ast$listener)
+\begin{DoxyCompactList}\small\item\em Start listening. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller_a8bcbb785f92fefe4e76afe76eb175f8a}{unhook}} (Listener $\ast$listener)
+\begin{DoxyCompactList}\small\item\em Stop listening. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrometer_1_1_generic_a787ad3d8cd46683e34d964310cca163e}\label{class_gyoto_1_1_spectrometer_1_1_generic_a787ad3d8cd46683e34d964310cca163e}} 
+\mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_a787ad3d8cd46683e34d964310cca163e}{nsamples\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Number of spectral elements. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrometer_1_1_generic_a9205cc1114c7acddf96d115a9f03cc57}\label{class_gyoto_1_1_spectrometer_1_1_generic_a9205cc1114c7acddf96d115a9f03cc57}} 
+\mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_a9205cc1114c7acddf96d115a9f03cc57}{nboundaries\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Size of the boundaries\+\_\+ array. \end{DoxyCompactList}\item 
+double $\ast$ \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_a5275ae247243743e2847852da44d4399}{boundaries\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Frequency (in Hz) at the boundaries of the spectral channels. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} $\ast$ \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_aa1af0adc2e534f7bb517f880d2b66bfd}{chanind\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Indices in boundaries\+\_\+. \end{DoxyCompactList}\item 
+double $\ast$ \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_a3939be859b97c8e4c352da02e00170d9}{midpoints\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Effective frequency (in Hz) of each spectral channel. \end{DoxyCompactList}\item 
+double $\ast$ \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_ac1eebc615915693215c1a7f8a6086e7a}{widths\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Width of each channel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrometer_1_1_generic_a470ea802ab988f7d315a5e4847d8bf03}\label{class_gyoto_1_1_spectrometer_1_1_generic_a470ea802ab988f7d315a5e4847d8bf03}} 
+static \mbox{\hyperlink{_gyoto_object_8h_a750e7a43779f63bdb13111eaf0271203}{GYOTO\+\_\+\+OBJECT}} \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const {\bfseries properties} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_aae3b80667884c6620c4796a1b8ef74e5}{kind}} (const std\+::string)
+\begin{DoxyCompactList}\small\item\em Set kind\+\_\+. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller_af9a1daa629900f00538096987e398a13}{tell\+Listeners}} ()
+\begin{DoxyCompactList}\small\item\em Call tell() on each hooked \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_listener}{Listener}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a3d95097c93312ff6df68f56b4fe829ee}{kind\+\_\+t}} \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_aae47201273f20c8fb3a0761c5e631336}{kindid\+\_\+}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer}{Spectrometer}} kind ID. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_gyoto_1_1_object_ac48ad88e3ef229ba0d0fe68a94a7118f}{kind\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The \char`\"{}kind\char`\"{} that is output in the XML entity. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_gyoto_1_1_object_a01832761cd5f0a12319e3e24ce9a9fba}{plugins\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The plug-\/ins that needs to be loaded to access this instance\textquotesingle{}s class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_aaaf212a70fb1880b70e4d357e843cc85}\label{class_gyoto_1_1_smart_pointee_aaaf212a70fb1880b70e4d357e843cc85}} 
+int \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_aaaf212a70fb1880b70e4d357e843cc85}{ref\+Count}}
+\begin{DoxyCompactList}\small\item\em Reference counter. \end{DoxyCompactList}\item 
+pthread\+\_\+mutex\+\_\+t \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_abf1c1e431cdd4f08f13de581cccb6770}{mutex\+\_\+}}
+\begin{DoxyCompactList}\small\item\em A mutex. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_hook_1_1_teller_ae336573bbbf1b8a5b71d8fbac1408030}\label{class_gyoto_1_1_hook_1_1_teller_ae336573bbbf1b8a5b71d8fbac1408030}} 
+\mbox{\hyperlink{class_listener_item}{Listener\+Item}} $\ast$ \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller_ae336573bbbf1b8a5b71d8fbac1408030}{listeners\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Linked list of \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_listener}{Listener}} items. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrometer_1_1_generic_abab3a5b368c49051403acda9b3f8b899}\label{class_gyoto_1_1_spectrometer_1_1_generic_abab3a5b368c49051403acda9b3f8b899}} 
+class {\bfseries Gyoto\+::\+Smart\+Pointer$<$ Gyoto\+::\+Spectrometer\+::\+Generic $>$}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for spectrometers. 
+
+Example\+: class \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_uniform}{Gyoto\+::\+Spectrometer\+::\+Uniform}}
+
+See \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer}{Gyoto\+::\+Spectrometer}} for an introduction.
+
+\mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic}{Generic}} inherits from \mbox{\hyperlink{class_gyoto_1_1_smart_pointee}{Gyoto\+::\+Smart\+Pointee}} so that it is possible to create a \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}} to a \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer}{Spectrometer}}.
+
+It also inherits from \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller}{Gyoto\+::\+Hook\+::\+Teller}}. This allows a consistent implementation of \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_complex}{Spectrometer\+::\+Complex}} (in particular). Any method which mutates a \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer}{Spectrometer}} should call \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller_af9a1daa629900f00538096987e398a13}{tell\+Listeners()}}. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}\label{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!Subcontractor\_t@{Subcontractor\_t}}
+\index{Subcontractor\_t@{Subcontractor\_t}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{Subcontractor\_t}{Subcontractor\_t}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$\mbox{\hyperlink{class_gyoto_1_1_smart_pointee}{Gyoto\+::\+Smart\+Pointee}}$>$ Gyoto\+::\+Smart\+Pointee\+::\+Subcontractor\+\_\+t(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$, std\+::vector$<$ std\+::string $>$ const \&)\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+A subcontractor builds an object upon order from the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}}. 
+
+Various classes need to provide a subcontractor to be able to instantiate themselves upon order from the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}}. A subcontractor is a function (often a static member function) which accepts a pointer to a \mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}} as unique parameter, communicates with the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}} using this messenger to read an XML description of the object to build, and returns this objet. \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}{Smart\+Pointee\+::\+Subcontractor\+\_\+t}}$\ast$ is just generic enough a typedef to cast to and from other subcontractor types\+: \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_aa53c7ada58c8c8f3799c3485b7d8f3bb}{Astrobj\+::\+Subcontractor\+\_\+t}}, \mbox{\hyperlink{namespace_gyoto_1_1_metric_ad6b33a642cc94ad67855184d2adb95df}{Metric\+::\+Subcontractor\+\_\+t}}, \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a163055eef14aee22dd8fa5188812d889}{Spectrum\+::\+Subcontractor\+\_\+t}}. A subcontractor needs to be registered using the relevant \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a86b5778d46f54fc06ff22bc060987c6b}{Register()}} function\+: \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_abb6caf3023a51cb77b5f6793ac03b188}{Astrobj\+::\+Register()}}, \mbox{\hyperlink{namespace_gyoto_1_1_metric_a602cba49b001e7470f3d439d1ab3e8f7}{Metric\+::\+Register()}}, \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a517874749d838d7121880e7d9d14c626}{Spectrum\+::\+Register()}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_spectrometer_1_1_generic_a171359b9e05d91b191735545b10a7d51}\label{class_gyoto_1_1_spectrometer_1_1_generic_a171359b9e05d91b191735545b10a7d51}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!Generic@{Generic}}
+\index{Generic@{Generic}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{Generic()}{Generic()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Gyoto\+::\+Spectrometer\+::\+Generic\+::\+Generic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+Sets each member to 0. \mbox{\Hypertarget{class_gyoto_1_1_spectrometer_1_1_generic_a52a4e2654922d75c2a5926e2f76f793e}\label{class_gyoto_1_1_spectrometer_1_1_generic_a52a4e2654922d75c2a5926e2f76f793e}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!Generic@{Generic}}
+\index{Generic@{Generic}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{Generic()}{Generic()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Gyoto\+::\+Spectrometer\+::\+Generic\+::\+Generic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a3d95097c93312ff6df68f56b4fe829ee}{kind\+\_\+t}}}]{kindid }\end{DoxyParamCaption})}
+
+
+
+Constructor setting kindid. 
+
+Sets the other members to 0. This is usually the right constructor to use\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_complex_a5b33dc18fcd5817e6e796ad764e13d63}{Complex::Complex}} : \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_a171359b9e05d91b191735545b10a7d51}{Generic}}(Complex::Kindid) \{\}}
+
+\end{DoxyCode}
+
+
+Always set kindid to the address of a static variable, not to a temporary. Usually your class should have a static member for that purpose\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class }MyKind : \textcolor{keyword}{public} Spectrometer::Generic}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \textcolor{keyword}{static} \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a3d95097c93312ff6df68f56b4fe829ee}{kind\_t}} Kindid;}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{\mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a3d95097c93312ff6df68f56b4fe829ee}{kind\_t}} MyKind::Kindid = \textcolor{stringliteral}{"{}MyKind"{}};}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_gyoto_1_1_spectrometer_1_1_generic_ae3fdc433c381812fa05701d365a557e8}\label{class_gyoto_1_1_spectrometer_1_1_generic_ae3fdc433c381812fa05701d365a557e8}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!Generic@{Generic}}
+\index{Generic@{Generic}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{Generic()}{Generic()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Gyoto\+::\+Spectrometer\+::\+Generic\+::\+Generic (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic}{Generic}} \&}]{ }\end{DoxyParamCaption})}
+
+
+
+Copy constructor. 
+
+Takes care of (deep) copying all the members known to the base class. \mbox{\Hypertarget{class_gyoto_1_1_spectrometer_1_1_generic_a3962a12d3d34bedf16708a6ad6c6530b}\label{class_gyoto_1_1_spectrometer_1_1_generic_a3962a12d3d34bedf16708a6ad6c6530b}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!````~Generic@{$\sim$Generic}}
+\index{````~Generic@{$\sim$Generic}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{$\sim$Generic()}{~Generic()}}
+{\footnotesize\ttfamily virtual Gyoto\+::\+Spectrometer\+::\+Generic\+::$\sim$\+Generic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+Takes care of deleting the arrays (if the pointers are not NULL). 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_spectrometer_1_1_generic_a8a63025581f96f463e2fc24932783981}\label{class_gyoto_1_1_spectrometer_1_1_generic_a8a63025581f96f463e2fc24932783981}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!clone@{clone}}
+\index{clone@{clone}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic}{Generic}}$\ast$ Gyoto\+::\+Spectrometer\+::\+Generic\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Clone an instance. 
+
+Use this to get a deep copy of an instance; 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{SmartPointer<Generic> myclone = orig-\/>clone();}
+
+\end{DoxyCode}
+
+
+Most implementations will use the copy constructor\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_a171359b9e05d91b191735545b10a7d51}{Generic}}* \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_uniform_af8790f480a1fef59d74e58a2c7e29a98}{Uniform::clone}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \textcolor{keyword}{new} Uniform(*\textcolor{keyword}{this}); \}}
+
+\end{DoxyCode}
+ 
+
+Implemented in \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_uniform_af8790f480a1fef59d74e58a2c7e29a98}{Gyoto\+::\+Spectrometer\+::\+Uniform}}, and \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_complex_a6e6bf0b8eed28d9b7d0bd8a77864bdd5}{Gyoto\+::\+Spectrometer\+::\+Complex}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_object_a741ba678188d7d167ff2e3bb13dd924f}\label{class_gyoto_1_1_object_a741ba678188d7d167ff2e3bb13dd924f}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!describeProperty@{describeProperty}}
+\index{describeProperty@{describeProperty}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{describeProperty()}{describeProperty()}}
+{\footnotesize\ttfamily std\+::string Gyoto\+::\+Object\+::describe\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_property}{Gyoto\+::\+Property}} const \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Format desrciption for a property. 
+
+Returns a string containing the name(s) and type of the property, as well as whether it supports unit. \mbox{\Hypertarget{class_gyoto_1_1_object_a0ffc3f84b4c2372d639eb848605fb1f3}\label{class_gyoto_1_1_object_a0ffc3f84b4c2372d639eb848605fb1f3}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!fillElement@{fillElement}}
+\index{fillElement@{fillElement}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{fillElement()}{fillElement()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Object\+::fill\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$}]{fmp }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Fill the XML element for this \mbox{\hyperlink{class_gyoto_1_1_object}{Object}}. 
+
+The base implementation simply calls \mbox{\hyperlink{class_gyoto_1_1_object_a11892ef308d6f40add51eaea653a394b}{fill\+Property()}} for each \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} defined for the \mbox{\hyperlink{class_gyoto_1_1_object}{Object}}.
+
+Derived classes should avoid overriding \mbox{\hyperlink{class_gyoto_1_1_object_a0ffc3f84b4c2372d639eb848605fb1f3}{fill\+Element()}}. It may make sense occasionally, e.\+g. to make sure that the metric is output first.
+
+To customize how a given \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} is rendered, it is better to override \mbox{\hyperlink{class_gyoto_1_1_object_a11892ef308d6f40add51eaea653a394b}{fill\+Property()}}.
+
+If this method is overridden, the implementation should in general call \mbox{\hyperlink{class_gyoto_1_1_object_a0ffc3f84b4c2372d639eb848605fb1f3}{fill\+Element()}} on the direct base. 
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_scenery_a63501e86c47ea6b67e0c564c706a72f1}{Gyoto\+::\+Scenery}}, \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_complex_a0d73e5fd77b0e920af44894abfc96a99}{Gyoto\+::\+Spectrometer\+::\+Complex}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_complex_ada5f1fb56b87c56ff64113a49c76cca0}{Gyoto\+::\+Metric\+::\+Complex}}, and \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_complex_a88d6f38c5fa5401a860291fbb21526d5}{Gyoto\+::\+Astrobj\+::\+Complex}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_object_a11892ef308d6f40add51eaea653a394b}\label{class_gyoto_1_1_object_a11892ef308d6f40add51eaea653a394b}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!fillProperty@{fillProperty}}
+\index{fillProperty@{fillProperty}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{fillProperty()}{fillProperty()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Object\+::fill\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$}]{fmp,  }\item[{\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Output a single \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} to XML. 
+
+The base implementation decides what to do based on the {\itshape p.\+type}. The format matches how \mbox{\hyperlink{class_gyoto_1_1_object_aa0a8b119e7aa95b21be081f8c97e1626}{set\+Parameters()}} an \mbox{\hyperlink{class_gyoto_1_1_object_a45969ac469cf6979037229c2741b226b}{set\+Parameter()}} would interpret the XML descition.
+
+Overriding this method should be avoided, but makes sense in some cases (for instance \mbox{\hyperlink{class_gyoto_1_1_screen_a50f80add154ec088fc9509ba22ef0032}{Screen\+::fill\+Property()}} selects a different unit for {\itshape Distance} based on its magnitude, so that stellar sizes are expressed in solar radii while smaller sizes can be expressed in meters and larger sizes in parsecs).
+
+Overriding implementation should fall-\/back on calling the implementation in the direct parent class\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class }A: \textcolor{keyword}{public} \mbox{\hyperlink{class_gyoto_1_1_object_a5834e83ca1482a379c7ddefb1919457f}{Object}} \{\};}
+\DoxyCodeLine{\textcolor{keyword}{class }B: \textcolor{keyword}{public} A \{ }
+\DoxyCodeLine{ \textcolor{keyword}{using} B::setParameter;}
+\DoxyCodeLine{ \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_gyoto_1_1_object_a11892ef308d6f40add51eaea653a394b}{fillProperty}}(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto::FactoryMessenger}} *fmp,}
+\DoxyCodeLine{                        Property \textcolor{keyword}{const} \&p) \textcolor{keyword}{const} ;}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{\textcolor{keywordtype}{void} B::fillProperty(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto::FactoryMessenger}} *fmp,}
+\DoxyCodeLine{                        Property \textcolor{keyword}{const} \&p)\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{  \textcolor{keywordflow}{if} (name==\textcolor{stringliteral}{"{}Duff"{}}) fmp-\/>doSomething();}
+\DoxyCodeLine{  \textcolor{keywordflow}{else} A::fillProperty(fmp, p);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_xillver_reflection_a9e8bc6375f3c981042b74d99ee7adf91}{Gyoto\+::\+Astrobj\+::\+Xillver\+Reflection}}, \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_uniform_af5ccaceb5c188a7a0ea11791885919bc}{Gyoto\+::\+Spectrometer\+::\+Uniform}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_star_a152074fdddb29950936d3193d3aea55d}{Gyoto\+::\+Astrobj\+::\+Star}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_shift_a234a2d08bb7918e1bc62e4a710a4df77}{Gyoto\+::\+Metric\+::\+Shift}}, \mbox{\hyperlink{class_gyoto_1_1_screen_a50f80add154ec088fc9509ba22ef0032}{Gyoto\+::\+Screen}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_polish_doughnut_acbe2c229f702905204ea0d822b94e17c}{Gyoto\+::\+Astrobj\+::\+Polish\+Doughnut}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_pattern_disk_acc548bda88d62932275e8d0fcd630ca9}{Gyoto\+::\+Astrobj\+::\+Pattern\+Disk}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_neutron_star_model_atmosphere_a65604453c31dac828adeaeb7c35ca23d}{Gyoto\+::\+Astrobj\+::\+Neutron\+Star\+Model\+Atmosphere}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_equatorial_hot_spot_a5acba2e137e389070bb5f7c71ea31ed5}{Gyoto\+::\+Astrobj\+::\+Equatorial\+Hot\+Spot}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_dynamical_disk_abbc14f98531888e96547665a8a6a20ca}{Gyoto\+::\+Astrobj\+::\+Dynamical\+Disk}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_disk3_d_a160d18feeb44b24f396c1001abec7bd6}{Gyoto\+::\+Astrobj\+::\+Disk3D}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_directional_disk_a42a558bc44010a73986909dd9a2fdd41}{Gyoto\+::\+Astrobj\+::\+Directional\+Disk}}, and \mbox{\hyperlink{class_gyoto_1_1_scenery_a9bc2f2025deb97a71f21f2be5c0f5022}{Gyoto\+::\+Scenery}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_spectrometer_1_1_generic_a3f2229fb10aeac14b362065350ac33e6}\label{class_gyoto_1_1_spectrometer_1_1_generic_a3f2229fb10aeac14b362065350ac33e6}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!getChannelBoundaries@{getChannelBoundaries}}
+\index{getChannelBoundaries@{getChannelBoundaries}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{getChannelBoundaries()}{getChannelBoundaries()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Spectrometer\+::\+Generic\+::get\+Channel\+Boundaries (\begin{DoxyParamCaption}\item[{double}]{data\mbox{[}$\,$\mbox{]},  }\item[{std\+::string}]{unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Copy \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_a5275ae247243743e2847852da44d4399}{Generic\+::boundaries\+\_\+}}, converting to unit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & an array of \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_a9205cc1114c7acddf96d115a9f03cc57}{Generic\+::nboundaries\+\_\+}} doubles to fill with result \\
+\hline
+{\em unit} & a string \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_spectrometer_1_1_generic_aad78f9b4e02974d2b569333010951876}\label{class_gyoto_1_1_spectrometer_1_1_generic_aad78f9b4e02974d2b569333010951876}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!getMidpoints@{getMidpoints}}
+\index{getMidpoints@{getMidpoints}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{getMidpoints()}{getMidpoints()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Spectrometer\+::\+Generic\+::get\+Midpoints (\begin{DoxyParamCaption}\item[{double}]{data\mbox{[}$\,$\mbox{]},  }\item[{std\+::string}]{unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Copy \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_a3939be859b97c8e4c352da02e00170d9}{Generic\+::midpoints\+\_\+}}, converting to unit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & an array of \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_a787ad3d8cd46683e34d964310cca163e}{Generic\+::nsamples\+\_\+}} doubles to fill with result \\
+\hline
+{\em unit} & a string \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_spectrometer_1_1_generic_afe4eca833e1f41126d186253fe097aec}\label{class_gyoto_1_1_spectrometer_1_1_generic_afe4eca833e1f41126d186253fe097aec}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!getProperties@{getProperties}}
+\index{getProperties@{getProperties}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{getProperties()}{getProperties()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const$\ast$ Gyoto\+::\+Spectrometer\+::\+Generic\+::get\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get list of properties. 
+
+This method is declared automatically by the \mbox{\hyperlink{_gyoto_object_8h_a750e7a43779f63bdb13111eaf0271203}{GYOTO\+\_\+\+OBJECT}} macro and defined automatically by the \mbox{\hyperlink{_gyoto_property_8h_a1356435ea7ee0e18d07201a80e034dcc}{GYOTO\+\_\+\+PROPERTY\+\_\+\+END}} macro. 
+
+Reimplemented from \mbox{\hyperlink{class_gyoto_1_1_object_afe00718a056ffc6293705c03f588088c}{Gyoto\+::\+Object}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_uniform_a4529fb36ec7d5793aec5dfde7315116c}{Gyoto\+::\+Spectrometer\+::\+Uniform}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_spectrometer_1_1_generic_a6d53073cf96fe552175c7dcd9379acae}\label{class_gyoto_1_1_spectrometer_1_1_generic_a6d53073cf96fe552175c7dcd9379acae}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!getWidths@{getWidths}}
+\index{getWidths@{getWidths}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{getWidths()}{getWidths()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Spectrometer\+::\+Generic\+::get\+Widths (\begin{DoxyParamCaption}\item[{double}]{data\mbox{[}$\,$\mbox{]},  }\item[{std\+::string}]{unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Copy \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_ac1eebc615915693215c1a7f8a6086e7a}{Generic\+::widths\+\_\+}}, converting to unit. 
+
+Think carefully before using\+: widths are often used to convert spectral flux density to flux. If flux density is per Herz, you don\textquotesingle{}t need to convert widths.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & an array of \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_a9205cc1114c7acddf96d115a9f03cc57}{Generic\+::nboundaries\+\_\+}} doubles to fill with result \\
+\hline
+{\em unit} & a string \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_object_a13843618d84c49d47bd37ddfa31160c5}\label{class_gyoto_1_1_object_a13843618d84c49d47bd37ddfa31160c5}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!help@{help}}
+\index{help@{help}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{help()}{help()}}
+{\footnotesize\ttfamily void Gyoto\+::\+Object\+::help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Print (to stdout) some help on this class. 
+
+Describe all properties that this instance supports. \mbox{\Hypertarget{class_gyoto_1_1_hook_1_1_teller_a55dca3f3b9707bd18ae4a0dd98befd70}\label{class_gyoto_1_1_hook_1_1_teller_a55dca3f3b9707bd18ae4a0dd98befd70}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!hook@{hook}}
+\index{hook@{hook}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{hook()}{hook()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Hook\+::\+Teller\+::hook (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_hook_1_1_listener}{Listener}} $\ast$}]{listener }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Start listening. 
+
+Use from a \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_listener}{Hook\+::\+Listener}} object method\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{teller-\/>hook(\textcolor{keyword}{this})}
+
+\end{DoxyCode}
+ where \char`\"{}this\char`\"{} is a Listener and \char`\"{}teller\char`\"{} is a Teller.
+
+Use \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller_a8bcbb785f92fefe4e76afe76eb175f8a}{unhook()}} later to stop listening to a given Teller.
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & pointer to the new listener \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_object_a06ea95dc396053466cdd63d419d1688c}\label{class_gyoto_1_1_object_a06ea95dc396053466cdd63d419d1688c}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!isThreadSafe@{isThreadSafe}}
+\index{isThreadSafe@{isThreadSafe}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{isThreadSafe()}{isThreadSafe()}}
+{\footnotesize\ttfamily virtual bool Gyoto\+::\+Object\+::is\+Thread\+Safe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Whether this class is thread-\/safe. 
+
+Return True if this object is thread-\/safe, i.\+e. if an instance and its clone can be used in parallel threads (in the context of Scenery\+::raytrace()). Known objects which are not thread-\/safe include Lorene metrics and everything from the \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} plug-\/in.
+
+The default implementation considers that the class itself is thread safe and recurses into the declared properties to check whether they are safe too. Classes that abide to the Object/\+Property paradigm and are themselves thread-\/safe have nothing special to do.
+
+Objects that clone children in their copy constructor that are not declared as properties must take these children into account.
+
+Classes that are never thread-\/safe must declare it. It acn be easily done using GYOTO\+\_\+\+OBJECT\+\_\+\+THREAD\+\_\+\+SAFETY in the class declaration and GYOTO\+\_\+\+PROPERTY\+\_\+\+THREAD\+\_\+\+UNSAFE in the class definition. \mbox{\Hypertarget{class_gyoto_1_1_object_aae3b80667884c6620c4796a1b8ef74e5}\label{class_gyoto_1_1_object_aae3b80667884c6620c4796a1b8ef74e5}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!kind@{kind}}
+\index{kind@{kind}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{kind()}{kind()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Object\+::kind (\begin{DoxyParamCaption}\item[{const std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Set kind\+\_\+. 
+
+\mbox{\hyperlink{class_gyoto_1_1_object_aae3b80667884c6620c4796a1b8ef74e5}{kind(const std\+::string)}} is protected because, for most Objects, it should not be changed in runtime. Set kind\+\_\+ \mbox{\Hypertarget{class_gyoto_1_1_spectrometer_1_1_generic_ab1a9738c5823db9c79d685b3cd2d1d86}\label{class_gyoto_1_1_spectrometer_1_1_generic_ab1a9738c5823db9c79d685b3cd2d1d86}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!kindid@{kindid}}
+\index{kindid@{kindid}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{kindid()}{kindid()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a3d95097c93312ff6df68f56b4fe829ee}{kind\+\_\+t}} Gyoto\+::\+Spectrometer\+::\+Generic\+::kindid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get kindid\+\_\+. 
+
+You can check whether the \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer}{Spectrometer}} sp is of a given kind My\+Kind with something like\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (sp-\/>kind()) == MyKind::Kindid;}
+
+\end{DoxyCode}
+
+
+See \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_uniform_aa2b46ae8e24c9ca0385e4133c287cf90}{Uniform\+::\+Wave\+Kind}}, \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_uniform_a6e1f7329a824883bcca2ec61dc559e19}{Uniform\+::\+Wave\+Log\+Kind}}, \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_uniform_afdacaa50d0fc60b5fd27f350d2e10247}{Uniform\+::\+Freq\+Kind}}, \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_uniform_a3994f7cdb5f7b77c6a436a1e6dfbf921}{Uniform\+::\+Freq\+Log\+Kind}} and \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_complex_aa7bab80bd7478784d9c49e1208bf6b0a}{Complex\+::\+Kind}}. \mbox{\Hypertarget{class_gyoto_1_1_spectrometer_1_1_generic_a63c8212b30359dd8588359b9201b275c}\label{class_gyoto_1_1_spectrometer_1_1_generic_a63c8212b30359dd8588359b9201b275c}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!kindid@{kindid}}
+\index{kindid@{kindid}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{kindid()}{kindid()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Spectrometer\+::\+Generic\+::kindid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a3d95097c93312ff6df68f56b4fe829ee}{kind\+\_\+t}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_aae47201273f20c8fb3a0761c5e631336}{Generic\+::kindid\+\_\+}}. 
+
+This should rarely be used as the \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_aae47201273f20c8fb3a0761c5e631336}{Generic\+::kindid\+\_\+}} attribute usually is set in the constructor and doesn\textquotesingle{}t change after that.
+
+Always set to the address of a static variable, not to a temporary. Usually your class should have a static member for that purpose\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class }MyKind : \textcolor{keyword}{public} Spectrometer::Generic}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \textcolor{keyword}{static} \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a3d95097c93312ff6df68f56b4fe829ee}{kind\_t}} Kindid;}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{\mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a3d95097c93312ff6df68f56b4fe829ee}{kind\_t}} MyKind::Kind = \textcolor{stringliteral}{"{}MyKind"{}};}
+\DoxyCodeLine{...}
+\DoxyCodeLine{SmartPointer<MyKind> sp();}
+\DoxyCodeLine{sp-\/>kindid(MyKind::Kindid)}
+
+\end{DoxyCode}
+ 
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_uniform_a5d0246b0be80169490507d9a61f77f52}{Gyoto\+::\+Spectrometer\+::\+Uniform}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_object_a424ef3538c714adfafad7eda249e0d58}\label{class_gyoto_1_1_object_a424ef3538c714adfafad7eda249e0d58}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!property@{property}}
+\index{property@{property}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{property()}{property()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const$\ast$ Gyoto\+::\+Object\+::property (\begin{DoxyParamCaption}\item[{std\+::string const}]{pname }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Find property by name. 
+
+Look into the \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} list for a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} whose {\itshape name} (or {\itshape name\+\_\+false}, for a boolean \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}) is {\itshape pname}. Return a const pointer to the first such property found, or NULL if none is found. \mbox{\Hypertarget{class_gyoto_1_1_object_a43fe041144add66155668ca88a99fd98}\label{class_gyoto_1_1_object_a43fe041144add66155668ca88a99fd98}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!setParameter@{setParameter}}
+\index{setParameter@{setParameter}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{setParameter()}{setParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Object\+::set\+Parameter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_property}{Gyoto\+::\+Property}} const \&}]{p,  }\item[{std\+::string const \&}]{name,  }\item[{std\+::string const \&}]{content,  }\item[{std\+::string const \&}]{unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Set parameter by \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} (and name) 
+
+This function is used when parsing an XML description, if \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} ({\itshape p}) of this {\itshape name} is found (i.\+e. either {\itshape p.\+name} or {\itshape p.\+name\+\_\+false} is equal to {\itshape name}). Implementation should fall-\/back on calling the direct\textquotesingle{}s parent implementation\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class }A: \textcolor{keyword}{public} \mbox{\hyperlink{class_gyoto_1_1_object_a5834e83ca1482a379c7ddefb1919457f}{Object}} \{\};}
+\DoxyCodeLine{\textcolor{keyword}{class }B: \textcolor{keyword}{public} A \{ }
+\DoxyCodeLine{ \textcolor{keyword}{using} B::setParameter;}
+\DoxyCodeLine{ \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_gyoto_1_1_object_a45969ac469cf6979037229c2741b226b}{setParameter}}(\mbox{\hyperlink{class_gyoto_1_1_property}{Gyoto::Property}} \textcolor{keyword}{const} \&p,}
+\DoxyCodeLine{                           std::string name,}
+\DoxyCodeLine{                        std::string content,}
+\DoxyCodeLine{                        std::string unit);}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{\textcolor{keywordtype}{void} B::setParameter(\mbox{\hyperlink{class_gyoto_1_1_property}{Gyoto::Property}} \textcolor{keyword}{const} \&p,}
+\DoxyCodeLine{                          std::string name,}
+\DoxyCodeLine{                  std::string content,}
+\DoxyCodeLine{                  std::string unit) \{}
+\DoxyCodeLine{  \textcolor{keywordflow}{if} (name==\textcolor{stringliteral}{"{}Duff"{}}) doSomething(content, unit);}
+\DoxyCodeLine{  \textcolor{keywordflow}{else} A::setParameter(p, name, content, unit);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} that matches {\itshape name} ({\itshape p.\+name} == {\itshape name} or {\itshape p.\+name\+\_\+false} == {\itshape name}) \\
+\hline
+{\em name} & XML name of the parameter (XML entity) \\
+\hline
+{\em content} & string representation of the value \\
+\hline
+{\em unit} & string representation of the unit \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_polish_doughnut_a13a8a59bd3738f5739db0550dbb42003}{Gyoto\+::\+Astrobj\+::\+Polish\+Doughnut}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_object_a45969ac469cf6979037229c2741b226b}\label{class_gyoto_1_1_object_a45969ac469cf6979037229c2741b226b}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!setParameter@{setParameter}}
+\index{setParameter@{setParameter}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{setParameter()}{setParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual int Gyoto\+::\+Object\+::set\+Parameter (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{content,  }\item[{std\+::string}]{unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Set parameter by name. 
+
+This function is used when parsing an XML description, if no \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} of this {\itshape name} is found. Overriding implementation should fall-\/back on calling the direct\textquotesingle{}s parent implementation\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class }A: \textcolor{keyword}{public} \mbox{\hyperlink{class_gyoto_1_1_object_a5834e83ca1482a379c7ddefb1919457f}{Object}} \{\};}
+\DoxyCodeLine{\textcolor{keyword}{class }B: \textcolor{keyword}{public} A \{ }
+\DoxyCodeLine{ \textcolor{keyword}{using} B::setParameter;}
+\DoxyCodeLine{ \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_gyoto_1_1_object_a45969ac469cf6979037229c2741b226b}{setParameter}}(std::string name,}
+\DoxyCodeLine{                    std::string content,}
+\DoxyCodeLine{                    std::string unit);}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{\textcolor{keywordtype}{int} B::setParameter(std::string name,}
+\DoxyCodeLine{                    std::string content,}
+\DoxyCodeLine{                    std::string unit) \{}
+\DoxyCodeLine{  \textcolor{keywordflow}{if} (name==\textcolor{stringliteral}{"{}Duff"{}}) doSomething(content, unit);}
+\DoxyCodeLine{  \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} A::setParameter(name, content, unit);}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} 0;  \textcolor{comment}{// name was known}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & XML name of the parameter (XML entity). This may have a path component, e.\+g. \char`\"{}\+Astrobj\+::\+Radius\char`\"{}, in which case a property named \char`\"{}\+Astrobj\char`\"{} will be sought in the current object, and set\+Parameter will be called recusrively on this \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}} with Radius as name. \\
+\hline
+{\em content} & string representation of the value \\
+\hline
+{\em unit} & string representation of the unit \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if this parameter is known, 1 if it is not. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_rot_star3__1_ac2fbf2bb5796e3d7c7eb80dccfe20af7}{Gyoto\+::\+Metric\+::\+Rot\+Star3\+\_\+1}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_star_a628aa18277af464450896efd63206527}{Gyoto\+::\+Astrobj\+::\+Star}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_kerr_k_s_a4c9d3a51c5d1478908516a0b96a42135}{Gyoto\+::\+Metric\+::\+Kerr\+KS}}, and \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_equatorial_hot_spot_a0c6f1aee4a478c5ef695348d64eae2d4}{Gyoto\+::\+Astrobj\+::\+Equatorial\+Hot\+Spot}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_object_aa0a8b119e7aa95b21be081f8c97e1626}\label{class_gyoto_1_1_object_aa0a8b119e7aa95b21be081f8c97e1626}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!setParameters@{setParameters}}
+\index{setParameters@{setParameters}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{setParameters()}{setParameters()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Object\+::set\+Parameters (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$}]{fmp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Main loop for parsing Properties from XML description. 
+
+\begin{DoxyVerb} This function queries the FactoryMessenger for elements to parse,
+ and tries to matche each element to a Property to set it
+ accordingly.
+
+ Any class that tries to be buildable from XML must supply a
+ subcontractor (for base classes such as Metric, Astrobj, Spectrum
+ and Spectrometer, it is done as a template that must be
+ specialized for each class).
+
+ This subcontractor typically looks somewhat like this:
+\end{DoxyVerb}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{SmartPointer<Metric::Generic>}
+\DoxyCodeLine{\mbox{\hyperlink{namespace_gyoto_1_1_astrobj_a889583a9d40c821bd55c4191cb3201ed}{Gyoto::Metric::MyKind::Subcontractor}}(FactoryMessenger* fmp) \{}
+\DoxyCodeLine{  SmartPointer<MyKind> gg = \textcolor{keyword}{new} MyKind();}
+\DoxyCodeLine{  gg -\/> \mbox{\hyperlink{class_gyoto_1_1_object_aa0a8b119e7aa95b21be081f8c97e1626}{setParameters}}(fmp);}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} gg;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ \begin{DoxyVerb} Although this is discouraged, it is possible to override the
+ following functions to customize how XML entities are parsed:
+   - setParameters() if low-level access to the
+     FactoryMessenger is required;
+   - setParameter(std::string name,
+                  std::string content,
+                  std::string unit)
+     to interpret an entity that does not match a Property
+     (e.g. alternative name);
+   - setParameter(Gyoto::Property const &p,
+                  std::string const &name,
+                  std::string const &content,
+                  std::string const &unit)
+     to change how a Property is interpreted.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_oscil_torus_a0e4df99b42b3d3722d6ea39972d1421d}{Gyoto\+::\+Astrobj\+::\+Oscil\+Torus}}, \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_uniform_aaca1850f712a089a6c5e0188aec0e5a4}{Gyoto\+::\+Spectrometer\+::\+Uniform}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_star_ad1ad60d3ce8861dfa8626ca908e5789e}{Gyoto\+::\+Astrobj\+::\+Star}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_shift_a81a5f0f4f32f5be884a4445f1d1d5b17}{Gyoto\+::\+Metric\+::\+Shift}}, \mbox{\hyperlink{class_gyoto_1_1_photon_a7a6664a5de91b1c59ba1b57d54ba1dd9}{Gyoto\+::\+Photon}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_equatorial_hot_spot_a931ca188ae49a0d8e9764a151edd3553}{Gyoto\+::\+Astrobj\+::\+Equatorial\+Hot\+Spot}}, \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_complex_a008340295dbb21fbddfa6ad7612da80e}{Gyoto\+::\+Spectrometer\+::\+Complex}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_complex_a5607f9166dc2c1a0a7bd61cde6a71c57}{Gyoto\+::\+Metric\+::\+Complex}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_complex_a635b0ea47d78c02a999d932eec8b16c5}{Gyoto\+::\+Astrobj\+::\+Complex}}, and \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a1872b827525ccb1fdedb614474992a6a}{Gyoto\+::\+Astrobj\+::\+Generic}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_hook_1_1_teller_af9a1daa629900f00538096987e398a13}\label{class_gyoto_1_1_hook_1_1_teller_af9a1daa629900f00538096987e398a13}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!tellListeners@{tellListeners}}
+\index{tellListeners@{tellListeners}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{tellListeners()}{tellListeners()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Hook\+::\+Teller\+::tell\+Listeners (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Call tell() on each hooked Listener. 
+
+Whenever a Teller mutates, it should warn any Listener hooked to it using \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller_af9a1daa629900f00538096987e398a13}{tell\+Listeners()}}. \mbox{\Hypertarget{class_gyoto_1_1_hook_1_1_teller_a8bcbb785f92fefe4e76afe76eb175f8a}\label{class_gyoto_1_1_hook_1_1_teller_a8bcbb785f92fefe4e76afe76eb175f8a}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!unhook@{unhook}}
+\index{unhook@{unhook}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{unhook()}{unhook()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Hook\+::\+Teller\+::unhook (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_hook_1_1_listener}{Listener}} $\ast$}]{listener }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Stop listening. 
+
+Use from a \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_listener}{Hook\+::\+Listener}} object method\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{teller-\/>unhook(\textcolor{keyword}{this})}
+
+\end{DoxyCode}
+
+
+where \char`\"{}this\char`\"{} is a Listener, \char`\"{}teller\char`\"{} is a Teller, and \char`\"{}this\char`\"{} has called teller-\/$>$hook(this) previously.
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & pointer to the listener \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_spectrometer_1_1_generic_a5275ae247243743e2847852da44d4399}\label{class_gyoto_1_1_spectrometer_1_1_generic_a5275ae247243743e2847852da44d4399}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!boundaries\_@{boundaries\_}}
+\index{boundaries\_@{boundaries\_}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{boundaries\_}{boundaries\_}}
+{\footnotesize\ttfamily double$\ast$ Gyoto\+::\+Spectrometer\+::\+Generic\+::boundaries\+\_\+}
+
+
+
+Frequency (in Hz) at the boundaries of the spectral channels. 
+
+Array of size nboundaries\+\_\+
+
+Spectral channel i extends from 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_a5275ae247243743e2847852da44d4399}{boundaries\_}}[\mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_aa1af0adc2e534f7bb517f880d2b66bfd}{chanind\_}}[2*i]]}
+
+\end{DoxyCode}
+ to 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_a5275ae247243743e2847852da44d4399}{boundaries\_}}[\mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_aa1af0adc2e534f7bb517f880d2b66bfd}{chanind\_}}[2*i+1]]}
+
+\end{DoxyCode}
+. Channels may or may not be contiguous or ordered. \mbox{\Hypertarget{class_gyoto_1_1_spectrometer_1_1_generic_aa1af0adc2e534f7bb517f880d2b66bfd}\label{class_gyoto_1_1_spectrometer_1_1_generic_aa1af0adc2e534f7bb517f880d2b66bfd}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!chanind\_@{chanind\_}}
+\index{chanind\_@{chanind\_}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{chanind\_}{chanind\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}}$\ast$ Gyoto\+::\+Spectrometer\+::\+Generic\+::chanind\+\_\+}
+
+
+
+Indices in boundaries\+\_\+. 
+
+Array of size 2$\ast$nsamples\+\_\+ \mbox{\Hypertarget{class_gyoto_1_1_object_ac48ad88e3ef229ba0d0fe68a94a7118f}\label{class_gyoto_1_1_object_ac48ad88e3ef229ba0d0fe68a94a7118f}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!kind\_@{kind\_}}
+\index{kind\_@{kind\_}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{kind\_}{kind\_}}
+{\footnotesize\ttfamily std\+::string Gyoto\+::\+Object\+::kind\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+The \char`\"{}kind\char`\"{} that is output in the XML entity. 
+
+E.\+g. for an \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}}, \mbox{\hyperlink{class_gyoto_1_1_object_a0ffc3f84b4c2372d639eb848605fb1f3}{fill\+Element()}} will ensure 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<Astrobj \mbox{\hyperlink{class_gyoto_1_1_object_a9f46de678c67e9050cf3a8b9677e1d73}{kind}}=\textcolor{stringliteral}{"{}kind\_"{}} ...>...</Astrobj>}
+
+\end{DoxyCode}
+ is written. \mbox{\Hypertarget{class_gyoto_1_1_spectrometer_1_1_generic_aae47201273f20c8fb3a0761c5e631336}\label{class_gyoto_1_1_spectrometer_1_1_generic_aae47201273f20c8fb3a0761c5e631336}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!kindid\_@{kindid\_}}
+\index{kindid\_@{kindid\_}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{kindid\_}{kindid\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a3d95097c93312ff6df68f56b4fe829ee}{kind\+\_\+t}} Gyoto\+::\+Spectrometer\+::\+Generic\+::kindid\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{namespace_gyoto_1_1_spectrometer}{Spectrometer}} kind ID. 
+
+The content is not copied. kindid\+\_\+ should be set (as a parameter to the \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_a171359b9e05d91b191735545b10a7d51}{Generic()}} constructor or using \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic_ab1a9738c5823db9c79d685b3cd2d1d86}{kindid()}}) to the address of a static variable holding the name. This allows checking the kind using pointer comparison rather than string comparison. \mbox{\Hypertarget{class_gyoto_1_1_spectrometer_1_1_generic_a3939be859b97c8e4c352da02e00170d9}\label{class_gyoto_1_1_spectrometer_1_1_generic_a3939be859b97c8e4c352da02e00170d9}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!midpoints\_@{midpoints\_}}
+\index{midpoints\_@{midpoints\_}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{midpoints\_}{midpoints\_}}
+{\footnotesize\ttfamily double$\ast$ Gyoto\+::\+Spectrometer\+::\+Generic\+::midpoints\+\_\+}
+
+
+
+Effective frequency (in Hz) of each spectral channel. 
+
+Array of size nsamples\+\_\+ \mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_abf1c1e431cdd4f08f13de581cccb6770}\label{class_gyoto_1_1_smart_pointee_abf1c1e431cdd4f08f13de581cccb6770}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!mutex\_@{mutex\_}}
+\index{mutex\_@{mutex\_}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{mutex\_}{mutex\_}}
+{\footnotesize\ttfamily pthread\+\_\+mutex\+\_\+t Gyoto\+::\+Smart\+Pointee\+::mutex\+\_\+\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+
+
+A mutex. 
+
+When compiled with libpthread \mbox{\Hypertarget{class_gyoto_1_1_object_a01832761cd5f0a12319e3e24ce9a9fba}\label{class_gyoto_1_1_object_a01832761cd5f0a12319e3e24ce9a9fba}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!plugins\_@{plugins\_}}
+\index{plugins\_@{plugins\_}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{plugins\_}{plugins\_}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Gyoto\+::\+Object\+::plugins\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+The plug-\/ins that needs to be loaded to access this instance\textquotesingle{}s class. 
+
+E.\+g. for an \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}}, \mbox{\hyperlink{class_gyoto_1_1_object_a0ffc3f84b4c2372d639eb848605fb1f3}{fill\+Element()}} will ensure 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<Astrobj ... plugin=\textcolor{stringliteral}{"{}plugins\_"{}}>...</Astrobj>}
+
+\end{DoxyCode}
+ is written. \mbox{\Hypertarget{class_gyoto_1_1_spectrometer_1_1_generic_ac1eebc615915693215c1a7f8a6086e7a}\label{class_gyoto_1_1_spectrometer_1_1_generic_ac1eebc615915693215c1a7f8a6086e7a}} 
+\index{Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}!widths\_@{widths\_}}
+\index{widths\_@{widths\_}!Gyoto::Spectrometer::Generic@{Gyoto::Spectrometer::Generic}}
+\doxysubsubsection{\texorpdfstring{widths\_}{widths\_}}
+{\footnotesize\ttfamily double$\ast$ Gyoto\+::\+Spectrometer\+::\+Generic\+::widths\+\_\+}
+
+
+
+Width of each channel. 
+
+Array of size nsamples\+\_\+ (in Hz) 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_gyoto_spectrometer_8h}{Gyoto\+Spectrometer.\+h}}\end{DoxyCompactItemize}

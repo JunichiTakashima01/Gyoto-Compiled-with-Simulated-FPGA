@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_gyoto_factory_messenger_8h" kind="file" language="C++">
+    <compoundname>GyotoFactoryMessenger.h</compoundname>
+    <includes local="no">xercesc/dom/DOMElement.hpp</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">string</includes>
+    <includes refid="_gyoto_defs_8h" local="no">GyotoDefs.h</includes>
+    <includes refid="_gyoto_smart_pointer_8h" local="no">GyotoSmartPointer.h</includes>
+    <includedby refid="_gyoto_python_8h" local="no">GyotoPython.h</includedby>
+    <incdepgraph>
+      <node id="7">
+        <label>float.h</label>
+      </node>
+      <node id="9">
+        <label>GyotoUtils.h</label>
+        <link refid="_gyoto_utils_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="8">
+        <label>GyotoSmartPointer.h</label>
+        <link refid="_gyoto_smart_pointer_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>GyotoFactoryMessenger.h</label>
+        <link refid="_gyoto_factory_messenger_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>stddef.h</label>
+      </node>
+      <node id="5">
+        <label>GyotoDefs.h</label>
+        <link refid="_gyoto_defs_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>pthread.h</label>
+      </node>
+      <node id="14">
+        <label>typeinfo</label>
+      </node>
+      <node id="2">
+        <label>xercesc/dom/DOMElement.hpp</label>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+      <node id="6">
+        <label>GyotoConfig.h</label>
+        <link refid="_gyoto_config_8h"/>
+      </node>
+      <node id="13">
+        <label>iostream</label>
+      </node>
+      <node id="11">
+        <label>GyotoError.h</label>
+        <link refid="_gyoto_error_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>GyotoPython.h</label>
+        <link refid="_gyoto_python_8h"/>
+      </node>
+      <node id="1">
+        <label>GyotoFactoryMessenger.h</label>
+        <link refid="_gyoto_factory_messenger_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_gyoto_1_1_factory_messenger" prot="public">Gyoto::FactoryMessenger</innerclass>
+    <innernamespace refid="namespace_gyoto">Gyoto</innernamespace>
+    <innernamespace refid="namespace_gyoto_1_1_metric">Gyoto::Metric</innernamespace>
+    <innernamespace refid="namespace_gyoto_1_1_astrobj">Gyoto::Astrobj</innernamespace>
+    <innernamespace refid="namespace_gyoto_1_1_spectrum">Gyoto::Spectrum</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_gyoto_factory_messenger_8h_1a6ce21af77a85c8bb90ea2dc349f55acf" prot="public" static="no">
+        <name>XERCES_INCLUDE_WCHAR_H</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>Internal to Xerces. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For obscure reasons, this needs to be set to 0 instead of just undefined. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="34" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Factory / SmartPointee::Subcontractor_t interface. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>GYOTO_USE_XERCES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>Copyright<sp/>2011-2014,<sp/>2016,<sp/>2018<sp/>Thibaut<sp/>Paumard</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>Gyoto.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"></highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"></highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>Gyoto.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__GyotoFactoryMessenger_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__GyotoFactoryMessenger_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>XERCES_INCLUDE_WCHAR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="_gyoto_factory_messenger_8h_1a6ce21af77a85c8bb90ea2dc349f55acf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>XERCES_INCLUDE_WCHAR_H<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;xercesc/dom/DOMElement.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_defs_8h" kindref="compound">GyotoDefs.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_smart_pointer_8h" kindref="compound">GyotoSmartPointer.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_gyoto" kindref="compound">Gyoto</ref><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Factory;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">FactoryMessenger;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Metric<sp/>{<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Generic;<sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Astrobj<sp/>{<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Generic;<sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Spectrum<sp/>{<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Generic<sp/>;<sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Screen;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Photon;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="class_gyoto_1_1_factory_messenger" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">Gyoto::FactoryMessenger</ref><sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="94" refid="class_gyoto_1_1_factory_messenger_1a872915bff11693cb686e32b7f443e346" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_factory" kindref="compound">Gyoto::Factory</ref>*<sp/><ref refid="class_gyoto_1_1_factory_messenger_1a872915bff11693cb686e32b7f443e346" kindref="member">employer_</ref>;</highlight></codeline>
+<codeline lineno="96" refid="class_gyoto_1_1_factory_messenger_1a378caf5b3eb30c091a015d4351fb0f09" refkind="member"><highlight class="normal"><sp/><sp/>xercesc::DOMElement<sp/>*<ref refid="class_gyoto_1_1_factory_messenger_1a378caf5b3eb30c091a015d4351fb0f09" kindref="member">element_</ref>;</highlight></codeline>
+<codeline lineno="98" refid="class_gyoto_1_1_factory_messenger_1a9c8eb521fb3b2d8e72ec2ab12079dbc4" refkind="member"><highlight class="normal"><sp/><sp/>xercesc::DOMNodeList*<sp/><ref refid="class_gyoto_1_1_factory_messenger_1a9c8eb521fb3b2d8e72ec2ab12079dbc4" kindref="member">children_</ref>;</highlight></codeline>
+<codeline lineno="100" refid="class_gyoto_1_1_factory_messenger_1a4ea5dc21b68de8f29da9323f8b1f3238" refkind="member"><highlight class="normal"><sp/><sp/>XMLSize_t<sp/><ref refid="class_gyoto_1_1_factory_messenger_1a4ea5dc21b68de8f29da9323f8b1f3238" kindref="member">nodeCount_</ref>;</highlight></codeline>
+<codeline lineno="102" refid="class_gyoto_1_1_factory_messenger_1af34b6cfe2f353c8a5408340667ccc36c" refkind="member"><highlight class="normal"><sp/><sp/>XMLSize_t<sp/><ref refid="class_gyoto_1_1_factory_messenger_1af34b6cfe2f353c8a5408340667ccc36c" kindref="member">curNodeIndex_</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="105" refid="class_gyoto_1_1_factory_messenger_1a0bfc9828d0554895ff2c4781935848bb" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_factory_messenger_1a0bfc9828d0554895ff2c4781935848bb" kindref="member">FactoryMessenger</ref>(<ref refid="class_gyoto_1_1_factory" kindref="compound">Gyoto::Factory</ref>*,<sp/>xercesc::DOMElement*);</highlight></codeline>
+<codeline lineno="107" refid="class_gyoto_1_1_factory_messenger_1a1eefa10fe88405224ead5a0c97acce32" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_factory_messenger_1a1eefa10fe88405224ead5a0c97acce32" kindref="member">FactoryMessenger</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref>&amp;<sp/>parent,<sp/>std::string)<sp/>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="class_gyoto_1_1_factory_messenger_1acfaf0c728ad6768bdfd25ad5e15fcd13" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_factory_messenger_1acfaf0c728ad6768bdfd25ad5e15fcd13" kindref="member">reset</ref>();</highlight></codeline>
+<codeline lineno="112"></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="class_gyoto_1_1_factory_messenger_1a20033615402e9d7a7c21fc5ef4ebf386" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer&lt;Metric::Generic&gt;</ref><sp/><sp/><ref refid="class_gyoto_1_1_factory_messenger_1a20033615402e9d7a7c21fc5ef4ebf386" kindref="member">metric</ref><sp/><sp/>()<sp/>;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="class_gyoto_1_1_factory_messenger_1a59571b4b88162856c69af230f2c11f95" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer&lt;Screen&gt;</ref><sp/><sp/><ref refid="class_gyoto_1_1_factory_messenger_1a59571b4b88162856c69af230f2c11f95" kindref="member">screen</ref><sp/><sp/>()<sp/>;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="class_gyoto_1_1_factory_messenger_1a7acd40d3f59dc9cc8660baba0151bd11" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer&lt;Photon&gt;</ref><sp/><sp/><ref refid="class_gyoto_1_1_factory_messenger_1a7acd40d3f59dc9cc8660baba0151bd11" kindref="member">photon</ref><sp/><sp/>()<sp/>;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="class_gyoto_1_1_factory_messenger_1aea5108fe2bb15a154883e2776885a593" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer&lt;Astrobj::Generic&gt;</ref><sp/><ref refid="class_gyoto_1_1_factory_messenger_1aea5108fe2bb15a154883e2776885a593" kindref="member">astrobj</ref><sp/>()<sp/>;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="class_gyoto_1_1_factory_messenger_1a716340221e527c61a05af389590b53f4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_factory_messenger_1a716340221e527c61a05af389590b53f4" kindref="member">getNextParameter</ref>(std::string*<sp/>name,</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string*<sp/>content,</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string*<sp/>unit=NULL);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185" refid="class_gyoto_1_1_factory_messenger_1a3abfe9dcb058996a0d46dd357f1e8d3c" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="class_gyoto_1_1_factory_messenger_1a3abfe9dcb058996a0d46dd357f1e8d3c" kindref="member">getSelfAttribute</ref>(std::string<sp/>attrname)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197" refid="class_gyoto_1_1_factory_messenger_1a48555295390ec53540322c28581394f9" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="class_gyoto_1_1_factory_messenger_1a48555295390ec53540322c28581394f9" kindref="member">getAttribute</ref>(std::string<sp/>attrname)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213" refid="class_gyoto_1_1_factory_messenger_1a468f8e44ec2f2b847c423eae6bb7ef9a" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="class_gyoto_1_1_factory_messenger_1a468f8e44ec2f2b847c423eae6bb7ef9a" kindref="member">getFullContent</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234" refid="class_gyoto_1_1_factory_messenger_1a45eecd6b12e2577f9d8abf12e0aa76bc" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref><sp/>*<sp/><ref refid="class_gyoto_1_1_factory_messenger_1a45eecd6b12e2577f9d8abf12e0aa76bc" kindref="member">getChild</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250" refid="class_gyoto_1_1_factory_messenger_1a343e324a387d3a30c93bd391828a9858" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="class_gyoto_1_1_factory_messenger_1a343e324a387d3a30c93bd391828a9858" kindref="member">fullPath</ref>(std::string<sp/>relpath)<sp/>;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281" refid="class_gyoto_1_1_factory_messenger_1a8ab9c2e09c674dfac3cf443b694ed2a0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_factory_messenger_1a8ab9c2e09c674dfac3cf443b694ed2a0" kindref="member">metric</ref>(<ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer&lt;Metric::Generic&gt;</ref>);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287" refid="class_gyoto_1_1_factory_messenger_1a8dae584154a5108e5d3533728f316a4f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_factory_messenger_1a8dae584154a5108e5d3533728f316a4f" kindref="member">astrobj</ref>(<ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer&lt;Astrobj::Generic&gt;</ref>);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293" refid="class_gyoto_1_1_factory_messenger_1a409a59154d6fe6f8475cf3d8a7d59de5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_factory_messenger_1a409a59154d6fe6f8475cf3d8a7d59de5" kindref="member">screen</ref>(<ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer&lt;Screen&gt;</ref>);</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307" refid="class_gyoto_1_1_factory_messenger_1a7285f6988ee8c0be458e683615885703" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_factory_messenger_1a7285f6988ee8c0be458e683615885703" kindref="member">setParameter</ref>(std::string<sp/>name);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317" refid="class_gyoto_1_1_factory_messenger_1a6ef06141e38e2babe1137f473a10d287" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_factory_messenger_1a6ef06141e38e2babe1137f473a10d287" kindref="member">setParameter</ref>(std::string<sp/>name,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327" refid="class_gyoto_1_1_factory_messenger_1a5674fe6319b0634cb83d33ec7c475d1a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_factory_messenger_1a5674fe6319b0634cb83d33ec7c475d1a" kindref="member">setParameter</ref>(std::string<sp/>name,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="337" refid="class_gyoto_1_1_factory_messenger_1ab5b5572bcdb3b5bee2e1343bb1f77c8a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_factory_messenger_1ab5b5572bcdb3b5bee2e1343bb1f77c8a" kindref="member">setParameter</ref>(std::string<sp/>name,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347" refid="class_gyoto_1_1_factory_messenger_1a2f132e5caea6cdfbc257eda9538cac1a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_factory_messenger_1a2f132e5caea6cdfbc257eda9538cac1a" kindref="member">setParameter</ref>(std::string<sp/>name,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="357" refid="class_gyoto_1_1_factory_messenger_1af48912fc28014db9d8a4479d111a24f2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_factory_messenger_1af48912fc28014db9d8a4479d111a24f2" kindref="member">setParameter</ref>(std::string<sp/>name,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight></codeline>
+<codeline lineno="366" refid="class_gyoto_1_1_factory_messenger_1aca812ff248777ea84c2eda83fc36fbf3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_factory_messenger_1aca812ff248777ea84c2eda83fc36fbf3" kindref="member">setParameter</ref>(std::string<sp/>name,<sp/>std::string<sp/>value);</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight></codeline>
+<codeline lineno="392" refid="class_gyoto_1_1_factory_messenger_1a394034fa69500a9cdd1ec4e9a99856e8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_factory_messenger_1a394034fa69500a9cdd1ec4e9a99856e8" kindref="member">setParameter</ref>(std::string<sp/>name,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val[],<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n,</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref>**<sp/>child=<sp/>NULL);</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"></highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_factory_messenger_1a7285f6988ee8c0be458e683615885703" kindref="member">setParameter</ref>(std::string<sp/>name,<sp/>std::vector&lt;double&gt;<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;val,</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref>**<sp/>child=<sp/>NULL);</highlight></codeline>
+<codeline lineno="398" refid="class_gyoto_1_1_factory_messenger_1afbbe49d4453e88e97ed4fd7e8c93932c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_factory_messenger_1afbbe49d4453e88e97ed4fd7e8c93932c" kindref="member">setParameter</ref>(std::string<sp/>name,<sp/>std::vector&lt;unsigned<sp/>long&gt;<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;val,</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref>**<sp/>child=<sp/>NULL);</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"></highlight></codeline>
+<codeline lineno="413" refid="class_gyoto_1_1_factory_messenger_1a9f459c70f3d7495465e6cccb29195710" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_factory_messenger_1a9f459c70f3d7495465e6cccb29195710" kindref="member">setSelfAttribute</ref>(std::string<sp/>attrname,<sp/>std::string<sp/>value)<sp/>;</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"></highlight></codeline>
+<codeline lineno="419" refid="class_gyoto_1_1_factory_messenger_1ae14ea235e15c79cadcf26d6f021bd7a5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_factory_messenger_1ae14ea235e15c79cadcf26d6f021bd7a5" kindref="member">setSelfAttribute</ref>(std::string<sp/>attrname,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>value)<sp/>;</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"></highlight></codeline>
+<codeline lineno="425" refid="class_gyoto_1_1_factory_messenger_1af28276c1fb03adb47b1073c0e4002371" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_factory_messenger_1af28276c1fb03adb47b1073c0e4002371" kindref="member">setSelfAttribute</ref>(std::string<sp/>attrname,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value)<sp/>;</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"></highlight></codeline>
+<codeline lineno="431" refid="class_gyoto_1_1_factory_messenger_1a788d642f4e37c989bc8ebb0797fb4c46" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_factory_messenger_1a788d642f4e37c989bc8ebb0797fb4c46" kindref="member">setSelfAttribute</ref>(std::string<sp/>attrname,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value)<sp/>;</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"></highlight></codeline>
+<codeline lineno="441" refid="class_gyoto_1_1_factory_messenger_1a4e9a421b73be417f797c33385d79af87" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_factory_messenger_1a4e9a421b73be417f797c33385d79af87" kindref="member">setFullContent</ref>(std::string<sp/>value)<sp/>;</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"></highlight></codeline>
+<codeline lineno="462" refid="class_gyoto_1_1_factory_messenger_1ae0ac2e5f5138eb84c53607685d8df7b0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref>*<sp/><ref refid="class_gyoto_1_1_factory_messenger_1ae0ac2e5f5138eb84c53607685d8df7b0" kindref="member">makeChild</ref>(std::string<sp/>name);</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"></highlight></codeline>
+<codeline lineno="473" refid="class_gyoto_1_1_factory_messenger_1a8fa6e9d68b48773a0d608159c933b8c9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_factory_messenger_1a8fa6e9d68b48773a0d608159c933b8c9" kindref="member">parseArray</ref>(std::string<sp/>src,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dst[],<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>max_tokens);</highlight></codeline>
+<codeline lineno="474"><highlight class="normal"></highlight></codeline>
+<codeline lineno="481" refid="class_gyoto_1_1_factory_messenger_1a3ba0af4bedc47932f06010b2499d85a6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/><ref refid="class_gyoto_1_1_factory_messenger_1a3ba0af4bedc47932f06010b2499d85a6" kindref="member">parseArray</ref>(std::string<sp/>src);</highlight></codeline>
+<codeline lineno="482"><highlight class="normal"></highlight></codeline>
+<codeline lineno="489" refid="class_gyoto_1_1_factory_messenger_1af774aa9700f29251db97c66766506c27" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::vector&lt;unsigned<sp/>long&gt;<sp/><ref refid="class_gyoto_1_1_factory_messenger_1af774aa9700f29251db97c66766506c27" kindref="member">parseArrayULong</ref>(std::string<sp/>src);</highlight></codeline>
+<codeline lineno="490"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"></highlight></codeline>
+<codeline lineno="492"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="493"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h"/>
+  </compounddef>
+</doxygen>

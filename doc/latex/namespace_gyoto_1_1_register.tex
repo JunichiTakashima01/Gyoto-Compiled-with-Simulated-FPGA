@@ -1,0 +1,45 @@
+\hypertarget{namespace_gyoto_1_1_register}{}\doxysection{Gyoto\+::Register Namespace Reference}
+\label{namespace_gyoto_1_1_register}\index{Gyoto::Register@{Gyoto::Register}}
+
+
+\mbox{\hyperlink{namespace_gyoto}{Gyoto}} registers.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_gyoto_1_1_register_1_1_entry}{Entry}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_gyoto_1_1_register_1_1_entry}{Entry}} in a register (or a full register) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_gyoto_1_1_register_ab550850763355e20c312f60e1698e4c6}{init}} (char const $\ast$pluglist=NULL)
+\begin{DoxyCompactList}\small\item\em Initialise the various registers. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_1_1_register_a3406e0df28d0e5ee028ed9b1621e3ed6}\label{namespace_gyoto_1_1_register_a3406e0df28d0e5ee028ed9b1621e3ed6}} 
+void \mbox{\hyperlink{namespace_gyoto_1_1_register_a3406e0df28d0e5ee028ed9b1621e3ed6}{list}} ()
+\begin{DoxyCompactList}\small\item\em List the various registers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{namespace_gyoto}{Gyoto}} registers. 
+
+\mbox{\hyperlink{class_gyoto_1_1_register_1_1_entry}{Gyoto\+::\+Register\+::\+Entry}} instances are used to map kind names to \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}{Gyoto\+::\+Smart\+Pointee\+::\+Subcontractor\+\_\+t}} functions used to instantiate objects from XML files through the \mbox{\hyperlink{class_gyoto_1_1_factory}{Gyoto\+::\+Factory}}. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_gyoto_1_1_register_ab550850763355e20c312f60e1698e4c6}\label{namespace_gyoto_1_1_register_ab550850763355e20c312f60e1698e4c6}} 
+\index{Gyoto::Register@{Gyoto::Register}!init@{init}}
+\index{init@{init}!Gyoto::Register@{Gyoto::Register}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Gyoto\+::\+Register\+::init (\begin{DoxyParamCaption}\item[{char const $\ast$}]{pluglist = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+
+
+Initialise the various registers. 
+
+Normally called once at application start-\/up, \mbox{\hyperlink{namespace_gyoto_1_1_register_ab550850763355e20c312f60e1698e4c6}{Register\+::init()}} initiaizes the registers, loads the plug-\/ins, and fills the registers as appropriate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pluglist} & Coma-\/separated list of plug-\/ins to load. If NULL, default to the environment variable GYOTO\+\_\+\+PLUGINS, if it exists. Else use GYOTO\+\_\+\+DEFAULT\+\_\+\+PLUGINS. Failing to load a plug-\/in prepended with \char`\"{}nofail\+:\char`\"{} is not fatal. \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="deprecated" kind="page">
+    <compoundname>deprecated</compoundname>
+    <title>Deprecated List</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Member <ref refid="namespace_gyoto_1a8e7339cd5c681172bd38ce3986f8225d" kindref="member">Gyoto::convert</ref>  (double *const x, const std::size_t nelem, const double mass_sun, const double distance_kpc, const std::string unit)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000001"/>Will be removed once it is not used anymore in <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> per se. Prefer <ref refid="namespace_gyoto_1_1_units" kindref="compound">Gyoto::Units</ref> framework.</para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+    <location file="deprecated"/>
+  </compounddef>
+</doxygen>

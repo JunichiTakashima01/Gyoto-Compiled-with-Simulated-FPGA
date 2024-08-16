@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_gyoto_shift_8h" kind="file" language="C++">
+    <compoundname>GyotoShift.h</compoundname>
+    <includes refid="_gyoto_metric_8h" local="no">GyotoMetric.h</includes>
+    <incdepgraph>
+      <node id="18">
+        <label>iomanip</label>
+      </node>
+      <node id="11">
+        <label>float.h</label>
+      </node>
+      <node id="8">
+        <label>GyotoUtils.h</label>
+        <link refid="_gyoto_utils_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>eigen3/Eigen/Dense</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="7">
+        <label>GyotoSmartPointer.h</label>
+        <link refid="_gyoto_smart_pointer_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>GyotoObject.h</label>
+        <link refid="_gyoto_object_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>stddef.h</label>
+      </node>
+      <node id="4">
+        <label>fstream</label>
+      </node>
+      <node id="22">
+        <label>GyotoRegister.h</label>
+        <link refid="_gyoto_register_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>GyotoMetric.h</label>
+        <link refid="_gyoto_metric_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>GyotoDefs.h</label>
+        <link refid="_gyoto_defs_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>pthread.h</label>
+      </node>
+      <node id="15">
+        <label>typeinfo</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+      <node id="10">
+        <label>GyotoConfig.h</label>
+        <link refid="_gyoto_config_8h"/>
+      </node>
+      <node id="20">
+        <label>sstream</label>
+      </node>
+      <node id="17">
+        <label>GyotoAstrobj.h</label>
+        <link refid="_gyoto_astrobj_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="13">
+        <label>GyotoError.h</label>
+        <link refid="_gyoto_error_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>GyotoHooks.h</label>
+        <link refid="_gyoto_hooks_8h"/>
+      </node>
+      <node id="19">
+        <label>GyotoConverters.h</label>
+        <link refid="_gyoto_converters_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>GyotoShift.h</label>
+        <link refid="_gyoto_shift_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_gyoto_1_1_metric_1_1_shift" prot="public">Gyoto::Metric::Shift</innerclass>
+    <innernamespace refid="namespace_gyoto">Gyoto</innernamespace>
+    <innernamespace refid="namespace_gyoto_1_1_metric">Gyoto::Metric</innernamespace>
+    <briefdescription>
+<para>Shift a metric. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>Copyright<sp/>2020<sp/>Thibaut<sp/>Paumard<sp/>&amp;<sp/>Frédéric<sp/>Vincent</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>Gyoto.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"></highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>Gyoto.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__GyotoShift_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__GyotoShift_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_metric_8h" kindref="compound">GyotoMetric.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_gyoto" kindref="compound">Gyoto</ref><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Metric<sp/>{<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Shift;<sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="class_gyoto_1_1_metric_1_1_shift" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_metric_1_1_shift" kindref="compound">Gyoto::Metric::Shift</ref></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_metric_1_1_generic" kindref="compound">Gyoto::Metric::Generic</ref>,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_hook_1_1_listener" kindref="compound">Hook::Listener</ref></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt;<ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>::<ref refid="class_gyoto_1_1_metric_1_1_shift" kindref="compound">Metric::Shift</ref>&gt;;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt;Gyoto::Metric::Generic&gt;<sp/>submet_;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>double<sp/>offset_[4];</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>the<sp/>bare<sp/>minimum<sp/>of<sp/>what<sp/>a<sp/>Metric<sp/>class<sp/>must<sp/>implement:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="class_gyoto_1_1_metric_1_1_shift_1a47396c2024142cc52cbaad543f736955" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" kindref="member">GYOTO_OBJECT</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_metric_1_1_shift" kindref="compound">Shift</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_gyoto_1_1_metric_1_1_shift" kindref="compound">Shift</ref>();</highlight></codeline>
+<codeline lineno="59" refid="class_gyoto_1_1_metric_1_1_shift_1a6827953b2a846eb477c10eaa93512afb" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_metric_1_1_shift" kindref="compound">Shift</ref>*<sp/><ref refid="class_gyoto_1_1_metric_1_1_shift_1a6827953b2a846eb477c10eaa93512afb" kindref="member">clone</ref>()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt;Metric::Generic&gt;<sp/>subMetric()<sp/>const;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/>subMetric(SmartPointer&lt;Metric::Generic&gt;)<sp/>;</highlight></codeline>
+<codeline lineno="63" refid="class_gyoto_1_1_metric_1_1_shift_1a89b715508245e2ebb3c315e3089eee8a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/><ref refid="class_gyoto_1_1_metric_1_1_shift_1a89b715508245e2ebb3c315e3089eee8a" kindref="member">offset</ref>()<sp/>const;<sp/></highlight></codeline>
+<codeline lineno="64" refid="class_gyoto_1_1_metric_1_1_shift_1af231c49661d395d19f23654c22f831ae" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_metric_1_1_shift_1a89b715508245e2ebb3c315e3089eee8a" kindref="member">offset</ref>(std::vector&lt;double&gt;<sp/>const&amp;);<sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="class_gyoto_1_1_metric_1_1_shift_1a9bfa851217dc0dc40d9cde54c650a915" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_metric_1_1_generic_1a9ae43ad3fcad9bb2ee21a5d8de104eda" kindref="member">mass</ref>(const<sp/>double);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>using<sp/><ref refid="class_gyoto_1_1_metric_1_1_generic_1a763b7fd883fb049973df233d92264600" kindref="member">Generic::gmunu</ref>;</highlight></codeline>
+<codeline lineno="68" refid="class_gyoto_1_1_metric_1_1_shift_1af299b4291cae77fc9b54da25705e0c77" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_metric_1_1_shift_1a763b7fd883fb049973df233d92264600" kindref="member">gmunu</ref>(double<sp/>ARGOUT_ARRAY2[4][4],<sp/>const<sp/>double<sp/>IN_ARRAY1[4])<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>using<sp/><ref refid="class_gyoto_1_1_metric_1_1_generic_1acdd26facb907606d51ba1e1bb17c3474" kindref="member">Generic::gmunu_up</ref>;</highlight></codeline>
+<codeline lineno="70" refid="class_gyoto_1_1_metric_1_1_shift_1a688bab90f07a9abcf8dc89f48a504bf2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_metric_1_1_shift_1acdd26facb907606d51ba1e1bb17c3474" kindref="member">gmunu_up</ref>(double<sp/>ARGOUT_ARRAY2[4][4],<sp/>const<sp/>double<sp/>IN_ARRAY1[4])<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="71" refid="class_gyoto_1_1_metric_1_1_shift_1ae35d576be6edbde6800c368a44be67f4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_metric_1_1_shift_1ae35d576be6edbde6800c368a44be67f4" kindref="member">jacobian</ref>(double<sp/>ARGOUT_ARRAY3[4][4][4],<sp/>const<sp/>double<sp/>IN_ARRAY1[4])<sp/>const;</highlight></codeline>
+<codeline lineno="72" refid="class_gyoto_1_1_metric_1_1_shift_1aedfe37352b46cb5ca790f9cb8423e163" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>int<sp/><ref refid="class_gyoto_1_1_metric_1_1_shift_1aedfe37352b46cb5ca790f9cb8423e163" kindref="member">isStopCondition</ref>(double<sp/>const<sp/>coord[8])<sp/>const;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifdef<sp/>GYOTO_USE_XERCES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="class_gyoto_1_1_metric_1_1_shift_1a234a2d08bb7918e1bc62e4a710a4df77" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_metric_1_1_shift_1a234a2d08bb7918e1bc62e4a710a4df77" kindref="member">fillProperty</ref>(Gyoto::FactoryMessenger<sp/>*fmp,<sp/>Property<sp/>const<sp/>&amp;p)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="76" refid="class_gyoto_1_1_metric_1_1_shift_1a81a5f0f4f32f5be884a4445f1d1d5b17" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_metric_1_1_shift_1a81a5f0f4f32f5be884a4445f1d1d5b17" kindref="member">setParameters</ref>(FactoryMessenger<sp/>*fmp)<sp/>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="class_gyoto_1_1_metric_1_1_shift_1a14bf173fd9de0ae8cfdf3a8686ef19af" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_metric_1_1_shift_1a14bf173fd9de0ae8cfdf3a8686ef19af" kindref="member">tell</ref>(Gyoto::Hook::Teller<sp/>*msg);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/junichi/Gyoto/include/GyotoShift.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,666 @@
+\hypertarget{_gyoto_property_8h}{}\doxysection{Gyoto\+Property.\+h File Reference}
+\label{_gyoto_property_8h}\index{GyotoProperty.h@{GyotoProperty.h}}
+
+
+Introspectable properties.  
+
+
+{\ttfamily \#include \char`\"{}Gyoto\+Config.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_gyoto_1_1_property}{Gyoto\+::\+Property}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} that can be set and got using standard methods. \end{DoxyCompactList}\item 
+union \mbox{\hyperlink{union_gyoto_1_1_property_1_1setter__t}{Gyoto\+::\+Property\+::setter\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Union holding an accessor to set any type. \end{DoxyCompactList}\item 
+union \mbox{\hyperlink{union_gyoto_1_1_property_1_1getter__t}{Gyoto\+::\+Property\+::getter\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Union holding an accessor to get any type. \end{DoxyCompactList}\item 
+union \mbox{\hyperlink{union_gyoto_1_1_property_1_1setter__unit__t}{Gyoto\+::\+Property\+::setter\+\_\+unit\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Union holding an accessor to set double or vector$<$double$>$ with unit. \end{DoxyCompactList}\item 
+union \mbox{\hyperlink{union_gyoto_1_1_property_1_1getter__unit__t}{Gyoto\+::\+Property\+::getter\+\_\+unit\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Union holding an accessor to get double or vector$<$double$>$ with unit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_gyoto}{Gyoto}}
+\begin{DoxyCompactList}\small\item\em Namespace for the \mbox{\hyperlink{namespace_gyoto}{Gyoto}} library. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Gyoto\+::\+Metric}}
+\begin{DoxyCompactList}\small\item\em Access to metrics. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Gyoto\+::\+Astrobj}}
+\begin{DoxyCompactList}\small\item\em Access to astronomical objects. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Gyoto\+::\+Spectrum}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}} of a simple object (e.\+g. a \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_star}{Gyoto\+::\+Astrobj\+::\+Star}}) \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer}{Gyoto\+::\+Spectrometer}}
+\begin{DoxyCompactList}\small\item\em Access to spectrometers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_gyoto_property_8h_a6aa318befbb20dd50c9bde9eb10158b4}\label{_gyoto_property_8h_a6aa318befbb20dd50c9bde9eb10158b4}} 
+\#define {\bfseries GYOTO\+\_\+\+PLUGIN}
+\item 
+\#define \mbox{\hyperlink{_gyoto_property_8h_ad55047581e6c4c062ef39976eb1be97d}{GYOTO\+\_\+\+PROPERTY\+\_\+\+THREAD\+\_\+\+UNSAFE}}(class)~  bool class\+::is\+Thread\+Safe() const \{return false;\}
+\begin{DoxyCompactList}\small\item\em Define the class as not beeing thread-\/safe. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_property_8h_a988f660aa95584c1ce360cefee775a49}{GYOTO\+\_\+\+PROPERTY\+\_\+\+ACCESSORS}}(class,  type,  member,  method)
+\begin{DoxyCompactList}\small\item\em Define a pair of accessors to scalar member (double, long, size\+\_\+t) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_property_8h_adf5253c067104b9c2b8e0bb542922180}{GYOTO\+\_\+\+PROPERTY\+\_\+\+ACCESSORS\+\_\+\+SPECIAL}}(class,  type,  member,  method,  set,  get)
+\begin{DoxyCompactList}\small\item\em Define a pair of accessors to scalar member (double, long, size\+\_\+t) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_property_8h_a941accbcb60f082c9ff55e3ff61cabf4}{GYOTO\+\_\+\+PROPERTY\+\_\+\+ACCESSORS\+\_\+\+GEOMETRICAL}}(class,  member,  method,  metric)
+\begin{DoxyCompactList}\small\item\em Define 4 accessors to double scalar member in geometrical units. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_property_8h_adb6623ff95d474c364306178d1043558}{GYOTO\+\_\+\+PROPERTY\+\_\+\+ACCESSORS\+\_\+\+GEOMETRICAL\+\_\+\+SPECIAL}}(class,  member,  method,  metric,  set,  get)
+\begin{DoxyCompactList}\small\item\em GYOTO\+\_\+\+PROPERTY\+\_\+\+ACCESSORS\+\_\+\+GEOMETRICAL + GYOTO\+\_\+\+PROPERTY\+\_\+\+ACCESSORS\+\_\+\+SPECIAL. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_property_8h_af0faddc6609e902f8a3980298ca6d20b}{GYOTO\+\_\+\+PROPERTY\+\_\+\+ACCESSORS\+\_\+\+UNIT}}(class,  member,  method,  unit)
+\begin{DoxyCompactList}\small\item\em Define 4 accessors to double scalar member in specified units. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_property_8h_add8e16ed1e17ab2683b08cc330b341d4}{GYOTO\+\_\+\+PROPERTY\+\_\+\+START}}(...)
+\begin{DoxyCompactList}\small\item\em Start Property list. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_property_8h_ac9d7d689f6dc645598a81ec4505566df}{GYOTO\+\_\+\+PROPERTY\+\_\+\+BOOL}}(...)
+\begin{DoxyCompactList}\small\item\em Define a new Property of type bool. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_property_8h_a51b9b6d83536618f8c5c04101168305e}{GYOTO\+\_\+\+PROPERTY\+\_\+\+DOUBLE}}(...)
+\begin{DoxyCompactList}\small\item\em Define a Property of type double. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_property_8h_a10d55318bfccf207220f2adbcd0f00f9}{GYOTO\+\_\+\+PROPERTY\+\_\+\+DOUBLE\+\_\+\+UNIT}}(...)
+\begin{DoxyCompactList}\small\item\em Define a Property of type double with unit. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_property_8h_a93dda6fe102cce2ab1a212919673471c}{GYOTO\+\_\+\+PROPERTY\+\_\+\+VECTOR\+\_\+\+DOUBLE}}(...)
+\begin{DoxyCompactList}\small\item\em Define a Property of type vector$<$double$>$ \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_property_8h_afee341ef4d305f0c2ab3c502bf2f11a5}{GYOTO\+\_\+\+PROPERTY\+\_\+\+VECTOR\+\_\+\+DOUBLE\+\_\+\+UNIT}}(...)
+\begin{DoxyCompactList}\small\item\em Define a Property of type vector$<$double$>$ with unit. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_property_8h_aef1d0a0db62ec26b4c4d5026a374c468}{GYOTO\+\_\+\+PROPERTY\+\_\+\+STRING}}(...)
+\begin{DoxyCompactList}\small\item\em Define a Property of type String. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_property_8h_a15c7191f98151a42e241bcab0688f89a}{GYOTO\+\_\+\+PROPERTY\+\_\+\+FILENAME}}(...)
+\begin{DoxyCompactList}\small\item\em Define a Property of type Filename. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_property_8h_a1d76d0c83fdfbde84b66e5a3bbaa35f6}{GYOTO\+\_\+\+PROPERTY\+\_\+\+LONG}}(...)
+\begin{DoxyCompactList}\small\item\em Define a Property of type long. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_property_8h_aca1f21d44168f8c9d0c30644b3785e9e}{GYOTO\+\_\+\+PROPERTY\+\_\+\+UNSIGNED\+\_\+\+LONG}}(...)
+\begin{DoxyCompactList}\small\item\em Define a Property of type unsigned long. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_property_8h_a250f06ca284f2051db94fb2261e015bd}{GYOTO\+\_\+\+PROPERTY\+\_\+\+VECTOR\+\_\+\+UNSIGNED\+\_\+\+LONG}}(...)
+\begin{DoxyCompactList}\small\item\em Define a Property of type vector$<$unsigned long$>$ \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_property_8h_a63fbef357d49b36a1b91b4e111505e71}{GYOTO\+\_\+\+PROPERTY\+\_\+\+SIZE\+\_\+T}}(...)
+\begin{DoxyCompactList}\small\item\em Define a Property of type size\+\_\+t. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_property_8h_a37725a62fbd22ad1c7cc9f8761262774}{GYOTO\+\_\+\+PROPERTY\+\_\+\+METRIC}}(...)
+\begin{DoxyCompactList}\small\item\em Define a Property of type \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Gyoto\+::\+Metric\+::\+Generic}}. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_property_8h_a3e144c41ba2b37be4f981f0aedee7480}{GYOTO\+\_\+\+PROPERTY\+\_\+\+SPECTRUM}}(...)
+\begin{DoxyCompactList}\small\item\em Define a Property of type \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_generic}{Gyoto\+::\+Spectrum\+::\+Generic}}. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_property_8h_a13b6886c3edc42335c40fe44b070184c}{GYOTO\+\_\+\+PROPERTY\+\_\+\+ASTROBJ}}(...)
+\begin{DoxyCompactList}\small\item\em Define a Property of type \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic}{Gyoto\+::\+Astrobj\+::\+Generic}}. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_property_8h_a678522f21614980995c53d49c314a48c}{GYOTO\+\_\+\+PROPERTY\+\_\+\+SCREEN}}(...)
+\begin{DoxyCompactList}\small\item\em Define a Property of type \mbox{\hyperlink{class_gyoto_1_1_screen}{Gyoto\+::\+Screen}}. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_property_8h_a9dbed4301797442973a9c6730de3a3a7}{GYOTO\+\_\+\+PROPERTY\+\_\+\+SPECTROMETER}}(...)
+\begin{DoxyCompactList}\small\item\em Define a Property of type \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic}{Gyoto\+::\+Spectrometer\+::\+Generic}}. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_property_8h_a1356435ea7ee0e18d07201a80e034dcc}{GYOTO\+\_\+\+PROPERTY\+\_\+\+END}}(class,  next)
+\begin{DoxyCompactList}\small\item\em Define class\+::properties and class\+::get\+Properties() \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Introspectable properties. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_gyoto_property_8h_a988f660aa95584c1ce360cefee775a49}\label{_gyoto_property_8h_a988f660aa95584c1ce360cefee775a49}} 
+\index{GyotoProperty.h@{GyotoProperty.h}!GYOTO\_PROPERTY\_ACCESSORS@{GYOTO\_PROPERTY\_ACCESSORS}}
+\index{GYOTO\_PROPERTY\_ACCESSORS@{GYOTO\_PROPERTY\_ACCESSORS}!GyotoProperty.h@{GyotoProperty.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_PROPERTY\_ACCESSORS}{GYOTO\_PROPERTY\_ACCESSORS}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+PROPERTY\+\_\+\+ACCESSORS(\begin{DoxyParamCaption}\item[{}]{class,  }\item[{}]{type,  }\item[{}]{member,  }\item[{}]{method }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keywordtype}{void} class::method(type v) \{member=v;\}                                \(\backslash\)}
+\DoxyCodeLine{  type class::method()\textcolor{keyword}{ const }\{\textcolor{keywordflow}{return} member;\}}
+
+\end{DoxyCode}
+
+
+Define a pair of accessors to scalar member (double, long, size\+\_\+t) 
+
+Accessors must also be declared in the class declaration, which can be done using \#\+GYOTO\+\_\+\+OBJECT\+\_\+\+SCALAR\+\_\+\+ACCESSORS. \mbox{\Hypertarget{_gyoto_property_8h_a941accbcb60f082c9ff55e3ff61cabf4}\label{_gyoto_property_8h_a941accbcb60f082c9ff55e3ff61cabf4}} 
+\index{GyotoProperty.h@{GyotoProperty.h}!GYOTO\_PROPERTY\_ACCESSORS\_GEOMETRICAL@{GYOTO\_PROPERTY\_ACCESSORS\_GEOMETRICAL}}
+\index{GYOTO\_PROPERTY\_ACCESSORS\_GEOMETRICAL@{GYOTO\_PROPERTY\_ACCESSORS\_GEOMETRICAL}!GyotoProperty.h@{GyotoProperty.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_PROPERTY\_ACCESSORS\_GEOMETRICAL}{GYOTO\_PROPERTY\_ACCESSORS\_GEOMETRICAL}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+PROPERTY\+\_\+\+ACCESSORS\+\_\+\+GEOMETRICAL(\begin{DoxyParamCaption}\item[{}]{class,  }\item[{}]{member,  }\item[{}]{method,  }\item[{}]{metric }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \mbox{\hyperlink{_gyoto_property_8h_a988f660aa95584c1ce360cefee775a49}{GYOTO\_PROPERTY\_ACCESSORS}}(\textcolor{keyword}{class}, \textcolor{keywordtype}{double}, member, method)               \(\backslash\)}
+\DoxyCodeLine{  void class::method(\textcolor{keywordtype}{double} v, std::string \textcolor{keyword}{const} \&u) \{                  \(\backslash\)}
+\DoxyCodeLine{    member=\mbox{\hyperlink{namespace_gyoto_1_1_units_a1f7dcca7f30de2b52aa1c682d62454ff}{Units::ToGeometrical}}(v, u, metric);                              \(\backslash\)}
+\DoxyCodeLine{  \}                                                                     \(\backslash\)}
+\DoxyCodeLine{  double class::method(std::string \textcolor{keyword}{const} \&u)\textcolor{keyword}{ const }\{                    \(\backslash\)}
+\DoxyCodeLine{    return \mbox{\hyperlink{namespace_gyoto_1_1_units_a4c3c4a6f2720c630900a843c0aba12cb}{Units::FromGeometrical}}(member, u, metric);                     \(\backslash\)}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+
+
+Define 4 accessors to double scalar member in geometrical units. 
+
+Accessors must also be declared in the class declaration, which can be done using \mbox{\hyperlink{_gyoto_object_8h_a81a17d29a5cdd84b65b37066f9fd8e21}{GYOTO\+\_\+\+OBJECT\+\_\+\+ACCESSORS\+\_\+\+UNIT}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em class} & class name \\
+\hline
+{\em member} & member holding the value in geometrical unit \\
+\hline
+{\em method} & name for accessors \textbackslash{}metric member or expression yielding metric (which defines the geometrical unit) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_gyoto_property_8h_adb6623ff95d474c364306178d1043558}\label{_gyoto_property_8h_adb6623ff95d474c364306178d1043558}} 
+\index{GyotoProperty.h@{GyotoProperty.h}!GYOTO\_PROPERTY\_ACCESSORS\_GEOMETRICAL\_SPECIAL@{GYOTO\_PROPERTY\_ACCESSORS\_GEOMETRICAL\_SPECIAL}}
+\index{GYOTO\_PROPERTY\_ACCESSORS\_GEOMETRICAL\_SPECIAL@{GYOTO\_PROPERTY\_ACCESSORS\_GEOMETRICAL\_SPECIAL}!GyotoProperty.h@{GyotoProperty.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_PROPERTY\_ACCESSORS\_GEOMETRICAL\_SPECIAL}{GYOTO\_PROPERTY\_ACCESSORS\_GEOMETRICAL\_SPECIAL}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+PROPERTY\+\_\+\+ACCESSORS\+\_\+\+GEOMETRICAL\+\_\+\+SPECIAL(\begin{DoxyParamCaption}\item[{}]{class,  }\item[{}]{member,  }\item[{}]{method,  }\item[{}]{metric,  }\item[{}]{set,  }\item[{}]{get }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \mbox{\hyperlink{_gyoto_property_8h_adf5253c067104b9c2b8e0bb542922180}{GYOTO\_PROPERTY\_ACCESSORS\_SPECIAL}}(\textcolor{keyword}{class}, \textcolor{keywordtype}{double}, member, method, \textcolor{keyword}{set}, \textcolor{keyword}{get})             \(\backslash\)}
+\DoxyCodeLine{  void class::method(\textcolor{keywordtype}{double} v, std::string \textcolor{keyword}{const} \&u) \{                  \(\backslash\)}
+\DoxyCodeLine{    member=\mbox{\hyperlink{namespace_gyoto_1_1_units_a1f7dcca7f30de2b52aa1c682d62454ff}{Units::ToGeometrical}}(v, u, metric);                              \(\backslash\)}
+\DoxyCodeLine{  \}                                                                     \(\backslash\)}
+\DoxyCodeLine{  double class::method(std::string \textcolor{keyword}{const} \&u)\textcolor{keyword}{ const }\{                    \(\backslash\)}
+\DoxyCodeLine{    return \mbox{\hyperlink{namespace_gyoto_1_1_units_a4c3c4a6f2720c630900a843c0aba12cb}{Units::FromGeometrical}}(member, u, metric);                     \(\backslash\)}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+
+
+GYOTO\+\_\+\+PROPERTY\+\_\+\+ACCESSORS\+\_\+\+GEOMETRICAL + GYOTO\+\_\+\+PROPERTY\+\_\+\+ACCESSORS\+\_\+\+SPECIAL. 
+
+Accessors must also be declared in the class declaration, which can be done using \mbox{\hyperlink{_gyoto_object_8h_a81a17d29a5cdd84b65b37066f9fd8e21}{GYOTO\+\_\+\+OBJECT\+\_\+\+ACCESSORS\+\_\+\+UNIT}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em class} & class name \\
+\hline
+{\em member} & member holding the value in geometrical unit \\
+\hline
+{\em method} & name for accessors \textbackslash{}metric member or expression yielding metric (which defines the geometrical unit) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_gyoto_property_8h_adf5253c067104b9c2b8e0bb542922180}\label{_gyoto_property_8h_adf5253c067104b9c2b8e0bb542922180}} 
+\index{GyotoProperty.h@{GyotoProperty.h}!GYOTO\_PROPERTY\_ACCESSORS\_SPECIAL@{GYOTO\_PROPERTY\_ACCESSORS\_SPECIAL}}
+\index{GYOTO\_PROPERTY\_ACCESSORS\_SPECIAL@{GYOTO\_PROPERTY\_ACCESSORS\_SPECIAL}!GyotoProperty.h@{GyotoProperty.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_PROPERTY\_ACCESSORS\_SPECIAL}{GYOTO\_PROPERTY\_ACCESSORS\_SPECIAL}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+PROPERTY\+\_\+\+ACCESSORS\+\_\+\+SPECIAL(\begin{DoxyParamCaption}\item[{}]{class,  }\item[{}]{type,  }\item[{}]{member,  }\item[{}]{method,  }\item[{}]{set,  }\item[{}]{get }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keywordtype}{void} class::method(type v) \{member=v; \textcolor{keyword}{set} \}                           \(\backslash\)}
+\DoxyCodeLine{  type class::method()\textcolor{keyword}{ const }\{get ; \textcolor{keywordflow}{return} member;\}}
+
+\end{DoxyCode}
+
+
+Define a pair of accessors to scalar member (double, long, size\+\_\+t) 
+
+Accessors must also be declared in the class declaration, which can be done using \#\+GYOTO\+\_\+\+OBJECT\+\_\+\+SCALAR\+\_\+\+ACCESSORS.
+
+This version allows performing sepcial actions in the accessors, in addition to the usual stuff. \mbox{\Hypertarget{_gyoto_property_8h_af0faddc6609e902f8a3980298ca6d20b}\label{_gyoto_property_8h_af0faddc6609e902f8a3980298ca6d20b}} 
+\index{GyotoProperty.h@{GyotoProperty.h}!GYOTO\_PROPERTY\_ACCESSORS\_UNIT@{GYOTO\_PROPERTY\_ACCESSORS\_UNIT}}
+\index{GYOTO\_PROPERTY\_ACCESSORS\_UNIT@{GYOTO\_PROPERTY\_ACCESSORS\_UNIT}!GyotoProperty.h@{GyotoProperty.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_PROPERTY\_ACCESSORS\_UNIT}{GYOTO\_PROPERTY\_ACCESSORS\_UNIT}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+PROPERTY\+\_\+\+ACCESSORS\+\_\+\+UNIT(\begin{DoxyParamCaption}\item[{}]{class,  }\item[{}]{member,  }\item[{}]{method,  }\item[{}]{unit }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \mbox{\hyperlink{_gyoto_property_8h_a988f660aa95584c1ce360cefee775a49}{GYOTO\_PROPERTY\_ACCESSORS}}(\textcolor{keyword}{class}, \textcolor{keywordtype}{double}, member, method)               \(\backslash\)}
+\DoxyCodeLine{  void class::method(\textcolor{keywordtype}{double} v, std::string \textcolor{keyword}{const} \&u) \{                  \(\backslash\)}
+\DoxyCodeLine{    method(Units::Converter(u, unit)(v));                               \(\backslash\)}
+\DoxyCodeLine{  \}                                                                     \(\backslash\)}
+\DoxyCodeLine{  double class::method(std::string \textcolor{keyword}{const} \&u)\textcolor{keyword}{ const }\{                    \(\backslash\)}
+\DoxyCodeLine{    return Units::Converter(unit, u)(method());                         \(\backslash\)}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+
+
+Define 4 accessors to double scalar member in specified units. 
+
+Accessors must also be declared in the class declaration, which can be done using \mbox{\hyperlink{_gyoto_object_8h_a81a17d29a5cdd84b65b37066f9fd8e21}{GYOTO\+\_\+\+OBJECT\+\_\+\+ACCESSORS\+\_\+\+UNIT}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em class} & class name \\
+\hline
+{\em member} & member holding the value in specified unit \\
+\hline
+{\em method} & name for accessors \textbackslash{}unit unit \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_gyoto_property_8h_a13b6886c3edc42335c40fe44b070184c}\label{_gyoto_property_8h_a13b6886c3edc42335c40fe44b070184c}} 
+\index{GyotoProperty.h@{GyotoProperty.h}!GYOTO\_PROPERTY\_ASTROBJ@{GYOTO\_PROPERTY\_ASTROBJ}}
+\index{GYOTO\_PROPERTY\_ASTROBJ@{GYOTO\_PROPERTY\_ASTROBJ}!GyotoProperty.h@{GyotoProperty.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_PROPERTY\_ASTROBJ}{GYOTO\_PROPERTY\_ASTROBJ}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+PROPERTY\+\_\+\+ASTROBJ(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  GYOTO\_PROPERTY\_CHOOSER(,\#\#\_\_VA\_ARGS\_\_,                                \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_6,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_5,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_ASTROBJ\_DOC(\_\_VA\_ARGS\_\_),       \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_ASTROBJ\_NODOC(\_\_VA\_ARGS\_\_), \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_2,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_1,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_0                                \(\backslash\)}
+\DoxyCodeLine{                         )}
+
+\end{DoxyCode}
+
+
+Define a Property of type \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic}{Gyoto\+::\+Astrobj\+::\+Generic}}. 
+
+\mbox{\Hypertarget{_gyoto_property_8h_ac9d7d689f6dc645598a81ec4505566df}\label{_gyoto_property_8h_ac9d7d689f6dc645598a81ec4505566df}} 
+\index{GyotoProperty.h@{GyotoProperty.h}!GYOTO\_PROPERTY\_BOOL@{GYOTO\_PROPERTY\_BOOL}}
+\index{GYOTO\_PROPERTY\_BOOL@{GYOTO\_PROPERTY\_BOOL}!GyotoProperty.h@{GyotoProperty.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_PROPERTY\_BOOL}{GYOTO\_PROPERTY\_BOOL}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+PROPERTY\+\_\+\+BOOL(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  GYOTO\_PROPERTY\_CHOOSER(,\#\#\_\_VA\_ARGS\_\_,                                \(\backslash\)}
+\DoxyCodeLine{                         \textcolor{stringliteral}{"{}wrong number of arguments"{}},                   \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_BOOL\_DOC(\_\_VA\_ARGS\_\_),          \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_BOOL\_NODOC(\_\_VA\_ARGS\_\_),        \(\backslash\)}
+\DoxyCodeLine{                         \textcolor{stringliteral}{"{}wrong number of arguments"{}},                   \(\backslash\)}
+\DoxyCodeLine{                         \textcolor{stringliteral}{"{}wrong number of arguments"{}},                   \(\backslash\)}
+\DoxyCodeLine{                         \textcolor{stringliteral}{"{}wrong number of arguments"{}},                   \(\backslash\)}
+\DoxyCodeLine{                         \textcolor{stringliteral}{"{}wrong number of arguments"{}}                    \(\backslash\)}
+\DoxyCodeLine{                         )}
+
+\end{DoxyCode}
+
+
+Define a new Property of type bool. 
+
+\mbox{\Hypertarget{_gyoto_property_8h_a51b9b6d83536618f8c5c04101168305e}\label{_gyoto_property_8h_a51b9b6d83536618f8c5c04101168305e}} 
+\index{GyotoProperty.h@{GyotoProperty.h}!GYOTO\_PROPERTY\_DOUBLE@{GYOTO\_PROPERTY\_DOUBLE}}
+\index{GYOTO\_PROPERTY\_DOUBLE@{GYOTO\_PROPERTY\_DOUBLE}!GyotoProperty.h@{GyotoProperty.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_PROPERTY\_DOUBLE}{GYOTO\_PROPERTY\_DOUBLE}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+PROPERTY\+\_\+\+DOUBLE(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  GYOTO\_PROPERTY\_CHOOSER(,\#\#\_\_VA\_ARGS\_\_,                                \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_6,                       \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_5,                       \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_DOUBLE\_DOC(\_\_VA\_ARGS\_\_),        \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_DOUBLE\_NODOC(\_\_VA\_ARGS\_\_),      \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_2,                       \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_1,                       \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_0                        \(\backslash\)}
+\DoxyCodeLine{                         )}
+
+\end{DoxyCode}
+
+
+Define a Property of type double. 
+
+\mbox{\Hypertarget{_gyoto_property_8h_a10d55318bfccf207220f2adbcd0f00f9}\label{_gyoto_property_8h_a10d55318bfccf207220f2adbcd0f00f9}} 
+\index{GyotoProperty.h@{GyotoProperty.h}!GYOTO\_PROPERTY\_DOUBLE\_UNIT@{GYOTO\_PROPERTY\_DOUBLE\_UNIT}}
+\index{GYOTO\_PROPERTY\_DOUBLE\_UNIT@{GYOTO\_PROPERTY\_DOUBLE\_UNIT}!GyotoProperty.h@{GyotoProperty.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_PROPERTY\_DOUBLE\_UNIT}{GYOTO\_PROPERTY\_DOUBLE\_UNIT}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+PROPERTY\+\_\+\+DOUBLE\+\_\+\+UNIT(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  GYOTO\_PROPERTY\_CHOOSER(,\#\#\_\_VA\_ARGS\_\_,                                \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_6,                       \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_5,                       \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_DOUBLE\_UNIT\_DOC(\_\_VA\_ARGS\_\_),   \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_DOUBLE\_UNIT\_NODOC(\_\_VA\_ARGS\_\_), \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_2,                       \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_1,                       \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_0                        \(\backslash\)}
+\DoxyCodeLine{                         )}
+
+\end{DoxyCode}
+
+
+Define a Property of type double with unit. 
+
+\mbox{\Hypertarget{_gyoto_property_8h_a1356435ea7ee0e18d07201a80e034dcc}\label{_gyoto_property_8h_a1356435ea7ee0e18d07201a80e034dcc}} 
+\index{GyotoProperty.h@{GyotoProperty.h}!GYOTO\_PROPERTY\_END@{GYOTO\_PROPERTY\_END}}
+\index{GYOTO\_PROPERTY\_END@{GYOTO\_PROPERTY\_END}!GyotoProperty.h@{GyotoProperty.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_PROPERTY\_END}{GYOTO\_PROPERTY\_END}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+PROPERTY\+\_\+\+END(\begin{DoxyParamCaption}\item[{}]{class,  }\item[{}]{next }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  Property(next)\};                                                      \(\backslash\)}
+\DoxyCodeLine{  Gyoto::Property \textcolor{keyword}{const} * class::getProperties()\textcolor{keyword}{ const }\{                \(\backslash\)}
+\DoxyCodeLine{    return class::properties;                                           \(\backslash\)}
+\DoxyCodeLine{  \}                                                                     \(\backslash\)}
+\DoxyCodeLine{  const std::string class::builtinPluginValue ( \mbox{\hyperlink{_gyoto_defs_8h_a2349d4f82e46b37392a9a0fbb72b2dbd}{GYOTO\_STRINGIFY}}(GYOTO\_PLUGIN) ); \(\backslash\)}
+\DoxyCodeLine{  std::vector<std::string> class::plugins()\textcolor{keyword}{ const }\{                     \(\backslash\)}
+\DoxyCodeLine{    if (plugins\_.size() == 0) \{                                         \(\backslash\)}
+\DoxyCodeLine{      std::vector<std::string> p;                                       \(\backslash\)}
+\DoxyCodeLine{      p.push\_back(class::builtinPluginValue);                           \(\backslash\)}
+\DoxyCodeLine{      return p;                                 \(\backslash\)}
+\DoxyCodeLine{    \}                                                                   \(\backslash\)}
+\DoxyCodeLine{    return plugins\_;                                                    \(\backslash\)}
+\DoxyCodeLine{  \}                                                                     \(\backslash\)}
+\DoxyCodeLine{  void  class::plugins(std::vector<std::string> \textcolor{keyword}{const} \& plugname) \{     \(\backslash\)}
+\DoxyCodeLine{    plugins\_=plugname;                                                  \(\backslash\)}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+
+
+Define class\+::properties and class\+::get\+Properties() 
+
+\mbox{\Hypertarget{_gyoto_property_8h_a15c7191f98151a42e241bcab0688f89a}\label{_gyoto_property_8h_a15c7191f98151a42e241bcab0688f89a}} 
+\index{GyotoProperty.h@{GyotoProperty.h}!GYOTO\_PROPERTY\_FILENAME@{GYOTO\_PROPERTY\_FILENAME}}
+\index{GYOTO\_PROPERTY\_FILENAME@{GYOTO\_PROPERTY\_FILENAME}!GyotoProperty.h@{GyotoProperty.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_PROPERTY\_FILENAME}{GYOTO\_PROPERTY\_FILENAME}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+PROPERTY\+\_\+\+FILENAME(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  GYOTO\_PROPERTY\_CHOOSER(,\#\#\_\_VA\_ARGS\_\_,                                \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_6,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_5,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_FILENAME\_DOC(\_\_VA\_ARGS\_\_),      \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_FILENAME\_NODOC(\_\_VA\_ARGS\_\_),    \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_2,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_1,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_0                                \(\backslash\)}
+\DoxyCodeLine{                         )}
+
+\end{DoxyCode}
+
+
+Define a Property of type Filename. 
+
+\mbox{\Hypertarget{_gyoto_property_8h_a1d76d0c83fdfbde84b66e5a3bbaa35f6}\label{_gyoto_property_8h_a1d76d0c83fdfbde84b66e5a3bbaa35f6}} 
+\index{GyotoProperty.h@{GyotoProperty.h}!GYOTO\_PROPERTY\_LONG@{GYOTO\_PROPERTY\_LONG}}
+\index{GYOTO\_PROPERTY\_LONG@{GYOTO\_PROPERTY\_LONG}!GyotoProperty.h@{GyotoProperty.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_PROPERTY\_LONG}{GYOTO\_PROPERTY\_LONG}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+PROPERTY\+\_\+\+LONG(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  GYOTO\_PROPERTY\_CHOOSER(,\#\#\_\_VA\_ARGS\_\_,                                \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_6,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_5,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_LONG\_DOC(\_\_VA\_ARGS\_\_),  \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_LONG\_NODOC(\_\_VA\_ARGS\_\_), \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_2,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_1,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_0                                \(\backslash\)}
+\DoxyCodeLine{                         )}
+
+\end{DoxyCode}
+
+
+Define a Property of type long. 
+
+\mbox{\Hypertarget{_gyoto_property_8h_a37725a62fbd22ad1c7cc9f8761262774}\label{_gyoto_property_8h_a37725a62fbd22ad1c7cc9f8761262774}} 
+\index{GyotoProperty.h@{GyotoProperty.h}!GYOTO\_PROPERTY\_METRIC@{GYOTO\_PROPERTY\_METRIC}}
+\index{GYOTO\_PROPERTY\_METRIC@{GYOTO\_PROPERTY\_METRIC}!GyotoProperty.h@{GyotoProperty.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_PROPERTY\_METRIC}{GYOTO\_PROPERTY\_METRIC}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+PROPERTY\+\_\+\+METRIC(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  GYOTO\_PROPERTY\_CHOOSER(,\#\#\_\_VA\_ARGS\_\_,                                \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_6,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_5,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_METRIC\_DOC(\_\_VA\_ARGS\_\_),        \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_METRIC\_NODOC(\_\_VA\_ARGS\_\_), \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_2,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_1,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_0                                \(\backslash\)}
+\DoxyCodeLine{                         )}
+
+\end{DoxyCode}
+
+
+Define a Property of type \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Gyoto\+::\+Metric\+::\+Generic}}. 
+
+\mbox{\Hypertarget{_gyoto_property_8h_a678522f21614980995c53d49c314a48c}\label{_gyoto_property_8h_a678522f21614980995c53d49c314a48c}} 
+\index{GyotoProperty.h@{GyotoProperty.h}!GYOTO\_PROPERTY\_SCREEN@{GYOTO\_PROPERTY\_SCREEN}}
+\index{GYOTO\_PROPERTY\_SCREEN@{GYOTO\_PROPERTY\_SCREEN}!GyotoProperty.h@{GyotoProperty.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_PROPERTY\_SCREEN}{GYOTO\_PROPERTY\_SCREEN}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+PROPERTY\+\_\+\+SCREEN(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  GYOTO\_PROPERTY\_CHOOSER(,\#\#\_\_VA\_ARGS\_\_,                                \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_6,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_5,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_SCREEN\_DOC(\_\_VA\_ARGS\_\_),        \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_SCREEN\_NODOC(\_\_VA\_ARGS\_\_), \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_2,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_1,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_0                                \(\backslash\)}
+\DoxyCodeLine{                         )}
+
+\end{DoxyCode}
+
+
+Define a Property of type \mbox{\hyperlink{class_gyoto_1_1_screen}{Gyoto\+::\+Screen}}. 
+
+\mbox{\Hypertarget{_gyoto_property_8h_a63fbef357d49b36a1b91b4e111505e71}\label{_gyoto_property_8h_a63fbef357d49b36a1b91b4e111505e71}} 
+\index{GyotoProperty.h@{GyotoProperty.h}!GYOTO\_PROPERTY\_SIZE\_T@{GYOTO\_PROPERTY\_SIZE\_T}}
+\index{GYOTO\_PROPERTY\_SIZE\_T@{GYOTO\_PROPERTY\_SIZE\_T}!GyotoProperty.h@{GyotoProperty.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_PROPERTY\_SIZE\_T}{GYOTO\_PROPERTY\_SIZE\_T}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+PROPERTY\+\_\+\+SIZE\+\_\+T(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  GYOTO\_PROPERTY\_CHOOSER(,\#\#\_\_VA\_ARGS\_\_,                                \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_6,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_5,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_SIZE\_T\_DOC(\_\_VA\_ARGS\_\_),        \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_SIZE\_T\_NODOC(\_\_VA\_ARGS\_\_), \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_2,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_1,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_0                                \(\backslash\)}
+\DoxyCodeLine{                         )}
+
+\end{DoxyCode}
+
+
+Define a Property of type size\+\_\+t. 
+
+\mbox{\Hypertarget{_gyoto_property_8h_a9dbed4301797442973a9c6730de3a3a7}\label{_gyoto_property_8h_a9dbed4301797442973a9c6730de3a3a7}} 
+\index{GyotoProperty.h@{GyotoProperty.h}!GYOTO\_PROPERTY\_SPECTROMETER@{GYOTO\_PROPERTY\_SPECTROMETER}}
+\index{GYOTO\_PROPERTY\_SPECTROMETER@{GYOTO\_PROPERTY\_SPECTROMETER}!GyotoProperty.h@{GyotoProperty.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_PROPERTY\_SPECTROMETER}{GYOTO\_PROPERTY\_SPECTROMETER}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+PROPERTY\+\_\+\+SPECTROMETER(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  GYOTO\_PROPERTY\_CHOOSER(,\#\#\_\_VA\_ARGS\_\_,                                \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_6,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_5,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_SPECTROMETER\_DOC(\_\_VA\_ARGS\_\_),  \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_SPECTROMETER\_NODOC(\_\_VA\_ARGS\_\_), \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_2,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_1,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_0                                \(\backslash\)}
+\DoxyCodeLine{                         )}
+
+\end{DoxyCode}
+
+
+Define a Property of type \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic}{Gyoto\+::\+Spectrometer\+::\+Generic}}. 
+
+\mbox{\Hypertarget{_gyoto_property_8h_a3e144c41ba2b37be4f981f0aedee7480}\label{_gyoto_property_8h_a3e144c41ba2b37be4f981f0aedee7480}} 
+\index{GyotoProperty.h@{GyotoProperty.h}!GYOTO\_PROPERTY\_SPECTRUM@{GYOTO\_PROPERTY\_SPECTRUM}}
+\index{GYOTO\_PROPERTY\_SPECTRUM@{GYOTO\_PROPERTY\_SPECTRUM}!GyotoProperty.h@{GyotoProperty.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_PROPERTY\_SPECTRUM}{GYOTO\_PROPERTY\_SPECTRUM}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+PROPERTY\+\_\+\+SPECTRUM(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  GYOTO\_PROPERTY\_CHOOSER(,\#\#\_\_VA\_ARGS\_\_,                                \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_6,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_5,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_SPECTRUM\_DOC(\_\_VA\_ARGS\_\_),      \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_SPECTRUM\_NODOC(\_\_VA\_ARGS\_\_), \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_2,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_1,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_0                                \(\backslash\)}
+\DoxyCodeLine{                         )}
+
+\end{DoxyCode}
+
+
+Define a Property of type \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_generic}{Gyoto\+::\+Spectrum\+::\+Generic}}. 
+
+\mbox{\Hypertarget{_gyoto_property_8h_add8e16ed1e17ab2683b08cc330b341d4}\label{_gyoto_property_8h_add8e16ed1e17ab2683b08cc330b341d4}} 
+\index{GyotoProperty.h@{GyotoProperty.h}!GYOTO\_PROPERTY\_START@{GYOTO\_PROPERTY\_START}}
+\index{GYOTO\_PROPERTY\_START@{GYOTO\_PROPERTY\_START}!GyotoProperty.h@{GyotoProperty.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_PROPERTY\_START}{GYOTO\_PROPERTY\_START}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+PROPERTY\+\_\+\+START(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  GYOTO\_PROPERTY\_CHOOSER(,\#\#\_\_VA\_ARGS\_\_,                                \(\backslash\)}
+\DoxyCodeLine{                         \textcolor{stringliteral}{"{}wrong number of arguments"{}},                   \(\backslash\)}
+\DoxyCodeLine{                         \textcolor{stringliteral}{"{}wrong number of arguments"{}},                   \(\backslash\)}
+\DoxyCodeLine{                         \textcolor{stringliteral}{"{}wrong number of arguments"{}},                   \(\backslash\)}
+\DoxyCodeLine{                         \textcolor{stringliteral}{"{}wrong number of arguments"{}},                   \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_START\_DOC(\_\_VA\_ARGS\_\_),         \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_START\_NODOC(\_\_VA\_ARGS\_\_),       \(\backslash\)}
+\DoxyCodeLine{                         \textcolor{stringliteral}{"{}wrong number of arguments"{}}                    \(\backslash\)}
+\DoxyCodeLine{                         )}
+
+\end{DoxyCode}
+
+
+Start Property list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em class} & Class for which we are defining a Property list \\
+\hline
+{\em doc} & Documentation for this class. Optional but recommended. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_gyoto_property_8h_aef1d0a0db62ec26b4c4d5026a374c468}\label{_gyoto_property_8h_aef1d0a0db62ec26b4c4d5026a374c468}} 
+\index{GyotoProperty.h@{GyotoProperty.h}!GYOTO\_PROPERTY\_STRING@{GYOTO\_PROPERTY\_STRING}}
+\index{GYOTO\_PROPERTY\_STRING@{GYOTO\_PROPERTY\_STRING}!GyotoProperty.h@{GyotoProperty.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_PROPERTY\_STRING}{GYOTO\_PROPERTY\_STRING}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+PROPERTY\+\_\+\+STRING(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  GYOTO\_PROPERTY\_CHOOSER(,\#\#\_\_VA\_ARGS\_\_,                                \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_6,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_5,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_STRING\_DOC(\_\_VA\_ARGS\_\_),        \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_STRING\_NODOC(\_\_VA\_ARGS\_\_),      \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_2,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_1,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_0                                \(\backslash\)}
+\DoxyCodeLine{                         )}
+
+\end{DoxyCode}
+
+
+Define a Property of type String. 
+
+\mbox{\Hypertarget{_gyoto_property_8h_ad55047581e6c4c062ef39976eb1be97d}\label{_gyoto_property_8h_ad55047581e6c4c062ef39976eb1be97d}} 
+\index{GyotoProperty.h@{GyotoProperty.h}!GYOTO\_PROPERTY\_THREAD\_UNSAFE@{GYOTO\_PROPERTY\_THREAD\_UNSAFE}}
+\index{GYOTO\_PROPERTY\_THREAD\_UNSAFE@{GYOTO\_PROPERTY\_THREAD\_UNSAFE}!GyotoProperty.h@{GyotoProperty.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_PROPERTY\_THREAD\_UNSAFE}{GYOTO\_PROPERTY\_THREAD\_UNSAFE}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+PROPERTY\+\_\+\+THREAD\+\_\+\+UNSAFE(\begin{DoxyParamCaption}\item[{}]{class }\end{DoxyParamCaption})~  bool class\+::is\+Thread\+Safe() const \{return false;\}}
+
+
+
+Define the class as not beeing thread-\/safe. 
+
+See also GYOTO\+\_\+\+OBJECT\+\_\+\+THREAD\+\_\+\+SAFETY \mbox{\Hypertarget{_gyoto_property_8h_aca1f21d44168f8c9d0c30644b3785e9e}\label{_gyoto_property_8h_aca1f21d44168f8c9d0c30644b3785e9e}} 
+\index{GyotoProperty.h@{GyotoProperty.h}!GYOTO\_PROPERTY\_UNSIGNED\_LONG@{GYOTO\_PROPERTY\_UNSIGNED\_LONG}}
+\index{GYOTO\_PROPERTY\_UNSIGNED\_LONG@{GYOTO\_PROPERTY\_UNSIGNED\_LONG}!GyotoProperty.h@{GyotoProperty.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_PROPERTY\_UNSIGNED\_LONG}{GYOTO\_PROPERTY\_UNSIGNED\_LONG}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+PROPERTY\+\_\+\+UNSIGNED\+\_\+\+LONG(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  GYOTO\_PROPERTY\_CHOOSER(,\#\#\_\_VA\_ARGS\_\_,                                \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_6,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_5,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_UNSIGNED\_LONG\_DOC(\_\_VA\_ARGS\_\_), \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_UNSIGNED\_LONG\_NODOC(\_\_VA\_ARGS\_\_), \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_2,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_1,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_0                                \(\backslash\)}
+\DoxyCodeLine{                         )}
+
+\end{DoxyCode}
+
+
+Define a Property of type unsigned long. 
+
+\mbox{\Hypertarget{_gyoto_property_8h_a93dda6fe102cce2ab1a212919673471c}\label{_gyoto_property_8h_a93dda6fe102cce2ab1a212919673471c}} 
+\index{GyotoProperty.h@{GyotoProperty.h}!GYOTO\_PROPERTY\_VECTOR\_DOUBLE@{GYOTO\_PROPERTY\_VECTOR\_DOUBLE}}
+\index{GYOTO\_PROPERTY\_VECTOR\_DOUBLE@{GYOTO\_PROPERTY\_VECTOR\_DOUBLE}!GyotoProperty.h@{GyotoProperty.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_PROPERTY\_VECTOR\_DOUBLE}{GYOTO\_PROPERTY\_VECTOR\_DOUBLE}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+PROPERTY\+\_\+\+VECTOR\+\_\+\+DOUBLE(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  GYOTO\_PROPERTY\_CHOOSER(,\#\#\_\_VA\_ARGS\_\_,                                \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_6,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_5,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_VECTOR\_DOUBLE\_DOC(\_\_VA\_ARGS\_\_), \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_VECTOR\_DOUBLE\_NODOC(\_\_VA\_ARGS\_\_), \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_2,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_1,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_0                                \(\backslash\)}
+\DoxyCodeLine{                         )}
+
+\end{DoxyCode}
+
+
+Define a Property of type vector$<$double$>$ 
+
+\mbox{\Hypertarget{_gyoto_property_8h_afee341ef4d305f0c2ab3c502bf2f11a5}\label{_gyoto_property_8h_afee341ef4d305f0c2ab3c502bf2f11a5}} 
+\index{GyotoProperty.h@{GyotoProperty.h}!GYOTO\_PROPERTY\_VECTOR\_DOUBLE\_UNIT@{GYOTO\_PROPERTY\_VECTOR\_DOUBLE\_UNIT}}
+\index{GYOTO\_PROPERTY\_VECTOR\_DOUBLE\_UNIT@{GYOTO\_PROPERTY\_VECTOR\_DOUBLE\_UNIT}!GyotoProperty.h@{GyotoProperty.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_PROPERTY\_VECTOR\_DOUBLE\_UNIT}{GYOTO\_PROPERTY\_VECTOR\_DOUBLE\_UNIT}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+PROPERTY\+\_\+\+VECTOR\+\_\+\+DOUBLE\+\_\+\+UNIT(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  GYOTO\_PROPERTY\_CHOOSER(,\#\#\_\_VA\_ARGS\_\_,                                \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_6,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_5,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_VECTOR\_DOUBLE\_UNIT\_DOC(\_\_VA\_ARGS\_\_), \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_VECTOR\_DOUBLE\_UNIT\_NODOC(\_\_VA\_ARGS\_\_), \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_2,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_1,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_0                                \(\backslash\)}
+\DoxyCodeLine{                         )}
+
+\end{DoxyCode}
+
+
+Define a Property of type vector$<$double$>$ with unit. 
+
+\mbox{\Hypertarget{_gyoto_property_8h_a250f06ca284f2051db94fb2261e015bd}\label{_gyoto_property_8h_a250f06ca284f2051db94fb2261e015bd}} 
+\index{GyotoProperty.h@{GyotoProperty.h}!GYOTO\_PROPERTY\_VECTOR\_UNSIGNED\_LONG@{GYOTO\_PROPERTY\_VECTOR\_UNSIGNED\_LONG}}
+\index{GYOTO\_PROPERTY\_VECTOR\_UNSIGNED\_LONG@{GYOTO\_PROPERTY\_VECTOR\_UNSIGNED\_LONG}!GyotoProperty.h@{GyotoProperty.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_PROPERTY\_VECTOR\_UNSIGNED\_LONG}{GYOTO\_PROPERTY\_VECTOR\_UNSIGNED\_LONG}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+PROPERTY\+\_\+\+VECTOR\+\_\+\+UNSIGNED\+\_\+\+LONG(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  GYOTO\_PROPERTY\_CHOOSER(,\#\#\_\_VA\_ARGS\_\_,                                \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_6,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_5,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_VECTOR\_UNSIGNED\_LONG\_DOC(\_\_VA\_ARGS\_\_), \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_PROPERTY\_VECTOR\_UNSIGNED\_LONG\_NODOC(\_\_VA\_ARGS\_\_), \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_2,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_1,                               \(\backslash\)}
+\DoxyCodeLine{                         GYOTO\_NOTHING\_0                                \(\backslash\)}
+\DoxyCodeLine{                         )}
+
+\end{DoxyCode}
+
+
+Define a Property of type vector$<$unsigned long$>$ 
+

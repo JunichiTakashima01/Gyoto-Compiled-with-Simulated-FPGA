@@ -1,0 +1,342 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_gyoto_1_1_astrobj_1_1_polish_doughnut_1_1intersection__t" kind="class" language="C++" prot="private">
+    <compoundname>Gyoto::Astrobj::PolishDoughnut::intersection_t</compoundname>
+    <basecompoundref refid="class_gyoto_1_1_functor_1_1_double___double__const" prot="public" virt="non-virtual">Gyoto::Functor::Double_Double_const</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_astrobj_1_1_polish_doughnut_1_1intersection__t_1a2865d7030b864ee7dcd92538489090a0" prot="public" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_astrobj_1_1_polish_doughnut" kindref="compound">PolishDoughnut</ref> *</type>
+        <definition>PolishDoughnut* Gyoto::Astrobj::PolishDoughnut::intersection_t::papa</definition>
+        <argsstring></argsstring>
+        <name>papa</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoPolishDoughnut.h" line="242" column="21" bodyfile="/home/junichi/Gyoto/include/GyotoPolishDoughnut.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_functor_1_1_double___double__const_1a1cec50c19b669404da1365354f31ec23" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gyoto::Functor::Double_Double_const::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+<para>Exit status code of &quot;various&quot; methods (at least <ref refid="class_gyoto_1_1_functor_1_1_double___double__const_1a6063638089204e028c693db3e41f3361" kindref="member">secant()</ref> !) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFunctors.h" line="64" column="7" bodyfile="/home/junichi/Gyoto/include/GyotoFunctors.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gyoto_1_1_astrobj_1_1_polish_doughnut_1_1intersection__t_1a0f5377b14e4dbaabc9b34a91ef139bf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Astrobj::PolishDoughnut::intersection_t::intersection_t</definition>
+        <argsstring>(PolishDoughnut *parent)</argsstring>
+        <name>intersection_t</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_astrobj_1_1_polish_doughnut" kindref="compound">PolishDoughnut</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoPolishDoughnut.h" line="241" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_astrobj_1_1_polish_doughnut_1_1intersection__t_1af19882fd4f6249c8dbfcd0fa69967b7c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double Gyoto::Astrobj::PolishDoughnut::intersection_t::operator()</definition>
+        <argsstring>(double) const</argsstring>
+        <name>operator()</name>
+        <reimplements refid="class_gyoto_1_1_functor_1_1_double___double__const_1a04c5a5b9446dfa5c71fdcd91cae9ae27">operator()</reimplements>
+        <param>
+          <type>double</type>
+        </param>
+        <briefdescription>
+<para>The actual function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoPolishDoughnut.h" line="243" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_functor_1_1_double___double__const_1a3322b1d8670ec7cb80962e1a680b6dd2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Functor::Double_Double_const::ridders</definition>
+        <argsstring>(double from, double to) const</argsstring>
+        <name>ridders</name>
+        <param>
+          <type>double</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+<para>Ridder&apos;s root-finding method applied on <ref refid="class_gyoto_1_1_functor_1_1_double___double__const_1a04c5a5b9446dfa5c71fdcd91cae9ae27" kindref="member">operator()()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>from</parametername>
+<parametername>to</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>boundaries for root-searching </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the root </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFunctors.h" line="76" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_functor_1_1_double___double__const_1a6063638089204e028c693db3e41f3361" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Functor::Double_Double_const::secant</definition>
+        <argsstring>(double from, double to)</argsstring>
+        <name>secant</name>
+        <param>
+          <type>double</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+<para>Secant root-finding method applied on <ref refid="class_gyoto_1_1_functor_1_1_double___double__const_1a04c5a5b9446dfa5c71fdcd91cae9ae27" kindref="member">operator()()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets status to -0 in case of convergence -1 if two distinct inputs evaluated to the same output -2 if maximum number of iterations (20) reached</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>from</parametername>
+<parametername>to</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>boundaries for root-finding </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the root </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFunctors.h" line="89" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>double intersection(double) <ref refid="namespace_gyoto_1_1_functor" kindref="compound">Functor</ref> class </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Implement former double intersection(double) function as a <ref refid="class_gyoto_1_1_functor_1_1_double___double__const" kindref="compound">Gyoto::Functor::Double_Double_const</ref> subclass to access generic root-finding methods.</para>
+<para>This class is instantiated in a single <ref refid="class_gyoto_1_1_astrobj_1_1_polish_doughnut_1aca787d2b9df0fd95c5004050a82215d4" kindref="member">PolishDoughnut::intersection</ref> member. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Gyoto::Functor::Double_Double_const</label>
+        <link refid="class_gyoto_1_1_functor_1_1_double___double__const"/>
+      </node>
+      <node id="1">
+        <label>Gyoto::Astrobj::PolishDoughnut::intersection_t</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_polish_doughnut_1_1intersection__t"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8">
+        <label>Gyoto::Property</label>
+        <link refid="class_gyoto_1_1_property"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>getter_unit</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>getter</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>setter</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>setter_unit</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Gyoto::Astrobj::PolishDoughnut</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_polish_doughnut"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="19" relation="protected-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>intersection</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>properties</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>spectrumPLSynch_</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>spectrumSynch_</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Spectrum::ThermalSynchrotron &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="14">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Astrobj::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="20">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Spectrum::PowerLawSynchrotron &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="4">
+        <label>Gyoto::Astrobj::Standard</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_standard"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>properties</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Screen &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="18">
+        <label>Gyoto::Functor::Double_constDoubleArray</label>
+        <link refid="class_gyoto_1_1_functor_1_1_double__const_double_array"/>
+      </node>
+      <node id="5">
+        <label>Gyoto::Astrobj::Generic</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_generic"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>properties</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Spectrometer::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="7">
+        <label>Gyoto::Object</label>
+        <link refid="class_gyoto_1_1_object"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>properties</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gyoto::Functor::Double_Double_const</label>
+        <link refid="class_gyoto_1_1_functor_1_1_double___double__const"/>
+      </node>
+      <node id="12">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Metric::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="6">
+        <label>Gyoto::SmartPointee</label>
+        <link refid="class_gyoto_1_1_smart_pointee"/>
+      </node>
+      <node id="16">
+        <label>Gyoto::Property::setter_t</label>
+        <link refid="union_gyoto_1_1_property_1_1setter__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>set_spectrometer</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>set_metric</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>set_spectrum</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>set_astrobj</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>set_screen</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>Gyoto::Property::setter_unit_t</label>
+        <link refid="union_gyoto_1_1_property_1_1setter__unit__t"/>
+      </node>
+      <node id="13">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Spectrum::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="19">
+        <label>Gyoto::Hook::Listener</label>
+        <link refid="class_gyoto_1_1_hook_1_1_listener"/>
+      </node>
+      <node id="9">
+        <label>Gyoto::Property::getter_unit_t</label>
+        <link refid="union_gyoto_1_1_property_1_1getter__unit__t"/>
+      </node>
+      <node id="10">
+        <label>Gyoto::Property::getter_t</label>
+        <link refid="union_gyoto_1_1_property_1_1getter__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>get_spectrometer</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>get_metric</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>get_spectrum</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>get_astrobj</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>get_screen</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gyoto::Astrobj::PolishDoughnut::intersection_t</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_polish_doughnut_1_1intersection__t"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>papa</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/junichi/Gyoto/include/GyotoPolishDoughnut.h" line="239" column="3" bodyfile="/home/junichi/Gyoto/include/GyotoPolishDoughnut.h" bodystart="239" bodyend="244"/>
+    <listofallmembers>
+      <member refid="class_gyoto_1_1_astrobj_1_1_polish_doughnut_1_1intersection__t_1a0f5377b14e4dbaabc9b34a91ef139bf7" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::PolishDoughnut::intersection_t</scope><name>intersection_t</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_polish_doughnut_1_1intersection__t_1af19882fd4f6249c8dbfcd0fa69967b7c" prot="public" virt="virtual"><scope>Gyoto::Astrobj::PolishDoughnut::intersection_t</scope><name>operator()</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_polish_doughnut_1_1intersection__t_1a2865d7030b864ee7dcd92538489090a0" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::PolishDoughnut::intersection_t</scope><name>papa</name></member>
+      <member refid="class_gyoto_1_1_functor_1_1_double___double__const_1a3322b1d8670ec7cb80962e1a680b6dd2" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::PolishDoughnut::intersection_t</scope><name>ridders</name></member>
+      <member refid="class_gyoto_1_1_functor_1_1_double___double__const_1a6063638089204e028c693db3e41f3361" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::PolishDoughnut::intersection_t</scope><name>secant</name></member>
+      <member refid="class_gyoto_1_1_functor_1_1_double___double__const_1a1cec50c19b669404da1365354f31ec23" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::PolishDoughnut::intersection_t</scope><name>status</name></member>
+      <member refid="class_gyoto_1_1_functor_1_1_double___double__const_1a96c373ea9e09d7c98c3466f0ad8a5998" prot="public" virt="virtual"><scope>Gyoto::Astrobj::PolishDoughnut::intersection_t</scope><name>~Double_Double_const</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

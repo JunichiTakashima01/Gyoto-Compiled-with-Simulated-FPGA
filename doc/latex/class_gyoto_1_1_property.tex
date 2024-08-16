@@ -1,0 +1,478 @@
+\hypertarget{class_gyoto_1_1_property}{}\doxysection{Gyoto\+::Property Class Reference}
+\label{class_gyoto_1_1_property}\index{Gyoto::Property@{Gyoto::Property}}
+
+
+\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} that can be set and got using standard methods.  
+
+
+
+
+{\ttfamily \#include $<$Gyoto\+Property.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+union \mbox{\hyperlink{union_gyoto_1_1_property_1_1getter__t}{getter\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Union holding an accessor to get any type. \end{DoxyCompactList}\item 
+union \mbox{\hyperlink{union_gyoto_1_1_property_1_1getter__unit__t}{getter\+\_\+unit\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Union holding an accessor to get double or vector$<$double$>$ with unit. \end{DoxyCompactList}\item 
+union \mbox{\hyperlink{union_gyoto_1_1_property_1_1setter__t}{setter\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Union holding an accessor to set any type. \end{DoxyCompactList}\item 
+union \mbox{\hyperlink{union_gyoto_1_1_property_1_1setter__unit__t}{setter\+\_\+unit\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Union holding an accessor to set double or vector$<$double$>$ with unit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8}{type\+\_\+e}} \{ \newline
+\mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a21bcd45c33da137a4b77c8a9ddd702a4}{double\+\_\+t}}
+, \mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8af759331168118226d7d9f75039af3b53}{long\+\_\+t}}
+, \mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8ae4fe84d124f4b25ad28120c0057b480f}{unsigned\+\_\+long\+\_\+t}}
+, \mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a1c61b7632afa3d4a1d31577492f8ddca}{size\+\_\+t\+\_\+t}}
+, \newline
+\mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a3d18c8ea6df62e32e0b77bd235b94c19}{bool\+\_\+t}}
+, \mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8aa393ef1ba7e2505b14d66fb5f2e3313c}{string\+\_\+t}}
+, \mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a7773049749e0b6f0d83e531f838220a7}{filename\+\_\+t}}
+, \mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8afd29824380cd698c96d000782f18a27c}{vector\+\_\+double\+\_\+t}}
+, \newline
+\mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a1c71c8ba20a5c8b519c3afb56b1c6dd2}{vector\+\_\+unsigned\+\_\+long\+\_\+t}}
+, \mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a3b5e845fdb6455c0e111a42882798948}{metric\+\_\+t}}
+, \mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8ae7bb28c4049603af389dc4be0a4093f7}{screen\+\_\+t}}
+, \mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a59a216803f694032f224e3fc770a9371}{astrobj\+\_\+t}}
+, \newline
+\mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a95d36a0c8134e93cc7e868415c368352}{spectrum\+\_\+t}}
+, \mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a7aed2532777a1a9643f989a987a0ce90}{spectrometer\+\_\+t}}
+, \mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a83a494e6387163d77fcf7ce5b7eeea63}{empty\+\_\+t}}
+ \}
+\begin{DoxyCompactList}\small\item\em Possible type of a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a5c3fdfa4811f9eaf9fe5828d0d815597}\label{class_gyoto_1_1_property_a5c3fdfa4811f9eaf9fe5828d0d815597}} 
+typedef void(Object\+::$\ast$ \mbox{\hyperlink{class_gyoto_1_1_property_a5c3fdfa4811f9eaf9fe5828d0d815597}{set\+\_\+double\+\_\+t}}) (double val)
+\begin{DoxyCompactList}\small\item\em Prototype for an accessor to set a double. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_ad854709d822b4632f7bd064186dd5fb1}\label{class_gyoto_1_1_property_ad854709d822b4632f7bd064186dd5fb1}} 
+typedef double(Object\+::$\ast$ \mbox{\hyperlink{class_gyoto_1_1_property_ad854709d822b4632f7bd064186dd5fb1}{get\+\_\+double\+\_\+t}}) () const
+\begin{DoxyCompactList}\small\item\em Prototype for an accessor to get a double. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_aae17d2fbb039384f629147cede1893ab}\label{class_gyoto_1_1_property_aae17d2fbb039384f629147cede1893ab}} 
+typedef void(Object\+::$\ast$ \mbox{\hyperlink{class_gyoto_1_1_property_aae17d2fbb039384f629147cede1893ab}{set\+\_\+double\+\_\+unit\+\_\+t}}) (double val, std\+::string const \&unit)
+\begin{DoxyCompactList}\small\item\em Prototype for an accessor to set a double, with unit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a5a4eb097d38ff966434d234c0644ead5}\label{class_gyoto_1_1_property_a5a4eb097d38ff966434d234c0644ead5}} 
+typedef double(Object\+::$\ast$ \mbox{\hyperlink{class_gyoto_1_1_property_a5a4eb097d38ff966434d234c0644ead5}{get\+\_\+double\+\_\+unit\+\_\+t}}) (std\+::string const \&unit) const
+\begin{DoxyCompactList}\small\item\em Prototype for an accessor to get a double, with unit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a033a73c9f62804556ea9e0b8eb8938ad}\label{class_gyoto_1_1_property_a033a73c9f62804556ea9e0b8eb8938ad}} 
+typedef void(Object\+::$\ast$ \mbox{\hyperlink{class_gyoto_1_1_property_a033a73c9f62804556ea9e0b8eb8938ad}{set\+\_\+long\+\_\+t}}) (long val)
+\begin{DoxyCompactList}\small\item\em Prototype for an accessor to set a long. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a5d9c0b407ba5bf130d42361fe0e7f591}\label{class_gyoto_1_1_property_a5d9c0b407ba5bf130d42361fe0e7f591}} 
+typedef long(Object\+::$\ast$ \mbox{\hyperlink{class_gyoto_1_1_property_a5d9c0b407ba5bf130d42361fe0e7f591}{get\+\_\+long\+\_\+t}}) () const
+\begin{DoxyCompactList}\small\item\em Prototype for an accessor to get a long. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a7481266392c38fcf885d62dc0aab5f91}\label{class_gyoto_1_1_property_a7481266392c38fcf885d62dc0aab5f91}} 
+typedef void(Object\+::$\ast$ \mbox{\hyperlink{class_gyoto_1_1_property_a7481266392c38fcf885d62dc0aab5f91}{set\+\_\+unsigned\+\_\+long\+\_\+t}}) (unsigned long val)
+\begin{DoxyCompactList}\small\item\em Prototype for an accessor to set an unsigned long. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a41dc17eaba50912281a412a199e9a7c5}\label{class_gyoto_1_1_property_a41dc17eaba50912281a412a199e9a7c5}} 
+typedef unsigned long(Object\+::$\ast$ \mbox{\hyperlink{class_gyoto_1_1_property_a41dc17eaba50912281a412a199e9a7c5}{get\+\_\+unsigned\+\_\+long\+\_\+t}}) () const
+\begin{DoxyCompactList}\small\item\em Prototype for an accessor to get an unsigned long. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a03c8b8bc711939093c2d633bc65f48ad}\label{class_gyoto_1_1_property_a03c8b8bc711939093c2d633bc65f48ad}} 
+typedef void(Object\+::$\ast$ \mbox{\hyperlink{class_gyoto_1_1_property_a03c8b8bc711939093c2d633bc65f48ad}{set\+\_\+size\+\_\+t\+\_\+t}}) (\mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} val)
+\begin{DoxyCompactList}\small\item\em Prototype for an accessor to set a size\+\_\+t. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a22d8c10540d31a01ae052e57fb8a995a}\label{class_gyoto_1_1_property_a22d8c10540d31a01ae052e57fb8a995a}} 
+typedef \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}}(Object\+::$\ast$ \mbox{\hyperlink{class_gyoto_1_1_property_a22d8c10540d31a01ae052e57fb8a995a}{get\+\_\+size\+\_\+t\+\_\+t}}) () const
+\begin{DoxyCompactList}\small\item\em Prototype for an accessor to get a size\+\_\+t. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_acd02ae8c14ca8ba4b834a4c3cdc8fd25}\label{class_gyoto_1_1_property_acd02ae8c14ca8ba4b834a4c3cdc8fd25}} 
+typedef void(Object\+::$\ast$ \mbox{\hyperlink{class_gyoto_1_1_property_acd02ae8c14ca8ba4b834a4c3cdc8fd25}{set\+\_\+bool\+\_\+t}}) (bool val)
+\begin{DoxyCompactList}\small\item\em Prototype for an accessor to set a bool. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a74fef635abe872b8b2e00c43bef33cf4}\label{class_gyoto_1_1_property_a74fef635abe872b8b2e00c43bef33cf4}} 
+typedef bool(Object\+::$\ast$ \mbox{\hyperlink{class_gyoto_1_1_property_a74fef635abe872b8b2e00c43bef33cf4}{get\+\_\+bool\+\_\+t}}) () const
+\begin{DoxyCompactList}\small\item\em Prototype for an accessor to get a bool. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a7d54792987694733c75c606220fc5b39}\label{class_gyoto_1_1_property_a7d54792987694733c75c606220fc5b39}} 
+typedef void(Object\+::$\ast$ \mbox{\hyperlink{class_gyoto_1_1_property_a7d54792987694733c75c606220fc5b39}{set\+\_\+string\+\_\+t}}) (std\+::string const \&)
+\begin{DoxyCompactList}\small\item\em Prototype for an accessor to set a string. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a2823f77a3ac869395543027ea0beb4c4}\label{class_gyoto_1_1_property_a2823f77a3ac869395543027ea0beb4c4}} 
+typedef std\+::string(Object\+::$\ast$ \mbox{\hyperlink{class_gyoto_1_1_property_a2823f77a3ac869395543027ea0beb4c4}{get\+\_\+string\+\_\+t}}) () const
+\begin{DoxyCompactList}\small\item\em Prototype for an accessor to get a string. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_aa3218d6311332999fd888aaf9dda0b86}\label{class_gyoto_1_1_property_aa3218d6311332999fd888aaf9dda0b86}} 
+typedef void(Object\+::$\ast$ \mbox{\hyperlink{class_gyoto_1_1_property_aa3218d6311332999fd888aaf9dda0b86}{set\+\_\+fname\+\_\+t}}) (std\+::string const \&)
+\begin{DoxyCompactList}\small\item\em Prototype for an accessor to set a filename. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_ac4d4e980b1e442a6cf63dc77d04e8535}\label{class_gyoto_1_1_property_ac4d4e980b1e442a6cf63dc77d04e8535}} 
+typedef std\+::string(Object\+::$\ast$ \mbox{\hyperlink{class_gyoto_1_1_property_ac4d4e980b1e442a6cf63dc77d04e8535}{get\+\_\+fname\+\_\+t}}) () const
+\begin{DoxyCompactList}\small\item\em Prototype for an accessor to get a filename. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a46d660c155e7a23fef6a7e93915172a1}\label{class_gyoto_1_1_property_a46d660c155e7a23fef6a7e93915172a1}} 
+typedef void(Object\+::$\ast$ \mbox{\hyperlink{class_gyoto_1_1_property_a46d660c155e7a23fef6a7e93915172a1}{set\+\_\+vector\+\_\+double\+\_\+t}}) (std\+::vector$<$ double $>$ const \&)
+\begin{DoxyCompactList}\small\item\em Prototype for an accessor to set a std\+::vector$<$double$>$ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a18be13807a1a1b6d7553e3f648f9cc55}\label{class_gyoto_1_1_property_a18be13807a1a1b6d7553e3f648f9cc55}} 
+typedef std\+::vector$<$ double $>$(Object\+::$\ast$ \mbox{\hyperlink{class_gyoto_1_1_property_a18be13807a1a1b6d7553e3f648f9cc55}{get\+\_\+vector\+\_\+double\+\_\+t}}) () const
+\begin{DoxyCompactList}\small\item\em Prototype for an accessor to get a std\+::vector$<$double$>$ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a4b5c3882a6912e9c94ea126942678c5d}\label{class_gyoto_1_1_property_a4b5c3882a6912e9c94ea126942678c5d}} 
+typedef void(Object\+::$\ast$ \mbox{\hyperlink{class_gyoto_1_1_property_a4b5c3882a6912e9c94ea126942678c5d}{set\+\_\+vector\+\_\+double\+\_\+unit\+\_\+t}}) (std\+::vector$<$ double $>$ const \&, std\+::string const \&)
+\begin{DoxyCompactList}\small\item\em Prototype for an accessor to set a std\+::vector$<$double$>$, with unit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_ac25061aa8b5b41e0f7152a9d4c20371c}\label{class_gyoto_1_1_property_ac25061aa8b5b41e0f7152a9d4c20371c}} 
+typedef std\+::vector$<$ double $>$(Object\+::$\ast$ \mbox{\hyperlink{class_gyoto_1_1_property_ac25061aa8b5b41e0f7152a9d4c20371c}{get\+\_\+vector\+\_\+double\+\_\+unit\+\_\+t}}) (std\+::string const \&) const
+\begin{DoxyCompactList}\small\item\em Prototype for an accessor to get a std\+::vector$<$double$>$, with unit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_afb2774eec368e0416261a36e5ccc4822}\label{class_gyoto_1_1_property_afb2774eec368e0416261a36e5ccc4822}} 
+typedef void(Object\+::$\ast$ \mbox{\hyperlink{class_gyoto_1_1_property_afb2774eec368e0416261a36e5ccc4822}{set\+\_\+vector\+\_\+unsigned\+\_\+long\+\_\+t}}) (std\+::vector$<$ unsigned long $>$ const \&)
+\begin{DoxyCompactList}\small\item\em Prototype for an accessor to set a std\+::vector$<$unsigned long$>$ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_aae4677e1c06a55dca87f23de9eadbfdb}\label{class_gyoto_1_1_property_aae4677e1c06a55dca87f23de9eadbfdb}} 
+typedef std\+::vector$<$ unsigned long $>$(Object\+::$\ast$ \mbox{\hyperlink{class_gyoto_1_1_property_aae4677e1c06a55dca87f23de9eadbfdb}{get\+\_\+vector\+\_\+unsigned\+\_\+long\+\_\+t}}) () const
+\begin{DoxyCompactList}\small\item\em Prototype for an accessor to get a std\+::vector$<$unsigned long$>$ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a0f446869148ce30d77175916b7b340cb}\label{class_gyoto_1_1_property_a0f446869148ce30d77175916b7b340cb}} 
+typedef void(Object\+::$\ast$ \mbox{\hyperlink{class_gyoto_1_1_property_a0f446869148ce30d77175916b7b340cb}{set\+\_\+metric\+\_\+t}}) (\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Gyoto\+::\+Metric\+::\+Generic}} $>$)
+\begin{DoxyCompactList}\small\item\em Prototype for an accessor to set a Gyoto\+::\+Smart\+Pointer$<$\+Gyoto\+::\+Metric\+::\+Generic$>$ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a7f9c1be62e0ebc676ad36cc73203c00e}\label{class_gyoto_1_1_property_a7f9c1be62e0ebc676ad36cc73203c00e}} 
+typedef \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Gyoto\+::\+Metric\+::\+Generic}} $>$(Object\+::$\ast$ \mbox{\hyperlink{class_gyoto_1_1_property_a7f9c1be62e0ebc676ad36cc73203c00e}{get\+\_\+metric\+\_\+t}}) () const
+\begin{DoxyCompactList}\small\item\em Prototype for an accessor to get a Gyoto\+::\+Smart\+Pointer$<$\+Gyoto\+::\+Metric\+::\+Generic$>$ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a8c2f6452533d0b746bddb7b92d12c847}\label{class_gyoto_1_1_property_a8c2f6452533d0b746bddb7b92d12c847}} 
+typedef void(Object\+::$\ast$ \mbox{\hyperlink{class_gyoto_1_1_property_a8c2f6452533d0b746bddb7b92d12c847}{set\+\_\+screen\+\_\+t}}) (\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_screen}{Gyoto\+::\+Screen}} $>$)
+\begin{DoxyCompactList}\small\item\em Prototype for an accessor to set a Gyoto\+::\+Smart\+Pointer$<$\+Gyoto\+::\+Screen$>$ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_afe2c14913230c30e2df7f366de6e7457}\label{class_gyoto_1_1_property_afe2c14913230c30e2df7f366de6e7457}} 
+typedef \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_screen}{Gyoto\+::\+Screen}} $>$(Object\+::$\ast$ \mbox{\hyperlink{class_gyoto_1_1_property_afe2c14913230c30e2df7f366de6e7457}{get\+\_\+screen\+\_\+t}}) () const
+\begin{DoxyCompactList}\small\item\em Prototype for an accessor to get a Gyoto\+::\+Smart\+Pointer$<$\+Gyoto\+::\+Screen$>$ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_af8351d896ce1a89f4cb808912bca0076}\label{class_gyoto_1_1_property_af8351d896ce1a89f4cb808912bca0076}} 
+typedef void(Object\+::$\ast$ \mbox{\hyperlink{class_gyoto_1_1_property_af8351d896ce1a89f4cb808912bca0076}{set\+\_\+astrobj\+\_\+t}}) (\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic}{Gyoto\+::\+Astrobj\+::\+Generic}} $>$)
+\begin{DoxyCompactList}\small\item\em Prototype for an accessor to set a Gyoto\+::\+Smart\+Pointer$<$\+Gyoto\+::\+Astrobj\+::\+Generic$>$ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a9bb4c4ca39e6d6975483846e15d97975}\label{class_gyoto_1_1_property_a9bb4c4ca39e6d6975483846e15d97975}} 
+typedef \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic}{Gyoto\+::\+Astrobj\+::\+Generic}} $>$(Object\+::$\ast$ \mbox{\hyperlink{class_gyoto_1_1_property_a9bb4c4ca39e6d6975483846e15d97975}{get\+\_\+astrobj\+\_\+t}}) () const
+\begin{DoxyCompactList}\small\item\em Prototype for an accessor to get a Gyoto\+::\+Smart\+Pointer$<$\+Gyoto\+::\+Astrobj\+::\+Generic$>$ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a44a66ea9027bf30b6b9285bb82f18554}\label{class_gyoto_1_1_property_a44a66ea9027bf30b6b9285bb82f18554}} 
+typedef void(Object\+::$\ast$ \mbox{\hyperlink{class_gyoto_1_1_property_a44a66ea9027bf30b6b9285bb82f18554}{set\+\_\+spectrum\+\_\+t}}) (\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_generic}{Gyoto\+::\+Spectrum\+::\+Generic}} $>$)
+\begin{DoxyCompactList}\small\item\em Prototype for an accessor to set a Gyoto\+::\+Smart\+Pointer$<$\+Gyoto\+::\+Spectrum\+::\+Generic$>$ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a2e3c810e812271bf46da370a745add0e}\label{class_gyoto_1_1_property_a2e3c810e812271bf46da370a745add0e}} 
+typedef \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_generic}{Gyoto\+::\+Spectrum\+::\+Generic}} $>$(Object\+::$\ast$ \mbox{\hyperlink{class_gyoto_1_1_property_a2e3c810e812271bf46da370a745add0e}{get\+\_\+spectrum\+\_\+t}}) () const
+\begin{DoxyCompactList}\small\item\em Prototype for an accessor to get a Gyoto\+::\+Smart\+Pointer$<$\+Gyoto\+::\+Spectrum\+::\+Generic$>$ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a1a5f0ac8dd4289760def476217a4a87d}\label{class_gyoto_1_1_property_a1a5f0ac8dd4289760def476217a4a87d}} 
+typedef void(Object\+::$\ast$ \mbox{\hyperlink{class_gyoto_1_1_property_a1a5f0ac8dd4289760def476217a4a87d}{set\+\_\+spectrometer\+\_\+t}}) (\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic}{Gyoto\+::\+Spectrometer\+::\+Generic}} $>$)
+\begin{DoxyCompactList}\small\item\em Prototype for an accessor to set a Gyoto\+::\+Smart\+Pointer$<$\+Gyoto\+::\+Spectrometer\+::\+Generic$>$ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a631de3c593b0a8b01aae8e5dee92b75c}\label{class_gyoto_1_1_property_a631de3c593b0a8b01aae8e5dee92b75c}} 
+typedef \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic}{Gyoto\+::\+Spectrometer\+::\+Generic}} $>$(Object\+::$\ast$ \mbox{\hyperlink{class_gyoto_1_1_property_a631de3c593b0a8b01aae8e5dee92b75c}{get\+\_\+spectrometer\+\_\+t}}) () const
+\begin{DoxyCompactList}\small\item\em Prototype for an accessor to get a Gyoto\+::\+Smart\+Pointer$<$\+Gyoto\+::\+Spectrometer\+::\+Generic$>$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a06b087b61281f000525ae04559e4dddf}\label{class_gyoto_1_1_property_a06b087b61281f000525ae04559e4dddf}} 
+\mbox{\hyperlink{class_gyoto_1_1_property_a06b087b61281f000525ae04559e4dddf}{operator bool}} () const
+\begin{DoxyCompactList}\small\item\em True if \mbox{\hyperlink{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}{Gyoto\+::\+Property\+::type}} is not \mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a83a494e6387163d77fcf7ce5b7eeea63}{Gyoto\+::\+Property\+::empty\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a1fbc7dea56d2c4bf72a65ce3d7cf6c56}\label{class_gyoto_1_1_property_a1fbc7dea56d2c4bf72a65ce3d7cf6c56}} 
+\mbox{\hyperlink{class_gyoto_1_1_property_a1fbc7dea56d2c4bf72a65ce3d7cf6c56}{Property}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a50717acd7e38282f56ab23bcb6e068ce}\label{class_gyoto_1_1_property_a50717acd7e38282f56ab23bcb6e068ce}} 
+\mbox{\hyperlink{class_gyoto_1_1_property_a50717acd7e38282f56ab23bcb6e068ce}{Property}} (\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const $\ast$const ancestor)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}{type}}==\mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a83a494e6387163d77fcf7ce5b7eeea63}{empty\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a6b604f25cc4be3caff0d3ffe6c21152d}\label{class_gyoto_1_1_property_a6b604f25cc4be3caff0d3ffe6c21152d}} 
+\mbox{\hyperlink{class_gyoto_1_1_property_a6b604f25cc4be3caff0d3ffe6c21152d}{Property}} (std\+::string classname, std\+::string doc=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructor for class name pseudo-\/property. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a905e01d47854d497c00dbf3ea917733f}\label{class_gyoto_1_1_property_a905e01d47854d497c00dbf3ea917733f}} 
+\mbox{\hyperlink{class_gyoto_1_1_property_a905e01d47854d497c00dbf3ea917733f}{Property}} (std\+::string \mbox{\hyperlink{class_gyoto_1_1_property_ab0b88c41cd7307a0d78dc1be29a235d8}{name}}, \mbox{\hyperlink{class_gyoto_1_1_property_a033a73c9f62804556ea9e0b8eb8938ad}{set\+\_\+long\+\_\+t}} set\+\_\+long, \mbox{\hyperlink{class_gyoto_1_1_property_a5d9c0b407ba5bf130d42361fe0e7f591}{get\+\_\+long\+\_\+t}} get\+\_\+long, std\+::string doc)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}{type}}==\mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8af759331168118226d7d9f75039af3b53}{long\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_af3c8f352bb18befd06cc6a4cc97c276b}\label{class_gyoto_1_1_property_af3c8f352bb18befd06cc6a4cc97c276b}} 
+\mbox{\hyperlink{class_gyoto_1_1_property_af3c8f352bb18befd06cc6a4cc97c276b}{Property}} (std\+::string \mbox{\hyperlink{class_gyoto_1_1_property_ab0b88c41cd7307a0d78dc1be29a235d8}{name}}, \mbox{\hyperlink{class_gyoto_1_1_property_a7481266392c38fcf885d62dc0aab5f91}{set\+\_\+unsigned\+\_\+long\+\_\+t}} set\+\_\+unsigned\+\_\+long, \mbox{\hyperlink{class_gyoto_1_1_property_a41dc17eaba50912281a412a199e9a7c5}{get\+\_\+unsigned\+\_\+long\+\_\+t}} get\+\_\+unsigned\+\_\+long, std\+::string doc)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}{type}}==\mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8ae4fe84d124f4b25ad28120c0057b480f}{unsigned\+\_\+long\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gyoto_1_1_property_aec010dca485d4fece3d42f3da7f35e73}{Property}} (std\+::string \mbox{\hyperlink{class_gyoto_1_1_property_ab0b88c41cd7307a0d78dc1be29a235d8}{name}}, \mbox{\hyperlink{class_gyoto_1_1_property_a03c8b8bc711939093c2d633bc65f48ad}{set\+\_\+size\+\_\+t\+\_\+t}} set\+\_\+size\+\_\+t, \mbox{\hyperlink{class_gyoto_1_1_property_a22d8c10540d31a01ae052e57fb8a995a}{get\+\_\+size\+\_\+t\+\_\+t}} get\+\_\+size\+\_\+t, int dummy, std\+::string doc)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}{type}}==\mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a1c61b7632afa3d4a1d31577492f8ddca}{size\+\_\+t\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_ac8e6be690dc000f6d094ba41f37109f7}\label{class_gyoto_1_1_property_ac8e6be690dc000f6d094ba41f37109f7}} 
+\mbox{\hyperlink{class_gyoto_1_1_property_ac8e6be690dc000f6d094ba41f37109f7}{Property}} (std\+::string \mbox{\hyperlink{class_gyoto_1_1_property_ab0b88c41cd7307a0d78dc1be29a235d8}{name}}, \mbox{\hyperlink{class_gyoto_1_1_property_a5c3fdfa4811f9eaf9fe5828d0d815597}{set\+\_\+double\+\_\+t}} set\+\_\+double, \mbox{\hyperlink{class_gyoto_1_1_property_ad854709d822b4632f7bd064186dd5fb1}{get\+\_\+double\+\_\+t}} get\+\_\+double, std\+::string doc)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}{type}}==\mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a21bcd45c33da137a4b77c8a9ddd702a4}{double\+\_\+t}}, without unit support. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a7db91fcb5c464a315b8d9913a2be5168}\label{class_gyoto_1_1_property_a7db91fcb5c464a315b8d9913a2be5168}} 
+\mbox{\hyperlink{class_gyoto_1_1_property_a7db91fcb5c464a315b8d9913a2be5168}{Property}} (std\+::string \mbox{\hyperlink{class_gyoto_1_1_property_ab0b88c41cd7307a0d78dc1be29a235d8}{name}}, \mbox{\hyperlink{class_gyoto_1_1_property_a5c3fdfa4811f9eaf9fe5828d0d815597}{set\+\_\+double\+\_\+t}} set\+\_\+double, \mbox{\hyperlink{class_gyoto_1_1_property_ad854709d822b4632f7bd064186dd5fb1}{get\+\_\+double\+\_\+t}} get\+\_\+double, \mbox{\hyperlink{class_gyoto_1_1_property_aae17d2fbb039384f629147cede1893ab}{set\+\_\+double\+\_\+unit\+\_\+t}} set\+\_\+double\+\_\+unit, \mbox{\hyperlink{class_gyoto_1_1_property_a5a4eb097d38ff966434d234c0644ead5}{get\+\_\+double\+\_\+unit\+\_\+t}} get\+\_\+double\+\_\+unit, std\+::string doc)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}{type}}==\mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a21bcd45c33da137a4b77c8a9ddd702a4}{double\+\_\+t}}, with unit support. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a827ccb5403f33bab54810e8b4e611789}\label{class_gyoto_1_1_property_a827ccb5403f33bab54810e8b4e611789}} 
+\mbox{\hyperlink{class_gyoto_1_1_property_a827ccb5403f33bab54810e8b4e611789}{Property}} (std\+::string \mbox{\hyperlink{class_gyoto_1_1_property_ab0b88c41cd7307a0d78dc1be29a235d8}{name}}, std\+::string \mbox{\hyperlink{class_gyoto_1_1_property_ac826f30cbb680383bd2cf4dce2adf487}{name\+\_\+false}}, \mbox{\hyperlink{class_gyoto_1_1_property_acd02ae8c14ca8ba4b834a4c3cdc8fd25}{set\+\_\+bool\+\_\+t}} set\+\_\+bool, \mbox{\hyperlink{class_gyoto_1_1_property_a74fef635abe872b8b2e00c43bef33cf4}{get\+\_\+bool\+\_\+t}} get\+\_\+bool, std\+::string doc)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}{type}}==\mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a3d18c8ea6df62e32e0b77bd235b94c19}{bool\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gyoto_1_1_property_a9bb4f01ccfb85594bd98f480dc6dfc95}{Property}} (std\+::string \mbox{\hyperlink{class_gyoto_1_1_property_ab0b88c41cd7307a0d78dc1be29a235d8}{name}}, \mbox{\hyperlink{class_gyoto_1_1_property_a7d54792987694733c75c606220fc5b39}{set\+\_\+string\+\_\+t}} set\+\_\+string, \mbox{\hyperlink{class_gyoto_1_1_property_a2823f77a3ac869395543027ea0beb4c4}{get\+\_\+string\+\_\+t}} get\+\_\+string, bool is\+\_\+filename, std\+::string doc)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}{type}}==\mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8aa393ef1ba7e2505b14d66fb5f2e3313c}{string\+\_\+t}} or \mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a7773049749e0b6f0d83e531f838220a7}{filename\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a46ecae7cfea85388ebdfc8921e34f979}\label{class_gyoto_1_1_property_a46ecae7cfea85388ebdfc8921e34f979}} 
+\mbox{\hyperlink{class_gyoto_1_1_property_a46ecae7cfea85388ebdfc8921e34f979}{Property}} (std\+::string \mbox{\hyperlink{class_gyoto_1_1_property_ab0b88c41cd7307a0d78dc1be29a235d8}{name}}, \mbox{\hyperlink{class_gyoto_1_1_property_a46d660c155e7a23fef6a7e93915172a1}{set\+\_\+vector\+\_\+double\+\_\+t}} set\+\_\+vdouble, \mbox{\hyperlink{class_gyoto_1_1_property_a18be13807a1a1b6d7553e3f648f9cc55}{get\+\_\+vector\+\_\+double\+\_\+t}} get\+\_\+vdouble, std\+::string doc)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}{type}}==\mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8afd29824380cd698c96d000782f18a27c}{vector\+\_\+double\+\_\+t}}, without unit support. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a7572feb027380fd5738ef0fe3bc81e87}\label{class_gyoto_1_1_property_a7572feb027380fd5738ef0fe3bc81e87}} 
+\mbox{\hyperlink{class_gyoto_1_1_property_a7572feb027380fd5738ef0fe3bc81e87}{Property}} (std\+::string \mbox{\hyperlink{class_gyoto_1_1_property_ab0b88c41cd7307a0d78dc1be29a235d8}{name}}, \mbox{\hyperlink{class_gyoto_1_1_property_a46d660c155e7a23fef6a7e93915172a1}{set\+\_\+vector\+\_\+double\+\_\+t}} set\+\_\+vdouble, \mbox{\hyperlink{class_gyoto_1_1_property_a18be13807a1a1b6d7553e3f648f9cc55}{get\+\_\+vector\+\_\+double\+\_\+t}} get\+\_\+vdouble, \mbox{\hyperlink{class_gyoto_1_1_property_a4b5c3882a6912e9c94ea126942678c5d}{set\+\_\+vector\+\_\+double\+\_\+unit\+\_\+t}} set\+\_\+vdouble\+\_\+unit, \mbox{\hyperlink{class_gyoto_1_1_property_ac25061aa8b5b41e0f7152a9d4c20371c}{get\+\_\+vector\+\_\+double\+\_\+unit\+\_\+t}} get\+\_\+vdouble\+\_\+unit, std\+::string doc)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}{type}}==\mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8afd29824380cd698c96d000782f18a27c}{vector\+\_\+double\+\_\+t}}, with unit support. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_ac1de00bbb9a8dee721a2a6f561831632}\label{class_gyoto_1_1_property_ac1de00bbb9a8dee721a2a6f561831632}} 
+\mbox{\hyperlink{class_gyoto_1_1_property_ac1de00bbb9a8dee721a2a6f561831632}{Property}} (std\+::string \mbox{\hyperlink{class_gyoto_1_1_property_ab0b88c41cd7307a0d78dc1be29a235d8}{name}}, \mbox{\hyperlink{class_gyoto_1_1_property_afb2774eec368e0416261a36e5ccc4822}{set\+\_\+vector\+\_\+unsigned\+\_\+long\+\_\+t}} set\+\_\+vulong, \mbox{\hyperlink{class_gyoto_1_1_property_aae4677e1c06a55dca87f23de9eadbfdb}{get\+\_\+vector\+\_\+unsigned\+\_\+long\+\_\+t}} get\+\_\+vulong, std\+::string doc)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}{type}}==\mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a1c71c8ba20a5c8b519c3afb56b1c6dd2}{vector\+\_\+unsigned\+\_\+long\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_aa9dda850002bc604fba5d8212dadc00c}\label{class_gyoto_1_1_property_aa9dda850002bc604fba5d8212dadc00c}} 
+\mbox{\hyperlink{class_gyoto_1_1_property_aa9dda850002bc604fba5d8212dadc00c}{Property}} (std\+::string \mbox{\hyperlink{class_gyoto_1_1_property_ab0b88c41cd7307a0d78dc1be29a235d8}{name}}, \mbox{\hyperlink{class_gyoto_1_1_property_a0f446869148ce30d77175916b7b340cb}{set\+\_\+metric\+\_\+t}} set\+\_\+metric, \mbox{\hyperlink{class_gyoto_1_1_property_a7f9c1be62e0ebc676ad36cc73203c00e}{get\+\_\+metric\+\_\+t}} get\+\_\+metric, std\+::string doc)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}{type}}==\mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a3b5e845fdb6455c0e111a42882798948}{metric\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a8007df47549251d35093f7dfddf143c1}\label{class_gyoto_1_1_property_a8007df47549251d35093f7dfddf143c1}} 
+\mbox{\hyperlink{class_gyoto_1_1_property_a8007df47549251d35093f7dfddf143c1}{Property}} (std\+::string \mbox{\hyperlink{class_gyoto_1_1_property_ab0b88c41cd7307a0d78dc1be29a235d8}{name}}, \mbox{\hyperlink{class_gyoto_1_1_property_a8c2f6452533d0b746bddb7b92d12c847}{set\+\_\+screen\+\_\+t}} set\+\_\+screen, \mbox{\hyperlink{class_gyoto_1_1_property_afe2c14913230c30e2df7f366de6e7457}{get\+\_\+screen\+\_\+t}} get\+\_\+screen, std\+::string doc)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}{type}}==\mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8ae7bb28c4049603af389dc4be0a4093f7}{screen\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a4d173de84f9c85025c3dcf45436172dd}\label{class_gyoto_1_1_property_a4d173de84f9c85025c3dcf45436172dd}} 
+\mbox{\hyperlink{class_gyoto_1_1_property_a4d173de84f9c85025c3dcf45436172dd}{Property}} (std\+::string \mbox{\hyperlink{class_gyoto_1_1_property_ab0b88c41cd7307a0d78dc1be29a235d8}{name}}, \mbox{\hyperlink{class_gyoto_1_1_property_af8351d896ce1a89f4cb808912bca0076}{set\+\_\+astrobj\+\_\+t}} set\+\_\+astrobj, \mbox{\hyperlink{class_gyoto_1_1_property_a9bb4c4ca39e6d6975483846e15d97975}{get\+\_\+astrobj\+\_\+t}} get\+\_\+astrobj, std\+::string doc)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}{type}}==\mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a59a216803f694032f224e3fc770a9371}{astrobj\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a40f71de5d1387d095f3a3c78076dff0b}\label{class_gyoto_1_1_property_a40f71de5d1387d095f3a3c78076dff0b}} 
+\mbox{\hyperlink{class_gyoto_1_1_property_a40f71de5d1387d095f3a3c78076dff0b}{Property}} (std\+::string \mbox{\hyperlink{class_gyoto_1_1_property_ab0b88c41cd7307a0d78dc1be29a235d8}{name}}, \mbox{\hyperlink{class_gyoto_1_1_property_a44a66ea9027bf30b6b9285bb82f18554}{set\+\_\+spectrum\+\_\+t}} set\+\_\+spectrum, \mbox{\hyperlink{class_gyoto_1_1_property_a2e3c810e812271bf46da370a745add0e}{get\+\_\+spectrum\+\_\+t}} get\+\_\+spectrum, std\+::string doc)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}{type}}==\mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a95d36a0c8134e93cc7e868415c368352}{spectrum\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_af57e154a8b987ecf588b67be925cca67}\label{class_gyoto_1_1_property_af57e154a8b987ecf588b67be925cca67}} 
+\mbox{\hyperlink{class_gyoto_1_1_property_af57e154a8b987ecf588b67be925cca67}{Property}} (std\+::string \mbox{\hyperlink{class_gyoto_1_1_property_ab0b88c41cd7307a0d78dc1be29a235d8}{name}}, \mbox{\hyperlink{class_gyoto_1_1_property_a1a5f0ac8dd4289760def476217a4a87d}{set\+\_\+spectrometer\+\_\+t}} set\+\_\+spectrometer, \mbox{\hyperlink{class_gyoto_1_1_property_a631de3c593b0a8b01aae8e5dee92b75c}{get\+\_\+spectrometer\+\_\+t}} get\+\_\+spectrometer, std\+::string doc)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}{type}}==\mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a7aed2532777a1a9643f989a987a0ce90}{spectrometer\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gyoto_1_1_property_acbff12857f4d55c1a36d4d1495ab15bc}{Property}} (std\+::string \mbox{\hyperlink{class_gyoto_1_1_property_ab0b88c41cd7307a0d78dc1be29a235d8}{name}}, int \mbox{\hyperlink{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}{type}})
+\begin{DoxyCompactList}\small\item\em Constructor setting only \mbox{\hyperlink{class_gyoto_1_1_property_ab0b88c41cd7307a0d78dc1be29a235d8}{name}} and \mbox{\hyperlink{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}{type}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a16a260cd251dfd99730e562ae9422b3f}\label{class_gyoto_1_1_property_a16a260cd251dfd99730e562ae9422b3f}} 
+static \mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8}{type\+\_\+e}} \mbox{\hyperlink{class_gyoto_1_1_property_a16a260cd251dfd99730e562ae9422b3f}{type\+From\+String}} (std\+::string stype)
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8}{Property\+::type\+\_\+e}} value from name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_ab0b88c41cd7307a0d78dc1be29a235d8}\label{class_gyoto_1_1_property_ab0b88c41cd7307a0d78dc1be29a235d8}} 
+std\+::string \mbox{\hyperlink{class_gyoto_1_1_property_ab0b88c41cd7307a0d78dc1be29a235d8}{name}}
+\begin{DoxyCompactList}\small\item\em Name of this instance. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_gyoto_1_1_property_ac826f30cbb680383bd2cf4dce2adf487}{name\+\_\+false}}
+\begin{DoxyCompactList}\small\item\em Name if false. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}\label{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}} 
+int \mbox{\hyperlink{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}{type}}
+\begin{DoxyCompactList}\small\item\em Type of this instance. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{union_gyoto_1_1_property_1_1setter__t}{setter\+\_\+t}} \mbox{\hyperlink{class_gyoto_1_1_property_a30cf4c39dd1a79c6bd0c103a18dc61e9}{setter}}
+\begin{DoxyCompactList}\small\item\em Pointer to the setter method. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{union_gyoto_1_1_property_1_1getter__t}{getter\+\_\+t}} \mbox{\hyperlink{class_gyoto_1_1_property_a780ce4dd04646c076aaab0227cf95464}{getter}}
+\begin{DoxyCompactList}\small\item\em Pointer to the getter method. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{union_gyoto_1_1_property_1_1setter__unit__t}{setter\+\_\+unit\+\_\+t}} \mbox{\hyperlink{class_gyoto_1_1_property_a8e0e4d8678dc3d2a7183fb1c697f00e2}{setter\+\_\+unit}}
+\begin{DoxyCompactList}\small\item\em Pointer to the setter (with unit) method. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{union_gyoto_1_1_property_1_1getter__unit__t}{getter\+\_\+unit\+\_\+t}} \mbox{\hyperlink{class_gyoto_1_1_property_ae888e2b98d764a281db3ce8dd0981195}{getter\+\_\+unit}}
+\begin{DoxyCompactList}\small\item\em Pointer to the getter (with unit) method. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_a144d07c74739cf8ab28994ded1b61e7e}\label{class_gyoto_1_1_property_a144d07c74739cf8ab28994ded1b61e7e}} 
+std\+::string {\bfseries doc}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_property_ab5727f08491e9f788ef3b81a08ac9847}\label{class_gyoto_1_1_property_ab5727f08491e9f788ef3b81a08ac9847}} 
+\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const  $\ast$const \mbox{\hyperlink{class_gyoto_1_1_property_ab5727f08491e9f788ef3b81a08ac9847}{parent}}
+\begin{DoxyCompactList}\small\item\em If \mbox{\hyperlink{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}{type}} is \mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a83a494e6387163d77fcf7ce5b7eeea63}{empty\+\_\+t}}, link to another \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} that can be set and got using standard methods. 
+
+The \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} API makes it easy to declare the parameters that can be set in a class.
+
+Developpers who simply write classes (deriving from \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic}{Astrobj\+::\+Generic}}, , \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Metric\+::\+Generic}}, \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_generic}{Spectrum\+::\+Generic}}) need not know the inners of the \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} class and interact with it only using macros to declare the parameters they need to read from XML.
+
+To make use of the \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} framework, a class must derive from \mbox{\hyperlink{class_gyoto_1_1_object}{Gyoto\+::\+Object}} and use the \mbox{\hyperlink{_gyoto_object_8h_a750e7a43779f63bdb13111eaf0271203}{GYOTO\+\_\+\+OBJECT}} in a public section of the class declaration (i.\+e. in the .h file). Then, in the corresponding .C file, the GYOTO\+\_\+\+PROPERTY\+\_\+$\ast$ macros are used as follows (note the absence of punctuation after the macros)\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_gyoto_property_8h_add8e16ed1e17ab2683b08cc330b341d4}{GYOTO\_PROPERTY\_START}}(MyClass)}
+\DoxyCodeLine{GYOTO\_PROPERTY\_<type>(MyClass, PropertyName, accessor)}
+\DoxyCodeLine{...}
+\DoxyCodeLine{GYOTO\_PROPERTY\_END(MyClass, ParentClass::properties)}
+
+\end{DoxyCode}
+
+
+In the above, \mbox{\hyperlink{_gyoto_property_8h_add8e16ed1e17ab2683b08cc330b341d4}{GYOTO\+\_\+\+PROPERTY\+\_\+\+START}} starts the definition of the static member My\+Class\+::properties. Each GYOTO\+\_\+\+PROPERTY\+\_\+$<$type$>$ macro declares a new property. \mbox{\hyperlink{_gyoto_property_8h_a1356435ea7ee0e18d07201a80e034dcc}{GYOTO\+\_\+\+PROPERTY\+\_\+\+END}} ends the definition of the property list, with an optional pointer to the parent\textquotesingle{}s class \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} list, and defines the My\+Class\+::get\+Properties() method.
+
+The underlying accessors must always be defined, both to set and to get the property. For the sake of simplicity, only a limited number of data types are allowed\+:
+\begin{DoxyItemize}
+\item double\+: see \mbox{\hyperlink{_gyoto_property_8h_a51b9b6d83536618f8c5c04101168305e}{GYOTO\+\_\+\+PROPERTY\+\_\+\+DOUBLE}}, \mbox{\hyperlink{_gyoto_property_8h_a10d55318bfccf207220f2adbcd0f00f9}{GYOTO\+\_\+\+PROPERTY\+\_\+\+DOUBLE\+\_\+\+UNIT}};
+\item long\+: see \mbox{\hyperlink{_gyoto_property_8h_a1d76d0c83fdfbde84b66e5a3bbaa35f6}{GYOTO\+\_\+\+PROPERTY\+\_\+\+LONG}};
+\item unsigned long\+: see \mbox{\hyperlink{_gyoto_property_8h_aca1f21d44168f8c9d0c30644b3785e9e}{GYOTO\+\_\+\+PROPERTY\+\_\+\+UNSIGNED\+\_\+\+LONG}} (a.\+k.\+a. size\+\_\+t\+: see \mbox{\hyperlink{_gyoto_property_8h_a63fbef357d49b36a1b91b4e111505e71}{GYOTO\+\_\+\+PROPERTY\+\_\+\+SIZE\+\_\+T}}, this may break on architectures where size\+\_\+t is not the same as unsigned long);
+\item bool\+: see \mbox{\hyperlink{_gyoto_property_8h_ac9d7d689f6dc645598a81ec4505566df}{GYOTO\+\_\+\+PROPERTY\+\_\+\+BOOL}};
+\item std\+::vector$<$double$>$\+: see \mbox{\hyperlink{_gyoto_property_8h_a93dda6fe102cce2ab1a212919673471c}{GYOTO\+\_\+\+PROPERTY\+\_\+\+VECTOR\+\_\+\+DOUBLE}} and \mbox{\hyperlink{_gyoto_property_8h_afee341ef4d305f0c2ab3c502bf2f11a5}{GYOTO\+\_\+\+PROPERTY\+\_\+\+VECTOR\+\_\+\+DOUBLE\+\_\+\+UNIT}};
+\item std\+::vector$<$unsigned long$>$\+: see \mbox{\hyperlink{_gyoto_property_8h_a250f06ca284f2051db94fb2261e015bd}{GYOTO\+\_\+\+PROPERTY\+\_\+\+VECTOR\+\_\+\+UNSIGNED\+\_\+\+LONG}};
+\item Gyoto\+::\+Smart\+Pointers to various base classes\+: \mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Metric\+::\+Generic}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic}{Astrobj\+::\+Generic}}, \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_generic}{Spectrum\+::\+Generic}} and \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic}{Spectrometer\+::\+Generic}}. See \mbox{\hyperlink{_gyoto_property_8h_a37725a62fbd22ad1c7cc9f8761262774}{GYOTO\+\_\+\+PROPERTY\+\_\+\+METRIC}}, \mbox{\hyperlink{_gyoto_property_8h_a678522f21614980995c53d49c314a48c}{GYOTO\+\_\+\+PROPERTY\+\_\+\+SCREEN}}, \mbox{\hyperlink{_gyoto_property_8h_a13b6886c3edc42335c40fe44b070184c}{GYOTO\+\_\+\+PROPERTY\+\_\+\+ASTROBJ}}, \mbox{\hyperlink{_gyoto_property_8h_a3e144c41ba2b37be4f981f0aedee7480}{GYOTO\+\_\+\+PROPERTY\+\_\+\+SPECTRUM}} and \mbox{\hyperlink{_gyoto_property_8h_a9dbed4301797442973a9c6730de3a3a7}{GYOTO\+\_\+\+PROPERTY\+\_\+\+SPECTROMETER}}.
+\end{DoxyItemize}
+
+For the floating point data-\/types (double and vector$<$double$>$), two additional accessors supporting units can be provided. The accessors must have the same name and have specific prototypes, see the various function pointer typedefs, e.\+g. \mbox{\hyperlink{class_gyoto_1_1_property_a5c3fdfa4811f9eaf9fe5828d0d815597}{set\+\_\+double\+\_\+t}} and \mbox{\hyperlink{class_gyoto_1_1_property_ad854709d822b4632f7bd064186dd5fb1}{get\+\_\+double\+\_\+t}}.
+
+The type used in these accessors may not be the same as the type of the underlying class member. For instance, to read an array, it was chosen to use the std\+::vector$<$type$>$ type because it is easy to read such a vector from XML and to thus determine dynamically the number of elements provided. But this type is slow, so it is expected that the class member will rather be a C-\/style array (double arr\mbox{[}\mbox{]}) or something else entirely. It is not forbidden to have a set of high-\/level accessors for the \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} interface on top of lower-\/level, more efficient accessors to be used in compiled, static code\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} MyClass::arrayMember(\textcolor{keywordtype}{double} \textcolor{keyword}{const} * \textcolor{keyword}{const} tab) \{}
+\DoxyCodeLine{  \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<5; ++i) member\_[i]=tab[i];}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{\textcolor{keywordtype}{void} MyClass::arrayMemberVector(std::vector<double> \textcolor{keyword}{const} \&vect) \{}
+\DoxyCodeLine{  \textcolor{keywordflow}{if} (vect.size()!=5) \mbox{\hyperlink{namespace_gyoto_aa869193fe294f3badb84af224a83f3d8}{throwError}}(\textcolor{stringliteral}{"{}Please provide 5 elements"{}});}
+\DoxyCodeLine{  \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<5; ++i) member\_[i]=vect[i];}
+\DoxyCodeLine{\} }
+\DoxyCodeLine{\textcolor{keywordtype}{double} \textcolor{keyword}{const} *  MyClass::arrayMember()\textcolor{keyword}{ const }\{\textcolor{keywordflow}{return} member\_;\}}
+\DoxyCodeLine{std::vector<double> MyClass::arrayMemberVector()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{  std::vector<double> v(5, 0.);}
+\DoxyCodeLine{  \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<5; ++i) v[i]=member\_[i];}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} v;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+In this example, assuming My\+Class is based directly on \mbox{\hyperlink{class_gyoto_1_1_object}{Object}} and member\+\_\+ is the only parameter to read from XML, the \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} list may be defined as\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_gyoto_property_8h_add8e16ed1e17ab2683b08cc330b341d4}{GYOTO\_PROPERTY\_START}}(MyClass)}
+\DoxyCodeLine{\mbox{\hyperlink{_gyoto_property_8h_a93dda6fe102cce2ab1a212919673471c}{GYOTO\_PROPERTY\_VECTOR\_DOUBLE}}(MyClass, ArrayMember, arrayMemberVector)}
+\DoxyCodeLine{\mbox{\hyperlink{_gyoto_property_8h_a1356435ea7ee0e18d07201a80e034dcc}{GYOTO\_PROPERTY\_END}}(MyClass, \mbox{\hyperlink{class_gyoto_1_1_object_a9a61c6b5cfcd0c8f4361727e1c49a6ea}{Object::properties}})}
+
+\end{DoxyCode}
+
+
+Again, nothing more is required to read and write Array\+Member from XML and from Yorick. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8}\label{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8}} 
+\index{Gyoto::Property@{Gyoto::Property}!type\_e@{type\_e}}
+\index{type\_e@{type\_e}!Gyoto::Property@{Gyoto::Property}}
+\doxysubsubsection{\texorpdfstring{type\_e}{type\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8}{Gyoto\+::\+Property\+::type\+\_\+e}}}
+
+
+
+Possible type of a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} instance. 
+
+These are all the values that \mbox{\hyperlink{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}{Property\+::type}} may take. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{double\_t@{double\_t}!Gyoto::Property@{Gyoto::Property}}\index{Gyoto::Property@{Gyoto::Property}!double\_t@{double\_t}}}\mbox{\Hypertarget{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a21bcd45c33da137a4b77c8a9ddd702a4}\label{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a21bcd45c33da137a4b77c8a9ddd702a4}} 
+double\+\_\+t&Type is double. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{long\_t@{long\_t}!Gyoto::Property@{Gyoto::Property}}\index{Gyoto::Property@{Gyoto::Property}!long\_t@{long\_t}}}\mbox{\Hypertarget{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8af759331168118226d7d9f75039af3b53}\label{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8af759331168118226d7d9f75039af3b53}} 
+long\+\_\+t&Type is long. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{unsigned\_long\_t@{unsigned\_long\_t}!Gyoto::Property@{Gyoto::Property}}\index{Gyoto::Property@{Gyoto::Property}!unsigned\_long\_t@{unsigned\_long\_t}}}\mbox{\Hypertarget{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8ae4fe84d124f4b25ad28120c0057b480f}\label{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8ae4fe84d124f4b25ad28120c0057b480f}} 
+unsigned\+\_\+long\+\_\+t&Type is unsigned long (a.\+k.\+a. size\+\_\+t) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{size\_t\_t@{size\_t\_t}!Gyoto::Property@{Gyoto::Property}}\index{Gyoto::Property@{Gyoto::Property}!size\_t\_t@{size\_t\_t}}}\mbox{\Hypertarget{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a1c61b7632afa3d4a1d31577492f8ddca}\label{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a1c61b7632afa3d4a1d31577492f8ddca}} 
+size\+\_\+t\+\_\+t&Type is size\+\_\+t (only if distinct from unsigned long) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{bool\_t@{bool\_t}!Gyoto::Property@{Gyoto::Property}}\index{Gyoto::Property@{Gyoto::Property}!bool\_t@{bool\_t}}}\mbox{\Hypertarget{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a3d18c8ea6df62e32e0b77bd235b94c19}\label{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a3d18c8ea6df62e32e0b77bd235b94c19}} 
+bool\+\_\+t&Type is bool. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{string\_t@{string\_t}!Gyoto::Property@{Gyoto::Property}}\index{Gyoto::Property@{Gyoto::Property}!string\_t@{string\_t}}}\mbox{\Hypertarget{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8aa393ef1ba7e2505b14d66fb5f2e3313c}\label{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8aa393ef1ba7e2505b14d66fb5f2e3313c}} 
+string\+\_\+t&Type is std\+::string. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{filename\_t@{filename\_t}!Gyoto::Property@{Gyoto::Property}}\index{Gyoto::Property@{Gyoto::Property}!filename\_t@{filename\_t}}}\mbox{\Hypertarget{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a7773049749e0b6f0d83e531f838220a7}\label{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a7773049749e0b6f0d83e531f838220a7}} 
+filename\+\_\+t&Type is std\+::string and holds a file name. In this case, the value may be changed to include relative or absolute path. The prefix \char`\"{}\`{}pwd\`{}/\char`\"{} forces path to be interpreted relative to the current working directory. If the value starts with \char`\"{}/\char`\"{}, it is interpreted as an absolute path. Otherwise, when reading from XML, the path is interpreted relative to the XML file. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{vector\_double\_t@{vector\_double\_t}!Gyoto::Property@{Gyoto::Property}}\index{Gyoto::Property@{Gyoto::Property}!vector\_double\_t@{vector\_double\_t}}}\mbox{\Hypertarget{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8afd29824380cd698c96d000782f18a27c}\label{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8afd29824380cd698c96d000782f18a27c}} 
+vector\+\_\+double\+\_\+t&Type is std\+::vector$<$double$>$ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{vector\_unsigned\_long\_t@{vector\_unsigned\_long\_t}!Gyoto::Property@{Gyoto::Property}}\index{Gyoto::Property@{Gyoto::Property}!vector\_unsigned\_long\_t@{vector\_unsigned\_long\_t}}}\mbox{\Hypertarget{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a1c71c8ba20a5c8b519c3afb56b1c6dd2}\label{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a1c71c8ba20a5c8b519c3afb56b1c6dd2}} 
+vector\+\_\+unsigned\+\_\+long\+\_\+t&Type is std\+::vector$<$unsigned long$>$ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{metric\_t@{metric\_t}!Gyoto::Property@{Gyoto::Property}}\index{Gyoto::Property@{Gyoto::Property}!metric\_t@{metric\_t}}}\mbox{\Hypertarget{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a3b5e845fdb6455c0e111a42882798948}\label{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a3b5e845fdb6455c0e111a42882798948}} 
+metric\+\_\+t&Type is Gyoto\+::\+Smart\+Pointer$<$\+Gyoto\+::\+Metric\+::\+Generic$>$ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{screen\_t@{screen\_t}!Gyoto::Property@{Gyoto::Property}}\index{Gyoto::Property@{Gyoto::Property}!screen\_t@{screen\_t}}}\mbox{\Hypertarget{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8ae7bb28c4049603af389dc4be0a4093f7}\label{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8ae7bb28c4049603af389dc4be0a4093f7}} 
+screen\+\_\+t&Type is Gyoto\+::\+Smart\+Pointer$<$\+Gyoto\+::\+Screen\+::\+Generic$>$ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{astrobj\_t@{astrobj\_t}!Gyoto::Property@{Gyoto::Property}}\index{Gyoto::Property@{Gyoto::Property}!astrobj\_t@{astrobj\_t}}}\mbox{\Hypertarget{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a59a216803f694032f224e3fc770a9371}\label{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a59a216803f694032f224e3fc770a9371}} 
+astrobj\+\_\+t&Type is Gyoto\+::\+Smart\+Pointer$<$\+Gyoto\+::\+Astrobj\+::\+Generic$>$ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{spectrum\_t@{spectrum\_t}!Gyoto::Property@{Gyoto::Property}}\index{Gyoto::Property@{Gyoto::Property}!spectrum\_t@{spectrum\_t}}}\mbox{\Hypertarget{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a95d36a0c8134e93cc7e868415c368352}\label{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a95d36a0c8134e93cc7e868415c368352}} 
+spectrum\+\_\+t&Type is Gyoto\+::\+Smart\+Pointer$<$\+Gyoto\+::\+Spectrum\+::\+Generic$>$ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{spectrometer\_t@{spectrometer\_t}!Gyoto::Property@{Gyoto::Property}}\index{Gyoto::Property@{Gyoto::Property}!spectrometer\_t@{spectrometer\_t}}}\mbox{\Hypertarget{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a7aed2532777a1a9643f989a987a0ce90}\label{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a7aed2532777a1a9643f989a987a0ce90}} 
+spectrometer\+\_\+t&Type is Gyoto\+::\+Smart\+Pointer$<$\+Gyoto\+::\+Spectrometer\+::\+Generic$>$ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{empty\_t@{empty\_t}!Gyoto::Property@{Gyoto::Property}}\index{Gyoto::Property@{Gyoto::Property}!empty\_t@{empty\_t}}}\mbox{\Hypertarget{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a83a494e6387163d77fcf7ce5b7eeea63}\label{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a83a494e6387163d77fcf7ce5b7eeea63}} 
+empty\+\_\+t&\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} is empty. In this case (and only in this case)\+:
+\begin{DoxyEnumerate}
+\item \mbox{\hyperlink{class_gyoto_1_1_property_a06b087b61281f000525ae04559e4dddf}{Gyoto\+::\+Property\+::operator bool() const }}return false;
+\item \mbox{\hyperlink{class_gyoto_1_1_property_ab5727f08491e9f788ef3b81a08ac9847}{Property\+::parent}} may be different from NULL and point to another array of \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} instances, that should be interpreted as appended to this list. 
+\end{DoxyEnumerate}\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_property_aec010dca485d4fece3d42f3da7f35e73}\label{class_gyoto_1_1_property_aec010dca485d4fece3d42f3da7f35e73}} 
+\index{Gyoto::Property@{Gyoto::Property}!Property@{Property}}
+\index{Property@{Property}!Gyoto::Property@{Gyoto::Property}}
+\doxysubsubsection{\texorpdfstring{Property()}{Property()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Gyoto\+::\+Property\+::\+Property (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{\mbox{\hyperlink{class_gyoto_1_1_property_a03c8b8bc711939093c2d633bc65f48ad}{set\+\_\+size\+\_\+t\+\_\+t}}}]{set\+\_\+size\+\_\+t,  }\item[{\mbox{\hyperlink{class_gyoto_1_1_property_a22d8c10540d31a01ae052e57fb8a995a}{get\+\_\+size\+\_\+t\+\_\+t}}}]{get\+\_\+size\+\_\+t,  }\item[{int}]{dummy,  }\item[{std\+::string}]{doc }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}{type}}==\mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a1c61b7632afa3d4a1d31577492f8ddca}{size\+\_\+t\+\_\+t}}. 
+
+The dummy int parameter is only there to differenciate from the unsigned long constructor on platforms where size\+\_\+t is a typdef to unsigned long. \mbox{\Hypertarget{class_gyoto_1_1_property_a9bb4f01ccfb85594bd98f480dc6dfc95}\label{class_gyoto_1_1_property_a9bb4f01ccfb85594bd98f480dc6dfc95}} 
+\index{Gyoto::Property@{Gyoto::Property}!Property@{Property}}
+\index{Property@{Property}!Gyoto::Property@{Gyoto::Property}}
+\doxysubsubsection{\texorpdfstring{Property()}{Property()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Gyoto\+::\+Property\+::\+Property (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{\mbox{\hyperlink{class_gyoto_1_1_property_a7d54792987694733c75c606220fc5b39}{set\+\_\+string\+\_\+t}}}]{set\+\_\+string,  }\item[{\mbox{\hyperlink{class_gyoto_1_1_property_a2823f77a3ac869395543027ea0beb4c4}{get\+\_\+string\+\_\+t}}}]{get\+\_\+string,  }\item[{bool}]{is\+\_\+filename,  }\item[{std\+::string}]{doc }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}{type}}==\mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8aa393ef1ba7e2505b14d66fb5f2e3313c}{string\+\_\+t}} or \mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a7773049749e0b6f0d83e531f838220a7}{filename\+\_\+t}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & name of the \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} \\
+\hline
+{\em set\+\_\+string} & pointer to the setter accessor \\
+\hline
+{\em get\+\_\+string} & pointer to the getter accessor \\
+\hline
+{\em is\+\_\+filename} & true means \mbox{\hyperlink{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}{type}}=\mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a7773049749e0b6f0d83e531f838220a7}{filename\+\_\+t}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_property_acbff12857f4d55c1a36d4d1495ab15bc}\label{class_gyoto_1_1_property_acbff12857f4d55c1a36d4d1495ab15bc}} 
+\index{Gyoto::Property@{Gyoto::Property}!Property@{Property}}
+\index{Property@{Property}!Gyoto::Property@{Gyoto::Property}}
+\doxysubsubsection{\texorpdfstring{Property()}{Property()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Gyoto\+::\+Property\+::\+Property (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{int}]{type }\end{DoxyParamCaption})}
+
+
+
+Constructor setting only \mbox{\hyperlink{class_gyoto_1_1_property_ab0b88c41cd7307a0d78dc1be29a235d8}{name}} and \mbox{\hyperlink{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}{type}}. 
+
+Used in the \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} plug-\/in to provide peudo-\/properties 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_property_a780ce4dd04646c076aaab0227cf95464}\label{class_gyoto_1_1_property_a780ce4dd04646c076aaab0227cf95464}} 
+\index{Gyoto::Property@{Gyoto::Property}!getter@{getter}}
+\index{getter@{getter}!Gyoto::Property@{Gyoto::Property}}
+\doxysubsubsection{\texorpdfstring{getter}{getter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{union_gyoto_1_1_property_1_1getter__t}{getter\+\_\+t}} Gyoto\+::\+Property\+::getter}
+
+
+
+Pointer to the getter method. 
+
+Right type is stored in \mbox{\hyperlink{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}{type}} \mbox{\Hypertarget{class_gyoto_1_1_property_ae888e2b98d764a281db3ce8dd0981195}\label{class_gyoto_1_1_property_ae888e2b98d764a281db3ce8dd0981195}} 
+\index{Gyoto::Property@{Gyoto::Property}!getter\_unit@{getter\_unit}}
+\index{getter\_unit@{getter\_unit}!Gyoto::Property@{Gyoto::Property}}
+\doxysubsubsection{\texorpdfstring{getter\_unit}{getter\_unit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{union_gyoto_1_1_property_1_1getter__unit__t}{getter\+\_\+unit\+\_\+t}} Gyoto\+::\+Property\+::getter\+\_\+unit}
+
+
+
+Pointer to the getter (with unit) method. 
+
+Right type is stored in \mbox{\hyperlink{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}{type}} \mbox{\Hypertarget{class_gyoto_1_1_property_ac826f30cbb680383bd2cf4dce2adf487}\label{class_gyoto_1_1_property_ac826f30cbb680383bd2cf4dce2adf487}} 
+\index{Gyoto::Property@{Gyoto::Property}!name\_false@{name\_false}}
+\index{name\_false@{name\_false}!Gyoto::Property@{Gyoto::Property}}
+\doxysubsubsection{\texorpdfstring{name\_false}{name\_false}}
+{\footnotesize\ttfamily std\+::string Gyoto\+::\+Property\+::name\+\_\+false}
+
+
+
+Name if false. 
+
+Only if \mbox{\hyperlink{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}{type}} is \mbox{\hyperlink{class_gyoto_1_1_property_a7d63b9734691b36b96ce778357b288f8a83a494e6387163d77fcf7ce5b7eeea63}{empty\+\_\+t}} \mbox{\Hypertarget{class_gyoto_1_1_property_a30cf4c39dd1a79c6bd0c103a18dc61e9}\label{class_gyoto_1_1_property_a30cf4c39dd1a79c6bd0c103a18dc61e9}} 
+\index{Gyoto::Property@{Gyoto::Property}!setter@{setter}}
+\index{setter@{setter}!Gyoto::Property@{Gyoto::Property}}
+\doxysubsubsection{\texorpdfstring{setter}{setter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{union_gyoto_1_1_property_1_1setter__t}{setter\+\_\+t}} Gyoto\+::\+Property\+::setter}
+
+
+
+Pointer to the setter method. 
+
+Right type is stored in \mbox{\hyperlink{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}{type}} \mbox{\Hypertarget{class_gyoto_1_1_property_a8e0e4d8678dc3d2a7183fb1c697f00e2}\label{class_gyoto_1_1_property_a8e0e4d8678dc3d2a7183fb1c697f00e2}} 
+\index{Gyoto::Property@{Gyoto::Property}!setter\_unit@{setter\_unit}}
+\index{setter\_unit@{setter\_unit}!Gyoto::Property@{Gyoto::Property}}
+\doxysubsubsection{\texorpdfstring{setter\_unit}{setter\_unit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{union_gyoto_1_1_property_1_1setter__unit__t}{setter\+\_\+unit\+\_\+t}} Gyoto\+::\+Property\+::setter\+\_\+unit}
+
+
+
+Pointer to the setter (with unit) method. 
+
+Right type is stored in \mbox{\hyperlink{class_gyoto_1_1_property_affac9b81023457fb24781c7dd678f154}{type}} 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_gyoto_property_8h}{Gyoto\+Property.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,181 @@
+\hypertarget{class_gyoto_1_1_error}{}\doxysection{Gyoto\+::Error Class Reference}
+\label{class_gyoto_1_1_error}\index{Gyoto::Error@{Gyoto::Error}}
+
+
+Class for thowing exceptions.  
+
+
+
+
+{\ttfamily \#include $<$Gyoto\+Error.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef void \mbox{\hyperlink{class_gyoto_1_1_error_a1e4fa0ed2918fbb0ba1a7ed48c686e6d}{Handler\+\_\+t}}(const \mbox{\hyperlink{class_gyoto_1_1_error}{Error}})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_gyoto_1_1_error}{Error}} handler type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_error_a461161351f6fb44d959b1f3dc90fd963}\label{class_gyoto_1_1_error_a461161351f6fb44d959b1f3dc90fd963}} 
+\mbox{\hyperlink{class_gyoto_1_1_error_a461161351f6fb44d959b1f3dc90fd963}{Error}} (const std\+::string m)
+\begin{DoxyCompactList}\small\item\em Constructor with an error message. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_error_a53099c8a27179caf3de4ed1d48ee3d74}\label{class_gyoto_1_1_error_a53099c8a27179caf3de4ed1d48ee3d74}} 
+{\bfseries Error} (const \mbox{\hyperlink{class_gyoto_1_1_error}{Gyoto\+::\+Error}} \&o)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_error_a3f2985711ebc1b936586eceb532ebc44}\label{class_gyoto_1_1_error_a3f2985711ebc1b936586eceb532ebc44}} 
+void \mbox{\hyperlink{class_gyoto_1_1_error_a3f2985711ebc1b936586eceb532ebc44}{Report}} () const
+\begin{DoxyCompactList}\small\item\em Print-\/out error message on standard error. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_gyoto_1_1_error_a4ae3e8dd85b7f47ad3a1c73a7e3d3b7f}{get\+Errcode}} () const
+\begin{DoxyCompactList}\small\item\em Retrieve error code. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gyoto_1_1_error_a7c73399ca56f918b99235ff1d369b6ee}{operator const char $\ast$}} () const
+\begin{DoxyCompactList}\small\item\em Cast to const char $\ast$. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_gyoto_1_1_error_aef1a24af90ee223d135cb848a54e506f}{get\+\_\+message}} () const
+\begin{DoxyCompactList}\small\item\em Retrieve error message for custom handling of the exception. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_gyoto_1_1_error_aa383fc8d096d3dccbb10d02ab3f561ae}{set\+Handler}} (\mbox{\hyperlink{class_gyoto_1_1_error_a1e4fa0ed2918fbb0ba1a7ed48c686e6d}{Gyoto\+::\+Error\+::\+Handler\+\_\+t}} $\ast$phandler)
+\begin{DoxyCompactList}\small\item\em Set application error handler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_error_a44d85bd5ae47709b983808c38f006af3}\label{class_gyoto_1_1_error_a44d85bd5ae47709b983808c38f006af3}} 
+const std\+::string \mbox{\hyperlink{class_gyoto_1_1_error_a44d85bd5ae47709b983808c38f006af3}{message}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_gyoto_1_1_error}{Error}} message. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{class_gyoto_1_1_error_acc576bb84e7acc1d83e049fb03a4097e}{errcode}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_gyoto_1_1_error}{Error}} code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for thowing exceptions. 
+
+\mbox{\hyperlink{namespace_gyoto}{Gyoto}} dlopens its plug-\/ins. The throw/catch C++ mechanism cannot pass the dlopen boundary. The \mbox{\hyperlink{class_gyoto_1_1_error}{Gyoto\+::\+Error}} mechanism alleviates this C++ language limitation.
+
+Every \mbox{\hyperlink{namespace_gyoto}{Gyoto}} method (either in the main \mbox{\hyperlink{namespace_gyoto}{Gyoto}} library or in a \mbox{\hyperlink{namespace_gyoto}{Gyoto}} plug-\/in) should check for possible error conditions and throw adequate \mbox{\hyperlink{class_gyoto_1_1_error}{Gyoto\+::\+Error}} exceptions through the GYOTO\+\_\+\+ERROR macro (which calls the \mbox{\hyperlink{namespace_gyoto_aa869193fe294f3badb84af224a83f3d8}{Gyoto\+::throw\+Error()}} function). For instance\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (error\_condition) \mbox{\hyperlink{_gyoto_error_8h_a3781d05cd11f75afd5d988072c853e02}{GYOTO\_ERROR}}(\textcolor{stringliteral}{"{}Useful error message"{}});}
+
+\end{DoxyCode}
+
+
+If the main code has set Gyoto\+::\+Error\+::handler\+\_\+t error handler using \mbox{\hyperlink{class_gyoto_1_1_error_aa383fc8d096d3dccbb10d02ab3f561ae}{Gyoto\+::\+Error\+::set\+Handler()}}, these errors will then be passed to it. Else, the \mbox{\hyperlink{class_gyoto_1_1_error}{Error}} is C++-\/thrown at the main \mbox{\hyperlink{namespace_gyoto}{Gyoto}} library level, above the dlopen boundary.
+
+The main code can then catch these exceptions and act appropriately, for instance\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{try} \{ gyoto\_code ; \}}
+\DoxyCodeLine{\textcolor{keywordflow}{catch} (\mbox{\hyperlink{class_gyoto_1_1_error}{Gyoto::Error}} err)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{   err.\mbox{\hyperlink{class_gyoto_1_1_error_a3f2985711ebc1b936586eceb532ebc44}{Report}}();}
+\DoxyCodeLine{   abort();}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_error_a1e4fa0ed2918fbb0ba1a7ed48c686e6d}\label{class_gyoto_1_1_error_a1e4fa0ed2918fbb0ba1a7ed48c686e6d}} 
+\index{Gyoto::Error@{Gyoto::Error}!Handler\_t@{Handler\_t}}
+\index{Handler\_t@{Handler\_t}!Gyoto::Error@{Gyoto::Error}}
+\doxysubsubsection{\texorpdfstring{Handler\_t}{Handler\_t}}
+{\footnotesize\ttfamily typedef void Gyoto\+::\+Error\+::\+Handler\+\_\+t(const \mbox{\hyperlink{class_gyoto_1_1_error}{Error}})}
+
+
+
+\mbox{\hyperlink{class_gyoto_1_1_error}{Error}} handler type. 
+
+Instead of catching \mbox{\hyperlink{namespace_gyoto}{Gyoto}} errors directly (for instance if gyoto itself is dlopened), you can set a Handler\+\_\+t error handler using \mbox{\hyperlink{class_gyoto_1_1_error_aa383fc8d096d3dccbb10d02ab3f561ae}{set\+Handler()}}.
+
+A very simple handler could be\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} applicationErrorHandler(\textcolor{keyword}{const} \mbox{\hyperlink{class_gyoto_1_1_error}{Gyoto::Error}} e) \{}
+\DoxyCodeLine{  e.\mbox{\hyperlink{class_gyoto_1_1_error_a3f2985711ebc1b936586eceb532ebc44}{Report}}();}
+\DoxyCodeLine{  exit ( e.getErrCode() );}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_error_aef1a24af90ee223d135cb848a54e506f}\label{class_gyoto_1_1_error_aef1a24af90ee223d135cb848a54e506f}} 
+\index{Gyoto::Error@{Gyoto::Error}!get\_message@{get\_message}}
+\index{get\_message@{get\_message}!Gyoto::Error@{Gyoto::Error}}
+\doxysubsubsection{\texorpdfstring{get\_message()}{get\_message()}}
+{\footnotesize\ttfamily std\+::string Gyoto\+::\+Error\+::get\+\_\+message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieve error message for custom handling of the exception. 
+
+See also operator const char $\ast$ () const and get\+Err\+Code(). \begin{DoxyReturn}{Returns}
+char$\ast$ message \+: pointer to the error message 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gyoto_1_1_error_a4ae3e8dd85b7f47ad3a1c73a7e3d3b7f}\label{class_gyoto_1_1_error_a4ae3e8dd85b7f47ad3a1c73a7e3d3b7f}} 
+\index{Gyoto::Error@{Gyoto::Error}!getErrcode@{getErrcode}}
+\index{getErrcode@{getErrcode}!Gyoto::Error@{Gyoto::Error}}
+\doxysubsubsection{\texorpdfstring{getErrcode()}{getErrcode()}}
+{\footnotesize\ttfamily int Gyoto\+::\+Error\+::get\+Errcode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieve error code. 
+
+See also operator const char $\ast$ () const and \mbox{\hyperlink{class_gyoto_1_1_error_aef1a24af90ee223d135cb848a54e506f}{get\+\_\+message()}}. \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_gyoto_1_1_error}{Error}} code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gyoto_1_1_error_a7c73399ca56f918b99235ff1d369b6ee}\label{class_gyoto_1_1_error_a7c73399ca56f918b99235ff1d369b6ee}} 
+\index{Gyoto::Error@{Gyoto::Error}!operator const char $\ast$@{operator const char $\ast$}}
+\index{operator const char $\ast$@{operator const char $\ast$}!Gyoto::Error@{Gyoto::Error}}
+\doxysubsubsection{\texorpdfstring{operator const char $\ast$()}{operator const char *()}}
+{\footnotesize\ttfamily Gyoto\+::\+Error\+::operator const char $\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Cast to const char $\ast$. 
+
+Retrieve error message as a C string. See also \mbox{\hyperlink{class_gyoto_1_1_error_aef1a24af90ee223d135cb848a54e506f}{get\+\_\+message()}} and ger\+Errcode(). \mbox{\Hypertarget{class_gyoto_1_1_error_aa383fc8d096d3dccbb10d02ab3f561ae}\label{class_gyoto_1_1_error_aa383fc8d096d3dccbb10d02ab3f561ae}} 
+\index{Gyoto::Error@{Gyoto::Error}!setHandler@{setHandler}}
+\index{setHandler@{setHandler}!Gyoto::Error@{Gyoto::Error}}
+\doxysubsubsection{\texorpdfstring{setHandler()}{setHandler()}}
+{\footnotesize\ttfamily static void Gyoto\+::\+Error\+::set\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_error_a1e4fa0ed2918fbb0ba1a7ed48c686e6d}{Gyoto\+::\+Error\+::\+Handler\+\_\+t}} $\ast$}]{phandler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Set application error handler. 
+
+Instead of catching \mbox{\hyperlink{namespace_gyoto}{Gyoto}} errors directly (for instance if gyoto itself is dlopened), you can set an \mbox{\hyperlink{class_gyoto_1_1_error_a1e4fa0ed2918fbb0ba1a7ed48c686e6d}{Error\+::\+Handler\+\_\+t}} error handler using \mbox{\hyperlink{class_gyoto_1_1_error_aa383fc8d096d3dccbb10d02ab3f561ae}{set\+Handler()}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} applicationErrorHandler(\textcolor{keyword}{const} \mbox{\hyperlink{class_gyoto_1_1_error}{Gyoto::Error}} e) \{}
+\DoxyCodeLine{  e.\mbox{\hyperlink{class_gyoto_1_1_error_a3f2985711ebc1b936586eceb532ebc44}{Report}}();}
+\DoxyCodeLine{  exit ( e.getErrCode() );}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{\textcolor{keywordtype}{int} main() \{}
+\DoxyCodeLine{  \mbox{\hyperlink{class_gyoto_1_1_error_aa383fc8d096d3dccbb10d02ab3f561ae}{Gyoto::Error::setHandler}}(\&applicationErrorHandler);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em phandler} & Function pointer to the handler. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_error_acc576bb84e7acc1d83e049fb03a4097e}\label{class_gyoto_1_1_error_acc576bb84e7acc1d83e049fb03a4097e}} 
+\index{Gyoto::Error@{Gyoto::Error}!errcode@{errcode}}
+\index{errcode@{errcode}!Gyoto::Error@{Gyoto::Error}}
+\doxysubsubsection{\texorpdfstring{errcode}{errcode}}
+{\footnotesize\ttfamily const int Gyoto\+::\+Error\+::errcode\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_gyoto_1_1_error}{Error}} code. 
+
+Default value is EXIT\+\_\+\+FAILURE from cstdlib. Currently not used in practice. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_gyoto_error_8h}{Gyoto\+Error.\+h}}\end{DoxyCompactItemize}

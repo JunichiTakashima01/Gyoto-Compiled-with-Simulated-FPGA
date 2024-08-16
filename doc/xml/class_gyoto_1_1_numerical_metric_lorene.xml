@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_gyoto_1_1_numerical_metric_lorene" kind="class" language="C++" prot="public">
+    <compoundname>Gyoto::NumericalMetricLorene</compoundname>
+    <includes refid="_gyoto_numerical_metric_lorene_8h" local="no">GyotoNumericalMetricLorene.h</includes>
+    <briefdescription>
+<para>Class for 3+1 numerical metrics computed by LORENE. This class can handle (so far) any kind of LORENE metric, stars, collapsing stars, Kerr, boson star e.g. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/junichi/Gyoto/include/GyotoNumericalMetricLorene.h" line="42" column="1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

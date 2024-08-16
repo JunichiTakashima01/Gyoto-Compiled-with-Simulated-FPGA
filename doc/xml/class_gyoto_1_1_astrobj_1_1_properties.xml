@@ -1,0 +1,750 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_gyoto_1_1_astrobj_1_1_properties" kind="class" language="C++" prot="public">
+    <compoundname>Gyoto::Astrobj::Properties</compoundname>
+    <basecompoundref refid="class_gyoto_1_1_smart_pointee" prot="public" virt="non-virtual">Gyoto::SmartPointee</basecompoundref>
+    <includes refid="_gyoto_astrobj_8h" local="no">GyotoAstrobj.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_gyoto_1_1_astrobj_1_1_properties_1a88fdfd77e0c624c05db00d28aeefa75a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class Gyoto::SmartPointer&lt; Gyoto::Astrobj::Properties &gt;</definition>
+        <argsstring></argsstring>
+        <name>Gyoto::SmartPointer&lt; Gyoto::Astrobj::Properties &gt;</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_astrobj_1_1_properties" kindref="compound">Gyoto::Astrobj::Properties</ref> &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="760" column="7" bodyfile="/home/junichi/Gyoto/include/GyotoAstrobj.h" bodystart="793" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_astrobj_1_1_properties_1a9e21d637c8ee909a1c3f58a275b73af8" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* Gyoto::Astrobj::Properties::intensity</definition>
+        <argsstring></argsstring>
+        <name>intensity</name>
+        <briefdescription>
+<para>GYOTO_QUANTITY_INTENSITY : Intensity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="795" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoAstrobj.h" bodystart="795" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_astrobj_1_1_properties_1a48b002663f2e4d287e0382d276695d34" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* Gyoto::Astrobj::Properties::time</definition>
+        <argsstring></argsstring>
+        <name>time</name>
+        <briefdescription>
+<para>GYOTO_QUANTITY_EMISSIONTIME: EmissionTime. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="796" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoAstrobj.h" bodystart="796" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_astrobj_1_1_properties_1a9ac7276c9049b505cae0468dd9f13b7c" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* Gyoto::Astrobj::Properties::distance</definition>
+        <argsstring></argsstring>
+        <name>distance</name>
+        <briefdescription>
+<para>GYOTO_QUANTITY_MIN_DISTANCE: MinDistance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Behaves like the square of the closest distance between <ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref> and <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref> (but not exactly that). Initialize it to DBL_MAX from float.h.; </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="803" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoAstrobj.h" bodystart="803" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_astrobj_1_1_properties_1acc7c6d5dfecd6cbefd6466afcf72a358" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* Gyoto::Astrobj::Properties::first_dmin</definition>
+        <argsstring></argsstring>
+        <name>first_dmin</name>
+        <briefdescription>
+<para>GYOTO_QUANTITY_FIRST_DMIN : FirstDmin. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>First local minimum in distance from object </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="808" column="11" bodyfile="/home/junichi/Gyoto/include/GyotoAstrobj.h" bodystart="808" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_astrobj_1_1_properties_1a035f7c130e041e70495cb587089a3b85" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gyoto::Astrobj::Properties::first_dmin_found</definition>
+        <argsstring></argsstring>
+        <name>first_dmin_found</name>
+        <briefdescription>
+<para>Whether <ref refid="class_gyoto_1_1_astrobj_1_1_properties_1acc7c6d5dfecd6cbefd6466afcf72a358" kindref="member">Properties::first_dmin</ref> was found. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_gyoto_1_1_astrobj_1_1_properties_1acc7c6d5dfecd6cbefd6466afcf72a358" kindref="member">Properties::first_dmin</ref> will be set to the first local minimum and <ref refid="class_gyoto_1_1_astrobj_1_1_properties_1a035f7c130e041e70495cb587089a3b85" kindref="member">Properties::first_dmin_found</ref> will be set to 1 if a local minimum in distance is found. Initialize it to 0. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="815" column="7" bodyfile="/home/junichi/Gyoto/include/GyotoAstrobj.h" bodystart="815" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_astrobj_1_1_properties_1a0b1a79d7698eb834ddb3dc71208bae06" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* Gyoto::Astrobj::Properties::redshift</definition>
+        <argsstring></argsstring>
+        <name>redshift</name>
+        <briefdescription>
+<para>GYOTO_QUANTITY_REDSHIFT : RedShift. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Redshift factor <nu/><subscript>obs</subscript>/<nu/><subscript>em</subscript> (necessary for emission lines computation) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="821" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoAstrobj.h" bodystart="821" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_astrobj_1_1_properties_1aa7096dd23371ab3cbd716d20fd84e8fb" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* Gyoto::Astrobj::Properties::nbcrosseqplane</definition>
+        <argsstring></argsstring>
+        <name>nbcrosseqplane</name>
+        <briefdescription>
+<para>GYOTO_QUANTITY_NBCROSSEQPLANE : nuùber of equatorial plane crossings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Numbere of times the geodesic crosses the equatorial plane </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="826" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoAstrobj.h" bodystart="826" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_astrobj_1_1_properties_1a7bd1f57a64c43c1ea7a8bfdb162fafc8" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* Gyoto::Astrobj::Properties::spectrum</definition>
+        <argsstring></argsstring>
+        <name>spectrum</name>
+        <briefdescription>
+<para>GYOTO_QUANTITY_SPECTRUM : <ref refid="namespace_gyoto_1_1_spectrum" kindref="compound">Spectrum</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>I<subscript><nu/></subscript> (<nu/>) (observed specific intensity) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="831" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoAstrobj.h" bodystart="831" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_astrobj_1_1_properties_1a518a0bb72162c9f01552b0e8fcaab980" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* Gyoto::Astrobj::Properties::stokesQ</definition>
+        <argsstring></argsstring>
+        <name>stokesQ</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="833" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoAstrobj.h" bodystart="833" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_astrobj_1_1_properties_1ac4ff547993006c0a5f140e5a2776921c" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* Gyoto::Astrobj::Properties::stokesU</definition>
+        <argsstring></argsstring>
+        <name>stokesU</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="834" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoAstrobj.h" bodystart="834" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_astrobj_1_1_properties_1ae6e7046467d9ef3826457ae9d9b45e3e" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* Gyoto::Astrobj::Properties::stokesV</definition>
+        <argsstring></argsstring>
+        <name>stokesV</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="835" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoAstrobj.h" bodystart="835" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_astrobj_1_1_properties_1a949551398d6eb72aacf13db7dbc3093f" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* Gyoto::Astrobj::Properties::binspectrum</definition>
+        <argsstring></argsstring>
+        <name>binspectrum</name>
+        <briefdescription>
+<para>GYOTO_QUANTITY_BINSPECTRUM : BinSpectrum. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>I<subscript><nu/><subscript>1</subscript></subscript><superscript><nu/><subscript>2</subscript></superscript>, the integral of I<subscript><nu/></subscript> over each spectral channel (i.e. what a spectrometer would measure) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="842" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoAstrobj.h" bodystart="842" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_astrobj_1_1_properties_1a7cfec2d4e3b3a8c8e153286efff81ad3" prot="public" static="no" mutable="no">
+        <type>ptrdiff_t</type>
+        <definition>ptrdiff_t Gyoto::Astrobj::Properties::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <briefdescription>
+<para>How to jump from one spectral element to the next. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Spectra elements are separated by offset doubles in memory. In other words, the ith spectral element is spectrum[i*offset]. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="848" column="13" bodyfile="/home/junichi/Gyoto/include/GyotoAstrobj.h" bodystart="848" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_astrobj_1_1_properties_1a1bedfed5648f07f4db83babae3c607f8" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* Gyoto::Astrobj::Properties::impactcoords</definition>
+        <argsstring></argsstring>
+        <name>impactcoords</name>
+        <briefdescription>
+<para>GYOTO_QUANTITY_IMPACTCOORDS: ImpactCoords. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Coordinates of the object and photon at impact </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="853" column="11" bodyfile="/home/junichi/Gyoto/include/GyotoAstrobj.h" bodystart="853" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_astrobj_1_1_properties_1aff766b07d3e56d78bb323be3c8b40ec8" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* Gyoto::Astrobj::Properties::user1</definition>
+        <argsstring></argsstring>
+        <name>user1</name>
+        <briefdescription>
+<para>GYOTO_QUANTITY_USER1 : User1 Astrobj-specific quantity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="859" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoAstrobj.h" bodystart="859" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_astrobj_1_1_properties_1a8457e2c54b1164411edc1f1e55fb1726" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* Gyoto::Astrobj::Properties::user2</definition>
+        <argsstring></argsstring>
+        <name>user2</name>
+        <briefdescription>
+<para>GYOTO_QUANTITY_USER2 : User2 Astrobj-specific quantity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="865" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoAstrobj.h" bodystart="865" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_astrobj_1_1_properties_1ac302846eb59521832bd8d355d07cce75" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* Gyoto::Astrobj::Properties::user3</definition>
+        <argsstring></argsstring>
+        <name>user3</name>
+        <briefdescription>
+<para>GYOTO_QUANTITY_USER3 : User3 Astrobj-specific quantity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="871" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoAstrobj.h" bodystart="871" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_astrobj_1_1_properties_1a9d8affffaf70894dabf35c227efdc1de" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* Gyoto::Astrobj::Properties::user4</definition>
+        <argsstring></argsstring>
+        <name>user4</name>
+        <briefdescription>
+<para>GYOTO_QUANTITY_USER4 : User4 Astrobj-specific quantity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="877" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoAstrobj.h" bodystart="877" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_astrobj_1_1_properties_1a36f39039f1a3512af98c6dd166537538" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* Gyoto::Astrobj::Properties::user5</definition>
+        <argsstring></argsstring>
+        <name>user5</name>
+        <briefdescription>
+<para>GYOTO_QUANTITY_USER5 : User5 Astrobj-specific quantity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="883" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoAstrobj.h" bodystart="883" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_astrobj_1_1_properties_1acc601699a4f517286d579aec1960a279" prot="public" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; Gyoto::Units::Converter &gt;</type>
+        <definition>Gyoto::SmartPointer&lt;Gyoto::Units::Converter&gt; Gyoto::Astrobj::Properties::intensity_converter_</definition>
+        <argsstring></argsstring>
+        <name>intensity_converter_</name>
+        <briefdescription>
+<para>Converter between SI (J.m <superscript> -2</superscript>.s<superscript>-1</superscript>.sr<superscript>-1</superscript>.Hz<superscript>-1</superscript>) and requested Intensity unit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="888" column="23" bodyfile="/home/junichi/Gyoto/include/GyotoAstrobj.h" bodystart="888" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_astrobj_1_1_properties_1af2445d003a8966d622fb1390e772f16c" prot="public" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; Gyoto::Units::Converter &gt;</type>
+        <definition>Gyoto::SmartPointer&lt;Gyoto::Units::Converter&gt; Gyoto::Astrobj::Properties::spectrum_converter_</definition>
+        <argsstring></argsstring>
+        <name>spectrum_converter_</name>
+        <briefdescription>
+<para>Converter between SI (J.m <superscript> -2</superscript>.s<superscript>-1</superscript>.sr<superscript>-1</superscript>.Hz<superscript>-1</superscript>) and requested <ref refid="namespace_gyoto_1_1_spectrum" kindref="compound">Spectrum</ref> unit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="892" column="23" bodyfile="/home/junichi/Gyoto/include/GyotoAstrobj.h" bodystart="892" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_astrobj_1_1_properties_1a30468e38efd9f083c1b2ce7b6df8225a" prot="public" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; Gyoto::Units::Converter &gt;</type>
+        <definition>Gyoto::SmartPointer&lt;Gyoto::Units::Converter&gt; Gyoto::Astrobj::Properties::binspectrum_converter_</definition>
+        <argsstring></argsstring>
+        <name>binspectrum_converter_</name>
+        <briefdescription>
+<para>Converter between SI (J.m <superscript> -2</superscript>.s<superscript>-1</superscript>.sr<superscript>-1</superscript>) and requested BinSpectrum unit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="896" column="23" bodyfile="/home/junichi/Gyoto/include/GyotoAstrobj.h" bodystart="896" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_astrobj_1_1_properties_1a65ca5f97aaf3ee4884224eaae3335ede" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gyoto::Astrobj::Properties::alloc</definition>
+        <argsstring></argsstring>
+        <name>alloc</name>
+        <briefdescription>
+<para>True if buffers are allocated for entire field (npix*npix) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="900" column="8" bodyfile="/home/junichi/Gyoto/include/GyotoAstrobj.h" bodystart="900" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gyoto_1_1_astrobj_1_1_properties_1acbc9c84e76d91f80058aeaf94af16f17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Astrobj::Properties::Properties</definition>
+        <argsstring>()</argsstring>
+        <name>Properties</name>
+        <briefdescription>
+<para>Default constructor (everything is set to NULL);. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="903" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_astrobj_1_1_properties_1a3e6d3f7302a3adb69a10d41adef5dd75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Astrobj::Properties::Properties</definition>
+        <argsstring>(double *, double *)</argsstring>
+        <name>Properties</name>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <briefdescription>
+<para>&lt; Set intensity and time pointers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="904" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_astrobj_1_1_properties_1ab2ad1321af280ec137b57ca70d285a0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Astrobj::Properties::init</definition>
+        <argsstring>(size_t nbnuobs=0)</argsstring>
+        <name>init</name>
+        <param>
+          <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+          <declname>nbnuobs</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Initialize observable quantities. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The pointed-to values are initialized as follows (if the corresponding pointer is not NULL):</para>
+<para><itemizedlist>
+<listitem><para>intensity, firt_dmin_found, redshift, userN: 0</para>
+</listitem><listitem><para>time, distance, first_dmin: DBL_MAX</para>
+</listitem><listitem><para>for spectrum and binspectrum, nbnuobs values separated by offset in memory are initialized to 0</para>
+</listitem><listitem><para>for impactcoords, 16 contiguous values are initialized to DBL_MAX </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="917" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_astrobj_1_1_properties_1aa30b899a1dcbc53567641d34b70997f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_gyoto_1_1_astrobj_1_1_properties" kindref="compound">Properties</ref> &amp;</type>
+        <definition>Properties&amp; Gyoto::Astrobj::Properties::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <briefdescription>
+<para>Increment pointers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>All valid pointers are incremented by 1 (sizeof(double)), excepted impactcoords which is incremented by 16. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="925" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_astrobj_1_1_properties_1ae846982495da75c490ead035756118d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_gyoto_1_1_astrobj_1_1_properties" kindref="compound">Properties</ref> &amp;</type>
+        <definition>Properties&amp; Gyoto::Astrobj::Properties::operator+=</definition>
+        <argsstring>(ptrdiff_t offset)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>ptrdiff_t</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Increment pointers by offset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>All valid pointers are incremented by offset (sizeof(double)), excepted impactcoords which is incremented by 16*offset. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="933" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_astrobj_1_1_properties_1a5a6fe0f7f1e8f73e03879b0dc81c5e6e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Astrobj::Properties::operator Gyoto::Quantity_t</definition>
+        <argsstring>() const</argsstring>
+        <name>operator Gyoto::Quantity_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="935" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_astrobj_1_1_properties_1a359e911476ad77895463f980c2b29e75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Astrobj::Properties::intensityConverter</definition>
+        <argsstring>(Gyoto::SmartPointer&lt; Gyoto::Units::Converter &gt;)</argsstring>
+        <name>intensityConverter</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; Gyoto::Units::Converter &gt;</type>
+        </param>
+        <briefdescription>
+<para>Set Properties::intentity_converter_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="938" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_astrobj_1_1_properties_1adece6e633020424b491d54f8e07ba576" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Astrobj::Properties::intensityConverter</definition>
+        <argsstring>(std::string)</argsstring>
+        <name>intensityConverter</name>
+        <param>
+          <type>std::string</type>
+        </param>
+        <briefdescription>
+<para>Set Properties::intentity_converter_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="940" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_astrobj_1_1_properties_1acb81020816a52ca489597595d383b2f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Astrobj::Properties::spectrumConverter</definition>
+        <argsstring>(Gyoto::SmartPointer&lt; Gyoto::Units::Converter &gt;)</argsstring>
+        <name>spectrumConverter</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; Gyoto::Units::Converter &gt;</type>
+        </param>
+        <briefdescription>
+<para>Set <ref refid="class_gyoto_1_1_astrobj_1_1_properties_1af2445d003a8966d622fb1390e772f16c" kindref="member">Properties::spectrum_converter_</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="942" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_astrobj_1_1_properties_1abde47480a51172fc6681c80c7b1a8f69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Astrobj::Properties::spectrumConverter</definition>
+        <argsstring>(std::string)</argsstring>
+        <name>spectrumConverter</name>
+        <param>
+          <type>std::string</type>
+        </param>
+        <briefdescription>
+<para>Set <ref refid="class_gyoto_1_1_astrobj_1_1_properties_1af2445d003a8966d622fb1390e772f16c" kindref="member">Properties::spectrum_converter_</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="944" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_astrobj_1_1_properties_1a15d1afe584db8a8b0cfb503e97661306" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Astrobj::Properties::binSpectrumConverter</definition>
+        <argsstring>(Gyoto::SmartPointer&lt; Gyoto::Units::Converter &gt;)</argsstring>
+        <name>binSpectrumConverter</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; Gyoto::Units::Converter &gt;</type>
+        </param>
+        <briefdescription>
+<para>Set <ref refid="class_gyoto_1_1_astrobj_1_1_properties_1a30468e38efd9f083c1b2ce7b6df8225a" kindref="member">Properties::binspectrum_converter_</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="946" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_astrobj_1_1_properties_1a80e2b37be097d46ec0743342ebe83f84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Astrobj::Properties::binSpectrumConverter</definition>
+        <argsstring>(std::string)</argsstring>
+        <name>binSpectrumConverter</name>
+        <param>
+          <type>std::string</type>
+        </param>
+        <briefdescription>
+<para>Set <ref refid="class_gyoto_1_1_astrobj_1_1_properties_1a30468e38efd9f083c1b2ce7b6df8225a" kindref="member">Properties::binspectrum_converter_</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="948" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_smart_pointee_1a9ec09c51fd18dde7c13ef3b03fac1fad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::SmartPointee::incRefCount</definition>
+        <argsstring>()</argsstring>
+        <name>incRefCount</name>
+        <briefdescription>
+<para>Increment the reference counter. Warning: Don&apos;t mess with the counter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="96" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_smart_pointee_1a22a67609fb4690ee8ec0e95e4060e387" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gyoto::SmartPointee::decRefCount</definition>
+        <argsstring>()</argsstring>
+        <name>decRefCount</name>
+        <briefdescription>
+<para>Decrement the reference counter and return current value. Warning: Don&apos;t mess with the counter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="97" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_smart_pointee_1a9a9cb35cd161bf19ce652f76e0a5bec0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gyoto::SmartPointee::getRefCount</definition>
+        <argsstring>()</argsstring>
+        <name>getRefCount</name>
+        <briefdescription>
+<para>Get the current number of references. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="98" column="7"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" prot="public" static="no">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_smart_pointee" kindref="compound">Gyoto::SmartPointee</ref> &gt;</type>
+        <definition>typedef Gyoto::SmartPointer&lt;Gyoto::SmartPointee&gt; Gyoto::SmartPointee::Subcontractor_t(Gyoto::FactoryMessenger *, std::vector&lt; std::string &gt; const &amp;)</definition>
+        <argsstring>(Gyoto::FactoryMessenger *, std::vector&lt; std::string &gt; const &amp;)</argsstring>
+        <name>Subcontractor_t</name>
+        <briefdescription>
+<para>A subcontractor builds an object upon order from the <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Various classes need to provide a subcontractor to be able to instantiate themselves upon order from the <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref>. A subcontractor is a function (often a static member function) which accepts a pointer to a <ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref> as unique parameter, communicates with the <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref> using this messenger to read an XML description of the object to build, and returns this objet. <ref refid="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" kindref="member">SmartPointee::Subcontractor_t</ref>* is just generic enough a typedef to cast to and from other subcontractor types: <ref refid="namespace_gyoto_1_1_astrobj_1aa53c7ada58c8c8f3799c3485b7d8f3bb" kindref="member">Astrobj::Subcontractor_t</ref>, <ref refid="namespace_gyoto_1_1_metric_1ad6b33a642cc94ad67855184d2adb95df" kindref="member">Metric::Subcontractor_t</ref>, <ref refid="namespace_gyoto_1_1_spectrum_1a163055eef14aee22dd8fa5188812d889" kindref="member">Spectrum::Subcontractor_t</ref>. A subcontractor needs to be registered using the relevant <ref refid="namespace_gyoto_1_1_astrobj_1abb6caf3023a51cb77b5f6793ac03b188" kindref="member">Register()</ref> function: <ref refid="namespace_gyoto_1_1_astrobj_1abb6caf3023a51cb77b5f6793ac03b188" kindref="member">Astrobj::Register()</ref>, <ref refid="namespace_gyoto_1_1_metric_1a602cba49b001e7470f3d439d1ab3e8f7" kindref="member">Metric::Register()</ref>, <ref refid="namespace_gyoto_1_1_spectrum_1a517874749d838d7121880e7d9d14c626" kindref="member">Spectrum::Register()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="114" column="5" bodyfile="/home/junichi/Gyoto/include/GyotoSmartPointer.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_smart_pointee_1aaaf212a70fb1880b70e4d357e843cc85" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gyoto::SmartPointee::refCount</definition>
+        <argsstring></argsstring>
+        <name>refCount</name>
+        <briefdescription>
+<para>Reference counter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="83" column="7" bodyfile="/home/junichi/Gyoto/include/GyotoSmartPointer.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_smart_pointee_1abf1c1e431cdd4f08f13de581cccb6770" prot="private" static="no" mutable="no">
+        <type>pthread_mutex_t</type>
+        <definition>pthread_mutex_t Gyoto::SmartPointee::mutex_</definition>
+        <argsstring></argsstring>
+        <name>mutex_</name>
+        <briefdescription>
+<para>A mutex. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>When compiled with libpthread </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="89" column="19" bodyfile="/home/junichi/Gyoto/include/GyotoSmartPointer.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Observable properties of an Astronomical object. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The sort of properties one wants to measure on a ray-traced <ref refid="class_gyoto_1_1_photon" kindref="compound">Gyoto::Photon</ref> which hits a <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Gyoto::Astrobj</ref>. Not all <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref> are able to fill all of these properties.</para>
+<para>An instance of <ref refid="class_gyoto_1_1_astrobj_1_1_properties" kindref="compound">Properties</ref> essentially contains a bunch of pointers to memory areas where the observable quantities (see Quantity_t) should be stored.</para>
+<para><ref refid="class_gyoto_1_1_astrobj_1_1_generic_1aa6f20e6d108357f6355493c4fdd5bb2f" kindref="member">Astrobj::Generic::processHitQuantities()</ref> fills the various arrays upon request. A quantity is ignored if the corresponding pointer is NULL.</para>
+<para><ref refid="class_gyoto_1_1_scenery_1a2f91e3d67d6846b50011be7d72fa3af6" kindref="member">Scenery::operator()()</ref> increments the <ref refid="class_gyoto_1_1_astrobj_1_1_properties" kindref="compound">Properties</ref> between each <ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref> using <ref refid="class_gyoto_1_1_astrobj_1_1_properties_1aa30b899a1dcbc53567641d34b70997f3" kindref="member">Properties::operator++()</ref>.</para>
+<para>The main application (gyoto, the yorick plug-in, or your user application) is responsible for allocating the various arrays, filling the various members of <ref refid="class_gyoto_1_1_astrobj_1_1_properties" kindref="compound">Properties</ref>, and doing whatever meaninful with the arrays after they have been filled with values by the ray-tracing code (e.g. saving them to disk or displaying them).</para>
+<para>Also see <ref refid="class_gyoto_1_1_scenery" kindref="compound">Gyoto::Scenery</ref> and <ref refid="namespace_gyoto_1a009cbd7f025ce417907a5344a15a1463" kindref="member">Gyoto::Quantity_t</ref>. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Gyoto::Astrobj::Properties</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_properties"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gyoto::SmartPointee</label>
+        <link refid="class_gyoto_1_1_smart_pointee"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Gyoto::Astrobj::Properties</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_properties"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>binspectrum_converter_</edgelabel>
+          <edgelabel>intensity_converter_</edgelabel>
+          <edgelabel>spectrum_converter_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gyoto::SmartPointee</label>
+        <link refid="class_gyoto_1_1_smart_pointee"/>
+      </node>
+      <node id="3">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Units::Converter &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="792" column="1" bodyfile="/home/junichi/Gyoto/include/GyotoAstrobj.h" bodystart="792" bodyend="951"/>
+    <listofallmembers>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1a65ca5f97aaf3ee4884224eaae3335ede" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>alloc</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1a949551398d6eb72aacf13db7dbc3093f" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>binspectrum</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1a30468e38efd9f083c1b2ce7b6df8225a" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>binspectrum_converter_</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1a15d1afe584db8a8b0cfb503e97661306" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>binSpectrumConverter</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1a80e2b37be097d46ec0743342ebe83f84" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>binSpectrumConverter</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1a22a67609fb4690ee8ec0e95e4060e387" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>decRefCount</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1a9ac7276c9049b505cae0468dd9f13b7c" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>distance</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1acc7c6d5dfecd6cbefd6466afcf72a358" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>first_dmin</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1a035f7c130e041e70495cb587089a3b85" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>first_dmin_found</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1a9a9cb35cd161bf19ce652f76e0a5bec0" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>getRefCount</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1a88fdfd77e0c624c05db00d28aeefa75a" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>Gyoto::SmartPointer&lt; Gyoto::Astrobj::Properties &gt;</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1a1bedfed5648f07f4db83babae3c607f8" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>impactcoords</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1a9ec09c51fd18dde7c13ef3b03fac1fad" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>incRefCount</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1ab2ad1321af280ec137b57ca70d285a0a" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>init</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1a9e21d637c8ee909a1c3f58a275b73af8" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>intensity</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1acc601699a4f517286d579aec1960a279" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>intensity_converter_</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1a359e911476ad77895463f980c2b29e75" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>intensityConverter</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1adece6e633020424b491d54f8e07ba576" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>intensityConverter</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1abf1c1e431cdd4f08f13de581cccb6770" prot="private" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>mutex_</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1aa7096dd23371ab3cbd716d20fd84e8fb" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>nbcrosseqplane</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1a7cfec2d4e3b3a8c8e153286efff81ad3" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>offset</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1a5a6fe0f7f1e8f73e03879b0dc81c5e6e" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>operator Gyoto::Quantity_t</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1aa30b899a1dcbc53567641d34b70997f3" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>operator++</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1ae846982495da75c490ead035756118d0" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>operator+=</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1acbc9c84e76d91f80058aeaf94af16f17" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>Properties</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1a3e6d3f7302a3adb69a10d41adef5dd75" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>Properties</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1a0b1a79d7698eb834ddb3dc71208bae06" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>redshift</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1aaaf212a70fb1880b70e4d357e843cc85" prot="private" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>refCount</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1a7d212bcd7d3ac4147e18683c47ca910d" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>SmartPointee</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1adc075b08ca5d3c0635bc97f843835f8a" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>SmartPointee</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1a7bd1f57a64c43c1ea7a8bfdb162fafc8" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>spectrum</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1af2445d003a8966d622fb1390e772f16c" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>spectrum_converter_</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1acb81020816a52ca489597595d383b2f9" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>spectrumConverter</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1abde47480a51172fc6681c80c7b1a8f69" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>spectrumConverter</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1a518a0bb72162c9f01552b0e8fcaab980" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>stokesQ</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1ac4ff547993006c0a5f140e5a2776921c" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>stokesU</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1ae6e7046467d9ef3826457ae9d9b45e3e" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>stokesV</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>Subcontractor_t</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1a48b002663f2e4d287e0382d276695d34" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>time</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1aff766b07d3e56d78bb323be3c8b40ec8" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>user1</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1a8457e2c54b1164411edc1f1e55fb1726" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>user2</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1ac302846eb59521832bd8d355d07cce75" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>user3</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1a9d8affffaf70894dabf35c227efdc1de" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>user4</name></member>
+      <member refid="class_gyoto_1_1_astrobj_1_1_properties_1a36f39039f1a3512af98c6dd166537538" prot="public" virt="non-virtual"><scope>Gyoto::Astrobj::Properties</scope><name>user5</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1a4301d456d1d36ed7912d073b742c74e1" prot="public" virt="virtual"><scope>Gyoto::Astrobj::Properties</scope><name>~SmartPointee</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1571 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_gyoto_1_1_property" kind="class" language="C++" prot="public">
+    <compoundname>Gyoto::Property</compoundname>
+    <includes refid="_gyoto_property_8h" local="no">GyotoProperty.h</includes>
+    <innerclass refid="union_gyoto_1_1_property_1_1getter__t" prot="public">Gyoto::Property::getter_t</innerclass>
+    <innerclass refid="union_gyoto_1_1_property_1_1getter__unit__t" prot="public">Gyoto::Property::getter_unit_t</innerclass>
+    <innerclass refid="union_gyoto_1_1_property_1_1setter__t" prot="public">Gyoto::Property::setter_t</innerclass>
+    <innerclass refid="union_gyoto_1_1_property_1_1setter__unit__t" prot="public">Gyoto::Property::setter_unit_t</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>type_e</name>
+        <enumvalue id="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a21bcd45c33da137a4b77c8a9ddd702a4" prot="public">
+          <name>double_t</name>
+          <briefdescription>
+<para>Type is double. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8af759331168118226d7d9f75039af3b53" prot="public">
+          <name>long_t</name>
+          <briefdescription>
+<para>Type is long. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8ae4fe84d124f4b25ad28120c0057b480f" prot="public">
+          <name>unsigned_long_t</name>
+          <briefdescription>
+<para>Type is unsigned long (a.k.a. size_t) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a1c61b7632afa3d4a1d31577492f8ddca" prot="public">
+          <name>size_t_t</name>
+          <briefdescription>
+<para>Type is size_t (only if distinct from unsigned long) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a3d18c8ea6df62e32e0b77bd235b94c19" prot="public">
+          <name>bool_t</name>
+          <briefdescription>
+<para>Type is bool. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8aa393ef1ba7e2505b14d66fb5f2e3313c" prot="public">
+          <name>string_t</name>
+          <briefdescription>
+<para>Type is std::string. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a7773049749e0b6f0d83e531f838220a7" prot="public">
+          <name>filename_t</name>
+          <briefdescription>
+<para>Type is std::string and holds a file name. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>In this case, the value may be changed to include relative or absolute path. The prefix &quot;`pwd`/&quot; forces path to be interpreted relative to the current working directory. If the value starts with &quot;/&quot;, it is interpreted as an absolute path. Otherwise, when reading from XML, the path is interpreted relative to the XML file. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8afd29824380cd698c96d000782f18a27c" prot="public">
+          <name>vector_double_t</name>
+          <briefdescription>
+<para>Type is std::vector&lt;double&gt; </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a1c71c8ba20a5c8b519c3afb56b1c6dd2" prot="public">
+          <name>vector_unsigned_long_t</name>
+          <briefdescription>
+<para>Type is std::vector&lt;unsigned long&gt; </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a3b5e845fdb6455c0e111a42882798948" prot="public">
+          <name>metric_t</name>
+          <briefdescription>
+<para>Type is Gyoto::SmartPointer&lt;Gyoto::Metric::Generic&gt; </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8ae7bb28c4049603af389dc4be0a4093f7" prot="public">
+          <name>screen_t</name>
+          <briefdescription>
+<para>Type is Gyoto::SmartPointer&lt;Gyoto::Screen::Generic&gt; </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a59a216803f694032f224e3fc770a9371" prot="public">
+          <name>astrobj_t</name>
+          <briefdescription>
+<para>Type is Gyoto::SmartPointer&lt;Gyoto::Astrobj::Generic&gt; </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a95d36a0c8134e93cc7e868415c368352" prot="public">
+          <name>spectrum_t</name>
+          <briefdescription>
+<para>Type is Gyoto::SmartPointer&lt;Gyoto::Spectrum::Generic&gt; </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a7aed2532777a1a9643f989a987a0ce90" prot="public">
+          <name>spectrometer_t</name>
+          <briefdescription>
+<para>Type is Gyoto::SmartPointer&lt;Gyoto::Spectrometer::Generic&gt; </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a83a494e6387163d77fcf7ce5b7eeea63" prot="public">
+          <name>empty_t</name>
+          <briefdescription>
+<para><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> is empty. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>In this case (and only in this case):<orderedlist>
+<listitem><para><ref refid="class_gyoto_1_1_property_1a06b087b61281f000525ae04559e4dddf" kindref="member">Gyoto::Property::operator bool() const </ref>return false;</para>
+</listitem><listitem><para><ref refid="class_gyoto_1_1_property_1ab5727f08491e9f788ef3b81a08ac9847" kindref="member">Property::parent</ref> may be different from NULL and point to another array of <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> instances, that should be interpreted as appended to this list. </para>
+</listitem></orderedlist>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Possible type of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>These are all the values that <ref refid="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" kindref="member">Property::type</ref> may take. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="616" column="3" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="616" bodyend="661"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_property_1a5c3fdfa4811f9eaf9fe5828d0d815597" prot="public" static="no">
+        <type>void(Object::*</type>
+        <definition>typedef void(Object::* Gyoto::Property::set_double_t) (double val)</definition>
+        <argsstring>)(double val)</argsstring>
+        <name>set_double_t</name>
+        <briefdescription>
+<para>Prototype for an accessor to set a double. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="672" column="11" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="672" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_property_1ad854709d822b4632f7bd064186dd5fb1" prot="public" static="no">
+        <type>double(Object::*</type>
+        <definition>typedef double(Object::* Gyoto::Property::get_double_t) () const</definition>
+        <argsstring>)() const</argsstring>
+        <name>get_double_t</name>
+        <briefdescription>
+<para>Prototype for an accessor to get a double. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="674" column="11" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="674" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_property_1aae17d2fbb039384f629147cede1893ab" prot="public" static="no">
+        <type>void(Object::*</type>
+        <definition>typedef void(Object::* Gyoto::Property::set_double_unit_t) (double val, std::string const &amp;unit)</definition>
+        <argsstring>)(double val, std::string const &amp;unit)</argsstring>
+        <name>set_double_unit_t</name>
+        <briefdescription>
+<para>Prototype for an accessor to set a double, with unit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="676" column="11" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="676" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_property_1a5a4eb097d38ff966434d234c0644ead5" prot="public" static="no">
+        <type>double(Object::*</type>
+        <definition>typedef double(Object::* Gyoto::Property::get_double_unit_t) (std::string const &amp;unit) const</definition>
+        <argsstring>)(std::string const &amp;unit) const</argsstring>
+        <name>get_double_unit_t</name>
+        <briefdescription>
+<para>Prototype for an accessor to get a double, with unit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="679" column="11" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="679" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_property_1a033a73c9f62804556ea9e0b8eb8938ad" prot="public" static="no">
+        <type>void(Object::*</type>
+        <definition>typedef void(Object::* Gyoto::Property::set_long_t) (long val)</definition>
+        <argsstring>)(long val)</argsstring>
+        <name>set_long_t</name>
+        <briefdescription>
+<para>Prototype for an accessor to set a long. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="681" column="11" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="681" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_property_1a5d9c0b407ba5bf130d42361fe0e7f591" prot="public" static="no">
+        <type>long(Object::*</type>
+        <definition>typedef long(Object::* Gyoto::Property::get_long_t) () const</definition>
+        <argsstring>)() const</argsstring>
+        <name>get_long_t</name>
+        <briefdescription>
+<para>Prototype for an accessor to get a long. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="683" column="11" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="683" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_property_1a7481266392c38fcf885d62dc0aab5f91" prot="public" static="no">
+        <type>void(Object::*</type>
+        <definition>typedef void(Object::* Gyoto::Property::set_unsigned_long_t) (unsigned long val)</definition>
+        <argsstring>)(unsigned long val)</argsstring>
+        <name>set_unsigned_long_t</name>
+        <briefdescription>
+<para>Prototype for an accessor to set an unsigned long. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="685" column="11" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="685" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_property_1a41dc17eaba50912281a412a199e9a7c5" prot="public" static="no">
+        <type>unsigned long(Object::*</type>
+        <definition>typedef unsigned long(Object::* Gyoto::Property::get_unsigned_long_t) () const</definition>
+        <argsstring>)() const</argsstring>
+        <name>get_unsigned_long_t</name>
+        <briefdescription>
+<para>Prototype for an accessor to get an unsigned long. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="687" column="20" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="687" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_property_1a03c8b8bc711939093c2d633bc65f48ad" prot="public" static="no">
+        <type>void(Object::*</type>
+        <definition>typedef void(Object::* Gyoto::Property::set_size_t_t) (size_t val)</definition>
+        <argsstring>)(size_t val)</argsstring>
+        <name>set_size_t_t</name>
+        <briefdescription>
+<para>Prototype for an accessor to set a size_t. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="689" column="11" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="689" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_property_1a22d8c10540d31a01ae052e57fb8a995a" prot="public" static="no">
+        <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref>(Object::*</type>
+        <definition>typedef size_t(Object::* Gyoto::Property::get_size_t_t) () const</definition>
+        <argsstring>)() const</argsstring>
+        <name>get_size_t_t</name>
+        <briefdescription>
+<para>Prototype for an accessor to get a size_t. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="691" column="11" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="691" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_property_1acd02ae8c14ca8ba4b834a4c3cdc8fd25" prot="public" static="no">
+        <type>void(Object::*</type>
+        <definition>typedef void(Object::* Gyoto::Property::set_bool_t) (bool val)</definition>
+        <argsstring>)(bool val)</argsstring>
+        <name>set_bool_t</name>
+        <briefdescription>
+<para>Prototype for an accessor to set a bool. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="693" column="11" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="693" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_property_1a74fef635abe872b8b2e00c43bef33cf4" prot="public" static="no">
+        <type>bool(Object::*</type>
+        <definition>typedef bool(Object::* Gyoto::Property::get_bool_t) () const</definition>
+        <argsstring>)() const</argsstring>
+        <name>get_bool_t</name>
+        <briefdescription>
+<para>Prototype for an accessor to get a bool. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="695" column="11" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="695" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_property_1a7d54792987694733c75c606220fc5b39" prot="public" static="no">
+        <type>void(Object::*</type>
+        <definition>typedef void(Object::* Gyoto::Property::set_string_t) (std::string const  &amp;)</definition>
+        <argsstring>)(std::string const &amp;)</argsstring>
+        <name>set_string_t</name>
+        <briefdescription>
+<para>Prototype for an accessor to set a string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="697" column="11" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="697" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_property_1a2823f77a3ac869395543027ea0beb4c4" prot="public" static="no">
+        <type>std::string(Object::*</type>
+        <definition>typedef std::string(Object::* Gyoto::Property::get_string_t) () const</definition>
+        <argsstring>)() const</argsstring>
+        <name>get_string_t</name>
+        <briefdescription>
+<para>Prototype for an accessor to get a string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="699" column="11" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="699" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_property_1aa3218d6311332999fd888aaf9dda0b86" prot="public" static="no">
+        <type>void(Object::*</type>
+        <definition>typedef void(Object::* Gyoto::Property::set_fname_t) (std::string const  &amp;)</definition>
+        <argsstring>)(std::string const &amp;)</argsstring>
+        <name>set_fname_t</name>
+        <briefdescription>
+<para>Prototype for an accessor to set a filename. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="701" column="11" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="701" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_property_1ac4d4e980b1e442a6cf63dc77d04e8535" prot="public" static="no">
+        <type>std::string(Object::*</type>
+        <definition>typedef std::string(Object::* Gyoto::Property::get_fname_t) () const</definition>
+        <argsstring>)() const</argsstring>
+        <name>get_fname_t</name>
+        <briefdescription>
+<para>Prototype for an accessor to get a filename. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="703" column="11" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="703" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_property_1a46d660c155e7a23fef6a7e93915172a1" prot="public" static="no">
+        <type>void(Object::*</type>
+        <definition>typedef void(Object::* Gyoto::Property::set_vector_double_t) (std::vector&lt; double &gt; const  &amp;)</definition>
+        <argsstring>)(std::vector&lt; double &gt; const &amp;)</argsstring>
+        <name>set_vector_double_t</name>
+        <briefdescription>
+<para>Prototype for an accessor to set a std::vector&lt;double&gt; </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="705" column="11" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="705" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_property_1a18be13807a1a1b6d7553e3f648f9cc55" prot="public" static="no">
+        <type>std::vector&lt; double &gt;(Object::*</type>
+        <definition>typedef std::vector&lt;double&gt;(Object::* Gyoto::Property::get_vector_double_t) () const</definition>
+        <argsstring>)() const</argsstring>
+        <name>get_vector_double_t</name>
+        <briefdescription>
+<para>Prototype for an accessor to get a std::vector&lt;double&gt; </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="707" column="3" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="707" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_property_1a4b5c3882a6912e9c94ea126942678c5d" prot="public" static="no">
+        <type>void(Object::*</type>
+        <definition>typedef void(Object::* Gyoto::Property::set_vector_double_unit_t) (std::vector&lt; double &gt; const  &amp;, std::string const &amp;)</definition>
+        <argsstring>)(std::vector&lt; double &gt; const &amp;, std::string const &amp;)</argsstring>
+        <name>set_vector_double_unit_t</name>
+        <briefdescription>
+<para>Prototype for an accessor to set a std::vector&lt;double&gt;, with unit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="709" column="11" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="709" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_property_1ac25061aa8b5b41e0f7152a9d4c20371c" prot="public" static="no">
+        <type>std::vector&lt; double &gt;(Object::*</type>
+        <definition>typedef std::vector&lt;double&gt;(Object::* Gyoto::Property::get_vector_double_unit_t) (std::string const &amp;) const</definition>
+        <argsstring>)(std::string const &amp;) const</argsstring>
+        <name>get_vector_double_unit_t</name>
+        <briefdescription>
+<para>Prototype for an accessor to get a std::vector&lt;double&gt;, with unit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="711" column="3" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="711" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_property_1afb2774eec368e0416261a36e5ccc4822" prot="public" static="no">
+        <type>void(Object::*</type>
+        <definition>typedef void(Object::* Gyoto::Property::set_vector_unsigned_long_t) (std::vector&lt; unsigned long &gt; const  &amp;)</definition>
+        <argsstring>)(std::vector&lt; unsigned long &gt; const &amp;)</argsstring>
+        <name>set_vector_unsigned_long_t</name>
+        <briefdescription>
+<para>Prototype for an accessor to set a std::vector&lt;unsigned long&gt; </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="713" column="11" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="713" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_property_1aae4677e1c06a55dca87f23de9eadbfdb" prot="public" static="no">
+        <type>std::vector&lt; unsigned long &gt;(Object::*</type>
+        <definition>typedef std::vector&lt;unsigned long&gt;(Object::* Gyoto::Property::get_vector_unsigned_long_t) () const</definition>
+        <argsstring>)() const</argsstring>
+        <name>get_vector_unsigned_long_t</name>
+        <briefdescription>
+<para>Prototype for an accessor to get a std::vector&lt;unsigned long&gt; </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="715" column="3" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="715" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_property_1a0f446869148ce30d77175916b7b340cb" prot="public" static="no">
+        <type>void(Object::*</type>
+        <definition>typedef void(Object::* Gyoto::Property::set_metric_t) (Gyoto::SmartPointer&lt; Gyoto::Metric::Generic &gt;)</definition>
+        <argsstring>)(Gyoto::SmartPointer&lt; Gyoto::Metric::Generic &gt;)</argsstring>
+        <name>set_metric_t</name>
+        <briefdescription>
+<para>Prototype for an accessor to set a Gyoto::SmartPointer&lt;Gyoto::Metric::Generic&gt; </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="718" column="11" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="719" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_property_1a7f9c1be62e0ebc676ad36cc73203c00e" prot="public" static="no">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_metric_1_1_generic" kindref="compound">Gyoto::Metric::Generic</ref> &gt;(Object::*</type>
+        <definition>typedef Gyoto::SmartPointer&lt;Gyoto::Metric::Generic&gt;(Object::* Gyoto::Property::get_metric_t) () const</definition>
+        <argsstring>)() const</argsstring>
+        <name>get_metric_t</name>
+        <briefdescription>
+<para>Prototype for an accessor to get a Gyoto::SmartPointer&lt;Gyoto::Metric::Generic&gt; </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="721" column="3" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="722" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_property_1a8c2f6452533d0b746bddb7b92d12c847" prot="public" static="no">
+        <type>void(Object::*</type>
+        <definition>typedef void(Object::* Gyoto::Property::set_screen_t) (Gyoto::SmartPointer&lt; Gyoto::Screen &gt;)</definition>
+        <argsstring>)(Gyoto::SmartPointer&lt; Gyoto::Screen &gt;)</argsstring>
+        <name>set_screen_t</name>
+        <briefdescription>
+<para>Prototype for an accessor to set a Gyoto::SmartPointer&lt;Gyoto::Screen&gt; </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="725" column="11" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="726" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_property_1afe2c14913230c30e2df7f366de6e7457" prot="public" static="no">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_screen" kindref="compound">Gyoto::Screen</ref> &gt;(Object::*</type>
+        <definition>typedef Gyoto::SmartPointer&lt;Gyoto::Screen&gt;(Object::* Gyoto::Property::get_screen_t) () const</definition>
+        <argsstring>)() const</argsstring>
+        <name>get_screen_t</name>
+        <briefdescription>
+<para>Prototype for an accessor to get a Gyoto::SmartPointer&lt;Gyoto::Screen&gt; </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="728" column="3" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="729" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_property_1af8351d896ce1a89f4cb808912bca0076" prot="public" static="no">
+        <type>void(Object::*</type>
+        <definition>typedef void(Object::* Gyoto::Property::set_astrobj_t) (Gyoto::SmartPointer&lt; Gyoto::Astrobj::Generic &gt;)</definition>
+        <argsstring>)(Gyoto::SmartPointer&lt; Gyoto::Astrobj::Generic &gt;)</argsstring>
+        <name>set_astrobj_t</name>
+        <briefdescription>
+<para>Prototype for an accessor to set a Gyoto::SmartPointer&lt;Gyoto::Astrobj::Generic&gt; </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="732" column="11" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="733" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_property_1a9bb4c4ca39e6d6975483846e15d97975" prot="public" static="no">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_astrobj_1_1_generic" kindref="compound">Gyoto::Astrobj::Generic</ref> &gt;(Object::*</type>
+        <definition>typedef Gyoto::SmartPointer&lt;Gyoto::Astrobj::Generic&gt;(Object::* Gyoto::Property::get_astrobj_t) () const</definition>
+        <argsstring>)() const</argsstring>
+        <name>get_astrobj_t</name>
+        <briefdescription>
+<para>Prototype for an accessor to get a Gyoto::SmartPointer&lt;Gyoto::Astrobj::Generic&gt; </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="735" column="3" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="736" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_property_1a44a66ea9027bf30b6b9285bb82f18554" prot="public" static="no">
+        <type>void(Object::*</type>
+        <definition>typedef void(Object::* Gyoto::Property::set_spectrum_t) (Gyoto::SmartPointer&lt; Gyoto::Spectrum::Generic &gt;)</definition>
+        <argsstring>)(Gyoto::SmartPointer&lt; Gyoto::Spectrum::Generic &gt;)</argsstring>
+        <name>set_spectrum_t</name>
+        <briefdescription>
+<para>Prototype for an accessor to set a Gyoto::SmartPointer&lt;Gyoto::Spectrum::Generic&gt; </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="739" column="11" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="740" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_property_1a2e3c810e812271bf46da370a745add0e" prot="public" static="no">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_spectrum_1_1_generic" kindref="compound">Gyoto::Spectrum::Generic</ref> &gt;(Object::*</type>
+        <definition>typedef Gyoto::SmartPointer&lt;Gyoto::Spectrum::Generic&gt;(Object::* Gyoto::Property::get_spectrum_t) () const</definition>
+        <argsstring>)() const</argsstring>
+        <name>get_spectrum_t</name>
+        <briefdescription>
+<para>Prototype for an accessor to get a Gyoto::SmartPointer&lt;Gyoto::Spectrum::Generic&gt; </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="742" column="3" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="743" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_property_1a1a5f0ac8dd4289760def476217a4a87d" prot="public" static="no">
+        <type>void(Object::*</type>
+        <definition>typedef void(Object::* Gyoto::Property::set_spectrometer_t) (Gyoto::SmartPointer&lt; Gyoto::Spectrometer::Generic &gt;)</definition>
+        <argsstring>)(Gyoto::SmartPointer&lt; Gyoto::Spectrometer::Generic &gt;)</argsstring>
+        <name>set_spectrometer_t</name>
+        <briefdescription>
+<para>Prototype for an accessor to set a Gyoto::SmartPointer&lt;Gyoto::Spectrometer::Generic&gt; </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="746" column="11" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="747" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_property_1a631de3c593b0a8b01aae8e5dee92b75c" prot="public" static="no">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_spectrometer_1_1_generic" kindref="compound">Gyoto::Spectrometer::Generic</ref> &gt;(Object::*</type>
+        <definition>typedef Gyoto::SmartPointer&lt;Gyoto::Spectrometer::Generic&gt;(Object::* Gyoto::Property::get_spectrometer_t) () const</definition>
+        <argsstring>)() const</argsstring>
+        <name>get_spectrometer_t</name>
+        <briefdescription>
+<para>Prototype for an accessor to get a Gyoto::SmartPointer&lt;Gyoto::Spectrometer::Generic&gt; </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="749" column="3" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="750" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_property_1ab0b88c41cd7307a0d78dc1be29a235d8" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gyoto::Property::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+<para>Name of this instance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="663" column="15" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="663" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_property_1ac826f30cbb680383bd2cf4dce2adf487" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gyoto::Property::name_false</definition>
+        <argsstring></argsstring>
+        <name>name_false</name>
+        <briefdescription>
+<para>Name if false. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Only if <ref refid="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" kindref="member">type</ref> is <ref refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a83a494e6387163d77fcf7ce5b7eeea63" kindref="member">empty_t</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="668" column="15" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="668" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gyoto::Property::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>Type of this instance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="670" column="7" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="670" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_property_1a30cf4c39dd1a79c6bd0c103a18dc61e9" prot="public" static="no" mutable="no">
+        <type><ref refid="union_gyoto_1_1_property_1_1setter__t" kindref="compound">setter_t</ref></type>
+        <definition>setter_t Gyoto::Property::setter</definition>
+        <argsstring></argsstring>
+        <name>setter</name>
+        <briefdescription>
+<para>Pointer to the setter method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Right type is stored in <ref refid="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" kindref="member">type</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="808" column="12" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="808" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_property_1a780ce4dd04646c076aaab0227cf95464" prot="public" static="no" mutable="no">
+        <type><ref refid="union_gyoto_1_1_property_1_1getter__t" kindref="compound">getter_t</ref></type>
+        <definition>getter_t Gyoto::Property::getter</definition>
+        <argsstring></argsstring>
+        <name>getter</name>
+        <briefdescription>
+<para>Pointer to the getter method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Right type is stored in <ref refid="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" kindref="member">type</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="813" column="12" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="813" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_property_1a8e0e4d8678dc3d2a7183fb1c697f00e2" prot="public" static="no" mutable="no">
+        <type><ref refid="union_gyoto_1_1_property_1_1setter__unit__t" kindref="compound">setter_unit_t</ref></type>
+        <definition>setter_unit_t Gyoto::Property::setter_unit</definition>
+        <argsstring></argsstring>
+        <name>setter_unit</name>
+        <briefdescription>
+<para>Pointer to the setter (with unit) method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Right type is stored in <ref refid="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" kindref="member">type</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="818" column="17" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="818" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_property_1ae888e2b98d764a281db3ce8dd0981195" prot="public" static="no" mutable="no">
+        <type><ref refid="union_gyoto_1_1_property_1_1getter__unit__t" kindref="compound">getter_unit_t</ref></type>
+        <definition>getter_unit_t Gyoto::Property::getter_unit</definition>
+        <argsstring></argsstring>
+        <name>getter_unit</name>
+        <briefdescription>
+<para>Pointer to the getter (with unit) method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Right type is stored in <ref refid="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" kindref="member">type</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="823" column="17" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="823" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_property_1a144d07c74739cf8ab28994ded1b61e7e" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gyoto::Property::doc</definition>
+        <argsstring></argsstring>
+        <name>doc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="825" column="15" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="825" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_property_1ab5727f08491e9f788ef3b81a08ac9847" prot="public" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const  *const</type>
+        <definition>Property const* const Gyoto::Property::parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <briefdescription>
+<para>If <ref refid="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" kindref="member">type</ref> is <ref refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a83a494e6387163d77fcf7ce5b7eeea63" kindref="member">empty_t</ref>, link to another <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="831" column="26" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="831" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gyoto_1_1_property_1a06b087b61281f000525ae04559e4dddf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Property::operator bool</definition>
+        <argsstring>() const</argsstring>
+        <name>operator bool</name>
+        <briefdescription>
+<para>True if <ref refid="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" kindref="member">Gyoto::Property::type</ref> is not <ref refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a83a494e6387163d77fcf7ce5b7eeea63" kindref="member">Gyoto::Property::empty_t</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="828" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_property_1a1fbc7dea56d2c4bf72a65ce3d7cf6c56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Property::Property</definition>
+        <argsstring>()</argsstring>
+        <name>Property</name>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="834" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_property_1a50717acd7e38282f56ab23bcb6e068ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Property::Property</definition>
+        <argsstring>(Property const *const ancestor)</argsstring>
+        <name>Property</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const *const</type>
+          <declname>ancestor</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" kindref="member">type</ref>==<ref refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a83a494e6387163d77fcf7ce5b7eeea63" kindref="member">empty_t</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="837" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_property_1a6b604f25cc4be3caff0d3ffe6c21152d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Property::Property</definition>
+        <argsstring>(std::string classname, std::string doc=&quot;&quot;)</argsstring>
+        <name>Property</name>
+        <param>
+          <type>std::string</type>
+          <declname>classname</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>doc</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Constructor for class name pseudo-property. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="840" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_property_1a905e01d47854d497c00dbf3ea917733f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Property::Property</definition>
+        <argsstring>(std::string name, set_long_t set_long, get_long_t get_long, std::string doc)</argsstring>
+        <name>Property</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1a033a73c9f62804556ea9e0b8eb8938ad" kindref="member">set_long_t</ref></type>
+          <declname>set_long</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1a5d9c0b407ba5bf130d42361fe0e7f591" kindref="member">get_long_t</ref></type>
+          <declname>get_long</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" kindref="member">type</ref>==<ref refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8af759331168118226d7d9f75039af3b53" kindref="member">long_t</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="843" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_property_1af3c8f352bb18befd06cc6a4cc97c276b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Property::Property</definition>
+        <argsstring>(std::string name, set_unsigned_long_t set_unsigned_long, get_unsigned_long_t get_unsigned_long, std::string doc)</argsstring>
+        <name>Property</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1a7481266392c38fcf885d62dc0aab5f91" kindref="member">set_unsigned_long_t</ref></type>
+          <declname>set_unsigned_long</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1a41dc17eaba50912281a412a199e9a7c5" kindref="member">get_unsigned_long_t</ref></type>
+          <declname>get_unsigned_long</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" kindref="member">type</ref>==<ref refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8ae4fe84d124f4b25ad28120c0057b480f" kindref="member">unsigned_long_t</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="849" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_property_1aec010dca485d4fece3d42f3da7f35e73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Property::Property</definition>
+        <argsstring>(std::string name, set_size_t_t set_size_t, get_size_t_t get_size_t, int dummy, std::string doc)</argsstring>
+        <name>Property</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1a03c8b8bc711939093c2d633bc65f48ad" kindref="member">set_size_t_t</ref></type>
+          <declname>set_size_t</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1a22d8c10540d31a01ae052e57fb8a995a" kindref="member">get_size_t_t</ref></type>
+          <declname>get_size_t</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dummy</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" kindref="member">type</ref>==<ref refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a1c61b7632afa3d4a1d31577492f8ddca" kindref="member">size_t_t</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The dummy int parameter is only there to differenciate from the unsigned long constructor on platforms where size_t is a typdef to unsigned long. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="860" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_property_1ac8e6be690dc000f6d094ba41f37109f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Property::Property</definition>
+        <argsstring>(std::string name, set_double_t set_double, get_double_t get_double, std::string doc)</argsstring>
+        <name>Property</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1a5c3fdfa4811f9eaf9fe5828d0d815597" kindref="member">set_double_t</ref></type>
+          <declname>set_double</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1ad854709d822b4632f7bd064186dd5fb1" kindref="member">get_double_t</ref></type>
+          <declname>get_double</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" kindref="member">type</ref>==<ref refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a21bcd45c33da137a4b77c8a9ddd702a4" kindref="member">double_t</ref>, without unit support. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="867" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_property_1a7db91fcb5c464a315b8d9913a2be5168" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Property::Property</definition>
+        <argsstring>(std::string name, set_double_t set_double, get_double_t get_double, set_double_unit_t set_double_unit, get_double_unit_t get_double_unit, std::string doc)</argsstring>
+        <name>Property</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1a5c3fdfa4811f9eaf9fe5828d0d815597" kindref="member">set_double_t</ref></type>
+          <declname>set_double</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1ad854709d822b4632f7bd064186dd5fb1" kindref="member">get_double_t</ref></type>
+          <declname>get_double</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1aae17d2fbb039384f629147cede1893ab" kindref="member">set_double_unit_t</ref></type>
+          <declname>set_double_unit</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1a5a4eb097d38ff966434d234c0644ead5" kindref="member">get_double_unit_t</ref></type>
+          <declname>get_double_unit</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" kindref="member">type</ref>==<ref refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a21bcd45c33da137a4b77c8a9ddd702a4" kindref="member">double_t</ref>, with unit support. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="873" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_property_1a827ccb5403f33bab54810e8b4e611789" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Property::Property</definition>
+        <argsstring>(std::string name, std::string name_false, set_bool_t set_bool, get_bool_t get_bool, std::string doc)</argsstring>
+        <name>Property</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name_false</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1acd02ae8c14ca8ba4b834a4c3cdc8fd25" kindref="member">set_bool_t</ref></type>
+          <declname>set_bool</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1a74fef635abe872b8b2e00c43bef33cf4" kindref="member">get_bool_t</ref></type>
+          <declname>get_bool</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" kindref="member">type</ref>==<ref refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a3d18c8ea6df62e32e0b77bd235b94c19" kindref="member">bool_t</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="881" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_property_1a9bb4f01ccfb85594bd98f480dc6dfc95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Property::Property</definition>
+        <argsstring>(std::string name, set_string_t set_string, get_string_t get_string, bool is_filename, std::string doc)</argsstring>
+        <name>Property</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1a7d54792987694733c75c606220fc5b39" kindref="member">set_string_t</ref></type>
+          <declname>set_string</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1a2823f77a3ac869395543027ea0beb4c4" kindref="member">get_string_t</ref></type>
+          <declname>get_string</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_filename</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" kindref="member">type</ref>==<ref refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8aa393ef1ba7e2505b14d66fb5f2e3313c" kindref="member">string_t</ref> or <ref refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a7773049749e0b6f0d83e531f838220a7" kindref="member">filename_t</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>set_string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the setter accessor </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>get_string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the getter accessor </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true means <ref refid="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" kindref="member">type</ref>=<ref refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a7773049749e0b6f0d83e531f838220a7" kindref="member">filename_t</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="894" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_property_1a46ecae7cfea85388ebdfc8921e34f979" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Property::Property</definition>
+        <argsstring>(std::string name, set_vector_double_t set_vdouble, get_vector_double_t get_vdouble, std::string doc)</argsstring>
+        <name>Property</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1a46d660c155e7a23fef6a7e93915172a1" kindref="member">set_vector_double_t</ref></type>
+          <declname>set_vdouble</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1a18be13807a1a1b6d7553e3f648f9cc55" kindref="member">get_vector_double_t</ref></type>
+          <declname>get_vdouble</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" kindref="member">type</ref>==<ref refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8afd29824380cd698c96d000782f18a27c" kindref="member">vector_double_t</ref>, without unit support. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="901" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_property_1a7572feb027380fd5738ef0fe3bc81e87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Property::Property</definition>
+        <argsstring>(std::string name, set_vector_double_t set_vdouble, get_vector_double_t get_vdouble, set_vector_double_unit_t set_vdouble_unit, get_vector_double_unit_t get_vdouble_unit, std::string doc)</argsstring>
+        <name>Property</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1a46d660c155e7a23fef6a7e93915172a1" kindref="member">set_vector_double_t</ref></type>
+          <declname>set_vdouble</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1a18be13807a1a1b6d7553e3f648f9cc55" kindref="member">get_vector_double_t</ref></type>
+          <declname>get_vdouble</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1a4b5c3882a6912e9c94ea126942678c5d" kindref="member">set_vector_double_unit_t</ref></type>
+          <declname>set_vdouble_unit</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1ac25061aa8b5b41e0f7152a9d4c20371c" kindref="member">get_vector_double_unit_t</ref></type>
+          <declname>get_vdouble_unit</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" kindref="member">type</ref>==<ref refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8afd29824380cd698c96d000782f18a27c" kindref="member">vector_double_t</ref>, with unit support. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="907" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_property_1ac1de00bbb9a8dee721a2a6f561831632" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Property::Property</definition>
+        <argsstring>(std::string name, set_vector_unsigned_long_t set_vulong, get_vector_unsigned_long_t get_vulong, std::string doc)</argsstring>
+        <name>Property</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1afb2774eec368e0416261a36e5ccc4822" kindref="member">set_vector_unsigned_long_t</ref></type>
+          <declname>set_vulong</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1aae4677e1c06a55dca87f23de9eadbfdb" kindref="member">get_vector_unsigned_long_t</ref></type>
+          <declname>get_vulong</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" kindref="member">type</ref>==<ref refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a1c71c8ba20a5c8b519c3afb56b1c6dd2" kindref="member">vector_unsigned_long_t</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="915" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_property_1aa9dda850002bc604fba5d8212dadc00c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Property::Property</definition>
+        <argsstring>(std::string name, set_metric_t set_metric, get_metric_t get_metric, std::string doc)</argsstring>
+        <name>Property</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1a0f446869148ce30d77175916b7b340cb" kindref="member">set_metric_t</ref></type>
+          <declname>set_metric</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1a7f9c1be62e0ebc676ad36cc73203c00e" kindref="member">get_metric_t</ref></type>
+          <declname>get_metric</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" kindref="member">type</ref>==<ref refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a3b5e845fdb6455c0e111a42882798948" kindref="member">metric_t</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="921" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_property_1a8007df47549251d35093f7dfddf143c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Property::Property</definition>
+        <argsstring>(std::string name, set_screen_t set_screen, get_screen_t get_screen, std::string doc)</argsstring>
+        <name>Property</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1a8c2f6452533d0b746bddb7b92d12c847" kindref="member">set_screen_t</ref></type>
+          <declname>set_screen</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1afe2c14913230c30e2df7f366de6e7457" kindref="member">get_screen_t</ref></type>
+          <declname>get_screen</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" kindref="member">type</ref>==<ref refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8ae7bb28c4049603af389dc4be0a4093f7" kindref="member">screen_t</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="927" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_property_1a4d173de84f9c85025c3dcf45436172dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Property::Property</definition>
+        <argsstring>(std::string name, set_astrobj_t set_astrobj, get_astrobj_t get_astrobj, std::string doc)</argsstring>
+        <name>Property</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1af8351d896ce1a89f4cb808912bca0076" kindref="member">set_astrobj_t</ref></type>
+          <declname>set_astrobj</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1a9bb4c4ca39e6d6975483846e15d97975" kindref="member">get_astrobj_t</ref></type>
+          <declname>get_astrobj</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" kindref="member">type</ref>==<ref refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a59a216803f694032f224e3fc770a9371" kindref="member">astrobj_t</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="933" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_property_1a40f71de5d1387d095f3a3c78076dff0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Property::Property</definition>
+        <argsstring>(std::string name, set_spectrum_t set_spectrum, get_spectrum_t get_spectrum, std::string doc)</argsstring>
+        <name>Property</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1a44a66ea9027bf30b6b9285bb82f18554" kindref="member">set_spectrum_t</ref></type>
+          <declname>set_spectrum</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1a2e3c810e812271bf46da370a745add0e" kindref="member">get_spectrum_t</ref></type>
+          <declname>get_spectrum</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" kindref="member">type</ref>==<ref refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a95d36a0c8134e93cc7e868415c368352" kindref="member">spectrum_t</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="939" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_property_1af57e154a8b987ecf588b67be925cca67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Property::Property</definition>
+        <argsstring>(std::string name, set_spectrometer_t set_spectrometer, get_spectrometer_t get_spectrometer, std::string doc)</argsstring>
+        <name>Property</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1a1a5f0ac8dd4289760def476217a4a87d" kindref="member">set_spectrometer_t</ref></type>
+          <declname>set_spectrometer</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property_1a631de3c593b0a8b01aae8e5dee92b75c" kindref="member">get_spectrometer_t</ref></type>
+          <declname>get_spectrometer</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" kindref="member">type</ref>==<ref refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a7aed2532777a1a9643f989a987a0ce90" kindref="member">spectrometer_t</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="945" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_property_1acbff12857f4d55c1a36d4d1495ab15bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Property::Property</definition>
+        <argsstring>(std::string name, int type)</argsstring>
+        <name>Property</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Constructor setting only <ref refid="class_gyoto_1_1_property_1ab0b88c41cd7307a0d78dc1be29a235d8" kindref="member">name</ref> and <ref refid="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" kindref="member">type</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Used in the <ref refid="namespace_gyoto_1_1_python" kindref="compound">Python</ref> plug-in to provide peudo-properties </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="954" column="3"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_gyoto_1_1_property_1a16a260cd251dfd99730e562ae9422b3f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8" kindref="member">type_e</ref></type>
+        <definition>static type_e Gyoto::Property::typeFromString</definition>
+        <argsstring>(std::string stype)</argsstring>
+        <name>typeFromString</name>
+        <param>
+          <type>std::string</type>
+          <declname>stype</declname>
+        </param>
+        <briefdescription>
+<para>Get <ref refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8" kindref="member">Property::type_e</ref> value from name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="957" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> that can be set and got using standard methods. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> API makes it easy to declare the parameters that can be set in a class.</para>
+<para>Developpers who simply write classes (deriving from <ref refid="class_gyoto_1_1_astrobj_1_1_generic" kindref="compound">Astrobj::Generic</ref>, , <ref refid="class_gyoto_1_1_metric_1_1_generic" kindref="compound">Metric::Generic</ref>, <ref refid="class_gyoto_1_1_spectrum_1_1_generic" kindref="compound">Spectrum::Generic</ref>) need not know the inners of the <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> class and interact with it only using macros to declare the parameters they need to read from XML.</para>
+<para>To make use of the <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> framework, a class must derive from <ref refid="class_gyoto_1_1_object" kindref="compound">Gyoto::Object</ref> and use the <ref refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" kindref="member">GYOTO_OBJECT</ref> in a public section of the class declaration (i.e. in the .h file). Then, in the corresponding .C file, the GYOTO_PROPERTY_* macros are used as follows (note the absence of punctuation after the macros): <programlisting><codeline><highlight class="normal">GYOTO_PROPERTY_START(MyClass)</highlight></codeline>
+<codeline><highlight class="normal">GYOTO_PROPERTY_&lt;type&gt;(MyClass,<sp/>PropertyName,<sp/>accessor)</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">GYOTO_PROPERTY_END(MyClass,<sp/>ParentClass::properties)</highlight></codeline>
+</programlisting></para>
+<para>In the above, <ref refid="_gyoto_property_8h_1add8e16ed1e17ab2683b08cc330b341d4" kindref="member">GYOTO_PROPERTY_START</ref> starts the definition of the static member MyClass::properties. Each GYOTO_PROPERTY_&lt;type&gt; macro declares a new property. <ref refid="_gyoto_property_8h_1a1356435ea7ee0e18d07201a80e034dcc" kindref="member">GYOTO_PROPERTY_END</ref> ends the definition of the property list, with an optional pointer to the parent&apos;s class <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> list, and defines the MyClass::getProperties() method.</para>
+<para>The underlying accessors must always be defined, both to set and to get the property. For the sake of simplicity, only a limited number of data types are allowed:<itemizedlist>
+<listitem><para>double: see <ref refid="_gyoto_property_8h_1a51b9b6d83536618f8c5c04101168305e" kindref="member">GYOTO_PROPERTY_DOUBLE</ref>, <ref refid="_gyoto_property_8h_1a10d55318bfccf207220f2adbcd0f00f9" kindref="member">GYOTO_PROPERTY_DOUBLE_UNIT</ref>;</para>
+</listitem><listitem><para>long: see <ref refid="_gyoto_property_8h_1a1d76d0c83fdfbde84b66e5a3bbaa35f6" kindref="member">GYOTO_PROPERTY_LONG</ref>;</para>
+</listitem><listitem><para>unsigned long: see <ref refid="_gyoto_property_8h_1aca1f21d44168f8c9d0c30644b3785e9e" kindref="member">GYOTO_PROPERTY_UNSIGNED_LONG</ref> (a.k.a. size_t: see <ref refid="_gyoto_property_8h_1a63fbef357d49b36a1b91b4e111505e71" kindref="member">GYOTO_PROPERTY_SIZE_T</ref>, this may break on architectures where size_t is not the same as unsigned long);</para>
+</listitem><listitem><para>bool: see <ref refid="_gyoto_property_8h_1ac9d7d689f6dc645598a81ec4505566df" kindref="member">GYOTO_PROPERTY_BOOL</ref>;</para>
+</listitem><listitem><para>std::vector&lt;double&gt;: see <ref refid="_gyoto_property_8h_1a93dda6fe102cce2ab1a212919673471c" kindref="member">GYOTO_PROPERTY_VECTOR_DOUBLE</ref> and <ref refid="_gyoto_property_8h_1afee341ef4d305f0c2ab3c502bf2f11a5" kindref="member">GYOTO_PROPERTY_VECTOR_DOUBLE_UNIT</ref>;</para>
+</listitem><listitem><para>std::vector&lt;unsigned long&gt;: see <ref refid="_gyoto_property_8h_1a250f06ca284f2051db94fb2261e015bd" kindref="member">GYOTO_PROPERTY_VECTOR_UNSIGNED_LONG</ref>;</para>
+</listitem><listitem><para>Gyoto::SmartPointers to various base classes: <ref refid="class_gyoto_1_1_screen" kindref="compound">Screen</ref>, <ref refid="class_gyoto_1_1_metric_1_1_generic" kindref="compound">Metric::Generic</ref>, <ref refid="class_gyoto_1_1_astrobj_1_1_generic" kindref="compound">Astrobj::Generic</ref>, <ref refid="class_gyoto_1_1_spectrum_1_1_generic" kindref="compound">Spectrum::Generic</ref> and <ref refid="class_gyoto_1_1_spectrometer_1_1_generic" kindref="compound">Spectrometer::Generic</ref>. See <ref refid="_gyoto_property_8h_1a37725a62fbd22ad1c7cc9f8761262774" kindref="member">GYOTO_PROPERTY_METRIC</ref>, <ref refid="_gyoto_property_8h_1a678522f21614980995c53d49c314a48c" kindref="member">GYOTO_PROPERTY_SCREEN</ref>, <ref refid="_gyoto_property_8h_1a13b6886c3edc42335c40fe44b070184c" kindref="member">GYOTO_PROPERTY_ASTROBJ</ref>, <ref refid="_gyoto_property_8h_1a3e144c41ba2b37be4f981f0aedee7480" kindref="member">GYOTO_PROPERTY_SPECTRUM</ref> and <ref refid="_gyoto_property_8h_1a9dbed4301797442973a9c6730de3a3a7" kindref="member">GYOTO_PROPERTY_SPECTROMETER</ref>.</para>
+</listitem></itemizedlist>
+</para>
+<para>For the floating point data-types (double and vector&lt;double&gt;), two additional accessors supporting units can be provided. The accessors must have the same name and have specific prototypes, see the various function pointer typedefs, e.g. <ref refid="class_gyoto_1_1_property_1a5c3fdfa4811f9eaf9fe5828d0d815597" kindref="member">set_double_t</ref> and <ref refid="class_gyoto_1_1_property_1ad854709d822b4632f7bd064186dd5fb1" kindref="member">get_double_t</ref>.</para>
+<para>The type used in these accessors may not be the same as the type of the underlying class member. For instance, to read an array, it was chosen to use the std::vector&lt;type&gt; type because it is easy to read such a vector from XML and to thus determine dynamically the number of elements provided. But this type is slow, so it is expected that the class member will rather be a C-style array (double arr[]) or something else entirely. It is not forbidden to have a set of high-level accessors for the <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> interface on top of lower-level, more efficient accessors to be used in compiled, static code:</para>
+<para><programlisting><codeline><highlight class="normal">void<sp/>MyClass::arrayMember(double<sp/>const<sp/>*<sp/>const<sp/>tab)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>for<sp/>(int<sp/>i=0;<sp/>i&lt;5;<sp/>++i)<sp/>member_[i]=tab[i];</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">void<sp/>MyClass::arrayMemberVector(std::vector&lt;double&gt;<sp/>const<sp/>&amp;vect)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>if<sp/>(vect.size()!=5)<sp/>throwError(&quot;Please<sp/>provide<sp/>5<sp/>elements&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>for<sp/>(int<sp/>i=0;<sp/>i&lt;5;<sp/>++i)<sp/>member_[i]=vect[i];</highlight></codeline>
+<codeline><highlight class="normal">}<sp/></highlight></codeline>
+<codeline><highlight class="normal">double<sp/>const<sp/>*<sp/><sp/>MyClass::arrayMember()<sp/>const<sp/>{return<sp/>member_;}</highlight></codeline>
+<codeline><highlight class="normal">std::vector&lt;double&gt;<sp/>MyClass::arrayMemberVector()<sp/>const<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>std::vector&lt;double&gt;<sp/>v(5,<sp/>0.);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>for<sp/>(int<sp/>i=0;<sp/>i&lt;5;<sp/>++i)<sp/>v[i]=member_[i];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>return<sp/>v;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>In this example, assuming MyClass is based directly on <ref refid="class_gyoto_1_1_object" kindref="compound">Object</ref> and member_ is the only parameter to read from XML, the <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> list may be defined as: <programlisting><codeline><highlight class="normal">GYOTO_PROPERTY_START(MyClass)</highlight></codeline>
+<codeline><highlight class="normal">GYOTO_PROPERTY_VECTOR_DOUBLE(MyClass,<sp/>ArrayMember,<sp/>arrayMemberVector)</highlight></codeline>
+<codeline><highlight class="normal">GYOTO_PROPERTY_END(MyClass,<sp/>Object::properties)</highlight></codeline>
+</programlisting></para>
+<para>Again, nothing more is required to read and write ArrayMember from XML and from Yorick. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Gyoto::Property</label>
+        <link refid="class_gyoto_1_1_property"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>getter_unit</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>getter</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>setter</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>setter_unit</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Astrobj::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="8">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Screen &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="4">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Spectrometer::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="5">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Metric::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="9">
+        <label>Gyoto::Property::setter_t</label>
+        <link refid="union_gyoto_1_1_property_1_1setter__t"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>set_spectrometer</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>set_metric</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>set_spectrum</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>set_astrobj</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>set_screen</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Gyoto::Property::setter_unit_t</label>
+        <link refid="union_gyoto_1_1_property_1_1setter__unit__t"/>
+      </node>
+      <node id="6">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Spectrum::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="2">
+        <label>Gyoto::Property::getter_unit_t</label>
+        <link refid="union_gyoto_1_1_property_1_1getter__unit__t"/>
+      </node>
+      <node id="3">
+        <label>Gyoto::Property::getter_t</label>
+        <link refid="union_gyoto_1_1_property_1_1getter__t"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>get_spectrometer</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>get_metric</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>get_spectrum</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>get_astrobj</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>get_screen</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="607" column="1" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="608" bodyend="959"/>
+    <listofallmembers>
+      <member refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a59a216803f694032f224e3fc770a9371" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>astrobj_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a3d18c8ea6df62e32e0b77bd235b94c19" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>bool_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a144d07c74739cf8ab28994ded1b61e7e" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>doc</name></member>
+      <member refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a21bcd45c33da137a4b77c8a9ddd702a4" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>double_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a83a494e6387163d77fcf7ce5b7eeea63" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>empty_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a7773049749e0b6f0d83e531f838220a7" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>filename_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a9bb4c4ca39e6d6975483846e15d97975" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>get_astrobj_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a74fef635abe872b8b2e00c43bef33cf4" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>get_bool_t</name></member>
+      <member refid="class_gyoto_1_1_property_1ad854709d822b4632f7bd064186dd5fb1" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>get_double_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a5a4eb097d38ff966434d234c0644ead5" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>get_double_unit_t</name></member>
+      <member refid="class_gyoto_1_1_property_1ac4d4e980b1e442a6cf63dc77d04e8535" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>get_fname_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a5d9c0b407ba5bf130d42361fe0e7f591" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>get_long_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a7f9c1be62e0ebc676ad36cc73203c00e" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>get_metric_t</name></member>
+      <member refid="class_gyoto_1_1_property_1afe2c14913230c30e2df7f366de6e7457" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>get_screen_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a22d8c10540d31a01ae052e57fb8a995a" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>get_size_t_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a631de3c593b0a8b01aae8e5dee92b75c" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>get_spectrometer_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a2e3c810e812271bf46da370a745add0e" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>get_spectrum_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a2823f77a3ac869395543027ea0beb4c4" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>get_string_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a41dc17eaba50912281a412a199e9a7c5" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>get_unsigned_long_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a18be13807a1a1b6d7553e3f648f9cc55" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>get_vector_double_t</name></member>
+      <member refid="class_gyoto_1_1_property_1ac25061aa8b5b41e0f7152a9d4c20371c" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>get_vector_double_unit_t</name></member>
+      <member refid="class_gyoto_1_1_property_1aae4677e1c06a55dca87f23de9eadbfdb" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>get_vector_unsigned_long_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a780ce4dd04646c076aaab0227cf95464" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>getter</name></member>
+      <member refid="class_gyoto_1_1_property_1ae888e2b98d764a281db3ce8dd0981195" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>getter_unit</name></member>
+      <member refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8af759331168118226d7d9f75039af3b53" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>long_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a3b5e845fdb6455c0e111a42882798948" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>metric_t</name></member>
+      <member refid="class_gyoto_1_1_property_1ab0b88c41cd7307a0d78dc1be29a235d8" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>name</name></member>
+      <member refid="class_gyoto_1_1_property_1ac826f30cbb680383bd2cf4dce2adf487" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>name_false</name></member>
+      <member refid="class_gyoto_1_1_property_1a06b087b61281f000525ae04559e4dddf" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>operator bool</name></member>
+      <member refid="class_gyoto_1_1_property_1ab5727f08491e9f788ef3b81a08ac9847" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>parent</name></member>
+      <member refid="class_gyoto_1_1_property_1a1fbc7dea56d2c4bf72a65ce3d7cf6c56" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>Property</name></member>
+      <member refid="class_gyoto_1_1_property_1a50717acd7e38282f56ab23bcb6e068ce" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>Property</name></member>
+      <member refid="class_gyoto_1_1_property_1a6b604f25cc4be3caff0d3ffe6c21152d" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>Property</name></member>
+      <member refid="class_gyoto_1_1_property_1a905e01d47854d497c00dbf3ea917733f" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>Property</name></member>
+      <member refid="class_gyoto_1_1_property_1af3c8f352bb18befd06cc6a4cc97c276b" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>Property</name></member>
+      <member refid="class_gyoto_1_1_property_1aec010dca485d4fece3d42f3da7f35e73" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>Property</name></member>
+      <member refid="class_gyoto_1_1_property_1ac8e6be690dc000f6d094ba41f37109f7" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>Property</name></member>
+      <member refid="class_gyoto_1_1_property_1a7db91fcb5c464a315b8d9913a2be5168" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>Property</name></member>
+      <member refid="class_gyoto_1_1_property_1a827ccb5403f33bab54810e8b4e611789" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>Property</name></member>
+      <member refid="class_gyoto_1_1_property_1a9bb4f01ccfb85594bd98f480dc6dfc95" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>Property</name></member>
+      <member refid="class_gyoto_1_1_property_1a46ecae7cfea85388ebdfc8921e34f979" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>Property</name></member>
+      <member refid="class_gyoto_1_1_property_1a7572feb027380fd5738ef0fe3bc81e87" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>Property</name></member>
+      <member refid="class_gyoto_1_1_property_1ac1de00bbb9a8dee721a2a6f561831632" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>Property</name></member>
+      <member refid="class_gyoto_1_1_property_1aa9dda850002bc604fba5d8212dadc00c" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>Property</name></member>
+      <member refid="class_gyoto_1_1_property_1a8007df47549251d35093f7dfddf143c1" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>Property</name></member>
+      <member refid="class_gyoto_1_1_property_1a4d173de84f9c85025c3dcf45436172dd" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>Property</name></member>
+      <member refid="class_gyoto_1_1_property_1a40f71de5d1387d095f3a3c78076dff0b" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>Property</name></member>
+      <member refid="class_gyoto_1_1_property_1af57e154a8b987ecf588b67be925cca67" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>Property</name></member>
+      <member refid="class_gyoto_1_1_property_1acbff12857f4d55c1a36d4d1495ab15bc" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>Property</name></member>
+      <member refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8ae7bb28c4049603af389dc4be0a4093f7" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>screen_t</name></member>
+      <member refid="class_gyoto_1_1_property_1af8351d896ce1a89f4cb808912bca0076" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>set_astrobj_t</name></member>
+      <member refid="class_gyoto_1_1_property_1acd02ae8c14ca8ba4b834a4c3cdc8fd25" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>set_bool_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a5c3fdfa4811f9eaf9fe5828d0d815597" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>set_double_t</name></member>
+      <member refid="class_gyoto_1_1_property_1aae17d2fbb039384f629147cede1893ab" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>set_double_unit_t</name></member>
+      <member refid="class_gyoto_1_1_property_1aa3218d6311332999fd888aaf9dda0b86" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>set_fname_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a033a73c9f62804556ea9e0b8eb8938ad" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>set_long_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a0f446869148ce30d77175916b7b340cb" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>set_metric_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a8c2f6452533d0b746bddb7b92d12c847" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>set_screen_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a03c8b8bc711939093c2d633bc65f48ad" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>set_size_t_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a1a5f0ac8dd4289760def476217a4a87d" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>set_spectrometer_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a44a66ea9027bf30b6b9285bb82f18554" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>set_spectrum_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a7d54792987694733c75c606220fc5b39" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>set_string_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a7481266392c38fcf885d62dc0aab5f91" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>set_unsigned_long_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a46d660c155e7a23fef6a7e93915172a1" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>set_vector_double_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a4b5c3882a6912e9c94ea126942678c5d" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>set_vector_double_unit_t</name></member>
+      <member refid="class_gyoto_1_1_property_1afb2774eec368e0416261a36e5ccc4822" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>set_vector_unsigned_long_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a30cf4c39dd1a79c6bd0c103a18dc61e9" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>setter</name></member>
+      <member refid="class_gyoto_1_1_property_1a8e0e4d8678dc3d2a7183fb1c697f00e2" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>setter_unit</name></member>
+      <member refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a1c61b7632afa3d4a1d31577492f8ddca" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>size_t_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a7aed2532777a1a9643f989a987a0ce90" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>spectrometer_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a95d36a0c8134e93cc7e868415c368352" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>spectrum_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8aa393ef1ba7e2505b14d66fb5f2e3313c" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>string_t</name></member>
+      <member refid="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>type</name></member>
+      <member refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>type_e</name></member>
+      <member refid="class_gyoto_1_1_property_1a16a260cd251dfd99730e562ae9422b3f" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>typeFromString</name></member>
+      <member refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8ae4fe84d124f4b25ad28120c0057b480f" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>unsigned_long_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8afd29824380cd698c96d000782f18a27c" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>vector_double_t</name></member>
+      <member refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a1c71c8ba20a5c8b519c3afb56b1c6dd2" prot="public" virt="non-virtual"><scope>Gyoto::Property</scope><name>vector_unsigned_long_t</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,96 @@
+\hypertarget{_gyoto_converters_8h}{}\doxysection{Gyoto\+Converters.\+h File Reference}
+\label{_gyoto_converters_8h}\index{GyotoConverters.h@{GyotoConverters.h}}
+
+
+GYOTO converters.  
+
+
+{\ttfamily \#include $<$Gyoto\+Utils.\+h$>$}\newline
+{\ttfamily \#include $<$Gyoto\+Smart\+Pointer.\+h$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_gyoto}{Gyoto}}
+\begin{DoxyCompactList}\small\item\em Namespace for the \mbox{\hyperlink{namespace_gyoto}{Gyoto}} library. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Gyoto\+::\+Metric}}
+\begin{DoxyCompactList}\small\item\em Access to metrics. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_units}{Gyoto\+::\+Units}}
+\begin{DoxyCompactList}\small\item\em Units-\/related classes and functions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_gyoto_1_1_units_aade66d5933d035fb5f0fbb0501e9e972}{Gyoto\+::\+Units\+::\+Init}} ()
+\begin{DoxyCompactList}\small\item\em Load and initialize all (non-\/context-\/sensitive) units. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{namespace_gyoto_1_1_units_a8bbdf5974f8bcc22e4d7f20a118e435c}{Gyoto\+::\+Units\+::\+To\+Meters}} (double value, const std\+::string \&unit, const \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Gyoto\+::\+Metric\+::\+Generic}} $>$ \&gg=NULL)
+\begin{DoxyCompactList}\small\item\em Convert from arbitrary length unit to meters. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{namespace_gyoto_1_1_units_aa9bd775b2619656456bb8ed2b0a3b416}{Gyoto\+::\+Units\+::\+From\+Meters}} (double value, const std\+::string \&unit, const \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Gyoto\+::\+Metric\+::\+Generic}} $>$ \&gg=NULL)
+\begin{DoxyCompactList}\small\item\em Convert to arbitrary length unit from meters. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{namespace_gyoto_1_1_units_a66909f5bdf3c6cdb8256b3909700e6b5}{Gyoto\+::\+Units\+::\+To\+Seconds}} (double value, const std\+::string \&unit, const \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Gyoto\+::\+Metric\+::\+Generic}} $>$ \&gg=NULL)
+\begin{DoxyCompactList}\small\item\em Convert from arbitrary time unit to seconds. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{namespace_gyoto_1_1_units_a05147a9f52ed99ac43a3df68d24a0043}{Gyoto\+::\+Units\+::\+From\+Seconds}} (double value, const std\+::string \&unit, const \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Gyoto\+::\+Metric\+::\+Generic}} $>$ \&gg=NULL)
+\begin{DoxyCompactList}\small\item\em Convert to arbitrary time unit from seconds. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{namespace_gyoto_1_1_units_aaa1d780cf0f0acb4006e3f908bffd9c9}{Gyoto\+::\+Units\+::\+To\+Kilograms}} (double value, const std\+::string \&unit)
+\begin{DoxyCompactList}\small\item\em Convert from arbitrary mass unit to kilograms. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{namespace_gyoto_1_1_units_a38218ba258440d51a1451e97a02baf35}{Gyoto\+::\+Units\+::\+From\+Kilograms}} (double value, const std\+::string \&unit)
+\begin{DoxyCompactList}\small\item\em Convert to arbitrary mass unit from kilograms. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{namespace_gyoto_1_1_units_a1f7dcca7f30de2b52aa1c682d62454ff}{Gyoto\+::\+Units\+::\+To\+Geometrical}} (double value, const std\+::string \&unit, const \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Gyoto\+::\+Metric\+::\+Generic}} $>$ \&gg)
+\begin{DoxyCompactList}\small\item\em Convert from arbitrary length unit to geometrical units. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{namespace_gyoto_1_1_units_a4c3c4a6f2720c630900a843c0aba12cb}{Gyoto\+::\+Units\+::\+From\+Geometrical}} (double value, const std\+::string \&unit, const \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Gyoto\+::\+Metric\+::\+Generic}} $>$ \&gg)
+\begin{DoxyCompactList}\small\item\em Convert to arbitrary length unit from geometrical units. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{namespace_gyoto_1_1_units_a1780c8989ec56098a7f9de36d4b45436}{Gyoto\+::\+Units\+::\+To\+Geometrical\+Time}} (double value, const std\+::string \&unit, const \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Gyoto\+::\+Metric\+::\+Generic}} $>$ \&gg)
+\begin{DoxyCompactList}\small\item\em Convert from arbitrary time unit to geometrical units. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{namespace_gyoto_1_1_units_a4115532aab1e34c121bb064d2fa61632}{Gyoto\+::\+Units\+::\+From\+Geometrical\+Time}} (double value, const std\+::string \&unit, const \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Gyoto\+::\+Metric\+::\+Generic}} $>$ \&gg)
+\begin{DoxyCompactList}\small\item\em Convert to arbitrary time unit from geometrical units. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{namespace_gyoto_1_1_units_ab36bd9e55d135bbd88cfb5f0855d4ae4}{Gyoto\+::\+Units\+::\+To\+Herz}} (double value, const std\+::string \&unit)
+\begin{DoxyCompactList}\small\item\em Convert from arbitrary frequency unit to Herz. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{namespace_gyoto_1_1_units_a552ac4625c1532e0ee6b2f2331387d16}{Gyoto\+::\+Units\+::\+From\+Herz}} (double value, const std\+::string \&unit)
+\begin{DoxyCompactList}\small\item\em Convert to arbitrary frequency unit from Herz. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+GYOTO converters. 
+
+As a (recommended) option, \mbox{\hyperlink{namespace_gyoto}{Gyoto}} can use the libudunits2 library by UCAR/\+Unidata (\href{http://www.unidata.ucar.edu/software/udunits/udunits-2/udunits2.html}{\texttt{ http\+://www.\+unidata.\+ucar.\+edu/software/udunits/udunits-\/2/udunits2.\+html}}) to perform conversions to and from various units. Since udunits parses units, the following are equivalent for instance\+: \char`\"{}m\+Jy.\+sr-\/1\char`\"{}, \char`\"{}m\+Jy/sr\char`\"{}, \char`\"{}1e-\/3\+Jy/sr\char`\"{}. \mbox{\hyperlink{namespace_gyoto}{Gyoto}} considers every string as UTF-\/8\+: either use UTF-\/8 or stay with ASCII. This means \char`\"{}µ\char`\"{} can be used for \char`\"{}micro\char`\"{} and powers can be noted as superscripts\+: m³, pix².
+
+In addition to the stock units known by udunits2, \mbox{\hyperlink{namespace_gyoto}{Gyoto}} registers the following (which may be used in any context)\+: Jansky (symbol Jy), symbol \char`\"{}pc\char`\"{} for parsec, \char`\"{}sunradius\char`\"{}, \char`\"{}sunmass\char`\"{}, symbol \char`\"{}as\char`\"{} for \char`\"{}arcsec\char`\"{}.
+
+Other units are context-\/sensitive\+: \char`\"{}geometrical\char`\"{} allows converting between geometrical units and other legnth units, but only when a Metric is defined, and may not be used (yet) in compound units. Likewise, \char`\"{}geometrical\+\_\+time\char`\"{} can be used as duration unit whenever a Metric is defined, but not in a compound unit.
+
+When a Screen is defined, \char`\"{}pix\char`\"{} can be used as an angle unit (you need to call Screen\+::map\+Pix\+Unit() and Screen\+::unmap\+Screen\+Unit(), which is done automatically in certain contexts).
+
+Units can often be specified using the \char`\"{}unit\char`\"{} XML attribute\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<Meric kind=\textcolor{stringliteral}{"{}KerrBL"{}}>}
+\DoxyCodeLine{   <Mass unit=\textcolor{stringliteral}{"{}sunmass"{}}>}
+\DoxyCodeLine{      4e6}
+\DoxyCodeLine{   </Mass>}
+\DoxyCodeLine{</Metric>}
+\DoxyCodeLine{<Screen>}
+\DoxyCodeLine{   <Distance unit=\textcolor{stringliteral}{"{}kpc"{}}>}
+\DoxyCodeLine{      8}
+\DoxyCodeLine{   </Distance>}
+\DoxyCodeLine{   <FieldOfView unit=\textcolor{stringliteral}{"{}µas"{}}>}
+\DoxyCodeLine{      150}
+\DoxyCodeLine{   </FieldOfView>}
+\DoxyCodeLine{</Metric>}
+
+\end{DoxyCode}
+
+
+Units for output quantities are specified after the name of the quantity, in squared brackets, e.\+g.\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<Quantities>}
+\DoxyCodeLine{  Spectrum[erg.s-\/1.cm-\/2.sr-\/1.Hz-\/1]}
+\DoxyCodeLine{</Quantities>}
+
+\end{DoxyCode}
+ or 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<Quantities>}
+\DoxyCodeLine{  Spectrum[mJy/pix²]}
+\DoxyCodeLine{</Quantities>}
+
+\end{DoxyCode}
+ 

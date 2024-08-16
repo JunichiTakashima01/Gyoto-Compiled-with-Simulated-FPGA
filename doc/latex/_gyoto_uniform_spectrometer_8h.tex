@@ -1,0 +1,35 @@
+\hypertarget{_gyoto_uniform_spectrometer_8h}{}\doxysection{Gyoto\+Uniform\+Spectrometer.\+h File Reference}
+\label{_gyoto_uniform_spectrometer_8h}\index{GyotoUniformSpectrometer.h@{GyotoUniformSpectrometer.h}}
+
+
+Uniformly spaced spectrometers.  
+
+
+{\ttfamily \#include $<$Gyoto\+Spectrometer.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_uniform}{Gyoto\+::\+Spectrometer\+::\+Uniform}}
+\begin{DoxyCompactList}\small\item\em Uniformly spaced spectrometers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_gyoto}{Gyoto}}
+\begin{DoxyCompactList}\small\item\em Namespace for the \mbox{\hyperlink{namespace_gyoto}{Gyoto}} library. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer}{Gyoto\+::\+Spectrometer}}
+\begin{DoxyCompactList}\small\item\em Access to spectrometers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Uniformly spaced spectrometers. 
+
+Spectral channels are contiguous and uniformly spaced in either wavelength, frequency or log10 of either. \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_uniform}{Gyoto\+::\+Spectrometer\+::\+Uniform}} is registered four times in the factory\+: as kind=\char`\"{}wave\char`\"{}, \char`\"{}wavelog\char`\"{}, \char`\"{}freq\char`\"{} and \char`\"{}freqlog\char`\"{}. Example XML entity\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<Spectrometer kind=\textcolor{stringliteral}{"{}wave"{}} unit=\textcolor{stringliteral}{"{}µm"{}} nsamples=10>}
+\DoxyCodeLine{ 2.0 2.4}
+\DoxyCodeLine{</Spectrometer>}
+
+\end{DoxyCode}
+
+
+The content of the entity yields the band pass expressed in \char`\"{}unit\char`\"{} or in log10(unit). 

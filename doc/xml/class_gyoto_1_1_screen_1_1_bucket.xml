@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_gyoto_1_1_screen_1_1_bucket" kind="class" language="C++" prot="public">
+    <compoundname>Gyoto::Screen::Bucket</compoundname>
+    <basecompoundref refid="class_gyoto_1_1_screen_1_1_coord2d_set" prot="public" virt="non-virtual">Gyoto::Screen::Coord2dSet</basecompoundref>
+    <includes refid="_gyoto_screen_8h" local="no">GyotoScreen.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_screen_1_1_bucket_1a7feaab2deb7ac983fb95ea2f8c712ed1" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_screen_1_1_coord1d_set" kindref="compound">Coord1dSet</ref> &amp;</type>
+        <definition>Coord1dSet&amp; Gyoto::Screen::Bucket::alpha_</definition>
+        <argsstring></argsstring>
+        <name>alpha_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="728" column="18" bodyfile="/home/junichi/Gyoto/include/GyotoScreen.h" bodystart="728" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_screen_1_1_bucket_1a0b2de4646a52bf90911e2c78806dc2e4" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_screen_1_1_coord1d_set" kindref="compound">Coord1dSet</ref> &amp;</type>
+        <definition>Coord1dSet&amp; Gyoto::Screen::Bucket::delta_</definition>
+        <argsstring></argsstring>
+        <name>delta_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="729" column="18" bodyfile="/home/junichi/Gyoto/include/GyotoScreen.h" bodystart="729" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gyoto_1_1_screen_1_1_bucket_1a06878fa84a361bc8fbc2d995edcf3927" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Screen::Bucket::Bucket</definition>
+        <argsstring>(Coord1dSet &amp;iset, Coord1dSet &amp;jset)</argsstring>
+        <name>Bucket</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_screen_1_1_coord1d_set" kindref="compound">Coord1dSet</ref> &amp;</type>
+          <declname>iset</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_screen_1_1_coord1d_set" kindref="compound">Coord1dSet</ref> &amp;</type>
+          <declname>jset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="731" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_screen_1_1_bucket_1ade16399dc9ce85555dde26db7d42fcd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_gyoto_1_1_screen_1_1_coord2d_set" kindref="compound">Coord2dSet</ref> &amp;</type>
+        <definition>virtual Coord2dSet&amp; Gyoto::Screen::Bucket::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <reimplements refid="class_gyoto_1_1_screen_1_1_coord2d_set_1ae6c75ad6fdfc56e88e41d24534d946f7">operator++</reimplements>
+        <briefdescription>
+<para>Increment pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="732" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_screen_1_1_bucket_1abe14909aea13679a63185e77aed280f8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_g_y_o_t_o___a_r_r_a_y" kindref="compound">GYOTO_ARRAY</ref>&lt; double, 2 &gt;</type>
+        <definition>virtual GYOTO_ARRAY&lt;double, 2&gt; Gyoto::Screen::Bucket::angles</definition>
+        <argsstring>() const</argsstring>
+        <name>angles</name>
+        <reimplements refid="class_gyoto_1_1_screen_1_1_coord2d_set_1a241fe7b6899f52499155e524166d6f45">angles</reimplements>
+        <briefdescription>
+<para>Get angle coordinates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="733" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_screen_1_1_bucket_1a84d8d3a2e5cf69e4c0d8bce5afe5abf0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_g_y_o_t_o___a_r_r_a_y" kindref="compound">GYOTO_ARRAY</ref>&lt; <ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref>, 2 &gt;</type>
+        <definition>virtual GYOTO_ARRAY&lt;size_t, 2&gt; Gyoto::Screen::Bucket::operator*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator*</name>
+        <reimplements refid="class_gyoto_1_1_screen_1_1_coord2d_set_1a01d61c1cb181f7374b69e9a20cb3c2be">operator*</reimplements>
+        <briefdescription>
+<para>Get pixel coordinates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="734" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_screen_1_1_bucket_1a8b6748bae0b5ce38ed37335123633ecf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Screen::Bucket::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <reimplements refid="class_gyoto_1_1_screen_1_1_coord2d_set_1a06d56607898b93ec74db40b70d1041f4">begin</reimplements>
+        <briefdescription>
+<para>Reset pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="735" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_screen_1_1_bucket_1aebf5fff48553097cadfbf8c03ccdb7ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Gyoto::Screen::Bucket::valid</definition>
+        <argsstring>()</argsstring>
+        <name>valid</name>
+        <reimplements refid="class_gyoto_1_1_screen_1_1_coord2d_set_1a677c4c21719a46baf92dac3e964d16bc">valid</reimplements>
+        <briefdescription>
+<para>Whether the end has not been passed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="736" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_screen_1_1_bucket_1a6041875091ed0c23cf8a482594d54c86" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+        <definition>virtual size_t Gyoto::Screen::Bucket::size</definition>
+        <argsstring>()</argsstring>
+        <name>size</name>
+        <reimplements refid="class_gyoto_1_1_screen_1_1_coord2d_set_1a54bd96caa8859353b3213a6009735d33">size</reimplements>
+        <briefdescription>
+<para>Number of positions contained. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="737" column="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_screen_1_1_coord2d_set_1a5fef2cb615b4865456865223be1135a8" prot="public" static="no" mutable="no">
+        <type>const <ref refid="class_gyoto_1_1_screen_1a3d039508310efe3dcbf50204a3619b2f" kindref="member">CoordType_e</ref></type>
+        <definition>const CoordType_e Gyoto::Screen::Coord2dSet::kind</definition>
+        <argsstring></argsstring>
+        <name>kind</name>
+        <briefdescription>
+<para>Whether this set holds pixels or angle specifications. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="685" column="25" bodyfile="/home/junichi/Gyoto/include/GyotoScreen.h" bodystart="685" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class containing arbitrary 2D-points. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>ispec_ and jspec_ must be the same size. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Gyoto::Screen::Bucket</label>
+        <link refid="class_gyoto_1_1_screen_1_1_bucket"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gyoto::Screen::Coord2dSet</label>
+        <link refid="class_gyoto_1_1_screen_1_1_coord2d_set"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Gyoto::Screen::Bucket</label>
+        <link refid="class_gyoto_1_1_screen_1_1_bucket"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>alpha_</edgelabel>
+          <edgelabel>delta_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gyoto::Screen::Coord2dSet</label>
+        <link refid="class_gyoto_1_1_screen_1_1_coord2d_set"/>
+      </node>
+      <node id="3">
+        <label>Gyoto::Screen::Coord1dSet</label>
+        <link refid="class_gyoto_1_1_screen_1_1_coord1d_set"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="726" column="5" bodyfile="/home/junichi/Gyoto/include/GyotoScreen.h" bodystart="726" bodyend="738"/>
+    <listofallmembers>
+      <member refid="class_gyoto_1_1_screen_1_1_bucket_1a7feaab2deb7ac983fb95ea2f8c712ed1" prot="protected" virt="non-virtual"><scope>Gyoto::Screen::Bucket</scope><name>alpha_</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_bucket_1abe14909aea13679a63185e77aed280f8" prot="public" virt="virtual"><scope>Gyoto::Screen::Bucket</scope><name>angles</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_bucket_1a8b6748bae0b5ce38ed37335123633ecf" prot="public" virt="virtual"><scope>Gyoto::Screen::Bucket</scope><name>begin</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_bucket_1a06878fa84a361bc8fbc2d995edcf3927" prot="public" virt="non-virtual"><scope>Gyoto::Screen::Bucket</scope><name>Bucket</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_coord2d_set_1ad131bea2ed826fd8b61ab91dcc98ba7a" prot="public" virt="non-virtual"><scope>Gyoto::Screen::Bucket</scope><name>Coord2dSet</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_bucket_1a0b2de4646a52bf90911e2c78806dc2e4" prot="protected" virt="non-virtual"><scope>Gyoto::Screen::Bucket</scope><name>delta_</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_coord2d_set_1a5fef2cb615b4865456865223be1135a8" prot="public" virt="non-virtual"><scope>Gyoto::Screen::Bucket</scope><name>kind</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_bucket_1a84d8d3a2e5cf69e4c0d8bce5afe5abf0" prot="public" virt="virtual"><scope>Gyoto::Screen::Bucket</scope><name>operator*</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_bucket_1ade16399dc9ce85555dde26db7d42fcd6" prot="public" virt="virtual"><scope>Gyoto::Screen::Bucket</scope><name>operator++</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_bucket_1a6041875091ed0c23cf8a482594d54c86" prot="public" virt="virtual"><scope>Gyoto::Screen::Bucket</scope><name>size</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_bucket_1aebf5fff48553097cadfbf8c03ccdb7ea" prot="public" virt="virtual"><scope>Gyoto::Screen::Bucket</scope><name>valid</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_coord2d_set_1a777072290050ff2f5d933833c856fe03" prot="public" virt="virtual"><scope>Gyoto::Screen::Bucket</scope><name>~Coord2dSet</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

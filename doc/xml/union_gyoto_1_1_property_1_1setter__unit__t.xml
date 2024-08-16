@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="union_gyoto_1_1_property_1_1setter__unit__t" kind="union" language="C++" prot="public">
+    <compoundname>Gyoto::Property::setter_unit_t</compoundname>
+    <includes refid="_gyoto_property_8h" local="no">GyotoProperty.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="union_gyoto_1_1_property_1_1setter__unit__t_1ad509f364a229479a02a714e995f621a8" prot="public" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_property_1aae17d2fbb039384f629147cede1893ab" kindref="member">set_double_unit_t</ref></type>
+        <definition>set_double_unit_t Gyoto::Property::setter_unit_t::set_double</definition>
+        <argsstring></argsstring>
+        <name>set_double</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="795" column="23" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="795" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_gyoto_1_1_property_1_1setter__unit__t_1a7424ec372a69fd669442d884856c018b" prot="public" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_property_1a4b5c3882a6912e9c94ea126942678c5d" kindref="member">set_vector_double_unit_t</ref></type>
+        <definition>set_vector_double_unit_t Gyoto::Property::setter_unit_t::set_vdouble</definition>
+        <argsstring></argsstring>
+        <name>set_vdouble</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="796" column="30" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="796" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Union holding an accessor to set double or vector&lt;double&gt; with unit. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Right type is stored in <ref refid="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" kindref="member">type</ref> </para>
+    </detaileddescription>
+    <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="794" column="3" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="794" bodyend="797"/>
+    <listofallmembers>
+      <member refid="union_gyoto_1_1_property_1_1setter__unit__t_1ad509f364a229479a02a714e995f621a8" prot="public" virt="non-virtual"><scope>Gyoto::Property::setter_unit_t</scope><name>set_double</name></member>
+      <member refid="union_gyoto_1_1_property_1_1setter__unit__t_1a7424ec372a69fd669442d884856c018b" prot="public" virt="non-virtual"><scope>Gyoto::Property::setter_unit_t</scope><name>set_vdouble</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

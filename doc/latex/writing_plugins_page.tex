@@ -1,0 +1,37 @@
+Al the generic \mbox{\hyperlink{namespace_gyoto}{Gyoto}} machinery for computing orbits, reading input files, performing ray-\/tracing etc. is implemented in libgyoto. On the other hand, all the code specific to a given metric kind or a given astronomical object is available in plug-\/ins. For instance, the standard plug-\/in libgyoto-\/stdplug contains the two flavors of the Kerr metric\+: Gyoto\+::\+Kerr\+BL and Gyoto\+::\+Kerr\+KS, as well as basic objects\+: Gyoto\+::\+Fixed\+Star, Gyoto\+::\+Star, Gyoto\+::\+Torus, Gyoto\+::\+Thin\+Infinite\+Disk\+BL and Gyoto\+::\+Thin\+Infinite\+Disk\+KS. The libgyoto-\/lorene plug-\/in contains the code to access numerical metrics (Gyoto\+::\+Lorene\+Metric) as well as an example thereof\+: Gyoto\+::\+Rot\+Star3\+\_\+1. The two basic spectral shapes \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_power_law}{Gyoto\+::\+Spectrum\+::\+Power\+Law}} and \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_black_body}{Gyoto\+::\+Spectrum\+::\+Black\+Body}} are also to be found in the standard plug-\/in.
+
+\mbox{\hyperlink{namespace_gyoto}{Gyoto}} can be used right away to compute stellar orbits in the Kerr metric or to do basic ray-\/tracing of accretion disks. But \mbox{\hyperlink{namespace_gyoto}{Gyoto}} is not limited to the basic metrics and objects we have thought of. It is fairly easy to add custom metrics and objects (and emission/absorption laws) it \mbox{\hyperlink{namespace_gyoto}{Gyoto}}, and \mbox{\hyperlink{namespace_gyoto}{Gyoto}} itself does not need to be modified or even re-\/compiled to do so\+: custom classes can (and should) be implemented as plug-\/ins. For an example, simply look at the lib/\+Std\+Plug.\+C file in the source distribution, and the source files for the objects and metrics it provides\+: e.\+g. lib/\+Fixed\+Star.\+C and lib/\+Kerr\+BL.\+C.
+
+To implement a new plug-\/in, you first need to implement a derived class of either the \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Gyoto\+::\+Astrobj}}, \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Gyoto\+::\+Metric}}, or \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_generic}{Gyoto\+::\+Spectrum\+::\+Generic}} class. You don\textquotesingle{}t necessarily need to implement everything, the \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Gyoto\+::\+Astrobj}} page explains what is required for an astronomical object.
+
+Assuming you want to be able to actually use your custom class, you need a way to instantiate it. This is normally the job of the \mbox{\hyperlink{class_gyoto_1_1_factory}{Gyoto\+::\+Factory}}. You need to instruct the \mbox{\hyperlink{class_gyoto_1_1_factory}{Gyoto\+::\+Factory}} how to read parameters for your specific class from an XML file by implementing a subcontractor (for a \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Gyoto\+::\+Astrobj}}, the subcontractor is a static method of the \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_aa53c7ada58c8c8f3799c3485b7d8f3bb}{Gyoto\+::\+Astrobj\+::\+Subcontractor\+\_\+t}} type). The subcontractor communicates with the \mbox{\hyperlink{class_gyoto_1_1_factory}{Gyoto\+::\+Factory}} by means of a \mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} and basically loops calling the \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a716340221e527c61a05af389590b53f4}{Gyoto\+::\+Factory\+Messenger\+::get\+Next\+Parameter()}} method (see the \mbox{\hyperlink{_gyoto_register_8h}{Gyoto\+Register.\+h}} file, unfortunately undocumented at the moment).
+
+You also need to register your subcontractor, so that the \mbox{\hyperlink{class_gyoto_1_1_factory}{Gyoto\+::\+Factory}} knows it must call it when it encounters a tag of the form $<$Astrobj kind="{}Your\+Kind"{}$>$ in an XML description. This is typically done by providing an static Init method in your class\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} \mbox{\hyperlink{namespace_gyoto_1_1_units_aade66d5933d035fb5f0fbb0501e9e972}{Gyoto::FixedStar::Init}}() \{}
+\DoxyCodeLine{  \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_abb6caf3023a51cb77b5f6793ac03b188}{Gyoto::Astrobj::Register}}(\textcolor{stringliteral}{"{}FixedStar"{}}, \&\mbox{\hyperlink{namespace_gyoto_1_1_astrobj_a889583a9d40c821bd55c4191cb3201ed}{Gyoto::FixedStar::Subcontractor}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+You need to make sure this \mbox{\hyperlink{namespace_gyoto_1_1_units_aade66d5933d035fb5f0fbb0501e9e972}{Init()}} method is called when your plug-\/in is loaded. Assume you decide to call your plug-\/in My\+Plug, and it contains a single \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Gyoto\+::\+Astrobj}} named Gyoto\+::\+My\+Obj. You will compile it under the file name libgyoto-\/\+My\+Plug.\+so (under Linux) or libgyoto-\/\+My\+Plug.\+dylib (under Mac\+OS X). Just put this file somewhere where the dynamic linker can find it (any directory listed in \$\+LD\+\_\+\+LIBRARY\+\_\+\+PATH or \$\+DYLD\+\_\+\+LIBRARY\+\_\+\+PATH will be fine; /usr/local/lib/ should also be fine). In addition to the implementation of the Gyoto\+::\+My\+Obj class, you will need to provide a function called \+\_\+\+\_\+\+Gyoto\+My\+Plug\+Init() which will be exactly this\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \textcolor{keywordtype}{void} \_\_GyotostdplugInit() \{}
+\DoxyCodeLine{  \mbox{\hyperlink{namespace_gyoto_1_1_units_aade66d5933d035fb5f0fbb0501e9e972}{Gyoto::MyObj::Init}}();}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ This function is typically provided in a separate source file (such as lib/\+Std\+Plug.\+C in the \mbox{\hyperlink{namespace_gyoto}{Gyoto}} source) and can initialize several custom classes at once.
+
+Finally, you need to instruct \mbox{\hyperlink{namespace_gyoto}{Gyoto}} to load your plug-\/in at run time. This is done by adding the name of your plug-\/in to the GYOTO\+\_\+\+PLUGINS environment variable. The default value for GYOTO\+\_\+\+PLUGINS is \char`\"{}stdplug,nofail\+:lorene\char`\"{}, meaning \mbox{\hyperlink{namespace_gyoto}{Gyoto}} should load the standard plug-\/in stdplug and attempt to load the lorene plug-\/in, failing only if stdplug is nowhere to be found. If you want to load your plug-\/in in addition to those, alter this variable in your shell (if you don\textquotesingle{}t know what this means or how to do this, ask the local Unix guru or read the fine \href{http://www.gnu.org/s/bash/manual/bash.html}{\texttt{ manual}})\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{export GYOTO\_PLUGINS=\textcolor{stringliteral}{"{}stdplug,nofail:lorene,MyPlug"{}}}
+
+\end{DoxyCode}
+ but if your lug-\/in is self-\/contained and your don\textquotesingle{}t need the objects in the standard plug-\/ins, this will do it for you\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{export GYOTO\_PLUGINS=\textcolor{stringliteral}{"{}MyPlug"{}}}
+
+\end{DoxyCode}
+ This will instruct \mbox{\hyperlink{namespace_gyoto}{Gyoto}} to locate and load the file named libgyoto-\/\+My\+Plug.(so$\vert$dylib) and to run the function named \+\_\+\+\_\+\+Gyotostdplug\+Init() from this library file. 

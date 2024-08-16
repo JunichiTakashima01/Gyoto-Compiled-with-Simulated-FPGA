@@ -1,0 +1,706 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_gyoto_1_1_grid_data2_d" kind="class" language="C++" prot="public">
+    <compoundname>Gyoto::GridData2D</compoundname>
+    <derivedcompoundref refid="class_gyoto_1_1_astrobj_1_1_flared_disk_synchrotron" prot="public" virt="non-virtual">Gyoto::Astrobj::FlaredDiskSynchrotron</derivedcompoundref>
+    <derivedcompoundref refid="class_gyoto_1_1_astrobj_1_1_thin_disk_grid_intensity" prot="public" virt="non-virtual">Gyoto::Astrobj::ThinDiskGridIntensity</derivedcompoundref>
+    <includes refid="_gyoto_fits_r_w_8h" local="no">GyotoFitsRW.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_grid_data2_d_1aabc9722a9479f2d47be5cc4f759e87a8" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::GridData2D::phimin_</definition>
+        <argsstring></argsstring>
+        <name>phimin_</name>
+        <briefdescription>
+<para>Minimum phi in grid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="54" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoGridData2D.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_grid_data2_d_1a480d11a0ec3869ee94b2e08446fc6791" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::GridData2D::phimax_</definition>
+        <argsstring></argsstring>
+        <name>phimax_</name>
+        <briefdescription>
+<para>Maximum phi in grid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="55" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoGridData2D.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_grid_data2_d_1af17e3a9d7f16e37645afdc8541b1b7f9" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::GridData2D::dphi_</definition>
+        <argsstring></argsstring>
+        <name>dphi_</name>
+        <briefdescription>
+<para><delta/><phi/> between two grid columns </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="56" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoGridData2D.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_grid_data2_d_1ab476ef29aa754a4d19f08937da3acd1b" prot="private" static="no" mutable="no">
+        <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+        <definition>size_t Gyoto::GridData2D::nphi_</definition>
+        <argsstring></argsstring>
+        <name>nphi_</name>
+        <briefdescription>
+<para>Grid size in the <phi/> direction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="57" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoGridData2D.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_grid_data2_d_1a2b465f11a7751f504f9e891d00c8391f" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::GridData2D::dr_</definition>
+        <argsstring></argsstring>
+        <name>dr_</name>
+        <briefdescription>
+<para>Radius step. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="58" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoGridData2D.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_grid_data2_d_1a4a50a7e97c8c6d1fb1362bb335981f4d" prot="private" static="no" mutable="no">
+        <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+        <definition>size_t Gyoto::GridData2D::nr_</definition>
+        <argsstring></argsstring>
+        <name>nr_</name>
+        <briefdescription>
+<para>Grid size in the r direction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="59" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoGridData2D.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_grid_data2_d_1a8d376bff753d5ec1b213a011ac2ffd44" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::GridData2D::rmin_</definition>
+        <argsstring></argsstring>
+        <name>rmin_</name>
+        <briefdescription>
+<para>Minimum r in grid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="60" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoGridData2D.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_grid_data2_d_1ad39dc695baa716e800b81871ee5e795d" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::GridData2D::rmax_</definition>
+        <argsstring></argsstring>
+        <name>rmax_</name>
+        <briefdescription>
+<para>Maximum r in grid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="61" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoGridData2D.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_grid_data2_d_1a77b65b9f9b359d25384ca2cd74dbbf08" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::GridData2D::dt_</definition>
+        <argsstring></argsstring>
+        <name>dt_</name>
+        <briefdescription>
+<para>Time step, if not constant would be ignored. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="62" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoGridData2D.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_grid_data2_d_1a088446ac46070470c76589f6a8f9f657" prot="private" static="no" mutable="no">
+        <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+        <definition>size_t Gyoto::GridData2D::nt_</definition>
+        <argsstring></argsstring>
+        <name>nt_</name>
+        <briefdescription>
+<para>Grid size in the t direction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="63" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoGridData2D.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_grid_data2_d_1a8c3bb70aa5df348c5db6f72aadf1f723" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::GridData2D::tmin_</definition>
+        <argsstring></argsstring>
+        <name>tmin_</name>
+        <briefdescription>
+<para>Minimum t in grid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="64" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoGridData2D.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_grid_data2_d_1a9e410c52d7edba65f09370ad93caf655" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::GridData2D::tmax_</definition>
+        <argsstring></argsstring>
+        <name>tmax_</name>
+        <briefdescription>
+<para>Maximum t in grid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="65" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoGridData2D.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gyoto_1_1_grid_data2_d_1a4a34592d275bf5663d18d1a8d607bc9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::GridData2D::GridData2D</definition>
+        <argsstring>()</argsstring>
+        <name>GridData2D</name>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="69" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_grid_data2_d_1a11ee3c30232717563e831d4746987dba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::GridData2D::GridData2D</definition>
+        <argsstring>(const GridData2D &amp;)</argsstring>
+        <name>GridData2D</name>
+        <param>
+          <type>const <ref refid="class_gyoto_1_1_grid_data2_d" kindref="compound">GridData2D</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="70" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_grid_data2_d_1ae43d840020b97b0e25d09731499938f4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_gyoto_1_1_grid_data2_d" kindref="compound">GridData2D</ref> *</type>
+        <definition>virtual GridData2D* Gyoto::GridData2D::clone</definition>
+        <argsstring>() const</argsstring>
+        <name>clone</name>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_flared_disk_synchrotron_1ac90f34acfdbf225fa627ac8038b06791">clone</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_thin_disk_grid_intensity_1ad12ef4531e682b2e962450f8dda685a8">clone</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="71" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_grid_data2_d_1a63650780b8aadc363f65b33a5e2fc932" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Gyoto::GridData2D::~GridData2D</definition>
+        <argsstring>()</argsstring>
+        <name>~GridData2D</name>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="72" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_grid_data2_d_1a7d914f46d810b87f4a7250edb1d250cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::GridData2D::rmin</definition>
+        <argsstring>(double rmn)</argsstring>
+        <name>rmin</name>
+        <param>
+          <type>double</type>
+          <declname>rmn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="75" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_grid_data2_d_1a0b77242135917df715f3b8d14b401901" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::GridData2D::rmin</definition>
+        <argsstring>() const</argsstring>
+        <name>rmin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="76" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_grid_data2_d_1a7e40b0f854c0852598b052145fd1239e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::GridData2D::rmax</definition>
+        <argsstring>(double rmx)</argsstring>
+        <name>rmax</name>
+        <param>
+          <type>double</type>
+          <declname>rmx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="77" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_grid_data2_d_1a57fa1fc877ee0772d3749c995456f746" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::GridData2D::rmax</definition>
+        <argsstring>() const</argsstring>
+        <name>rmax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="78" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_grid_data2_d_1ac65124b05e39b5976ef186c99e1a9941" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::GridData2D::nr</definition>
+        <argsstring>(size_t nn)</argsstring>
+        <name>nr</name>
+        <param>
+          <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+          <declname>nn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="79" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_grid_data2_d_1a156a2dfe673827256a4188c8f43c1cc2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+        <definition>size_t Gyoto::GridData2D::nr</definition>
+        <argsstring>() const</argsstring>
+        <name>nr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="80" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_grid_data2_d_1a43aa3b7a31d28f58dd07bb483b9b6509" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::GridData2D::dr</definition>
+        <argsstring>(double dd)</argsstring>
+        <name>dr</name>
+        <param>
+          <type>double</type>
+          <declname>dd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="81" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_grid_data2_d_1a117c92d7b77cf8ff1f8120aa72d62347" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::GridData2D::dr</definition>
+        <argsstring>() const</argsstring>
+        <name>dr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="82" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_grid_data2_d_1a0fb0d92091d848587fcb7c1a56563cc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::GridData2D::phimin</definition>
+        <argsstring>(double phimn)</argsstring>
+        <name>phimin</name>
+        <param>
+          <type>double</type>
+          <declname>phimn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="83" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_grid_data2_d_1ab9a346ce40159e0bc5cdf005e9be6b4b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::GridData2D::phimin</definition>
+        <argsstring>() const</argsstring>
+        <name>phimin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="84" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_grid_data2_d_1a1a046b19e6e2804f5ec54cccf7aa8694" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::GridData2D::phimax</definition>
+        <argsstring>(double phimx)</argsstring>
+        <name>phimax</name>
+        <param>
+          <type>double</type>
+          <declname>phimx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="85" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_grid_data2_d_1ab0b100827236e4991acd5b6a0a2ae65f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::GridData2D::phimax</definition>
+        <argsstring>() const</argsstring>
+        <name>phimax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="86" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_grid_data2_d_1a4b5773a0075699369b2abd704b266c36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::GridData2D::dphi</definition>
+        <argsstring>(double dd)</argsstring>
+        <name>dphi</name>
+        <param>
+          <type>double</type>
+          <declname>dd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="87" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_grid_data2_d_1a289483a8d141dd5d094fa0dd65057e0c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::GridData2D::dphi</definition>
+        <argsstring>() const</argsstring>
+        <name>dphi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="88" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_grid_data2_d_1a820e4c921549fc25ab8f5c3ab134fe4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::GridData2D::tmin</definition>
+        <argsstring>(double tmn)</argsstring>
+        <name>tmin</name>
+        <param>
+          <type>double</type>
+          <declname>tmn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="89" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_grid_data2_d_1aa438149a092476db0c7c57a95cdcf290" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::GridData2D::tmin</definition>
+        <argsstring>() const</argsstring>
+        <name>tmin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="90" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_grid_data2_d_1a3bf6f829f132ad81cd5410e83c84f610" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::GridData2D::tmax</definition>
+        <argsstring>(double tmx)</argsstring>
+        <name>tmax</name>
+        <param>
+          <type>double</type>
+          <declname>tmx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="91" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_grid_data2_d_1a905d9942c2233a087f08e3fd6face5dd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::GridData2D::tmax</definition>
+        <argsstring>() const</argsstring>
+        <name>tmax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="92" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_grid_data2_d_1ad2b569dba8471cb24e13c92af7b145e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::GridData2D::nt</definition>
+        <argsstring>(size_t nn)</argsstring>
+        <name>nt</name>
+        <param>
+          <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+          <declname>nn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="93" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_grid_data2_d_1a7b57cf1c02fd817646e7268a4a998047" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+        <definition>size_t Gyoto::GridData2D::nt</definition>
+        <argsstring>() const</argsstring>
+        <name>nt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="94" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_grid_data2_d_1a96054ad9c0ac8b6f652ae88c19e44267" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::GridData2D::nphi</definition>
+        <argsstring>(size_t nn)</argsstring>
+        <name>nphi</name>
+        <param>
+          <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+          <declname>nn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="95" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_grid_data2_d_1ad2440ed90d7180ba4fc29f237e64ccd3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+        <definition>size_t Gyoto::GridData2D::nphi</definition>
+        <argsstring>() const</argsstring>
+        <name>nphi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="96" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_grid_data2_d_1a832c9dc3ad0f9e6cfd8da4fb36e728d9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::GridData2D::getIndices</definition>
+        <argsstring>(size_t i[3], double const tt, double const phi, double const rr, double *const time_array=NULL) const</argsstring>
+        <name>getIndices</name>
+        <param>
+          <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+          <declname>i</declname>
+          <array>[3]</array>
+        </param>
+        <param>
+          <type>double const</type>
+          <declname>tt</declname>
+        </param>
+        <param>
+          <type>double const</type>
+          <declname>phi</declname>
+        </param>
+        <param>
+          <type>double const</type>
+          <declname>rr</declname>
+        </param>
+        <param>
+          <type>double *const</type>
+          <declname>time_array</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="149" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_grid_data2_d_1a6f68ed1ad12d764c914525f26612f1d8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::GridData2D::interpolate</definition>
+        <argsstring>(double tt, double phi, double rr, double *const array, double *const time_array=NULL) const</argsstring>
+        <name>interpolate</name>
+        <param>
+          <type>double</type>
+          <declname>tt</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>phi</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rr</declname>
+        </param>
+        <param>
+          <type>double *const</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>double *const</type>
+          <declname>time_array</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="150" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class for reading data stored in a 2D grid. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Gyoto::Astrobj::ThinDiskGridIntensity</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_thin_disk_grid_intensity"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gyoto::Astrobj::FlaredDiskSynchrotron</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_flared_disk_synchrotron"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gyoto::GridData2D</label>
+        <link refid="class_gyoto_1_1_grid_data2_d"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/junichi/Gyoto/include/GyotoGridData2D.h" line="51" column="1" bodyfile="/home/junichi/Gyoto/include/GyotoGridData2D.h" bodystart="52" bodyend="155"/>
+    <listofallmembers>
+      <member refid="class_gyoto_1_1_grid_data2_d_1ae43d840020b97b0e25d09731499938f4" prot="public" virt="virtual"><scope>Gyoto::GridData2D</scope><name>clone</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1a4b5773a0075699369b2abd704b266c36" prot="public" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>dphi</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1a289483a8d141dd5d094fa0dd65057e0c" prot="public" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>dphi</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1af17e3a9d7f16e37645afdc8541b1b7f9" prot="private" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>dphi_</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1a43aa3b7a31d28f58dd07bb483b9b6509" prot="public" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>dr</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1a117c92d7b77cf8ff1f8120aa72d62347" prot="public" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>dr</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1a2b465f11a7751f504f9e891d00c8391f" prot="private" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>dr_</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1a77b65b9f9b359d25384ca2cd74dbbf08" prot="private" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>dt_</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1a832c9dc3ad0f9e6cfd8da4fb36e728d9" prot="public" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>getIndices</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1a4a34592d275bf5663d18d1a8d607bc9d" prot="public" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>GridData2D</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1a11ee3c30232717563e831d4746987dba" prot="public" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>GridData2D</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1a6f68ed1ad12d764c914525f26612f1d8" prot="public" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>interpolate</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1a96054ad9c0ac8b6f652ae88c19e44267" prot="public" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>nphi</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1ad2440ed90d7180ba4fc29f237e64ccd3" prot="public" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>nphi</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1ab476ef29aa754a4d19f08937da3acd1b" prot="private" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>nphi_</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1ac65124b05e39b5976ef186c99e1a9941" prot="public" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>nr</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1a156a2dfe673827256a4188c8f43c1cc2" prot="public" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>nr</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1a4a50a7e97c8c6d1fb1362bb335981f4d" prot="private" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>nr_</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1ad2b569dba8471cb24e13c92af7b145e9" prot="public" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>nt</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1a7b57cf1c02fd817646e7268a4a998047" prot="public" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>nt</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1a088446ac46070470c76589f6a8f9f657" prot="private" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>nt_</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1a1a046b19e6e2804f5ec54cccf7aa8694" prot="public" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>phimax</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1ab0b100827236e4991acd5b6a0a2ae65f" prot="public" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>phimax</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1a480d11a0ec3869ee94b2e08446fc6791" prot="private" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>phimax_</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1a0fb0d92091d848587fcb7c1a56563cc2" prot="public" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>phimin</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1ab9a346ce40159e0bc5cdf005e9be6b4b" prot="public" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>phimin</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1aabc9722a9479f2d47be5cc4f759e87a8" prot="private" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>phimin_</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1a7e40b0f854c0852598b052145fd1239e" prot="public" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>rmax</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1a57fa1fc877ee0772d3749c995456f746" prot="public" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>rmax</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1ad39dc695baa716e800b81871ee5e795d" prot="private" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>rmax_</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1a7d914f46d810b87f4a7250edb1d250cb" prot="public" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>rmin</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1a0b77242135917df715f3b8d14b401901" prot="public" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>rmin</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1a8d376bff753d5ec1b213a011ac2ffd44" prot="private" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>rmin_</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1a3bf6f829f132ad81cd5410e83c84f610" prot="public" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>tmax</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1a905d9942c2233a087f08e3fd6face5dd" prot="public" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>tmax</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1a9e410c52d7edba65f09370ad93caf655" prot="private" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>tmax_</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1a820e4c921549fc25ab8f5c3ab134fe4e" prot="public" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>tmin</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1aa438149a092476db0c7c57a95cdcf290" prot="public" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>tmin</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1a8c3bb70aa5df348c5db6f72aadf1f723" prot="private" virt="non-virtual"><scope>Gyoto::GridData2D</scope><name>tmin_</name></member>
+      <member refid="class_gyoto_1_1_grid_data2_d_1a63650780b8aadc363f65b33a5e2fc932" prot="public" virt="virtual"><scope>Gyoto::GridData2D</scope><name>~GridData2D</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

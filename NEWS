@@ -1,0 +1,375 @@
+2.0.0 2024/01/02 ABI 9:0:0 
+    * Adding the ability to compute polarization quantities:
+        * Implement all polarized synchrotron radiative transfer coefficients 
+          for Thermal, PowerLaw and Kappa distributions
+        * Compute of the transmission matrix
+        * Calcul of the polarization angle in the observer
+          polarization basis parallel transported and projected
+          in the rest frame of the emitter
+        * Adding the eigen3 library
+    * various bugfix
+    * New common definition of magnetic field configuration accessible by all Astrobj
+    * New N-dimensonnal linear interpolation function with configurable boundary conditions
+    * New Astrobj::FreeStar:
+        Similar to the Star object expect it does not follow a time-like geodesic.
+        The Trajectory is define by the user through the initial position and velocity
+    * Astrobj::Blob:
+        + electronDistribution_
+    * New Astrobj::Plasmoid:
+        Uniform sphere of Plasma with a constant or linear increase of the radius.
+        Two types of orbits : 
+          - Circular in the equatorial plane
+          - Helical (constant polar angle)
+        j_nu and a_nu are read in fits file.
+    * New class : FitsRW:
+        Class which generates fits file from outputs of simulations
+          for the Astrobj::Plasmoid
+    * KappaDistributionSynchrotronSpectrum: correction of the calculation of j_nu and a_nu
+    * PowerLawSynchrotronSpectrum: correction of the calculation of j_nu and a_nu
+    * Astrobj::FlaredDiskSynchrotron:
+      + Corrections for MPI
+      + Correction API : return the correct Polytropic Index
+      + Add the possibility to have a non constant time step (for the input simulated disk)
+    * GridData2D : 
+      + Possibility to provide the time array for non constant time step (optional)
+      + Add security check
+        
+
+1.4.4 2020/02/28 BUG
+   * Officially drop Python 2.7 support
+   * Astrobj::ThickDisk:
+      + Expose in Python
+      + Minor bugfixes
+      + Provide example
+   * Python: fix reference counting issues
+   * Various minor bug fixes
+
+1.4.3 2019/10/25 BUG
+   * m4/python.m4: bugfix (actually support Python >=3.8)
+
+1.4.2 2019/10/25 BUG
+   * plugins/python: support Python 3.8
+   * Astrobj::EquatorialHotSpot: fix XML compatibility code
+   * GridData2D: make one conversion explicit to please clang
+
+1.4.1 2019/10/23 BUG
+   * MPI: fix computation of number of quantities to evaluate
+   * check suite: use all files in doc/examples
+
+1.4.0 2019/10/22 ABI 8:0:0
+   * Ongoing work to support polarization:
+      * Support parallel transport of local tetrad
+        + in many methods, double* coord_ph becomes state_t &coord_ph
+	+ Worldline: new APIs parallelTransport(), eAllocate(),
+	  eDeallocate(), eExpand()
+	+ Scenery: new API parallelTransport()
+	+ Screen: new API getRayTriad()
+      * Introduce polarized quantities (Inu and alphanu for each
+        component of the Stokes vector)
+        + Several methods take additional arguments
+	+ Photon: new method transfer()
+	+ Scenery: new API getSpectralQuantitiesCount()
+   * Support computing Screen tetrad from arbitrary velocity
+      * Metric:
+      	+ new API zamoVelocity(), default assumes null 3-velocity.
+   	+ new API observerTetrad(in pos, in fourvel, out screen1,2,3),
+     	  default throws an Error.
+   	+ new methods to help vector computations: dualOneForm(),
+   	  normalizeFourVel(), norm(), multiplyFourVect(),
+   	  addFourVect(), projectFourVect(), GramSchmidt()
+      * KerrBL:
+	+ implement zamoVelocity();
+   	+ remove observerTetrad(obskind...);
+   	+ implement observerTetrad(pos, fourvel, ...) for any fourvel.
+      * Screen: supports two new obskinds: VelocitySpecified and
+        FullySpecified. obskind is now stored as and int and needs to
+	be specified as e.g. <ObserverKind>ZAMO</ObserverKind> in XML.
+   * Astrobj:
+      * Generic: new property DeltaMaxInsideRMax
+      * New kinds FlaredDiskSynchrotron, ThickDisk
+      * Jet:
+        + support thermal distribution
+	+ new property JetVphiOverVr
+      * ThinDisk: new property VelocityKind
+      * Torus: add a Thermal Synchrotron spectrum
+      * UniformSphere: deprecate property Alpha
+   * Screen:
+     * support changing camera orientation (with dangle1 and dangle2)
+     * change type of observerkind_ to obskind_t
+   * Python: new module gyoto.animate to help writing Gyoto-based movies.
+   * Command line: new task mk_video to help writing Gyoto-based movies.
+   * Register: loadPlugin() now returns a handle o the dlopen'ed plug-in.
+   * Star/StarTrace: allow expressing dates in proper or coordinate time.
+
+1.3.6 2019/09/27 FTR
+   * Python: improve interface in gyoto.util
+   * GyotoDefs.h: give derived constants to machine precision
+
+1.3.5 2019/08/03 BUG
+   * Python: support Python2.7 in gyoto.util.rayTrace
+
+1.3.4 2019/08/02 BUG
+   * Python: fix gyoto?util.rayTrace
+
+1.3.3 2019/08/02 BUG
+   * Python: install gyoto.util
+
+1.3.2 2019/08/02 BUG
+   * Python:
+      + fix segfault in gyoto.std and gyoto.lorene
+      + Fixup: specify encoding in python/tests/core.py
+      + call setup.py build instead of build_ext
+      + new module gyoto.util containing rayTrace, readScenery, writeObject
+   * libgyoto:
+      + add time-did-not-evolve check in Worldline::xFill()
+      + Screen: dangle(1|2) now rotate the camera for anglekind != spherical
+      + ThinDisk::sphericalPhi: return value between 0 and 2 pi
+      + fix bug in Metric::Generic::cartesianVelocity
+   * doc: warn in the user guide that the Yorick plug-in should not be used
+   * Fix printing issues during ray-tracing, mostly visible in Python
+
+1.3.1 2019/01/22 BUG
+
+   * Fix typos and minor bugs
+   * New macro GYOTO_ERROR to prefix Gyoto::throwError message with
+     __FILE__:__LINE__ in __PRETTY_FUNCTION__
+   * In Spectrum::ThemalBremstrahlung::radiativeQ and alphanu, return
+     inf instead of throwing an error when dividing a finite number by 0.
+
+1.3.0 2019/01/10 ABI 7:0:0
+
+   * Changed API: for consistency, replace CutOffIneV by CutOff (in
+     Hz) in Spectrum::PowerLaw. New API supports unit, the user may
+     replace
+       <CutOffIneV> 1 2 </CutOffineV>
+     with
+       <CutOff unit='eV'> 1 2 </CutOff>
+   * Changed API: for consistency, rename Factory::getScenery to
+     Factory::scenery and Factory::getPhoton to Factory::photon.
+   * Changed API: Factory::metric(), astrobj() etc. don't throw an error
+     anymore when then XML file does not contain the relevant entity but
+     return a NULL smartpointer instead
+   * Support mpirun -np option for all MPI implementations (bypassing
+     MPI_Comm_spawn()).
+   * New Metric: Hayward
+   * New Astrobjs: Blob, Jet, NeutronStar, NeutronStarAnalyticEmission,
+     NeutronStarModelAtmosphere, XillverReflection
+   * New Spectra: KappaDistributionSynchrotronSpectrum,
+     PowerLawSynchrotronSpectrum, ThermalSynchrotronSpectrum
+   * Python: combined the three Python modules in a package, renaming
+     them as:
+     + gyoto        -> gyoto.core
+     + gyoto_std    -> gyoto.std
+     + gyoto_lorene -> gyoto.lorene
+     The old names are still accessible but are deprecated and may be
+     removed in a future release.
+   * Python: provide namespaces, e.g. gyoto.astrobj to hold Astrobjs
+     from gyoto.core, gyoto.std and gyoto.lorene, to mimic C++
+     organization and as a convenience for users. Same goes for
+     gyoto.metric, gyoto.spectrum and gyoto.spectrometer.
+   * Python: gyoto.std and gyoto.lorene now take care of loading the
+     necessary Gyoto plug-ins.
+   * New optional dependency on ARBLIB or AEAE. See INSTAL.Gyoto.md.
+   * Improved configure script:
+     + It is now possible to specify the python interpreter in
+       --with-python:
+         ./configure --with-python=python2
+         ./configure --with-python=/usr/bin/python3.7
+     + Deprecate --with-udunits-(inc|lib) in favour of
+       --with-udunits-(headers|libs).
+     + In --with-*-(headers|lib), accept both colon-sparated paths and
+       list of flags.
+     See ./configure --help.
+   * Support KerrKS in gyotoy.
+   * Important code cleaning in PatternDisk
+     + PatternDisk: implement radial interpolation for axisym grid;
+       implement case when phi is out of phi-grid bounds; correction
+       of bugs with rin, rout, rmax; allows grid with nphi=1 (axisym);
+       transpose grid (In NumPy, grid is of dimension 1xNphixNr)
+     + PatternDiskBB: remove risco and all calls to Kerr; can support
+       any metric now
+   * RezzollaZhidenko: implement circularVelocity
+   * PageThorne supports ChernSimons metric
+   * Major update in PolishDoughnut
+     + remove all code relative to outdated 2012 model
+     + remove call to getRms in angmomrinner
+     + call to external spectra (synchro ther, synchro PL, brems), so
+       remove all spectrum computation inside PolishDoughnut
+   * ThermalBremsstrahlungSpectrum: use a different model dpending on
+     temperature
+   * BlackBodySpectrum: add color correction
+   * Update fov orientation in Screen
+     + Rename Alpha0 and Delta0 to Dangle1 and Dangle2 to be useable
+       also in SphericalAngles
+     + Add Screen::azimuthal_fov_, the fov along the azimuthal
+       direction in the rest frame of the observer in SphericalAngles
+       (assumed to be 2*pi in the past).
+   * NumericalMetricLorene and NeutronStarModelAtm: adding normal
+     vector to surface
+
+1.2.0 2016/12/12 ABI 6:0:0
+   * New functionality: the plug-in from which each subcontractor is
+     registered is now tracked, so that it becomes possible to look
+     for a subcontractor matching a specific kind and plug-in. We
+     introduce the function Gyoto::requirePlugin() in addition to
+     Gyoto::loadPlugin(). The subcontractor signature is changed to
+     accept a second parameter, which breaks the API.
+   * New functionality: thread-unsafe classes declare themselves as
+     such, so that NThreads is ignored when multi-threading would
+     cause erroneous results.
+
+1.1.2 2016/12/10 FTR
+   * New Metrics in stdplug: ChernSimons, RezzollaZhidenko.
+   * New Astrobjs in stdplug: DeformedTorus, DynamicalDiskBolometric,
+     EquatorialHotSpot, InflateStar, OscilTorus.
+   * Allow specifying plug-in by file name.
+   * Support colon syntax of mpirun (bypassing MPI_Comm_spawn()).
+   * Support mpirun -np option for Open MPI (bypassing
+     MPI_Comm_spawn()).
+
+1.1.1 2016/10/30 BUG
+   * When Gyoto is configured to be installed in another prefix than
+     /usr/local/, look into two additional directories when loading
+     plug-ins: /usr/local/lib/gyoto/<sovers>/ and
+     /usr/local/lib/gyoto/.
+   * The name of the versioned directories for plug-ins (<sovers>
+     above) is now the major version of the library, so users don't
+     need to reinstall there plug-ins when ugrading Gyoto to a
+     binary-compatible release.
+   * --enable-hardening now also enables -fPIE.
+   * Yorick: actually implement `picture' painter for the matte_paint
+     framework. Allow using any two or three-dimensional image or
+     stack of images in the `picture' and `panorama' painters.
+   * Include minimal plug-in example in plugins/null/.
+
+1.1.0 2016/09/12 ABI 4 (5:0:0)
+   * New functionality: provide a plug-in for writing new Metrics,
+     Astrobjs and Spectra in Python.
+   * New functionality: objects can describe there own
+     properties. This feature is accessible through the help() method
+     in the Python and Yorick interfaces and through -h on the
+     command-line: "gyoto -hMetric::KerrBL"
+   * New functionality: adding a flag to highligh the shadow region in
+     a strong-field image
+   * Various improvements and bug fixes in the Python extension.
+   * Yorick: Add more functions to control the floating-point
+     environment from Yorick.
+   * Screen: properly parse "Mask" as a filename
+   * KerrKS: remove specific integrator, which has never worked well.
+   * PowerLawSpectrum: add cut-offs.
+   * DirectionalDisk: add cutoff in lamp/disk frames.
+   * PolishDoughnut: add central_temperature_ parameter.
+
+1.0.2 2015/06/26 BUG
+   * Fix FTBFS with gcc 5.0;
+   * Improve fenv support and lack thereof with some compilers;
+   * Distinguish size_t from unsigned long in Gyoto::Value;
+   * Rewrite option parsing in `gyoto' command line utility, add many
+     options: short options, -i/-j, -E, -X... see manpage and
+     $ gyoto --help
+   * Fix many compile-time warnings, including potentially harmfull
+     undefined behavior;
+   * KerrKS is not work-in-progress anymore, but it's specific
+     integrator is known to be buggy (and issues a severe warning when
+     used).
+   * Several small bug-fixes, see ChangeLog for details.
+
+1.0.1 2015/05/27 PKG
+   * Add 3rd clause of BSD license to python/doxy2swig.py;
+   * Add Odele to AUTHORS;
+   * Bugfixes in configure.ac: use BOOST_*_LIBS variables instead of
+     hardcoding one possible value, make it possible to build when
+     python is installed but with an unsupported version.
+
+1.0.0 2015/05/25 ABI 3
+   * New functionality: MPI-based parallelisation.
+   * New functionality: Python extension.
+   * New functionality: most classes now derive from Gyoto::Object and
+     have "Properties" (instances of Gyoto::Property). This provides
+     for some introspection which is used notably in the Yorick
+     plug-in and simplifies writing new derived classes.
+   * Change Scenery::rayTrace() API, replacing i/jmin and max with a
+     new concept Screen::Coord2dSet. This allows using the same
+     code-path for both the gyoto utility and all the yorick use cases.
+   * Update PolishDoughnut to support numerical (non-Kerr) metrics.
+   * New spectrum: Gyoto::Spectrum::ThermalBremsstrahlung.
+   * The usual lot of bug fixes and enhancements.
+
+0.2.3 2014/10/21 BUG
+	* Fix minor memory management bug in yotck/gyoto_Scenery.C
+
+0.2.2 2014/09/19 BUG
+	* Correct Metric:: and KerrBL::circularVelocity().
+
+0.2.1 2014/07/22 ABI 2.1
+	* ABI is backward compatible with 0.2.0.
+	* Support for the special values DBL_MAX, DBL_MIN, -DBL_MAX
+          and -DBL_MIN is any scalar floating-point value in XML i/o.
+          This avoids loss of precission or SGFPE when
+          saving/restoring certain default value in XML files.
+	* Bug fix: avoid buffer overflow in Factory.
+
+0.2.0 2014/07/21 ABI 2
+	* New integrators, require Boost >= 1.93 and C++11. The new
+	  integrators live in Worldline::IntegState, not in the Metric. Read
+	  the user guide for more details, as well as the doxygen
+	  documentation for the Scenery class.
+	* New Metrics: Minkowski, NumericalMetricLorene
+	* New Astrobjs: DirectionalDisk, StarTrace, ThinDiskIronLine
+	* Give access to some numerical parameters of the RK4 integrator
+	* Include LaTeX user guide
+	* Yorick plug-in API change: the dot operator has changed its meaning.
+	  Codes that used it may require updating. Examples:
+	    m = gg.mass -> m =gg.mass()
+	    obj=gg.clone -> obj=gg.clone()
+	    scenery.screen(resolution=128) -> screnery.screen.resolution(128)
+	    scenery.astrobj(initcoord=x,v) -> scenery.astrobj()(initcoord=x,v)
+	* Rename methods from from setMass()/getMass() style to mass()/mass()
+	  style. Macro with the old names are provided in GyotoDefs.h,
+	  triggering a deprecation warning. Code may break nevertheless,
+	  typically in two cases:
+	    + if the new name was used as a variable name in your code:
+	      please change the variable name;
+	    + if your derived class overloaded only one of the two accessors
+	      (e.g. only setMetric, not getMetric): in this example add
+	        using Generic::metric;
+	      in your derived class definition.
+	  To get rid of the deprecation warning, define the GYOTO_NO_DEPRECATED
+	  macro, for instance "make CPPFLAGS=-DGYOTO_NO_DEPRECATED"
+	* Serious bug fixes and improvements in PolishDoughnut
+	* Replaced Disk3D_BB with DynamicalDisk3D
+	* Disk3D now has an opacity
+	* Make KerrKS work (using the generic integrator only)
+	* New interface: work in progress (WIP), to mark classes that are known
+	  to be broken. Instanciating such a class yields a warning.
+	* Update build systems to current autotools
+        * Implement mask in screen to compute only parts of an image
+	* Improve behaviour for emitter or observer far from massive object
+
+0.1.0 2013/07/27 ABI 1
+	* add units system
+	* add PolishDoughnut astrobj
+	* use pkg-config
+	* gyotoy ported to yorick-gy instead of python
+	* in Worldline, Photon and Scenery: rename tlim to tmin, default
+	  value is -DBL_MAX.
+	* add a mutli-wavelength flavour of Astrobj::emission()
+	* install yorick plug-in under ${prefix}, not necessarily in Y_HOME
+	* add plugin attribute to the Metric, Astrobj and Spectrum entities
+	* reform build system to use the autotools
+	* add --plugins command-line option
+	* add virtual destrcuctor to Spectrum::Generic
+	* fix buffer overflow in lib/Factory.C
+	* update paper ref in bin/gyoto.C
+
+0.0.3 2012/05/01 BUG
+	* fix a tiny bug in PatternDisk (initialization of phimin/max)
+	* rearrange flags in Makefiles/local_settings
+	  for easier downstream packaging
+
+0.0.2 2012/04/19 PKG
+	* install include files in include/Gyoto
+	* add this ChangeLog
+
+0.0.1 2012/04/16 ABI 0
+	* release

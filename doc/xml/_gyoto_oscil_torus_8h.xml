@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_gyoto_oscil_torus_8h" kind="file" language="C++">
+    <compoundname>GyotoOscilTorus.h</compoundname>
+    <includes refid="_gyoto_astrobj_8h" local="no">GyotoAstrobj.h</includes>
+    <includes refid="_gyoto_standard_astrobj_8h" local="no">GyotoStandardAstrobj.h</includes>
+    <includes refid="_gyoto_kerr_b_l_8h" local="no">GyotoKerrBL.h</includes>
+    <incdepgraph>
+      <node id="6">
+        <label>iomanip</label>
+      </node>
+      <node id="9">
+        <label>float.h</label>
+      </node>
+      <node id="12">
+        <label>GyotoUtils.h</label>
+        <link refid="_gyoto_utils_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>eigen3/Eigen/Dense</label>
+      </node>
+      <node id="1">
+        <label>GyotoOscilTorus.h</label>
+        <link refid="_gyoto_oscil_torus_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="11">
+        <label>GyotoSmartPointer.h</label>
+        <link refid="_gyoto_smart_pointer_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>GyotoObject.h</label>
+        <link refid="_gyoto_object_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>stddef.h</label>
+      </node>
+      <node id="5">
+        <label>fstream</label>
+      </node>
+      <node id="25">
+        <label>GyotoRegister.h</label>
+        <link refid="_gyoto_register_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>GyotoStandardAstrobj.h</label>
+        <link refid="_gyoto_standard_astrobj_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>GyotoSpectrometer.h</label>
+        <link refid="_gyoto_spectrometer_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>GyotoMetric.h</label>
+        <link refid="_gyoto_metric_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>GyotoDefs.h</label>
+        <link refid="_gyoto_defs_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>GyotoWorldline.h</label>
+        <link refid="_gyoto_worldline_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>GyotoKerrBL.h</label>
+        <link refid="_gyoto_kerr_b_l_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>pthread.h</label>
+      </node>
+      <node id="16">
+        <label>typeinfo</label>
+      </node>
+      <node id="22">
+        <label>GyotoFunctors.h</label>
+        <link refid="_gyoto_functors_8h"/>
+      </node>
+      <node id="10">
+        <label>vector</label>
+      </node>
+      <node id="3">
+        <label>GyotoConfig.h</label>
+        <link refid="_gyoto_config_8h"/>
+      </node>
+      <node id="18">
+        <label>sstream</label>
+      </node>
+      <node id="2">
+        <label>GyotoAstrobj.h</label>
+        <link refid="_gyoto_astrobj_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="14">
+        <label>GyotoError.h</label>
+        <link refid="_gyoto_error_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>GyotoHooks.h</label>
+        <link refid="_gyoto_hooks_8h"/>
+      </node>
+      <node id="28">
+        <label>GyotoScreen.h</label>
+        <link refid="_gyoto_screen_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>GyotoConverters.h</label>
+        <link refid="_gyoto_converters_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_oscil_torus" prot="public">Gyoto::Astrobj::OscilTorus</innerclass>
+    <innernamespace refid="namespace_gyoto">Gyoto</innernamespace>
+    <innernamespace refid="namespace_gyoto_1_1_astrobj">Gyoto::Astrobj</innernamespace>
+    <innernamespace refid="namespace_gyoto_1_1_spectrum">Gyoto::Spectrum</innernamespace>
+    <briefdescription>
+<para>Slender torus subject to realistic Blaes 2006 oscillation modes. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The target of ray-traced <ref refid="class_gyoto_1_1_photon" kindref="compound">Gyoto::Photon</ref> </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Copyright<sp/>(c)<sp/>2013,<sp/>2018<sp/>Frederic<sp/>Vincent<sp/>&amp;<sp/>Thibaut<sp/>Paumard</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__OscilTorus_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__OscilTorus_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_astrobj_8h" kindref="compound">GyotoAstrobj.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_standard_astrobj_8h" kindref="compound">GyotoStandardAstrobj.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_kerr_b_l_8h" kindref="compound">GyotoKerrBL.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_gyoto" kindref="compound">Gyoto</ref><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Astrobj<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">OscilTorus;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">FactoryMessenger;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Spectrum<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Generic;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="class_gyoto_1_1_astrobj_1_1_oscil_torus" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_astrobj_1_1_oscil_torus" kindref="compound">Gyoto::Astrobj::OscilTorus</ref></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_standard" kindref="compound">Gyoto::Astrobj::Standard</ref>,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_hook_1_1_listener" kindref="compound">Hook::Listener</ref><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt;<ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>::<ref refid="class_gyoto_1_1_astrobj_1_1_oscil_torus" kindref="compound">Astrobj::OscilTorus</ref>&gt;;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Members<sp/>corresponding<sp/>to<sp/>properties:<sp/><sp/></highlight></codeline>
+<codeline lineno="46" refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a8d3cd235b6ac5f769e92d61ba7c5a537" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a8d3cd235b6ac5f769e92d61ba7c5a537" kindref="member">c_</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>unsigned<sp/>long<sp/>mode_;</highlight></codeline>
+<codeline lineno="48" refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a7a18ff78e175d4b9702a8bc134d7ac4b" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a7a18ff78e175d4b9702a8bc134d7ac4b" kindref="member">polycst_</ref>;<sp/></highlight></codeline>
+<codeline lineno="49" refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1ab6a856d6350157ebf30e49e59aeaceae" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1ab6a856d6350157ebf30e49e59aeaceae" kindref="member">polyindex_</ref>;<sp/></highlight></codeline>
+<codeline lineno="50" refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1ab6554cfac62786979cd77bc677abce94" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1ab6554cfac62786979cd77bc677abce94" kindref="member">central_density_</ref>;<sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>enum<sp/>perturb_t<sp/>{Radial=1,<sp/>Vertical=2,<sp/>X=3,<sp/>Plus=4,<sp/>Breathing=5};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>perturb_t<sp/>perturb_kind_;</highlight></codeline>
+<codeline lineno="53" refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a94e910b9a95793a3154312e019775932" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a94e910b9a95793a3154312e019775932" kindref="member">emitting_area_</ref>;<sp/></highlight></codeline>
+<codeline lineno="54" refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a5f370d509f8403ff81e017163b5334f0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a5f370d509f8403ff81e017163b5334f0" kindref="member">perturb_intens_</ref>;<sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Cached<sp/>values:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer&lt;Gyoto::Metric::KerrBL&gt;</ref><sp/>kerrbl_;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>std::vector&lt;double&gt;<sp/>tt_;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>std::vector&lt;double&gt;<sp/>area_;<sp/></highlight><highlight class="comment">//<sp/>tt_<sp/>and<sp/>area_<sp/>contain<sp/>area<sp/>of<sp/>cross<sp/>section<sp/>at<sp/>time<sp/>tt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a646cd1fa62c1f54e517add15b07539ed" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a646cd1fa62c1f54e517add15b07539ed" kindref="member">nbt_</ref>;<sp/></highlight></codeline>
+<codeline lineno="61" refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a76033bd14ed6bc270e5bf2e7faa69fe5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a76033bd14ed6bc270e5bf2e7faa69fe5" kindref="member">with_cross_</ref>;<sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1af13bbd9c19e2333f814cd03d8ae037ab" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1af13bbd9c19e2333f814cd03d8ae037ab" kindref="member">sigma_</ref>;<sp/></highlight></codeline>
+<codeline lineno="64" refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1aaaea518593dcebaf3e44d807557f17d7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1aaaea518593dcebaf3e44d807557f17d7" kindref="member">alpha_</ref>;<sp/></highlight></codeline>
+<codeline lineno="65" refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a5ccf11473eb3b14b4d1e4907f77ff9e5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a5ccf11473eb3b14b4d1e4907f77ff9e5" kindref="member">w1_</ref>;<sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>w2_;<sp/></highlight></codeline>
+<codeline lineno="67" refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1ae81caced8735d5c1d2b1f4c853db415b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1ae81caced8735d5c1d2b1f4c853db415b" kindref="member">omr2_</ref>;<sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>omth2_;</highlight></codeline>
+<codeline lineno="69" refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1aa1ff92b4c24ef686e26f28b0bc1b57c1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1aa1ff92b4c24ef686e26f28b0bc1b57c1" kindref="member">Omegac_</ref>;<sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>lc_;</highlight></codeline>
+<codeline lineno="71" refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1aba6aeddbf80f6b8b4a80fea4f676bd71" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1aba6aeddbf80f6b8b4a80fea4f676bd71" kindref="member">g_rr_</ref>;<sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>g_thth_;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hold_;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="76" refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a0426500cf59fea67114bdc97f82aebf5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" kindref="member">GYOTO_OBJECT</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_oscil_torus" kindref="compound">OscilTorus</ref>();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_oscil_torus" kindref="compound">OscilTorus</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_oscil_torus" kindref="compound">OscilTorus</ref><sp/>&amp;o);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_gyoto_1_1_astrobj_1_1_oscil_torus" kindref="compound">OscilTorus</ref>();</highlight></codeline>
+<codeline lineno="80" refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a4fc5ee9d37d19b3170475158ee3d37b4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_oscil_torus" kindref="compound">OscilTorus</ref><sp/>*<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a4fc5ee9d37d19b3170475158ee3d37b4" kindref="member">clone</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>GYOTO_OBJECT_ACCESSORS_UNIT(largeRadius);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>GYOTO_OBJECT_ACCESSORS(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal">,<sp/>mode);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>GYOTO_OBJECT_ACCESSORS(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/>polyCst);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>GYOTO_OBJECT_ACCESSORS(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/>polyIndex);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>GYOTO_OBJECT_ACCESSORS(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/>centralDensity);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/>GYOTO_OBJECT_ACCESSORS_STRING(perturbKind);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>GYOTO_OBJECT_ACCESSORS(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/>perturbIntens);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>GYOTO_OBJECT_ACCESSORS_STRING(emittingArea);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_generic_1ac66726b8c1271499fddb753e30cf9dee" kindref="member">Generic::metric</ref>;</highlight></codeline>
+<codeline lineno="91" refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a55a5cb4c747ab70fffcacc25a77dce6d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a55a5cb4c747ab70fffcacc25a77dce6d" kindref="member">metric</ref>(<ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer&lt;Gyoto::Metric::Generic&gt;</ref>);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a8ac0350dc8d7afb94e97fb72eb19cd82" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a8ac0350dc8d7afb94e97fb72eb19cd82" kindref="member">operator()</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>coord[4])<sp/>;</highlight></codeline>
+<codeline lineno="94" refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a2ee44370e9de5922cfd5704e30e2b499" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a2ee44370e9de5922cfd5704e30e2b499" kindref="member">getVelocity</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>pos[4],<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>vel[4])<sp/>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>emission(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>nuem,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,state_t<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>GYOTO_USE_XERCES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a0e4df99b42b3d3722d6ea39972d1421d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a0e4df99b42b3d3722d6ea39972d1421d" kindref="member">setParameters</ref>(<ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">Gyoto::FactoryMessenger</ref><sp/>*fmp)<sp/>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>updateCachedValues();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>computeXbYb(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<sp/>pos,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>xb,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>yb)<sp/>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Hook::Listener<sp/>API<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="113" refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a70bf196b683c127441d8f22f5f1d506f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a70bf196b683c127441d8f22f5f1d506f" kindref="member">tell</ref>(<ref refid="class_gyoto_1_1_hook_1_1_teller" kindref="compound">Gyoto::Hook::Teller</ref><sp/>*msg);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/junichi/Gyoto/include/GyotoOscilTorus.h"/>
+  </compounddef>
+</doxygen>

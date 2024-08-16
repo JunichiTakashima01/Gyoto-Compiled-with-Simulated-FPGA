@@ -1,0 +1,626 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_gyoto_1_1_smart_pointee" kind="class" language="C++" prot="public">
+    <compoundname>Gyoto::SmartPointee</compoundname>
+    <derivedcompoundref refid="class_gyoto_1_1_astrobj_1_1_generic" prot="public" virt="non-virtual">Gyoto::Astrobj::Generic</derivedcompoundref>
+    <derivedcompoundref refid="class_gyoto_1_1_astrobj_1_1_properties" prot="public" virt="non-virtual">Gyoto::Astrobj::Properties</derivedcompoundref>
+    <derivedcompoundref refid="class_gyoto_1_1_metric_1_1_generic" prot="public" virt="non-virtual">Gyoto::Metric::Generic</derivedcompoundref>
+    <derivedcompoundref refid="class_gyoto_1_1_photon" prot="public" virt="non-virtual">Gyoto::Photon</derivedcompoundref>
+    <derivedcompoundref refid="class_gyoto_1_1_scenery" prot="public" virt="non-virtual">Gyoto::Scenery</derivedcompoundref>
+    <derivedcompoundref refid="class_gyoto_1_1_screen" prot="public" virt="non-virtual">Gyoto::Screen</derivedcompoundref>
+    <derivedcompoundref refid="class_gyoto_1_1_spectrometer_1_1_generic" prot="public" virt="non-virtual">Gyoto::Spectrometer::Generic</derivedcompoundref>
+    <derivedcompoundref refid="class_gyoto_1_1_spectrum_1_1_generic" prot="public" virt="non-virtual">Gyoto::Spectrum::Generic</derivedcompoundref>
+    <derivedcompoundref refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic" prot="public" virt="non-virtual">Gyoto::Worldline::IntegState::Generic</derivedcompoundref>
+    <includes refid="_gyoto_smart_pointer_8h" local="no">GyotoSmartPointer.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" prot="public" static="no">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_smart_pointee" kindref="compound">Gyoto::SmartPointee</ref> &gt;</type>
+        <definition>typedef Gyoto::SmartPointer&lt;Gyoto::SmartPointee&gt; Gyoto::SmartPointee::Subcontractor_t(Gyoto::FactoryMessenger *, std::vector&lt; std::string &gt; const &amp;)</definition>
+        <argsstring>(Gyoto::FactoryMessenger *, std::vector&lt; std::string &gt; const &amp;)</argsstring>
+        <name>Subcontractor_t</name>
+        <briefdescription>
+<para>A subcontractor builds an object upon order from the <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Various classes need to provide a subcontractor to be able to instantiate themselves upon order from the <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref>. A subcontractor is a function (often a static member function) which accepts a pointer to a <ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref> as unique parameter, communicates with the <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref> using this messenger to read an XML description of the object to build, and returns this objet. <ref refid="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" kindref="member">SmartPointee::Subcontractor_t</ref>* is just generic enough a typedef to cast to and from other subcontractor types: <ref refid="namespace_gyoto_1_1_astrobj_1aa53c7ada58c8c8f3799c3485b7d8f3bb" kindref="member">Astrobj::Subcontractor_t</ref>, <ref refid="namespace_gyoto_1_1_metric_1ad6b33a642cc94ad67855184d2adb95df" kindref="member">Metric::Subcontractor_t</ref>, <ref refid="namespace_gyoto_1_1_spectrum_1a163055eef14aee22dd8fa5188812d889" kindref="member">Spectrum::Subcontractor_t</ref>. A subcontractor needs to be registered using the relevant <ref refid="namespace_gyoto_1_1_astrobj_1abb6caf3023a51cb77b5f6793ac03b188" kindref="member">Register()</ref> function: <ref refid="namespace_gyoto_1_1_astrobj_1abb6caf3023a51cb77b5f6793ac03b188" kindref="member">Astrobj::Register()</ref>, <ref refid="namespace_gyoto_1_1_metric_1a602cba49b001e7470f3d439d1ab3e8f7" kindref="member">Metric::Register()</ref>, <ref refid="namespace_gyoto_1_1_spectrum_1a517874749d838d7121880e7d9d14c626" kindref="member">Spectrum::Register()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="114" column="5" bodyfile="/home/junichi/Gyoto/include/GyotoSmartPointer.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_smart_pointee_1aaaf212a70fb1880b70e4d357e843cc85" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gyoto::SmartPointee::refCount</definition>
+        <argsstring></argsstring>
+        <name>refCount</name>
+        <briefdescription>
+<para>Reference counter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="83" column="7" bodyfile="/home/junichi/Gyoto/include/GyotoSmartPointer.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_smart_pointee_1abf1c1e431cdd4f08f13de581cccb6770" prot="private" static="no" mutable="no">
+        <type>pthread_mutex_t</type>
+        <definition>pthread_mutex_t Gyoto::SmartPointee::mutex_</definition>
+        <argsstring></argsstring>
+        <name>mutex_</name>
+        <briefdescription>
+<para>A mutex. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>When compiled with libpthread </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="89" column="19" bodyfile="/home/junichi/Gyoto/include/GyotoSmartPointer.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gyoto_1_1_smart_pointee_1a7d212bcd7d3ac4147e18683c47ca910d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::SmartPointee::SmartPointee</definition>
+        <argsstring>()</argsstring>
+        <name>SmartPointee</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="93" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_smart_pointee_1a4301d456d1d36ed7912d073b742c74e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Gyoto::SmartPointee::~SmartPointee</definition>
+        <argsstring>()</argsstring>
+        <name>~SmartPointee</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="94" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_smart_pointee_1adc075b08ca5d3c0635bc97f843835f8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::SmartPointee::SmartPointee</definition>
+        <argsstring>(const SmartPointee &amp;)</argsstring>
+        <name>SmartPointee</name>
+        <param>
+          <type>const <ref refid="class_gyoto_1_1_smart_pointee" kindref="compound">SmartPointee</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="95" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_smart_pointee_1a9ec09c51fd18dde7c13ef3b03fac1fad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::SmartPointee::incRefCount</definition>
+        <argsstring>()</argsstring>
+        <name>incRefCount</name>
+        <briefdescription>
+<para>Increment the reference counter. Warning: Don&apos;t mess with the counter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="96" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_smart_pointee_1a22a67609fb4690ee8ec0e95e4060e387" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gyoto::SmartPointee::decRefCount</definition>
+        <argsstring>()</argsstring>
+        <name>decRefCount</name>
+        <briefdescription>
+<para>Decrement the reference counter and return current value. Warning: Don&apos;t mess with the counter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="97" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_smart_pointee_1a9a9cb35cd161bf19ce652f76e0a5bec0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gyoto::SmartPointee::getRefCount</definition>
+        <argsstring>()</argsstring>
+        <name>getRefCount</name>
+        <briefdescription>
+<para>Get the current number of references. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="98" column="7"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Can be pointed to by a <ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A class can be pointed to by a <ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref> when it inherits from class <ref refid="class_gyoto_1_1_smart_pointee" kindref="compound">SmartPointee</ref>.</para>
+<para>The <ref refid="class_gyoto_1_1_smart_pointee" kindref="compound">SmartPointee</ref> methods need to be public to be accessed by all the <ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref> &lt; T &gt; classes. However, it is a bad idea to manipulate the counter directly. To protect these methods inside your derive object, you can do as in the following example:</para>
+<para><programlisting><codeline><highlight class="normal">class<sp/>Gyoto::Metric<sp/>:<sp/>protected<sp/>Gyoto::SmartPointee</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>friend<sp/>class<sp/>Gyoto::SmartPointer&lt;Gyoto::Metric::Generic&gt;;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="28">
+        <label>Gyoto::Astrobj::ThinDisk</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_thin_disk"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>Gyoto::Spectrum::Generic</label>
+        <link refid="class_gyoto_1_1_spectrum_1_1_generic"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>Gyoto::Astrobj::ThinDiskPL</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_thin_disk_p_l"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>Gyoto::Astrobj::EquatorialHotSpot</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_equatorial_hot_spot"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Gyoto::Astrobj::DirectionalDisk</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_directional_disk"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Gyoto::Astrobj::NeutronStar</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_neutron_star"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Gyoto::Astrobj::PolishDoughnut</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_polish_doughnut"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>Gyoto::Astrobj::ThinDiskProfile</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_thin_disk_profile"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>Gyoto::Spectrometer::Complex</label>
+        <link refid="class_gyoto_1_1_spectrometer_1_1_complex"/>
+        <childnode refid="62" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>Gyoto::Photon::Refined</label>
+        <link refid="class_gyoto_1_1_photon_1_1_refined"/>
+        <childnode refid="58" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Gyoto::Python::Object&lt; Gyoto::Astrobj::Standard &gt;</label>
+        <link refid="class_gyoto_1_1_python_1_1_object"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>Gyoto::Photon</label>
+        <link refid="class_gyoto_1_1_photon"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>Gyoto::Python::Object&lt; Gyoto::Metric::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_python_1_1_object"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>Gyoto::Python::Object&lt; Gyoto::Astrobj::ThinDisk &gt;</label>
+        <link refid="class_gyoto_1_1_python_1_1_object"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Gyoto::Astrobj::UniformSphere</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>Gyoto::Scenery</label>
+        <link refid="class_gyoto_1_1_scenery"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Gyoto::Astrobj::ThickDisk</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_thick_disk"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>Gyoto::Spectrum::BlackBody</label>
+        <link refid="class_gyoto_1_1_spectrum_1_1_black_body"/>
+        <childnode refid="65" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>Gyoto::Metric::Minkowski</label>
+        <link refid="class_gyoto_1_1_metric_1_1_minkowski"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Gyoto::Astrobj::DynamicalDiskBolometric</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_dynamical_disk_bolometric"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Gyoto::Astrobj::NeutronStarAnalyticEmission</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_neutron_star_analytic_emission"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Gyoto::Astrobj::DeformedTorus</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_deformed_torus"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>Gyoto::Astrobj::Properties</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_properties"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>Gyoto::Astrobj::Plasmoid</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_plasmoid"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Gyoto::Astrobj::Standard</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_standard"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>Gyoto::Metric::Shift</label>
+        <link refid="class_gyoto_1_1_metric_1_1_shift"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>Gyoto::Spectrum::Python</label>
+        <link refid="class_gyoto_1_1_spectrum_1_1_python"/>
+        <childnode refid="66" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>Gyoto::Metric::KerrBL</label>
+        <link refid="class_gyoto_1_1_metric_1_1_kerr_b_l"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>Gyoto::Worldline::IntegState::Legacy</label>
+        <link refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy"/>
+        <childnode refid="74" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Gyoto::Astrobj::Complex</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_complex"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>Gyoto::Python::Object&lt; Gyoto::Spectrum::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_python_1_1_object"/>
+        <childnode refid="65" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gyoto::Astrobj::Generic</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_generic"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>Gyoto::Metric::RotStar3_1</label>
+        <link refid="class_gyoto_1_1_metric_1_1_rot_star3__1"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>Gyoto::Astrobj::Python::ThinDisk</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>Gyoto::Worldline::IntegState::Generic</label>
+        <link refid="class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>Gyoto::Spectrum::KappaDistributionSynchrotron</label>
+        <link refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron"/>
+        <childnode refid="65" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>Gyoto::Metric::SchwarzschildHarmonic</label>
+        <link refid="class_gyoto_1_1_metric_1_1_schwarzschild_harmonic"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>Gyoto::Spectrum::PowerLaw</label>
+        <link refid="class_gyoto_1_1_spectrum_1_1_power_law"/>
+        <childnode refid="65" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Gyoto::Astrobj::NeutronStarModelAtmosphere</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_neutron_star_model_atmosphere"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>Gyoto::Astrobj::ThinDiskGridIntensity</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_thin_disk_grid_intensity"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>Gyoto::Metric::Complex</label>
+        <link refid="class_gyoto_1_1_metric_1_1_complex"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Gyoto::Astrobj::FixedStar</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_fixed_star"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>Gyoto::Astrobj::Torus</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_torus"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gyoto::SmartPointee</label>
+        <link refid="class_gyoto_1_1_smart_pointee"/>
+      </node>
+      <node id="48">
+        <label>Gyoto::Metric::Hayward</label>
+        <link refid="class_gyoto_1_1_metric_1_1_hayward"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>Gyoto::Metric::NumericalMetricLorene</label>
+        <link refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>Gyoto::Metric::ChernSimons</label>
+        <link refid="class_gyoto_1_1_metric_1_1_chern_simons"/>
+        <childnode refid="49" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>Gyoto::Astrobj::DynamicalDisk</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_dynamical_disk"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>Gyoto::Astrobj::Blob</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_blob"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Gyoto::Astrobj::FlaredDiskSynchrotron</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_flared_disk_synchrotron"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>Gyoto::Spectrum::ThermalBremsstrahlung</label>
+        <link refid="class_gyoto_1_1_spectrum_1_1_thermal_bremsstrahlung"/>
+        <childnode refid="65" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>Gyoto::Metric::KerrKS</label>
+        <link refid="class_gyoto_1_1_metric_1_1_kerr_k_s"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>Gyoto::Astrobj::PageThorneDisk</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_page_thorne_disk"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>Gyoto::Astrobj::InflateStar</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_inflate_star"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Gyoto::Astrobj::Disk3D</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_disk3_d"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>Gyoto::Astrobj::StarTrace</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_star_trace"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>Gyoto::Astrobj::XillverReflection</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_xillver_reflection"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>Gyoto::Spectrometer::Generic</label>
+        <link refid="class_gyoto_1_1_spectrometer_1_1_generic"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Gyoto::Astrobj::DynamicalDisk3D</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_dynamical_disk3_d"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>Gyoto::Metric::Python</label>
+        <link refid="class_gyoto_1_1_metric_1_1_python"/>
+        <childnode refid="45" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>Gyoto::Astrobj::ThinDiskIronLine</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_thin_disk_iron_line"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Gyoto::Astrobj::OscilTorus</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_oscil_torus"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>Gyoto::Astrobj::PatternDiskBB</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_pattern_disk_b_b"/>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Gyoto::Astrobj::Jet</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_jet"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>Gyoto::Metric::RezzollaZhidenko</label>
+        <link refid="class_gyoto_1_1_metric_1_1_rezzolla_zhidenko"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>Gyoto::Astrobj::FreeStar</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_free_star"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>Gyoto::Metric::Generic</label>
+        <link refid="class_gyoto_1_1_metric_1_1_generic"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>Gyoto::Screen</label>
+        <link refid="class_gyoto_1_1_screen"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Gyoto::Astrobj::Star</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_star"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>Gyoto::Spectrometer::Uniform</label>
+        <link refid="class_gyoto_1_1_spectrometer_1_1_uniform"/>
+        <childnode refid="62" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>Gyoto::Astrobj::PatternDisk</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_pattern_disk"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>Gyoto::Astrobj::SphericalAccretion</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>Gyoto::Spectrum::ThermalSynchrotron</label>
+        <link refid="class_gyoto_1_1_spectrum_1_1_thermal_synchrotron"/>
+        <childnode refid="65" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>Gyoto::Spectrum::PowerLawSynchrotron</label>
+        <link refid="class_gyoto_1_1_spectrum_1_1_power_law_synchrotron"/>
+        <childnode refid="65" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Gyoto::Astrobj::Python::Standard</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="80" column="1" bodyfile="/home/junichi/Gyoto/include/GyotoSmartPointer.h" bodystart="81" bodyend="117"/>
+    <listofallmembers>
+      <member refid="class_gyoto_1_1_smart_pointee_1a22a67609fb4690ee8ec0e95e4060e387" prot="public" virt="non-virtual"><scope>Gyoto::SmartPointee</scope><name>decRefCount</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1a9a9cb35cd161bf19ce652f76e0a5bec0" prot="public" virt="non-virtual"><scope>Gyoto::SmartPointee</scope><name>getRefCount</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1a9ec09c51fd18dde7c13ef3b03fac1fad" prot="public" virt="non-virtual"><scope>Gyoto::SmartPointee</scope><name>incRefCount</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1abf1c1e431cdd4f08f13de581cccb6770" prot="private" virt="non-virtual"><scope>Gyoto::SmartPointee</scope><name>mutex_</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1aaaf212a70fb1880b70e4d357e843cc85" prot="private" virt="non-virtual"><scope>Gyoto::SmartPointee</scope><name>refCount</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1a7d212bcd7d3ac4147e18683c47ca910d" prot="public" virt="non-virtual"><scope>Gyoto::SmartPointee</scope><name>SmartPointee</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1adc075b08ca5d3c0635bc97f843835f8a" prot="public" virt="non-virtual"><scope>Gyoto::SmartPointee</scope><name>SmartPointee</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" prot="public" virt="non-virtual"><scope>Gyoto::SmartPointee</scope><name>Subcontractor_t</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1a4301d456d1d36ed7912d073b742c74e1" prot="public" virt="virtual"><scope>Gyoto::SmartPointee</scope><name>~SmartPointee</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

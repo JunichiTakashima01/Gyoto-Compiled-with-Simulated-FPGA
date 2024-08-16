@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_gyoto_1_1_error" kind="class" language="C++" prot="public">
+    <compoundname>Gyoto::Error</compoundname>
+    <includes refid="_gyoto_error_8h" local="no">GyotoError.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_gyoto_1_1_error_1a1e4fa0ed2918fbb0ba1a7ed48c686e6d" prot="public" static="no">
+        <type>void</type>
+        <definition>typedef void Gyoto::Error::Handler_t(const Error)</definition>
+        <argsstring>(const Error)</argsstring>
+        <name>Handler_t</name>
+        <briefdescription>
+<para><ref refid="class_gyoto_1_1_error" kindref="compound">Error</ref> handler type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Instead of catching <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> errors directly (for instance if gyoto itself is dlopened), you can set a Handler_t error handler using <ref refid="class_gyoto_1_1_error_1aa383fc8d096d3dccbb10d02ab3f561ae" kindref="member">setHandler()</ref>.</para>
+<para>A very simple handler could be: <programlisting><codeline><highlight class="normal">void<sp/>applicationErrorHandler(const<sp/>Gyoto::Error<sp/>e)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>e.Report();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>exit<sp/>(<sp/>e.getErrCode()<sp/>);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoError.h" line="159" column="16" bodyfile="/home/junichi/Gyoto/include/GyotoError.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_error_1a44d85bd5ae47709b983808c38f006af3" prot="private" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string Gyoto::Error::message</definition>
+        <argsstring></argsstring>
+        <name>message</name>
+        <briefdescription>
+<para><ref refid="class_gyoto_1_1_error" kindref="compound">Error</ref> message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoError.h" line="104" column="21" bodyfile="/home/junichi/Gyoto/include/GyotoError.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_error_1acc576bb84e7acc1d83e049fb03a4097e" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Gyoto::Error::errcode</definition>
+        <argsstring></argsstring>
+        <name>errcode</name>
+        <briefdescription>
+<para><ref refid="class_gyoto_1_1_error" kindref="compound">Error</ref> code. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Default value is EXIT_FAILURE from cstdlib. Currently not used in practice. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoError.h" line="111" column="13" bodyfile="/home/junichi/Gyoto/include/GyotoError.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gyoto_1_1_error_1a461161351f6fb44d959b1f3dc90fd963" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Error::Error</definition>
+        <argsstring>(const std::string m)</argsstring>
+        <name>Error</name>
+        <param>
+          <type>const std::string</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with an error message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoError.h" line="116" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_error_1a53099c8a27179caf3de4ed1d48ee3d74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Error::Error</definition>
+        <argsstring>(const Gyoto::Error &amp;o)</argsstring>
+        <name>Error</name>
+        <param>
+          <type>const <ref refid="class_gyoto_1_1_error" kindref="compound">Gyoto::Error</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoError.h" line="119" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_error_1a3f2985711ebc1b936586eceb532ebc44" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Error::Report</definition>
+        <argsstring>() const</argsstring>
+        <name>Report</name>
+        <briefdescription>
+<para>Print-out error message on standard error. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoError.h" line="122" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_error_1a4ae3e8dd85b7f47ad3a1c73a7e3d3b7f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gyoto::Error::getErrcode</definition>
+        <argsstring>() const</argsstring>
+        <name>getErrcode</name>
+        <briefdescription>
+<para>Retrieve error code. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See also operator const char * () const and <ref refid="class_gyoto_1_1_error_1aef1a24af90ee223d135cb848a54e506f" kindref="member">get_message()</ref>. <simplesect kind="return"><para><ref refid="class_gyoto_1_1_error" kindref="compound">Error</ref> code </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoError.h" line="129" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_error_1a7c73399ca56f918b99235ff1d369b6ee" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Error::operator const char *</definition>
+        <argsstring>() const</argsstring>
+        <name>operator const char *</name>
+        <briefdescription>
+<para>Cast to const char *. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve error message as a C string. See also <ref refid="class_gyoto_1_1_error_1aef1a24af90ee223d135cb848a54e506f" kindref="member">get_message()</ref> and gerErrcode(). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoError.h" line="136" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_error_1aef1a24af90ee223d135cb848a54e506f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Gyoto::Error::get_message</definition>
+        <argsstring>() const</argsstring>
+        <name>get_message</name>
+        <briefdescription>
+<para>Retrieve error message for custom handling of the exception. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See also operator const char * () const and getErrCode(). <simplesect kind="return"><para>char* message : pointer to the error message </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoError.h" line="143" column="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_gyoto_1_1_error_1aa383fc8d096d3dccbb10d02ab3f561ae" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Gyoto::Error::setHandler</definition>
+        <argsstring>(Gyoto::Error::Handler_t *phandler)</argsstring>
+        <name>setHandler</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_error_1a1e4fa0ed2918fbb0ba1a7ed48c686e6d" kindref="member">Gyoto::Error::Handler_t</ref> *</type>
+          <declname>phandler</declname>
+        </param>
+        <briefdescription>
+<para>Set application error handler. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Instead of catching <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> errors directly (for instance if gyoto itself is dlopened), you can set an <ref refid="class_gyoto_1_1_error_1a1e4fa0ed2918fbb0ba1a7ed48c686e6d" kindref="member">Error::Handler_t</ref> error handler using <ref refid="class_gyoto_1_1_error_1aa383fc8d096d3dccbb10d02ab3f561ae" kindref="member">setHandler()</ref>.</para>
+<para><programlisting><codeline><highlight class="normal">void<sp/>applicationErrorHandler(const<sp/>Gyoto::Error<sp/>e)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>e.Report();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>exit<sp/>(<sp/>e.getErrCode()<sp/>);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">int<sp/>main()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Gyoto::Error::setHandler(&amp;applicationErrorHandler);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>phandler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function pointer to the handler. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoError.h" line="178" column="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class for thowing exceptions. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> dlopens its plug-ins. The throw/catch C++ mechanism cannot pass the dlopen boundary. The <ref refid="class_gyoto_1_1_error" kindref="compound">Gyoto::Error</ref> mechanism alleviates this C++ language limitation.</para>
+<para>Every <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> method (either in the main <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> library or in a <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> plug-in) should check for possible error conditions and throw adequate <ref refid="class_gyoto_1_1_error" kindref="compound">Gyoto::Error</ref> exceptions through the GYOTO_ERROR macro (which calls the <ref refid="namespace_gyoto_1aa869193fe294f3badb84af224a83f3d8" kindref="member">Gyoto::throwError()</ref> function). For instance: <programlisting><codeline><highlight class="normal">if<sp/>(error_condition)<sp/>GYOTO_ERROR(&quot;Useful<sp/>error<sp/>message&quot;);</highlight></codeline>
+</programlisting></para>
+<para>If the main code has set Gyoto::Error::handler_t error handler using <ref refid="class_gyoto_1_1_error_1aa383fc8d096d3dccbb10d02ab3f561ae" kindref="member">Gyoto::Error::setHandler()</ref>, these errors will then be passed to it. Else, the <ref refid="class_gyoto_1_1_error" kindref="compound">Error</ref> is C++-thrown at the main <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> library level, above the dlopen boundary.</para>
+<para>The main code can then catch these exceptions and act appropriately, for instance: <programlisting><codeline><highlight class="normal">try<sp/>{<sp/>gyoto_code<sp/>;<sp/>}</highlight></codeline>
+<codeline><highlight class="normal">catch<sp/>(Gyoto::Error<sp/>err)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>err.Report();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>abort();</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="/home/junichi/Gyoto/include/GyotoError.h" line="100" column="1" bodyfile="/home/junichi/Gyoto/include/GyotoError.h" bodystart="101" bodyend="180"/>
+    <listofallmembers>
+      <member refid="class_gyoto_1_1_error_1acc576bb84e7acc1d83e049fb03a4097e" prot="private" virt="non-virtual"><scope>Gyoto::Error</scope><name>errcode</name></member>
+      <member refid="class_gyoto_1_1_error_1a461161351f6fb44d959b1f3dc90fd963" prot="public" virt="non-virtual"><scope>Gyoto::Error</scope><name>Error</name></member>
+      <member refid="class_gyoto_1_1_error_1a53099c8a27179caf3de4ed1d48ee3d74" prot="public" virt="non-virtual"><scope>Gyoto::Error</scope><name>Error</name></member>
+      <member refid="class_gyoto_1_1_error_1aef1a24af90ee223d135cb848a54e506f" prot="public" virt="non-virtual"><scope>Gyoto::Error</scope><name>get_message</name></member>
+      <member refid="class_gyoto_1_1_error_1a4ae3e8dd85b7f47ad3a1c73a7e3d3b7f" prot="public" virt="non-virtual"><scope>Gyoto::Error</scope><name>getErrcode</name></member>
+      <member refid="class_gyoto_1_1_error_1a1e4fa0ed2918fbb0ba1a7ed48c686e6d" prot="public" virt="non-virtual"><scope>Gyoto::Error</scope><name>Handler_t</name></member>
+      <member refid="class_gyoto_1_1_error_1a44d85bd5ae47709b983808c38f006af3" prot="private" virt="non-virtual"><scope>Gyoto::Error</scope><name>message</name></member>
+      <member refid="class_gyoto_1_1_error_1a7c73399ca56f918b99235ff1d369b6ee" prot="public" virt="non-virtual"><scope>Gyoto::Error</scope><name>operator const char *</name></member>
+      <member refid="class_gyoto_1_1_error_1a3f2985711ebc1b936586eceb532ebc44" prot="public" virt="non-virtual"><scope>Gyoto::Error</scope><name>Report</name></member>
+      <member refid="class_gyoto_1_1_error_1aa383fc8d096d3dccbb10d02ab3f561ae" prot="public" virt="non-virtual"><scope>Gyoto::Error</scope><name>setHandler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

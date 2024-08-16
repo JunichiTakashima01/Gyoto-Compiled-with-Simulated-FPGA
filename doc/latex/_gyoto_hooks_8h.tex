@@ -1,0 +1,27 @@
+\hypertarget{_gyoto_hooks_8h}{}\doxysection{Gyoto\+Hooks.\+h File Reference}
+\label{_gyoto_hooks_8h}\index{GyotoHooks.h@{GyotoHooks.h}}
+
+
+Tellers tell Listeners when they mutate.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_listener}{Gyoto\+::\+Hook\+::\+Listener}}
+\begin{DoxyCompactList}\small\item\em I might listen to a \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller}{Teller}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller}{Gyoto\+::\+Hook\+::\+Teller}}
+\begin{DoxyCompactList}\small\item\em Listen to me and I\textquotesingle{}ll warn you when I change. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_hook}{Gyoto\+::\+Hook}}
+\begin{DoxyCompactList}\small\item\em Listeners attach to Tellers. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_gyoto}{Gyoto}}
+\begin{DoxyCompactList}\small\item\em Namespace for the \mbox{\hyperlink{namespace_gyoto}{Gyoto}} library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Tellers tell Listeners when they mutate. 
+
+A Listener can hook() to a Teller. The Teller will tell it when it mutates using Listener\+::tell(), usually through the highter lever Teller\+::tell\+Listeners(). The Listener can later unhook(). The Listener must therefore implement Listener\+::tell() to react when it is told. 

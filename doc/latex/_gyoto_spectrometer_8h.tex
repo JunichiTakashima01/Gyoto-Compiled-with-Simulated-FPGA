@@ -1,0 +1,57 @@
+\hypertarget{_gyoto_spectrometer_8h}{}\doxysection{Gyoto\+Spectrometer.\+h File Reference}
+\label{_gyoto_spectrometer_8h}\index{GyotoSpectrometer.h@{GyotoSpectrometer.h}}
+
+
+Spectroscopic capabilities of a Screen.  
+
+
+{\ttfamily \#include $<$Gyoto\+Defs.\+h$>$}\newline
+{\ttfamily \#include $<$Gyoto\+Smart\+Pointer.\+h$>$}\newline
+{\ttfamily \#include $<$Gyoto\+Object.\+h$>$}\newline
+{\ttfamily \#include $<$Gyoto\+Register.\+h$>$}\newline
+{\ttfamily \#include $<$Gyoto\+Hooks.\+h$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic}{Gyoto\+::\+Spectrometer\+::\+Generic}}
+\begin{DoxyCompactList}\small\item\em Base class for spectrometers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer}{Gyoto\+::\+Spectrometer}}
+\begin{DoxyCompactList}\small\item\em Access to spectrometers. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_gyoto}{Gyoto}}
+\begin{DoxyCompactList}\small\item\em Namespace for the \mbox{\hyperlink{namespace_gyoto}{Gyoto}} library. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_register}{Gyoto\+::\+Register}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_gyoto}{Gyoto}} registers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef char const  $\ast$ \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a3d95097c93312ff6df68f56b4fe829ee}{Gyoto\+::\+Spectrometer\+::kind\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Type for \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer}{Spectrometer}} kind. \end{DoxyCompactList}\item 
+typedef Smart\+Pointer$<$ \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic}{Gyoto\+::\+Spectrometer\+::\+Generic}} $>$ \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a63d8c94e41e4be8a817c095b457de8a5}{Gyoto\+::\+Spectrometer\+::\+Subcontractor\+\_\+t}}(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$, std\+::vector$<$ std\+::string $>$ const \&)
+\begin{DoxyCompactList}\small\item\em A function to build instances of a specific \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic}{Astrobj\+::\+Generic}} sub-\/class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a63d8c94e41e4be8a817c095b457de8a5}{Gyoto\+::\+Spectrometer\+::\+Subcontractor\+\_\+t}} $\ast$ \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a28bbcf16ab5da826a6ad4310141e3e51}{Gyoto\+::\+Spectrometer\+::get\+Subcontractor}} (std\+::string name, std\+::vector$<$ std\+::string $>$ \&plugins, int errmode=0)
+\begin{DoxyCompactList}\small\item\em Query the \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer}{Spectrometer}} register. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\Smart\+Pointer$<$ Spectrometer\+::\+Generic $>$ \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a4688afd585727b4ec02a97f7ec27c086}{Gyoto\+::\+Spectrometer\+::\+Subcontractor}} (Factory\+Messenger $\ast$fmp, std\+::vector$<$ std\+::string $>$ const \&plugins)
+\begin{DoxyCompactList}\small\item\em A template for Subcontractor\+\_\+t functions. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_1_1_spectrometer_abb2d42f08c4acd63763f0714ddca0bd7}\label{namespace_gyoto_1_1_spectrometer_abb2d42f08c4acd63763f0714ddca0bd7}} 
+void \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_abb2d42f08c4acd63763f0714ddca0bd7}{Gyoto\+::\+Spectrometer\+::init\+Register}} ()
+\begin{DoxyCompactList}\small\item\em Initialize the \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer}{Spectrometer}} register This must be called once. It initializes Register\+\_\+ and registers the standard kinds (\mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_uniform}{Uniform}} and \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_complex}{Complex}}). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a86b5778d46f54fc06ff22bc060987c6b}{Gyoto\+::\+Spectrometer\+::\+Register}} (std\+::string name, \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a63d8c94e41e4be8a817c095b457de8a5}{Gyoto\+::\+Spectrometer\+::\+Subcontractor\+\_\+t}} $\ast$scp)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_gyoto_1_1_register}{Register}} a new \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer}{Spectrometer}} kind. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_gyoto_1_1_register_1_1_entry}{Gyoto\+::\+Register\+::\+Entry}} $\ast$ \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a04be050062c41417229fd78d9a7daed6}{Gyoto\+::\+Spectrometer\+::\+Register\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer}{Spectrometer}} register. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Spectroscopic capabilities of a Screen. 
+
+Describes the spectroscopic capabilites of a Screen. 

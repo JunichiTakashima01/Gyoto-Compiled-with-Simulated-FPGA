@@ -1,0 +1,795 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_gyoto_register_8h" kind="file" language="C++">
+    <compoundname>GyotoRegister.h</compoundname>
+    <includes local="no">string</includes>
+    <includes refid="_gyoto_smart_pointer_8h" local="yes">GyotoSmartPointer.h</includes>
+    <includedby refid="_gyoto_blob_8h" local="no">GyotoBlob.h</includedby>
+    <includedby refid="_gyoto_fits_r_w_8h" local="no">GyotoFitsRW.h</includedby>
+    <includedby refid="_gyoto_free_star_8h" local="no">GyotoFreeStar.h</includedby>
+    <includedby refid="_gyoto_grid_data2_d_8h" local="no">GyotoGridData2D.h</includedby>
+    <includedby refid="_gyoto_hayward_8h" local="no">GyotoHayward.h</includedby>
+    <includedby refid="_gyoto_inflate_star_8h" local="no">GyotoInflateStar.h</includedby>
+    <includedby refid="_gyoto_kerr_b_l_8h" local="no">GyotoKerrBL.h</includedby>
+    <includedby refid="_gyoto_kerr_k_s_8h" local="no">GyotoKerrKS.h</includedby>
+    <includedby refid="_gyoto_metric_8h" local="no">GyotoMetric.h</includedby>
+    <includedby refid="_gyoto_numerical_metric_lorene_8h" local="no">GyotoNumericalMetricLorene.h</includedby>
+    <includedby refid="_gyoto_plasmoid_8h" local="no">GyotoPlasmoid.h</includedby>
+    <includedby refid="_gyoto_rot_star3__1_8h" local="no">GyotoRotStar3_1.h</includedby>
+    <includedby refid="_gyoto_spectrometer_8h" local="no">GyotoSpectrometer.h</includedby>
+    <includedby refid="_gyoto_spectrum_8h" local="yes">GyotoSpectrum.h</includedby>
+    <includedby refid="_gyoto_star_8h" local="no">GyotoStar.h</includedby>
+    <includedby refid="_gyoto_thin_disk_8h" local="no">GyotoThinDisk.h</includedby>
+    <includedby refid="_gyoto_uniform_sphere_8h" local="no">GyotoUniformSphere.h</includedby>
+    <incdepgraph>
+      <node id="7">
+        <label>float.h</label>
+      </node>
+      <node id="4">
+        <label>GyotoUtils.h</label>
+        <link refid="_gyoto_utils_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>GyotoSmartPointer.h</label>
+        <link refid="_gyoto_smart_pointer_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>stddef.h</label>
+      </node>
+      <node id="1">
+        <label>GyotoRegister.h</label>
+        <link refid="_gyoto_register_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>GyotoDefs.h</label>
+        <link refid="_gyoto_defs_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>pthread.h</label>
+      </node>
+      <node id="13">
+        <label>typeinfo</label>
+      </node>
+      <node id="8">
+        <label>vector</label>
+      </node>
+      <node id="6">
+        <label>GyotoConfig.h</label>
+        <link refid="_gyoto_config_8h"/>
+      </node>
+      <node id="12">
+        <label>iostream</label>
+      </node>
+      <node id="10">
+        <label>GyotoError.h</label>
+        <link refid="_gyoto_error_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="29">
+        <label>GyotoRotStar3_1.h</label>
+        <link refid="_gyoto_rot_star3__1_8h"/>
+      </node>
+      <node id="46">
+        <label>GyotoThinDiskPL.h</label>
+        <link refid="_gyoto_thin_disk_p_l_8h"/>
+      </node>
+      <node id="49">
+        <label>GyotoUniformSphere.h</label>
+        <link refid="_gyoto_uniform_sphere_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>GyotoPatternDisk.h</label>
+        <link refid="_gyoto_pattern_disk_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>GyotoPatternDiskBB.h</label>
+        <link refid="_gyoto_pattern_disk_b_b_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>GyotoFitsRW.h</label>
+        <link refid="_gyoto_fits_r_w_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>GyotoFlaredDiskSynchrotron.h</label>
+        <link refid="_gyoto_flared_disk_synchrotron_8h"/>
+      </node>
+      <node id="36">
+        <label>GyotoPython.h</label>
+        <link refid="_gyoto_python_8h"/>
+      </node>
+      <node id="51">
+        <label>GyotoComplexSpectrometer.h</label>
+        <link refid="_gyoto_complex_spectrometer_8h"/>
+      </node>
+      <node id="57">
+        <label>GyotoJet.h</label>
+        <link refid="_gyoto_jet_8h"/>
+      </node>
+      <node id="19">
+        <label>GyotoFixedStar.h</label>
+        <link refid="_gyoto_fixed_star_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>GyotoBlob.h</label>
+        <link refid="_gyoto_blob_8h"/>
+      </node>
+      <node id="53">
+        <label>GyotoSpectrum.h</label>
+        <link refid="_gyoto_spectrum_8h"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>GyotoUniformSpectrometer.h</label>
+        <link refid="_gyoto_uniform_spectrometer_8h"/>
+      </node>
+      <node id="56">
+        <label>GyotoKappaDistributionSynchrotronSpectrum.h</label>
+        <link refid="_gyoto_kappa_distribution_synchrotron_spectrum_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>GyotoThermalBremsstrahlungSpectrum.h</label>
+        <link refid="_gyoto_thermal_bremsstrahlung_spectrum_8h"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>GyotoThinDiskProfile.h</label>
+        <link refid="_gyoto_thin_disk_profile_8h"/>
+      </node>
+      <node id="61">
+        <label>GyotoPolishDoughnut.h</label>
+        <link refid="_gyoto_polish_doughnut_8h"/>
+      </node>
+      <node id="39">
+        <label>GyotoDirectionalDisk.h</label>
+        <link refid="_gyoto_directional_disk_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>GyotoPowerLawSynchrotronSpectrum.h</label>
+        <link refid="_gyoto_power_law_synchrotron_spectrum_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>GyotoMinkowski.h</label>
+        <link refid="_gyoto_minkowski_8h"/>
+      </node>
+      <node id="5">
+        <label>GyotoFreeStar.h</label>
+        <link refid="_gyoto_free_star_8h_source"/>
+      </node>
+      <node id="15">
+        <label>GyotoOscilTorus.h</label>
+        <link refid="_gyoto_oscil_torus_8h"/>
+      </node>
+      <node id="28">
+        <label>GyotoRezzollaZhidenko.h</label>
+        <link refid="_gyoto_rezzolla_zhidenko_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>GyotoKerrKS.h</label>
+        <link refid="_gyoto_kerr_k_s_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>GyotoRegister.h</label>
+        <link refid="_gyoto_register_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>GyotoThermalSynchrotronSpectrum.h</label>
+        <link refid="_gyoto_thermal_synchrotron_spectrum_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>GyotoSpectrometer.h</label>
+        <link refid="_gyoto_spectrometer_8h"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>GyotoMetric.h</label>
+        <link refid="_gyoto_metric_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>GyotoStarTrace.h</label>
+        <link refid="_gyoto_star_trace_8h"/>
+      </node>
+      <node id="14">
+        <label>GyotoDeformedTorus.h</label>
+        <link refid="_gyoto_deformed_torus_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>GyotoNeutronStarAnalyticEmission.h</label>
+        <link refid="_gyoto_neutron_star_analytic_emission_8h"/>
+      </node>
+      <node id="32">
+        <label>GyotoWorldline.h</label>
+        <link refid="_gyoto_worldline_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>GyotoKerrBL.h</label>
+        <link refid="_gyoto_kerr_b_l_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>GyotoThinDiskIronLine.h</label>
+        <link refid="_gyoto_thin_disk_iron_line_8h"/>
+      </node>
+      <node id="6">
+        <label>GyotoGridData2D.h</label>
+        <link refid="_gyoto_grid_data2_d_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>GyotoXillverReflection.h</label>
+        <link refid="_gyoto_xillver_reflection_8h"/>
+      </node>
+      <node id="24">
+        <label>GyotoNeutronStarModelAtmosphere.h</label>
+        <link refid="_gyoto_neutron_star_model_atmosphere_8h"/>
+      </node>
+      <node id="38">
+        <label>GyotoThinDisk.h</label>
+        <link refid="_gyoto_thin_disk_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>GyotoDynamicalDisk3D.h</label>
+        <link refid="_gyoto_dynamical_disk3_d_8h"/>
+      </node>
+      <node id="40">
+        <label>GyotoPageThorneDisk.h</label>
+        <link refid="_gyoto_page_thorne_disk_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>GyotoPlasmoid.h</label>
+        <link refid="_gyoto_plasmoid_8h"/>
+      </node>
+      <node id="10">
+        <label>GyotoInflateStar.h</label>
+        <link refid="_gyoto_inflate_star_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>GyotoChernSimons.h</label>
+        <link refid="_gyoto_chern_simons_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>GyotoThinDiskGridIntensity.h</label>
+        <link refid="_gyoto_thin_disk_grid_intensity_8h"/>
+      </node>
+      <node id="26">
+        <label>GyotoFactory.h</label>
+        <link refid="_gyoto_factory_8h"/>
+      </node>
+      <node id="64">
+        <label>GyotoTorus.h</label>
+        <link refid="_gyoto_torus_8h"/>
+      </node>
+      <node id="65">
+        <label>GyotoPowerLawSpectrum.h</label>
+        <link refid="_gyoto_power_law_spectrum_8h"/>
+      </node>
+      <node id="21">
+        <label>GyotoNumericalMetricLorene.h</label>
+        <link refid="_gyoto_numerical_metric_lorene_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>GyotoScenery.h</label>
+        <link refid="_gyoto_scenery_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>GyotoEquatorialHotSpot.h</label>
+        <link refid="_gyoto_equatorial_hot_spot_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>GyotoComplexMetric.h</label>
+        <link refid="_gyoto_complex_metric_8h_source"/>
+      </node>
+      <node id="43">
+        <label>GyotoDynamicalDisk.h</label>
+        <link refid="_gyoto_dynamical_disk_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>GyotoSphericalAccretion.h</label>
+        <link refid="_gyoto_spherical_accretion_8h"/>
+      </node>
+      <node id="31">
+        <label>GyotoScreen.h</label>
+        <link refid="_gyoto_screen_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Gyoto.h</label>
+        <link refid="_gyoto_8h"/>
+      </node>
+      <node id="22">
+        <label>GyotoNeutronStar.h</label>
+        <link refid="_gyoto_neutron_star_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>GyotoSchwarzschildHarmonic.h</label>
+        <link refid="_gyoto_schwarzschild_harmonic_8h"/>
+      </node>
+      <node id="54">
+        <label>GyotoBlackBodySpectrum.h</label>
+        <link refid="_gyoto_black_body_spectrum_8h"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>GyotoStar.h</label>
+        <link refid="_gyoto_star_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>GyotoDynamicalDiskBolometric.h</label>
+        <link refid="_gyoto_dynamical_disk_bolometric_8h"/>
+      </node>
+      <node id="25">
+        <label>GyotoPhoton.h</label>
+        <link refid="_gyoto_photon_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>GyotoShift.h</label>
+        <link refid="_gyoto_shift_8h"/>
+      </node>
+      <node id="59">
+        <label>GyotoThickDisk.h</label>
+        <link refid="_gyoto_thick_disk_8h"/>
+      </node>
+      <node id="9">
+        <label>GyotoHayward.h</label>
+        <link refid="_gyoto_hayward_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_gyoto_1_1_register_1_1_entry" prot="public">Gyoto::Register::Entry</innerclass>
+    <innernamespace refid="namespace_gyoto">Gyoto</innernamespace>
+    <innernamespace refid="namespace_gyoto_1_1_register">Gyoto::Register</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_gyoto_register_8h_1a1bf7328f1bb8eeb5fb99c35782c8b2c4" prot="public" static="no">
+        <name>GYOTO_GETSUBCONTRACTOR</name>
+        <param><defname>space</defname></param>
+        <initializer>  Gyoto::space::Subcontractor_t*					\
+  Gyoto::space::getSubcontractor(std::string name, std::vector&lt;std::string&gt; &amp;plugin, int errmode) { \
+  for (<ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref> i=0; i&lt;plugin.size(); ++i) {				\
+    <ref refid="_gyoto_defs_8h_1a2ddb771d38a2f9e435a6608126362cad" kindref="member">GYOTO_DEBUG_EXPR</ref>(plugin[i]);					\
+    <ref refid="namespace_gyoto_1a2855e9faa09ea310c38d7decf76c814a" kindref="member">Gyoto::requirePlugin</ref>(plugin[i]);					\
+  }									\
+  if (!Gyoto::space::Register_) throwError(&quot;No &quot; GYOTO_STRINGIFY(space) &quot; kind registered!&quot;); \
+  Subcontractor_t* sctr= NULL;						\
+  std::string plg(&quot;&quot;);							\
+  if (!plugin.size()) {							\
+  sctr =								\
+    (Subcontractor_t*)Gyoto::space::Register_				\
+    -&gt; getSubcontractor(name, plg, errmode);				\
+  plugin.push_back(plg);						\
+  }									\
+  for (<ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref> i=plugin.size()-1; i&gt;=0 &amp;&amp; sctr == NULL; --i) {		\
+    sctr=								\
+      (Subcontractor_t*)Gyoto::space::Register_				\
+      -&gt; getSubcontractor(name, plugin[i], 1);				\
+  }									\
+  if (!errmode &amp;&amp; !sctr) throwError (&quot;Kind not found in the specified plug-ins: &quot;+name); \
+  return sctr;								\
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoRegister.h" line="164" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoRegister.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> registers. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="class_gyoto_1_1_register_1_1_entry" kindref="compound">Gyoto::Register::Entry</ref> instances are used to map kind names to <ref refid="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" kindref="member">Gyoto::SmartPointee::Subcontractor_t</ref> functions used to instantiate objects from XML files through the <ref refid="class_gyoto_1_1_factory" kindref="compound">Gyoto::Factory</ref>. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/>Copyright<sp/>2011-2016<sp/>Thibaut<sp/>Paumard</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>Gyoto.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"></highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>Gyoto.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__GyotoRegister_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__GyotoRegister_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_gyoto_smart_pointer_8h" kindref="compound">GyotoSmartPointer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_gyoto" kindref="compound">Gyoto</ref><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_gyoto_1_1_astrobj_1abb6caf3023a51cb77b5f6793ac03b188" kindref="member">Register</ref><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Documented<sp/>below<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Entry;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="namespace_gyoto_1_1_register_1ab550850763355e20c312f60e1698e4c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_gyoto_1_1_register_1ab550850763355e20c312f60e1698e4c6" kindref="member">init</ref>(<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*<sp/>pluglist<sp/>=<sp/>NULL<sp/>);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="namespace_gyoto_1_1_register_1a3406e0df28d0e5ee028ed9b1621e3ed6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_gyoto_1_1_register_1a3406e0df28d0e5ee028ed9b1621e3ed6" kindref="member">list</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="namespace_gyoto_1a56de702e8700e13df208c9fb2d1d7203" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="namespace_gyoto_1a56de702e8700e13df208c9fb2d1d7203" kindref="member">loadPlugin</ref>(<sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>plugname,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nofail<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="namespace_gyoto_1af73e539074f9bb44e80e5f8cb625979c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_gyoto_1af73e539074f9bb44e80e5f8cb625979c" kindref="member">havePlugin</ref>(std::string<sp/>plugname);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="namespace_gyoto_1a2855e9faa09ea310c38d7decf76c814a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_gyoto_1a2855e9faa09ea310c38d7decf76c814a" kindref="member">requirePlugin</ref>(std::string<sp/>plugname,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nofail<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="class_gyoto_1_1_register_1_1_entry" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_register_1_1_entry" kindref="compound">Gyoto::Register::Entry</ref><sp/>{</highlight></codeline>
+<codeline lineno="121" refid="class_gyoto_1_1_register_1_1_entry_1a52156322e063323d734c898279bd1883" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_gyoto_1_1_register_1a3406e0df28d0e5ee028ed9b1621e3ed6" kindref="member">Gyoto::Register::list</ref>();</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="123" refid="class_gyoto_1_1_register_1_1_entry_1a4071a2584830f6dcfd9e9df30da6c427" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="class_gyoto_1_1_register_1_1_entry_1a4071a2584830f6dcfd9e9df30da6c427" kindref="member">name_</ref>;</highlight></codeline>
+<codeline lineno="125" refid="class_gyoto_1_1_register_1_1_entry_1ac30b1f6865ebacb04ce927e394a6a84c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" kindref="member">Gyoto::SmartPointee::Subcontractor_t</ref>*<sp/><ref refid="class_gyoto_1_1_register_1_1_entry_1ac30b1f6865ebacb04ce927e394a6a84c" kindref="member">subcontractor_</ref>;</highlight></codeline>
+<codeline lineno="127" refid="class_gyoto_1_1_register_1_1_entry_1a46d908ddbc0e4337dc6e2facc27711b4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_register_1_1_entry" kindref="compound">Register::Entry</ref>*<sp/><ref refid="class_gyoto_1_1_register_1_1_entry_1a46d908ddbc0e4337dc6e2facc27711b4" kindref="member">next_</ref>;</highlight></codeline>
+<codeline lineno="129" refid="class_gyoto_1_1_register_1_1_entry_1a260b0e7670dbec41b18bf34c24a73c57" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_gyoto_1_1_register_1_1_entry_1a260b0e7670dbec41b18bf34c24a73c57" kindref="member">plugin_</ref>;</highlight></codeline>
+<codeline lineno="131"><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="135" refid="class_gyoto_1_1_register_1_1_entry_1ae8894c2d23d3132535e933ca6751e84c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_register_1_1_entry_1ae8894c2d23d3132535e933ca6751e84c" kindref="member">Entry</ref>(std::string<sp/>name,</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" kindref="member">Gyoto::SmartPointee::Subcontractor_t</ref>*<sp/>subcontractor,</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gyoto_1_1_register_1_1_entry" kindref="compound">Entry</ref>*<sp/>next);</highlight></codeline>
+<codeline lineno="138" refid="class_gyoto_1_1_register_1_1_entry_1a73e2ba843c62de52790bf40f9f4caeb9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_register_1_1_entry_1a73e2ba843c62de52790bf40f9f4caeb9" kindref="member">~Entry</ref>();<sp/></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" kindref="member">Gyoto::SmartPointee::Subcontractor_t</ref>*</highlight></codeline>
+<codeline lineno="160" refid="class_gyoto_1_1_register_1_1_entry_1a38e4129b8f187d27c77fd7a550a6792e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_gyoto_1_1_register_1_1_entry_1a38e4129b8f187d27c77fd7a550a6792e" kindref="member">getSubcontractor</ref>(std::string<sp/>name,<sp/>std::string<sp/>&amp;plugin,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errmode=0);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GYOTO_GETSUBCONTRACTOR(space)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="165"><highlight class="preprocessor"><sp/><sp/>Gyoto::space::Subcontractor_t*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="166"><highlight class="preprocessor"><sp/><sp/>Gyoto::space::getSubcontractor(std::string<sp/>name,<sp/>std::vector&lt;std::string&gt;<sp/>&amp;plugin,<sp/>int<sp/>errmode)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="167"><highlight class="preprocessor"><sp/><sp/>for<sp/>(size_t<sp/>i=0;<sp/>i&lt;plugin.size();<sp/>++i)<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="168"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>GYOTO_DEBUG_EXPR(plugin[i]);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="169"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>Gyoto::requirePlugin(plugin[i]);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="170"><highlight class="preprocessor"><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="171"><highlight class="preprocessor"><sp/><sp/>if<sp/>(!Gyoto::space::Register_)<sp/>throwError(&quot;No<sp/>&quot;</highlight><highlight class="normal"><sp/>GYOTO_STRINGIFY(space)<sp/>&quot;<sp/>kind<sp/>registered!&quot;);<sp/>\</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/>Subcontractor_t*<sp/>sctr=<sp/>NULL;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/>std::string<sp/>plg(&quot;&quot;);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/>if<sp/>(!plugin.size())<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/>sctr<sp/>=<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>(Subcontractor_t*)Gyoto::space::Register_<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>-&gt;<sp/>getSubcontractor(name,<sp/>plg,<sp/>errmode);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/>plugin.push_back(plg);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/>for<sp/>(size_t<sp/>i=plugin.size()-1;<sp/>i&gt;=0<sp/>&amp;&amp;<sp/>sctr<sp/>==<sp/>NULL;<sp/>--i)<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>sctr=<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>(Subcontractor_t*)Gyoto::space::Register_<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>-&gt;<sp/>getSubcontractor(name,<sp/>plugin[i],<sp/>1);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/>if<sp/>(!errmode<sp/>&amp;&amp;<sp/>!sctr)<sp/>throwError<sp/>(&quot;Kind<sp/>not<sp/>found<sp/>in<sp/>the<sp/>specified<sp/>plug-ins:<sp/>&quot;+name);<sp/>\</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/>return<sp/>sctr;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="187"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/junichi/Gyoto/include/GyotoRegister.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,80 @@
+\hypertarget{class_gyoto_1_1_register_1_1_entry}{}\doxysection{Gyoto\+::Register\+::Entry Class Reference}
+\label{class_gyoto_1_1_register_1_1_entry}\index{Gyoto::Register::Entry@{Gyoto::Register::Entry}}
+
+
+\mbox{\hyperlink{class_gyoto_1_1_register_1_1_entry}{Entry}} in a register (or a full register)  
+
+
+
+
+{\ttfamily \#include $<$Gyoto\+Register.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_register_1_1_entry_ae8894c2d23d3132535e933ca6751e84c}\label{class_gyoto_1_1_register_1_1_entry_ae8894c2d23d3132535e933ca6751e84c}} 
+\mbox{\hyperlink{class_gyoto_1_1_register_1_1_entry_ae8894c2d23d3132535e933ca6751e84c}{Entry}} (std\+::string name, \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}{Gyoto\+::\+Smart\+Pointee\+::\+Subcontractor\+\_\+t}} $\ast$subcontractor, \mbox{\hyperlink{class_gyoto_1_1_register_1_1_entry}{Entry}} $\ast$next)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_register_1_1_entry_a73e2ba843c62de52790bf40f9f4caeb9}\label{class_gyoto_1_1_register_1_1_entry_a73e2ba843c62de52790bf40f9f4caeb9}} 
+\mbox{\hyperlink{class_gyoto_1_1_register_1_1_entry_a73e2ba843c62de52790bf40f9f4caeb9}{$\sim$\+Entry}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}{Gyoto\+::\+Smart\+Pointee\+::\+Subcontractor\+\_\+t}} $\ast$ \mbox{\hyperlink{class_gyoto_1_1_register_1_1_entry_a38e4129b8f187d27c77fd7a550a6792e}{get\+Subcontractor}} (std\+::string name, std\+::string \&plugin, int errmode=0)
+\begin{DoxyCompactList}\small\item\em Get subcontractor for a given name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_register_1_1_entry_a4071a2584830f6dcfd9e9df30da6c427}\label{class_gyoto_1_1_register_1_1_entry_a4071a2584830f6dcfd9e9df30da6c427}} 
+std\+::string \mbox{\hyperlink{class_gyoto_1_1_register_1_1_entry_a4071a2584830f6dcfd9e9df30da6c427}{name\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Kind name for the entry, as found in the \char`\"{}kind\char`\"{} XML attribute. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_register_1_1_entry_ac30b1f6865ebacb04ce927e394a6a84c}\label{class_gyoto_1_1_register_1_1_entry_ac30b1f6865ebacb04ce927e394a6a84c}} 
+\mbox{\hyperlink{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}{Gyoto\+::\+Smart\+Pointee\+::\+Subcontractor\+\_\+t}} $\ast$ \mbox{\hyperlink{class_gyoto_1_1_register_1_1_entry_ac30b1f6865ebacb04ce927e394a6a84c}{subcontractor\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Pointer to the \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}{Gyoto\+::\+Smart\+Pointee\+::\+Subcontractor\+\_\+t}} function that produces an object of this kind. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_register_1_1_entry_a46d908ddbc0e4337dc6e2facc27711b4}\label{class_gyoto_1_1_register_1_1_entry_a46d908ddbc0e4337dc6e2facc27711b4}} 
+\mbox{\hyperlink{class_gyoto_1_1_register_1_1_entry}{Register\+::\+Entry}} $\ast$ \mbox{\hyperlink{class_gyoto_1_1_register_1_1_entry_a46d908ddbc0e4337dc6e2facc27711b4}{next\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Next entry in the register, or NULL. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_register_1_1_entry_a260b0e7670dbec41b18bf34c24a73c57}\label{class_gyoto_1_1_register_1_1_entry_a260b0e7670dbec41b18bf34c24a73c57}} 
+const std\+::string \mbox{\hyperlink{class_gyoto_1_1_register_1_1_entry_a260b0e7670dbec41b18bf34c24a73c57}{plugin\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Plug-\/in from which this \mbox{\hyperlink{class_gyoto_1_1_register_1_1_entry}{Entry}} was loaded. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_register_1_1_entry_a52156322e063323d734c898279bd1883}\label{class_gyoto_1_1_register_1_1_entry_a52156322e063323d734c898279bd1883}} 
+void \mbox{\hyperlink{class_gyoto_1_1_register_1_1_entry_a52156322e063323d734c898279bd1883}{Gyoto\+::\+Register\+::list}} ()
+\begin{DoxyCompactList}\small\item\em List the various registers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_gyoto_1_1_register_1_1_entry}{Entry}} in a register (or a full register) 
+
+A register is actually a chained list of \mbox{\hyperlink{class_gyoto_1_1_register_1_1_entry}{Register\+::\+Entry}} instances. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_register_1_1_entry_a38e4129b8f187d27c77fd7a550a6792e}\label{class_gyoto_1_1_register_1_1_entry_a38e4129b8f187d27c77fd7a550a6792e}} 
+\index{Gyoto::Register::Entry@{Gyoto::Register::Entry}!getSubcontractor@{getSubcontractor}}
+\index{getSubcontractor@{getSubcontractor}!Gyoto::Register::Entry@{Gyoto::Register::Entry}}
+\doxysubsubsection{\texorpdfstring{getSubcontractor()}{getSubcontractor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}{Gyoto\+::\+Smart\+Pointee\+::\+Subcontractor\+\_\+t}}$\ast$ Gyoto\+::\+Register\+::\+Entry\+::get\+Subcontractor (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string \&}]{plugin,  }\item[{int}]{errmode = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Get subcontractor for a given name. 
+
+Search through the register for an \mbox{\hyperlink{class_gyoto_1_1_register_1_1_entry}{Entry}} matching name and return the corresponding subcontractor. If plugin is specified, only a subcontractor matching both name and plugin will be returned. Note that \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_aff0e3a9c31318709959bb2471a22ff74}{Gyoto\+::\+Entry\+::get\+Subcontractor()}} will not load the plug-\/in for you, contrary to e.\+g. \mbox{\hyperlink{namespace_gyoto_1_1_metric_ac6c88d7fec42b5aa192e90b3a721993b}{Gyoto\+::\+Metric\+::get\+Subcontractor()}}. If plugin is the empty string, then the first subcontractor matching name will be returned, and the name of the plug-\/in it belongs to will be returned in plugin upon output.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em name} & Name of the kind to look for. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em plugin} & e.\+g. \char`\"{}stdplug\char`\"{}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em errmode} & 1 if get\+Sub\+Contractor() should return NULL upon failure. Else a \mbox{\hyperlink{class_gyoto_1_1_error}{Gyoto\+::\+Error}} is thrown. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to subcontractor function. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_gyoto_register_8h}{Gyoto\+Register.\+h}}\end{DoxyCompactItemize}

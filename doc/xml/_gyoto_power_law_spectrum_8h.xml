@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_gyoto_power_law_spectrum_8h" kind="file" language="C++">
+    <compoundname>GyotoPowerLawSpectrum.h</compoundname>
+    <includes refid="_gyoto_spectrum_8h" local="no">GyotoSpectrum.h</includes>
+    <includes local="no">string</includes>
+    <incdepgraph>
+      <node id="9">
+        <label>float.h</label>
+      </node>
+      <node id="6">
+        <label>GyotoUtils.h</label>
+        <link refid="_gyoto_utils_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>GyotoSpectrum.h</label>
+        <link refid="_gyoto_spectrum_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>GyotoSmartPointer.h</label>
+        <link refid="_gyoto_smart_pointer_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>GyotoObject.h</label>
+        <link refid="_gyoto_object_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>stddef.h</label>
+      </node>
+      <node id="3">
+        <label>GyotoRegister.h</label>
+        <link refid="_gyoto_register_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>GyotoDefs.h</label>
+        <link refid="_gyoto_defs_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>pthread.h</label>
+      </node>
+      <node id="15">
+        <label>typeinfo</label>
+      </node>
+      <node id="10">
+        <label>vector</label>
+      </node>
+      <node id="8">
+        <label>GyotoConfig.h</label>
+        <link refid="_gyoto_config_8h"/>
+      </node>
+      <node id="1">
+        <label>GyotoPowerLawSpectrum.h</label>
+        <link refid="_gyoto_power_law_spectrum_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>iostream</label>
+      </node>
+      <node id="12">
+        <label>GyotoError.h</label>
+        <link refid="_gyoto_error_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_gyoto_1_1_spectrum_1_1_power_law" prot="public">Gyoto::Spectrum::PowerLaw</innerclass>
+    <innernamespace refid="namespace_gyoto">Gyoto</innernamespace>
+    <innernamespace refid="namespace_gyoto_1_1_spectrum">Gyoto::Spectrum</innernamespace>
+    <briefdescription>
+<para>A power law spectrum : I_nu=constant_*nu^exponent_. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Light emitted by an astronomical object </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>Copyright<sp/>2011-2014,<sp/>2016,<sp/>2018<sp/>Thibaut<sp/>Paumard<sp/>&amp;<sp/>Frederic<sp/>Vincent</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>Gyoto.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"></highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>Gyoto.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__GyotoPowerLawSpectrum_H_<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__GyotoPowerLawSpectrum_H_<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_spectrum_8h" kindref="compound">GyotoSpectrum.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_gyoto" kindref="compound">Gyoto</ref><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Spectrum<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">PowerLaw;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="class_gyoto_1_1_spectrum_1_1_power_law" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_spectrum_1_1_power_law" kindref="compound">Gyoto::Spectrum::PowerLaw</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_spectrum_1_1_generic" kindref="compound">Gyoto::Spectrum::Generic</ref><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt;<ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>::<ref refid="class_gyoto_1_1_spectrum_1_1_power_law" kindref="compound">Spectrum::PowerLaw</ref>&gt;;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="56" refid="class_gyoto_1_1_spectrum_1_1_power_law_1a54a641b45a9130572567f4a80fd8147e" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_power_law_1a54a641b45a9130572567f4a80fd8147e" kindref="member">constant_</ref>;<sp/></highlight></codeline>
+<codeline lineno="57" refid="class_gyoto_1_1_spectrum_1_1_power_law_1a47c059245fe42d72cf6e3471d6c23af1" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_power_law_1a47c059245fe42d72cf6e3471d6c23af1" kindref="member">exponent_</ref>;<sp/></highlight></codeline>
+<codeline lineno="58" refid="class_gyoto_1_1_spectrum_1_1_power_law_1a9213a73197be95374c502f3849df0310" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_power_law_1a9213a73197be95374c502f3849df0310" kindref="member">minfreq_</ref>;<sp/></highlight></codeline>
+<codeline lineno="59" refid="class_gyoto_1_1_spectrum_1_1_power_law_1a199b89986586ee6a6e1e2d561c95c03c" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_power_law_1a199b89986586ee6a6e1e2d561c95c03c" kindref="member">maxfreq_</ref>;<sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="62" refid="class_gyoto_1_1_spectrum_1_1_power_law_1ac90e9834fc4c5ffd7f57734aa75f1939" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" kindref="member">GYOTO_OBJECT</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_spectrum_1_1_power_law" kindref="compound">PowerLaw</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="class_gyoto_1_1_spectrum_1_1_power_law_1a4a4f39ee8d560986c8b7d2b5a9e6bb10" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_spectrum_1_1_power_law" kindref="compound">PowerLaw</ref>(double<sp/>exponent,<sp/>double<sp/>constant=1.);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>PowerLaw(const<sp/>Spectrum<sp/>&amp;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="class_gyoto_1_1_spectrum_1_1_power_law_1a6226dd84cc783c62a57b703c9da719c1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_spectrum_1_1_power_law" kindref="compound">PowerLaw</ref><sp/>*<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_power_law_1a6226dd84cc783c62a57b703c9da719c1" kindref="member">clone</ref>()<sp/>const;<sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="class_gyoto_1_1_spectrum_1_1_power_law_1a3db66fb00ae0d6db4c505c8d0fc104b4" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_power_law_1a3db66fb00ae0d6db4c505c8d0fc104b4" kindref="member">constant</ref>()<sp/>const;<sp/></highlight></codeline>
+<codeline lineno="74" refid="class_gyoto_1_1_spectrum_1_1_power_law_1a7359df350a63186c6b559e0d3176ebc0" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_power_law_1a3db66fb00ae0d6db4c505c8d0fc104b4" kindref="member">constant</ref>(double);<sp/></highlight></codeline>
+<codeline lineno="75" refid="class_gyoto_1_1_spectrum_1_1_power_law_1a817faa6d1adfbefc6ffcc888285402dc" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_power_law_1a817faa6d1adfbefc6ffcc888285402dc" kindref="member">exponent</ref>()<sp/>const;<sp/></highlight></codeline>
+<codeline lineno="76" refid="class_gyoto_1_1_spectrum_1_1_power_law_1adeff8c34f8569086bd7ea556a1a18b83" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_power_law_1a817faa6d1adfbefc6ffcc888285402dc" kindref="member">exponent</ref>(double);<sp/></highlight></codeline>
+<codeline lineno="77" refid="class_gyoto_1_1_spectrum_1_1_power_law_1aff13901e1371386d03a6d01f40fa837b" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;double&gt;<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_power_law_1acd2ccf0857a12dab5b6e2483c197191b" kindref="member">cutoff</ref>(std::string<sp/>const<sp/>&amp;unit)<sp/>const;<sp/></highlight></codeline>
+<codeline lineno="78" refid="class_gyoto_1_1_spectrum_1_1_power_law_1a639efcb9521d9acd4cd8c8681c7018cc" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_power_law_1acd2ccf0857a12dab5b6e2483c197191b" kindref="member">cutoff</ref>(std::vector&lt;double&gt;<sp/>const<sp/>&amp;v,<sp/>std::string<sp/>const<sp/>&amp;unit);<sp/></highlight></codeline>
+<codeline lineno="79" refid="class_gyoto_1_1_spectrum_1_1_power_law_1acd2ccf0857a12dab5b6e2483c197191b" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;double&gt;<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_power_law_1acd2ccf0857a12dab5b6e2483c197191b" kindref="member">cutoff</ref>()<sp/>const;<sp/></highlight></codeline>
+<codeline lineno="80" refid="class_gyoto_1_1_spectrum_1_1_power_law_1ad494f908da7590eca94643aec4183324" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_spectrum_1_1_power_law_1acd2ccf0857a12dab5b6e2483c197191b" kindref="member">cutoff</ref>(std::vector&lt;double&gt;<sp/>const<sp/>&amp;v);<sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>using<sp/>Gyoto::Spectrum::Generic::operator();</highlight></codeline>
+<codeline lineno="83" refid="class_gyoto_1_1_spectrum_1_1_power_law_1ad359e8a3103249203010234e0d858a64" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/>operator()(double<sp/>nu)<sp/>const;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/junichi/Gyoto/include/GyotoPowerLawSpectrum.h"/>
+  </compounddef>
+</doxygen>

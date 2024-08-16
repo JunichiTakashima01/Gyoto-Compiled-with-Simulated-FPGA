@@ -1,0 +1,153 @@
+\hypertarget{namespace_gyoto_1_1_spectrometer}{}\doxysection{Gyoto\+::Spectrometer Namespace Reference}
+\label{namespace_gyoto_1_1_spectrometer}\index{Gyoto::Spectrometer@{Gyoto::Spectrometer}}
+
+
+Access to spectrometers.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_complex}{Complex}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_complex}{Complex}} spectrometer object. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic}{Generic}}
+\begin{DoxyCompactList}\small\item\em Base class for spectrometers. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_uniform}{Uniform}}
+\begin{DoxyCompactList}\small\item\em Uniformly spaced spectrometers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef char const  $\ast$ \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a3d95097c93312ff6df68f56b4fe829ee}{kind\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Type for \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer}{Spectrometer}} kind. \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic}{Gyoto\+::\+Spectrometer\+::\+Generic}} $>$ \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a63d8c94e41e4be8a817c095b457de8a5}{Subcontractor\+\_\+t}}(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$, std\+::vector$<$ std\+::string $>$ const \&)
+\begin{DoxyCompactList}\small\item\em A function to build instances of a specific \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic}{Astrobj\+::\+Generic}} sub-\/class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a63d8c94e41e4be8a817c095b457de8a5}{Gyoto\+::\+Spectrometer\+::\+Subcontractor\+\_\+t}} $\ast$ \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a28bbcf16ab5da826a6ad4310141e3e51}{get\+Subcontractor}} (std\+::string name, std\+::vector$<$ std\+::string $>$ \&plugins, int errmode=0)
+\begin{DoxyCompactList}\small\item\em Query the \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer}{Spectrometer}} register. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic}{Spectrometer\+::\+Generic}} $>$ \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a4688afd585727b4ec02a97f7ec27c086}{Subcontractor}} (\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}} $\ast$fmp, std\+::vector$<$ std\+::string $>$ const \&plugins)
+\begin{DoxyCompactList}\small\item\em A template for Subcontractor\+\_\+t functions. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_1_1_spectrometer_abb2d42f08c4acd63763f0714ddca0bd7}\label{namespace_gyoto_1_1_spectrometer_abb2d42f08c4acd63763f0714ddca0bd7}} 
+void \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_abb2d42f08c4acd63763f0714ddca0bd7}{init\+Register}} ()
+\begin{DoxyCompactList}\small\item\em Initialize the \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer}{Spectrometer}} register This must be called once. It initializes Register\+\_\+ and registers the standard kinds (\mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_uniform}{Uniform}} and \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_complex}{Complex}}). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a86b5778d46f54fc06ff22bc060987c6b}{Register}} (std\+::string name, \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a63d8c94e41e4be8a817c095b457de8a5}{Gyoto\+::\+Spectrometer\+::\+Subcontractor\+\_\+t}} $\ast$scp)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_gyoto_1_1_register}{Register}} a new \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer}{Spectrometer}} kind. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_gyoto_1_1_register_1_1_entry}{Gyoto\+::\+Register\+::\+Entry}} $\ast$ \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a04be050062c41417229fd78d9a7daed6}{Register\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer}{Spectrometer}} register. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Access to spectrometers. 
+
+Objects which describe spectrometers (including one-\/channel devices, a.\+k.\+a cameras) must inherit from the \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic}{Gyoto\+::\+Spectrometer\+::\+Generic}} class.
+
+To be usable, a \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic}{Spectrometer\+::\+Generic}} sub-\/class should register a \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a63d8c94e41e4be8a817c095b457de8a5}{Spectrometer\+::\+Subcontractor\+\_\+t}} function using the \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a86b5778d46f54fc06ff22bc060987c6b}{Spectrometer\+::\+Register()}} function. See also \mbox{\hyperlink{writing_plugins_page}{Writing plug-\/ins for Gyoto}} . 
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{namespace_gyoto_1_1_spectrometer_a3d95097c93312ff6df68f56b4fe829ee}\label{namespace_gyoto_1_1_spectrometer_a3d95097c93312ff6df68f56b4fe829ee}} 
+\index{Gyoto::Spectrometer@{Gyoto::Spectrometer}!kind\_t@{kind\_t}}
+\index{kind\_t@{kind\_t}!Gyoto::Spectrometer@{Gyoto::Spectrometer}}
+\doxysubsubsection{\texorpdfstring{kind\_t}{kind\_t}}
+{\footnotesize\ttfamily typedef char const$\ast$ \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a3d95097c93312ff6df68f56b4fe829ee}{Gyoto\+::\+Spectrometer\+::kind\+\_\+t}}}
+
+
+
+Type for \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer}{Spectrometer}} kind. 
+
+\mbox{\hyperlink{namespace_gyoto_1_1_spectrometer}{Spectrometer}} kindid is a unique numerical identifier for that kind, produced as the address to a static C string variable holding the kind\textquotesingle{}s name. Most of the time, the address is the only significant part as this is more reliable and allows for direct numerical comparison instead of slower string comparison. The value of the string variable can be used for printing and as anchor name for \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a86b5778d46f54fc06ff22bc060987c6b}{Register()}}, although the anchor name could be different. \mbox{\Hypertarget{namespace_gyoto_1_1_spectrometer_a63d8c94e41e4be8a817c095b457de8a5}\label{namespace_gyoto_1_1_spectrometer_a63d8c94e41e4be8a817c095b457de8a5}} 
+\index{Gyoto::Spectrometer@{Gyoto::Spectrometer}!Subcontractor\_t@{Subcontractor\_t}}
+\index{Subcontractor\_t@{Subcontractor\_t}!Gyoto::Spectrometer@{Gyoto::Spectrometer}}
+\doxysubsubsection{\texorpdfstring{Subcontractor\_t}{Subcontractor\_t}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$\mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic}{Gyoto\+::\+Spectrometer\+::\+Generic}}$>$ Gyoto\+::\+Spectrometer\+::\+Subcontractor\+\_\+t(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$, std\+::vector$<$ std\+::string $>$ const \&)}
+
+
+
+A function to build instances of a specific \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic}{Astrobj\+::\+Generic}} sub-\/class. 
+
+This is a more specific version of the \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}{Smart\+Pointee\+::\+Subcontractor\+\_\+t}} type. A Spectrometer\+::\+Subcontrator\+\_\+t is called by the \mbox{\hyperlink{class_gyoto_1_1_factory}{Gyoto\+::\+Factory}} to build an instance of the kind of spectrometer specified in an XML file (see \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a86b5778d46f54fc06ff22bc060987c6b}{Register()}}). The \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}} and Subcontractor\+\_\+t function communicate through a \mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}}. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_gyoto_1_1_spectrometer_a28bbcf16ab5da826a6ad4310141e3e51}\label{namespace_gyoto_1_1_spectrometer_a28bbcf16ab5da826a6ad4310141e3e51}} 
+\index{Gyoto::Spectrometer@{Gyoto::Spectrometer}!getSubcontractor@{getSubcontractor}}
+\index{getSubcontractor@{getSubcontractor}!Gyoto::Spectrometer@{Gyoto::Spectrometer}}
+\doxysubsubsection{\texorpdfstring{getSubcontractor()}{getSubcontractor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a63d8c94e41e4be8a817c095b457de8a5}{Gyoto\+::\+Spectrometer\+::\+Subcontractor\+\_\+t}}$\ast$ Gyoto\+::\+Spectrometer\+::get\+Subcontractor (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::vector$<$ std\+::string $>$ \&}]{plugins,  }\item[{int}]{errmode = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Query the \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer}{Spectrometer}} register. 
+
+Get the \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a63d8c94e41e4be8a817c095b457de8a5}{Spectrometer\+::\+Subcontractor\+\_\+t}} correspondig to a given kind name. This function is normally called only from the \mbox{\hyperlink{class_gyoto_1_1_factory}{Gyoto\+::\+Factory}}. If plugin is specified, only a subcontractor matching both name and plugin will be returned, loading the plug-\/in if necessary. If plugin is the empty string, then the first subcontractor matching name will be returned, and the name of the plug-\/in it belongs to will be returned in plugin upon output.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em name} & Name of the subclass to build, e.\+g. \char`\"{}\+Complex\char`\"{} or \char`\"{}wave\char`\"{}. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em plugin} & e.\+g. \char`\"{}stdplug\char`\"{}. \\
+\hline
+ & {\em errmode\mbox{[}in\mbox{]}} & If name is not registered, \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a28bbcf16ab5da826a6ad4310141e3e51}{get\+Subcontractor()}} return NULL errmode==1, throws a \mbox{\hyperlink{class_gyoto_1_1_error}{Gyoto\+::\+Error}} if errmode==0. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to the corresponding subcontractor. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_gyoto_1_1_spectrometer_a86b5778d46f54fc06ff22bc060987c6b}\label{namespace_gyoto_1_1_spectrometer_a86b5778d46f54fc06ff22bc060987c6b}} 
+\index{Gyoto::Spectrometer@{Gyoto::Spectrometer}!Register@{Register}}
+\index{Register@{Register}!Gyoto::Spectrometer@{Gyoto::Spectrometer}}
+\doxysubsubsection{\texorpdfstring{Register()}{Register()}}
+{\footnotesize\ttfamily void Gyoto\+::\+Spectrometer\+::\+Register (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{\mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a63d8c94e41e4be8a817c095b457de8a5}{Gyoto\+::\+Spectrometer\+::\+Subcontractor\+\_\+t}} $\ast$}]{scp }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{namespace_gyoto_1_1_register}{Register}} a new \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer}{Spectrometer}} kind. 
+
+\mbox{\hyperlink{namespace_gyoto_1_1_register}{Register}} a new \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic}{Spectrometer\+::\+Generic}} sub-\/class so that the \mbox{\hyperlink{class_gyoto_1_1_factory}{Gyoto\+::\+Factory}} knows it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The kind name which identifies this object type in an XML file, as in $<$\mbox{\hyperlink{namespace_gyoto_1_1_spectrometer}{Spectrometer}} kind=\char`\"{}name\char`\"{}$>$. For clarity, this should be the same as the value of kindid\+\_\+ for this object, but it is not mandatory.\\
+\hline
+{\em scp} & A pointer to the subcontractor, which will communicate with the \mbox{\hyperlink{class_gyoto_1_1_factory}{Gyoto\+::\+Factory}} to build an instance of the class from its XML description. If all parameters can be set using set\+Parameter(), this can be\+: 
+\begin{DoxyCode}{1}
+\DoxyCodeLine{\&(Gyoto::Spectrometer::Subcontractor<Myind>)}
+
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_gyoto_1_1_spectrometer_a4688afd585727b4ec02a97f7ec27c086}\label{namespace_gyoto_1_1_spectrometer_a4688afd585727b4ec02a97f7ec27c086}} 
+\index{Gyoto::Spectrometer@{Gyoto::Spectrometer}!Subcontractor@{Subcontractor}}
+\index{Subcontractor@{Subcontractor}!Gyoto::Spectrometer@{Gyoto::Spectrometer}}
+\doxysubsubsection{\texorpdfstring{Subcontractor()}{Subcontractor()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$\mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic}{Spectrometer\+::\+Generic}}$>$ Gyoto\+::\+Spectrometer\+::\+Subcontractor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}} $\ast$}]{fmp,  }\item[{std\+::vector$<$ std\+::string $>$ const \&}]{plugins }\end{DoxyParamCaption})}
+
+
+
+A template for Subcontractor\+\_\+t functions. 
+
+Instead of reimplementing the wheel, your subcontractor can simply be \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a4688afd585727b4ec02a97f7ec27c086}{Gyoto\+::\+Spectrometer\+::\+Subcontractor$<$\+My\+Kind$>$}}. It must however implement set\+Parameters().
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & A \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic}{Spectrometer\+::\+Generic}} sub-\/class. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespace_gyoto_1_1_spectrometer_a04be050062c41417229fd78d9a7daed6}\label{namespace_gyoto_1_1_spectrometer_a04be050062c41417229fd78d9a7daed6}} 
+\index{Gyoto::Spectrometer@{Gyoto::Spectrometer}!Register\_@{Register\_}}
+\index{Register\_@{Register\_}!Gyoto::Spectrometer@{Gyoto::Spectrometer}}
+\doxysubsubsection{\texorpdfstring{Register\_}{Register\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gyoto_1_1_register_1_1_entry}{Gyoto\+::\+Register\+::\+Entry}}$\ast$ Gyoto\+::\+Spectrometer\+::\+Register\+\_\+\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+The \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer}{Spectrometer}} register. 
+
+Use the \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_abb2d42f08c4acd63763f0714ddca0bd7}{Spectrometer\+::init\+Register()}} once in your program to initiliaze it, the \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a86b5778d46f54fc06ff22bc060987c6b}{Spectrometer\+::\+Register()}} function to fill it, and the \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer_a28bbcf16ab5da826a6ad4310141e3e51}{Spectrometer\+::get\+Subcontractor()}} function to query it. 

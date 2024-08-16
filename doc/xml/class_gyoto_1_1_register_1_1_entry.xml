@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_gyoto_1_1_register_1_1_entry" kind="class" language="C++" prot="public">
+    <compoundname>Gyoto::Register::Entry</compoundname>
+    <includes refid="_gyoto_register_8h" local="no">GyotoRegister.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_register_1_1_entry_1a4071a2584830f6dcfd9e9df30da6c427" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gyoto::Register::Entry::name_</definition>
+        <argsstring></argsstring>
+        <name>name_</name>
+        <briefdescription>
+<para>Kind name for the entry, as found in the &quot;kind&quot; XML attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoRegister.h" line="123" column="15" bodyfile="/home/junichi/Gyoto/include/GyotoRegister.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_register_1_1_entry_1ac30b1f6865ebacb04ce927e394a6a84c" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" kindref="member">Gyoto::SmartPointee::Subcontractor_t</ref> *</type>
+        <definition>Gyoto::SmartPointee::Subcontractor_t* Gyoto::Register::Entry::subcontractor_</definition>
+        <argsstring></argsstring>
+        <name>subcontractor_</name>
+        <briefdescription>
+<para>Pointer to the <ref refid="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" kindref="member">Gyoto::SmartPointee::Subcontractor_t</ref> function that produces an object of this kind. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoRegister.h" line="125" column="40" bodyfile="/home/junichi/Gyoto/include/GyotoRegister.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_register_1_1_entry_1a46d908ddbc0e4337dc6e2facc27711b4" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_register_1_1_entry" kindref="compound">Register::Entry</ref> *</type>
+        <definition>Register::Entry* Gyoto::Register::Entry::next_</definition>
+        <argsstring></argsstring>
+        <name>next_</name>
+        <briefdescription>
+<para>Next entry in the register, or NULL. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoRegister.h" line="127" column="19" bodyfile="/home/junichi/Gyoto/include/GyotoRegister.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_register_1_1_entry_1a260b0e7670dbec41b18bf34c24a73c57" prot="protected" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string Gyoto::Register::Entry::plugin_</definition>
+        <argsstring></argsstring>
+        <name>plugin_</name>
+        <briefdescription>
+<para>Plug-in from which this <ref refid="class_gyoto_1_1_register_1_1_entry" kindref="compound">Entry</ref> was loaded. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoRegister.h" line="129" column="21" bodyfile="/home/junichi/Gyoto/include/GyotoRegister.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_gyoto_1_1_register_1_1_entry_1a52156322e063323d734c898279bd1883" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Register::list</definition>
+        <argsstring>()</argsstring>
+        <name>Gyoto::Register::list</name>
+        <briefdescription>
+<para>List the various registers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoRegister.h" line="121" column="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gyoto_1_1_register_1_1_entry_1ae8894c2d23d3132535e933ca6751e84c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Register::Entry::Entry</definition>
+        <argsstring>(std::string name, Gyoto::SmartPointee::Subcontractor_t *subcontractor, Entry *next)</argsstring>
+        <name>Entry</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" kindref="member">Gyoto::SmartPointee::Subcontractor_t</ref> *</type>
+          <declname>subcontractor</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_register_1_1_entry" kindref="compound">Entry</ref> *</type>
+          <declname>next</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoRegister.h" line="135" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_register_1_1_entry_1a73e2ba843c62de52790bf40f9f4caeb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Register::Entry::~Entry</definition>
+        <argsstring>()</argsstring>
+        <name>~Entry</name>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoRegister.h" line="138" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_register_1_1_entry_1a38e4129b8f187d27c77fd7a550a6792e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" kindref="member">Gyoto::SmartPointee::Subcontractor_t</ref> *</type>
+        <definition>Gyoto::SmartPointee::Subcontractor_t* Gyoto::Register::Entry::getSubcontractor</definition>
+        <argsstring>(std::string name, std::string &amp;plugin, int errmode=0)</argsstring>
+        <name>getSubcontractor</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>plugin</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errmode</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Get subcontractor for a given name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Search through the register for an <ref refid="class_gyoto_1_1_register_1_1_entry" kindref="compound">Entry</ref> matching name and return the corresponding subcontractor. If plugin is specified, only a subcontractor matching both name and plugin will be returned. Note that <ref refid="namespace_gyoto_1_1_astrobj_1aff0e3a9c31318709959bb2471a22ff74" kindref="member">Gyoto::Entry::getSubcontractor()</ref> will not load the plug-in for you, contrary to e.g. <ref refid="namespace_gyoto_1_1_metric_1ac6c88d7fec42b5aa192e90b3a721993b" kindref="member">Gyoto::Metric::getSubcontractor()</ref>. If plugin is the empty string, then the first subcontractor matching name will be returned, and the name of the plug-in it belongs to will be returned in plugin upon output.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the kind to look for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">plugin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>e.g. &quot;stdplug&quot;. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">errmode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1 if getSubContractor() should return NULL upon failure. Else a <ref refid="class_gyoto_1_1_error" kindref="compound">Gyoto::Error</ref> is thrown. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to subcontractor function. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoRegister.h" line="160" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_gyoto_1_1_register_1_1_entry" kindref="compound">Entry</ref> in a register (or a full register) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A register is actually a chained list of <ref refid="class_gyoto_1_1_register_1_1_entry" kindref="compound">Register::Entry</ref> instances. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Gyoto::Register::Entry</label>
+        <link refid="class_gyoto_1_1_register_1_1_entry"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/junichi/Gyoto/include/GyotoRegister.h" line="117" column="1" bodyfile="/home/junichi/Gyoto/include/GyotoRegister.h" bodystart="117" bodyend="162"/>
+    <listofallmembers>
+      <member refid="class_gyoto_1_1_register_1_1_entry_1ae8894c2d23d3132535e933ca6751e84c" prot="public" virt="non-virtual"><scope>Gyoto::Register::Entry</scope><name>Entry</name></member>
+      <member refid="class_gyoto_1_1_register_1_1_entry_1a38e4129b8f187d27c77fd7a550a6792e" prot="public" virt="non-virtual"><scope>Gyoto::Register::Entry</scope><name>getSubcontractor</name></member>
+      <member refid="class_gyoto_1_1_register_1_1_entry_1a52156322e063323d734c898279bd1883" prot="private" virt="non-virtual"><scope>Gyoto::Register::Entry</scope><name>Gyoto::Register::list</name></member>
+      <member refid="class_gyoto_1_1_register_1_1_entry_1a4071a2584830f6dcfd9e9df30da6c427" prot="protected" virt="non-virtual"><scope>Gyoto::Register::Entry</scope><name>name_</name></member>
+      <member refid="class_gyoto_1_1_register_1_1_entry_1a46d908ddbc0e4337dc6e2facc27711b4" prot="protected" virt="non-virtual"><scope>Gyoto::Register::Entry</scope><name>next_</name></member>
+      <member refid="class_gyoto_1_1_register_1_1_entry_1a260b0e7670dbec41b18bf34c24a73c57" prot="protected" virt="non-virtual"><scope>Gyoto::Register::Entry</scope><name>plugin_</name></member>
+      <member refid="class_gyoto_1_1_register_1_1_entry_1ac30b1f6865ebacb04ce927e394a6a84c" prot="protected" virt="non-virtual"><scope>Gyoto::Register::Entry</scope><name>subcontractor_</name></member>
+      <member refid="class_gyoto_1_1_register_1_1_entry_1a73e2ba843c62de52790bf40f9f4caeb9" prot="public" virt="non-virtual"><scope>Gyoto::Register::Entry</scope><name>~Entry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

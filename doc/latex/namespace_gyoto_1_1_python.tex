@@ -1,0 +1,51 @@
+\hypertarget{namespace_gyoto_1_1_python}{}\doxysection{Gyoto\+::Python Namespace Reference}
+\label{namespace_gyoto_1_1_python}\index{Gyoto::Python@{Gyoto::Python}}
+
+
+Helpers for the classes deriving from \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base}{Gyoto\+::\+Python\+::\+Base}}.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_gyoto_1_1_python_1_1_object}{Object}}
+\begin{DoxyCompactList}\small\item\em Class template to implement parts of the \mbox{\hyperlink{class_gyoto_1_1_object}{Gyoto\+::\+Object}} API. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base}{Base}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base}{Base}} class for classes in the \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} plug-\/in. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace_gyoto_1_1_python_acd3feb4e4929c63e9d845a5c2bf927fd}\label{namespace_gyoto_1_1_python_acd3feb4e4929c63e9d845a5c2bf927fd}} 
+Py\+Object $\ast$ \mbox{\hyperlink{namespace_gyoto_1_1_python_acd3feb4e4929c63e9d845a5c2bf927fd}{Py\+Object\+\_\+\+From\+Gyoto\+Value}} (const \mbox{\hyperlink{class_gyoto_1_1_value}{Gyoto\+::\+Value}} \&)
+\begin{DoxyCompactList}\small\item\em Convert \mbox{\hyperlink{namespace_gyoto}{Gyoto}} \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} to \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} \mbox{\hyperlink{class_gyoto_1_1_python_1_1_object}{Object}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_1_1_python_a5a630b13b6471dbe150545ea6cd51512}\label{namespace_gyoto_1_1_python_a5a630b13b6471dbe150545ea6cd51512}} 
+Py\+Object $\ast$ \mbox{\hyperlink{namespace_gyoto_1_1_python_a5a630b13b6471dbe150545ea6cd51512}{Py\+Instance\+\_\+\+Get\+Method}} (Py\+Object $\ast$p\+Instance, const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Return new reference to method, or NULL if method not found. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_1_1_python_af924bb5bdb5989e445e79444b94105b1}\label{namespace_gyoto_1_1_python_af924bb5bdb5989e445e79444b94105b1}} 
+Py\+Object $\ast$ \mbox{\hyperlink{namespace_gyoto_1_1_python_af924bb5bdb5989e445e79444b94105b1}{Py\+Import\+\_\+\+Gyoto}} ()
+\begin{DoxyCompactList}\small\item\em Return refernce to the gyoto module, or NULL. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_1_1_python_a9ebbef049d400c8f608e962b0c84b41b}\label{namespace_gyoto_1_1_python_a9ebbef049d400c8f608e962b0c84b41b}} 
+void \mbox{\hyperlink{namespace_gyoto_1_1_python_a9ebbef049d400c8f608e962b0c84b41b}{Py\+Instance\+\_\+\+Set\+This}} (Py\+Object $\ast$p\+Instance, Py\+Object $\ast$p\+New, void $\ast$ptr)
+\begin{DoxyCompactList}\small\item\em Set \char`\"{}this\char`\"{} attribute in instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_1_1_python_af2334e280806d1eb1cace53d40203e4e}\label{namespace_gyoto_1_1_python_af2334e280806d1eb1cace53d40203e4e}} 
+bool \mbox{\hyperlink{namespace_gyoto_1_1_python_af2334e280806d1eb1cace53d40203e4e}{Py\+Callable\+\_\+\+Has\+Var\+Arg}} (Py\+Object $\ast$p\+Method)
+\begin{DoxyCompactList}\small\item\em Check whether method accepts the varargs argument. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_1_1_python_a97cc1be1b60b7781faa3c0717db795a7}\label{namespace_gyoto_1_1_python_a97cc1be1b60b7781faa3c0717db795a7}} 
+Py\+Object $\ast$ \mbox{\hyperlink{namespace_gyoto_1_1_python_a97cc1be1b60b7781faa3c0717db795a7}{Py\+Module\+\_\+\+New\+From\+Python\+Code}} (const char $\ast$code)
+\begin{DoxyCompactList}\small\item\em Create module from \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} source code in a C string. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_1_1_python_a777bdc01ccd7bcf9b1a9049cf99107c3}\label{namespace_gyoto_1_1_python_a777bdc01ccd7bcf9b1a9049cf99107c3}} 
+Py\+Object $\ast$ \mbox{\hyperlink{namespace_gyoto_1_1_python_a777bdc01ccd7bcf9b1a9049cf99107c3}{p\+Gyoto\+Spectrum}} ()
+\begin{DoxyCompactList}\small\item\em Get reference to the \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}} constructor in the gyoto \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} extension. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_1_1_python_a1e955fe12e8f05c9487ad6a1deae1064}\label{namespace_gyoto_1_1_python_a1e955fe12e8f05c9487ad6a1deae1064}} 
+Py\+Object $\ast$ \mbox{\hyperlink{namespace_gyoto_1_1_python_a1e955fe12e8f05c9487ad6a1deae1064}{p\+Gyoto\+Metric}} ()
+\begin{DoxyCompactList}\small\item\em Get reference to the \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} constructor in the gyoto \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} extension. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_1_1_python_a480f10798e065fd76ee79152d67fe441}\label{namespace_gyoto_1_1_python_a480f10798e065fd76ee79152d67fe441}} 
+Py\+Object $\ast$ \mbox{\hyperlink{namespace_gyoto_1_1_python_a480f10798e065fd76ee79152d67fe441}{p\+Gyoto\+Standard\+Astrobj}} ()
+\begin{DoxyCompactList}\small\item\em Get reference to the Standard\+Astrobj constructor in the gyoto \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} extension. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_1_1_python_af50719b81c5cdbccf038cc49e6161d7a}\label{namespace_gyoto_1_1_python_af50719b81c5cdbccf038cc49e6161d7a}} 
+Py\+Object $\ast$ \mbox{\hyperlink{namespace_gyoto_1_1_python_af50719b81c5cdbccf038cc49e6161d7a}{p\+Gyoto\+Thin\+Disk}} ()
+\begin{DoxyCompactList}\small\item\em Get reference to the Thin\+Disk constructor in the gyoto \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} extension. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Helpers for the classes deriving from \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base}{Gyoto\+::\+Python\+::\+Base}}. 

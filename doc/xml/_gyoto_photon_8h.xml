@@ -1,0 +1,515 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_gyoto_photon_8h" kind="file" language="C++">
+    <compoundname>GyotoPhoton.h</compoundname>
+    <includes refid="_gyoto_functors_8h" local="yes">GyotoFunctors.h</includes>
+    <includes refid="_gyoto_defs_8h" local="no">GyotoDefs.h</includes>
+    <includes refid="_gyoto_metric_8h" local="no">GyotoMetric.h</includes>
+    <includes refid="_gyoto_screen_8h" local="no">GyotoScreen.h</includes>
+    <includes refid="_gyoto_worldline_8h" local="no">GyotoWorldline.h</includes>
+    <includes refid="_gyoto_object_8h" local="no">GyotoObject.h</includes>
+    <includes local="no">float.h</includes>
+    <includes local="no">eigen3/Eigen/Dense</includes>
+    <includedby refid="_gyoto_8h" local="no">Gyoto.h</includedby>
+    <includedby refid="_gyoto_factory_8h" local="no">GyotoFactory.h</includedby>
+    <includedby refid="_gyoto_scenery_8h" local="no">GyotoScenery.h</includedby>
+    <incdepgraph>
+      <node id="19">
+        <label>iomanip</label>
+      </node>
+      <node id="5">
+        <label>float.h</label>
+      </node>
+      <node id="12">
+        <label>GyotoUtils.h</label>
+        <link refid="_gyoto_utils_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>eigen3/Eigen/Dense</label>
+      </node>
+      <node id="10">
+        <label>string</label>
+      </node>
+      <node id="11">
+        <label>GyotoSmartPointer.h</label>
+        <link refid="_gyoto_smart_pointer_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>GyotoObject.h</label>
+        <link refid="_gyoto_object_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>stddef.h</label>
+      </node>
+      <node id="9">
+        <label>fstream</label>
+      </node>
+      <node id="23">
+        <label>GyotoRegister.h</label>
+        <link refid="_gyoto_register_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>GyotoSpectrometer.h</label>
+        <link refid="_gyoto_spectrometer_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>GyotoMetric.h</label>
+        <link refid="_gyoto_metric_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>GyotoDefs.h</label>
+        <link refid="_gyoto_defs_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>GyotoWorldline.h</label>
+        <link refid="_gyoto_worldline_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>pthread.h</label>
+      </node>
+      <node id="16">
+        <label>typeinfo</label>
+      </node>
+      <node id="2">
+        <label>GyotoFunctors.h</label>
+        <link refid="_gyoto_functors_8h"/>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+      <node id="4">
+        <label>GyotoConfig.h</label>
+        <link refid="_gyoto_config_8h"/>
+      </node>
+      <node id="21">
+        <label>sstream</label>
+      </node>
+      <node id="18">
+        <label>GyotoAstrobj.h</label>
+        <link refid="_gyoto_astrobj_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>iostream</label>
+      </node>
+      <node id="14">
+        <label>GyotoError.h</label>
+        <link refid="_gyoto_error_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>GyotoHooks.h</label>
+        <link refid="_gyoto_hooks_8h"/>
+      </node>
+      <node id="25">
+        <label>GyotoScreen.h</label>
+        <link refid="_gyoto_screen_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>GyotoConverters.h</label>
+        <link refid="_gyoto_converters_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>GyotoPhoton.h</label>
+        <link refid="_gyoto_photon_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>GyotoFactory.h</label>
+        <link refid="_gyoto_factory_8h"/>
+      </node>
+      <node id="4">
+        <label>GyotoScenery.h</label>
+        <link refid="_gyoto_scenery_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gyoto.h</label>
+        <link refid="_gyoto_8h"/>
+      </node>
+      <node id="1">
+        <label>GyotoPhoton.h</label>
+        <link refid="_gyoto_photon_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_gyoto_1_1_photon" prot="public">Gyoto::Photon</innerclass>
+    <innerclass refid="class_gyoto_1_1_photon_1_1_refined" prot="public">Gyoto::Photon::Refined</innerclass>
+    <innernamespace refid="namespace_gyoto">Gyoto</innernamespace>
+    <innernamespace refid="namespace_gyoto_1_1_astrobj">Gyoto::Astrobj</innernamespace>
+    <briefdescription>
+<para>A single light ray. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="class_gyoto_1_1_photon" kindref="compound">Gyoto::Photon</ref> is a class for ray-tracing. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>Copyright<sp/>2011-2016<sp/>Frederic<sp/>Vincent,<sp/>Thibaut<sp/>Paumard</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>Gyoto.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"></highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"></highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>Gyoto.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__GyotoPhoton_H_<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__GyotoPhoton_H_<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_gyoto_functors_8h" kindref="compound">GyotoFunctors.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Photon;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Astrobj<sp/>{<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Generic;<sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_defs_8h" kindref="compound">GyotoDefs.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_metric_8h" kindref="compound">GyotoMetric.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_screen_8h" kindref="compound">GyotoScreen.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_worldline_8h" kindref="compound">GyotoWorldline.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_object_8h" kindref="compound">GyotoObject.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;float.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;eigen3/Eigen/Dense&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="class_gyoto_1_1_photon" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_photon" kindref="compound">Gyoto::Photon</ref></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_worldline" kindref="compound">Gyoto::Worldline</ref>,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_smart_pointee" kindref="compound">Gyoto::SmartPointee</ref>,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_object" kindref="compound">Gyoto::Object</ref></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt;<ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>::<ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref>&gt;;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Data<sp/>:<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>-----</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="class_gyoto_1_1_photon_1ae29329d717e8d122feb44cfffcfa7a16" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt;Gyoto::Astrobj::Generic&gt;<sp/><ref refid="class_gyoto_1_1_photon_1ae29329d717e8d122feb44cfffcfa7a16" kindref="member">object_</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="class_gyoto_1_1_photon_1a1779ae02d461a6ba00585e13fc461c06" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_photon_1a1779ae02d461a6ba00585e13fc461c06" kindref="member">freq_obs_</ref>;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="class_gyoto_1_1_photon_1a763002d88f4ad27471a7349a05a4a156" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_photon_1a763002d88f4ad27471a7349a05a4a156" kindref="member">transmission_freqobs_</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="class_gyoto_1_1_photon_1a73d757d13a9842ec1fa8b5047b3d22de" refkind="member"><highlight class="normal"><sp/><sp/>Eigen::Matrix4d<sp/><ref refid="class_gyoto_1_1_photon_1a73d757d13a9842ec1fa8b5047b3d22de" kindref="member">transmissionMatrix_freqobs_</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="class_gyoto_1_1_photon_1aa501e3cad5474810f1578353a3e93d40" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt;Spectrometer::Generic&gt;<sp/><ref refid="class_gyoto_1_1_photon_1aa501e3cad5474810f1578353a3e93d40" kindref="member">spectro_</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="class_gyoto_1_1_photon_1a85ba9f858e337434103bc946e636b5f3" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/>*<sp/><ref refid="class_gyoto_1_1_photon_1a85ba9f858e337434103bc946e636b5f3" kindref="member">transmission_</ref>;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="class_gyoto_1_1_photon_1a62f298c3b77efcdac475e387e59ae493" refkind="member"><highlight class="normal"><sp/><sp/>int<sp/><ref refid="class_gyoto_1_1_photon_1a62f298c3b77efcdac475e387e59ae493" kindref="member">nb_cross_eqplane_</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="class_gyoto_1_1_photon_1a5f0c772b0098320c43af64aadf9b8fea" refkind="member"><highlight class="normal"><sp/><sp/>Eigen::Matrix4d<sp/>*<sp/><ref refid="class_gyoto_1_1_photon_1a5f0c772b0098320c43af64aadf9b8fea" kindref="member">transmissionMatrix_</ref>;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Constructors<sp/>-<sp/>Destructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>-------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="115" refid="class_gyoto_1_1_photon_1a53984cd69b1ee216f45cdac4741aa1f5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" kindref="member">GYOTO_OBJECT</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_object_8h_1a6806b7f836d51dbe45cdf7bd60377a40" kindref="member">GYOTO_OBJECT_THREAD_SAFETY</ref>;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_worldline_8h_1ad22d501635a94e86f28ee2adab6242c8" kindref="member">GYOTO_WORLDLINE</ref>;</highlight></codeline>
+<codeline lineno="118" refid="class_gyoto_1_1_photon_1aaf695f2200ffc13256cd3b922fc8a947" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_gyoto_1_1_photon_1aaf695f2200ffc13256cd3b922fc8a947" kindref="member">className</ref>()<sp/>const<sp/>;<sp/></highlight></codeline>
+<codeline lineno="119" refid="class_gyoto_1_1_photon_1a2f205bc55fa4a48b7b0ec1c238404af1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_gyoto_1_1_photon_1a2f205bc55fa4a48b7b0ec1c238404af1" kindref="member">className_l</ref>()<sp/>const<sp/>;<sp/></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="class_gyoto_1_1_photon_1a52ce5d50752255faceb814c457d5f59d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref>()<sp/>;<sp/></highlight></codeline>
+<codeline lineno="125" refid="class_gyoto_1_1_photon_1aab8464c684c808d530185293a7729237" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref>(const<sp/>Photon&amp;<sp/>)<sp/>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="126" refid="class_gyoto_1_1_photon_1a0adf871a25946b03888a60a90c929cd4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref>*<sp/><ref refid="class_gyoto_1_1_photon_1a0adf871a25946b03888a60a90c929cd4" kindref="member">clone</ref>()<sp/>const<sp/>;<sp/></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:<sp/><sp/></highlight></codeline>
+<codeline lineno="128" refid="class_gyoto_1_1_photon_1a9d6ac23229053cc8024eb8b90e473d4b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref>(Photon*<sp/>orig,<sp/>size_t<sp/>i0,<sp/>int<sp/>dir,<sp/>double<sp/>step_max);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="132" refid="class_gyoto_1_1_photon_1af9c15ceb6d2191083320fec5fd074ba8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref>(SmartPointer&lt;Metric::Generic&gt;<sp/>gg,<sp/>SmartPointer&lt;Astrobj::Generic&gt;<sp/>obj,<sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double*<sp/>coord)<sp/>;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="class_gyoto_1_1_photon_1a0551039145306438babd39d029d80549" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref>(SmartPointer&lt;Metric::Generic&gt;<sp/>gg,<sp/>SmartPointer&lt;Astrobj::Generic&gt;<sp/>obj,<sp/></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SmartPointer&lt;Screen&gt;<sp/>screen,<sp/>double<sp/>d_alpha,<sp/>double<sp/>d_delta);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="class_gyoto_1_1_photon_1a8bc086eb3a2b4cacb5d8a3b867c87049" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref>()<sp/>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="141" refid="class_gyoto_1_1_photon_1a60801fb72e36f237f427ec41a98b5ae1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/><ref refid="class_gyoto_1_1_photon_1a60801fb72e36f237f427ec41a98b5ae1" kindref="member">getMass</ref>()<sp/>const<sp/>;<sp/></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="class_gyoto_1_1_photon_1a2796fe3e62fb1fc72550ac85f21e577e" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_photon_1aaf16e2f2d09d697592c0bf45c14bbded" kindref="member">astrobj</ref>(SmartPointer&lt;Astrobj::Generic&gt;);</highlight></codeline>
+<codeline lineno="146" refid="class_gyoto_1_1_photon_1aaf16e2f2d09d697592c0bf45c14bbded" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt;Astrobj::Generic&gt;<sp/><ref refid="class_gyoto_1_1_photon_1aaf16e2f2d09d697592c0bf45c14bbded" kindref="member">astrobj</ref>()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/>using<sp/><ref refid="class_gyoto_1_1_worldline_1abd8a6f8f1ed365527c87a2fac504ddd2" kindref="member">Worldline::metric</ref>;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>Worldline::metric_<sp/>as<sp/>well<sp/>as<sp/>the<sp/>Astrobj<sp/>metric</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_photon_1ab644dad9fa0b46859163e6cd890a0bbf" kindref="member">metric</ref>(SmartPointer&lt;Metric::Generic&gt;);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="class_gyoto_1_1_photon_1afc6e323e7bc4483f5ba2123224c4e535" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_photon_1a9e846116a6aa41411192f935f5b87f42" kindref="member">spectrometer</ref>(SmartPointer&lt;Spectrometer::Generic&gt;<sp/>spr);</highlight></codeline>
+<codeline lineno="156" refid="class_gyoto_1_1_photon_1a9e846116a6aa41411192f935f5b87f42" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt;Spectrometer::Generic&gt;<sp/><ref refid="class_gyoto_1_1_photon_1a9e846116a6aa41411192f935f5b87f42" kindref="member">spectrometer</ref>()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="class_gyoto_1_1_photon_1aa3160ee1f5da23ae06606949142ebdda" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_photon_1a98a0afa47926a6ebef7a45e39a637a6f" kindref="member">freqObs</ref>(double);</highlight></codeline>
+<codeline lineno="161" refid="class_gyoto_1_1_photon_1a98a0afa47926a6ebef7a45e39a637a6f" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_photon_1a98a0afa47926a6ebef7a45e39a637a6f" kindref="member">freqObs</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="class_gyoto_1_1_photon_1a23c2e087f6dccbe0bcc2a311f25cbda8" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_photon_1aa14d5b1e633d9b0146ff7d1b70648d61" kindref="member">nb_cross_eqplane</ref>(int);</highlight></codeline>
+<codeline lineno="166" refid="class_gyoto_1_1_photon_1aa14d5b1e633d9b0146ff7d1b70648d61" refkind="member"><highlight class="normal"><sp/><sp/>int<sp/><ref refid="class_gyoto_1_1_photon_1aa14d5b1e633d9b0146ff7d1b70648d61" kindref="member">nb_cross_eqplane</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Mutators<sp/>/<sp/>assignment</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/>using<sp/><ref refid="class_gyoto_1_1_worldline_1ae31d27ebf8613473fb5ac5d150494786" kindref="member">Worldline::setInitialCondition</ref>;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="class_gyoto_1_1_photon_1a74423120e1eb18f232b2a71c89a022d9" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_photon_1ae31d27ebf8613473fb5ac5d150494786" kindref="member">setInitialCondition</ref>(SmartPointer&lt;Metric::Generic&gt;<sp/>gg,</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SmartPointer&lt;Astrobj::Generic&gt;<sp/>obj,</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>double<sp/>coord[8])<sp/>;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211" refid="class_gyoto_1_1_photon_1a047e747b0a4e2858043572b19dd4122a" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_photon_1ae31d27ebf8613473fb5ac5d150494786" kindref="member">setInitialCondition</ref>(SmartPointer&lt;Metric::Generic&gt;<sp/>gg,</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SmartPointer&lt;Astrobj::Generic&gt;<sp/>obj,</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>double<sp/>coord[8],</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>double<sp/>Ephi[4],</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>double<sp/>Etheta[4])<sp/>;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229" refid="class_gyoto_1_1_photon_1a9333aa492a2f5bdcd0435bde96674709" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_photon_1ae31d27ebf8613473fb5ac5d150494786" kindref="member">setInitialCondition</ref>(SmartPointer&lt;Metric::Generic&gt;<sp/>gg,</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SmartPointer&lt;Astrobj::Generic&gt;<sp/>obj,</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SmartPointer&lt;Screen&gt;<sp/>screen,</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>d_alpha,</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>d_delta);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241" refid="class_gyoto_1_1_photon_1a5f6f70601d8581ffbbe11b677b20417f" refkind="member"><highlight class="normal"><sp/><sp/>int<sp/><ref refid="class_gyoto_1_1_photon_1a5f6f70601d8581ffbbe11b677b20417f" kindref="member">hit</ref>(Astrobj::Properties<sp/>*data=NULL);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261" refid="class_gyoto_1_1_photon_1ada0cf1130b95e983a30b575a51a98c0b" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_photon_1ada0cf1130b95e983a30b575a51a98c0b" kindref="member">findMin</ref>(Functor::Double_constDoubleArray*<sp/>object,</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>t1,<sp/>double<sp/>t2,<sp/>double<sp/>&amp;tmin,</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>threshold<sp/>=<sp/>DBL_MIN)<sp/>;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278" refid="class_gyoto_1_1_photon_1ac2b9fc31ec0778eefc38c5499db9d508" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_photon_1ac2b9fc31ec0778eefc38c5499db9d508" kindref="member">findValue</ref>(Functor::Double_constDoubleArray*<sp/>object,</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>value,</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>tinside,<sp/>double<sp/>&amp;toutside)<sp/>;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>GYOTO_USE_XERCES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283" refid="class_gyoto_1_1_photon_1a7a6664a5de91b1c59ba1b57d54ba1dd9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_photon_1a7a6664a5de91b1c59ba1b57d54ba1dd9" kindref="member">setParameters</ref>(FactoryMessenger<sp/>*fmp)<sp/>;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/>static<sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt;Photon&gt;<sp/><ref refid="namespace_gyoto_1_1_astrobj_1a889583a9d40c821bd55c4191cb3201ed" kindref="member">Subcontractor</ref>(Gyoto::FactoryMessenger*);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>transmission<sp/>stuff<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="290" refid="class_gyoto_1_1_photon_1a59c3a9e29f8b2d6b2da824fabdc0bfec" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_photon_1a59c3a9e29f8b2d6b2da824fabdc0bfec" kindref="member">resetTransmission</ref>()<sp/>;</highlight></codeline>
+<codeline lineno="292" refid="class_gyoto_1_1_photon_1a475fa77dc1fb0fb0cbfc847e592e325d" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_photon_1a475fa77dc1fb0fb0cbfc847e592e325d" kindref="member">resetTransmissionMatrix</ref>();</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302" refid="class_gyoto_1_1_photon_1ada07b533a5047c410717a1cc9e4c5e2d" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_photon_1ac9e57843ef77008ab7577ab388856964" kindref="member">getTransmission</ref>(size_t<sp/>i)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312" refid="class_gyoto_1_1_photon_1a096efc6d5582d4fb73c0fbb6b4c4336d" refkind="member"><highlight class="normal"><sp/><sp/>Eigen::Matrix4d<sp/><ref refid="class_gyoto_1_1_photon_1a75d90ed7b2263467f555dda7f2a7dc1a" kindref="member">getTransmissionMatrix</ref>(size_t<sp/>i)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321" refid="class_gyoto_1_1_photon_1a70157dd0e2ca0607b4f1c74db06d9d35" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_photon_1a70157dd0e2ca0607b4f1c74db06d9d35" kindref="member">getTransmissionMax</ref>()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327" refid="class_gyoto_1_1_photon_1ac9e57843ef77008ab7577ab388856964" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/>const<sp/>*<sp/><ref refid="class_gyoto_1_1_photon_1ac9e57843ef77008ab7577ab388856964" kindref="member">getTransmission</ref>()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332" refid="class_gyoto_1_1_photon_1a75d90ed7b2263467f555dda7f2a7dc1a" refkind="member"><highlight class="normal"><sp/><sp/>Eigen::Matrix4d<sp/>const<sp/>*<sp/><ref refid="class_gyoto_1_1_photon_1a75d90ed7b2263467f555dda7f2a7dc1a" kindref="member">getTransmissionMatrix</ref>()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341" refid="class_gyoto_1_1_photon_1a90545a8f03ab57524021baf0e19a61d3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_photon_1a90545a8f03ab57524021baf0e19a61d3" kindref="member">transmit</ref>(size_t<sp/>i,<sp/>double<sp/>t);</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350" refid="class_gyoto_1_1_photon_1a380b4300fe813e6fd0a177e15e207b25" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_photon_1a90545a8f03ab57524021baf0e19a61d3" kindref="member">transmit</ref>(size_t<sp/>i,<sp/>Eigen::Matrix4d<sp/>mat);</highlight></codeline>
+<codeline lineno="351" refid="class_gyoto_1_1_photon_1a0921dcf016f6a7f497d090f82def0473" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_photon_1a0921dcf016f6a7f497d090f82def0473" kindref="member">transfer</ref>(double<sp/>*<sp/>Inu,<sp/>double<sp/>*<sp/>Qnu,<sp/>double<sp/>*<sp/>Unu,<sp/>double<sp/>*<sp/>Vnu,<sp/>Eigen::Matrix4d<sp/>*<sp/>Onu);</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="356" refid="class_gyoto_1_1_photon_1a417a533a8b8b6346b33dc21f7931f58d" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_photon_1a417a533a8b8b6346b33dc21f7931f58d" kindref="member">_allocateTransmission</ref>();</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/>void<sp/>_allocateTransmissionMatrix();</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/>class<sp/><ref refid="class_gyoto_1_1_photon_1_1_refined" kindref="compound">Refined</ref>;</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385" refid="class_gyoto_1_1_photon_1_1_refined" refkind="compound"><highlight class="normal">class<sp/><ref refid="class_gyoto_1_1_photon_1_1_refined" kindref="compound">Gyoto::Photon::Refined</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_photon" kindref="compound">Gyoto::Photon</ref><sp/>{</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="387" refid="class_gyoto_1_1_photon_1_1_refined_1ae6d721e2280030fec6db69502a597c8e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref><sp/>*<sp/><ref refid="class_gyoto_1_1_photon_1_1_refined_1ae6d721e2280030fec6db69502a597c8e" kindref="member">parent_</ref>;<sp/></highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="389" refid="class_gyoto_1_1_photon_1_1_refined_1a514b3dcf39ae037595ba9357d7f55478" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_photon_1_1_refined_1a514b3dcf39ae037595ba9357d7f55478" kindref="member">Refined</ref>(<ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref><sp/>*parent,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dir,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>step_max);</highlight></codeline>
+<codeline lineno="391" refid="class_gyoto_1_1_photon_1_1_refined_1ab1b7665a07eca7d4b4b26bfc0619191e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_photon_1_1_refined_1ab1b7665a07eca7d4b4b26bfc0619191e" kindref="member">transmit</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t);</highlight></codeline>
+<codeline lineno="393" refid="class_gyoto_1_1_photon_1_1_refined_1a0383302973704d1a358270a14e8af318" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_photon_1_1_refined_1a0383302973704d1a358270a14e8af318" kindref="member">transmit</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i,<sp/>Eigen::Matrix4d<sp/>mat);</highlight></codeline>
+<codeline lineno="395" refid="class_gyoto_1_1_photon_1_1_refined_1a0a712dfbfe906cf1e1ff4cca3d3f416f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_photon_1_1_refined_1a0a712dfbfe906cf1e1ff4cca3d3f416f" kindref="member">transfer</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<sp/>Inu,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<sp/>Qnu,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<sp/>Unu,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<sp/>Vnu,<sp/>Eigen::Matrix4d<sp/>*<sp/>Onu);</highlight></codeline>
+<codeline lineno="397"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"></highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/junichi/Gyoto/include/GyotoPhoton.h"/>
+  </compounddef>
+</doxygen>

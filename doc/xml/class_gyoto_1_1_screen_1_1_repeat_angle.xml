@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_gyoto_1_1_screen_1_1_repeat_angle" kind="class" language="C++" prot="public">
+    <compoundname>Gyoto::Screen::RepeatAngle</compoundname>
+    <basecompoundref refid="class_gyoto_1_1_screen_1_1_coord1d_set" prot="public" virt="non-virtual">Gyoto::Screen::Coord1dSet</basecompoundref>
+    <includes refid="_gyoto_screen_8h" local="no">GyotoScreen.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_screen_1_1_repeat_angle_1a3696d50b98e971fb125a83e8a6537562" prot="protected" static="no" mutable="no">
+        <type>double const</type>
+        <definition>double const Gyoto::Screen::RepeatAngle::val_</definition>
+        <argsstring></argsstring>
+        <name>val_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="803" column="20" bodyfile="/home/junichi/Gyoto/include/GyotoScreen.h" bodystart="803" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_screen_1_1_repeat_angle_1abcae28f0ff3a46b72d9d00ea3f7f8a34" prot="protected" static="no" mutable="no">
+        <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref> const</type>
+        <definition>size_t const Gyoto::Screen::RepeatAngle::sz_</definition>
+        <argsstring></argsstring>
+        <name>sz_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="804" column="20" bodyfile="/home/junichi/Gyoto/include/GyotoScreen.h" bodystart="804" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_screen_1_1_repeat_angle_1a83958657b0b03646bfa9a2c43943303f" prot="protected" static="no" mutable="no">
+        <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+        <definition>size_t Gyoto::Screen::RepeatAngle::i_</definition>
+        <argsstring></argsstring>
+        <name>i_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="805" column="14" bodyfile="/home/junichi/Gyoto/include/GyotoScreen.h" bodystart="805" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gyoto_1_1_screen_1_1_repeat_angle_1a930452e0364e52b131d61d3ffac4af31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Screen::RepeatAngle::RepeatAngle</definition>
+        <argsstring>(double val, size_t sz)</argsstring>
+        <name>RepeatAngle</name>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="807" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_screen_1_1_repeat_angle_1a92c95e94049645c11588af8ef2c61ce8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gyoto::Screen::RepeatAngle::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <reimplements refid="class_gyoto_1_1_screen_1_1_coord1d_set_1a2bf82eac3458d79af3f21ebf005b87eb">begin</reimplements>
+        <briefdescription>
+<para>Reset specifier to point to the first value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="808" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_screen_1_1_repeat_angle_1af3171d1131f881b88381fdd7572df1b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Gyoto::Screen::RepeatAngle::valid</definition>
+        <argsstring>()</argsstring>
+        <name>valid</name>
+        <reimplements refid="class_gyoto_1_1_screen_1_1_coord1d_set_1a7d823697b2cbf7ee12a7c18e50ca0fdc">valid</reimplements>
+        <briefdescription>
+<para>True if pointing to something, false if end has been reached. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="809" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_screen_1_1_repeat_angle_1ab3bd823340921d0ac1f7ad7e05e69cd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+        <definition>size_t Gyoto::Screen::RepeatAngle::size</definition>
+        <argsstring>()</argsstring>
+        <name>size</name>
+        <reimplements refid="class_gyoto_1_1_screen_1_1_coord1d_set_1a7b1c70cecb3c9f3a09713f66a5dc6dbf">size</reimplements>
+        <briefdescription>
+<para>Number of values in this container. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="810" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_screen_1_1_repeat_angle_1ac52d2c935093592d80b6c862c57bea83" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_gyoto_1_1_screen_1_1_coord1d_set" kindref="compound">Coord1dSet</ref> &amp;</type>
+        <definition>Coord1dSet&amp; Gyoto::Screen::RepeatAngle::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <reimplements refid="class_gyoto_1_1_screen_1_1_coord1d_set_1a4673770278cc88ccfd96b4330c87af73">operator++</reimplements>
+        <briefdescription>
+<para>Increment iterator (point to next value) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="811" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_screen_1_1_repeat_angle_1a3be0dc75c13772eee143a575fe184cd7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double Gyoto::Screen::RepeatAngle::angle</definition>
+        <argsstring>() const</argsstring>
+        <name>angle</name>
+        <reimplements refid="class_gyoto_1_1_screen_1_1_coord1d_set_1a9b3a6aef00f09e8f918616f75ba86089">angle</reimplements>
+        <briefdescription>
+<para>Get double value currently pointed to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="812" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_screen_1_1_repeat_angle_1a75ad2c681712dea72634e4eb9bf75d8b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+        <definition>virtual size_t Gyoto::Screen::RepeatAngle::index</definition>
+        <argsstring>() const</argsstring>
+        <name>index</name>
+        <reimplements refid="class_gyoto_1_1_screen_1_1_coord1d_set_1a4788421884ca4bbc0914910956b7f19a">index</reimplements>
+        <briefdescription>
+<para>Get index of value currently pointed to. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Starts at 0 and is implemented each time operator++ is called. Depending on the implementation, this may be a real index or computed on demand. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="813" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_screen_1_1_coord1d_set_1afa9b992fd12a2229ed6144184a6806df" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+        <definition>virtual size_t Gyoto::Screen::Coord1dSet::operator*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator*</name>
+        <reimplementedby refid="class_gyoto_1_1_screen_1_1_range_1a5535682dfa2c1eb3ad3ed120ce3d47b4">operator*</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_screen_1_1_indices_1af65883549a5f3faf4abea99ddd457e47">operator*</reimplementedby>
+        <briefdescription>
+<para>Get size_t value currently pointed to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="662" column="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_screen_1_1_coord1d_set_1a1726f8ee2c39e25b3476b9e8cc257e1a" prot="public" static="no" mutable="no">
+        <type>const <ref refid="class_gyoto_1_1_screen_1a3d039508310efe3dcbf50204a3619b2f" kindref="member">CoordType_e</ref></type>
+        <definition>const CoordType_e Gyoto::Screen::Coord1dSet::kind</definition>
+        <argsstring></argsstring>
+        <name>kind</name>
+        <briefdescription>
+<para>Whether this specifier represents angles or pixels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="649" column="25" bodyfile="/home/junichi/Gyoto/include/GyotoScreen.h" bodystart="649" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>1D specifier for an angle that is repeated. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Gyoto::Screen::RepeatAngle</label>
+        <link refid="class_gyoto_1_1_screen_1_1_repeat_angle"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gyoto::Screen::Coord1dSet</label>
+        <link refid="class_gyoto_1_1_screen_1_1_coord1d_set"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Gyoto::Screen::RepeatAngle</label>
+        <link refid="class_gyoto_1_1_screen_1_1_repeat_angle"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gyoto::Screen::Coord1dSet</label>
+        <link refid="class_gyoto_1_1_screen_1_1_coord1d_set"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="801" column="5" bodyfile="/home/junichi/Gyoto/include/GyotoScreen.h" bodystart="801" bodyend="814"/>
+    <listofallmembers>
+      <member refid="class_gyoto_1_1_screen_1_1_repeat_angle_1a3be0dc75c13772eee143a575fe184cd7" prot="public" virt="virtual"><scope>Gyoto::Screen::RepeatAngle</scope><name>angle</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_repeat_angle_1a92c95e94049645c11588af8ef2c61ce8" prot="public" virt="virtual"><scope>Gyoto::Screen::RepeatAngle</scope><name>begin</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_coord1d_set_1aba29ec15bbbce1d87adb45c95f038277" prot="public" virt="non-virtual"><scope>Gyoto::Screen::RepeatAngle</scope><name>Coord1dSet</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_repeat_angle_1a83958657b0b03646bfa9a2c43943303f" prot="protected" virt="non-virtual"><scope>Gyoto::Screen::RepeatAngle</scope><name>i_</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_repeat_angle_1a75ad2c681712dea72634e4eb9bf75d8b" prot="public" virt="virtual"><scope>Gyoto::Screen::RepeatAngle</scope><name>index</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_coord1d_set_1a1726f8ee2c39e25b3476b9e8cc257e1a" prot="public" virt="non-virtual"><scope>Gyoto::Screen::RepeatAngle</scope><name>kind</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_coord1d_set_1afa9b992fd12a2229ed6144184a6806df" prot="public" virt="virtual"><scope>Gyoto::Screen::RepeatAngle</scope><name>operator*</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_repeat_angle_1ac52d2c935093592d80b6c862c57bea83" prot="public" virt="virtual"><scope>Gyoto::Screen::RepeatAngle</scope><name>operator++</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_repeat_angle_1a930452e0364e52b131d61d3ffac4af31" prot="public" virt="non-virtual"><scope>Gyoto::Screen::RepeatAngle</scope><name>RepeatAngle</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_repeat_angle_1ab3bd823340921d0ac1f7ad7e05e69cd2" prot="public" virt="virtual"><scope>Gyoto::Screen::RepeatAngle</scope><name>size</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_repeat_angle_1abcae28f0ff3a46b72d9d00ea3f7f8a34" prot="protected" virt="non-virtual"><scope>Gyoto::Screen::RepeatAngle</scope><name>sz_</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_repeat_angle_1a3696d50b98e971fb125a83e8a6537562" prot="protected" virt="non-virtual"><scope>Gyoto::Screen::RepeatAngle</scope><name>val_</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_repeat_angle_1af3171d1131f881b88381fdd7572df1b6" prot="public" virt="virtual"><scope>Gyoto::Screen::RepeatAngle</scope><name>valid</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_coord1d_set_1aec39e7f4e09beb31e586a8c1e36a76fd" prot="public" virt="virtual"><scope>Gyoto::Screen::RepeatAngle</scope><name>~Coord1dSet</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

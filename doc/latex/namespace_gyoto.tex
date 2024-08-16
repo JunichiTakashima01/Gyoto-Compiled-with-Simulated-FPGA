@@ -1,0 +1,409 @@
+\hypertarget{namespace_gyoto}{}\doxysection{Gyoto Namespace Reference}
+\label{namespace_gyoto}\index{Gyoto@{Gyoto}}
+
+
+Namespace for the \mbox{\hyperlink{namespace_gyoto}{Gyoto}} library.  
+
+
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}}
+\begin{DoxyCompactList}\small\item\em Access to astronomical objects. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_functor}{Functor}}
+\begin{DoxyCompactList}\small\item\em Classes with an operator() method. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_hook}{Hook}}
+\begin{DoxyCompactList}\small\item\em Listeners attach to Tellers. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}}
+\begin{DoxyCompactList}\small\item\em Access to metrics. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}}
+\begin{DoxyCompactList}\small\item\em Helpers for the classes deriving from \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base}{Gyoto\+::\+Python\+::\+Base}}. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_register}{Register}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_gyoto}{Gyoto}} registers. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer}{Spectrometer}}
+\begin{DoxyCompactList}\small\item\em Access to spectrometers. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}} of a simple object (e.\+g. a \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_star}{Gyoto\+::\+Astrobj\+::\+Star}}) \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_units}{Units}}
+\begin{DoxyCompactList}\small\item\em Units-\/related classes and functions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_gyoto_1_1_error}{Error}}
+\begin{DoxyCompactList}\small\item\em Class for thowing exceptions. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}}
+\begin{DoxyCompactList}\small\item\em XML input/output. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}} / \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}{Smart\+Pointee\+::\+Subcontractor\+\_\+t}} interface. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_fits_r_w}{Fits\+RW}}
+\item 
+class \mbox{\hyperlink{class_gyoto_1_1_grid_data2_d}{Grid\+Data2D}}
+\begin{DoxyCompactList}\small\item\em Class for reading data stored in a 2D grid. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_object}{Object}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_gyoto_1_1_object}{Object}} with properties. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_photon}{Photon}}
+\begin{DoxyCompactList}\small\item\em A null geodesic transporting light. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}
+\begin{DoxyCompactList}\small\item\em Pointers performing reference counting. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} that can be set and got using standard methods. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_scenery}{Scenery}}
+\begin{DoxyCompactList}\small\item\em Ray-\/tracing scene. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}}
+\begin{DoxyCompactList}\small\item\em The camera with which the \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}} is observed. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_smart_pointee}{Smart\+Pointee}}
+\begin{DoxyCompactList}\small\item\em Can be pointed to by a \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_value}{Value}}
+\begin{DoxyCompactList}\small\item\em Container for the value of a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_w_i_p}{WIP}}
+\begin{DoxyCompactList}\small\item\em Base class for work in progress. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_worldline}{Worldline}}
+\begin{DoxyCompactList}\small\item\em Timelike or null geodesics. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace_gyoto_a57441caf7075eb0276b047f4d192f22c}\label{namespace_gyoto_a57441caf7075eb0276b047f4d192f22c}} 
+typedef std\+::vector$<$ double $>$ {\bfseries state\+\_\+t}
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Observable quantities}\par
+{\em Individual quantities are represented as a variable of this type. A combination of quantities is an ored list of Quantity\+\_\+t, e.\+g.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_gyoto_defs_8h_a23168295344ed4f17219cb21b97841bc}{GYOTO\_QUANTITY\_INTENSITY}} | \mbox{\hyperlink{_gyoto_defs_8h_a28febae2188fc75a2a1625b5a3e227b0}{GYOTO\_QUANTITY\_EMISSIONTIME}}}
+
+\end{DoxyCode}
+
+
+To check wheter a given quantity is listed in a Quantity\+\_\+t variable quant\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (quant \& GYOTOQUANTITY\_EMISSION) ...}
+
+\end{DoxyCode}
+
+
+List of all possible Quantity\+\_\+t individual values and the corresponding string (see \mbox{\hyperlink{class_gyoto_1_1_scenery}{Gyoto\+::\+Scenery}}) with corresponding XML name\+: }\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace_gyoto_a009cbd7f025ce417907a5344a15a1463}\label{namespace_gyoto_a009cbd7f025ce417907a5344a15a1463}} 
+typedef unsigned int \mbox{\hyperlink{namespace_gyoto_a009cbd7f025ce417907a5344a15a1463}{Quantity\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Type for observabke quantities. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Gyoto messages}\par
+{\em Controling which messages are shown to the user
+
+The user should be able to choose which messages are shown to her. In \mbox{\hyperlink{namespace_gyoto}{Gyoto}}, this is determined by a user-\/settable verbosity level (see \mbox{\hyperlink{namespace_gyoto_ad49d57c2e3b086b864b2ba48ac06e68a}{Gyoto\+::verbose()}}) and a user-\/settable debug mode (see \mbox{\hyperlink{namespace_gyoto_afea7d91793e2e0c2295d8f65f9c454f8}{Goyto\+::debug()}}).
+
+The following macros define various debug and verbosity level and provide short-\/cuts to display formatted messages only at a given verbosity level or in debug mode. }\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace_gyoto_a92c5f4f1cf3a8d67fd199331af40ac39}\label{namespace_gyoto_a92c5f4f1cf3a8d67fd199331af40ac39}} 
+typedef unsigned int \mbox{\hyperlink{namespace_gyoto_a92c5f4f1cf3a8d67fd199331af40ac39}{Verbosity\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Type for verbosity levels. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Coordinate system kind}\par
+{\em GYOTO\+\_\+\+COORDKIND\+\_\+\+CARTESIAN or GYOTO\+\_\+\+COORDKIND\+\_\+\+SPHERICAL
+
+Every \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Gyoto\+::\+Metric}} has a coordinate system kind. It can be used by functions which need to express coordinates always in spherical or always in Cartesian form, with trivial conversion between the two. }\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace_gyoto_a5ffc549cbcfb3cb8f1307e130e1482c9}\label{namespace_gyoto_a5ffc549cbcfb3cb8f1307e130e1482c9}} 
+typedef unsigned int \mbox{\hyperlink{namespace_gyoto_a5ffc549cbcfb3cb8f1307e130e1482c9}{Coord\+Kind\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Type for coordinate system kinds. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_gyoto_aa869193fe294f3badb84af224a83f3d8}{throw\+Error}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Throw a \mbox{\hyperlink{class_gyoto_1_1_error}{Gyoto\+::\+Error}}. \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{namespace_gyoto_a56de702e8700e13df208c9fb2d1d7203}{load\+Plugin}} (char const $\ast$const plugname, int nofail=0)
+\begin{DoxyCompactList}\small\item\em Load a plugin by name. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_gyoto_af73e539074f9bb44e80e5f8cb625979c}{have\+Plugin}} (std\+::string plugname)
+\begin{DoxyCompactList}\small\item\em Check whether a given plug-\/in has already been loaded. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_gyoto_a2855e9faa09ea310c38d7decf76c814a}{require\+Plugin}} (std\+::string plugname, int nofail=0)
+\begin{DoxyCompactList}\small\item\em Load a plugin by name, only if not loaded yet. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_gyoto_afea7d91793e2e0c2295d8f65f9c454f8}{debug}} (int mode)
+\begin{DoxyCompactList}\small\item\em Set debug mode. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespace_gyoto_a9d1bfee5ca60b39454ea45ecf8681fb3}{debug}} ()
+\begin{DoxyCompactList}\small\item\em Get debug mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_gyoto_ad49d57c2e3b086b864b2ba48ac06e68a}{verbose}} (int mode)
+\begin{DoxyCompactList}\small\item\em Set verbosity level. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespace_gyoto_a58e2cdf35ea2416f47e6984e8df8e141}{verbose}} ()
+\begin{DoxyCompactList}\small\item\em Get verbosity level. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_gyoto_a8e7339cd5c681172bd38ce3986f8225d}{convert}} (double $\ast$const x, const \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{std\+::size\+\_\+t}} nelem, const double mass\+\_\+sun, const double distance\+\_\+kpc, const std\+::string unit)
+\begin{DoxyCompactList}\small\item\em Convert lengths (deprecated) \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{namespace_gyoto_aa04c060e95a1f7e98280d5ee69323aab}{atof}} (const char $\ast$str)
+\begin{DoxyCompactList}\small\item\em Interpret C string as double. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_gyoto_aeafa1a5cc64ebccb9e4e8a2dd465b7d4}{help}} (std\+::string class\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Print help on class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_aaae2a1ecfc01007e161f8ea6b52bdf31}\label{namespace_gyoto_aaae2a1ecfc01007e161f8ea6b52bdf31}} 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{namespace_gyoto_aaae2a1ecfc01007e161f8ea6b52bdf31}{split}} (std\+::string const \&src, std\+::string const \&delim)
+\begin{DoxyCompactList}\small\item\em Split string. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{namespace_gyoto_a472dfd9f9d75418d3f76fe6cba80a041}{bessi0}} (double xx)
+\begin{DoxyCompactList}\small\item\em Bessel function computation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_a7954d841393865cf430915e02677fab2}\label{namespace_gyoto_a7954d841393865cf430915e02677fab2}} 
+double \mbox{\hyperlink{namespace_gyoto_a7954d841393865cf430915e02677fab2}{bessi1}} (double xx)
+\begin{DoxyCompactList}\small\item\em Modified Bessel function I\textsubscript{1} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_a777a2172c036b512aac389cfd04ee79c}\label{namespace_gyoto_a777a2172c036b512aac389cfd04ee79c}} 
+double \mbox{\hyperlink{namespace_gyoto_a777a2172c036b512aac389cfd04ee79c}{bessk0}} (double xx)
+\begin{DoxyCompactList}\small\item\em Modified Bessel function K\textsubscript{0} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_a436396b766b4bc64f056408ed0e16a2d}\label{namespace_gyoto_a436396b766b4bc64f056408ed0e16a2d}} 
+double \mbox{\hyperlink{namespace_gyoto_a436396b766b4bc64f056408ed0e16a2d}{bessk1}} (double xx)
+\begin{DoxyCompactList}\small\item\em Modified Bessel function K\textsubscript{1} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_aa6b5c805899e32ce1344a75743c66e2a}\label{namespace_gyoto_aa6b5c805899e32ce1344a75743c66e2a}} 
+double \mbox{\hyperlink{namespace_gyoto_aa6b5c805899e32ce1344a75743c66e2a}{bessk}} (int nn, double xx)
+\begin{DoxyCompactList}\small\item\em Modified Bessel function. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_a2d6e2d6901ac3aa654b4e50fcaa54bc0}\label{namespace_gyoto_a2d6e2d6901ac3aa654b4e50fcaa54bc0}} 
+double \mbox{\hyperlink{namespace_gyoto_a2d6e2d6901ac3aa654b4e50fcaa54bc0}{hypergeom}} (double kappa\+Index, double thetae)
+\begin{DoxyCompactList}\small\item\em Gauss hypergeometric 2F1 term for kappa-\/distribution synchrotron. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_aa846a4ba707e88e5f4b71a0c4a2cc885}\label{namespace_gyoto_aa846a4ba707e88e5f4b71a0c4a2cc885}} 
+void \mbox{\hyperlink{namespace_gyoto_aa846a4ba707e88e5f4b71a0c4a2cc885}{cartesian\+To\+Spherical}} (double const cpos\mbox{[}3\mbox{]}, double spos\mbox{[}3\mbox{]})
+\begin{DoxyCompactList}\small\item\em Tranform from Cartesian 3-\/position to spherical 3-\/position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_a2f73866e3a2dea6955df5e106394347a}\label{namespace_gyoto_a2f73866e3a2dea6955df5e106394347a}} 
+void \mbox{\hyperlink{namespace_gyoto_a2f73866e3a2dea6955df5e106394347a}{spherical\+To\+Cartesian}} (double const spos\mbox{[}3\mbox{]}, double cpos\mbox{[}3\mbox{]})
+\begin{DoxyCompactList}\small\item\em Tranform from spherical 3-\/position to Cartesian 3-\/position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_gyoto_a1850657d69da90643b3da1243354eed7}{matrix4\+Invert}} (double ARGOUT\+\_\+\+ARRAY2\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, double const IN\+\_\+\+ARRAY2\mbox{[}4\mbox{]}\mbox{[}4\mbox{]})
+\begin{DoxyCompactList}\small\item\em Invert 4x4 matrix. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_gyoto_a57b7bb7171ade76737ee138a88f98602}{matrix4\+Circular\+Invert}} (double ARGOUT\+\_\+\+ARRAY2\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, double const IN\+\_\+\+ARRAY2\mbox{[}4\mbox{]}\mbox{[}4\mbox{]})
+\begin{DoxyCompactList}\small\item\em Invert 4x4 circular spacetime metric. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Namespace for the \mbox{\hyperlink{namespace_gyoto}{Gyoto}} library. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_gyoto_aa04c060e95a1f7e98280d5ee69323aab}\label{namespace_gyoto_aa04c060e95a1f7e98280d5ee69323aab}} 
+\index{Gyoto@{Gyoto}!atof@{atof}}
+\index{atof@{atof}!Gyoto@{Gyoto}}
+\doxysubsubsection{\texorpdfstring{atof()}{atof()}}
+{\footnotesize\ttfamily double Gyoto\+::atof (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+Interpret C string as double. 
+
+Wrapper around \mbox{\hyperlink{namespace_gyoto_aa04c060e95a1f7e98280d5ee69323aab}{std\+::atof()}} that also interprets DBL\+\_\+\+MIN, DBL\+\_\+\+MAX, -\/DBL\+\_\+\+MIN and -\/DBL\+\_\+\+MAX.
+
+If str starts with \char`\"{}(-\/)\+DBL\+\_\+\+M\char`\"{} and is not one of the four special values, then an error is thrown.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em str} & C string to interpret \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double valu represented by str. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_gyoto_a472dfd9f9d75418d3f76fe6cba80a041}\label{namespace_gyoto_a472dfd9f9d75418d3f76fe6cba80a041}} 
+\index{Gyoto@{Gyoto}!bessi0@{bessi0}}
+\index{bessi0@{bessi0}!Gyoto@{Gyoto}}
+\doxysubsubsection{\texorpdfstring{bessi0()}{bessi0()}}
+{\footnotesize\ttfamily double Gyoto\+::bessi0 (\begin{DoxyParamCaption}\item[{double}]{xx }\end{DoxyParamCaption})}
+
+
+
+Bessel function computation. 
+
+Modified Bessel function I\textsubscript{0} \mbox{\Hypertarget{namespace_gyoto_a8e7339cd5c681172bd38ce3986f8225d}\label{namespace_gyoto_a8e7339cd5c681172bd38ce3986f8225d}} 
+\index{Gyoto@{Gyoto}!convert@{convert}}
+\index{convert@{convert}!Gyoto@{Gyoto}}
+\doxysubsubsection{\texorpdfstring{convert()}{convert()}}
+{\footnotesize\ttfamily void Gyoto\+::convert (\begin{DoxyParamCaption}\item[{double $\ast$const}]{x,  }\item[{const \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{std\+::size\+\_\+t}}}]{nelem,  }\item[{const double}]{mass\+\_\+sun,  }\item[{const double}]{distance\+\_\+kpc,  }\item[{const std\+::string}]{unit }\end{DoxyParamCaption})}
+
+
+
+Convert lengths (deprecated) 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000001}{Deprecated}}]Will be removed once it is not used anymore in \mbox{\hyperlink{namespace_gyoto}{Gyoto}} per se. Prefer \mbox{\hyperlink{namespace_gyoto_1_1_units}{Gyoto\+::\+Units}} framework.\end{DoxyRefDesc}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em x} & Lengths to convert, in geometrical units on input, in specified unit on output. \\
+\hline
+\mbox{\texttt{ in}}  & {\em nelem} & Size of x array. \\
+\hline
+\mbox{\texttt{ in}}  & {\em mass\+\_\+sun} & Black-\/hole mass in Solar masses. \\
+\hline
+\mbox{\texttt{ in}}  & {\em distance\+\_\+kpc} & Distance from observer in kiloparsecs. \\
+\hline
+\mbox{\texttt{ in}}  & {\em unit} & One of \char`\"{}geometrical\char`\"{}, \char`\"{}m\char`\"{}, \char`\"{}km\char`\"{}, \char`\"{}sun radius\char`\"{}, \char`\"{}rad\char`\"{}, \char`\"{}degree\char`\"{}, \char`\"{}arcmin\char`\"{}, \char`\"{}arcsec\char`\"{}, \char`\"{}mas\char`\"{}, \char`\"{}uas\char`\"{}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_gyoto_a9d1bfee5ca60b39454ea45ecf8681fb3}\label{namespace_gyoto_a9d1bfee5ca60b39454ea45ecf8681fb3}} 
+\index{Gyoto@{Gyoto}!debug@{debug}}
+\index{debug@{debug}!Gyoto@{Gyoto}}
+\doxysubsubsection{\texorpdfstring{debug()}{debug()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Gyoto\+::debug (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get debug mode. 
+
+\begin{DoxyReturn}{Returns}
+$>$=1 if debug mode is on, else 0. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_gyoto_afea7d91793e2e0c2295d8f65f9c454f8}\label{namespace_gyoto_afea7d91793e2e0c2295d8f65f9c454f8}} 
+\index{Gyoto@{Gyoto}!debug@{debug}}
+\index{debug@{debug}!Gyoto@{Gyoto}}
+\doxysubsubsection{\texorpdfstring{debug()}{debug()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Gyoto\+::debug (\begin{DoxyParamCaption}\item[{int}]{mode }\end{DoxyParamCaption})}
+
+
+
+Set debug mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & 1 to turn on debug mode, 0 to turn it off. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_gyoto_af73e539074f9bb44e80e5f8cb625979c}\label{namespace_gyoto_af73e539074f9bb44e80e5f8cb625979c}} 
+\index{Gyoto@{Gyoto}!havePlugin@{havePlugin}}
+\index{havePlugin@{havePlugin}!Gyoto@{Gyoto}}
+\doxysubsubsection{\texorpdfstring{havePlugin()}{havePlugin()}}
+{\footnotesize\ttfamily bool Gyoto\+::have\+Plugin (\begin{DoxyParamCaption}\item[{std\+::string}]{plugname }\end{DoxyParamCaption})}
+
+
+
+Check whether a given plug-\/in has already been loaded. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em plugname} & std\+::string Plug-\/in name. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_gyoto_aeafa1a5cc64ebccb9e4e8a2dd465b7d4}\label{namespace_gyoto_aeafa1a5cc64ebccb9e4e8a2dd465b7d4}} 
+\index{Gyoto@{Gyoto}!help@{help}}
+\index{help@{help}!Gyoto@{Gyoto}}
+\doxysubsubsection{\texorpdfstring{help()}{help()}}
+{\footnotesize\ttfamily void Gyoto\+::help (\begin{DoxyParamCaption}\item[{std\+::string}]{class\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Print help on class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em class\+\_\+name} & e.\+g. \char`\"{}\+Gyoto\+::\+Screen\char`\"{}, \char`\"{}\+Gyoto\+::\+Astrobj\+::\+Torus\char`\"{}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_gyoto_a56de702e8700e13df208c9fb2d1d7203}\label{namespace_gyoto_a56de702e8700e13df208c9fb2d1d7203}} 
+\index{Gyoto@{Gyoto}!loadPlugin@{loadPlugin}}
+\index{loadPlugin@{loadPlugin}!Gyoto@{Gyoto}}
+\doxysubsubsection{\texorpdfstring{loadPlugin()}{loadPlugin()}}
+{\footnotesize\ttfamily void$\ast$ Gyoto\+::load\+Plugin (\begin{DoxyParamCaption}\item[{char const $\ast$const}]{plugname,  }\item[{int}]{nofail = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Load a plugin by name. 
+
+Uses dlopen to load the file libgyoto-\/$<$plugname$>$.so, looks for the function \+\_\+\+\_\+\+Gyoto$<$plugname$>$Init inside it and run it. Plug-\/ins must be located in the runtime link search path, or in GYOTO\+\_\+\+PKGLIBDIR, or in GYOTO\+\_\+\+PKGLIBDIR/\+GYOTO\+\_\+\+SOVERS/.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em plugname} & C string Plug-\/in name.\\
+\hline
+\mbox{\texttt{ in}}  & {\em nofail} & int Unless nofail evals to true, the inability to find a plug-\/in or to run the initialization function inside it throws an \mbox{\hyperlink{class_gyoto_1_1_error}{Gyoto\+::\+Error}}. If nofail is 2 or more, such conditions are silently ignored. If nofail is one, those conditions trigger a warning.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void$\ast$ handle to the dlopen\textquotesingle{}ed plug-\/in. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_gyoto_a57b7bb7171ade76737ee138a88f98602}\label{namespace_gyoto_a57b7bb7171ade76737ee138a88f98602}} 
+\index{Gyoto@{Gyoto}!matrix4CircularInvert@{matrix4CircularInvert}}
+\index{matrix4CircularInvert@{matrix4CircularInvert}!Gyoto@{Gyoto}}
+\doxysubsubsection{\texorpdfstring{matrix4CircularInvert()}{matrix4CircularInvert()}}
+{\footnotesize\ttfamily void Gyoto\+::matrix4\+Circular\+Invert (\begin{DoxyParamCaption}\item[{double}]{ARGOUT\+\_\+\+ARRAY2\mbox{[}4\mbox{]}\mbox{[}4\mbox{]},  }\item[{double const}]{IN\+\_\+\+ARRAY2\mbox{[}4\mbox{]}\mbox{[}4\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Invert 4x4 circular spacetime metric. 
+
+A circular spacetime metric (in the right coordinate system)
+\begin{DoxyItemize}
+\item is symmetrical (like all metric matrices);
+\item has only 6 non-\/zero element\+: the diagonal and the corners.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em IN\+\_\+\+ARRAY2} & the 4×4 matrix to invert \\
+\hline
+\mbox{\texttt{ out}}  & {\em ARGOUT\+\_\+\+ARRAY2} & the invert matrix of IN\+\_\+\+ARRAY2 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_gyoto_a1850657d69da90643b3da1243354eed7}\label{namespace_gyoto_a1850657d69da90643b3da1243354eed7}} 
+\index{Gyoto@{Gyoto}!matrix4Invert@{matrix4Invert}}
+\index{matrix4Invert@{matrix4Invert}!Gyoto@{Gyoto}}
+\doxysubsubsection{\texorpdfstring{matrix4Invert()}{matrix4Invert()}}
+{\footnotesize\ttfamily void Gyoto\+::matrix4\+Invert (\begin{DoxyParamCaption}\item[{double}]{ARGOUT\+\_\+\+ARRAY2\mbox{[}4\mbox{]}\mbox{[}4\mbox{]},  }\item[{double const}]{IN\+\_\+\+ARRAY2\mbox{[}4\mbox{]}\mbox{[}4\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Invert 4x4 matrix. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em IN\+\_\+\+ARRAY2} & the 4×4 matrix to invert \\
+\hline
+\mbox{\texttt{ out}}  & {\em ARGOUT\+\_\+\+ARRAY2} & the invert matrix of IN\+\_\+\+ARRAY2 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_gyoto_a2855e9faa09ea310c38d7decf76c814a}\label{namespace_gyoto_a2855e9faa09ea310c38d7decf76c814a}} 
+\index{Gyoto@{Gyoto}!requirePlugin@{requirePlugin}}
+\index{requirePlugin@{requirePlugin}!Gyoto@{Gyoto}}
+\doxysubsubsection{\texorpdfstring{requirePlugin()}{requirePlugin()}}
+{\footnotesize\ttfamily void Gyoto\+::require\+Plugin (\begin{DoxyParamCaption}\item[{std\+::string}]{plugname,  }\item[{int}]{nofail = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Load a plugin by name, only if not loaded yet. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em plugname} & std\+::string Plug-\/in name.\\
+\hline
+\mbox{\texttt{ in}}  & {\em nofail} & int Unless nofail evals to true, the inability to find a plug-\/in or to run the initialization function inside it throws an \mbox{\hyperlink{class_gyoto_1_1_error}{Gyoto\+::\+Error}}. If nofail is 2 or more, such conditions are silently ignored. If nofail is one, those conditions trigger a warning. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_gyoto_aa869193fe294f3badb84af224a83f3d8}\label{namespace_gyoto_aa869193fe294f3badb84af224a83f3d8}} 
+\index{Gyoto@{Gyoto}!throwError@{throwError}}
+\index{throwError@{throwError}!Gyoto@{Gyoto}}
+\doxysubsubsection{\texorpdfstring{throwError()}{throwError()}}
+{\footnotesize\ttfamily void Gyoto\+::throw\+Error (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
+
+
+Throw a \mbox{\hyperlink{class_gyoto_1_1_error}{Gyoto\+::\+Error}}. 
+
+Most code should use the GYOTO\+\_\+\+ERROR macro instead \mbox{\Hypertarget{namespace_gyoto_a58e2cdf35ea2416f47e6984e8df8e141}\label{namespace_gyoto_a58e2cdf35ea2416f47e6984e8df8e141}} 
+\index{Gyoto@{Gyoto}!verbose@{verbose}}
+\index{verbose@{verbose}!Gyoto@{Gyoto}}
+\doxysubsubsection{\texorpdfstring{verbose()}{verbose()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Gyoto\+::verbose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get verbosity level. 
+
+See \mbox{\hyperlink{namespace_gyoto_ad49d57c2e3b086b864b2ba48ac06e68a}{verbose(int mode)}}. \mbox{\Hypertarget{namespace_gyoto_ad49d57c2e3b086b864b2ba48ac06e68a}\label{namespace_gyoto_ad49d57c2e3b086b864b2ba48ac06e68a}} 
+\index{Gyoto@{Gyoto}!verbose@{verbose}}
+\index{verbose@{verbose}!Gyoto@{Gyoto}}
+\doxysubsubsection{\texorpdfstring{verbose()}{verbose()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Gyoto\+::verbose (\begin{DoxyParamCaption}\item[{int}]{mode }\end{DoxyParamCaption})}
+
+
+
+Set verbosity level. 
+
+See standard verbosity levels defined in \mbox{\hyperlink{_gyoto_defs_8h}{Gyoto\+Defs.\+h}}\+:
+
+
+\begin{DoxyItemize}
+\item GYOTO\+\_\+\+DEFAULT\+\_\+\+DEBUG\+\_\+\+MODE
+\item GYOTO\+\_\+\+QUIET\+\_\+\+VERBOSITY
+\item GYOTO\+\_\+\+SEVERE\+\_\+\+VERBOSITY
+\item GYOTO\+\_\+\+WARNING\+\_\+\+VERBOSITY
+\item GYOTO\+\_\+\+DEFAULT\+\_\+\+VERBOSITY
+\item GYOTO\+\_\+\+INFO\+\_\+\+VERBOSITY
+\item GYOTO\+\_\+\+DEBUG\+\_\+\+VERBOSITY 
+\end{DoxyItemize}

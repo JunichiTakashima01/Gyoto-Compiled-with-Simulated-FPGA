@@ -1,0 +1,43 @@
+\hypertarget{yorick_plugin_page_yoprerec_sec}{}\doxysection{Prerequisites}\label{yorick_plugin_page_yoprerec_sec}
+\hypertarget{yorick_plugin_page_yo_sec}{}\doxysubsection{Yorick}\label{yorick_plugin_page_yo_sec}
+For direct access to \mbox{\hyperlink{namespace_gyoto}{Gyoto}}, only Yorick ($>$=2.\+2) is required. Yorick comes precompiled with many distributions of Linux and is present in the Macports. You can also find source code at \href{https://github.com/dhmunro/yorick}{\texttt{ https\+://github.\+com/dhmunro/yorick}}
+
+For the graphical user interface Gyotoy, you\textquotesingle{}ll need a few additional pieces. First of all, I seriously doubt it will run under MS Windows, but please report any news on that front.\hypertarget{yorick_plugin_page_yutils_sec}{}\doxysubsection{Yutils}\label{yorick_plugin_page_yutils_sec}
+A collection of utilities for Yorick, distributed as yorick-\/yutils in many Linux distributions. Actually, only pyk.\+i is used in Gyotoy (so far), and as of writing, the CVS version is required.
+
+Either get yutils $>$ 1.\+4.\+0 from e.\+g. \href{http://www.maumae.net/yorick/packages/src/}{\texttt{ http\+://www.\+maumae.\+net/yorick/packages/src/}} or fetch pyk.\+i from the CVS browser at \href{http://yorick.cvs.sourceforge.net/viewvc/yorick/yorick-yutils/pyk.i?view=markup}{\texttt{ http\+://yorick.\+cvs.\+sourceforge.\+net/viewvc/yorick/yorick-\/yutils/pyk.\+i?view=markup}}\hypertarget{yorick_plugin_page_pygtk_sec}{}\doxysubsection{Py\+GObject}\label{yorick_plugin_page_pygtk_sec}
+The graphical interface gyotoy needs yorick-\/gy and the Gtk 3 GObject Introspection files. Get yorick-\/gy from\+: \href{https://github.com/paumard/yorick-gy}{\texttt{ https\+://github.\+com/paumard/yorick-\/gy}}
+
+Under Mac OS X (using macports), install the gtk3 package. Under a Debian derivative GNU/\+Linux system, install gir1.\+2-\/gtk-\/3.\+0. Check yorick/\+README.\+gyotoy in the source distribution for more details.\hypertarget{yorick_plugin_page_building_sec}{}\doxysection{Building}\label{yorick_plugin_page_building_sec}
+From the \mbox{\hyperlink{namespace_gyoto}{Gyoto}} source directory (i.\+e. the directory which contains the yorick/ subdirectory\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make yorick}
+
+\end{DoxyCode}
+
+
+You can check the package by running 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make check-\/yorick}
+
+\end{DoxyCode}
+\hypertarget{yorick_plugin_page_installing_sec}{}\doxysection{Installing}\label{yorick_plugin_page_installing_sec}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sudo make install-\/yorick}
+
+\end{DoxyCode}
+\hypertarget{yorick_plugin_page_running_sec}{}\doxysection{Running}\label{yorick_plugin_page_running_sec}
+Read gyoto.\+i and check.\+i for using \mbox{\hyperlink{namespace_gyoto}{Gyoto}} from within Yorick.
+
+The graphical interface, Gyotoy, can be run with 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{yorick -\/i gyotoy.i}
+
+\end{DoxyCode}
+ or 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{gyotoy}
+
+\end{DoxyCode}
+ 

@@ -1,0 +1,321 @@
+\hypertarget{class_gyoto_1_1_astrobj_1_1_properties}{}\doxysection{Gyoto\+::Astrobj\+::Properties Class Reference}
+\label{class_gyoto_1_1_astrobj_1_1_properties}\index{Gyoto::Astrobj::Properties@{Gyoto::Astrobj::Properties}}
+
+
+Observable properties of an Astronomical object.  
+
+
+
+
+{\ttfamily \#include $<$Gyoto\+Astrobj.\+h$>$}
+
+Inheritance diagram for Gyoto\+::Astrobj\+::Properties\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_gyoto_1_1_astrobj_1_1_properties}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_smart_pointee}{Gyoto\+::\+Smart\+Pointee}} $>$ \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}{Subcontractor\+\_\+t}}(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$, std\+::vector$<$ std\+::string $>$ const \&)
+\begin{DoxyCompactList}\small\item\em A subcontractor builds an object upon order from the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_acbc9c84e76d91f80058aeaf94af16f17}\label{class_gyoto_1_1_astrobj_1_1_properties_acbc9c84e76d91f80058aeaf94af16f17}} 
+\mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_acbc9c84e76d91f80058aeaf94af16f17}{Properties}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor (everything is set to NULL);. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_a3e6d3f7302a3adb69a10d41adef5dd75}\label{class_gyoto_1_1_astrobj_1_1_properties_a3e6d3f7302a3adb69a10d41adef5dd75}} 
+\mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_a3e6d3f7302a3adb69a10d41adef5dd75}{Properties}} (double $\ast$, double $\ast$)
+\begin{DoxyCompactList}\small\item\em $<$ Set intensity and time pointers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_ab2ad1321af280ec137b57ca70d285a0a}{init}} (\mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} nbnuobs=0)
+\begin{DoxyCompactList}\small\item\em Initialize observable quantities. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties}{Properties}} \& \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_aa30b899a1dcbc53567641d34b70997f3}{operator++}} ()
+\begin{DoxyCompactList}\small\item\em Increment pointers. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties}{Properties}} \& \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_ae846982495da75c490ead035756118d0}{operator+=}} (ptrdiff\+\_\+t \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_a7cfec2d4e3b3a8c8e153286efff81ad3}{offset}})
+\begin{DoxyCompactList}\small\item\em Increment pointers by offset. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_a5a6fe0f7f1e8f73e03879b0dc81c5e6e}\label{class_gyoto_1_1_astrobj_1_1_properties_a5a6fe0f7f1e8f73e03879b0dc81c5e6e}} 
+{\bfseries operator Gyoto\+::\+Quantity\+\_\+t} () const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_a359e911476ad77895463f980c2b29e75}\label{class_gyoto_1_1_astrobj_1_1_properties_a359e911476ad77895463f980c2b29e75}} 
+void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_a359e911476ad77895463f980c2b29e75}{intensity\+Converter}} (\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ Gyoto\+::\+Units\+::\+Converter $>$)
+\begin{DoxyCompactList}\small\item\em Set Properties\+::intentity\+\_\+converter\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_adece6e633020424b491d54f8e07ba576}\label{class_gyoto_1_1_astrobj_1_1_properties_adece6e633020424b491d54f8e07ba576}} 
+void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_adece6e633020424b491d54f8e07ba576}{intensity\+Converter}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Set Properties\+::intentity\+\_\+converter\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_acb81020816a52ca489597595d383b2f9}\label{class_gyoto_1_1_astrobj_1_1_properties_acb81020816a52ca489597595d383b2f9}} 
+void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_acb81020816a52ca489597595d383b2f9}{spectrum\+Converter}} (\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ Gyoto\+::\+Units\+::\+Converter $>$)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_af2445d003a8966d622fb1390e772f16c}{Properties\+::spectrum\+\_\+converter\+\_\+}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_abde47480a51172fc6681c80c7b1a8f69}\label{class_gyoto_1_1_astrobj_1_1_properties_abde47480a51172fc6681c80c7b1a8f69}} 
+void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_abde47480a51172fc6681c80c7b1a8f69}{spectrum\+Converter}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_af2445d003a8966d622fb1390e772f16c}{Properties\+::spectrum\+\_\+converter\+\_\+}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_a15d1afe584db8a8b0cfb503e97661306}\label{class_gyoto_1_1_astrobj_1_1_properties_a15d1afe584db8a8b0cfb503e97661306}} 
+void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_a15d1afe584db8a8b0cfb503e97661306}{bin\+Spectrum\+Converter}} (\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ Gyoto\+::\+Units\+::\+Converter $>$)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_a30468e38efd9f083c1b2ce7b6df8225a}{Properties\+::binspectrum\+\_\+converter\+\_\+}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_a80e2b37be097d46ec0743342ebe83f84}\label{class_gyoto_1_1_astrobj_1_1_properties_a80e2b37be097d46ec0743342ebe83f84}} 
+void \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_a80e2b37be097d46ec0743342ebe83f84}{bin\+Spectrum\+Converter}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_a30468e38efd9f083c1b2ce7b6df8225a}{Properties\+::binspectrum\+\_\+converter\+\_\+}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_a9ec09c51fd18dde7c13ef3b03fac1fad}\label{class_gyoto_1_1_smart_pointee_a9ec09c51fd18dde7c13ef3b03fac1fad}} 
+void \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_a9ec09c51fd18dde7c13ef3b03fac1fad}{inc\+Ref\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Increment the reference counter. Warning\+: Don\textquotesingle{}t mess with the counter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_a22a67609fb4690ee8ec0e95e4060e387}\label{class_gyoto_1_1_smart_pointee_a22a67609fb4690ee8ec0e95e4060e387}} 
+int \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_a22a67609fb4690ee8ec0e95e4060e387}{dec\+Ref\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Decrement the reference counter and return current value. Warning\+: Don\textquotesingle{}t mess with the counter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_a9a9cb35cd161bf19ce652f76e0a5bec0}\label{class_gyoto_1_1_smart_pointee_a9a9cb35cd161bf19ce652f76e0a5bec0}} 
+int \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_a9a9cb35cd161bf19ce652f76e0a5bec0}{get\+Ref\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Get the current number of references. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_a9e21d637c8ee909a1c3f58a275b73af8}\label{class_gyoto_1_1_astrobj_1_1_properties_a9e21d637c8ee909a1c3f58a275b73af8}} 
+double $\ast$ \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_a9e21d637c8ee909a1c3f58a275b73af8}{intensity}}
+\begin{DoxyCompactList}\small\item\em GYOTO\+\_\+\+QUANTITY\+\_\+\+INTENSITY \+: Intensity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_a48b002663f2e4d287e0382d276695d34}\label{class_gyoto_1_1_astrobj_1_1_properties_a48b002663f2e4d287e0382d276695d34}} 
+double $\ast$ \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_a48b002663f2e4d287e0382d276695d34}{time}}
+\begin{DoxyCompactList}\small\item\em GYOTO\+\_\+\+QUANTITY\+\_\+\+EMISSIONTIME\+: Emission\+Time. \end{DoxyCompactList}\item 
+double $\ast$ \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_a9ac7276c9049b505cae0468dd9f13b7c}{distance}}
+\begin{DoxyCompactList}\small\item\em GYOTO\+\_\+\+QUANTITY\+\_\+\+MIN\+\_\+\+DISTANCE\+: Min\+Distance. \end{DoxyCompactList}\item 
+double $\ast$ \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_acc7c6d5dfecd6cbefd6466afcf72a358}{first\+\_\+dmin}}
+\begin{DoxyCompactList}\small\item\em GYOTO\+\_\+\+QUANTITY\+\_\+\+FIRST\+\_\+\+DMIN \+: First\+Dmin. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_a035f7c130e041e70495cb587089a3b85}{first\+\_\+dmin\+\_\+found}}
+\begin{DoxyCompactList}\small\item\em Whether \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_acc7c6d5dfecd6cbefd6466afcf72a358}{Properties\+::first\+\_\+dmin}} was found. \end{DoxyCompactList}\item 
+double $\ast$ \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_a0b1a79d7698eb834ddb3dc71208bae06}{redshift}}
+\begin{DoxyCompactList}\small\item\em GYOTO\+\_\+\+QUANTITY\+\_\+\+REDSHIFT \+: Red\+Shift. \end{DoxyCompactList}\item 
+double $\ast$ \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_aa7096dd23371ab3cbd716d20fd84e8fb}{nbcrosseqplane}}
+\begin{DoxyCompactList}\small\item\em GYOTO\+\_\+\+QUANTITY\+\_\+\+NBCROSSEQPLANE \+: nuùber of equatorial plane crossings. \end{DoxyCompactList}\item 
+double $\ast$ \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_a7bd1f57a64c43c1ea7a8bfdb162fafc8}{spectrum}}
+\begin{DoxyCompactList}\small\item\em GYOTO\+\_\+\+QUANTITY\+\_\+\+SPECTRUM \+: \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_a518a0bb72162c9f01552b0e8fcaab980}\label{class_gyoto_1_1_astrobj_1_1_properties_a518a0bb72162c9f01552b0e8fcaab980}} 
+double $\ast$ {\bfseries stokesQ}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_ac4ff547993006c0a5f140e5a2776921c}\label{class_gyoto_1_1_astrobj_1_1_properties_ac4ff547993006c0a5f140e5a2776921c}} 
+double $\ast$ {\bfseries stokesU}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_ae6e7046467d9ef3826457ae9d9b45e3e}\label{class_gyoto_1_1_astrobj_1_1_properties_ae6e7046467d9ef3826457ae9d9b45e3e}} 
+double $\ast$ {\bfseries stokesV}
+\item 
+double $\ast$ \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_a949551398d6eb72aacf13db7dbc3093f}{binspectrum}}
+\begin{DoxyCompactList}\small\item\em GYOTO\+\_\+\+QUANTITY\+\_\+\+BINSPECTRUM \+: Bin\+Spectrum. \end{DoxyCompactList}\item 
+ptrdiff\+\_\+t \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_a7cfec2d4e3b3a8c8e153286efff81ad3}{offset}}
+\begin{DoxyCompactList}\small\item\em How to jump from one spectral element to the next. \end{DoxyCompactList}\item 
+double $\ast$ \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_a1bedfed5648f07f4db83babae3c607f8}{impactcoords}}
+\begin{DoxyCompactList}\small\item\em GYOTO\+\_\+\+QUANTITY\+\_\+\+IMPACTCOORDS\+: Impact\+Coords. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_aff766b07d3e56d78bb323be3c8b40ec8}\label{class_gyoto_1_1_astrobj_1_1_properties_aff766b07d3e56d78bb323be3c8b40ec8}} 
+double $\ast$ \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_aff766b07d3e56d78bb323be3c8b40ec8}{user1}}
+\begin{DoxyCompactList}\small\item\em GYOTO\+\_\+\+QUANTITY\+\_\+\+USER1 \+: User1 Astrobj-\/specific quantity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_a8457e2c54b1164411edc1f1e55fb1726}\label{class_gyoto_1_1_astrobj_1_1_properties_a8457e2c54b1164411edc1f1e55fb1726}} 
+double $\ast$ \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_a8457e2c54b1164411edc1f1e55fb1726}{user2}}
+\begin{DoxyCompactList}\small\item\em GYOTO\+\_\+\+QUANTITY\+\_\+\+USER2 \+: User2 Astrobj-\/specific quantity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_ac302846eb59521832bd8d355d07cce75}\label{class_gyoto_1_1_astrobj_1_1_properties_ac302846eb59521832bd8d355d07cce75}} 
+double $\ast$ \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_ac302846eb59521832bd8d355d07cce75}{user3}}
+\begin{DoxyCompactList}\small\item\em GYOTO\+\_\+\+QUANTITY\+\_\+\+USER3 \+: User3 Astrobj-\/specific quantity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_a9d8affffaf70894dabf35c227efdc1de}\label{class_gyoto_1_1_astrobj_1_1_properties_a9d8affffaf70894dabf35c227efdc1de}} 
+double $\ast$ \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_a9d8affffaf70894dabf35c227efdc1de}{user4}}
+\begin{DoxyCompactList}\small\item\em GYOTO\+\_\+\+QUANTITY\+\_\+\+USER4 \+: User4 Astrobj-\/specific quantity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_a36f39039f1a3512af98c6dd166537538}\label{class_gyoto_1_1_astrobj_1_1_properties_a36f39039f1a3512af98c6dd166537538}} 
+double $\ast$ \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_a36f39039f1a3512af98c6dd166537538}{user5}}
+\begin{DoxyCompactList}\small\item\em GYOTO\+\_\+\+QUANTITY\+\_\+\+USER5 \+: User5 Astrobj-\/specific quantity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_acc601699a4f517286d579aec1960a279}\label{class_gyoto_1_1_astrobj_1_1_properties_acc601699a4f517286d579aec1960a279}} 
+\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ Gyoto\+::\+Units\+::\+Converter $>$ \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_acc601699a4f517286d579aec1960a279}{intensity\+\_\+converter\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Converter between SI (J.\+m \textsuperscript{ -\/2}.s\textsuperscript{-\/1}.sr\textsuperscript{-\/1}.Hz\textsuperscript{-\/1}) and requested Intensity unit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_af2445d003a8966d622fb1390e772f16c}\label{class_gyoto_1_1_astrobj_1_1_properties_af2445d003a8966d622fb1390e772f16c}} 
+\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ Gyoto\+::\+Units\+::\+Converter $>$ \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_af2445d003a8966d622fb1390e772f16c}{spectrum\+\_\+converter\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Converter between SI (J.\+m \textsuperscript{ -\/2}.s\textsuperscript{-\/1}.sr\textsuperscript{-\/1}.Hz\textsuperscript{-\/1}) and requested \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}} unit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_a30468e38efd9f083c1b2ce7b6df8225a}\label{class_gyoto_1_1_astrobj_1_1_properties_a30468e38efd9f083c1b2ce7b6df8225a}} 
+\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ Gyoto\+::\+Units\+::\+Converter $>$ \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_a30468e38efd9f083c1b2ce7b6df8225a}{binspectrum\+\_\+converter\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Converter between SI (J.\+m \textsuperscript{ -\/2}.s\textsuperscript{-\/1}.sr\textsuperscript{-\/1}) and requested Bin\+Spectrum unit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_a65ca5f97aaf3ee4884224eaae3335ede}\label{class_gyoto_1_1_astrobj_1_1_properties_a65ca5f97aaf3ee4884224eaae3335ede}} 
+bool \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_a65ca5f97aaf3ee4884224eaae3335ede}{alloc}}
+\begin{DoxyCompactList}\small\item\em True if buffers are allocated for entire field (npix$\ast$npix) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_aaaf212a70fb1880b70e4d357e843cc85}\label{class_gyoto_1_1_smart_pointee_aaaf212a70fb1880b70e4d357e843cc85}} 
+int \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_aaaf212a70fb1880b70e4d357e843cc85}{ref\+Count}}
+\begin{DoxyCompactList}\small\item\em Reference counter. \end{DoxyCompactList}\item 
+pthread\+\_\+mutex\+\_\+t \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_abf1c1e431cdd4f08f13de581cccb6770}{mutex\+\_\+}}
+\begin{DoxyCompactList}\small\item\em A mutex. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_a88fdfd77e0c624c05db00d28aeefa75a}\label{class_gyoto_1_1_astrobj_1_1_properties_a88fdfd77e0c624c05db00d28aeefa75a}} 
+class {\bfseries Gyoto\+::\+Smart\+Pointer$<$ Gyoto\+::\+Astrobj\+::\+Properties $>$}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Observable properties of an Astronomical object. 
+
+The sort of properties one wants to measure on a ray-\/traced \mbox{\hyperlink{class_gyoto_1_1_photon}{Gyoto\+::\+Photon}} which hits a \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Gyoto\+::\+Astrobj}}. Not all \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}} are able to fill all of these properties.
+
+An instance of \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties}{Properties}} essentially contains a bunch of pointers to memory areas where the observable quantities (see Quantity\+\_\+t) should be stored.
+
+\mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_aa6f20e6d108357f6355493c4fdd5bb2f}{Astrobj\+::\+Generic\+::process\+Hit\+Quantities()}} fills the various arrays upon request. A quantity is ignored if the corresponding pointer is NULL.
+
+\mbox{\hyperlink{class_gyoto_1_1_scenery_a2f91e3d67d6846b50011be7d72fa3af6}{Scenery\+::operator()()}} increments the \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties}{Properties}} between each \mbox{\hyperlink{class_gyoto_1_1_photon}{Photon}} using \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_aa30b899a1dcbc53567641d34b70997f3}{Properties\+::operator++()}}.
+
+The main application (gyoto, the yorick plug-\/in, or your user application) is responsible for allocating the various arrays, filling the various members of \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties}{Properties}}, and doing whatever meaninful with the arrays after they have been filled with values by the ray-\/tracing code (e.\+g. saving them to disk or displaying them).
+
+Also see \mbox{\hyperlink{class_gyoto_1_1_scenery}{Gyoto\+::\+Scenery}} and \mbox{\hyperlink{namespace_gyoto_a009cbd7f025ce417907a5344a15a1463}{Gyoto\+::\+Quantity\+\_\+t}}. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}\label{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}} 
+\index{Gyoto::Astrobj::Properties@{Gyoto::Astrobj::Properties}!Subcontractor\_t@{Subcontractor\_t}}
+\index{Subcontractor\_t@{Subcontractor\_t}!Gyoto::Astrobj::Properties@{Gyoto::Astrobj::Properties}}
+\doxysubsubsection{\texorpdfstring{Subcontractor\_t}{Subcontractor\_t}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$\mbox{\hyperlink{class_gyoto_1_1_smart_pointee}{Gyoto\+::\+Smart\+Pointee}}$>$ Gyoto\+::\+Smart\+Pointee\+::\+Subcontractor\+\_\+t(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$, std\+::vector$<$ std\+::string $>$ const \&)\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+A subcontractor builds an object upon order from the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}}. 
+
+Various classes need to provide a subcontractor to be able to instantiate themselves upon order from the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}}. A subcontractor is a function (often a static member function) which accepts a pointer to a \mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}} as unique parameter, communicates with the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}} using this messenger to read an XML description of the object to build, and returns this objet. \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}{Smart\+Pointee\+::\+Subcontractor\+\_\+t}}$\ast$ is just generic enough a typedef to cast to and from other subcontractor types\+: \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_aa53c7ada58c8c8f3799c3485b7d8f3bb}{Astrobj\+::\+Subcontractor\+\_\+t}}, \mbox{\hyperlink{namespace_gyoto_1_1_metric_ad6b33a642cc94ad67855184d2adb95df}{Metric\+::\+Subcontractor\+\_\+t}}, \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a163055eef14aee22dd8fa5188812d889}{Spectrum\+::\+Subcontractor\+\_\+t}}. A subcontractor needs to be registered using the relevant \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_abb6caf3023a51cb77b5f6793ac03b188}{Register()}} function\+: \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_abb6caf3023a51cb77b5f6793ac03b188}{Astrobj\+::\+Register()}}, \mbox{\hyperlink{namespace_gyoto_1_1_metric_a602cba49b001e7470f3d439d1ab3e8f7}{Metric\+::\+Register()}}, \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a517874749d838d7121880e7d9d14c626}{Spectrum\+::\+Register()}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_ab2ad1321af280ec137b57ca70d285a0a}\label{class_gyoto_1_1_astrobj_1_1_properties_ab2ad1321af280ec137b57ca70d285a0a}} 
+\index{Gyoto::Astrobj::Properties@{Gyoto::Astrobj::Properties}!init@{init}}
+\index{init@{init}!Gyoto::Astrobj::Properties@{Gyoto::Astrobj::Properties}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Gyoto\+::\+Astrobj\+::\+Properties\+::init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}}}]{nbnuobs = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Initialize observable quantities. 
+
+The pointed-\/to values are initialized as follows (if the corresponding pointer is not NULL)\+:
+
+
+\begin{DoxyItemize}
+\item intensity, firt\+\_\+dmin\+\_\+found, redshift, userN\+: 0
+\item time, distance, first\+\_\+dmin\+: DBL\+\_\+\+MAX
+\item for spectrum and binspectrum, nbnuobs values separated by offset in memory are initialized to 0
+\item for impactcoords, 16 contiguous values are initialized to DBL\+\_\+\+MAX 
+\end{DoxyItemize}\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_aa30b899a1dcbc53567641d34b70997f3}\label{class_gyoto_1_1_astrobj_1_1_properties_aa30b899a1dcbc53567641d34b70997f3}} 
+\index{Gyoto::Astrobj::Properties@{Gyoto::Astrobj::Properties}!operator++@{operator++}}
+\index{operator++@{operator++}!Gyoto::Astrobj::Properties@{Gyoto::Astrobj::Properties}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties}{Properties}}\& Gyoto\+::\+Astrobj\+::\+Properties\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Increment pointers. 
+
+All valid pointers are incremented by 1 (sizeof(double)), excepted impactcoords which is incremented by 16. \mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_ae846982495da75c490ead035756118d0}\label{class_gyoto_1_1_astrobj_1_1_properties_ae846982495da75c490ead035756118d0}} 
+\index{Gyoto::Astrobj::Properties@{Gyoto::Astrobj::Properties}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Gyoto::Astrobj::Properties@{Gyoto::Astrobj::Properties}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties}{Properties}}\& Gyoto\+::\+Astrobj\+::\+Properties\+::operator+= (\begin{DoxyParamCaption}\item[{ptrdiff\+\_\+t}]{offset }\end{DoxyParamCaption})}
+
+
+
+Increment pointers by offset. 
+
+All valid pointers are incremented by offset (sizeof(double)), excepted impactcoords which is incremented by 16$\ast$offset. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_a949551398d6eb72aacf13db7dbc3093f}\label{class_gyoto_1_1_astrobj_1_1_properties_a949551398d6eb72aacf13db7dbc3093f}} 
+\index{Gyoto::Astrobj::Properties@{Gyoto::Astrobj::Properties}!binspectrum@{binspectrum}}
+\index{binspectrum@{binspectrum}!Gyoto::Astrobj::Properties@{Gyoto::Astrobj::Properties}}
+\doxysubsubsection{\texorpdfstring{binspectrum}{binspectrum}}
+{\footnotesize\ttfamily double$\ast$ Gyoto\+::\+Astrobj\+::\+Properties\+::binspectrum}
+
+
+
+GYOTO\+\_\+\+QUANTITY\+\_\+\+BINSPECTRUM \+: Bin\+Spectrum. 
+
+I\textsubscript{{$\nu$}\textsubscript{1}}\textsuperscript{{$\nu$}\textsubscript{2}}, the integral of I\textsubscript{{$\nu$}} over each spectral channel (i.\+e. what a spectrometer would measure) \mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_a9ac7276c9049b505cae0468dd9f13b7c}\label{class_gyoto_1_1_astrobj_1_1_properties_a9ac7276c9049b505cae0468dd9f13b7c}} 
+\index{Gyoto::Astrobj::Properties@{Gyoto::Astrobj::Properties}!distance@{distance}}
+\index{distance@{distance}!Gyoto::Astrobj::Properties@{Gyoto::Astrobj::Properties}}
+\doxysubsubsection{\texorpdfstring{distance}{distance}}
+{\footnotesize\ttfamily double$\ast$ Gyoto\+::\+Astrobj\+::\+Properties\+::distance}
+
+
+
+GYOTO\+\_\+\+QUANTITY\+\_\+\+MIN\+\_\+\+DISTANCE\+: Min\+Distance. 
+
+Behaves like the square of the closest distance between \mbox{\hyperlink{class_gyoto_1_1_photon}{Photon}} and \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}} (but not exactly that). Initialize it to DBL\+\_\+\+MAX from float.\+h.; \mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_acc7c6d5dfecd6cbefd6466afcf72a358}\label{class_gyoto_1_1_astrobj_1_1_properties_acc7c6d5dfecd6cbefd6466afcf72a358}} 
+\index{Gyoto::Astrobj::Properties@{Gyoto::Astrobj::Properties}!first\_dmin@{first\_dmin}}
+\index{first\_dmin@{first\_dmin}!Gyoto::Astrobj::Properties@{Gyoto::Astrobj::Properties}}
+\doxysubsubsection{\texorpdfstring{first\_dmin}{first\_dmin}}
+{\footnotesize\ttfamily double$\ast$ Gyoto\+::\+Astrobj\+::\+Properties\+::first\+\_\+dmin}
+
+
+
+GYOTO\+\_\+\+QUANTITY\+\_\+\+FIRST\+\_\+\+DMIN \+: First\+Dmin. 
+
+First local minimum in distance from object \mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_a035f7c130e041e70495cb587089a3b85}\label{class_gyoto_1_1_astrobj_1_1_properties_a035f7c130e041e70495cb587089a3b85}} 
+\index{Gyoto::Astrobj::Properties@{Gyoto::Astrobj::Properties}!first\_dmin\_found@{first\_dmin\_found}}
+\index{first\_dmin\_found@{first\_dmin\_found}!Gyoto::Astrobj::Properties@{Gyoto::Astrobj::Properties}}
+\doxysubsubsection{\texorpdfstring{first\_dmin\_found}{first\_dmin\_found}}
+{\footnotesize\ttfamily int Gyoto\+::\+Astrobj\+::\+Properties\+::first\+\_\+dmin\+\_\+found}
+
+
+
+Whether \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_acc7c6d5dfecd6cbefd6466afcf72a358}{Properties\+::first\+\_\+dmin}} was found. 
+
+\mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_acc7c6d5dfecd6cbefd6466afcf72a358}{Properties\+::first\+\_\+dmin}} will be set to the first local minimum and \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_properties_a035f7c130e041e70495cb587089a3b85}{Properties\+::first\+\_\+dmin\+\_\+found}} will be set to 1 if a local minimum in distance is found. Initialize it to 0. \mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_a1bedfed5648f07f4db83babae3c607f8}\label{class_gyoto_1_1_astrobj_1_1_properties_a1bedfed5648f07f4db83babae3c607f8}} 
+\index{Gyoto::Astrobj::Properties@{Gyoto::Astrobj::Properties}!impactcoords@{impactcoords}}
+\index{impactcoords@{impactcoords}!Gyoto::Astrobj::Properties@{Gyoto::Astrobj::Properties}}
+\doxysubsubsection{\texorpdfstring{impactcoords}{impactcoords}}
+{\footnotesize\ttfamily double$\ast$ Gyoto\+::\+Astrobj\+::\+Properties\+::impactcoords}
+
+
+
+GYOTO\+\_\+\+QUANTITY\+\_\+\+IMPACTCOORDS\+: Impact\+Coords. 
+
+Coordinates of the object and photon at impact \mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_abf1c1e431cdd4f08f13de581cccb6770}\label{class_gyoto_1_1_smart_pointee_abf1c1e431cdd4f08f13de581cccb6770}} 
+\index{Gyoto::Astrobj::Properties@{Gyoto::Astrobj::Properties}!mutex\_@{mutex\_}}
+\index{mutex\_@{mutex\_}!Gyoto::Astrobj::Properties@{Gyoto::Astrobj::Properties}}
+\doxysubsubsection{\texorpdfstring{mutex\_}{mutex\_}}
+{\footnotesize\ttfamily pthread\+\_\+mutex\+\_\+t Gyoto\+::\+Smart\+Pointee\+::mutex\+\_\+\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+
+
+A mutex. 
+
+When compiled with libpthread \mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_aa7096dd23371ab3cbd716d20fd84e8fb}\label{class_gyoto_1_1_astrobj_1_1_properties_aa7096dd23371ab3cbd716d20fd84e8fb}} 
+\index{Gyoto::Astrobj::Properties@{Gyoto::Astrobj::Properties}!nbcrosseqplane@{nbcrosseqplane}}
+\index{nbcrosseqplane@{nbcrosseqplane}!Gyoto::Astrobj::Properties@{Gyoto::Astrobj::Properties}}
+\doxysubsubsection{\texorpdfstring{nbcrosseqplane}{nbcrosseqplane}}
+{\footnotesize\ttfamily double$\ast$ Gyoto\+::\+Astrobj\+::\+Properties\+::nbcrosseqplane}
+
+
+
+GYOTO\+\_\+\+QUANTITY\+\_\+\+NBCROSSEQPLANE \+: nuùber of equatorial plane crossings. 
+
+Numbere of times the geodesic crosses the equatorial plane \mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_a7cfec2d4e3b3a8c8e153286efff81ad3}\label{class_gyoto_1_1_astrobj_1_1_properties_a7cfec2d4e3b3a8c8e153286efff81ad3}} 
+\index{Gyoto::Astrobj::Properties@{Gyoto::Astrobj::Properties}!offset@{offset}}
+\index{offset@{offset}!Gyoto::Astrobj::Properties@{Gyoto::Astrobj::Properties}}
+\doxysubsubsection{\texorpdfstring{offset}{offset}}
+{\footnotesize\ttfamily ptrdiff\+\_\+t Gyoto\+::\+Astrobj\+::\+Properties\+::offset}
+
+
+
+How to jump from one spectral element to the next. 
+
+Spectra elements are separated by offset doubles in memory. In other words, the ith spectral element is spectrum\mbox{[}i$\ast$offset\mbox{]}. \mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_a0b1a79d7698eb834ddb3dc71208bae06}\label{class_gyoto_1_1_astrobj_1_1_properties_a0b1a79d7698eb834ddb3dc71208bae06}} 
+\index{Gyoto::Astrobj::Properties@{Gyoto::Astrobj::Properties}!redshift@{redshift}}
+\index{redshift@{redshift}!Gyoto::Astrobj::Properties@{Gyoto::Astrobj::Properties}}
+\doxysubsubsection{\texorpdfstring{redshift}{redshift}}
+{\footnotesize\ttfamily double$\ast$ Gyoto\+::\+Astrobj\+::\+Properties\+::redshift}
+
+
+
+GYOTO\+\_\+\+QUANTITY\+\_\+\+REDSHIFT \+: Red\+Shift. 
+
+Redshift factor {$\nu$}\textsubscript{obs}/{$\nu$}\textsubscript{em} (necessary for emission lines computation) \mbox{\Hypertarget{class_gyoto_1_1_astrobj_1_1_properties_a7bd1f57a64c43c1ea7a8bfdb162fafc8}\label{class_gyoto_1_1_astrobj_1_1_properties_a7bd1f57a64c43c1ea7a8bfdb162fafc8}} 
+\index{Gyoto::Astrobj::Properties@{Gyoto::Astrobj::Properties}!spectrum@{spectrum}}
+\index{spectrum@{spectrum}!Gyoto::Astrobj::Properties@{Gyoto::Astrobj::Properties}}
+\doxysubsubsection{\texorpdfstring{spectrum}{spectrum}}
+{\footnotesize\ttfamily double$\ast$ Gyoto\+::\+Astrobj\+::\+Properties\+::spectrum}
+
+
+
+GYOTO\+\_\+\+QUANTITY\+\_\+\+SPECTRUM \+: \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}}. 
+
+I\textsubscript{{$\nu$}} ({$\nu$}) (observed specific intensity) 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_gyoto_astrobj_8h}{Gyoto\+Astrobj.\+h}}\end{DoxyCompactItemize}

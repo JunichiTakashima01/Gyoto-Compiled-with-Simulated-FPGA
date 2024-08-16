@@ -1,0 +1,349 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_gyoto_hayward_8h" kind="file" language="C++">
+    <compoundname>GyotoHayward.h</compoundname>
+    <includes refid="_gyoto_metric_8h" local="no">GyotoMetric.h</includes>
+    <includes refid="_gyoto_worldline_8h" local="no">GyotoWorldline.h</includes>
+    <includes refid="_gyoto_register_8h" local="no">GyotoRegister.h</includes>
+    <incdepgraph>
+      <node id="18">
+        <label>iomanip</label>
+      </node>
+      <node id="11">
+        <label>float.h</label>
+      </node>
+      <node id="8">
+        <label>GyotoUtils.h</label>
+        <link refid="_gyoto_utils_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>eigen3/Eigen/Dense</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="7">
+        <label>GyotoSmartPointer.h</label>
+        <link refid="_gyoto_smart_pointer_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>GyotoObject.h</label>
+        <link refid="_gyoto_object_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>stddef.h</label>
+      </node>
+      <node id="4">
+        <label>fstream</label>
+      </node>
+      <node id="22">
+        <label>GyotoRegister.h</label>
+        <link refid="_gyoto_register_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>GyotoSpectrometer.h</label>
+        <link refid="_gyoto_spectrometer_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>GyotoMetric.h</label>
+        <link refid="_gyoto_metric_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>GyotoDefs.h</label>
+        <link refid="_gyoto_defs_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>GyotoWorldline.h</label>
+        <link refid="_gyoto_worldline_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>pthread.h</label>
+      </node>
+      <node id="15">
+        <label>typeinfo</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+      <node id="10">
+        <label>GyotoConfig.h</label>
+        <link refid="_gyoto_config_8h"/>
+      </node>
+      <node id="20">
+        <label>sstream</label>
+      </node>
+      <node id="17">
+        <label>GyotoAstrobj.h</label>
+        <link refid="_gyoto_astrobj_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="13">
+        <label>GyotoError.h</label>
+        <link refid="_gyoto_error_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>GyotoHooks.h</label>
+        <link refid="_gyoto_hooks_8h"/>
+      </node>
+      <node id="25">
+        <label>GyotoScreen.h</label>
+        <link refid="_gyoto_screen_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>GyotoConverters.h</label>
+        <link refid="_gyoto_converters_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>GyotoHayward.h</label>
+        <link refid="_gyoto_hayward_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_gyoto_1_1_metric_1_1_hayward" prot="public">Gyoto::Metric::Hayward</innerclass>
+    <innernamespace refid="namespace_gyoto">Gyoto</innernamespace>
+    <innernamespace refid="namespace_gyoto_1_1_metric">Gyoto::Metric</innernamespace>
+    <briefdescription>
+<para>Metric of a regular rotating black hole or naked worm-hole. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This is a regular rotating extension of Hayward&apos;s metric.</para>
+<para>See Lamy et al. (2018), Classical and Quantum Gravity, submitted, <ulink url="https://arxiv.org/abs/1802.01635">https://arxiv.org/abs/1802.01635</ulink> </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>Copyright<sp/>2018<sp/>Frederic<sp/>Lamy,<sp/>Frederic<sp/>Vincent,<sp/>Thibaut<sp/>Paumard</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>Gyoto.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"></highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"></highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"></highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>Gyoto.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__GyotoHayward_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__GyotoHayward_H_<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_gyoto" kindref="compound">Gyoto</ref><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Metric<sp/>{<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Hayward;<sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_metric_8h" kindref="compound">GyotoMetric.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_worldline_8h" kindref="compound">GyotoWorldline.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>GYOTO_USE_XERCES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_register_8h" kindref="compound">GyotoRegister.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="class_gyoto_1_1_metric_1_1_hayward" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_metric_1_1_hayward" kindref="compound">Gyoto::Metric::Hayward</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_metric_1_1_generic" kindref="compound">Metric::Generic</ref><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt;<ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>::<ref refid="class_gyoto_1_1_metric_1_1_hayward" kindref="compound">Metric::Hayward</ref>&gt;;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Data<sp/>:<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>-----</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="72" refid="class_gyoto_1_1_metric_1_1_hayward_1ad97b48e1e85cb89d9d7ac3fc7aa63a1a" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_hayward_1ad97b48e1e85cb89d9d7ac3fc7aa63a1a" kindref="member">charge_</ref>;<sp/></highlight></codeline>
+<codeline lineno="73" refid="class_gyoto_1_1_metric_1_1_hayward_1af659b77997060b737b7882556efc8e40" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_hayward_1af659b77997060b737b7882556efc8e40" kindref="member">spin_</ref><sp/>;<sp/><sp/></highlight></codeline>
+<codeline lineno="74" refid="class_gyoto_1_1_metric_1_1_hayward_1ac03cec63f065f9754e25f8ac03806665" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_hayward_1ac03cec63f065f9754e25f8ac03806665" kindref="member">a2_</ref><sp/>;<sp/></highlight></codeline>
+<codeline lineno="75" refid="class_gyoto_1_1_metric_1_1_hayward_1abcbc9594d5b566fb62a57c325355ca3f" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_hayward_1abcbc9594d5b566fb62a57c325355ca3f" kindref="member">a3_</ref><sp/>;<sp/></highlight></codeline>
+<codeline lineno="76" refid="class_gyoto_1_1_metric_1_1_hayward_1a070a141e0740d361bfc4c77895e6468c" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_hayward_1a070a141e0740d361bfc4c77895e6468c" kindref="member">a4_</ref><sp/>;<sp/></highlight></codeline>
+<codeline lineno="77" refid="class_gyoto_1_1_metric_1_1_hayward_1ad7bc51297f1c01f1a89772087576b42e" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_hayward_1ad7bc51297f1c01f1a89772087576b42e" kindref="member">b2_</ref>;<sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Constructors<sp/>-<sp/>Destructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>-------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight></codeline>
+<codeline lineno="82" refid="class_gyoto_1_1_metric_1_1_hayward_1ae5e2a3f3c19d045fb40fcb62e5e1d959" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" kindref="member">GYOTO_OBJECT</ref>;</highlight></codeline>
+<codeline lineno="83" refid="class_gyoto_1_1_metric_1_1_hayward_1af1c28983894541a2f1f3f9f07d67d4fa" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_metric_1_1_hayward" kindref="compound">Hayward</ref>();<sp/></highlight></codeline>
+<codeline lineno="84" refid="class_gyoto_1_1_metric_1_1_hayward_1abec3dee6acae3629fa733a7ecc9d96af" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_metric_1_1_hayward" kindref="compound">Hayward</ref><sp/>*<sp/><ref refid="class_gyoto_1_1_metric_1_1_hayward_1abec3dee6acae3629fa733a7ecc9d96af" kindref="member">clone</ref><sp/>()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Accessors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>---------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="class_gyoto_1_1_metric_1_1_hayward_1ad0102b80c0dddb83e81b1e96d7e24527" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_metric_1_1_hayward_1a7e309e276a919df0e1c47a3f03d4d41f" kindref="member">spin</ref>(const<sp/>double<sp/>spin);<sp/></highlight></codeline>
+<codeline lineno="89" refid="class_gyoto_1_1_metric_1_1_hayward_1a7e309e276a919df0e1c47a3f03d4d41f" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_hayward_1a7e309e276a919df0e1c47a3f03d4d41f" kindref="member">spin</ref>()<sp/>const<sp/>;<sp/></highlight></codeline>
+<codeline lineno="90" refid="class_gyoto_1_1_metric_1_1_hayward_1af698693eabef496ecfacce2103aaa5d5" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_metric_1_1_hayward_1a5d68ff770a2b37b860224b8809c5e617" kindref="member">charge</ref>(const<sp/>double<sp/>charge);<sp/></highlight></codeline>
+<codeline lineno="91" refid="class_gyoto_1_1_metric_1_1_hayward_1a5d68ff770a2b37b860224b8809c5e617" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_hayward_1a5d68ff770a2b37b860224b8809c5e617" kindref="member">charge</ref>()<sp/>const<sp/>;<sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Methods<sp/>needed<sp/>for<sp/>PolishDoughnut</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="class_gyoto_1_1_metric_1_1_hayward_1ac3d0c351d970a8f22e0e1d4786996e5b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_hayward_1ac3d0c351d970a8f22e0e1d4786996e5b" kindref="member">getSpecificAngularMomentum</ref>(double<sp/>rr)<sp/>const;</highlight></codeline>
+<codeline lineno="95" refid="class_gyoto_1_1_metric_1_1_hayward_1adbdab25beb020afdff6575a10933f395" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_hayward_1adbdab25beb020afdff6575a10933f395" kindref="member">getPotential</ref>(double<sp/>const<sp/>pos[4],<sp/>double<sp/>l_cst)<sp/>const;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Keplerian<sp/>equatorial<sp/>orbits<sp/>angular<sp/>velocity</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="class_gyoto_1_1_metric_1_1_hayward_1a6f04a7ed03855723ddb7ccce6d797169" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_metric_1_1_hayward_1a6f04a7ed03855723ddb7ccce6d797169" kindref="member">circularVelocity</ref>(double<sp/>const<sp/>coor[4],<sp/>double<sp/>vel[4],</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>dir)<sp/>const;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Actual<sp/>space-time<sp/>API</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="class_gyoto_1_1_metric_1_1_hayward_1ada32a695e229fb476a09c32087171547" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_metric_1_1_hayward_1ada32a695e229fb476a09c32087171547" kindref="member">gmunu</ref>(double<sp/>ARGOUT_ARRAY2[4][4],<sp/>const<sp/>double<sp/>IN_ARRAY1[4])<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="103" refid="class_gyoto_1_1_metric_1_1_hayward_1a36ca2ffee58cd7a3e48b5812a4f87361" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_hayward_1ada32a695e229fb476a09c32087171547" kindref="member">gmunu</ref>(double<sp/>const<sp/>x[4],<sp/>int<sp/>mu,<sp/>int<sp/>nu)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="104" refid="class_gyoto_1_1_metric_1_1_hayward_1a7cc3fe0aa9695182b6abfd56db74c2b3" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_metric_1_1_hayward_1a7cc3fe0aa9695182b6abfd56db74c2b3" kindref="member">gmunu_up</ref>(double<sp/>ARGOUT_ARRAY2[4][4],<sp/>const<sp/>double<sp/>IN_ARRAY1[4])<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="105" refid="class_gyoto_1_1_metric_1_1_hayward_1a522465c8e3a6b9e6bd4d21a8dc68eb2a" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_hayward_1a7cc3fe0aa9695182b6abfd56db74c2b3" kindref="member">gmunu_up</ref>(double<sp/>const<sp/>x[4],<sp/>int<sp/>mu,<sp/>int<sp/>nu)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/>using<sp/><ref refid="class_gyoto_1_1_metric_1_1_generic_1a596d2b3773e278f95ea362ec43ed9667" kindref="member">Generic::christoffel</ref>;</highlight></codeline>
+<codeline lineno="107" refid="class_gyoto_1_1_metric_1_1_hayward_1ac861de2db8008150f4f0ebf06d80302e" refkind="member"><highlight class="normal"><sp/><sp/>int<sp/><ref refid="class_gyoto_1_1_metric_1_1_hayward_1a596d2b3773e278f95ea362ec43ed9667" kindref="member">christoffel</ref>(double<sp/>dst[4][4][4],<sp/>const<sp/>double<sp/>pos[4])<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Optimized</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="class_gyoto_1_1_metric_1_1_hayward_1a73722ddfcd3783aed6ddcdd265ba78c8" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_hayward_1a73722ddfcd3783aed6ddcdd265ba78c8" kindref="member">ScalarProd</ref>(const<sp/>double<sp/>pos[4],</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>double<sp/>u1[4],<sp/>const<sp/>double<sp/>u2[4])<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/junichi/Gyoto/include/GyotoHayward.h"/>
+  </compounddef>
+</doxygen>

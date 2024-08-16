@@ -1,0 +1,380 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_gyoto_directional_disk_8h" kind="file" language="C++">
+    <compoundname>GyotoDirectionalDisk.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">iomanip</includes>
+    <includes refid="_gyoto_thin_disk_8h" local="no">GyotoThinDisk.h</includes>
+    <includedby refid="_gyoto_8h" local="no">Gyoto.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>iomanip</label>
+      </node>
+      <node id="13">
+        <label>float.h</label>
+      </node>
+      <node id="10">
+        <label>GyotoUtils.h</label>
+        <link refid="_gyoto_utils_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>GyotoSpectrum.h</label>
+        <link refid="_gyoto_spectrum_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>GyotoDirectionalDisk.h</label>
+        <link refid="_gyoto_directional_disk_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>eigen3/Eigen/Dense</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="9">
+        <label>GyotoSmartPointer.h</label>
+        <link refid="_gyoto_smart_pointer_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>GyotoObject.h</label>
+        <link refid="_gyoto_object_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>stddef.h</label>
+      </node>
+      <node id="3">
+        <label>fstream</label>
+      </node>
+      <node id="23">
+        <label>GyotoRegister.h</label>
+        <link refid="_gyoto_register_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>GyotoMetric.h</label>
+        <link refid="_gyoto_metric_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>GyotoDefs.h</label>
+        <link refid="_gyoto_defs_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>pthread.h</label>
+      </node>
+      <node id="17">
+        <label>typeinfo</label>
+      </node>
+      <node id="26">
+        <label>GyotoFunctors.h</label>
+        <link refid="_gyoto_functors_8h"/>
+      </node>
+      <node id="5">
+        <label>GyotoThinDisk.h</label>
+        <link refid="_gyoto_thin_disk_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vector</label>
+      </node>
+      <node id="12">
+        <label>GyotoConfig.h</label>
+        <link refid="_gyoto_config_8h"/>
+      </node>
+      <node id="21">
+        <label>sstream</label>
+      </node>
+      <node id="19">
+        <label>GyotoAstrobj.h</label>
+        <link refid="_gyoto_astrobj_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+      <node id="15">
+        <label>GyotoError.h</label>
+        <link refid="_gyoto_error_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>GyotoHooks.h</label>
+        <link refid="_gyoto_hooks_8h"/>
+      </node>
+      <node id="20">
+        <label>GyotoConverters.h</label>
+        <link refid="_gyoto_converters_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>GyotoDirectionalDisk.h</label>
+        <link refid="_gyoto_directional_disk_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gyoto.h</label>
+        <link refid="_gyoto_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_directional_disk" prot="public">Gyoto::Astrobj::DirectionalDisk</innerclass>
+    <innernamespace refid="namespace_gyoto">Gyoto</innernamespace>
+    <innernamespace refid="namespace_gyoto_1_1_astrobj">Gyoto::Astrobj</innernamespace>
+    <briefdescription>
+<para>Geometrically thin disk read from FITS file. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class describes a disk contained in the z=0 (equatorial) plane. The flux emitted at radius r, making an angle i with respect to the local normal, at frequency nu is given in a FITS file.</para>
+<para>This astrobj is typically used to compute reflected spectra in the lamp post model.</para>
+<para>For the time being the metric is imposed to be KerrBL, but should easily generalized.</para>
+<para>The target of ray-traced <ref refid="class_gyoto_1_1_photon" kindref="compound">Gyoto::Photon</ref> </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/>Copyright<sp/>2014-2015,<sp/>2018<sp/>Frederic<sp/>Vincent,<sp/>Thibaut<sp/>Paumard</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"></highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>Gyoto.</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"></highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"></highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"></highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>Gyoto.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__GyotoDirectionalDisk_H_<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__GyotoDirectionalDisk_H_<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iomanip&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Astrobj<sp/>{<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">DirectionalDisk;<sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&lt;GyotoMetric.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_thin_disk_8h" kindref="compound">GyotoThinDisk.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="class_gyoto_1_1_astrobj_1_1_directional_disk" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_astrobj_1_1_directional_disk" kindref="compound">Gyoto::Astrobj::DirectionalDisk</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_thin_disk" kindref="compound">Astrobj::ThinDisk</ref><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt;<ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>::<ref refid="class_gyoto_1_1_astrobj_1_1_directional_disk" kindref="compound">Astrobj::DirectionalDisk</ref>&gt;;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="65" refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a2dea5311fe25b5414c7abd18a17c1e86" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a2dea5311fe25b5414c7abd18a17c1e86" kindref="member">filename_</ref>;<sp/></highlight></codeline>
+<codeline lineno="71" refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a6bba9d8b1619b14086ae68407d8212a9" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/>*<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a6bba9d8b1619b14086ae68407d8212a9" kindref="member">emission_</ref>;<sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1aa3b1c5e0ecd033d8ed43bd4626e2f838" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/>*<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1aa3b1c5e0ecd033d8ed43bd4626e2f838" kindref="member">radius_</ref>;<sp/></highlight></codeline>
+<codeline lineno="74" refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1adca3df228e7e89c4d480bd4779718651" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/>*<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1adca3df228e7e89c4d480bd4779718651" kindref="member">cosi_</ref>;<sp/></highlight></codeline>
+<codeline lineno="75" refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1aae979541fcbe94d30d2af8ec6c8dd711" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/>*<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1aae979541fcbe94d30d2af8ec6c8dd711" kindref="member">freq_</ref>;<sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1ae1a11e73fb4367ded52200f79e14eb1f" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1ae1a11e73fb4367ded52200f79e14eb1f" kindref="member">lampaltitude_</ref>;<sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1aa5d080e2cdf6e42b70839bce8d221d89" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1aa5d080e2cdf6e42b70839bce8d221d89" kindref="member">nnu_</ref>;<sp/></highlight></codeline>
+<codeline lineno="80" refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a2830be0e9408e315527de15a2b2add24" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a2830be0e9408e315527de15a2b2add24" kindref="member">ni_</ref>;<sp/></highlight></codeline>
+<codeline lineno="81" refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a5b67bd849e84cfb67d3537a73ff4a2ff" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a5b67bd849e84cfb67d3537a73ff4a2ff" kindref="member">nr_</ref>;<sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a0dd03f9bd89ed45445b9d9eacb4c0cf6" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a0dd03f9bd89ed45445b9d9eacb4c0cf6" kindref="member">minfreq_computed_</ref>;<sp/></highlight></codeline>
+<codeline lineno="84" refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a3140b04ea9067484b7535ac7efe8aa56" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a3140b04ea9067484b7535ac7efe8aa56" kindref="member">maxfreq_computed_</ref>;<sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a019d5da27d1939ea229adca9b45d1bd6" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a019d5da27d1939ea229adca9b45d1bd6" kindref="member">minfreq_lampframe_</ref>;<sp/></highlight></codeline>
+<codeline lineno="87" refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a15b4153523cc7627afee4915510319e4" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a15b4153523cc7627afee4915510319e4" kindref="member">maxfreq_lampframe_</ref>;<sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a60e328d9f2a7a8dbfe891f9d7e0905b1" refkind="member"><highlight class="normal"><sp/><sp/>bool<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a60e328d9f2a7a8dbfe891f9d7e0905b1" kindref="member">average_over_angle_</ref>;<sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Constructors<sp/>-<sp/>Destructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>-------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="94" refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a51eac4eb24f2bcd038142407e197612b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" kindref="member">GYOTO_OBJECT</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>fillProperty<sp/>is<sp/>overridden<sp/>to<sp/>remove<sp/>leading<sp/>&quot;!&quot;<sp/>from<sp/>FITS<sp/>filename</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a42a558bc44010a73986909dd9a2fdd41" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a42a558bc44010a73986909dd9a2fdd41" kindref="member">fillProperty</ref>(Gyoto::FactoryMessenger<sp/>*fmp,<sp/>Property<sp/>const<sp/>&amp;p)<sp/>const;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>using<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_generic_1ac66726b8c1271499fddb753e30cf9dee" kindref="member">Generic::metric</ref>;</highlight></codeline>
+<codeline lineno="99" refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1acb91def6848a6e7ad1f3c0c7510f8893" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1ac66726b8c1271499fddb753e30cf9dee" kindref="member">metric</ref>(SmartPointer&lt;Metric::Generic&gt;<sp/>gg);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a1ae8a8e37c84f77280b8329442a53867" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_directional_disk" kindref="compound">DirectionalDisk</ref>();<sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="103" refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1abee04a07f9ff7fae213cbd721e914582" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_directional_disk" kindref="compound">DirectionalDisk</ref>(const<sp/>DirectionalDisk&amp;<sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="104" refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a34c84ae0a7a9e587dfc378a8b780f9f8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_directional_disk" kindref="compound">DirectionalDisk</ref>*<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a34c84ae0a7a9e587dfc378a8b780f9f8" kindref="member">clone</ref><sp/>()<sp/>const;<sp/></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="106" refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a37525b4bbb462fcbca0654567f9e3995" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_gyoto_1_1_astrobj_1_1_directional_disk" kindref="compound">DirectionalDisk</ref>()<sp/>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Accessors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>---------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/>void<sp/>file(std::string<sp/>const<sp/>&amp;f);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/>std::string<sp/>file()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>void<sp/>averageOverAngle(bool<sp/>t);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>bool<sp/>averageOverAngle()const;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>void<sp/>lampaltitude(double<sp/>zz);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>double<sp/>lampaltitude()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>void<sp/>lampcutoffsinev(std::vector&lt;double&gt;<sp/>const<sp/>&amp;v)<sp/>;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>std::vector&lt;double&gt;<sp/>lampcutoffsinev()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>GYOTO_USE_CFITSIO</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/>fitsRead(std::string<sp/>filename_);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/>fitsWrite(std::string<sp/>filename_);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a8435c7dd52d55d5e943abb2b7d04e840" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a8435c7dd52d55d5e943abb2b7d04e840" kindref="member">setEmission</ref>(double<sp/>*<sp/>pattern);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/>void<sp/>radius(double<sp/>*<sp/>pattern);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1ac35ad8d194401629011504e1a35cb263" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1ac35ad8d194401629011504e1a35cb263" kindref="member">copyIntensity</ref>(double<sp/>const<sp/>*<sp/>const<sp/>pattern<sp/>=<sp/>NULL,</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size_t<sp/>const<sp/>naxes[3]<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1af1d698c7323ce8995d12892c0ed91179" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/>const<sp/>*<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1af1d698c7323ce8995d12892c0ed91179" kindref="member">getIntensity</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="157" refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a04e7bf71b7b55feac682e219f181109e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a04e7bf71b7b55feac682e219f181109e" kindref="member">getIntensityNaxes</ref>(<sp/>size_t<sp/>naxes[3]<sp/>)<sp/>const<sp/>;<sp/></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/>copyGridRadius(double<sp/>const<sp/>*<sp/>const<sp/>pattern<sp/>=<sp/>NULL,</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size_t<sp/>nr<sp/>=<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="162" refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a3c75645524d84c597dd4fc54da8d14a4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/>const<sp/>*<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a3c75645524d84c597dd4fc54da8d14a4" kindref="member">getGridRadius</ref>()<sp/>const;<sp/></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/>copyGridCosi(double<sp/>const<sp/>*<sp/>const<sp/>pattern<sp/>=<sp/>NULL,</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size_t<sp/>ni<sp/>=<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="165" refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1aba21eddb5711550d9f86dea0ec1e9a70" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/>const<sp/>*<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1aba21eddb5711550d9f86dea0ec1e9a70" kindref="member">getGridCosi</ref>()<sp/>const;<sp/></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/>copyGridFreq(double<sp/>const<sp/>*<sp/>const<sp/>pattern<sp/>=<sp/>NULL,</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size_t<sp/>ni<sp/>=<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="168" refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1abc12a293246eef88670c94691ec3c31d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/>const<sp/>*<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1abc12a293246eef88670c94691ec3c31d" kindref="member">getGridFreq</ref>()<sp/>const;<sp/></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="171" refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a8e70e8e8d43bf6b0e03e41a79a2d57a0" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a8e70e8e8d43bf6b0e03e41a79a2d57a0" kindref="member">getIndices</ref>(size_t<sp/>i[3],<sp/>double<sp/>const<sp/>co[4],<sp/>double<sp/>cosi,<sp/>double<sp/>nu=0.)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/>using<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_generic_1a93d130767671c25823d5ec3fd477e28a" kindref="member">ThinDisk::emission</ref>;</highlight></codeline>
+<codeline lineno="176" refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a7922052feb1a4471753a41463fd72015" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a7922052feb1a4471753a41463fd72015" kindref="member">emission</ref>(double<sp/>nu_em,<sp/>double<sp/>dsem,</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>state_t<sp/>const<sp/>&amp;c_ph,<sp/>double<sp/>const<sp/>c_obj[8]=NULL)<sp/>const;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/junichi/Gyoto/include/GyotoDirectionalDisk.h"/>
+  </compounddef>
+</doxygen>

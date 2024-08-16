@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="union_gyoto_1_1_property_1_1setter__t" kind="union" language="C++" prot="public">
+    <compoundname>Gyoto::Property::setter_t</compoundname>
+    <includes refid="_gyoto_property_8h" local="no">GyotoProperty.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="union_gyoto_1_1_property_1_1setter__t_1a45097ca7453517cc7075eb92e4722450" prot="public" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_property_1a5c3fdfa4811f9eaf9fe5828d0d815597" kindref="member">set_double_t</ref></type>
+        <definition>set_double_t Gyoto::Property::setter_t::set_double</definition>
+        <argsstring></argsstring>
+        <name>set_double</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="757" column="18" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="757" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_gyoto_1_1_property_1_1setter__t_1afd6a4dbdd7362030d39aded6fc5d9166" prot="public" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_property_1a033a73c9f62804556ea9e0b8eb8938ad" kindref="member">set_long_t</ref></type>
+        <definition>set_long_t Gyoto::Property::setter_t::set_long</definition>
+        <argsstring></argsstring>
+        <name>set_long</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="758" column="16" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="758" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_gyoto_1_1_property_1_1setter__t_1a12e020b40c6f937eae84768d0d01b3da" prot="public" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_property_1a7481266392c38fcf885d62dc0aab5f91" kindref="member">set_unsigned_long_t</ref></type>
+        <definition>set_unsigned_long_t Gyoto::Property::setter_t::set_unsigned_long</definition>
+        <argsstring></argsstring>
+        <name>set_unsigned_long</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="759" column="25" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="759" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_gyoto_1_1_property_1_1setter__t_1a70e0509a139ac5aff038f93957d23ec7" prot="public" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_property_1a03c8b8bc711939093c2d633bc65f48ad" kindref="member">set_size_t_t</ref></type>
+        <definition>set_size_t_t Gyoto::Property::setter_t::set_size_t</definition>
+        <argsstring></argsstring>
+        <name>set_size_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="760" column="18" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="760" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_gyoto_1_1_property_1_1setter__t_1a70356c3042d968418b4d53f3e046ca81" prot="public" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_property_1acd02ae8c14ca8ba4b834a4c3cdc8fd25" kindref="member">set_bool_t</ref></type>
+        <definition>set_bool_t Gyoto::Property::setter_t::set_bool</definition>
+        <argsstring></argsstring>
+        <name>set_bool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="761" column="16" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="761" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_gyoto_1_1_property_1_1setter__t_1a610984ff0349b70a70c3879e3a83a4d3" prot="public" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_property_1a7d54792987694733c75c606220fc5b39" kindref="member">set_string_t</ref></type>
+        <definition>set_string_t Gyoto::Property::setter_t::set_string</definition>
+        <argsstring></argsstring>
+        <name>set_string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="762" column="18" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="762" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_gyoto_1_1_property_1_1setter__t_1a77d6c48c74540926595c59f7f24a47b2" prot="public" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_property_1a46d660c155e7a23fef6a7e93915172a1" kindref="member">set_vector_double_t</ref></type>
+        <definition>set_vector_double_t Gyoto::Property::setter_t::set_vdouble</definition>
+        <argsstring></argsstring>
+        <name>set_vdouble</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="763" column="25" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="763" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_gyoto_1_1_property_1_1setter__t_1a42cf6d203f5bebe2946d2fa6b719158d" prot="public" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_property_1afb2774eec368e0416261a36e5ccc4822" kindref="member">set_vector_unsigned_long_t</ref></type>
+        <definition>set_vector_unsigned_long_t Gyoto::Property::setter_t::set_vulong</definition>
+        <argsstring></argsstring>
+        <name>set_vulong</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="764" column="32" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="764" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_gyoto_1_1_property_1_1setter__t_1a72baf94f542cc8ddf6f99b3a11c083e3" prot="public" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_property_1a0f446869148ce30d77175916b7b340cb" kindref="member">set_metric_t</ref></type>
+        <definition>set_metric_t Gyoto::Property::setter_t::set_metric</definition>
+        <argsstring></argsstring>
+        <name>set_metric</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="765" column="18" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="765" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_gyoto_1_1_property_1_1setter__t_1aef0577da35a8b7465a1208c9f2e7c5e5" prot="public" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_property_1a8c2f6452533d0b746bddb7b92d12c847" kindref="member">set_screen_t</ref></type>
+        <definition>set_screen_t Gyoto::Property::setter_t::set_screen</definition>
+        <argsstring></argsstring>
+        <name>set_screen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="766" column="18" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="766" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_gyoto_1_1_property_1_1setter__t_1a64bd1f12a22fef4f9a267b4167df3ffd" prot="public" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_property_1af8351d896ce1a89f4cb808912bca0076" kindref="member">set_astrobj_t</ref></type>
+        <definition>set_astrobj_t Gyoto::Property::setter_t::set_astrobj</definition>
+        <argsstring></argsstring>
+        <name>set_astrobj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="767" column="19" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="767" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_gyoto_1_1_property_1_1setter__t_1a6cfc80760be0782ba3bc7c539a383489" prot="public" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_property_1a44a66ea9027bf30b6b9285bb82f18554" kindref="member">set_spectrum_t</ref></type>
+        <definition>set_spectrum_t Gyoto::Property::setter_t::set_spectrum</definition>
+        <argsstring></argsstring>
+        <name>set_spectrum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="768" column="20" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="768" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_gyoto_1_1_property_1_1setter__t_1a2e92e0d1c4dbb16f9f66f9ba5ab88044" prot="public" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_property_1a1a5f0ac8dd4289760def476217a4a87d" kindref="member">set_spectrometer_t</ref></type>
+        <definition>set_spectrometer_t Gyoto::Property::setter_t::set_spectrometer</definition>
+        <argsstring></argsstring>
+        <name>set_spectrometer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="769" column="24" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="769" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Union holding an accessor to set any type. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Right type is stored in <ref refid="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" kindref="member">type</ref> </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Astrobj::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="6">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Screen &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="2">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Spectrometer::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="3">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Metric::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="1">
+        <label>Gyoto::Property::setter_t</label>
+        <link refid="union_gyoto_1_1_property_1_1setter__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>set_spectrometer</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>set_metric</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>set_spectrum</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>set_astrobj</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>set_screen</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Spectrum::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/junichi/Gyoto/include/GyotoProperty.h" line="756" column="3" bodyfile="/home/junichi/Gyoto/include/GyotoProperty.h" bodystart="756" bodyend="770"/>
+    <listofallmembers>
+      <member refid="union_gyoto_1_1_property_1_1setter__t_1a64bd1f12a22fef4f9a267b4167df3ffd" prot="public" virt="non-virtual"><scope>Gyoto::Property::setter_t</scope><name>set_astrobj</name></member>
+      <member refid="union_gyoto_1_1_property_1_1setter__t_1a70356c3042d968418b4d53f3e046ca81" prot="public" virt="non-virtual"><scope>Gyoto::Property::setter_t</scope><name>set_bool</name></member>
+      <member refid="union_gyoto_1_1_property_1_1setter__t_1a45097ca7453517cc7075eb92e4722450" prot="public" virt="non-virtual"><scope>Gyoto::Property::setter_t</scope><name>set_double</name></member>
+      <member refid="union_gyoto_1_1_property_1_1setter__t_1afd6a4dbdd7362030d39aded6fc5d9166" prot="public" virt="non-virtual"><scope>Gyoto::Property::setter_t</scope><name>set_long</name></member>
+      <member refid="union_gyoto_1_1_property_1_1setter__t_1a72baf94f542cc8ddf6f99b3a11c083e3" prot="public" virt="non-virtual"><scope>Gyoto::Property::setter_t</scope><name>set_metric</name></member>
+      <member refid="union_gyoto_1_1_property_1_1setter__t_1aef0577da35a8b7465a1208c9f2e7c5e5" prot="public" virt="non-virtual"><scope>Gyoto::Property::setter_t</scope><name>set_screen</name></member>
+      <member refid="union_gyoto_1_1_property_1_1setter__t_1a70e0509a139ac5aff038f93957d23ec7" prot="public" virt="non-virtual"><scope>Gyoto::Property::setter_t</scope><name>set_size_t</name></member>
+      <member refid="union_gyoto_1_1_property_1_1setter__t_1a2e92e0d1c4dbb16f9f66f9ba5ab88044" prot="public" virt="non-virtual"><scope>Gyoto::Property::setter_t</scope><name>set_spectrometer</name></member>
+      <member refid="union_gyoto_1_1_property_1_1setter__t_1a6cfc80760be0782ba3bc7c539a383489" prot="public" virt="non-virtual"><scope>Gyoto::Property::setter_t</scope><name>set_spectrum</name></member>
+      <member refid="union_gyoto_1_1_property_1_1setter__t_1a610984ff0349b70a70c3879e3a83a4d3" prot="public" virt="non-virtual"><scope>Gyoto::Property::setter_t</scope><name>set_string</name></member>
+      <member refid="union_gyoto_1_1_property_1_1setter__t_1a12e020b40c6f937eae84768d0d01b3da" prot="public" virt="non-virtual"><scope>Gyoto::Property::setter_t</scope><name>set_unsigned_long</name></member>
+      <member refid="union_gyoto_1_1_property_1_1setter__t_1a77d6c48c74540926595c59f7f24a47b2" prot="public" virt="non-virtual"><scope>Gyoto::Property::setter_t</scope><name>set_vdouble</name></member>
+      <member refid="union_gyoto_1_1_property_1_1setter__t_1a42cf6d203f5bebe2946d2fa6b719158d" prot="public" virt="non-virtual"><scope>Gyoto::Property::setter_t</scope><name>set_vulong</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

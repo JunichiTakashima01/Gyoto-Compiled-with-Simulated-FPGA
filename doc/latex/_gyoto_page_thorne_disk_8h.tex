@@ -1,0 +1,32 @@
+\hypertarget{_gyoto_page_thorne_disk_8h}{}\doxysection{Gyoto\+Page\+Thorne\+Disk.\+h File Reference}
+\label{_gyoto_page_thorne_disk_8h}\index{GyotoPageThorneDisk.h@{GyotoPageThorneDisk.h}}
+
+
+A geometrically thin, optically thick disk.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$Gyoto\+Thin\+Disk.\+h$>$}\newline
+{\ttfamily \#include $<$Gyoto\+Black\+Body\+Spectrum.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_page_thorne_disk}{Gyoto\+::\+Astrobj\+::\+Page\+Thorne\+Disk}}
+\begin{DoxyCompactList}\small\item\em Geometrically thin disk in Kerr metric. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_gyoto}{Gyoto}}
+\begin{DoxyCompactList}\small\item\em Namespace for the \mbox{\hyperlink{namespace_gyoto}{Gyoto}} library. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Gyoto\+::\+Astrobj}}
+\begin{DoxyCompactList}\small\item\em Access to astronomical objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A geometrically thin, optically thick disk. 
+
+This class describes a disk contained in the z=0 (equatorial) plane, extending from r=r\+\_\+\+ISCO to r=infinity. The flux emitted at radius r is given by Page \& Thorne (1974, ApJ 191\+:499, Eqs. 11b, 14, 15).
+
+Only bolometric flux is implemented (as quantity User4), no spectral resolution. 

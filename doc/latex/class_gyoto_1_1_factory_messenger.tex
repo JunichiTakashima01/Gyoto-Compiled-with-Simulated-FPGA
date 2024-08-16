@@ -1,0 +1,622 @@
+\hypertarget{class_gyoto_1_1_factory_messenger}{}\doxysection{Gyoto\+::Factory\+Messenger Class Reference}
+\label{class_gyoto_1_1_factory_messenger}\index{Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}}
+
+
+\mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}} / \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}{Smart\+Pointee\+::\+Subcontractor\+\_\+t}} interface.  
+
+
+
+
+{\ttfamily \#include $<$Gyoto\+Factory\+Messenger.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_a0bfc9828d0554895ff2c4781935848bb}\label{class_gyoto_1_1_factory_messenger_a0bfc9828d0554895ff2c4781935848bb}} 
+\mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a0bfc9828d0554895ff2c4781935848bb}{Factory\+Messenger}} (\mbox{\hyperlink{class_gyoto_1_1_factory}{Gyoto\+::\+Factory}} $\ast$, xercesc\+::\+DOMElement $\ast$)
+\begin{DoxyCompactList}\small\item\em Constructor called before subcontracting. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_a1eefa10fe88405224ead5a0c97acce32}\label{class_gyoto_1_1_factory_messenger_a1eefa10fe88405224ead5a0c97acce32}} 
+\mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a1eefa10fe88405224ead5a0c97acce32}{Factory\+Messenger}} (const \mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}} \&parent, std\+::string)
+\begin{DoxyCompactList}\small\item\em Constructor called before fill\+Element. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_acfaf0c728ad6768bdfd25ad5e15fcd13}\label{class_gyoto_1_1_factory_messenger_acfaf0c728ad6768bdfd25ad5e15fcd13}} 
+void \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_acfaf0c728ad6768bdfd25ad5e15fcd13}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Get back to first parameter. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Metric\+::\+Generic}} $>$ \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a20033615402e9d7a7c21fc5ef4ebf386}{metric}} ()
+\begin{DoxyCompactList}\small\item\em Build and get the \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} described in this XML file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}} $>$ \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a59571b4b88162856c69af230f2c11f95}{screen}} ()
+\begin{DoxyCompactList}\small\item\em Build and get the \mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}} described in this XML file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_photon}{Photon}} $>$ \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a7acd40d3f59dc9cc8660baba0151bd11}{photon}} ()
+\begin{DoxyCompactList}\small\item\em Build and get the \mbox{\hyperlink{class_gyoto_1_1_photon}{Photon}} described in this XML file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic}{Astrobj\+::\+Generic}} $>$ \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_aea5108fe2bb15a154883e2776885a593}{astrobj}} ()
+\begin{DoxyCompactList}\small\item\em Build and get the \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}} described in this XML file. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a716340221e527c61a05af389590b53f4}{get\+Next\+Parameter}} (std\+::string $\ast$name, std\+::string $\ast$content, std\+::string $\ast$unit=NULL)
+\begin{DoxyCompactList}\small\item\em Get name and value of next parameter. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a3abfe9dcb058996a0d46dd357f1e8d3c}{get\+Self\+Attribute}} (std\+::string attrname) const
+\begin{DoxyCompactList}\small\item\em Get attribute of \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a378caf5b3eb30c091a015d4351fb0f09}{Factory\+Messenger\+::element\+\_\+}}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a48555295390ec53540322c28581394f9}{get\+Attribute}} (std\+::string attrname) const
+\begin{DoxyCompactList}\small\item\em Get attribute of a last retrieved parameter. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a468f8e44ec2f2b847c423eae6bb7ef9a}{get\+Full\+Content}} () const
+\begin{DoxyCompactList}\small\item\em Get full content of element\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}} $\ast$ \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a45eecd6b12e2577f9d8abf12e0aa76bc}{get\+Child}} () const
+\begin{DoxyCompactList}\small\item\em Get another \mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}} instance initialized to current child. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a343e324a387d3a30c93bd391828a9858}{full\+Path}} (std\+::string relpath)
+\begin{DoxyCompactList}\small\item\em Transform path into full path specification. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a8ab9c2e09c674dfac3cf443b694ed2a0}{metric}} (\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Metric\+::\+Generic}} $>$)
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a8dae584154a5108e5d3533728f316a4f}{astrobj}} (\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic}{Astrobj\+::\+Generic}} $>$)
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a409a59154d6fe6f8475cf3d8a7d59de5}{screen}} (\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}} $>$)
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a7285f6988ee8c0be458e683615885703}{set\+Parameter}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Output parameter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a6ef06141e38e2babe1137f473a10d287}{set\+Parameter}} (std\+::string name, double value)
+\begin{DoxyCompactList}\small\item\em Output parameter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a5674fe6319b0634cb83d33ec7c475d1a}{set\+Parameter}} (std\+::string name, long int value)
+\begin{DoxyCompactList}\small\item\em Output parameter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_ab5b5572bcdb3b5bee2e1343bb1f77c8a}{set\+Parameter}} (std\+::string name, unsigned int value)
+\begin{DoxyCompactList}\small\item\em Output parameter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a2f132e5caea6cdfbc257eda9538cac1a}{set\+Parameter}} (std\+::string name, unsigned long value)
+\begin{DoxyCompactList}\small\item\em Output parameter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_af48912fc28014db9d8a4479d111a24f2}{set\+Parameter}} (std\+::string name, int value)
+\begin{DoxyCompactList}\small\item\em Output parameter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_aca812ff248777ea84c2eda83fc36fbf3}{set\+Parameter}} (std\+::string name, std\+::string value)
+\begin{DoxyCompactList}\small\item\em Output parameter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a394034fa69500a9cdd1ec4e9a99856e8}{set\+Parameter}} (std\+::string name, double val\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} n, \mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}} $\ast$$\ast$child=NULL)
+\begin{DoxyCompactList}\small\item\em Output an array of parameters. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_ae54ea09b36e25caac020a68fb8c226e9}\label{class_gyoto_1_1_factory_messenger_ae54ea09b36e25caac020a68fb8c226e9}} 
+void {\bfseries set\+Parameter} (std\+::string name, std\+::vector$<$ double $>$ const \&val, \mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}} $\ast$$\ast$child=NULL)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_afbbe49d4453e88e97ed4fd7e8c93932c}\label{class_gyoto_1_1_factory_messenger_afbbe49d4453e88e97ed4fd7e8c93932c}} 
+void \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_afbbe49d4453e88e97ed4fd7e8c93932c}{set\+Parameter}} (std\+::string name, std\+::vector$<$ unsigned long $>$ const \&val, \mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}} $\ast$$\ast$child=NULL)
+\begin{DoxyCompactList}\small\item\em Output a vector of parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a9f459c70f3d7495465e6cccb29195710}{set\+Self\+Attribute}} (std\+::string attrname, std\+::string value)
+\begin{DoxyCompactList}\small\item\em Set attribute in \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a378caf5b3eb30c091a015d4351fb0f09}{Factory\+Messenger\+::element\+\_\+}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_ae14ea235e15c79cadcf26d6f021bd7a5}{set\+Self\+Attribute}} (std\+::string attrname, unsigned long value)
+\begin{DoxyCompactList}\small\item\em Set attribute in \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a378caf5b3eb30c091a015d4351fb0f09}{Factory\+Messenger\+::element\+\_\+}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_af28276c1fb03adb47b1073c0e4002371}{set\+Self\+Attribute}} (std\+::string attrname, unsigned int value)
+\begin{DoxyCompactList}\small\item\em Set attribute in \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a378caf5b3eb30c091a015d4351fb0f09}{Factory\+Messenger\+::element\+\_\+}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a788d642f4e37c989bc8ebb0797fb4c46}{set\+Self\+Attribute}} (std\+::string attrname, double value)
+\begin{DoxyCompactList}\small\item\em Set attribute in \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a378caf5b3eb30c091a015d4351fb0f09}{Factory\+Messenger\+::element\+\_\+}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a4e9a421b73be417f797c33385d79af87}{set\+Full\+Content}} (std\+::string value)
+\begin{DoxyCompactList}\small\item\em Low level, prefer \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a7285f6988ee8c0be458e683615885703}{set\+Parameter()}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}} $\ast$ \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_ae0ac2e5f5138eb84c53607685d8df7b0}{make\+Child}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Create child \mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a8fa6e9d68b48773a0d608159c933b8c9}{parse\+Array}} (std\+::string src, double dst\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} max\+\_\+tokens)
+\begin{DoxyCompactList}\small\item\em Parse string into array. \end{DoxyCompactList}\item 
+static std\+::vector$<$ double $>$ \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a3ba0af4bedc47932f06010b2499d85a6}{parse\+Array}} (std\+::string src)
+\begin{DoxyCompactList}\small\item\em Parse string into array. \end{DoxyCompactList}\item 
+static std\+::vector$<$ unsigned long $>$ \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_af774aa9700f29251db97c66766506c27}{parse\+Array\+ULong}} (std\+::string src)
+\begin{DoxyCompactList}\small\item\em Parse string into array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_a872915bff11693cb686e32b7f443e346}\label{class_gyoto_1_1_factory_messenger_a872915bff11693cb686e32b7f443e346}} 
+\mbox{\hyperlink{class_gyoto_1_1_factory}{Gyoto\+::\+Factory}} $\ast$ \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a872915bff11693cb686e32b7f443e346}{employer\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}} that sent this messenger. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_a378caf5b3eb30c091a015d4351fb0f09}\label{class_gyoto_1_1_factory_messenger_a378caf5b3eb30c091a015d4351fb0f09}} 
+xercesc\+::\+DOMElement $\ast$ \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a378caf5b3eb30c091a015d4351fb0f09}{element\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The XML element concerned by this transaction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_a9c8eb521fb3b2d8e72ec2ab12079dbc4}\label{class_gyoto_1_1_factory_messenger_a9c8eb521fb3b2d8e72ec2ab12079dbc4}} 
+xercesc\+::\+DOMNode\+List $\ast$ \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a9c8eb521fb3b2d8e72ec2ab12079dbc4}{children\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The children of the XML element concerned by this transaction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_a4ea5dc21b68de8f29da9323f8b1f3238}\label{class_gyoto_1_1_factory_messenger_a4ea5dc21b68de8f29da9323f8b1f3238}} 
+XMLSize\+\_\+t \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a4ea5dc21b68de8f29da9323f8b1f3238}{node\+Count\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The number of children of the XML element concerned by this transaction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_af34b6cfe2f353c8a5408340667ccc36c}\label{class_gyoto_1_1_factory_messenger_af34b6cfe2f353c8a5408340667ccc36c}} 
+XMLSize\+\_\+t \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_af34b6cfe2f353c8a5408340667ccc36c}{cur\+Node\+Index\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Current child. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}} / \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}{Smart\+Pointee\+::\+Subcontractor\+\_\+t}} interface. 
+
+A \mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}} instance is like an employee passing messages between its employer (the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}}) and a subcontractor (a function of the \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}{Smart\+Pointee\+::\+Subcontractor\+\_\+t}} type).
+
+The \mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}} also communicate with the fill\+Element method of some classes (\mbox{\hyperlink{class_gyoto_1_1_object_a0ffc3f84b4c2372d639eb848605fb1f3}{Astrobj\+::\+Generic\+::fill\+Element()}}, \mbox{\hyperlink{class_gyoto_1_1_object_a0ffc3f84b4c2372d639eb848605fb1f3}{Metric\+::\+Generic\+::fill\+Element()}}, \mbox{\hyperlink{class_gyoto_1_1_object_a0ffc3f84b4c2372d639eb848605fb1f3}{Spectrum\+::\+Generic\+::fill\+Element()}}).
+
+A subcontractor function typically loops calling \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a716340221e527c61a05af389590b53f4}{get\+Next\+Parameter()}} to read all the parameters provided for it in an XML file. If BASE is one of \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}}, \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} or \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}}, and My\+Class is an implementation of BASE\+::\+Generic, the subcontractor static member function often looks like this\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ SmartPointer<Gyoto::BASE::Generic> \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_a889583a9d40c821bd55c4191cb3201ed}{MyClass::Subcontractor}}(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto::FactoryMessenger}} *messenger) \{}
+\DoxyCodeLine{ SmartPointer<Gyoto::BASE::MyClass> deliverable = \textcolor{keyword}{new} MyClass();}
+\DoxyCodeLine{ \textcolor{keywordflow}{while} (messenger-\/>\mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a716340221e527c61a05af389590b53f4}{getNextParameter}}(name, content) \{}
+\DoxyCodeLine{  if (name==\textcolor{stringliteral}{"{}SomeProperty"{}}) deliverable -\/> setSomeProperty(content);}
+\DoxyCodeLine{  else if (name==\textcolor{stringliteral}{"{}AnotherProperty"{}}) deliverable -\/> setAnotherProperty(content);}
+\DoxyCodeLine{ \}}
+\DoxyCodeLine{ \textcolor{keywordflow}{return} deliverable;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Other get$\ast$ methods are provided to cope with more complex syntax (e.\+g. when XML attributes are used, as in $<$Parameter\+Name attribute=\char`\"{}attrvalue\char`\"{}$>$Parameter\+Value$<$/\+Parameter\+Name$>$
+
+Conversely, the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}} asks certain \mbox{\hyperlink{namespace_gyoto}{Gyoto}} classes through their fill\+Element() method how they should be printed or saved to an XML file. Those fill\+Element() methods use the Factory\+Messenger\+::set$\ast$() methods (in particular \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a7285f6988ee8c0be458e683615885703}{set\+Parameter()}}) as well as, occasionally, \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_ae0ac2e5f5138eb84c53607685d8df7b0}{make\+Child()}} to describe themselves to the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_aea5108fe2bb15a154883e2776885a593}\label{class_gyoto_1_1_factory_messenger_aea5108fe2bb15a154883e2776885a593}} 
+\index{Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}!astrobj@{astrobj}}
+\index{astrobj@{astrobj}!Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}}
+\doxysubsubsection{\texorpdfstring{astrobj()}{astrobj()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$\mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic}{Astrobj\+::\+Generic}}$>$ Gyoto\+::\+Factory\+Messenger\+::astrobj (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Build and get the \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}} described in this XML file. 
+
+An \mbox{\hyperlink{namespace_gyoto}{Gyoto}} XML file may contain at most a single \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}} section and it may be present about anywhere in the XML tree. Individual subcontractors should not try to interpret this section directly, but should call \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_aea5108fe2bb15a154883e2776885a593}{astrobj()}} to find and interpret the \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}} section. \mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_a8dae584154a5108e5d3533728f316a4f}\label{class_gyoto_1_1_factory_messenger_a8dae584154a5108e5d3533728f316a4f}} 
+\index{Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}!astrobj@{astrobj}}
+\index{astrobj@{astrobj}!Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}}
+\doxysubsubsection{\texorpdfstring{astrobj()}{astrobj()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Gyoto\+::\+Factory\+Messenger\+::astrobj (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic}{Astrobj\+::\+Generic}} $>$}]{ }\end{DoxyParamCaption})}
+
+
+
+Set the \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}}. 
+
+Same as \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a20033615402e9d7a7c21fc5ef4ebf386}{metric()}}, but for the \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}}. \mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_a343e324a387d3a30c93bd391828a9858}\label{class_gyoto_1_1_factory_messenger_a343e324a387d3a30c93bd391828a9858}} 
+\index{Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}!fullPath@{fullPath}}
+\index{fullPath@{fullPath}!Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}}
+\doxysubsubsection{\texorpdfstring{fullPath()}{fullPath()}}
+{\footnotesize\ttfamily std\+::string Gyoto\+::\+Factory\+Messenger\+::full\+Path (\begin{DoxyParamCaption}\item[{std\+::string}]{relpath }\end{DoxyParamCaption})}
+
+
+
+Transform path into full path specification. 
+
+This function takes a relative path (e.\+g. ../foo/bar.data) and transforms it into a full path (starting with \char`\"{}/\char`\"{}). It is not guaranteed to be portable (we assume that the path separator is \char`\"{}/\char`\"{} and that absolute paths start with \char`\"{}/\char`\"{}).
+
+
+\begin{DoxyParams}{Parameters}
+{\em relpath} & path relative to the directory where the XML file on which the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}} works is located.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+fullpath at full path specification to the same point pon the file-\/system. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_a48555295390ec53540322c28581394f9}\label{class_gyoto_1_1_factory_messenger_a48555295390ec53540322c28581394f9}} 
+\index{Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}!getAttribute@{getAttribute}}
+\index{getAttribute@{getAttribute}!Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}}
+\doxysubsubsection{\texorpdfstring{getAttribute()}{getAttribute()}}
+{\footnotesize\ttfamily std\+::string Gyoto\+::\+Factory\+Messenger\+::get\+Attribute (\begin{DoxyParamCaption}\item[{std\+::string}]{attrname }\end{DoxyParamCaption}) const}
+
+
+
+Get attribute of a last retrieved parameter. 
+
+For instance 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<ParameterName attrname=\textcolor{stringliteral}{"{}attrvalue"{}}>ParameterContent</ParameterName>}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em attrname} & name of the attribute \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+attrvalue 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_a45eecd6b12e2577f9d8abf12e0aa76bc}\label{class_gyoto_1_1_factory_messenger_a45eecd6b12e2577f9d8abf12e0aa76bc}} 
+\index{Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}!getChild@{getChild}}
+\index{getChild@{getChild}!Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}}
+\doxysubsubsection{\texorpdfstring{getChild()}{getChild()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}}$\ast$ Gyoto\+::\+Factory\+Messenger\+::get\+Child (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get another \mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}} instance initialized to current child. 
+
+If one of the \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a9c8eb521fb3b2d8e72ec2ab12079dbc4}{Factory\+Messenger\+::children\+\_\+}} is complex (for instance the complete description of a \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Gyoto\+::\+Spectrum}}), it is possible to initialize a new \mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}} and call the correct subcontractor\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{SmartPointer<Spectrum::Generic> spectrum = NULL;}
+\DoxyCodeLine{\textcolor{keywordflow}{while} (messenger-\/>getNextParameter(name, content) \{}
+\DoxyCodeLine{ if (name==\textcolor{stringliteral}{"{}Spectrum"{}}) \{}
+\DoxyCodeLine{  content = messenger-\/>getAttribute(\textcolor{stringliteral}{"{}kind"{}});}
+\DoxyCodeLine{  FactoryMessenger* child = messenger-\/>getChild();}
+\DoxyCodeLine{  deliverable-\/>spectrum( (*Spectrum::getSubcontractor(content))(child) );}
+\DoxyCodeLine{  delete child;}
+\DoxyCodeLine{ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ The child is allocated with new and must be deleted after use. \mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_a468f8e44ec2f2b847c423eae6bb7ef9a}\label{class_gyoto_1_1_factory_messenger_a468f8e44ec2f2b847c423eae6bb7ef9a}} 
+\index{Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}!getFullContent@{getFullContent}}
+\index{getFullContent@{getFullContent}!Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}}
+\doxysubsubsection{\texorpdfstring{getFullContent()}{getFullContent()}}
+{\footnotesize\ttfamily std\+::string Gyoto\+::\+Factory\+Messenger\+::get\+Full\+Content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get full content of element\+\_\+. 
+
+In exceptional circumstances, it may be necessary to get the entire text content of the topmost element \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a378caf5b3eb30c091a015d4351fb0f09}{Factory\+Messenger\+::element\+\_\+}} instead or getting only the individual \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a9c8eb521fb3b2d8e72ec2ab12079dbc4}{Factory\+Messenger\+::children\+\_\+}} .
+
+For instance a \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer}{Spectrometer}} description looks like this\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<Spectrometer kind=\textcolor{stringliteral}{"{}wave"{}} nsamples=\textcolor{stringliteral}{"{}10"{}}> 2.0e-\/6 2.4e-\/6</Astrobj>}
+
+\end{DoxyCode}
+ and the \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer}{Spectrometer}} builder uses \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a468f8e44ec2f2b847c423eae6bb7ef9a}{get\+Full\+Content()}} to retrieve the spectral boundaries (2.\+0e-\/6 and 2.\+4e-\/6 here). \mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_a716340221e527c61a05af389590b53f4}\label{class_gyoto_1_1_factory_messenger_a716340221e527c61a05af389590b53f4}} 
+\index{Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}!getNextParameter@{getNextParameter}}
+\index{getNextParameter@{getNextParameter}!Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}}
+\doxysubsubsection{\texorpdfstring{getNextParameter()}{getNextParameter()}}
+{\footnotesize\ttfamily int Gyoto\+::\+Factory\+Messenger\+::get\+Next\+Parameter (\begin{DoxyParamCaption}\item[{std\+::string $\ast$}]{name,  }\item[{std\+::string $\ast$}]{content,  }\item[{std\+::string $\ast$}]{unit = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+
+
+Get name and value of next parameter. 
+
+On each call, return a pair name-\/content of one of the children\+\_\+. Usually, \char`\"{}name\char`\"{} is the name of a parameter and \char`\"{}content\char`\"{} is the string representation of the corresponding value. For instance\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<Name>Content</Name>}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & upon output, name of the child \\
+\hline
+{\em content} & of the child \\
+\hline
+{\em unit=} & propertty of the child \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if there remains parameters to retrieve, 0 otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_a3abfe9dcb058996a0d46dd357f1e8d3c}\label{class_gyoto_1_1_factory_messenger_a3abfe9dcb058996a0d46dd357f1e8d3c}} 
+\index{Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}!getSelfAttribute@{getSelfAttribute}}
+\index{getSelfAttribute@{getSelfAttribute}!Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}}
+\doxysubsubsection{\texorpdfstring{getSelfAttribute()}{getSelfAttribute()}}
+{\footnotesize\ttfamily std\+::string Gyoto\+::\+Factory\+Messenger\+::get\+Self\+Attribute (\begin{DoxyParamCaption}\item[{std\+::string}]{attrname }\end{DoxyParamCaption}) const}
+
+
+
+Get attribute of \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a378caf5b3eb30c091a015d4351fb0f09}{Factory\+Messenger\+::element\+\_\+}}. 
+
+For instance a \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer}{Spectrometer}} description looks like this 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<Spectrometer kind=\textcolor{stringliteral}{"{}wave"{}} nsamples=\textcolor{stringliteral}{"{}10"{}}> 2.0e-\/6 2.4e-\/6</Astrobj>}
+
+\end{DoxyCode}
+ and the \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer}{Spectrometer}} builder uses \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a3abfe9dcb058996a0d46dd357f1e8d3c}{get\+Self\+Attribute()}} to retrieve the attributes \char`\"{}kind\char`\"{} and \char`\"{}nsamples\char`\"{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em attrname} & name of the attribute \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+attrvalue 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_ae0ac2e5f5138eb84c53607685d8df7b0}\label{class_gyoto_1_1_factory_messenger_ae0ac2e5f5138eb84c53607685d8df7b0}} 
+\index{Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}!makeChild@{makeChild}}
+\index{makeChild@{makeChild}!Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}}
+\doxysubsubsection{\texorpdfstring{makeChild()}{makeChild()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}}$\ast$ Gyoto\+::\+Factory\+Messenger\+::make\+Child (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Create child \mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}}. 
+
+To be used from fill\+Element() methods. For instance, the Star\+::fill\+Element() method calls \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_ae0ac2e5f5138eb84c53607685d8df7b0}{make\+Child()}} to save the Star\textquotesingle{}s \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}} and Opacity members somewhat like this\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a0bfc9828d0554895ff2c4781935848bb}{FactoryMessenger}} * child;}
+\DoxyCodeLine{child = messenger-\/> \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_ae0ac2e5f5138eb84c53607685d8df7b0}{makeChild}}(\textcolor{stringliteral}{"{}Spectrum"{}});}
+\DoxyCodeLine{spectrum\_ -\/> fillElement(child);}
+\DoxyCodeLine{\textcolor{keyword}{delete} child;}
+\DoxyCodeLine{child = messenger-\/> \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_ae0ac2e5f5138eb84c53607685d8df7b0}{makeChild}}(\textcolor{stringliteral}{"{}Opacity"{}});}
+\DoxyCodeLine{opacity\_ -\/> fillElement(child);}
+\DoxyCodeLine{\textcolor{keyword}{delete} child;}
+\DoxyCodeLine{child=NULL;}
+
+\end{DoxyCode}
+
+
+The child messenger is allocated with new, you need to delete it after use. \mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_a20033615402e9d7a7c21fc5ef4ebf386}\label{class_gyoto_1_1_factory_messenger_a20033615402e9d7a7c21fc5ef4ebf386}} 
+\index{Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}!metric@{metric}}
+\index{metric@{metric}!Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}}
+\doxysubsubsection{\texorpdfstring{metric()}{metric()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$\mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Metric\+::\+Generic}}$>$ Gyoto\+::\+Factory\+Messenger\+::metric (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Build and get the \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} described in this XML file. 
+
+An \mbox{\hyperlink{namespace_gyoto}{Gyoto}} XML file may contain at most a single \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} section and it may be present about anywhere in the XML tree. Individual subcontractors should not try to interpret this section directly, but should call \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a20033615402e9d7a7c21fc5ef4ebf386}{metric()}} to find and interpret the \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} section. \mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_a8ab9c2e09c674dfac3cf443b694ed2a0}\label{class_gyoto_1_1_factory_messenger_a8ab9c2e09c674dfac3cf443b694ed2a0}} 
+\index{Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}!metric@{metric}}
+\index{metric@{metric}!Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}}
+\doxysubsubsection{\texorpdfstring{metric()}{metric()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Gyoto\+::\+Factory\+Messenger\+::metric (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Metric\+::\+Generic}} $>$}]{ }\end{DoxyParamCaption})}
+
+
+
+Set the \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}}. 
+
+At most one \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} section may be present in a give \mbox{\hyperlink{namespace_gyoto}{Gyoto}} XML file.
+
+When an object\textquotesingle{}s fill\+Element() method is called, if this object is connected to a \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}}, it should call \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a20033615402e9d7a7c21fc5ef4ebf386}{metric()}} with this \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}}. Very often, the \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} will already have been set previously. The \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}} will check that all the objects in the hierarchy are attached to the same \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} instance, and save this instance only once. Trying to set the \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} to something else than the already set \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} instance is an error condition.
+
+To make things clearer\+: Assume \char`\"{}scenery\char`\"{} is a fully filled \mbox{\hyperlink{class_gyoto_1_1_scenery}{Scenery}}. scenery-\/$>$fill\+Element(messenger) will call\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{messenger-\/>metric(Scenery::gg\_)}
+\DoxyCodeLine{messenger-\/>screen(\mbox{\hyperlink{class_gyoto_1_1_scenery_ae5fd1c4017101dd5863b314ad2856d2c}{Scenery::screen\_}})}
+\DoxyCodeLine{messenger-\/>astrobj(Scenery::obj\_);}
+
+\end{DoxyCode}
+
+
+The \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}} will then call screen\+\_\+-\/$>$fill\+Element(child\+\_\+messenger) and obj\+\_\+-\/$>$fill\+Element(child\+\_\+messenger), each of which will also call \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a20033615402e9d7a7c21fc5ef4ebf386}{metric()}}. If the same \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} is connected to the \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}}, to the \mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}} and to the \mbox{\hyperlink{class_gyoto_1_1_scenery}{Scenery}}, all is well. Else, you have a bug to fix. \mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_a3ba0af4bedc47932f06010b2499d85a6}\label{class_gyoto_1_1_factory_messenger_a3ba0af4bedc47932f06010b2499d85a6}} 
+\index{Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}!parseArray@{parseArray}}
+\index{parseArray@{parseArray}!Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}}
+\doxysubsubsection{\texorpdfstring{parseArray()}{parseArray()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static std\+::vector$<$double$>$ Gyoto\+::\+Factory\+Messenger\+::parse\+Array (\begin{DoxyParamCaption}\item[{std\+::string}]{src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Parse string into array. 
+
+Parse tokens from string src, returns them into a std\+::vector$<$double$>$. \mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_a8fa6e9d68b48773a0d608159c933b8c9}\label{class_gyoto_1_1_factory_messenger_a8fa6e9d68b48773a0d608159c933b8c9}} 
+\index{Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}!parseArray@{parseArray}}
+\index{parseArray@{parseArray}!Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}}
+\doxysubsubsection{\texorpdfstring{parseArray()}{parseArray()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} Gyoto\+::\+Factory\+Messenger\+::parse\+Array (\begin{DoxyParamCaption}\item[{std\+::string}]{src,  }\item[{double}]{dst\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}}}]{max\+\_\+tokens }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Parse string into array. 
+
+Parse at most max\+\_\+tokens tokens from string src into pre-\/allocated array dst. Returns the number of tokens actually found (interpreted using atof). dst must be at least of size max\+\_\+tokens. \mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_af774aa9700f29251db97c66766506c27}\label{class_gyoto_1_1_factory_messenger_af774aa9700f29251db97c66766506c27}} 
+\index{Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}!parseArrayULong@{parseArrayULong}}
+\index{parseArrayULong@{parseArrayULong}!Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}}
+\doxysubsubsection{\texorpdfstring{parseArrayULong()}{parseArrayULong()}}
+{\footnotesize\ttfamily static std\+::vector$<$unsigned long$>$ Gyoto\+::\+Factory\+Messenger\+::parse\+Array\+ULong (\begin{DoxyParamCaption}\item[{std\+::string}]{src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Parse string into array. 
+
+Parse tokens from string src, returns them into a std\+::vector$<$unsigned long$>$. \mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_a7acd40d3f59dc9cc8660baba0151bd11}\label{class_gyoto_1_1_factory_messenger_a7acd40d3f59dc9cc8660baba0151bd11}} 
+\index{Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}!photon@{photon}}
+\index{photon@{photon}!Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}}
+\doxysubsubsection{\texorpdfstring{photon()}{photon()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$\mbox{\hyperlink{class_gyoto_1_1_photon}{Photon}}$>$ Gyoto\+::\+Factory\+Messenger\+::photon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Build and get the \mbox{\hyperlink{class_gyoto_1_1_photon}{Photon}} described in this XML file. 
+
+An \mbox{\hyperlink{namespace_gyoto}{Gyoto}} XML file may contain at most a single \mbox{\hyperlink{class_gyoto_1_1_photon}{Photon}} section and it may be present about anywhere in the XML tree. Individual subcontractors should not try to interpret this section directly, but should call \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a7acd40d3f59dc9cc8660baba0151bd11}{photon()}} to find and interpret the \mbox{\hyperlink{class_gyoto_1_1_photon}{Photon}} section. \mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_a59571b4b88162856c69af230f2c11f95}\label{class_gyoto_1_1_factory_messenger_a59571b4b88162856c69af230f2c11f95}} 
+\index{Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}!screen@{screen}}
+\index{screen@{screen}!Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}}
+\doxysubsubsection{\texorpdfstring{screen()}{screen()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$\mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}}$>$ Gyoto\+::\+Factory\+Messenger\+::screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Build and get the \mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}} described in this XML file. 
+
+An \mbox{\hyperlink{namespace_gyoto}{Gyoto}} XML file may contain at most a single \mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}} section and it may be present about anywhere in the XML tree. Individual subcontractors should not try to interpret this section directly, but should call \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a59571b4b88162856c69af230f2c11f95}{screen()}} to find and interpret the \mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}} section. \mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_a409a59154d6fe6f8475cf3d8a7d59de5}\label{class_gyoto_1_1_factory_messenger_a409a59154d6fe6f8475cf3d8a7d59de5}} 
+\index{Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}!screen@{screen}}
+\index{screen@{screen}!Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}}
+\doxysubsubsection{\texorpdfstring{screen()}{screen()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Gyoto\+::\+Factory\+Messenger\+::screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}} $>$}]{ }\end{DoxyParamCaption})}
+
+
+
+Set the \mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}}. 
+
+Same as \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a20033615402e9d7a7c21fc5ef4ebf386}{metric()}}, but for the \mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}}. \mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_a4e9a421b73be417f797c33385d79af87}\label{class_gyoto_1_1_factory_messenger_a4e9a421b73be417f797c33385d79af87}} 
+\index{Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}!setFullContent@{setFullContent}}
+\index{setFullContent@{setFullContent}!Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}}
+\doxysubsubsection{\texorpdfstring{setFullContent()}{setFullContent()}}
+{\footnotesize\ttfamily void Gyoto\+::\+Factory\+Messenger\+::set\+Full\+Content (\begin{DoxyParamCaption}\item[{std\+::string}]{value }\end{DoxyParamCaption})}
+
+
+
+Low level, prefer \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a7285f6988ee8c0be458e683615885703}{set\+Parameter()}} 
+
+Exceptionnaly, a class instance may be best described by setting the entire content of the corresponding element than by setting a bunch of \char`\"{}parameters\char`\"{}. This is the case of the spectrometer, which sets a couple of attributes and reserves the full content for the spectral boundaries (see Spectrometer\+::fill\+Element()). \mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_a7285f6988ee8c0be458e683615885703}\label{class_gyoto_1_1_factory_messenger_a7285f6988ee8c0be458e683615885703}} 
+\index{Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}!setParameter@{setParameter}}
+\index{setParameter@{setParameter}!Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}}
+\doxysubsubsection{\texorpdfstring{setParameter()}{setParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily void Gyoto\+::\+Factory\+Messenger\+::set\+Parameter (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Output parameter. 
+
+Create child XML element of the form 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<name/>}
+
+\end{DoxyCode}
+ for instance when \char`\"{}name\char`\"{} is boolean (present or absent), or only takes attributes (see Factory\+Messenger\+::set\+Attribute()). As an example, \mbox{\hyperlink{class_gyoto_1_1_object_a0ffc3f84b4c2372d639eb848605fb1f3}{Astrobj\+::\+Generic\+::fill\+Element()}} uses \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a7285f6988ee8c0be458e683615885703}{set\+Parameter()}} to set either Opticallythin or Optically\+Thick. \mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_a394034fa69500a9cdd1ec4e9a99856e8}\label{class_gyoto_1_1_factory_messenger_a394034fa69500a9cdd1ec4e9a99856e8}} 
+\index{Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}!setParameter@{setParameter}}
+\index{setParameter@{setParameter}!Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}}
+\doxysubsubsection{\texorpdfstring{setParameter()}{setParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily void Gyoto\+::\+Factory\+Messenger\+::set\+Parameter (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{double}]{val\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}}}]{n,  }\item[{\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}} $\ast$$\ast$}]{child = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+
+
+Output an array of parameters. 
+
+For instance\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{double} val[4] = \{1., 2., 3., 4.\};}
+\DoxyCodeLine{messenger-\/>setParameter(\textcolor{stringliteral}{"{}MyArray"{}}, val, 4);}
+
+\end{DoxyCode}
+ will result in something like this\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<MyArray>1.000000 2.000000 3.000000 4.000000</MyArray>}
+
+\end{DoxyCode}
+
+
+The exact format is unspecified, determined at compile time, and by default, unlike in the example above, outputs a large number of digits for each double (about 20).
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the parameter \\
+\hline
+{\em val\mbox{[}$\,$\mbox{]}} & an array of doubles \\
+\hline
+{\em n} & number of cells in val\mbox{[}\mbox{]} \\
+\hline
+{\em child} & (optional) if not NULL, a new \mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}} is created to access the new parameter element e.\+g. to set attributes in it (using \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a9f459c70f3d7495465e6cccb29195710}{set\+Self\+Attribute()}}). You then need to delete the child. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_a6ef06141e38e2babe1137f473a10d287}\label{class_gyoto_1_1_factory_messenger_a6ef06141e38e2babe1137f473a10d287}} 
+\index{Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}!setParameter@{setParameter}}
+\index{setParameter@{setParameter}!Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}}
+\doxysubsubsection{\texorpdfstring{setParameter()}{setParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily void Gyoto\+::\+Factory\+Messenger\+::set\+Parameter (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{double}]{value }\end{DoxyParamCaption})}
+
+
+
+Output parameter. 
+
+Convert value to striing \char`\"{}svalue\char`\"{} and create an XML child element of the form 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<name>svalue</name>}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_af48912fc28014db9d8a4479d111a24f2}\label{class_gyoto_1_1_factory_messenger_af48912fc28014db9d8a4479d111a24f2}} 
+\index{Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}!setParameter@{setParameter}}
+\index{setParameter@{setParameter}!Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}}
+\doxysubsubsection{\texorpdfstring{setParameter()}{setParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily void Gyoto\+::\+Factory\+Messenger\+::set\+Parameter (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Output parameter. 
+
+Convert value to string \char`\"{}svalue\char`\"{} and create an XML child element of the form 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<name>svalue</name>}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_a5674fe6319b0634cb83d33ec7c475d1a}\label{class_gyoto_1_1_factory_messenger_a5674fe6319b0634cb83d33ec7c475d1a}} 
+\index{Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}!setParameter@{setParameter}}
+\index{setParameter@{setParameter}!Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}}
+\doxysubsubsection{\texorpdfstring{setParameter()}{setParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily void Gyoto\+::\+Factory\+Messenger\+::set\+Parameter (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{long int}]{value }\end{DoxyParamCaption})}
+
+
+
+Output parameter. 
+
+Convert value to striing \char`\"{}svalue\char`\"{} and create an XML child element of the form 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<name>svalue</name>}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_aca812ff248777ea84c2eda83fc36fbf3}\label{class_gyoto_1_1_factory_messenger_aca812ff248777ea84c2eda83fc36fbf3}} 
+\index{Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}!setParameter@{setParameter}}
+\index{setParameter@{setParameter}!Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}}
+\doxysubsubsection{\texorpdfstring{setParameter()}{setParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily void Gyoto\+::\+Factory\+Messenger\+::set\+Parameter (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{value }\end{DoxyParamCaption})}
+
+
+
+Output parameter. 
+
+Create an XML child element of the form 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<name>value</name>}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_ab5b5572bcdb3b5bee2e1343bb1f77c8a}\label{class_gyoto_1_1_factory_messenger_ab5b5572bcdb3b5bee2e1343bb1f77c8a}} 
+\index{Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}!setParameter@{setParameter}}
+\index{setParameter@{setParameter}!Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}}
+\doxysubsubsection{\texorpdfstring{setParameter()}{setParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily void Gyoto\+::\+Factory\+Messenger\+::set\+Parameter (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{unsigned int}]{value }\end{DoxyParamCaption})}
+
+
+
+Output parameter. 
+
+Convert value to striing \char`\"{}svalue\char`\"{} and create an XML child element of the form 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<name>svalue</name>}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_a2f132e5caea6cdfbc257eda9538cac1a}\label{class_gyoto_1_1_factory_messenger_a2f132e5caea6cdfbc257eda9538cac1a}} 
+\index{Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}!setParameter@{setParameter}}
+\index{setParameter@{setParameter}!Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}}
+\doxysubsubsection{\texorpdfstring{setParameter()}{setParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily void Gyoto\+::\+Factory\+Messenger\+::set\+Parameter (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{unsigned long}]{value }\end{DoxyParamCaption})}
+
+
+
+Output parameter. 
+
+Convert value to striing \char`\"{}svalue\char`\"{} and create an XML child element of the form 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<name>svalue</name>}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_a788d642f4e37c989bc8ebb0797fb4c46}\label{class_gyoto_1_1_factory_messenger_a788d642f4e37c989bc8ebb0797fb4c46}} 
+\index{Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}!setSelfAttribute@{setSelfAttribute}}
+\index{setSelfAttribute@{setSelfAttribute}!Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}}
+\doxysubsubsection{\texorpdfstring{setSelfAttribute()}{setSelfAttribute()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void Gyoto\+::\+Factory\+Messenger\+::set\+Self\+Attribute (\begin{DoxyParamCaption}\item[{std\+::string}]{attrname,  }\item[{double}]{value }\end{DoxyParamCaption})}
+
+
+
+Set attribute in \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a378caf5b3eb30c091a015d4351fb0f09}{Factory\+Messenger\+::element\+\_\+}}. 
+
+See \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a9f459c70f3d7495465e6cccb29195710}{set\+Self\+Attribute(std\+::string attrname, std\+::string value)}} \mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_a9f459c70f3d7495465e6cccb29195710}\label{class_gyoto_1_1_factory_messenger_a9f459c70f3d7495465e6cccb29195710}} 
+\index{Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}!setSelfAttribute@{setSelfAttribute}}
+\index{setSelfAttribute@{setSelfAttribute}!Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}}
+\doxysubsubsection{\texorpdfstring{setSelfAttribute()}{setSelfAttribute()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void Gyoto\+::\+Factory\+Messenger\+::set\+Self\+Attribute (\begin{DoxyParamCaption}\item[{std\+::string}]{attrname,  }\item[{std\+::string}]{value }\end{DoxyParamCaption})}
+
+
+
+Set attribute in \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a378caf5b3eb30c091a015d4351fb0f09}{Factory\+Messenger\+::element\+\_\+}}. 
+
+For instance Spectrometer\+::fill\+Element() sets its \char`\"{}kind\char`\"{} attribute somewhat like this\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{messenger-\/>setSelfAttribute(\textcolor{stringliteral}{"{}kind"{}}, \textcolor{stringliteral}{"{}wave"{}});}
+
+\end{DoxyCode}
+ to produce something like this\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<Spectrometer kind=\textcolor{stringliteral}{"{}wave"{}}/>}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_af28276c1fb03adb47b1073c0e4002371}\label{class_gyoto_1_1_factory_messenger_af28276c1fb03adb47b1073c0e4002371}} 
+\index{Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}!setSelfAttribute@{setSelfAttribute}}
+\index{setSelfAttribute@{setSelfAttribute}!Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}}
+\doxysubsubsection{\texorpdfstring{setSelfAttribute()}{setSelfAttribute()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void Gyoto\+::\+Factory\+Messenger\+::set\+Self\+Attribute (\begin{DoxyParamCaption}\item[{std\+::string}]{attrname,  }\item[{unsigned int}]{value }\end{DoxyParamCaption})}
+
+
+
+Set attribute in \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a378caf5b3eb30c091a015d4351fb0f09}{Factory\+Messenger\+::element\+\_\+}}. 
+
+See \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a9f459c70f3d7495465e6cccb29195710}{set\+Self\+Attribute(std\+::string attrname, std\+::string value)}} \mbox{\Hypertarget{class_gyoto_1_1_factory_messenger_ae14ea235e15c79cadcf26d6f021bd7a5}\label{class_gyoto_1_1_factory_messenger_ae14ea235e15c79cadcf26d6f021bd7a5}} 
+\index{Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}!setSelfAttribute@{setSelfAttribute}}
+\index{setSelfAttribute@{setSelfAttribute}!Gyoto::FactoryMessenger@{Gyoto::FactoryMessenger}}
+\doxysubsubsection{\texorpdfstring{setSelfAttribute()}{setSelfAttribute()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void Gyoto\+::\+Factory\+Messenger\+::set\+Self\+Attribute (\begin{DoxyParamCaption}\item[{std\+::string}]{attrname,  }\item[{unsigned long}]{value }\end{DoxyParamCaption})}
+
+
+
+Set attribute in \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a378caf5b3eb30c091a015d4351fb0f09}{Factory\+Messenger\+::element\+\_\+}}. 
+
+See \mbox{\hyperlink{class_gyoto_1_1_factory_messenger_a9f459c70f3d7495465e6cccb29195710}{set\+Self\+Attribute(std\+::string attrname, std\+::string value)}} 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_gyoto_factory_messenger_8h}{Gyoto\+Factory\+Messenger.\+h}}\end{DoxyCompactItemize}

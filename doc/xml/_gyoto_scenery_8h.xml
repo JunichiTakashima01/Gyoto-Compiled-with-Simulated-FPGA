@@ -1,0 +1,560 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_gyoto_scenery_8h" kind="file" language="C++">
+    <compoundname>GyotoScenery.h</compoundname>
+    <includes refid="_gyoto_defs_8h" local="no">GyotoDefs.h</includes>
+    <includes refid="_gyoto_smart_pointer_8h" local="no">GyotoSmartPointer.h</includes>
+    <includes refid="_gyoto_object_8h" local="no">GyotoObject.h</includes>
+    <includes refid="_gyoto_astrobj_8h" local="no">GyotoAstrobj.h</includes>
+    <includes refid="_gyoto_metric_8h" local="no">GyotoMetric.h</includes>
+    <includes refid="_gyoto_screen_8h" local="no">GyotoScreen.h</includes>
+    <includes refid="_gyoto_photon_8h" local="no">GyotoPhoton.h</includes>
+    <includes refid="_gyoto_converters_8h" local="no">GyotoConverters.h</includes>
+    <includedby refid="_gyoto_factory_8h" local="no">GyotoFactory.h</includedby>
+    <incdepgraph>
+      <node id="17">
+        <label>iomanip</label>
+      </node>
+      <node id="4">
+        <label>float.h</label>
+      </node>
+      <node id="7">
+        <label>GyotoUtils.h</label>
+        <link refid="_gyoto_utils_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>eigen3/Eigen/Dense</label>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>GyotoSmartPointer.h</label>
+        <link refid="_gyoto_smart_pointer_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>GyotoObject.h</label>
+        <link refid="_gyoto_object_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>stddef.h</label>
+      </node>
+      <node id="16">
+        <label>fstream</label>
+      </node>
+      <node id="22">
+        <label>GyotoRegister.h</label>
+        <link refid="_gyoto_register_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>GyotoSpectrometer.h</label>
+        <link refid="_gyoto_spectrometer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>GyotoMetric.h</label>
+        <link refid="_gyoto_metric_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>GyotoDefs.h</label>
+        <link refid="_gyoto_defs_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>GyotoWorldline.h</label>
+        <link refid="_gyoto_worldline_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>pthread.h</label>
+      </node>
+      <node id="13">
+        <label>typeinfo</label>
+      </node>
+      <node id="27">
+        <label>GyotoFunctors.h</label>
+        <link refid="_gyoto_functors_8h"/>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+      <node id="3">
+        <label>GyotoConfig.h</label>
+        <link refid="_gyoto_config_8h"/>
+      </node>
+      <node id="19">
+        <label>sstream</label>
+      </node>
+      <node id="1">
+        <label>GyotoScenery.h</label>
+        <link refid="_gyoto_scenery_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>GyotoAstrobj.h</label>
+        <link refid="_gyoto_astrobj_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>iostream</label>
+      </node>
+      <node id="10">
+        <label>GyotoError.h</label>
+        <link refid="_gyoto_error_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>GyotoHooks.h</label>
+        <link refid="_gyoto_hooks_8h"/>
+      </node>
+      <node id="24">
+        <label>GyotoScreen.h</label>
+        <link refid="_gyoto_screen_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>GyotoConverters.h</label>
+        <link refid="_gyoto_converters_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>GyotoPhoton.h</label>
+        <link refid="_gyoto_photon_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>GyotoFactory.h</label>
+        <link refid="_gyoto_factory_8h"/>
+      </node>
+      <node id="1">
+        <label>GyotoScenery.h</label>
+        <link refid="_gyoto_scenery_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_gyoto_1_1_scenery" prot="public">Gyoto::Scenery</innerclass>
+    <innernamespace refid="namespace_gyoto">Gyoto</innernamespace>
+    <briefdescription>
+<para>Ray-tracing framework. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A Metric, an Astrobj and a Screen. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>Copyright<sp/>2011-2016,<sp/>2018-2019<sp/>Thibaut<sp/>Paumard</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>Gyoto.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"></highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>Gyoto.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__GyotoScenery_H_<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__GyotoScenery_H_<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Scenery;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_defs_8h" kindref="compound">GyotoDefs.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_smart_pointer_8h" kindref="compound">GyotoSmartPointer.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_object_8h" kindref="compound">GyotoObject.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_astrobj_8h" kindref="compound">GyotoAstrobj.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_metric_8h" kindref="compound">GyotoMetric.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_screen_8h" kindref="compound">GyotoScreen.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_photon_8h" kindref="compound">GyotoPhoton.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_converters_8h" kindref="compound">GyotoConverters.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_MPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_gyoto_factory_8h" kindref="compound">GyotoFactory.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/mpi/environment.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/mpi/communicator.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="class_gyoto_1_1_scenery" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_scenery" kindref="compound">Gyoto::Scenery</ref></highlight></codeline>
+<codeline lineno="163"><highlight class="normal">:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_smart_pointee" kindref="compound">Gyoto::SmartPointee</ref>,</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_object" kindref="compound">Gyoto::Object</ref></highlight></codeline>
+<codeline lineno="165"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt;<ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>::<ref refid="class_gyoto_1_1_scenery" kindref="compound">Scenery</ref>&gt;;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Data<sp/>:<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>-----</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="class_gyoto_1_1_scenery_1ae5fd1c4017101dd5863b314ad2856d2c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt;Screen&gt;<sp/><ref refid="class_gyoto_1_1_scenery_1ae5fd1c4017101dd5863b314ad2856d2c" kindref="member">screen_</ref>;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182" refid="class_gyoto_1_1_scenery_1a5a7bb09f9a7b683448509830f0a4f329" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_scenery_1a5a7bb09f9a7b683448509830f0a4f329" kindref="member">delta_</ref>;<sp/></highlight><highlight class="comment">//<sp/>default<sp/>integration<sp/>step<sp/>for<sp/>the<sp/>photons</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191" refid="class_gyoto_1_1_scenery_1ae9d64f82cb58af5452be5a65629efae0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespace_gyoto_1a009cbd7f025ce417907a5344a15a1463" kindref="member">Gyoto::Quantity_t</ref><sp/><ref refid="class_gyoto_1_1_scenery_1ae9d64f82cb58af5452be5a65629efae0" kindref="member">quantities_</ref>;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="class_gyoto_1_1_scenery_1ab04f1bf232df51977463ba0094c33346" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_photon" kindref="compound">Gyoto::Photon</ref><sp/><ref refid="class_gyoto_1_1_scenery_1ab04f1bf232df51977463ba0094c33346" kindref="member">ph_</ref>;<sp/></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205" refid="class_gyoto_1_1_scenery_1a6d364f1f7f2b55a5c5ead77461fc6c0d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref><sp/><ref refid="class_gyoto_1_1_scenery_1a6d364f1f7f2b55a5c5ead77461fc6c0d" kindref="member">nthreads_</ref>;<sp/></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207" refid="class_gyoto_1_1_scenery_1a433b98c2bada736879301e02b95e426c" refkind="member"><highlight class="normal"><sp/><sp/>int<sp/><ref refid="class_gyoto_1_1_scenery_1a433b98c2bada736879301e02b95e426c" kindref="member">nprocesses_</ref>;<sp/></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifdef<sp/>HAVE_UDUNITS</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt;Gyoto::Units::Converter&gt;<sp/>intensity_converter_;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt;Gyoto::Units::Converter&gt;<sp/>spectrum_converter_;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt;Gyoto::Units::Converter&gt;<sp/>binspectrum_converter_;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_object_8h_1a6806b7f836d51dbe45cdf7bd60377a40" kindref="member">GYOTO_OBJECT_THREAD_SAFETY</ref>;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifdef<sp/>HAVE_MPI</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/>boost::mpi::communicator<sp/>*<sp/>mpi_team_;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight></codeline>
+<codeline lineno="229" refid="class_gyoto_1_1_scenery_1aa561b75fdaafc7116b3fb408755601a0" refkind="member"><highlight class="normal"><sp/><sp/>static<sp/>bool<sp/><ref refid="class_gyoto_1_1_scenery_1aa561b75fdaafc7116b3fb408755601a0" kindref="member">am_worker</ref>;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252" refid="class_gyoto_1_1_scenery_1a73447871c31ca79690aef7d9e255aea6" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_scenery_1a73447871c31ca79690aef7d9e255aea6" kindref="member">mpiSpawn</ref>(int<sp/>nbchildren);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255" refid="class_gyoto_1_1_scenery_1a21982b10cdb8e9b9e1e2c4111043e713" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_scenery_1a21982b10cdb8e9b9e1e2c4111043e713" kindref="member">mpiTerminate</ref><sp/>();</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261" refid="class_gyoto_1_1_scenery_1a7556c80a8bc0a00efb0eb3e7a3c94ba9" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_scenery_1a7556c80a8bc0a00efb0eb3e7a3c94ba9" kindref="member">mpiClone</ref>();</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264" refid="class_gyoto_1_1_scenery_1aa0c6445670c17eac9b23e59be5a58d69" refkind="member"><highlight class="normal"><sp/><sp/>enum<sp/><ref refid="class_gyoto_1_1_scenery_1aa0c6445670c17eac9b23e59be5a58d69" kindref="member">mpi_tag</ref><sp/>{give_task,<sp/>read_scenery,<sp/>terminate,</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>raytrace,<sp/>raytrace_done,<sp/>ready,</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>impactcoords,<sp/>noimpactcoords};</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269" refid="class_gyoto_1_1_scenery_1afbd1f62b03a00c7d5a71e938328054cc" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1afbd1f62b03a00c7d5a71e938328054cc" kindref="member">mpiTask</ref>(<ref refid="class_gyoto_1_1_scenery_1aa0c6445670c17eac9b23e59be5a58d69" kindref="member">mpi_tag</ref><sp/>&amp;tag);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276" refid="class_gyoto_1_1_scenery_1a65b614b2123d0cc1745da1d3e400b572" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a65b614b2123d0cc1745da1d3e400b572" kindref="member">mpiWorker</ref>();</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Constructors<sp/>-<sp/>Destructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>-------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="281" refid="class_gyoto_1_1_scenery_1af7be9ef397a8e28f6cae994a16dfed38" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" kindref="member">GYOTO_OBJECT</ref>;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/>GYOTO_WORLDLINE;</highlight></codeline>
+<codeline lineno="283" refid="class_gyoto_1_1_scenery_1a588239ef21e8b6aad435c146a199277c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_scenery_1a588239ef21e8b6aad435c146a199277c" kindref="member">Scenery</ref>();<sp/></highlight></codeline>
+<codeline lineno="284" refid="class_gyoto_1_1_scenery_1a4079e952d1506047f390d9333e89cb5a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_scenery_1a4079e952d1506047f390d9333e89cb5a" kindref="member">Scenery</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery" kindref="compound">Scenery</ref>&amp;<sp/>o);<sp/></highlight></codeline>
+<codeline lineno="285" refid="class_gyoto_1_1_scenery_1a8cc6ec06fb353a3f6156b46ba730f755" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_scenery" kindref="compound">Scenery</ref><sp/>*<sp/><ref refid="class_gyoto_1_1_scenery_1a8cc6ec06fb353a3f6156b46ba730f755" kindref="member">clone</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292" refid="class_gyoto_1_1_scenery_1ab945c66d36821f6cee4f8ec1651faa1a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_scenery_1ab945c66d36821f6cee4f8ec1651faa1a" kindref="member">Scenery</ref>(<ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer&lt;Metric::Generic&gt;</ref>,<sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer&lt;Screen&gt;</ref>,<sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer&lt;Astrobj::Generic&gt;</ref>);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/>~<ref refid="class_gyoto_1_1_scenery" kindref="compound">Scenery</ref>();</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Mutators<sp/>/<sp/>assignment</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Accessors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>---------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="301" refid="class_gyoto_1_1_scenery_1a6ef177b70c1f3b70aebb5588b8c6406b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer&lt;Metric::Generic&gt;</ref><sp/><ref refid="class_gyoto_1_1_scenery_1a6ef177b70c1f3b70aebb5588b8c6406b" kindref="member">metric</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/></highlight></codeline>
+<codeline lineno="305" refid="class_gyoto_1_1_scenery_1afe534cc73b12043e0376a22bc8b7b8b7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1afe534cc73b12043e0376a22bc8b7b8b7" kindref="member">metric</ref>(<ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer&lt;Metric::Generic&gt;</ref>);<sp/><sp/></highlight></codeline>
+<codeline lineno="306" refid="class_gyoto_1_1_scenery_1a1a809448dc2666080652c01071029491" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer&lt;Screen&gt;</ref><sp/><ref refid="class_gyoto_1_1_scenery_1a1a809448dc2666080652c01071029491" kindref="member">screen</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311" refid="class_gyoto_1_1_scenery_1a4da0a95115519238f204898c78c351df" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a4da0a95115519238f204898c78c351df" kindref="member">screen</ref>(<ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer&lt;Screen&gt;</ref>);</highlight></codeline>
+<codeline lineno="312" refid="class_gyoto_1_1_scenery_1a58fe7f752d5239f7facf4e597af856bd" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer&lt;Astrobj::Generic&gt;</ref><sp/><ref refid="class_gyoto_1_1_scenery_1a58fe7f752d5239f7facf4e597af856bd" kindref="member">astrobj</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/></highlight></codeline>
+<codeline lineno="316" refid="class_gyoto_1_1_scenery_1a3eba0639f5a1b7b010ac758019b43868" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a3eba0639f5a1b7b010ac758019b43868" kindref="member">astrobj</ref>(<ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer&lt;Astrobj::Generic&gt;</ref>);<sp/></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322" refid="class_gyoto_1_1_scenery_1a1a5b2902766dfd74a340d999d41298e9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer&lt;Photon&gt;</ref><sp/><ref refid="class_gyoto_1_1_scenery_1a1a5b2902766dfd74a340d999d41298e9" kindref="member">clonePhoton</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327" refid="class_gyoto_1_1_scenery_1a947b7fb22668dcbeaf6209e1ec3920b1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer&lt;Photon&gt;</ref><sp/><ref refid="class_gyoto_1_1_scenery_1a947b7fb22668dcbeaf6209e1ec3920b1" kindref="member">clonePhoton</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>j);</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332" refid="class_gyoto_1_1_scenery_1a5dbfcc90c7df57469b1cd0539c423b9d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer&lt;Photon&gt;</ref><sp/><ref refid="class_gyoto_1_1_scenery_1a5dbfcc90c7df57469b1cd0539c423b9d" kindref="member">clonePhoton</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>a,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d);</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334" refid="class_gyoto_1_1_scenery_1a9c8e3015e2a4704d2304e25158906ba9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a9c8e3015e2a4704d2304e25158906ba9" kindref="member">updatePhoton</ref>();<sp/></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336" refid="class_gyoto_1_1_scenery_1ab4a431480e6f8f751a88df7f42473e3c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1ab4a431480e6f8f751a88df7f42473e3c" kindref="member">delta</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;<sp/></highlight></codeline>
+<codeline lineno="337" refid="class_gyoto_1_1_scenery_1acd33e8898b4673eec0a5c3e50425e9ca" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1acd33e8898b4673eec0a5c3e50425e9ca" kindref="member">delta</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;unit)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;<sp/><sp/></highlight></codeline>
+<codeline lineno="338" refid="class_gyoto_1_1_scenery_1a00c741e9eadea328407f9be118922569" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a00c741e9eadea328407f9be118922569" kindref="member">delta</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="339" refid="class_gyoto_1_1_scenery_1a6ce7c0426d7209e35980a4c58954c5ca" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a6ce7c0426d7209e35980a4c58954c5ca" kindref="member">delta</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;unit);<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initCoord(std::vector&lt;double&gt;<sp/>c);</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/>std::vector&lt;double&gt;<sp/>initCoord()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349" refid="class_gyoto_1_1_scenery_1acaed08cd4fa2113101d26436cd96aebd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1acaed08cd4fa2113101d26436cd96aebd" kindref="member">setRequestedQuantities</ref>(<ref refid="namespace_gyoto_1a009cbd7f025ce417907a5344a15a1463" kindref="member">Quantity_t</ref><sp/>quant)<sp/>;</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight></codeline>
+<codeline lineno="356" refid="class_gyoto_1_1_scenery_1a2f31ce0783dac2a2e7d8905360c49891" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a2f31ce0783dac2a2e7d8905360c49891" kindref="member">requestedQuantitiesString</ref>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;squant)<sp/>;</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359" refid="class_gyoto_1_1_scenery_1a830963a77e6b6b94423fb2b2f3405f31" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespace_gyoto_1a009cbd7f025ce417907a5344a15a1463" kindref="member">Quantity_t</ref><sp/><ref refid="class_gyoto_1_1_scenery_1a830963a77e6b6b94423fb2b2f3405f31" kindref="member">getRequestedQuantities</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight></codeline>
+<codeline lineno="362" refid="class_gyoto_1_1_scenery_1a8066b1fb7d3ce6081177a6d3ddeecbfc" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="class_gyoto_1_1_scenery_1a8066b1fb7d3ce6081177a6d3ddeecbfc" kindref="member">requestedQuantitiesString</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight></codeline>
+<codeline lineno="368" refid="class_gyoto_1_1_scenery_1afff82f969d4dc2b6ac6982b837d72c2a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1afff82f969d4dc2b6ac6982b837d72c2a" kindref="member">getScalarQuantitiesCount</ref>(<ref refid="namespace_gyoto_1a009cbd7f025ce417907a5344a15a1463" kindref="member">Quantity_t</ref><sp/>*q=NULL)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight></codeline>
+<codeline lineno="374" refid="class_gyoto_1_1_scenery_1ae982bc4678e60572fc881f22842c144f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1ae982bc4678e60572fc881f22842c144f" kindref="member">getSpectralQuantitiesCount</ref>(<ref refid="namespace_gyoto_1a009cbd7f025ce417907a5344a15a1463" kindref="member">Quantity_t</ref><sp/>*q=NULL)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight></codeline>
+<codeline lineno="377" refid="class_gyoto_1_1_scenery_1ac68ceb452765957fae20613ac6247008" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1ac68ceb452765957fae20613ac6247008" kindref="member">tMin</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="379" refid="class_gyoto_1_1_scenery_1aaa7d749d92d856f0731898127fde22fb" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1aaa7d749d92d856f0731898127fde22fb" kindref="member">tMin</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;unit)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="381" refid="class_gyoto_1_1_scenery_1ad59e3313b6f543e4eb845ba10803e729" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1ad59e3313b6f543e4eb845ba10803e729" kindref="member">tMin</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="383" refid="class_gyoto_1_1_scenery_1a104f86c96f7141c3bf3098ff9ddb1d64" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a104f86c96f7141c3bf3098ff9ddb1d64" kindref="member">tMin</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;unit);</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385" refid="class_gyoto_1_1_scenery_1a2e35c3521f27ab4b8c4c3a278d646d62" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a2e35c3521f27ab4b8c4c3a278d646d62" kindref="member">adaptive</ref><sp/>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>mode)<sp/>;<sp/></highlight></codeline>
+<codeline lineno="386" refid="class_gyoto_1_1_scenery_1a240c1207d3dfa14a544affc7ab3f9abb" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a240c1207d3dfa14a544affc7ab3f9abb" kindref="member">adaptive</ref><sp/>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;<sp/></highlight></codeline>
+<codeline lineno="387"><highlight class="normal"></highlight></codeline>
+<codeline lineno="389" refid="class_gyoto_1_1_scenery_1ac1fa04963e059d0ab87a7bca28bd74fd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1ac1fa04963e059d0ab87a7bca28bd74fd" kindref="member">integrator</ref>(std::string<sp/>type);</highlight></codeline>
+<codeline lineno="391" refid="class_gyoto_1_1_scenery_1a4e07c57aae8e2d5e23c2510688dd8c81" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="class_gyoto_1_1_scenery_1a4e07c57aae8e2d5e23c2510688dd8c81" kindref="member">integrator</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight></codeline>
+<codeline lineno="394" refid="class_gyoto_1_1_scenery_1aaefde3b712155d6c3cde04f21e3c9fe9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1aaefde3b712155d6c3cde04f21e3c9fe9" kindref="member">deltaMin</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="396" refid="class_gyoto_1_1_scenery_1af0f1714ca2b7e3ae24b213572356a508" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1af0f1714ca2b7e3ae24b213572356a508" kindref="member">deltaMin</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h1);</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight></codeline>
+<codeline lineno="399" refid="class_gyoto_1_1_scenery_1aceccaad06000e3074b8c4f4736ba381e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1aceccaad06000e3074b8c4f4736ba381e" kindref="member">deltaMax</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight></codeline>
+<codeline lineno="402" refid="class_gyoto_1_1_scenery_1a30071c48c3ad19ec33d991387f12e571" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a30071c48c3ad19ec33d991387f12e571" kindref="member">deltaMax</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h1);</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"></highlight></codeline>
+<codeline lineno="405" refid="class_gyoto_1_1_scenery_1a4e6e077adf554fe4fba8aa61261c06c9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a4e6e077adf554fe4fba8aa61261c06c9" kindref="member">deltaMaxOverR</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="407" refid="class_gyoto_1_1_scenery_1a4cbae878a3b83d2cd728850a17988b02" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a4cbae878a3b83d2cd728850a17988b02" kindref="member">deltaMaxOverR</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t);</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"></highlight></codeline>
+<codeline lineno="410" refid="class_gyoto_1_1_scenery_1a76c46272f521a938af53bdbe55c6d58a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a76c46272f521a938af53bdbe55c6d58a" kindref="member">absTol</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="412" refid="class_gyoto_1_1_scenery_1a53fce03060c481c94d556b94470abbf7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a53fce03060c481c94d556b94470abbf7" kindref="member">absTol</ref>()</highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="414" refid="class_gyoto_1_1_scenery_1a60b7da6c1894072d053604bbffa365ff" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a60b7da6c1894072d053604bbffa365ff" kindref="member">relTol</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="416" refid="class_gyoto_1_1_scenery_1a1e3a6f0d11825a768e0d3dc2f185ca81" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a1e3a6f0d11825a768e0d3dc2f185ca81" kindref="member">relTol</ref>()</highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"></highlight></codeline>
+<codeline lineno="419" refid="class_gyoto_1_1_scenery_1a3b88fc635e73485effc9333815c5d24f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a3b88fc635e73485effc9333815c5d24f" kindref="member">maxCrossEqplane</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="421" refid="class_gyoto_1_1_scenery_1a2afef841f919d9cee7d6b6ca78a215ca" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a2afef841f919d9cee7d6b6ca78a215ca" kindref="member">maxCrossEqplane</ref>()</highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="423" refid="class_gyoto_1_1_scenery_1a2774346b7dca72aed6f36239058db9d1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a2774346b7dca72aed6f36239058db9d1" kindref="member">secondary</ref><sp/>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>sec)<sp/>;<sp/></highlight></codeline>
+<codeline lineno="424" refid="class_gyoto_1_1_scenery_1abb9f7604cc0fb46eaf88c1795b057762" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1abb9f7604cc0fb46eaf88c1795b057762" kindref="member">secondary</ref><sp/>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;<sp/></highlight></codeline>
+<codeline lineno="425"><highlight class="normal"></highlight></codeline>
+<codeline lineno="426" refid="class_gyoto_1_1_scenery_1a2bf041919a3d1572da0dbb68a8721577" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a2bf041919a3d1572da0dbb68a8721577" kindref="member">integ31</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>integ);<sp/></highlight></codeline>
+<codeline lineno="427" refid="class_gyoto_1_1_scenery_1a810c5b341d9a2306f263eebc5d2059d7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a810c5b341d9a2306f263eebc5d2059d7" kindref="member">integ31</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;<sp/></highlight></codeline>
+<codeline lineno="428"><highlight class="normal"></highlight></codeline>
+<codeline lineno="429" refid="class_gyoto_1_1_scenery_1ad25705695fe4a80cb120f7620b101ea2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1ad25705695fe4a80cb120f7620b101ea2" kindref="member">parallelTransport</ref><sp/>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>pt)<sp/>;<sp/></highlight></codeline>
+<codeline lineno="430" refid="class_gyoto_1_1_scenery_1a3ad0b503be882f0f292e5df38dd8a8b6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a3ad0b503be882f0f292e5df38dd8a8b6" kindref="member">parallelTransport</ref><sp/>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;<sp/></highlight></codeline>
+<codeline lineno="431"><highlight class="normal"></highlight></codeline>
+<codeline lineno="432" refid="class_gyoto_1_1_scenery_1ae06630125b72e8d488876e5b3a25a679" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1ae06630125b72e8d488876e5b3a25a679" kindref="member">maxiter</ref><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>miter)<sp/>;<sp/></highlight></codeline>
+<codeline lineno="433" refid="class_gyoto_1_1_scenery_1a6fd392ff08c78ddf9b2a5d6f0b50aa17" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a6fd392ff08c78ddf9b2a5d6f0b50aa17" kindref="member">maxiter</ref><sp/>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;<sp/></highlight></codeline>
+<codeline lineno="434"><highlight class="normal"></highlight></codeline>
+<codeline lineno="435" refid="class_gyoto_1_1_scenery_1a483022b37bd5547b9277c50f0f433961" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a483022b37bd5547b9277c50f0f433961" kindref="member">nThreads</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="436" refid="class_gyoto_1_1_scenery_1a02f92b41c90536a60a073e85b9cef929" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a02f92b41c90536a60a073e85b9cef929" kindref="member">nThreads</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;<sp/></highlight></codeline>
+<codeline lineno="437"><highlight class="normal"></highlight></codeline>
+<codeline lineno="438" refid="class_gyoto_1_1_scenery_1a94726d408e3a8457efa1c11b53984d30" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a94726d408e3a8457efa1c11b53984d30" kindref="member">nProcesses</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="439" refid="class_gyoto_1_1_scenery_1ae01e0d92d17a61f29ff36c06e7aa99bc" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1ae01e0d92d17a61f29ff36c06e7aa99bc" kindref="member">nProcesses</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;<sp/></highlight></codeline>
+<codeline lineno="440"><highlight class="normal"></highlight></codeline>
+<codeline lineno="442" refid="class_gyoto_1_1_scenery_1abee69acfee889060b686b734a83eeaf4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1abee69acfee889060b686b734a83eeaf4" kindref="member">intensityConverter</ref>(std::string<sp/>unit);</highlight></codeline>
+<codeline lineno="444" refid="class_gyoto_1_1_scenery_1ac71e2d5fc1958b8d77cd0a3f6eedc045" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1ac71e2d5fc1958b8d77cd0a3f6eedc045" kindref="member">spectrumConverter</ref>(std::string<sp/>unit);</highlight></codeline>
+<codeline lineno="446" refid="class_gyoto_1_1_scenery_1a67321a135d1b57ca04b2648930e8a98d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a67321a135d1b57ca04b2648930e8a98d" kindref="member">binSpectrumConverter</ref>(std::string<sp/>unit);</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"></highlight></codeline>
+<codeline lineno="449"><highlight class="normal"></highlight></codeline>
+<codeline lineno="453" refid="class_gyoto_1_1_scenery_1a7b34829c90c7a7381dd487f4718c00a0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a7b34829c90c7a7381dd487f4718c00a0" kindref="member">setPropertyConverters</ref>(<ref refid="class_gyoto_1_1_astrobj_1_1_properties" kindref="compound">Gyoto::Astrobj::Properties</ref><sp/>*prop);</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"></highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Worker:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"></highlight></codeline>
+<codeline lineno="507" refid="class_gyoto_1_1_scenery_1af723cfca27f75ba37bd439225ba60219" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1af723cfca27f75ba37bd439225ba60219" kindref="member">rayTrace</ref>(</highlight></codeline>
+<codeline lineno="508"><highlight class="normal">#ifdef<sp/>GYOTO_SWIGIMPORTED</highlight></codeline>
+<codeline lineno="509"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Coord2dSet<sp/>&amp;<sp/>ij,</highlight></codeline>
+<codeline lineno="510"><highlight class="normal">#</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord2d_set" kindref="compound">Screen::Coord2dSet</ref><sp/>&amp;<sp/>ij,</highlight></codeline>
+<codeline lineno="512"><highlight class="normal">#endif</highlight></codeline>
+<codeline lineno="513"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_properties" kindref="compound">Astrobj::Properties</ref><sp/>*data,</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<sp/>impactcoords=NULL);</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"></highlight></codeline>
+<codeline lineno="517"><highlight class="normal"></highlight></codeline>
+<codeline lineno="524" refid="class_gyoto_1_1_scenery_1a2f91e3d67d6846b50011be7d72fa3af6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a2f91e3d67d6846b50011be7d72fa3af6" kindref="member">operator() </ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>j,<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_properties" kindref="compound">Astrobj::Properties</ref><sp/>*data,</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<sp/>impactcoords<sp/>=<sp/>NULL,<sp/><ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref><sp/>*<sp/>ph<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="526"><highlight class="normal"></highlight></codeline>
+<codeline lineno="528"><highlight class="normal"></highlight></codeline>
+<codeline lineno="535" refid="class_gyoto_1_1_scenery_1aa3d3b54079bd1c219783122346e98da1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a2f91e3d67d6846b50011be7d72fa3af6" kindref="member">operator() </ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>alpha,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1ab4a431480e6f8f751a88df7f42473e3c" kindref="member">delta</ref>,<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_properties" kindref="compound">Astrobj::Properties</ref><sp/>*data,</highlight></codeline>
+<codeline lineno="536"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref><sp/>*<sp/>ph<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="537"><highlight class="normal"></highlight></codeline>
+<codeline lineno="538"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>GYOTO_USE_XERCES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="539"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="540"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Override<sp/>fillProperty()<sp/>to<sp/>issue<sp/>InitCoord<sp/>only<sp/>if<sp/>it<sp/>was<sp/>set</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="541" refid="class_gyoto_1_1_scenery_1a9bc2f2025deb97a71f21f2be5c0f5022" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a9bc2f2025deb97a71f21f2be5c0f5022" kindref="member">fillProperty</ref>(<ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref><sp/>*fmp,<sp/><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;p)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Override<sp/>fillElement<sp/>to<sp/>fill<sp/>metric,<sp/>screen<sp/>and<sp/>astrobj<sp/>first</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="543" refid="class_gyoto_1_1_scenery_1a63501e86c47ea6b67e0c564c706a72f1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_scenery_1a63501e86c47ea6b67e0c564c706a72f1" kindref="member">fillElement</ref>(<ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref><sp/>*fmp)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="545" refid="class_gyoto_1_1_scenery_1a6c4c57b83b803da4af96c38f55160951" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer&lt;Scenery&gt;</ref><sp/><ref refid="class_gyoto_1_1_scenery_1a6c4c57b83b803da4af96c38f55160951" kindref="member">Subcontractor</ref>(<ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">Gyoto::FactoryMessenger</ref>*);</highlight></codeline>
+<codeline lineno="546"><highlight class="normal"></highlight></codeline>
+<codeline lineno="547"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="548"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="549"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="550"><highlight class="normal"></highlight></codeline>
+<codeline lineno="551"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/junichi/Gyoto/include/GyotoScenery.h"/>
+  </compounddef>
+</doxygen>

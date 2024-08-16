@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespace_gyoto_1_1_hook" kind="namespace" language="C++">
+    <compoundname>Gyoto::Hook</compoundname>
+    <innerclass refid="class_gyoto_1_1_hook_1_1_listener" prot="public">Gyoto::Hook::Listener</innerclass>
+    <innerclass refid="class_gyoto_1_1_hook_1_1_teller" prot="public">Gyoto::Hook::Teller</innerclass>
+    <briefdescription>
+<para>Listeners attach to Tellers. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A <ref refid="class_gyoto_1_1_hook_1_1_listener" kindref="compound">Listener</ref> can hook() to a <ref refid="class_gyoto_1_1_hook_1_1_teller" kindref="compound">Teller</ref>. The <ref refid="class_gyoto_1_1_hook_1_1_teller" kindref="compound">Teller</ref> will tell it when it mutates using <ref refid="class_gyoto_1_1_hook_1_1_listener_1a900ac53b9f989d3e2de0a917d440d9a1" kindref="member">Listener::tell()</ref>, usually through the highter lever <ref refid="class_gyoto_1_1_hook_1_1_teller_1af9a1daa629900f00538096987e398a13" kindref="member">Teller::tellListeners()</ref>. The <ref refid="class_gyoto_1_1_hook_1_1_listener" kindref="compound">Listener</ref> can later unhook(). The <ref refid="class_gyoto_1_1_hook_1_1_listener" kindref="compound">Listener</ref> must therefore implement <ref refid="class_gyoto_1_1_hook_1_1_listener_1a900ac53b9f989d3e2de0a917d440d9a1" kindref="member">Listener::tell()</ref> to react when it is told. </para>
+    </detaileddescription>
+    <location file="/home/junichi/Gyoto/include/GyotoHooks.h" line="35" column="1"/>
+  </compounddef>
+</doxygen>

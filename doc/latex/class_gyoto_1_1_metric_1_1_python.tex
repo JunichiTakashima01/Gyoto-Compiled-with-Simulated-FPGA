@@ -1,0 +1,1829 @@
+\hypertarget{class_gyoto_1_1_metric_1_1_python}{}\doxysection{Gyoto\+::Metric\+::Python Class Reference}
+\label{class_gyoto_1_1_metric_1_1_python}\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+
+
+\mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} coded in \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python}{Python}}.  
+
+
+
+
+{\ttfamily \#include $<$Gyoto\+Python.\+h$>$}
+
+Inheritance diagram for Gyoto\+::Metric\+::Python\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.565865cm]{class_gyoto_1_1_metric_1_1_python}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_smart_pointee}{Gyoto\+::\+Smart\+Pointee}} $>$ \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}{Subcontractor\+\_\+t}}(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$, std\+::vector$<$ std\+::string $>$ const \&)
+\begin{DoxyCompactList}\small\item\em A subcontractor builds an object upon order from the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const  $\ast$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_af4c7119b0a717a18531d5910bbd10b7d}{get\+Properties}} () const
+\begin{DoxyCompactList}\small\item\em Get list of properties. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_af5a79286d43efb245d2cb4c3c7b2de5b}\label{class_gyoto_1_1_metric_1_1_python_af5a79286d43efb245d2cb4c3c7b2de5b}} 
+{\bfseries Python} (const \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python}{Python}} \&)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_abecbc101a5656af8643901d67e7bffc9}\label{class_gyoto_1_1_metric_1_1_python_abecbc101a5656af8643901d67e7bffc9}} 
+virtual \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python}{Python}} $\ast$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_abecbc101a5656af8643901d67e7bffc9}{clone}} () const
+\begin{DoxyCompactList}\small\item\em Virtual copy constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_ad764d306db65b99b2b99847290735c89}\label{class_gyoto_1_1_metric_1_1_python_ad764d306db65b99b2b99847290735c89}} 
+void {\bfseries spherical} (bool)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_afc3d0c76e925d53fda44cafae5607e69}\label{class_gyoto_1_1_metric_1_1_python_afc3d0c76e925d53fda44cafae5607e69}} 
+bool {\bfseries spherical} () const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_a1e19d7037aeee1bffb119b8f2c5e5f00}\label{class_gyoto_1_1_metric_1_1_python_a1e19d7037aeee1bffb119b8f2c5e5f00}} 
+virtual std\+::string \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_a1e19d7037aeee1bffb119b8f2c5e5f00}{module}} () const
+\begin{DoxyCompactList}\small\item\em Return module\+\_\+. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_a3718604728f0dce0a8927e45921a7ed8}{module}} (const std\+::string \&)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a7f6558bf7597b6e6c8f1bd198895b077}{module\+\_\+}} and import the \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python}{Python}} module. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_a5aa16fe612f6ed1e9f7a7172cbe07241}\label{class_gyoto_1_1_metric_1_1_python_a5aa16fe612f6ed1e9f7a7172cbe07241}} 
+virtual std\+::string \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_a5aa16fe612f6ed1e9f7a7172cbe07241}{inline\+Module}} () const
+\begin{DoxyCompactList}\small\item\em Return inline\+\_\+module\+\_\+. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_a2faed173e725f3192666abb0ad1a054c}{inline\+Module}} (const std\+::string \&)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_ae0c6e2e9b883adaa081e7a3b402d3bb2}{inline\+\_\+module\+\_\+}} and import the \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python}{Python}} module. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_a9708bdef837a896e529accc4e1720655}\label{class_gyoto_1_1_metric_1_1_python_a9708bdef837a896e529accc4e1720655}} 
+virtual std\+::string \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_a9708bdef837a896e529accc4e1720655}{klass}} () const
+\begin{DoxyCompactList}\small\item\em Retrieve \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}{class\+\_\+}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_a41b59b3d5e8f36d0d7d0865ae2efceb1}{klass}} (const std\+::string \&)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}{class\+\_\+}} and instantiate the \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python}{Python}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_a97c57b0c9a8c22375d8668d1e1b189a8}\label{class_gyoto_1_1_metric_1_1_python_a97c57b0c9a8c22375d8668d1e1b189a8}} 
+virtual std\+::vector$<$ double $>$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_a97c57b0c9a8c22375d8668d1e1b189a8}{parameters}} () const
+\begin{DoxyCompactList}\small\item\em Retrieve \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_aa033dfe530617afb7c7a27e6536bb88c}{parameters\+\_\+}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_a0116ead0d5baed6dbe02f18e7e4a31df}{parameters}} (const std\+::vector$<$ double $>$ \&)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_aa033dfe530617afb7c7a27e6536bb88c}{parameters\+\_\+}} and send them to \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_aab2145b455aa9848024b643d06016b35}{p\+Instance\+\_\+}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_a935d32b21af382aeabf85908d1b51517}\label{class_gyoto_1_1_metric_1_1_python_a935d32b21af382aeabf85908d1b51517}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_a935d32b21af382aeabf85908d1b51517}{mass}} (double m)
+\begin{DoxyCompactList}\small\item\em Set mass used in \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_abd6bfc4aef563b64318b5168f83a49fb}{unit\+Length()}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_a442678531583930ab12a3497e01e6145}\label{class_gyoto_1_1_metric_1_1_python_a442678531583930ab12a3497e01e6145}} 
+void {\bfseries gmunu} (double g\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, const double $\ast$x) const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_aed1a335f58893cecb163f374bd9944f3}\label{class_gyoto_1_1_metric_1_1_python_aed1a335f58893cecb163f374bd9944f3}} 
+int {\bfseries christoffel} (double dst\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, const double $\ast$x) const
+\item 
+double \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_abf1781d71384204e5fd98bf6e8e43298}{get\+Rmb}} () const
+\item 
+double \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_a8e052561441fa18973a80d50bef31b8f}{get\+Rms}} () const
+\item 
+double \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_a1beb709ce0880ad1c42c4876914c7c47}{get\+Specific\+Angular\+Momentum}} (double rr) const
+\item 
+double \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_a80c01908629bcddb1cbd6ddca98e54d2}{get\+Potential}} (double const pos\mbox{[}4\mbox{]}, double l\+\_\+cst) const
+\item 
+int \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_af7db3499d2f44b060254681bcde4c278}{is\+Stop\+Condition}} (double const coord\mbox{[}8\mbox{]}) const
+\begin{DoxyCompactList}\small\item\em Check whether integration should stop. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_a278525ef1d038566b143af16b5ae59fc}{circular\+Velocity}} (double const pos\mbox{[}4\mbox{]}, double vel\mbox{[}4\mbox{]}, double dir=1.) const
+\begin{DoxyCompactList}\small\item\em Yield circular velocity at a given position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_object_ad4aff23562b0ae6a36e05741eb631c82}\label{class_gyoto_1_1_python_1_1_object_ad4aff23562b0ae6a36e05741eb631c82}} 
+virtual void {\bfseries set} (std\+::string const \&key, \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} val)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_object_ab3aa615a6b576b663f9ee524831280c8}\label{class_gyoto_1_1_python_1_1_object_ab3aa615a6b576b663f9ee524831280c8}} 
+virtual void {\bfseries set} (\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&p, \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} val)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_object_ab601136e5837e6bd99c4bf3b0beee718}\label{class_gyoto_1_1_python_1_1_object_ab601136e5837e6bd99c4bf3b0beee718}} 
+virtual void {\bfseries set} (\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&p, \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} val, std\+::string const \&unit)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_abed03e16a8013699534b802e06751ef8}\label{class_gyoto_1_1_object_abed03e16a8013699534b802e06751ef8}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_abed03e16a8013699534b802e06751ef8}{set}} (std\+::string const \&pname, \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} val, std\+::string const \&unit)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} (expressed in unit) of a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_object_aa91e924b2c7c3e58764f8aee6b174926}\label{class_gyoto_1_1_python_1_1_object_aa91e924b2c7c3e58764f8aee6b174926}} 
+virtual \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} {\bfseries get} (std\+::string const \&key) const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_object_a042952734a5d4bd00b73a4c03cc23af4}\label{class_gyoto_1_1_python_1_1_object_a042952734a5d4bd00b73a4c03cc23af4}} 
+\mbox{\hyperlink{class_gyoto_1_1_value}{Value}} {\bfseries get} (\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&p, std\+::string const \&unit) const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_object_abeaf3c1bd632fda3a48118d30105c871}\label{class_gyoto_1_1_python_1_1_object_abeaf3c1bd632fda3a48118d30105c871}} 
+\mbox{\hyperlink{class_gyoto_1_1_value}{Value}} {\bfseries get} (\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&p) const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_a99544282b6c383b8570a5bc51bed1ecf}\label{class_gyoto_1_1_object_a99544282b6c383b8570a5bc51bed1ecf}} 
+virtual \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} \mbox{\hyperlink{class_gyoto_1_1_object_a99544282b6c383b8570a5bc51bed1ecf}{get}} (std\+::string const \&pname, std\+::string const \&unit) const
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} of a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}, converted to unit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_object_ab4fd3efea9c85b8f8c1aaafa2597dfa4}\label{class_gyoto_1_1_python_1_1_object_ab4fd3efea9c85b8f8c1aaafa2597dfa4}} 
+virtual int {\bfseries set\+Parameter} (std\+::string name, std\+::string content, std\+::string unit)
+\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_a43fe041144add66155668ca88a99fd98}{set\+Parameter}} (\mbox{\hyperlink{class_gyoto_1_1_property}{Gyoto\+::\+Property}} const \&p, std\+::string const \&name, std\+::string const \&content, std\+::string const \&unit)
+\begin{DoxyCompactList}\small\item\em Set parameter by \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} (and name) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_object_a7524ab9c2d51d32f7de7177df5b544a1}\label{class_gyoto_1_1_python_1_1_object_a7524ab9c2d51d32f7de7177df5b544a1}} 
+virtual void {\bfseries fill\+Element} (\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$fmp) const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_object_a84ea2cab6209f1ed0de3a73223c6a5e8}\label{class_gyoto_1_1_python_1_1_object_a84ea2cab6209f1ed0de3a73223c6a5e8}} 
+void {\bfseries set\+Parameters} (\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$fmp)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_af77fb58e4ed3399aece00dbcbcdb821b}\label{class_gyoto_1_1_metric_1_1_generic_af77fb58e4ed3399aece00dbcbcdb821b}} 
+int \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_af77fb58e4ed3399aece00dbcbcdb821b}{coord\+Kind}} () const
+\begin{DoxyCompactList}\small\item\em Get coordinate kind. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a795ec4f876df5d582df28a9923fd6411}\label{class_gyoto_1_1_metric_1_1_generic_a795ec4f876df5d582df28a9923fd6411}} 
+int {\bfseries get\+Ref\+Count} ()
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_af61769eacdd15f6d6c411214b575c62b}\label{class_gyoto_1_1_metric_1_1_generic_af61769eacdd15f6d6c411214b575c62b}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_af61769eacdd15f6d6c411214b575c62b}{mass}} (const double, const std\+::string \&unit)
+\begin{DoxyCompactList}\small\item\em Set mass used in \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_abd6bfc4aef563b64318b5168f83a49fb}{unit\+Length()}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a9ae43ad3fcad9bb2ee21a5d8de104eda}\label{class_gyoto_1_1_metric_1_1_generic_a9ae43ad3fcad9bb2ee21a5d8de104eda}} 
+double \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a9ae43ad3fcad9bb2ee21a5d8de104eda}{mass}} () const
+\begin{DoxyCompactList}\small\item\em Get mass used in \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_abd6bfc4aef563b64318b5168f83a49fb}{unit\+Length()}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a3f71a0587fd43e8446cab025bfdd327c}\label{class_gyoto_1_1_metric_1_1_generic_a3f71a0587fd43e8446cab025bfdd327c}} 
+double \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a3f71a0587fd43e8446cab025bfdd327c}{mass}} (const std\+::string \&unit) const
+\begin{DoxyCompactList}\small\item\em Get mass used in \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_abd6bfc4aef563b64318b5168f83a49fb}{unit\+Length()}} \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_abd6bfc4aef563b64318b5168f83a49fb}{unit\+Length}} () const
+\begin{DoxyCompactList}\small\item\em M $\ast$ G / c$^\wedge$2, M is in kg, unit\+Length in meters. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a74c7861961278d587a15b067c43069f0}\label{class_gyoto_1_1_metric_1_1_generic_a74c7861961278d587a15b067c43069f0}} 
+double \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a74c7861961278d587a15b067c43069f0}{unit\+Length}} (const std\+::string \&unit) const
+\begin{DoxyCompactList}\small\item\em unit\+Length expressed in specified unit \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a809e6419cb528829c8afa30430b710ab}{delta\+Min}} () const
+\item 
+void \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a7b4a5908eb4ed3ed255947966f6faf50}{delta\+Min}} (double h1)
+\item 
+double \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a0747da4b348993a84c958d0a6e669c62}{delta\+Max}} () const
+\item 
+virtual double \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a1d349921ec1e0549b47bbdd3c31e8bc2}{delta\+Max}} (double const pos\mbox{[}8\mbox{]}, double delta\+\_\+max\+\_\+external) const
+\item 
+void \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a17791da16af037e2acb7c6ace2cfd5a0}{delta\+Max}} (double h1)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_abe2328a722fb2dc37d55c6ae98bd659a}\label{class_gyoto_1_1_metric_1_1_generic_abe2328a722fb2dc37d55c6ae98bd659a}} 
+double \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_abe2328a722fb2dc37d55c6ae98bd659a}{delta\+Max\+OverR}} () const
+\begin{DoxyCompactList}\small\item\em Get delta\+\_\+max\+\_\+over\+\_\+r\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a2c9ed9d165040f96e72136043a674b3c}\label{class_gyoto_1_1_metric_1_1_generic_a2c9ed9d165040f96e72136043a674b3c}} 
+void \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a2c9ed9d165040f96e72136043a674b3c}{delta\+Max\+OverR}} (double t)
+\begin{DoxyCompactList}\small\item\em Set delta\+\_\+max\+\_\+over\+\_\+r\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a3b60d77fac2903c94c3ae5fbd6566668}\label{class_gyoto_1_1_metric_1_1_generic_a3b60d77fac2903c94c3ae5fbd6566668}} 
+bool \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a3b60d77fac2903c94c3ae5fbd6566668}{keplerian}} () const
+\begin{DoxyCompactList}\small\item\em Get keplerian\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a5aad6a8c1cf296ef0ad276b23614d35d}\label{class_gyoto_1_1_metric_1_1_generic_a5aad6a8c1cf296ef0ad276b23614d35d}} 
+void \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a5aad6a8c1cf296ef0ad276b23614d35d}{keplerian}} (bool)
+\begin{DoxyCompactList}\small\item\em Set keplerian\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_ab0b9d853d673f621c960e1290db5e3c7}\label{class_gyoto_1_1_metric_1_1_generic_ab0b9d853d673f621c960e1290db5e3c7}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_ab0b9d853d673f621c960e1290db5e3c7}{cartesian\+Velocity}} (double const coord\mbox{[}8\mbox{]}, double vel\mbox{[}3\mbox{]})
+\begin{DoxyCompactList}\small\item\em Compute xprime, yprime and zprime from 8-\/coordinates. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a0077ac6a240b042dbe3487298eac4ef0}{Sys\+Prime\+To\+Tdot}} (const double coord\mbox{[}4\mbox{]}, const double v\mbox{[}3\mbox{]}) const
+\begin{DoxyCompactList}\small\item\em Compute tdot as a function of dr/dt, dtheta/dt and dphi/dt. Everything is in geometrical units. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a325f414c1c393c7142b42889e2be8257}{zamo\+Velocity}} (double const pos\mbox{[}4\mbox{]}, double vel\mbox{[}4\mbox{]}) const
+\begin{DoxyCompactList}\small\item\em Yield ZAMO velocity at a given position. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_adaf7d03d118b4625447d20746857cdc8}{nullify\+Coord}} (double coord\mbox{[}8\mbox{]}) const
+\begin{DoxyCompactList}\small\item\em Set tdot (coord\mbox{[}4\mbox{]}) such that coord is light-\/like. Everything is in geometrical units. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_ab1c920d3c040b73dc0c12197b0a430e5}{nullify\+Coord}} (double coord\mbox{[}8\mbox{]}, double \&tdot2) const
+\begin{DoxyCompactList}\small\item\em Set tdot (coord\mbox{[}4\mbox{]}) such that coord is light-\/like and return other possible tdot. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_aa8b34cc32bd8e324e7852f87d08cf6b2}{normalize\+Four\+Vel}} (double coord\mbox{[}8\mbox{]}) const
+\begin{DoxyCompactList}\small\item\em Normalize fourvelvel to -\/1. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a029c3c5e8851e218e2b77315cd6e9ab2}{normalize\+Four\+Vel}} (double const pos\mbox{[}4\mbox{]}, double fourvel\mbox{[}4\mbox{]}) const
+\begin{DoxyCompactList}\small\item\em Normalize fourvelvel to -\/1. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_ac5bfd30a216cb6654cd992c1a42d6075}{Scalar\+Prod}} (const double pos\mbox{[}4\mbox{]}, const double u1\mbox{[}4\mbox{]}, const double u2\mbox{[}4\mbox{]}) const
+\begin{DoxyCompactList}\small\item\em Scalar product. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a4cf28a145ecb21cf674e967a0a937d7b}{norm}} (const double pos\mbox{[}4\mbox{]}, const double u1\mbox{[}4\mbox{]}) const
+\begin{DoxyCompactList}\small\item\em Scalar product. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a706491b96fc929a9b04632a8fe5bc974}\label{class_gyoto_1_1_metric_1_1_generic_a706491b96fc929a9b04632a8fe5bc974}} 
+void \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a706491b96fc929a9b04632a8fe5bc974}{multiply\+Four\+Vect}} (double vect\mbox{[}4\mbox{]}, double a) const
+\begin{DoxyCompactList}\small\item\em multiply vector by scalar \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a65842e339bb17e7270c630ee6d3c6bb8}\label{class_gyoto_1_1_metric_1_1_generic_a65842e339bb17e7270c630ee6d3c6bb8}} 
+void \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a65842e339bb17e7270c630ee6d3c6bb8}{add\+Four\+Vect}} (double u1\mbox{[}4\mbox{]}, double const u2\mbox{[}4\mbox{]}) const
+\begin{DoxyCompactList}\small\item\em add second vector to first one \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a7801b41c8686f337356de47a3a054f10}\label{class_gyoto_1_1_metric_1_1_generic_a7801b41c8686f337356de47a3a054f10}} 
+void \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a7801b41c8686f337356de47a3a054f10}{project\+Four\+Vect}} (double const pos\mbox{[}4\mbox{]}, double u1\mbox{[}4\mbox{]}, double const u2\mbox{[}4\mbox{]}) const
+\begin{DoxyCompactList}\small\item\em project u1 orthogonally to u2 at pos \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a397ca9eae8d37bf02f401e16fdfa6724}{dual\+One\+Form}} (double const IN\+\_\+\+ARRAY1\+\_\+1\mbox{[}4\mbox{]}, double const IN\+\_\+\+ARRAY1\+\_\+2\mbox{[}4\mbox{]}, double ARGOUT\+\_\+\+ARRAY1\mbox{[}4\mbox{]}) const
+\begin{DoxyCompactList}\small\item\em Computes dual 1-\/form Compute the dual 1-\/form of 4-\/vector. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a2a558c51175c19722fe733f7919b0a11}{observer\+Tetrad}} (\mbox{\hyperlink{_gyoto_defs_8h_abdc37c8fde52ef588246ff7da367d65c}{obskind\+\_\+t}} obskind, double const pos\mbox{[}4\mbox{]}, double fourvel\mbox{[}4\mbox{]}, double screen1\mbox{[}4\mbox{]}, double screen2\mbox{[}4\mbox{]}, double screen3\mbox{[}4\mbox{]}) const
+\begin{DoxyCompactList}\small\item\em Computes the orthonormal local tetrad of the observer. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_aa2eed2cdff07431271fa056f84ed7afd}{observer\+Tetrad}} (double const pos\mbox{[}4\mbox{]}, double fourvel\mbox{[}4\mbox{]}, double screen1\mbox{[}4\mbox{]}, double screen2\mbox{[}4\mbox{]}, double screen3\mbox{[}4\mbox{]}) const
+\begin{DoxyCompactList}\small\item\em Computes the orthonormal local tetrad of the observer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_ad49c73bfe5b1996c634d73e8714dce95}{Gram\+Schmidt}} (double const pos\mbox{[}4\mbox{]}, double u0\mbox{[}4\mbox{]}, double u1\mbox{[}4\mbox{]}, double u2\mbox{[}4\mbox{]}, double u3\mbox{[}4\mbox{]}) const
+\begin{DoxyCompactList}\small\item\em Apply Gram-\/\+Schmidt orthonormalization to a basis. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a763b7fd883fb049973df233d92264600}{gmunu}} (double const x\mbox{[}4\mbox{]}, int mu, int nu) const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} coefficients. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a299bbfa89f2bbd5afc94f6eec68a7818}{gmunu}} (double ARGOUT\+\_\+\+ARRAY2\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, double const IN\+\_\+\+ARRAY1\mbox{[}4\mbox{]}) const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} coefficients. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_acdd26facb907606d51ba1e1bb17c3474}{gmunu\+\_\+up}} (double const x\mbox{[}4\mbox{]}, int mu, int nu) const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} contravariant coefficients. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a87740431cdee0939eaaca6445b222863}{gmunu\+\_\+up}} (double ARGOUT\+\_\+\+ARRAY2\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, const double IN\+\_\+\+ARRAY1\mbox{[}4\mbox{]}) const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} contravariant coefficients. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_af399d0bc46c9f42d38fae679e3f02e10}{jacobian}} (double ARGOUT\+\_\+\+ARRAY3\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, const double IN\+\_\+\+ARRAY1\mbox{[}4\mbox{]}) const
+\begin{DoxyCompactList}\small\item\em Derivatives of the metric covariant coefficients. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_ac52fb670eabffbeee285d21cc7ac2116}\label{class_gyoto_1_1_metric_1_1_generic_ac52fb670eabffbeee285d21cc7ac2116}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_ac52fb670eabffbeee285d21cc7ac2116}{gmunu\+\_\+up\+\_\+and\+\_\+jacobian}} (double ARGOUT\+\_\+\+ARRAY2\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, double ARGOUT\+\_\+\+ARRAY3\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, const double IN\+\_\+\+ARRAY1\mbox{[}4\mbox{]}) const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_acdd26facb907606d51ba1e1bb17c3474}{gmunu\+\_\+up()}} and \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_af399d0bc46c9f42d38fae679e3f02e10}{jacobian()}} in one go \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a6749f8cf44dfd15cf81cf2a3295fa3d7}\label{class_gyoto_1_1_metric_1_1_generic_a6749f8cf44dfd15cf81cf2a3295fa3d7}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a6749f8cf44dfd15cf81cf2a3295fa3d7}{compute\+NBeta}} (const double coord\mbox{[}4\mbox{]}, double \&NN, double beta\mbox{[}3\mbox{]}) const
+\begin{DoxyCompactList}\small\item\em Computes lapse scalar and shift vector at coord. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a596d2b3773e278f95ea362ec43ed9667}{christoffel}} (const double coord\mbox{[}4\mbox{]}, const int alpha, const int mu, const int nu) const
+\begin{DoxyCompactList}\small\item\em Chistoffel symbol. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_aa011ca4f331ef9b56223ed52c8e5a665}{christoffel}} (double dst\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, const double coord\mbox{[}4\mbox{]}) const
+\begin{DoxyCompactList}\small\item\em Chistoffel symbol. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_aaff73c866dd220ab4c5dbac8743ffb48}\label{class_gyoto_1_1_metric_1_1_generic_aaff73c866dd220ab4c5dbac8743ffb48}} 
+virtual int \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_aaff73c866dd220ab4c5dbac8743ffb48}{myrk4}} (\mbox{\hyperlink{class_gyoto_1_1_worldline}{Worldline}} $\ast$line, state\+\_\+t const \&coord, double h, state\+\_\+t \&res) const
+\begin{DoxyCompactList}\small\item\em RK4 integrator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a8123ba5985a21ea8f8e26c7645667fc2}\label{class_gyoto_1_1_metric_1_1_generic_a8123ba5985a21ea8f8e26c7645667fc2}} 
+virtual int \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a8123ba5985a21ea8f8e26c7645667fc2}{myrk4}} (\mbox{\hyperlink{class_gyoto_1_1_worldline}{Worldline}} $\ast$line, const double coord\mbox{[}8\mbox{]}, double h, double res\mbox{[}8\mbox{]}) const =delete
+\begin{DoxyCompactList}\small\item\em Obsolete, update your code. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_abe3fd89e28cbcd6a584f24275001c2fa}\label{class_gyoto_1_1_metric_1_1_generic_abe3fd89e28cbcd6a584f24275001c2fa}} 
+virtual int \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_abe3fd89e28cbcd6a584f24275001c2fa}{myrk4\+\_\+adaptive}} (\mbox{\hyperlink{class_gyoto_1_1_worldline}{Gyoto\+::\+Worldline}} $\ast$line, state\+\_\+t const \&coord, double lastnorm, double normref, state\+\_\+t \&coordnew, double h0, double \&h1, double deltamax=\mbox{\hyperlink{_gyoto_defs_8h_a61e9f37f6e15229a442c03e3928c2ace}{GYOTO\+\_\+\+DEFAULT\+\_\+\+DELTA\+\_\+\+MAX}}) const
+\begin{DoxyCompactList}\small\item\em RK4 integrator with adaptive step. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_aca8ee9239d0502c6e311589b01c9c74f}\label{class_gyoto_1_1_metric_1_1_generic_aca8ee9239d0502c6e311589b01c9c74f}} 
+virtual int \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_aca8ee9239d0502c6e311589b01c9c74f}{myrk4\+\_\+adaptive}} (\mbox{\hyperlink{class_gyoto_1_1_worldline}{Gyoto\+::\+Worldline}} $\ast$line, const double coord\mbox{[}8\mbox{]}, double lastnorm, double normref, double coordnew\mbox{[}8\mbox{]}, double h0, double \&h1, double deltamax=\mbox{\hyperlink{_gyoto_defs_8h_a61e9f37f6e15229a442c03e3928c2ace}{GYOTO\+\_\+\+DEFAULT\+\_\+\+DELTA\+\_\+\+MAX}}) const =delete
+\begin{DoxyCompactList}\small\item\em Obsolete, update your code. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a9b17fec10be1b3c3862079ba0871a18a}\label{class_gyoto_1_1_metric_1_1_generic_a9b17fec10be1b3c3862079ba0871a18a}} 
+virtual int \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a9b17fec10be1b3c3862079ba0871a18a}{diff}} (state\+\_\+t const \&x, state\+\_\+t \&dxdt, double \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_a935d32b21af382aeabf85908d1b51517}{mass}}) const
+\begin{DoxyCompactList}\small\item\em F function such as dx/dt=F(x,cst) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a09fda57a1008370aea06c93df40ff911}\label{class_gyoto_1_1_metric_1_1_generic_a09fda57a1008370aea06c93df40ff911}} 
+virtual int \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a09fda57a1008370aea06c93df40ff911}{diff}} (state\+\_\+t const \&x, state\+\_\+t \&dxdt) const =delete
+\begin{DoxyCompactList}\small\item\em Obsolete, update your code. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a6949e18630b1d61dd800c8531f44587a}\label{class_gyoto_1_1_metric_1_1_generic_a6949e18630b1d61dd800c8531f44587a}} 
+virtual int {\bfseries diff} (const double y\mbox{[}8\mbox{]}, double res\mbox{[}8\mbox{]}) const =delete
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a9093f4cdb46360edabcbec4a1bd108fe}\label{class_gyoto_1_1_metric_1_1_generic_a9093f4cdb46360edabcbec4a1bd108fe}} 
+virtual int \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a9093f4cdb46360edabcbec4a1bd108fe}{diff31}} (state\+\_\+t const \&x, state\+\_\+t \&dxdt, double \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_a935d32b21af382aeabf85908d1b51517}{mass}}) const
+\begin{DoxyCompactList}\small\item\em F function such as dx/dt=F(x,cst) for 3+1 case. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a6b818df2f1494dd35d4d4f230a721712}\label{class_gyoto_1_1_metric_1_1_generic_a6b818df2f1494dd35d4d4f230a721712}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a6b818df2f1494dd35d4d4f230a721712}{set\+Particle\+Properties}} (\mbox{\hyperlink{class_gyoto_1_1_worldline}{Gyoto\+::\+Worldline}} $\ast$line, double const coord\mbox{[}8\mbox{]}) const
+\begin{DoxyCompactList}\small\item\em Set Metric-\/specific constants of motion. Used e.\+g. in \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_kerr_b_l}{Kerr\+BL}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_a9ec09c51fd18dde7c13ef3b03fac1fad}\label{class_gyoto_1_1_smart_pointee_a9ec09c51fd18dde7c13ef3b03fac1fad}} 
+void \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_a9ec09c51fd18dde7c13ef3b03fac1fad}{inc\+Ref\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Increment the reference counter. Warning\+: Don\textquotesingle{}t mess with the counter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_a22a67609fb4690ee8ec0e95e4060e387}\label{class_gyoto_1_1_smart_pointee_a22a67609fb4690ee8ec0e95e4060e387}} 
+int \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_a22a67609fb4690ee8ec0e95e4060e387}{dec\+Ref\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Decrement the reference counter and return current value. Warning\+: Don\textquotesingle{}t mess with the counter. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_gyoto_1_1_object_a06ea95dc396053466cdd63d419d1688c}{is\+Thread\+Safe}} () const
+\begin{DoxyCompactList}\small\item\em Whether this class is thread-\/safe. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const  $\ast$ \mbox{\hyperlink{class_gyoto_1_1_object_a424ef3538c714adfafad7eda249e0d58}{property}} (std\+::string const pname) const
+\begin{DoxyCompactList}\small\item\em Find property by name. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_a11892ef308d6f40add51eaea653a394b}{fill\+Property}} (\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$fmp, \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&p) const
+\begin{DoxyCompactList}\small\item\em Output a single \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} to XML. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_gyoto_1_1_object_a741ba678188d7d167ff2e3bb13dd924f}{describe\+Property}} (\mbox{\hyperlink{class_gyoto_1_1_property}{Gyoto\+::\+Property}} const \&p) const
+\begin{DoxyCompactList}\small\item\em Format desrciption for a property. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_object_a13843618d84c49d47bd37ddfa31160c5}{help}} () const
+\begin{DoxyCompactList}\small\item\em Print (to stdout) some help on this class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_a9f46de678c67e9050cf3a8b9677e1d73}\label{class_gyoto_1_1_object_a9f46de678c67e9050cf3a8b9677e1d73}} 
+virtual std\+::string \mbox{\hyperlink{class_gyoto_1_1_object_a9f46de678c67e9050cf3a8b9677e1d73}{kind}} () const
+\begin{DoxyCompactList}\small\item\em Get kind\+\_\+. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller_a55dca3f3b9707bd18ae4a0dd98befd70}{hook}} (Listener $\ast$listener)
+\begin{DoxyCompactList}\small\item\em Start listening. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller_a8bcbb785f92fefe4e76afe76eb175f8a}{unhook}} (Listener $\ast$listener)
+\begin{DoxyCompactList}\small\item\em Stop listening. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_af62c327a27345056f6012b771fa970b8}\label{class_gyoto_1_1_python_1_1_base_af62c327a27345056f6012b771fa970b8}} 
+virtual bool {\bfseries has\+Python\+Property} (std\+::string const \&key) const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_a888b32520799d6f002536e153060b6fe}\label{class_gyoto_1_1_python_1_1_base_a888b32520799d6f002536e153060b6fe}} 
+virtual void {\bfseries set\+Python\+Property} (std\+::string const \&key, \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} val)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_abea99a3924aca45cd00c543fab7bd155}\label{class_gyoto_1_1_python_1_1_base_abea99a3924aca45cd00c543fab7bd155}} 
+virtual \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} {\bfseries get\+Python\+Property} (std\+::string const \&key) const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_a02a869483c7dd153661b7867c892f505}\label{class_gyoto_1_1_python_1_1_base_a02a869483c7dd153661b7867c892f505}} 
+virtual int {\bfseries python\+Property\+Type} (std\+::string const \&key) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_aa5926e77df4fada67a71d01913f8f80c}\label{class_gyoto_1_1_metric_1_1_python_aa5926e77df4fada67a71d01913f8f80c}} 
+{\bfseries GYOTO\+\_\+\+OBJECT\+\_\+\+THREAD\+\_\+\+SAFETY}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_a20eda5413e201eb833b7437b547be6f6}\label{class_gyoto_1_1_metric_1_1_python_a20eda5413e201eb833b7437b547be6f6}} 
+static \mbox{\hyperlink{_gyoto_object_8h_a750e7a43779f63bdb13111eaf0271203}{GYOTO\+\_\+\+OBJECT}} \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const {\bfseries properties} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a1789582ce7d0d3c204d6d5cfa59b3e7a}{coord\+Kind}} (int coordkind)
+\begin{DoxyCompactList}\small\item\em Set coordkind\+\_\+. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_aae3b80667884c6620c4796a1b8ef74e5}{kind}} (const std\+::string)
+\begin{DoxyCompactList}\small\item\em Set kind\+\_\+. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller_af9a1daa629900f00538096987e398a13}{tell\+Listeners}} ()
+\begin{DoxyCompactList}\small\item\em Call tell() on each hooked \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_listener}{Listener}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a546e231862e8bb473845cfa18b086378}\label{class_gyoto_1_1_metric_1_1_generic_a546e231862e8bb473845cfa18b086378}} 
+double \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a546e231862e8bb473845cfa18b086378}{delta\+\_\+min\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Minimum integration step for the adaptive integrator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a53722a985ed8e0b4f7947cd88c032a13}\label{class_gyoto_1_1_metric_1_1_generic_a53722a985ed8e0b4f7947cd88c032a13}} 
+double \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a53722a985ed8e0b4f7947cd88c032a13}{delta\+\_\+max\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Maximum integration step for the adaptive integrator. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a87c5eb06a56f68905ebc7ff17ed2a24c}{delta\+\_\+max\+\_\+over\+\_\+r\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Numerical tuning parameter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a39b87eec8135757dc1b5b5f5729da5c4}\label{class_gyoto_1_1_metric_1_1_generic_a39b87eec8135757dc1b5b5f5729da5c4}} 
+bool \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a39b87eec8135757dc1b5b5f5729da5c4}{keplerian\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 1 if circular\+Velocity should return the Newtonian Keplerian velocity, in r$^\wedge$-\/3/2 \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_gyoto_1_1_object_ac48ad88e3ef229ba0d0fe68a94a7118f}{kind\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The \char`\"{}kind\char`\"{} that is output in the XML entity. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_gyoto_1_1_object_a01832761cd5f0a12319e3e24ce9a9fba}{plugins\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The plug-\/ins that needs to be loaded to access this instance\textquotesingle{}s class. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a7f6558bf7597b6e6c8f1bd198895b077}{module\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Name of the \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} module that holds the class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_ae0c6e2e9b883adaa081e7a3b402d3bb2}\label{class_gyoto_1_1_python_1_1_base_ae0c6e2e9b883adaa081e7a3b402d3bb2}} 
+std\+::string \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_ae0c6e2e9b883adaa081e7a3b402d3bb2}{inline\+\_\+module\+\_\+}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} source code for module that holds the class. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}{class\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Name of the \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} class that we want to expose. \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_aa033dfe530617afb7c7a27e6536bb88c}{parameters\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Parameters that this class needs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_af652cb4b7a2f473e9a86a4bf1e47e973}\label{class_gyoto_1_1_python_1_1_base_af652cb4b7a2f473e9a86a4bf1e47e973}} 
+Py\+Object $\ast$ \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_af652cb4b7a2f473e9a86a4bf1e47e973}{p\+Module\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Reference to the python module once it has been loaded. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_aab2145b455aa9848024b643d06016b35}\label{class_gyoto_1_1_python_1_1_base_aab2145b455aa9848024b643d06016b35}} 
+Py\+Object $\ast$ \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_aab2145b455aa9848024b643d06016b35}{p\+Instance\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Reference to the python instance once it has been instantiated. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_a7e9289775df2ec09ca222ba290cf35c7}\label{class_gyoto_1_1_python_1_1_base_a7e9289775df2ec09ca222ba290cf35c7}} 
+Py\+Object $\ast$ \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a7e9289775df2ec09ca222ba290cf35c7}{p\+Properties\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Reference to the properties member. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_a8f1ddee73aaa84dcdc1b1d2b0b3d8f7c}\label{class_gyoto_1_1_python_1_1_base_a8f1ddee73aaa84dcdc1b1d2b0b3d8f7c}} 
+Py\+Object $\ast$ \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a8f1ddee73aaa84dcdc1b1d2b0b3d8f7c}{p\+Set\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Reference to the (optional) Set method. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_a758de1b2cdd3d9cd55506b5c599290f1}\label{class_gyoto_1_1_python_1_1_base_a758de1b2cdd3d9cd55506b5c599290f1}} 
+Py\+Object $\ast$ \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a758de1b2cdd3d9cd55506b5c599290f1}{p\+Get\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Reference to the (optional) Get method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_a5566b08ef5a6a5df3b25fe948080f726}\label{class_gyoto_1_1_metric_1_1_python_a5566b08ef5a6a5df3b25fe948080f726}} 
+Py\+Object $\ast$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_a5566b08ef5a6a5df3b25fe948080f726}{p\+Gmunu\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Reference to the gmunu method. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_a4a6ab253097db26c0329db8b97e778e2}\label{class_gyoto_1_1_metric_1_1_python_a4a6ab253097db26c0329db8b97e778e2}} 
+Py\+Object $\ast$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_a4a6ab253097db26c0329db8b97e778e2}{p\+Christoffel\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Reference to the christoffel method. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_a20796d553e25f9bbefc0bb5559678eff}\label{class_gyoto_1_1_metric_1_1_python_a20796d553e25f9bbefc0bb5559678eff}} 
+Py\+Object $\ast$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_a20796d553e25f9bbefc0bb5559678eff}{p\+Get\+Rmb\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Reference to the get\+Rmb method. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_a3de6396e84b76cdda6638fab8660c95a}\label{class_gyoto_1_1_metric_1_1_python_a3de6396e84b76cdda6638fab8660c95a}} 
+Py\+Object $\ast$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_a3de6396e84b76cdda6638fab8660c95a}{p\+Get\+Rms\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Reference to the get\+Rms method. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_ab64d9da5d486a9d3c7ac41a80cd9be1b}\label{class_gyoto_1_1_metric_1_1_python_ab64d9da5d486a9d3c7ac41a80cd9be1b}} 
+Py\+Object $\ast$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_ab64d9da5d486a9d3c7ac41a80cd9be1b}{p\+Get\+Specific\+Angular\+Momentum\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Reference to the method get\+Specific\+Angular\+Momentum. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_a0dbf2773363eb46c2225e5156efb5798}\label{class_gyoto_1_1_metric_1_1_python_a0dbf2773363eb46c2225e5156efb5798}} 
+Py\+Object $\ast$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_a0dbf2773363eb46c2225e5156efb5798}{p\+Get\+Potential\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Reference to the get\+Potential method. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_a43469e16d95967540744c2be9bf8ef8c}\label{class_gyoto_1_1_metric_1_1_python_a43469e16d95967540744c2be9bf8ef8c}} 
+Py\+Object $\ast$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_a43469e16d95967540744c2be9bf8ef8c}{p\+Is\+Stop\+Condition\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Reference to the is\+Stop\+Condition method. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_a905ed0c6a9c077afaed3bc5161c3a32e}\label{class_gyoto_1_1_metric_1_1_python_a905ed0c6a9c077afaed3bc5161c3a32e}} 
+Py\+Object $\ast$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_a905ed0c6a9c077afaed3bc5161c3a32e}{p\+Circular\+Velocity\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Reference to the circular\+Velocity method. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_ae0da95aa14ef7aa8df1af598d34d2efa}\label{class_gyoto_1_1_metric_1_1_generic_ae0da95aa14ef7aa8df1af598d34d2efa}} 
+double \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_ae0da95aa14ef7aa8df1af598d34d2efa}{mass\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Mass yielding geometrical unit (in kg). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a691390867f76f4aaaef6848bb5366fc7}\label{class_gyoto_1_1_metric_1_1_generic_a691390867f76f4aaaef6848bb5366fc7}} 
+int \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a691390867f76f4aaaef6848bb5366fc7}{coordkind\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Kind of coordinates (cartesian-\/like, spherical-\/like, unspecified) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a9d17cce6d1615f47e9e30ba1fe6e88ca}{\+\_\+\+\_\+defaultfeatures}}
+\begin{DoxyCompactList}\small\item\em Whether some virtual methods are implemented. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_aaaf212a70fb1880b70e4d357e843cc85}\label{class_gyoto_1_1_smart_pointee_aaaf212a70fb1880b70e4d357e843cc85}} 
+int \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_aaaf212a70fb1880b70e4d357e843cc85}{ref\+Count}}
+\begin{DoxyCompactList}\small\item\em Reference counter. \end{DoxyCompactList}\item 
+pthread\+\_\+mutex\+\_\+t \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_abf1c1e431cdd4f08f13de581cccb6770}{mutex\+\_\+}}
+\begin{DoxyCompactList}\small\item\em A mutex. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_hook_1_1_teller_ae336573bbbf1b8a5b71d8fbac1408030}\label{class_gyoto_1_1_hook_1_1_teller_ae336573bbbf1b8a5b71d8fbac1408030}} 
+\mbox{\hyperlink{class_listener_item}{Listener\+Item}} $\ast$ \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller_ae336573bbbf1b8a5b71d8fbac1408030}{listeners\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Linked list of \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_listener}{Listener}} items. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_ab0e9b408fe0c57afa6337de288e7d37c}\label{class_gyoto_1_1_metric_1_1_python_ab0e9b408fe0c57afa6337de288e7d37c}} 
+class {\bfseries Gyoto\+::\+Smart\+Pointer$<$ Gyoto\+::\+Metric\+::\+Python $>$}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} coded in \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python}{Python}}. 
+
+Loader for \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python}{Python}} \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} classes. It interfaces with a \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python}{Python}} class which must implement at least the gmunu and christoffel methods.
+
+Other methods are optional\+: get\+Rmb, get\+Rms, get\+Specific\+Angular\+Momentum, get\+Potential.
+
+Use $<$Cartesian$>$ or $<$/\+Spherical$>$ to select the coordinate system kind.
+
+Sample XML file\+: 
+\begin{DoxyCodeInclude}{0}
+\DoxyCodeLine{<?\textcolor{keyword}{xml} \textcolor{keyword}{version}=\textcolor{stringliteral}{"{}1.0"{}} \textcolor{keyword}{encoding}=\textcolor{stringliteral}{"{}UTF-\/8"{}} \textcolor{keyword}{standalone}=\textcolor{stringliteral}{"{}no"{}}?>}
+\DoxyCodeLine{<\textcolor{keywordtype}{Scenery}>}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keyword}{The} \textcolor{keyword}{goal} \textcolor{keyword}{of} \textcolor{keyword}{this} \textcolor{keyword}{example} \textcolor{keyword}{is} \textcolor{keyword}{to} \textcolor{keyword}{exhibit} \textcolor{keyword}{using} \textcolor{keyword}{a} \textcolor{keyword}{Metric} \textcolor{keyword}{and} \textcolor{keyword}{a} \textcolor{keyword}{Spectrum}}
+\DoxyCodeLine{  \textcolor{keyword}{coded} \textcolor{keyword}{in} \textcolor{keyword}{Python.} \textcolor{keyword}{It} \textcolor{keyword}{is} \textcolor{keyword}{functionaly} \textcolor{keyword}{equivalent} \textcolor{keyword}{to}}
+\DoxyCodeLine{  \textcolor{keyword}{example-\/fixed-\/star-\/minkowski-\/cartesian.xml} \textcolor{keyword}{in} \textcolor{keyword}{the} \textcolor{keyword}{main} \textcolor{keyword}{Gyoto} \textcolor{keyword}{example}}
+\DoxyCodeLine{  \textcolor{keyword}{directory.}}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keyword}{An} \textcolor{keyword}{optically} \textcolor{keyword}{thin} \textcolor{keyword}{blob} \textcolor{keyword}{centered} \textcolor{keyword}{on} \textcolor{keyword}{the} \textcolor{keyword}{origin} \textcolor{keyword}{of} \textcolor{keyword}{the} \textcolor{keyword}{coordinate}}
+\DoxyCodeLine{  \textcolor{keyword}{system}, \textcolor{keyword}{in} \textcolor{keyword}{flat} \textcolor{keyword}{space-\/time.} \textcolor{keyword}{Computation} \textcolor{keyword}{uses} \textcolor{keyword}{the} \textcolor{keyword}{Cartesian}}
+\DoxyCodeLine{  \textcolor{keyword}{coordinates.}}
+\DoxyCodeLine{}
+\DoxyCodeLine{  <\textcolor{keywordtype}{Metric} \textcolor{keyword}{kind} = \textcolor{stringliteral}{"{}Python"{}}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{Mass} \textcolor{keyword}{unit}=\textcolor{stringliteral}{"{}sunmass"{}}> 4\textcolor{keyword}{e6} </\textcolor{keywordtype}{Mass}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{Cartesian}/>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{Module}>\textcolor{keyword}{gyoto\_sample\_metrics}</\textcolor{keywordtype}{Module}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{Class}>\textcolor{keyword}{Minkowski}</\textcolor{keywordtype}{Class}>}
+\DoxyCodeLine{  </\textcolor{keywordtype}{Metric}>}
+\DoxyCodeLine{}
+\DoxyCodeLine{  <\textcolor{keywordtype}{Screen}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{Distance} \textcolor{keyword}{unit}=\textcolor{stringliteral}{"{}kpc"{}}> 8 </\textcolor{keywordtype}{Distance}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{Time} \textcolor{keyword}{unit}=\textcolor{stringliteral}{"{}yr"{}}> 30\textcolor{keyword}{e3} </\textcolor{keywordtype}{Time}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{FieldOfView} \textcolor{keyword}{unit}=\textcolor{stringliteral}{"{}microas"{}}> 150 </\textcolor{keywordtype}{FieldOfView}>}
+\DoxyCodeLine{    \textcolor{keyword}{In} \textcolor{keyword}{UTF-\/8} \textcolor{keyword}{locales}, \textcolor{stringliteral}{"{}microas"{}} \textcolor{keyword}{may} \textcolor{keyword}{be} \textcolor{keyword}{written} \textcolor{stringliteral}{"{}µas"{}}.}
+\DoxyCodeLine{    <\textcolor{keywordtype}{Inclination} \textcolor{keyword}{unit}=\textcolor{stringliteral}{"{}degree"{}}> 90 </\textcolor{keywordtype}{Inclination}>}
+\DoxyCodeLine{    \textcolor{keyword}{In} \textcolor{keyword}{UTF-\/8} \textcolor{keyword}{locales}, \textcolor{stringliteral}{"{}degree"{}} \textcolor{keyword}{may} \textcolor{keyword}{be} \textcolor{keyword}{written} \textcolor{stringliteral}{"{}°"{}}.}
+\DoxyCodeLine{    <\textcolor{keywordtype}{PALN}> 0 </\textcolor{keywordtype}{PALN}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{Argument}> 0 </\textcolor{keywordtype}{Argument}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{Resolution}> 32 </\textcolor{keywordtype}{Resolution}>}
+\DoxyCodeLine{  </\textcolor{keywordtype}{Screen}>}
+\DoxyCodeLine{}
+\DoxyCodeLine{  <\textcolor{keywordtype}{Astrobj} \textcolor{keyword}{kind} = \textcolor{stringliteral}{"{}FixedStar"{}}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{Radius}> 12 </\textcolor{keywordtype}{Radius}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{Position}> 0 0 0 </\textcolor{keywordtype}{Position}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{UseGenericImpact}/>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{Spectrum} \textcolor{keyword}{kind}=\textcolor{stringliteral}{"{}Python"{}}>}
+\DoxyCodeLine{      <\textcolor{keywordtype}{Module}>\textcolor{keyword}{gyoto\_sample\_spectra}</\textcolor{keywordtype}{Module}>}
+\DoxyCodeLine{      <\textcolor{keywordtype}{Class}>\textcolor{keyword}{PowerLaw}</\textcolor{keywordtype}{Class}>}
+\DoxyCodeLine{      <\textcolor{keywordtype}{Constant}>0.001</\textcolor{keywordtype}{Constant}>}
+\DoxyCodeLine{      <\textcolor{keywordtype}{Exponent}>0.</\textcolor{keywordtype}{Exponent}>}
+\DoxyCodeLine{    </\textcolor{keywordtype}{Spectrum}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{Opacity} \textcolor{keyword}{kind}=\textcolor{stringliteral}{"{}Python"{}}>}
+\DoxyCodeLine{      <\textcolor{keywordtype}{Module}>\textcolor{keyword}{gyoto\_sample\_spectra}</\textcolor{keywordtype}{Module}>}
+\DoxyCodeLine{      <\textcolor{keywordtype}{Class}>\textcolor{keyword}{PowerLaw}</\textcolor{keywordtype}{Class}>}
+\DoxyCodeLine{      <\textcolor{keywordtype}{Constant}>0.001</\textcolor{keywordtype}{Constant}>}
+\DoxyCodeLine{      <\textcolor{keywordtype}{Exponent}>0.</\textcolor{keywordtype}{Exponent}>}
+\DoxyCodeLine{    </\textcolor{keywordtype}{Opacity}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{OpticallyThin}/>}
+\DoxyCodeLine{  </\textcolor{keywordtype}{Astrobj}>}
+\DoxyCodeLine{}
+\DoxyCodeLine{  <\textcolor{keywordtype}{Delta}> 1\textcolor{keyword}{e0} </\textcolor{keywordtype}{Delta}>}
+\DoxyCodeLine{  <\textcolor{keywordtype}{MinimumTime}> 0. </\textcolor{keywordtype}{MinimumTime}>}
+\DoxyCodeLine{  <\textcolor{keywordtype}{Quantities}>}
+\DoxyCodeLine{    \textcolor{keyword}{Intensity}}
+\DoxyCodeLine{  </\textcolor{keywordtype}{Quantities}>}
+\DoxyCodeLine{  \textcolor{keyword}{One} \textcolor{keyword}{can} \textcolor{keyword}{also} \textcolor{keyword}{specify} \textcolor{keyword}{a} \textcolor{keyword}{unit} (\textcolor{keyword}{if} \textcolor{keyword}{Gyoto} \textcolor{keyword}{was} \textcolor{keyword}{compiled} \textcolor{keyword}{with} -\/-\/\textcolor{keyword}{with-\/udunits}):}
+\DoxyCodeLine{    \textcolor{keyword}{Intensity}[\textcolor{keyword}{mJy}/\textcolor{keyword}{pix²}]}
+\DoxyCodeLine{    \textcolor{keyword}{Intensity}[\textcolor{keyword}{mJy}/\textcolor{keyword}{µas²}]}
+\DoxyCodeLine{    \textcolor{keyword}{Intensity}[\textcolor{keyword}{J.m-\/2.s-\/1.sr-\/1.Hz-\/1}]}
+\DoxyCodeLine{    \textcolor{keyword}{Intensity}[\textcolor{keyword}{erg.cm-\/2.s-\/1.sr-\/1.Hz-\/1}]}
+\DoxyCodeLine{    \textcolor{keyword}{Intensity}[\textcolor{keyword}{mJy.sr-\/1}]}
+\DoxyCodeLine{    \textcolor{keyword}{Intensity}[\textcolor{keyword}{Jy.sr-\/1}]}
+\DoxyCodeLine{}
+\DoxyCodeLine{</\textcolor{keywordtype}{Scenery}>}
+
+\end{DoxyCodeInclude}
+ Sample \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python}{Python}} module\+: 
+\begin{DoxyCodeInclude}{0}
+\DoxyCodeLine{\textcolor{stringliteral}{'''Sample metrics for using with Gyoto Python plug-\/in}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{   Those classes demonstrate how to use Python classes as Gyoto}}
+\DoxyCodeLine{\textcolor{stringliteral}{   Metric implementations using Gyoto's "{}python"{} plug-\/in. Note that}}
+\DoxyCodeLine{\textcolor{stringliteral}{   this plug-\/in can be renamed to whatever matches the particular}}
+\DoxyCodeLine{\textcolor{stringliteral}{   version of Python it has been built against (e.g. python3.4).}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{   The goal is to be able to instantiate these from XML, from}}
+\DoxyCodeLine{\textcolor{stringliteral}{   Yorick... and even from Python using the gyoto extension...}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{   Synopsis:}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{   import gyoto.core}}
+\DoxyCodeLine{\textcolor{stringliteral}{   gyoto.core.requirePlugin("{}python"{}) \# or python2.7 or python3.4...}}
+\DoxyCodeLine{\textcolor{stringliteral}{   gg=gyoto.core.Metric("{}Python"{})}}
+\DoxyCodeLine{\textcolor{stringliteral}{   gg.set("{}Module"{}, "{}gyoto\_sample\_metric"{})}}
+\DoxyCodeLine{\textcolor{stringliteral}{   gg.set("{}Class"{}, "{}Minkowski"{})}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{   Classes that aim at implementing the Gyoto::Metric::Generic}}
+\DoxyCodeLine{\textcolor{stringliteral}{   interface do so by providing the following methods:}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{   gmunu(self, dst, pos): mandatory;}}
+\DoxyCodeLine{\textcolor{stringliteral}{   christoffel(self, dst, pos): mandatory;}}
+\DoxyCodeLine{\textcolor{stringliteral}{   getRms(self): optional}}
+\DoxyCodeLine{\textcolor{stringliteral}{   getRmb(self): optional}}
+\DoxyCodeLine{\textcolor{stringliteral}{   getSpecificAngularMomentum(self, rr): optional}}
+\DoxyCodeLine{\textcolor{stringliteral}{   getPotential(self, pos, l\_cst): optional}}
+\DoxyCodeLine{\textcolor{stringliteral}{   \_\_setattr\_\_(self, key, value): optional, useful to react}}
+\DoxyCodeLine{\textcolor{stringliteral}{     when the C++ Metric object sets attributes:}}
+\DoxyCodeLine{\textcolor{stringliteral}{          this: if the Python extension "{}gyoto.core"{} can be imported,}}
+\DoxyCodeLine{\textcolor{stringliteral}{                it will be set to a gyoto.core.Metric instance}}
+\DoxyCodeLine{\textcolor{stringliteral}{                pointing to the C++-\/side instance. If the "{}gyoto.core"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{                extension cannot be loaded, this will be set to None.}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{          spherical: when the spherical(bool t) method is called in}}
+\DoxyCodeLine{\textcolor{stringliteral}{                the C++ layer, it sets the spherical attribute in the}}
+\DoxyCodeLine{\textcolor{stringliteral}{                Python side.}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{          mass: when the mass(double m) method is called in the C++}}
+\DoxyCodeLine{\textcolor{stringliteral}{                side, it sets the spherical attribute in the Python}}
+\DoxyCodeLine{\textcolor{stringliteral}{                side.}}
+\DoxyCodeLine{\textcolor{stringliteral}{   \_\_setitem\_\_(self, key, value): optional, mandatory to support the}}
+\DoxyCodeLine{\textcolor{stringliteral}{     "{}Parameters"{} Property to set arbitrary parameters for this}}
+\DoxyCodeLine{\textcolor{stringliteral}{     metric.}}
+\DoxyCodeLine{\textcolor{stringliteral}{   set(self, key, val) and get(self, key): optional, both need to be}}
+\DoxyCodeLine{\textcolor{stringliteral}{     implemented in order to support additional "{}Properties"{} with}}
+\DoxyCodeLine{\textcolor{stringliteral}{     arbitrary names. In addition, member self.properties must be set}}
+\DoxyCodeLine{\textcolor{stringliteral}{     to a dictionary listing key:datatype pairs, where both key and}}
+\DoxyCodeLine{\textcolor{stringliteral}{     datatype are strings. As of writing, only "{}double"{} is supported}}
+\DoxyCodeLine{\textcolor{stringliteral}{     as a datatype.}}
+\DoxyCodeLine{\textcolor{stringliteral}{'''}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{import} math}
+\DoxyCodeLine{\textcolor{keyword}{import} numpy}
+\DoxyCodeLine{\textcolor{keyword}{import} gyoto.core}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{class }Minkowski:}
+\DoxyCodeLine{    \textcolor{stringliteral}{'''Flat space metric}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{    Implemented for both Cartesian and spherical coordinates.}}
+\DoxyCodeLine{\textcolor{stringliteral}{    '''}}
+\DoxyCodeLine{    \textcolor{keyword}{def }\_\_setattr\_\_(self, key, value):}
+\DoxyCodeLine{        \textcolor{stringliteral}{'''Set attributes.}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{        Optional.}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{        C++ will set several attributes. By overloading \_\_setattr\_\_,}}
+\DoxyCodeLine{\textcolor{stringliteral}{        one can react when that occurs, in particular to make sure `this'}}
+\DoxyCodeLine{\textcolor{stringliteral}{        knows the coordinate kind as in this example.}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{        Attributes set by the C++ layer:}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{          this: if the Python extension "{}gyoto.core"{} can be imported, it}}
+\DoxyCodeLine{\textcolor{stringliteral}{                will be set to a gyoto.core.Metric instance pointing to the}}
+\DoxyCodeLine{\textcolor{stringliteral}{                C++-\/side instance. If the "{}gyoto.core"{} extension cannot be}}
+\DoxyCodeLine{\textcolor{stringliteral}{                loaded, this will be set to None.}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{          spherical: when the spherical(bool t) method is called in}}
+\DoxyCodeLine{\textcolor{stringliteral}{                the C++ layer, it sets the spherical attribute in the}}
+\DoxyCodeLine{\textcolor{stringliteral}{                Python side.}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{          mass: when the mass(double m) method is called in the C++}}
+\DoxyCodeLine{\textcolor{stringliteral}{                side, it sets the spherical attribute in the Python}}
+\DoxyCodeLine{\textcolor{stringliteral}{                side.}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{        This example initializes coordKind in the C++ side if it is}}
+\DoxyCodeLine{\textcolor{stringliteral}{        not already set, since this Minkowski class can work in}}
+\DoxyCodeLine{\textcolor{stringliteral}{        either.}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{        '''}}
+\DoxyCodeLine{        \textcolor{comment}{\# First, actually store the attribute. This is what would}}
+\DoxyCodeLine{        \textcolor{comment}{\# happen if we did not overload \_\_setattr\_\_.}}
+\DoxyCodeLine{        self.\_\_dict\_\_[key]=value}
+\DoxyCodeLine{        \textcolor{comment}{\# Then, if key is "{}this"{}, ensure this knows a valid coordKind.}}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (key == \textcolor{stringliteral}{"{}this"{}}):}
+\DoxyCodeLine{            cK=value.coordKind()}
+\DoxyCodeLine{            \textcolor{keywordflow}{if} cK \textcolor{keywordflow}{is} gyoto.core.GYOTO\_COORDKIND\_UNSPECIFIED:}
+\DoxyCodeLine{                value.set(\textcolor{stringliteral}{"{}Spherical"{}}, \textcolor{keyword}{False})}
+\DoxyCodeLine{            \textcolor{comment}{\# We could do without this, since this will tell us later}}
+\DoxyCodeLine{            \textcolor{comment}{\# anyway.}}
+\DoxyCodeLine{            \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{                self.spherical = (cK \textcolor{keywordflow}{is} gyoto.core.GYOTO\_COORDKIND\_SPHERICAL)}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{def }gmunu(self, g, x):}
+\DoxyCodeLine{        \textcolor{stringliteral}{''' Gyoto::Metric::Generic::gmunu(double dst[4][4], const double pos[4])}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{        Mandatory.}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{        C++ will send two NumPy arrays.}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{        '''}}
+\DoxyCodeLine{        \textcolor{keywordflow}{for} mu \textcolor{keywordflow}{in} range(0, 4):}
+\DoxyCodeLine{            \textcolor{keywordflow}{for} nu \textcolor{keywordflow}{in} range(0, 4):}
+\DoxyCodeLine{                g[mu][nu]=g[nu][mu]=0}
+\DoxyCodeLine{        g[0][0]=-\/1;}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} self.spherical:}
+\DoxyCodeLine{            \textcolor{keywordflow}{for} mu \textcolor{keywordflow}{in} range(1, 4):}
+\DoxyCodeLine{                g[mu][mu]=1.}
+\DoxyCodeLine{            \textcolor{keywordflow}{return}}
+\DoxyCodeLine{        r=x[1]}
+\DoxyCodeLine{        theta=x[2]}
+\DoxyCodeLine{        tmp=r*math.sin(theta)}
+\DoxyCodeLine{        g[1][1]=1.}
+\DoxyCodeLine{        g[2][2]=r*r}
+\DoxyCodeLine{        g[3][3]=tmp*tmp}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{def }christoffel(self, dst, x):}
+\DoxyCodeLine{        \textcolor{stringliteral}{'''Gyoto::Metric::Generic::christoffel(double dst[4][4][4], const double pos[4])}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{        Mandatory.}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{        C++ will send two NumPy arrays.}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{        '''}}
+\DoxyCodeLine{        \textcolor{keywordflow}{for} alpha \textcolor{keywordflow}{in} range(0, 4):}
+\DoxyCodeLine{            \textcolor{keywordflow}{for} mu \textcolor{keywordflow}{in} range(0, 4):}
+\DoxyCodeLine{                \textcolor{keywordflow}{for} nu \textcolor{keywordflow}{in} range(0, 4):}
+\DoxyCodeLine{                    dst[alpha][mu][nu]=0.}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} self.spherical:}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} 0}
+\DoxyCodeLine{        r=x[1]}
+\DoxyCodeLine{        theta=x[2]}
+\DoxyCodeLine{        sth=math.sin(theta)}
+\DoxyCodeLine{        cth=math.cos(theta)}
+\DoxyCodeLine{        dst[1][2][2]=-\/r}
+\DoxyCodeLine{        dst[1][3][3]=-\/r*sth*sth}
+\DoxyCodeLine{        dst[2][1][2]=dst[2][2][1]= 1./r}
+\DoxyCodeLine{        dst[2][3][3]=-\/sth*cth}
+\DoxyCodeLine{        dst[3][1][3]=dst[3][3][1]= dst[2][1][2]}
+\DoxyCodeLine{        dst[3][2][3]=dst[3][3][2]= math.tan(math.pi*0.5 -\/ x[2])}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} 0}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{class }KerrBL:}
+\DoxyCodeLine{    \textcolor{stringliteral}{'''A Python implementation of Gyoto::Metric::KerrBL}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{    Spin and HorizonSecurity may be set either using the Parameters}}
+\DoxyCodeLine{\textcolor{stringliteral}{    Property, as in:}}
+\DoxyCodeLine{\textcolor{stringliteral}{        <Parameters> O.5 0.01 </Parameters>}}
+\DoxyCodeLine{\textcolor{stringliteral}{    or using two distinct ad hoc "{}properties"{}:}}
+\DoxyCodeLine{\textcolor{stringliteral}{        <Spin> 0.5 </Spin>}}
+\DoxyCodeLine{\textcolor{stringliteral}{        <HorizonSecurity> 0.01 </HorizonSecurity>}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{    The various methods are essentially cut-\/and-\/paste from the C++ class.}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{    Only gmunu and christoffel absolutely need to be implemented, but}}
+\DoxyCodeLine{\textcolor{stringliteral}{    various Astrobj require more. See below.}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{    This is for educational and testing purposes. For all practical uses,}}
+\DoxyCodeLine{\textcolor{stringliteral}{    the C++ implementation is much faster.}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{    '''}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{\# This is needed to support setting Spin and HorizonSecurity by name}}
+\DoxyCodeLine{    \textcolor{comment}{\# in addition to the set and get methods}}
+\DoxyCodeLine{    properties=\{\textcolor{stringliteral}{"{}Spin"{}}:\textcolor{stringliteral}{"{}double"{}}, \textcolor{stringliteral}{"{}HorizonSecurity"{}}:\textcolor{stringliteral}{"{}double"{}}\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    spin=0.}
+\DoxyCodeLine{    drhor=gyoto.core.GYOTO\_KERR\_HORIZON\_SECURITY}
+\DoxyCodeLine{    rsink=2.+gyoto.core.GYOTO\_KERR\_HORIZON\_SECURITY}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{def }\_\_setitem\_\_(self, key, value):}
+\DoxyCodeLine{        \textcolor{stringliteral}{'''Set parameters}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{        Optional, one way to handle parameters}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{        This is how Gyoto sends the <Parameters/> XML entity:}}
+\DoxyCodeLine{\textcolor{stringliteral}{        metric[key]=value}}
+\DoxyCodeLine{\textcolor{stringliteral}{        key=0: set spin (0.)}}
+\DoxyCodeLine{\textcolor{stringliteral}{        key=1: set drhor, thickness of sink layer around horizon (0.01)}}
+\DoxyCodeLine{\textcolor{stringliteral}{        '''}}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (key==0):}
+\DoxyCodeLine{            self.spin = value}
+\DoxyCodeLine{        \textcolor{keywordflow}{elif} (key==1):}
+\DoxyCodeLine{            self.drhor = value}
+\DoxyCodeLine{        \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{            \textcolor{keywordflow}{raise} IndexError}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{def }set(self, key, value):}
+\DoxyCodeLine{        \textcolor{stringliteral}{'''Set parameters by name}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{        Optional, one way to handle parameters}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{        This is how Gyoto sends custom  XML entities, e.g.}}
+\DoxyCodeLine{\textcolor{stringliteral}{          <MyEntity>value</MyEntity>}}
+\DoxyCodeLine{\textcolor{stringliteral}{        metric.set("{}MyEntity"{}, value)}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{        Here:}}
+\DoxyCodeLine{\textcolor{stringliteral}{        key="{}Spin"{}: set spin (0.)}}
+\DoxyCodeLine{\textcolor{stringliteral}{        key="{}HorizonSecurity"{}: set drhor, thickness of sink layer}}
+\DoxyCodeLine{\textcolor{stringliteral}{             around horizon (0.01)}}
+\DoxyCodeLine{\textcolor{stringliteral}{        '''}}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (key==\textcolor{stringliteral}{"{}Spin"{}}):}
+\DoxyCodeLine{            self.spin = value}
+\DoxyCodeLine{        \textcolor{keywordflow}{elif} (key==\textcolor{stringliteral}{"{}HorizonSecurity"{}}):}
+\DoxyCodeLine{            self.drhor = value}
+\DoxyCodeLine{        \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{            \textcolor{keywordflow}{raise} IndexError}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{def }get(self, key):}
+\DoxyCodeLine{        \textcolor{stringliteral}{'''Get parameters by name}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{        Optional, mandatory if "{}properties"{} and "{}set"{} are defined.}}
+\DoxyCodeLine{\textcolor{stringliteral}{        '''}}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (key==\textcolor{stringliteral}{"{}Spin"{}}):}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} self.spin}
+\DoxyCodeLine{        \textcolor{keywordflow}{elif} (key==\textcolor{stringliteral}{"{}HorizonSecurity"{}}):}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} self.drhor}
+\DoxyCodeLine{        \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{            \textcolor{keywordflow}{raise} IndexError}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{def }\_\_setattr\_\_(self, key, value):}
+\DoxyCodeLine{        \textcolor{stringliteral}{'''Set attributes.}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{        Optional.}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{        C++ will set several attributes. By overloading \_\_setattr\_\_,}}
+\DoxyCodeLine{\textcolor{stringliteral}{        one can react when that occurs, in particular to make sure}}
+\DoxyCodeLine{\textcolor{stringliteral}{        `this' knows the coordinate kind as in this example.}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{        In addition, update self.rsink each time self.spin or}}
+\DoxyCodeLine{\textcolor{stringliteral}{        self.drhor change.}}
+\DoxyCodeLine{\textcolor{stringliteral}{        '''}}
+\DoxyCodeLine{        \textcolor{comment}{\# First, actually store the attribute. This is what would}}
+\DoxyCodeLine{        \textcolor{comment}{\# happen if we did not overload \_\_setattr\_\_.}}
+\DoxyCodeLine{        self.\_\_dict\_\_[key]=value}
+\DoxyCodeLine{        \textcolor{comment}{\# Then, if key is "{}this"{}, ensure `this' knows a valid coordKind.}}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (key == \textcolor{stringliteral}{"{}this"{}}):}
+\DoxyCodeLine{            self.this.set(\textcolor{stringliteral}{"{}Spherical"{}}, \textcolor{keyword}{True})}
+\DoxyCodeLine{        \textcolor{keywordflow}{elif} key \textcolor{keywordflow}{in} (\textcolor{stringliteral}{"{}spin"{}}, \textcolor{stringliteral}{"{}drhor"{}}):}
+\DoxyCodeLine{            \textcolor{keywordflow}{if} self.spin > 1:}
+\DoxyCodeLine{                self.rsink=drhor}
+\DoxyCodeLine{            \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{                self.rsink=1.+math.sqrt(1.-\/self.spin**2)+self.drhor}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{def }gmunu(self, g, x):}
+\DoxyCodeLine{        \textcolor{stringliteral}{''' Gyoto::Metric::Generic::gmunu(double g[4], const double pos[4])}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{        Mandatory.}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{        C++ will send two NumPy arrays.}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{        Note that the user will not be able to call this method directly but}}
+\DoxyCodeLine{\textcolor{stringliteral}{        through self.this.gmunu which has a different calling sequence:}}
+\DoxyCodeLine{\textcolor{stringliteral}{          g=self.this.gmunu(x)}}
+\DoxyCodeLine{\textcolor{stringliteral}{        '''}}
+\DoxyCodeLine{        spin\_=self.spin}
+\DoxyCodeLine{        a2\_=spin\_**2}
+\DoxyCodeLine{        r=x[1]}
+\DoxyCodeLine{        sth2=math.sin(x[2])**2}
+\DoxyCodeLine{        cth2=math.cos(x[2])**2}
+\DoxyCodeLine{        r2=r*r}
+\DoxyCodeLine{        sigma=r2+a2\_*cth2}
+\DoxyCodeLine{        delta=r2-\/2.*r+a2\_}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{for} mu \textcolor{keywordflow}{in} range(0, 4):}
+\DoxyCodeLine{            \textcolor{keywordflow}{for} nu \textcolor{keywordflow}{in} range(0, 4):}
+\DoxyCodeLine{                g[mu][nu]=g[nu][mu]=0}
+\DoxyCodeLine{}
+\DoxyCodeLine{        g[0][0] = -\/1.+2.*r/sigma;}
+\DoxyCodeLine{        g[1][1] = sigma/delta;}
+\DoxyCodeLine{        g[2][2] = sigma;}
+\DoxyCodeLine{        g[3][3] = (r2+a2\_+2.*r*a2\_*sth2/sigma)*sth2;}
+\DoxyCodeLine{        g[0][3] = g[3][0] = -\/2*spin\_*r*sth2/sigma;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{def }christoffel(self, dst, x):}
+\DoxyCodeLine{        \textcolor{stringliteral}{'''Gyoto::Metric::Generic::christoffel(double dst[4][4][4], const double pos[4])}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{        Mandatory.}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{        C++ will send two NumPy arrays.}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{        Like gmunu, the call will actually be:}}
+\DoxyCodeLine{\textcolor{stringliteral}{          dst=metric.gmunu(x)}}
+\DoxyCodeLine{\textcolor{stringliteral}{        where `metric' is self.this.}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{        '''}}
+\DoxyCodeLine{        \textcolor{keywordflow}{for} alpha \textcolor{keywordflow}{in} range(0, 4):}
+\DoxyCodeLine{            \textcolor{keywordflow}{for} mu \textcolor{keywordflow}{in} range(0, 4):}
+\DoxyCodeLine{                \textcolor{keywordflow}{for} nu \textcolor{keywordflow}{in} range(0, 4):}
+\DoxyCodeLine{                    dst[alpha][mu][nu]=0.}
+\DoxyCodeLine{}
+\DoxyCodeLine{        spin\_=self.spin}
+\DoxyCodeLine{        a2\_=spin\_**2}
+\DoxyCodeLine{        r=x[1]}
+\DoxyCodeLine{        sth=math.sin(x[2])}
+\DoxyCodeLine{        cth=math.cos(x[2])}
+\DoxyCodeLine{        sth2 = sth*sth}
+\DoxyCodeLine{        cth2 = cth*cth}
+\DoxyCodeLine{        sth4=sth2*sth2}
+\DoxyCodeLine{        s2th = 2.*sth*cth}
+\DoxyCodeLine{        c2th=cth2-\/sth2}
+\DoxyCodeLine{        s4th = 2.*s2th*c2th}
+\DoxyCodeLine{        s2th2= s2th*s2th}
+\DoxyCodeLine{        ctgth=cth/sth}
+\DoxyCodeLine{        r2=r*r}
+\DoxyCodeLine{        r4=r2*r2}
+\DoxyCodeLine{        r6=r4*r2;}
+\DoxyCodeLine{        Sigma=r2+a2\_*cth2}
+\DoxyCodeLine{        Sigma2=Sigma*Sigma}
+\DoxyCodeLine{        Delta=r2-\/2.*r+a2\_}
+\DoxyCodeLine{        Deltam1=1./Delta}
+\DoxyCodeLine{        Sigmam1=1./Sigma}
+\DoxyCodeLine{        Sigmam2=Sigmam1*Sigmam1}
+\DoxyCodeLine{        Sigmam3=Sigmam2*Sigmam1}
+\DoxyCodeLine{        a2cthsth=a2\_*cth*sth}
+\DoxyCodeLine{        rSigmam1=r*Sigmam1}
+\DoxyCodeLine{        Deltam1Sigmam2=Deltam1*Sigmam2}
+\DoxyCodeLine{        r2plusa2 = r2+a2\_}
+\DoxyCodeLine{}
+\DoxyCodeLine{        dst[1][1][1]=(1.-\/r)*Deltam1+rSigmam1;}
+\DoxyCodeLine{        dst[1][2][1]=dst[1][1][2]=-\/a2cthsth*Sigmam1;}
+\DoxyCodeLine{        dst[1][2][2]=-\/Delta*rSigmam1;}
+\DoxyCodeLine{        dst[1][3][3]=-\/Delta*sth2*(r+(a2\_*(-\/2.*r2+Sigma)*sth2)/Sigma2)/Sigma;}
+\DoxyCodeLine{        dst[1][3][0]=dst[1][0][3]=spin\_*Delta*(-\/2*r2+Sigma)*sth2*Sigmam3;}
+\DoxyCodeLine{        dst[1][0][0]=-\/Delta*(-\/2.*r2+Sigma)*Sigmam3;}
+\DoxyCodeLine{        dst[2][1][1]=a2cthsth*Deltam1*Sigmam1;}
+\DoxyCodeLine{        dst[2][2][1]=dst[2][1][2]=rSigmam1;}
+\DoxyCodeLine{        dst[2][2][2]=-\/a2cthsth*Sigmam1;}
+\DoxyCodeLine{        dst[2][3][3]=-\/sth*cth*Sigmam3 * (Delta*Sigma2 + 2.*r*r2plusa2*r2plusa2);}
+\DoxyCodeLine{        dst[2][0][3]=dst[2][3][0]=spin\_*r*r2plusa2*s2th*Sigmam3;}
+\DoxyCodeLine{        dst[2][0][0]=-\/2.*a2cthsth*r*Sigmam3;}
+\DoxyCodeLine{        dst[3][3][1]=dst[3][1][3]=Deltam1*Sigmam2 * (r*Sigma*(Sigma-\/2.*r) + a2\_*(Sigma-\/2.*r2)*sth2);}
+\DoxyCodeLine{        dst[3][3][2]=dst[3][2][3]=Sigmam2*ctgth * (-\/(Sigma+Delta)*a2\_*sth2 + r2plusa2*r2plusa2);}
+\DoxyCodeLine{        dst[3][0][1]=dst[3][1][0]=spin\_*(2.*r2-\/Sigma)*Deltam1Sigmam2;}
+\DoxyCodeLine{        dst[3][0][2]=dst[3][2][0]=-\/2.*spin\_*r*ctgth*Sigmam2;}
+\DoxyCodeLine{        dst[0][3][1]=dst[0][1][3]=-\/spin\_*sth2*Deltam1Sigmam2 * (2.*r2*r2plusa2 + Sigma*(r2-\/a2\_));}
+\DoxyCodeLine{        dst[0][3][2]=dst[0][2][3]=Sigmam2*spin\_*a2\_*r*sth2*s2th;}
+\DoxyCodeLine{        dst[0][0][1]=dst[0][1][0]=(a2\_+r2)*(2.*r2-\/Sigma)*Deltam1Sigmam2;}
+\DoxyCodeLine{        dst[0][0][2]=dst[0][2][0]=-\/a2\_*r*s2th*Sigmam2;}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} 0}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{def }getRms(self):}
+\DoxyCodeLine{        aa=self.spin;}
+\DoxyCodeLine{        a2\_=aa*aa}
+\DoxyCodeLine{        z1 = 1. + pow((1. -\/ a2\_),1./3.)*(pow((1. + aa),1./3.) + pow((1. -\/ aa),1./3.))}
+\DoxyCodeLine{        z2 = pow(3.*a2\_ + z1*z1,1./2.);}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} (3. + z2 -\/ pow((3. -\/ z1)*(3. + z1 + 2.*z2),1./2.));}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{def }getRmb(self):}
+\DoxyCodeLine{        spin\_=self.spin}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} 2.-\/spin\_+2.*math.sqrt(1.-\/spin\_);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{def }getSpecificAngularMomentum(self, rr):}
+\DoxyCodeLine{        aa=self.spin}
+\DoxyCodeLine{        sqrtr=math.sqrt(rr);}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} (rr*rr-\/2.*aa*sqrtr+aa*aa)/(rr**1.5-\/2.*sqrtr+aa);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{def }getPotential(self, pos, l\_cst):}
+\DoxyCodeLine{        \textcolor{comment}{\# this is W = -\/ln(|u\_t|) for a circular equatorial 4-\/velocity}}
+\DoxyCodeLine{        \textcolor{comment}{\# Don't try to call directly gmunu from `self',}}
+\DoxyCodeLine{        \textcolor{comment}{\# Call it through `this', a pointer to the C++ instance of}}
+\DoxyCodeLine{        \textcolor{comment}{\# Gyoto::Metric::Python}}
+\DoxyCodeLine{        \textcolor{comment}{\# Note that the calling sequence is not gmunu(self, gg, pos)}}
+\DoxyCodeLine{        gg=self.this.gmunu(pos)}
+\DoxyCodeLine{        gtt = gg[0,0];}
+\DoxyCodeLine{        gtp = gg[0,3];}
+\DoxyCodeLine{        gpp = gg[3,3];}
+\DoxyCodeLine{        Omega = -\/(gtp + l\_cst * gtt)/(gpp + l\_cst * gtp) ;}
+\DoxyCodeLine{  }
+\DoxyCodeLine{        W = (0.5 * math.log(abs(gtt + 2. * Omega * gtp + Omega*Omega * gpp))}
+\DoxyCodeLine{             -\/ math.log(abs(gtt + Omega * gtp))) ;}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return}  W ;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{def }isStopCondition(self, coord):}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} coord[1] < self.rsink}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{def }circularVelocity(self, coor, vel, d):}
+\DoxyCodeLine{        \textcolor{stringliteral}{'''Velocity of a particle in circular motion at point}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{        Note: this is called only if this-\/>keplerian\_ is False.}}
+\DoxyCodeLine{\textcolor{stringliteral}{        '''}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        sinth = math.sin(coor[2]);}
+\DoxyCodeLine{        coord = [coor[0], coor[1]*sinth, math.pi*0.5, coor[3]];}
+\DoxyCodeLine{}
+\DoxyCodeLine{        vel[1] = vel[2] = 0.;}
+\DoxyCodeLine{        \textcolor{comment}{\#vel[3] = 1./((d*pow(coord[1], 1.5) + spin\_)*sinth);}}
+\DoxyCodeLine{        vel[3] = 1./((d*pow(coord[1], 1.5) + self.spin));}
+\DoxyCodeLine{}
+\DoxyCodeLine{        vel[0] = self.this.SysPrimeToTdot(coor, vel[1:]);}
+\DoxyCodeLine{        vel[3] *= vel[0];}
+
+\end{DoxyCodeInclude}
+ 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}\label{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!Subcontractor\_t@{Subcontractor\_t}}
+\index{Subcontractor\_t@{Subcontractor\_t}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{Subcontractor\_t}{Subcontractor\_t}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$\mbox{\hyperlink{class_gyoto_1_1_smart_pointee}{Gyoto\+::\+Smart\+Pointee}}$>$ Gyoto\+::\+Smart\+Pointee\+::\+Subcontractor\+\_\+t(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$, std\+::vector$<$ std\+::string $>$ const \&)\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+A subcontractor builds an object upon order from the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}}. 
+
+Various classes need to provide a subcontractor to be able to instantiate themselves upon order from the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}}. A subcontractor is a function (often a static member function) which accepts a pointer to a \mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}} as unique parameter, communicates with the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}} using this messenger to read an XML description of the object to build, and returns this objet. \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}{Smart\+Pointee\+::\+Subcontractor\+\_\+t}}$\ast$ is just generic enough a typedef to cast to and from other subcontractor types\+: \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_aa53c7ada58c8c8f3799c3485b7d8f3bb}{Astrobj\+::\+Subcontractor\+\_\+t}}, \mbox{\hyperlink{namespace_gyoto_1_1_metric_ad6b33a642cc94ad67855184d2adb95df}{Metric\+::\+Subcontractor\+\_\+t}}, \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a163055eef14aee22dd8fa5188812d889}{Spectrum\+::\+Subcontractor\+\_\+t}}. A subcontractor needs to be registered using the relevant \mbox{\hyperlink{namespace_gyoto_1_1_metric_a602cba49b001e7470f3d439d1ab3e8f7}{Register()}} function\+: \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_abb6caf3023a51cb77b5f6793ac03b188}{Astrobj\+::\+Register()}}, \mbox{\hyperlink{namespace_gyoto_1_1_metric_a602cba49b001e7470f3d439d1ab3e8f7}{Metric\+::\+Register()}}, \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a517874749d838d7121880e7d9d14c626}{Spectrum\+::\+Register()}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a596d2b3773e278f95ea362ec43ed9667}\label{class_gyoto_1_1_metric_1_1_generic_a596d2b3773e278f95ea362ec43ed9667}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!christoffel@{christoffel}}
+\index{christoffel@{christoffel}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{christoffel()}{christoffel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual double Gyoto\+::\+Metric\+::\+Generic\+::christoffel (\begin{DoxyParamCaption}\item[{const double}]{coord\mbox{[}4\mbox{]},  }\item[{const int}]{alpha,  }\item[{const int}]{mu,  }\item[{const int}]{nu }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Chistoffel symbol. 
+
+\mbox{\hyperlink{class_gyoto_1_1_value}{Value}} of Christoffel symbol {$\Gamma$}\textsuperscript{{$\alpha$}}\textsubscript{{$\mu$}{$\nu$}} at point (x\textsubscript{1}, x\textsubscript{2}, x\textsubscript{3}). 
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_numerical_metric_lorene_a5e1cc9cbc9ac8152f2d5ecc7bf09abbd}{Gyoto\+::\+Metric\+::\+Numerical\+Metric\+Lorene}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_minkowski_a13567edab6e3d18d078ce9cf7038dfc6}{Gyoto\+::\+Metric\+::\+Minkowski}}, and \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_chern_simons_a807841063bd13d39a13f70f632c5008a}{Gyoto\+::\+Metric\+::\+Chern\+Simons}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_aa011ca4f331ef9b56223ed52c8e5a665}\label{class_gyoto_1_1_metric_1_1_generic_aa011ca4f331ef9b56223ed52c8e5a665}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!christoffel@{christoffel}}
+\index{christoffel@{christoffel}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{christoffel()}{christoffel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual int Gyoto\+::\+Metric\+::\+Generic\+::christoffel (\begin{DoxyParamCaption}\item[{double}]{dst\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}\mbox{[}4\mbox{]},  }\item[{const double}]{coord\mbox{[}4\mbox{]} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Chistoffel symbol. 
+
+\mbox{\hyperlink{class_gyoto_1_1_value}{Value}} of Christoffel symbol {$\Gamma$}\textsuperscript{{$\alpha$}}\textsubscript{{$\mu$}{$\nu$}} at point (x\textsubscript{1}, x\textsubscript{2}, x\textsubscript{3}).
+
+\begin{DoxyReturn}{Returns}
+1 on error, 0 otherwise 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_chern_simons_a05b5e96a2f60e170c9f553b693731b48}{Gyoto\+::\+Metric\+::\+Chern\+Simons}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_schwarzschild_harmonic_ade44e95ee4e450b7ce6d008ea9b61be6}{Gyoto\+::\+Metric\+::\+Schwarzschild\+Harmonic}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_rezzolla_zhidenko_aec01ecaa5b6ff0e774e1bd735f409d38}{Gyoto\+::\+Metric\+::\+Rezzolla\+Zhidenko}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_minkowski_a694461e266b287af1290da72a97e53db}{Gyoto\+::\+Metric\+::\+Minkowski}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_kerr_b_l_a07a2acdef806dd959f34be13b979e653}{Gyoto\+::\+Metric\+::\+Kerr\+BL}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_hayward_ac861de2db8008150f4f0ebf06d80302e}{Gyoto\+::\+Metric\+::\+Hayward}}, and \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_numerical_metric_lorene_a45efde00a13fabe4dd5d37fef0873242}{Gyoto\+::\+Metric\+::\+Numerical\+Metric\+Lorene}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_a278525ef1d038566b143af16b5ae59fc}\label{class_gyoto_1_1_metric_1_1_python_a278525ef1d038566b143af16b5ae59fc}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!circularVelocity@{circularVelocity}}
+\index{circularVelocity@{circularVelocity}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{circularVelocity()}{circularVelocity()}}
+{\footnotesize\ttfamily void Gyoto\+::\+Metric\+::\+Python\+::circular\+Velocity (\begin{DoxyParamCaption}\item[{double const}]{pos\mbox{[}4\mbox{]},  }\item[{double}]{vel\mbox{[}4\mbox{]},  }\item[{double}]{dir = {\ttfamily 1.} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Yield circular velocity at a given position. 
+
+Give the velocity of a massive particle in circular orbit at the given position projected onto the equatorial plane. Such a velocity may not exist everywhere (or anywhere) for a given metric. This method is intended to be used by \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}} classes such as Torus or Thin\+Disk.
+
+If keplerian\+\_\+ is set to true, this method should return the Keplerian velcity instead (derived classes should ensure this, see \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_kerr_b_l_a553b15f36f209215cffe92be812629e6}{Kerr\+BL\+::circular\+Velocity()}} for instance).
+
+The default implementation throws an error if keplerian\+\_\+ is set to false.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & input\+: position, \\
+\hline
+{\em vel} & output\+: velocity, \\
+\hline
+{\em dir} & 1 for corotating, -\/1 for counterrotating. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_afcaf16029a21fff9c110b4171956f079}{Gyoto\+::\+Metric\+::\+Generic}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a1789582ce7d0d3c204d6d5cfa59b3e7a}\label{class_gyoto_1_1_metric_1_1_generic_a1789582ce7d0d3c204d6d5cfa59b3e7a}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!coordKind@{coordKind}}
+\index{coordKind@{coordKind}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{coordKind()}{coordKind()}}
+{\footnotesize\ttfamily void Gyoto\+::\+Metric\+::\+Generic\+::coord\+Kind (\begin{DoxyParamCaption}\item[{int}]{coordkind }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Set coordkind\+\_\+. 
+
+coordkind(int coordkind) is protected because, for most Metrics, it should not be changed in runtime. Set coordinate kind \mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a0747da4b348993a84c958d0a6e669c62}\label{class_gyoto_1_1_metric_1_1_generic_a0747da4b348993a84c958d0a6e669c62}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!deltaMax@{deltaMax}}
+\index{deltaMax@{deltaMax}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{deltaMax()}{deltaMax()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily double Gyoto\+::\+Metric\+::\+Generic\+::delta\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+Get delta\+\_\+max\+\_\+ \mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a1d349921ec1e0549b47bbdd3c31e8bc2}\label{class_gyoto_1_1_metric_1_1_generic_a1d349921ec1e0549b47bbdd3c31e8bc2}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!deltaMax@{deltaMax}}
+\index{deltaMax@{deltaMax}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{deltaMax()}{deltaMax()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily virtual double Gyoto\+::\+Metric\+::\+Generic\+::delta\+Max (\begin{DoxyParamCaption}\item[{double const}]{pos\mbox{[}8\mbox{]},  }\item[{double}]{delta\+\_\+max\+\_\+external }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+Get delta max at a given position
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & 4-\/position \\
+\hline
+{\em \mbox{[}optional\mbox{]}} & delta\+\_\+max\+\_\+external external constraint on delta\+\_\+max \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the smallest value between delta\+\_\+max\+\_\+, delta\+\_\+max\+\_\+external, and R$\ast$delta\+\_\+max\+\_\+over\+\_\+r\+\_\+ where R is pos\mbox{[}1\mbox{]} in spherical coordinates and max(x1, x2, x3) in Cartesian coordinates. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a17791da16af037e2acb7c6ace2cfd5a0}\label{class_gyoto_1_1_metric_1_1_generic_a17791da16af037e2acb7c6ace2cfd5a0}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!deltaMax@{deltaMax}}
+\index{deltaMax@{deltaMax}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{deltaMax()}{deltaMax()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Gyoto\+::\+Metric\+::\+Generic\+::delta\+Max (\begin{DoxyParamCaption}\item[{double}]{h1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+Set delta\+\_\+max\+\_\+ \mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a809e6419cb528829c8afa30430b710ab}\label{class_gyoto_1_1_metric_1_1_generic_a809e6419cb528829c8afa30430b710ab}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!deltaMin@{deltaMin}}
+\index{deltaMin@{deltaMin}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{deltaMin()}{deltaMin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double Gyoto\+::\+Metric\+::\+Generic\+::delta\+Min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+Get delta\+\_\+min\+\_\+ \mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a7b4a5908eb4ed3ed255947966f6faf50}\label{class_gyoto_1_1_metric_1_1_generic_a7b4a5908eb4ed3ed255947966f6faf50}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!deltaMin@{deltaMin}}
+\index{deltaMin@{deltaMin}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{deltaMin()}{deltaMin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Gyoto\+::\+Metric\+::\+Generic\+::delta\+Min (\begin{DoxyParamCaption}\item[{double}]{h1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+Set delta\+\_\+min\+\_\+ \mbox{\Hypertarget{class_gyoto_1_1_object_a741ba678188d7d167ff2e3bb13dd924f}\label{class_gyoto_1_1_object_a741ba678188d7d167ff2e3bb13dd924f}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!describeProperty@{describeProperty}}
+\index{describeProperty@{describeProperty}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{describeProperty()}{describeProperty()}}
+{\footnotesize\ttfamily std\+::string Gyoto\+::\+Object\+::describe\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_property}{Gyoto\+::\+Property}} const \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Format desrciption for a property. 
+
+Returns a string containing the name(s) and type of the property, as well as whether it supports unit. \mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a397ca9eae8d37bf02f401e16fdfa6724}\label{class_gyoto_1_1_metric_1_1_generic_a397ca9eae8d37bf02f401e16fdfa6724}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!dualOneForm@{dualOneForm}}
+\index{dualOneForm@{dualOneForm}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{dualOneForm()}{dualOneForm()}}
+{\footnotesize\ttfamily void Gyoto\+::\+Metric\+::\+Generic\+::dual\+One\+Form (\begin{DoxyParamCaption}\item[{double const}]{IN\+\_\+\+ARRAY1\+\_\+1\mbox{[}4\mbox{]},  }\item[{double const}]{IN\+\_\+\+ARRAY1\+\_\+2\mbox{[}4\mbox{]},  }\item[{double}]{ARGOUT\+\_\+\+ARRAY1\mbox{[}4\mbox{]} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Computes dual 1-\/form Compute the dual 1-\/form of 4-\/vector. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em IN\+\_\+\+ARRAY1\+\_\+1} & 4-\/position; \\
+\hline
+ & {\em IN\+\_\+\+ARRAY1\+\_\+2} & quadrivector; \\
+\hline
+\mbox{\texttt{ out}}  & {\em ARGOUT\+\_\+\+ARRAY1} & output 1-\/form \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_object_a11892ef308d6f40add51eaea653a394b}\label{class_gyoto_1_1_object_a11892ef308d6f40add51eaea653a394b}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!fillProperty@{fillProperty}}
+\index{fillProperty@{fillProperty}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{fillProperty()}{fillProperty()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Object\+::fill\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$}]{fmp,  }\item[{\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Output a single \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} to XML. 
+
+The base implementation decides what to do based on the {\itshape p.\+type}. The format matches how set\+Parameters() an set\+Parameter() would interpret the XML descition.
+
+Overriding this method should be avoided, but makes sense in some cases (for instance \mbox{\hyperlink{class_gyoto_1_1_screen_a50f80add154ec088fc9509ba22ef0032}{Screen\+::fill\+Property()}} selects a different unit for {\itshape Distance} based on its magnitude, so that stellar sizes are expressed in solar radii while smaller sizes can be expressed in meters and larger sizes in parsecs).
+
+Overriding implementation should fall-\/back on calling the implementation in the direct parent class\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class }A: \textcolor{keyword}{public} Object \{\};}
+\DoxyCodeLine{\textcolor{keyword}{class }B: \textcolor{keyword}{public} A \{ }
+\DoxyCodeLine{ \textcolor{keyword}{using} B::setParameter;}
+\DoxyCodeLine{ \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_gyoto_1_1_object_a11892ef308d6f40add51eaea653a394b}{fillProperty}}(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto::FactoryMessenger}} *fmp,}
+\DoxyCodeLine{                        Property \textcolor{keyword}{const} \&p) \textcolor{keyword}{const} ;}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{\textcolor{keywordtype}{void} B::fillProperty(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto::FactoryMessenger}} *fmp,}
+\DoxyCodeLine{                        Property \textcolor{keyword}{const} \&p)\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{  \textcolor{keywordflow}{if} (name==\textcolor{stringliteral}{"{}Duff"{}}) fmp-\/>doSomething();}
+\DoxyCodeLine{  \textcolor{keywordflow}{else} A::fillProperty(fmp, p);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_xillver_reflection_a9e8bc6375f3c981042b74d99ee7adf91}{Gyoto\+::\+Astrobj\+::\+Xillver\+Reflection}}, \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_uniform_af5ccaceb5c188a7a0ea11791885919bc}{Gyoto\+::\+Spectrometer\+::\+Uniform}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_star_a152074fdddb29950936d3193d3aea55d}{Gyoto\+::\+Astrobj\+::\+Star}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_shift_a234a2d08bb7918e1bc62e4a710a4df77}{Gyoto\+::\+Metric\+::\+Shift}}, \mbox{\hyperlink{class_gyoto_1_1_screen_a50f80add154ec088fc9509ba22ef0032}{Gyoto\+::\+Screen}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_polish_doughnut_acbe2c229f702905204ea0d822b94e17c}{Gyoto\+::\+Astrobj\+::\+Polish\+Doughnut}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_pattern_disk_acc548bda88d62932275e8d0fcd630ca9}{Gyoto\+::\+Astrobj\+::\+Pattern\+Disk}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_neutron_star_model_atmosphere_a65604453c31dac828adeaeb7c35ca23d}{Gyoto\+::\+Astrobj\+::\+Neutron\+Star\+Model\+Atmosphere}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_equatorial_hot_spot_a5acba2e137e389070bb5f7c71ea31ed5}{Gyoto\+::\+Astrobj\+::\+Equatorial\+Hot\+Spot}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_dynamical_disk_abbc14f98531888e96547665a8a6a20ca}{Gyoto\+::\+Astrobj\+::\+Dynamical\+Disk}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_disk3_d_a160d18feeb44b24f396c1001abec7bd6}{Gyoto\+::\+Astrobj\+::\+Disk3D}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_directional_disk_a42a558bc44010a73986909dd9a2fdd41}{Gyoto\+::\+Astrobj\+::\+Directional\+Disk}}, and \mbox{\hyperlink{class_gyoto_1_1_scenery_a9bc2f2025deb97a71f21f2be5c0f5022}{Gyoto\+::\+Scenery}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_a80c01908629bcddb1cbd6ddca98e54d2}\label{class_gyoto_1_1_metric_1_1_python_a80c01908629bcddb1cbd6ddca98e54d2}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!getPotential@{getPotential}}
+\index{getPotential@{getPotential}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{getPotential()}{getPotential()}}
+{\footnotesize\ttfamily double Gyoto\+::\+Metric\+::\+Python\+::get\+Potential (\begin{DoxyParamCaption}\item[{double const}]{pos\mbox{[}4\mbox{]},  }\item[{double}]{l\+\_\+cst }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns potential W=-\/ln($\vert$u\+\_\+t$\vert$) for a cst specific angular momentum l\+\_\+cst Should be implemented in derived classes if useful If called on the base class, returns an error 
+
+Reimplemented from \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_ab045442f6aa20bec44cb7017bac91103}{Gyoto\+::\+Metric\+::\+Generic}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_af4c7119b0a717a18531d5910bbd10b7d}\label{class_gyoto_1_1_metric_1_1_python_af4c7119b0a717a18531d5910bbd10b7d}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!getProperties@{getProperties}}
+\index{getProperties@{getProperties}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{getProperties()}{getProperties()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const$\ast$ Gyoto\+::\+Metric\+::\+Python\+::get\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get list of properties. 
+
+This method is declared automatically by the \mbox{\hyperlink{_gyoto_object_8h_a750e7a43779f63bdb13111eaf0271203}{GYOTO\+\_\+\+OBJECT}} macro and defined automatically by the \mbox{\hyperlink{_gyoto_property_8h_a1356435ea7ee0e18d07201a80e034dcc}{GYOTO\+\_\+\+PROPERTY\+\_\+\+END}} macro. 
+
+Reimplemented from \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a0cc1a0a93d1d49b83ba88e613d5bd9d3}{Gyoto\+::\+Metric\+::\+Generic}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_abf1781d71384204e5fd98bf6e8e43298}\label{class_gyoto_1_1_metric_1_1_python_abf1781d71384204e5fd98bf6e8e43298}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!getRmb@{getRmb}}
+\index{getRmb@{getRmb}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{getRmb()}{getRmb()}}
+{\footnotesize\ttfamily double Gyoto\+::\+Metric\+::\+Python\+::get\+Rmb (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the marginally bound radius Should be implemented in derived classes if useful If called on the base class, returns an error 
+
+Reimplemented from \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a9b3e894772e2bce0cf107fa632ed4496}{Gyoto\+::\+Metric\+::\+Generic}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_a8e052561441fa18973a80d50bef31b8f}\label{class_gyoto_1_1_metric_1_1_python_a8e052561441fa18973a80d50bef31b8f}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!getRms@{getRms}}
+\index{getRms@{getRms}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{getRms()}{getRms()}}
+{\footnotesize\ttfamily double Gyoto\+::\+Metric\+::\+Python\+::get\+Rms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the marginally stable (ISCO) radius Should be implemented in derived classes if useful If called on the base class, returns an error 
+
+Reimplemented from \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a4dab1e5dadbafd87992d52e731e1c9f2}{Gyoto\+::\+Metric\+::\+Generic}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_a1beb709ce0880ad1c42c4876914c7c47}\label{class_gyoto_1_1_metric_1_1_python_a1beb709ce0880ad1c42c4876914c7c47}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!getSpecificAngularMomentum@{getSpecificAngularMomentum}}
+\index{getSpecificAngularMomentum@{getSpecificAngularMomentum}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{getSpecificAngularMomentum()}{getSpecificAngularMomentum()}}
+{\footnotesize\ttfamily double Gyoto\+::\+Metric\+::\+Python\+::get\+Specific\+Angular\+Momentum (\begin{DoxyParamCaption}\item[{double}]{rr }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the specific angular momentum l=-\/u\+\_\+phi/u\+\_\+t Should be implemented in derived classes if useful If called on the base class, returns an error 
+
+Reimplemented from \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a745db8f6377b8b9e1ced42ea174de938}{Gyoto\+::\+Metric\+::\+Generic}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a299bbfa89f2bbd5afc94f6eec68a7818}\label{class_gyoto_1_1_metric_1_1_generic_a299bbfa89f2bbd5afc94f6eec68a7818}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!gmunu@{gmunu}}
+\index{gmunu@{gmunu}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{gmunu()}{gmunu()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Metric\+::\+Generic\+::gmunu (\begin{DoxyParamCaption}\item[{double}]{ARGOUT\+\_\+\+ARRAY2\mbox{[}4\mbox{]}\mbox{[}4\mbox{]},  }\item[{double const}]{IN\+\_\+\+ARRAY1\mbox{[}4\mbox{]} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+\mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} coefficients. 
+
+The default implementation calls double gmunu(const double $\ast$ x, int mu, int nu) const.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em ARGOUT\+\_\+\+ARRAY2} & (g) 4x4 array to store the coeefficients \\
+\hline
+\mbox{\texttt{ in}}  & {\em IN\+\_\+\+ARRAY1} & (x) 4-\/position at which to compute the coefficients; \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} coefficient g\textsubscript{{$\mu$},{$\nu$}} at point x 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_chern_simons_ac42eb8ebbde278bba27b9bec4459a177}{Gyoto\+::\+Metric\+::\+Chern\+Simons}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_shift_af299b4291cae77fc9b54da25705e0c77}{Gyoto\+::\+Metric\+::\+Shift}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_minkowski_a96ceaf525b0e1ea8a723d218438d70f0}{Gyoto\+::\+Metric\+::\+Minkowski}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_kerr_k_s_a8caf34c338a76b0063b8a5292cf640df}{Gyoto\+::\+Metric\+::\+Kerr\+KS}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_kerr_b_l_a6f26deffe86f65bf37153eae7fdf5ec1}{Gyoto\+::\+Metric\+::\+Kerr\+BL}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_hayward_ada32a695e229fb476a09c32087171547}{Gyoto\+::\+Metric\+::\+Hayward}}, and \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_complex_ae5222ee2f591545d5982b8e71f2e52c4}{Gyoto\+::\+Metric\+::\+Complex}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a763b7fd883fb049973df233d92264600}\label{class_gyoto_1_1_metric_1_1_generic_a763b7fd883fb049973df233d92264600}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!gmunu@{gmunu}}
+\index{gmunu@{gmunu}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{gmunu()}{gmunu()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual double Gyoto\+::\+Metric\+::\+Generic\+::gmunu (\begin{DoxyParamCaption}\item[{double const}]{x\mbox{[}4\mbox{]},  }\item[{int}]{mu,  }\item[{int}]{nu }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+\mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} coefficients. 
+
+The default implementation calls \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}}\+:\+: gmunu(double g\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, const double $\ast$ pos) const
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & 4-\/position at which to compute the coefficient; \\
+\hline
+{\em mu} & 1st index of coefficient, 0{$\le$}{$\mu$}{$\le$}3; \\
+\hline
+{\em nu} & 2nd index of coefficient, 0{$\le$}{$\nu$}{$\le$}3; \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} coefficient g\textsubscript{{$\mu$},{$\nu$}} at point x 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_schwarzschild_harmonic_af90182cf66c8baa4f4ec66aebddc7934}{Gyoto\+::\+Metric\+::\+Schwarzschild\+Harmonic}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_rot_star3__1_a0cc2f00de0c63cf5d237d75c887f799b}{Gyoto\+::\+Metric\+::\+Rot\+Star3\+\_\+1}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_rezzolla_zhidenko_a99ceaf31e70d177d333dc77a4f2b0262}{Gyoto\+::\+Metric\+::\+Rezzolla\+Zhidenko}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_kerr_b_l_a4086d34cfc556a54a5f2cc5c45ae7dc6}{Gyoto\+::\+Metric\+::\+Kerr\+BL}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_hayward_a36ca2ffee58cd7a3e48b5812a4f87361}{Gyoto\+::\+Metric\+::\+Hayward}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_chern_simons_a5a3d3405f7b99ccea8eb4d477a4388fb}{Gyoto\+::\+Metric\+::\+Chern\+Simons}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_kerr_k_s_ad2126b926c38ee9d10380de3785fb399}{Gyoto\+::\+Metric\+::\+Kerr\+KS}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_numerical_metric_lorene_aeccd860908d6b8f05fba36bf542cc390}{Gyoto\+::\+Metric\+::\+Numerical\+Metric\+Lorene}}, and \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_minkowski_a18a6cc7959f5d35d0848a2785f273e1c}{Gyoto\+::\+Metric\+::\+Minkowski}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a87740431cdee0939eaaca6445b222863}\label{class_gyoto_1_1_metric_1_1_generic_a87740431cdee0939eaaca6445b222863}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!gmunu\_up@{gmunu\_up}}
+\index{gmunu\_up@{gmunu\_up}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{gmunu\_up()}{gmunu\_up()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Metric\+::\+Generic\+::gmunu\+\_\+up (\begin{DoxyParamCaption}\item[{double}]{ARGOUT\+\_\+\+ARRAY2\mbox{[}4\mbox{]}\mbox{[}4\mbox{]},  }\item[{const double}]{IN\+\_\+\+ARRAY1\mbox{[}4\mbox{]} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+\mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} contravariant coefficients. 
+
+The default implementation inverts the covariant coefficients matrix. 
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_chern_simons_ad3bc552ab1bc26c468cfb70db0fc41ab}{Gyoto\+::\+Metric\+::\+Chern\+Simons}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_shift_a688bab90f07a9abcf8dc89f48a504bf2}{Gyoto\+::\+Metric\+::\+Shift}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_numerical_metric_lorene_a895992a8c0a433475cfb629006d6de96}{Gyoto\+::\+Metric\+::\+Numerical\+Metric\+Lorene}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_kerr_k_s_a89569a9452927caafaffc3ae62f35f01}{Gyoto\+::\+Metric\+::\+Kerr\+KS}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_kerr_b_l_a0b9caec2a0c4d3b9f3f510f5f477e24b}{Gyoto\+::\+Metric\+::\+Kerr\+BL}}, and \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_hayward_a7cc3fe0aa9695182b6abfd56db74c2b3}{Gyoto\+::\+Metric\+::\+Hayward}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_acdd26facb907606d51ba1e1bb17c3474}\label{class_gyoto_1_1_metric_1_1_generic_acdd26facb907606d51ba1e1bb17c3474}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!gmunu\_up@{gmunu\_up}}
+\index{gmunu\_up@{gmunu\_up}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{gmunu\_up()}{gmunu\_up()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual double Gyoto\+::\+Metric\+::\+Generic\+::gmunu\+\_\+up (\begin{DoxyParamCaption}\item[{double const}]{x\mbox{[}4\mbox{]},  }\item[{int}]{mu,  }\item[{int}]{nu }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+\mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} contravariant coefficients. 
+
+The default implementation calls \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}}\+:\+: gmunu\+\_\+up(double g\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, const double $\ast$ pos) const
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & 4-\/position at which to compute the coefficient; \\
+\hline
+{\em mu} & 1st index of coefficient, 0{$\le$}{$\mu$}{$\le$}3; \\
+\hline
+{\em nu} & 2nd index of coefficient, 0{$\le$}{$\nu$}{$\le$}3; \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} coefficient g\textsuperscript{{$\mu$},{$\nu$}} at point x 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_kerr_b_l_abc0a1a5e212728672ffba464704134ab}{Gyoto\+::\+Metric\+::\+Kerr\+BL}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_hayward_a522465c8e3a6b9e6bd4d21a8dc68eb2a}{Gyoto\+::\+Metric\+::\+Hayward}}, and \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_chern_simons_a365f4edcfd2f9a87a8624d6b143eac7d}{Gyoto\+::\+Metric\+::\+Chern\+Simons}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_ad49c73bfe5b1996c634d73e8714dce95}\label{class_gyoto_1_1_metric_1_1_generic_ad49c73bfe5b1996c634d73e8714dce95}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!GramSchmidt@{GramSchmidt}}
+\index{GramSchmidt@{GramSchmidt}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{GramSchmidt()}{GramSchmidt()}}
+{\footnotesize\ttfamily void Gyoto\+::\+Metric\+::\+Generic\+::\+Gram\+Schmidt (\begin{DoxyParamCaption}\item[{double const}]{pos\mbox{[}4\mbox{]},  }\item[{double}]{u0\mbox{[}4\mbox{]},  }\item[{double}]{u1\mbox{[}4\mbox{]},  }\item[{double}]{u2\mbox{[}4\mbox{]},  }\item[{double}]{u3\mbox{[}4\mbox{]} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Apply Gram-\/\+Schmidt orthonormalization to a basis. 
+
+On input, u0 to u3 must be four non-\/zero norm, independent 4-\/vectors. On output, they will form an orthonormal basis.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pos} & position, \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em u0} & basis vector \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em u1} & basis vector \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em u2} & basis vector \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em u3} & basis vector \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_object_a13843618d84c49d47bd37ddfa31160c5}\label{class_gyoto_1_1_object_a13843618d84c49d47bd37ddfa31160c5}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!help@{help}}
+\index{help@{help}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{help()}{help()}}
+{\footnotesize\ttfamily void Gyoto\+::\+Object\+::help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Print (to stdout) some help on this class. 
+
+Describe all properties that this instance supports. \mbox{\Hypertarget{class_gyoto_1_1_hook_1_1_teller_a55dca3f3b9707bd18ae4a0dd98befd70}\label{class_gyoto_1_1_hook_1_1_teller_a55dca3f3b9707bd18ae4a0dd98befd70}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!hook@{hook}}
+\index{hook@{hook}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{hook()}{hook()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Hook\+::\+Teller\+::hook (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_hook_1_1_listener}{Listener}} $\ast$}]{listener }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Start listening. 
+
+Use from a \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_listener}{Hook\+::\+Listener}} object method\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{teller-\/>hook(\textcolor{keyword}{this})}
+
+\end{DoxyCode}
+ where \char`\"{}this\char`\"{} is a Listener and \char`\"{}teller\char`\"{} is a Teller.
+
+Use \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller_a8bcbb785f92fefe4e76afe76eb175f8a}{unhook()}} later to stop listening to a given Teller.
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & pointer to the new listener \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_a2faed173e725f3192666abb0ad1a054c}\label{class_gyoto_1_1_metric_1_1_python_a2faed173e725f3192666abb0ad1a054c}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!inlineModule@{inlineModule}}
+\index{inlineModule@{inlineModule}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{inlineModule()}{inlineModule()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Metric\+::\+Python\+::inline\+Module (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_ae0c6e2e9b883adaa081e7a3b402d3bb2}{inline\+\_\+module\+\_\+}} and import the \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python}{Python}} module. 
+
+Side effects\+:
+\begin{DoxyItemize}
+\item sets \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a7f6558bf7597b6e6c8f1bd198895b077}{module\+\_\+}} to \char`\"{}\char`\"{};
+\item calls \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_a9708bdef837a896e529accc4e1720655}{klass}}(\mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}{class\+\_\+}}) if \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}{class\+\_\+}} is already known, so \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a7f6558bf7597b6e6c8f1bd198895b077}{module\+\_\+}} can be set (or reset) after \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}{class\+\_\+}}. 
+\end{DoxyItemize}
+
+Reimplemented from \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a3436f643ba19cb9e53d8a7e95b64f0df}{Gyoto\+::\+Python\+::\+Base}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_af7db3499d2f44b060254681bcde4c278}\label{class_gyoto_1_1_metric_1_1_python_af7db3499d2f44b060254681bcde4c278}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!isStopCondition@{isStopCondition}}
+\index{isStopCondition@{isStopCondition}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{isStopCondition()}{isStopCondition()}}
+{\footnotesize\ttfamily int Gyoto\+::\+Metric\+::\+Python\+::is\+Stop\+Condition (\begin{DoxyParamCaption}\item[{double const}]{coord\mbox{[}8\mbox{]} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Check whether integration should stop. 
+
+The integrating loop will ask this the \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} through this method whether or not it is happy to continue the integration. Typically, the \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} should answer 0 when everything is fine, 1 when too close to the event horizon, inside the BH...
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & 8-\/coordinate vector to check. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_a67db9a833cd77098dc602ee6521c7770}{Gyoto\+::\+Metric\+::\+Generic}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_object_a06ea95dc396053466cdd63d419d1688c}\label{class_gyoto_1_1_object_a06ea95dc396053466cdd63d419d1688c}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!isThreadSafe@{isThreadSafe}}
+\index{isThreadSafe@{isThreadSafe}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{isThreadSafe()}{isThreadSafe()}}
+{\footnotesize\ttfamily virtual bool Gyoto\+::\+Object\+::is\+Thread\+Safe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Whether this class is thread-\/safe. 
+
+Return True if this object is thread-\/safe, i.\+e. if an instance and its clone can be used in parallel threads (in the context of Scenery\+::raytrace()). Known objects which are not thread-\/safe include Lorene metrics and everything from the \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python}{Python}} plug-\/in.
+
+The default implementation considers that the class itself is thread safe and recurses into the declared properties to check whether they are safe too. Classes that abide to the Object/\+Property paradigm and are themselves thread-\/safe have nothing special to do.
+
+Objects that clone children in their copy constructor that are not declared as properties must take these children into account.
+
+Classes that are never thread-\/safe must declare it. It acn be easily done using GYOTO\+\_\+\+OBJECT\+\_\+\+THREAD\+\_\+\+SAFETY in the class declaration and GYOTO\+\_\+\+PROPERTY\+\_\+\+THREAD\+\_\+\+UNSAFE in the class definition. \mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_af399d0bc46c9f42d38fae679e3f02e10}\label{class_gyoto_1_1_metric_1_1_generic_af399d0bc46c9f42d38fae679e3f02e10}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!jacobian@{jacobian}}
+\index{jacobian@{jacobian}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{jacobian()}{jacobian()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Metric\+::\+Generic\+::jacobian (\begin{DoxyParamCaption}\item[{double}]{ARGOUT\+\_\+\+ARRAY3\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}\mbox{[}4\mbox{]},  }\item[{const double}]{IN\+\_\+\+ARRAY1\mbox{[}4\mbox{]} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Derivatives of the metric covariant coefficients. 
+
+The default implementation evaluates them numerically. The gmunu matrix is assumed to be symmetrical but no other assumptions are made at the moment. 
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_kerr_k_s_a6ca50bf0eeb9c07ce4fde05f0823ca84}{Gyoto\+::\+Metric\+::\+Kerr\+KS}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_shift_ae35d576be6edbde6800c368a44be67f4}{Gyoto\+::\+Metric\+::\+Shift}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_numerical_metric_lorene_a2ac21205ecebe01aa79fd106ea9c8a3e}{Gyoto\+::\+Metric\+::\+Numerical\+Metric\+Lorene}}, and \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_complex_a9fff8be760b6b735e15256f6e94567ae}{Gyoto\+::\+Metric\+::\+Complex}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_object_aae3b80667884c6620c4796a1b8ef74e5}\label{class_gyoto_1_1_object_aae3b80667884c6620c4796a1b8ef74e5}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!kind@{kind}}
+\index{kind@{kind}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{kind()}{kind()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Object\+::kind (\begin{DoxyParamCaption}\item[{const std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Set kind\+\_\+. 
+
+\mbox{\hyperlink{class_gyoto_1_1_object_aae3b80667884c6620c4796a1b8ef74e5}{kind(const std\+::string)}} is protected because, for most Objects, it should not be changed in runtime. Set kind\+\_\+ \mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_a41b59b3d5e8f36d0d7d0865ae2efceb1}\label{class_gyoto_1_1_metric_1_1_python_a41b59b3d5e8f36d0d7d0865ae2efceb1}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!klass@{klass}}
+\index{klass@{klass}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{klass()}{klass()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Metric\+::\+Python\+::klass (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}{class\+\_\+}} and instantiate the \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python}{Python}} class. 
+
+Sets \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_aab2145b455aa9848024b643d06016b35}{p\+Instance\+\_\+}}.
+
+This generic implementation takes care of the common ground, but does not set \textquotesingle{}this\textquotesingle{} or call \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_a97c57b0c9a8c22375d8668d1e1b189a8}{parameters}}(\mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_aa033dfe530617afb7c7a27e6536bb88c}{parameters\+\_\+}}). Therefore, all the derived classes should reimplement this method and at least call Python\+::\+Base\+::klass(c) and \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_a97c57b0c9a8c22375d8668d1e1b189a8}{parameters}}(\mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_aa033dfe530617afb7c7a27e6536bb88c}{parameters\+\_\+}}). Between the two is the right moment to check that the \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python}{Python}} class implements the required API and to cache Py\+Object$\ast$ pointers to class methods. 
+
+Reimplemented from \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_acce1645b213fe517f73483a99e7789be}{Gyoto\+::\+Python\+::\+Base}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_a3718604728f0dce0a8927e45921a7ed8}\label{class_gyoto_1_1_metric_1_1_python_a3718604728f0dce0a8927e45921a7ed8}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!module@{module}}
+\index{module@{module}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{module()}{module()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Metric\+::\+Python\+::module (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a7f6558bf7597b6e6c8f1bd198895b077}{module\+\_\+}} and import the \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python}{Python}} module. 
+
+Side effects\+:
+\begin{DoxyItemize}
+\item sets \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_ae0c6e2e9b883adaa081e7a3b402d3bb2}{inline\+\_\+module\+\_\+}} to \char`\"{}\char`\"{};
+\item calls \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_a9708bdef837a896e529accc4e1720655}{klass}}(\mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}{class\+\_\+}}) if \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}{class\+\_\+}} is already known, so \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a7f6558bf7597b6e6c8f1bd198895b077}{module\+\_\+}} can be set (or reset) after \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}{class\+\_\+}}. 
+\end{DoxyItemize}
+
+Reimplemented from \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a4cb3d486914da158dafcd1e562827fed}{Gyoto\+::\+Python\+::\+Base}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a4cf28a145ecb21cf674e967a0a937d7b}\label{class_gyoto_1_1_metric_1_1_generic_a4cf28a145ecb21cf674e967a0a937d7b}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!norm@{norm}}
+\index{norm@{norm}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{norm()}{norm()}}
+{\footnotesize\ttfamily double Gyoto\+::\+Metric\+::\+Generic\+::norm (\begin{DoxyParamCaption}\item[{const double}]{pos\mbox{[}4\mbox{]},  }\item[{const double}]{u1\mbox{[}4\mbox{]} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Scalar product. 
+
+Compute the norm of the quadrivector u1 in this \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}}, at point pos expressed in coordinate system sys. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pos} & 4-\/position; \\
+\hline
+\mbox{\texttt{ in}}  & {\em u1} & quadrivector; \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$\vert$$\vert$u1$\vert$$\vert$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a029c3c5e8851e218e2b77315cd6e9ab2}\label{class_gyoto_1_1_metric_1_1_generic_a029c3c5e8851e218e2b77315cd6e9ab2}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!normalizeFourVel@{normalizeFourVel}}
+\index{normalizeFourVel@{normalizeFourVel}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{normalizeFourVel()}{normalizeFourVel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Metric\+::\+Generic\+::normalize\+Four\+Vel (\begin{DoxyParamCaption}\item[{double const}]{pos\mbox{[}4\mbox{]},  }\item[{double}]{fourvel\mbox{[}4\mbox{]} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Normalize fourvelvel to -\/1. 
+
+First computes threevel as xiprime=xidot/x0dot for i in \{1, 2, 3\}, then computes x0dot using Sy\+Prime\+To\+Tdot, then computes again xidot as xidot=xiprime$\ast$x0dot.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pos} & 4-\/position; \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em fourvel} & 4-\/velocity, will be renormalized. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_aa8b34cc32bd8e324e7852f87d08cf6b2}\label{class_gyoto_1_1_metric_1_1_generic_aa8b34cc32bd8e324e7852f87d08cf6b2}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!normalizeFourVel@{normalizeFourVel}}
+\index{normalizeFourVel@{normalizeFourVel}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{normalizeFourVel()}{normalizeFourVel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Metric\+::\+Generic\+::normalize\+Four\+Vel (\begin{DoxyParamCaption}\item[{double}]{coord\mbox{[}8\mbox{]} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Normalize fourvelvel to -\/1. 
+
+First computes threevel as xiprime=xidot/x0dot for i in \{1, 2, 3\}, then computes x0dot using Sy\+Prime\+To\+Tdot, then computes again xidot as xidot=xiprime$\ast$x0dot.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em coord} & 8-\/position, coord\mbox{[}4-\/7\mbox{]} will be set according to the other elements; \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_adaf7d03d118b4625447d20746857cdc8}\label{class_gyoto_1_1_metric_1_1_generic_adaf7d03d118b4625447d20746857cdc8}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!nullifyCoord@{nullifyCoord}}
+\index{nullifyCoord@{nullifyCoord}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{nullifyCoord()}{nullifyCoord()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Metric\+::\+Generic\+::nullify\+Coord (\begin{DoxyParamCaption}\item[{double}]{coord\mbox{[}8\mbox{]} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Set tdot (coord\mbox{[}4\mbox{]}) such that coord is light-\/like. Everything is in geometrical units. 
+
+Set coord\mbox{[}4\mbox{]} so that the 4-\/velocity coord\mbox{[}4\+:7\mbox{]} is lightlike, i.\+e. of norm 0. There may be up to two solutions. coord\mbox{[}4\mbox{]} is set to the hightest. The lowest can be retrieved using \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_ab1c920d3c040b73dc0c12197b0a430e5}{nullify\+Coord(double coord\mbox{[}8\mbox{]}, double\& tdot2) const}}. Everything is expressed in geometrical units.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em coord} & 8-\/position, coord\mbox{[}4\mbox{]} will be set according to the other elements; \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_kerr_b_l_a4b1d76722686bc76988eaac1a8923947}{Gyoto\+::\+Metric\+::\+Kerr\+BL}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_ab1c920d3c040b73dc0c12197b0a430e5}\label{class_gyoto_1_1_metric_1_1_generic_ab1c920d3c040b73dc0c12197b0a430e5}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!nullifyCoord@{nullifyCoord}}
+\index{nullifyCoord@{nullifyCoord}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{nullifyCoord()}{nullifyCoord()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Metric\+::\+Generic\+::nullify\+Coord (\begin{DoxyParamCaption}\item[{double}]{coord\mbox{[}8\mbox{]},  }\item[{double \&}]{tdot2 }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Set tdot (coord\mbox{[}4\mbox{]}) such that coord is light-\/like and return other possible tdot. 
+
+Set coord\mbox{[}4\mbox{]} so that the 4-\/velocity coord\mbox{[}4\+:7\mbox{]} is lightlike, i.\+e. of norm 0. There may be up to two solutions. coord\mbox{[}4\mbox{]} is set to the hightest. The lowest can be retrieved in tdot2. Everything is expressed in geometrical units.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em coord} & 8-\/position, coord\mbox{[}4\mbox{]} will be set according to the other elements; \\
+\hline
+\mbox{\texttt{ out}}  & {\em tdot2} & will be set to the smallest solution \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_kerr_b_l_a24367da4de2e399f00ba3e3bca6919f8}{Gyoto\+::\+Metric\+::\+Kerr\+BL}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_aa2eed2cdff07431271fa056f84ed7afd}\label{class_gyoto_1_1_metric_1_1_generic_aa2eed2cdff07431271fa056f84ed7afd}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!observerTetrad@{observerTetrad}}
+\index{observerTetrad@{observerTetrad}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{observerTetrad()}{observerTetrad()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Metric\+::\+Generic\+::observer\+Tetrad (\begin{DoxyParamCaption}\item[{double const}]{pos\mbox{[}4\mbox{]},  }\item[{double}]{fourvel\mbox{[}4\mbox{]},  }\item[{double}]{screen1\mbox{[}4\mbox{]},  }\item[{double}]{screen2\mbox{[}4\mbox{]},  }\item[{double}]{screen3\mbox{[}4\mbox{]} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Computes the orthonormal local tetrad of the observer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pos} & position, \\
+\hline
+\mbox{\texttt{ in}}  & {\em fourvel} & observer 4-\/velocity (norm -\/1) \\
+\hline
+\mbox{\texttt{ out}}  & {\em screen1} & first vector in the screen plane \\
+\hline
+\mbox{\texttt{ out}}  & {\em screen2} & second vector in the screen plane \\
+\hline
+\mbox{\texttt{ out}}  & {\em screen3} & vector normal to the screen \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_kerr_b_l_ac9a334295a48a70a7c873c9c64d0f37d}{Gyoto\+::\+Metric\+::\+Kerr\+BL}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a2a558c51175c19722fe733f7919b0a11}\label{class_gyoto_1_1_metric_1_1_generic_a2a558c51175c19722fe733f7919b0a11}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!observerTetrad@{observerTetrad}}
+\index{observerTetrad@{observerTetrad}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{observerTetrad()}{observerTetrad()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Metric\+::\+Generic\+::observer\+Tetrad (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_gyoto_defs_8h_abdc37c8fde52ef588246ff7da367d65c}{obskind\+\_\+t}}}]{obskind,  }\item[{double const}]{pos\mbox{[}4\mbox{]},  }\item[{double}]{fourvel\mbox{[}4\mbox{]},  }\item[{double}]{screen1\mbox{[}4\mbox{]},  }\item[{double}]{screen2\mbox{[}4\mbox{]},  }\item[{double}]{screen3\mbox{[}4\mbox{]} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Computes the orthonormal local tetrad of the observer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obskind} & input\+: kind of observer (eg\+: \char`\"{}\+ZAMO\char`\"{},\char`\"{}\+Keplerian\+Observer\char`\"{}...) \\
+\hline
+{\em pos} & input\+: position, \\
+\hline
+{\em fourvel} & output\+: observer 4-\/velocity (norm -\/1) \\
+\hline
+{\em screen1} & output\+: first vector in the screen plane \\
+\hline
+{\em screen2} & output\+: second vector in the screen plane \\
+\hline
+{\em screen3} & output\+: vector normal to the screen \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_minkowski_a6e736715f33da07a47d4e314a99cd614}{Gyoto\+::\+Metric\+::\+Minkowski}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_python_a0116ead0d5baed6dbe02f18e7e4a31df}\label{class_gyoto_1_1_metric_1_1_python_a0116ead0d5baed6dbe02f18e7e4a31df}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!parameters@{parameters}}
+\index{parameters@{parameters}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{parameters()}{parameters()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Metric\+::\+Python\+::parameters (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_aa033dfe530617afb7c7a27e6536bb88c}{parameters\+\_\+}} and send them to \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_aab2145b455aa9848024b643d06016b35}{p\+Instance\+\_\+}}. 
+
+The parameters are sent to the class instance using the {\bfseries{setitem}} method with numerical keys. 
+
+Reimplemented from \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_ad60df11071a344829956610aa8015a58}{Gyoto\+::\+Python\+::\+Base}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_object_a424ef3538c714adfafad7eda249e0d58}\label{class_gyoto_1_1_object_a424ef3538c714adfafad7eda249e0d58}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!property@{property}}
+\index{property@{property}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{property()}{property()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const$\ast$ Gyoto\+::\+Object\+::property (\begin{DoxyParamCaption}\item[{std\+::string const}]{pname }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Find property by name. 
+
+Look into the \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} list for a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} whose {\itshape name} (or {\itshape name\+\_\+false}, for a boolean \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}) is {\itshape pname}. Return a const pointer to the first such property found, or NULL if none is found. \mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_ac5bfd30a216cb6654cd992c1a42d6075}\label{class_gyoto_1_1_metric_1_1_generic_ac5bfd30a216cb6654cd992c1a42d6075}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!ScalarProd@{ScalarProd}}
+\index{ScalarProd@{ScalarProd}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{ScalarProd()}{ScalarProd()}}
+{\footnotesize\ttfamily virtual double Gyoto\+::\+Metric\+::\+Generic\+::\+Scalar\+Prod (\begin{DoxyParamCaption}\item[{const double}]{pos\mbox{[}4\mbox{]},  }\item[{const double}]{u1\mbox{[}4\mbox{]},  }\item[{const double}]{u2\mbox{[}4\mbox{]} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Scalar product. 
+
+Compute the scalarproduct of the two quadrivectors u1 and u2 in this \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}}, at point pos expressed in coordinate system sys. 
+\begin{DoxyParams}{Parameters}
+{\em pos} & 4-\/position; \\
+\hline
+{\em u1} & 1st quadrivector; \\
+\hline
+{\em u2} & 2nd quadrivector; \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+u1$\ast$u2 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_rot_star3__1_a3266ed42094d9b8395fe1681aeb56983}{Gyoto\+::\+Metric\+::\+Rot\+Star3\+\_\+1}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_kerr_b_l_a5dd3b6d8c6bfb98a72ed2c9950613ebf}{Gyoto\+::\+Metric\+::\+Kerr\+BL}}, and \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_hayward_a73722ddfcd3783aed6ddcdd265ba78c8}{Gyoto\+::\+Metric\+::\+Hayward}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_object_a43fe041144add66155668ca88a99fd98}\label{class_gyoto_1_1_object_a43fe041144add66155668ca88a99fd98}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!setParameter@{setParameter}}
+\index{setParameter@{setParameter}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{setParameter()}{setParameter()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Object\+::set\+Parameter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_property}{Gyoto\+::\+Property}} const \&}]{p,  }\item[{std\+::string const \&}]{name,  }\item[{std\+::string const \&}]{content,  }\item[{std\+::string const \&}]{unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Set parameter by \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} (and name) 
+
+This function is used when parsing an XML description, if \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} ({\itshape p}) of this {\itshape name} is found (i.\+e. either {\itshape p.\+name} or {\itshape p.\+name\+\_\+false} is equal to {\itshape name}). Implementation should fall-\/back on calling the direct\textquotesingle{}s parent implementation\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class }A: \textcolor{keyword}{public} Object \{\};}
+\DoxyCodeLine{\textcolor{keyword}{class }B: \textcolor{keyword}{public} A \{ }
+\DoxyCodeLine{ \textcolor{keyword}{using} B::setParameter;}
+\DoxyCodeLine{ \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} setParameter(\mbox{\hyperlink{class_gyoto_1_1_property}{Gyoto::Property}} \textcolor{keyword}{const} \&p,}
+\DoxyCodeLine{                           std::string name,}
+\DoxyCodeLine{                        std::string content,}
+\DoxyCodeLine{                        std::string unit);}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{\textcolor{keywordtype}{void} B::setParameter(\mbox{\hyperlink{class_gyoto_1_1_property}{Gyoto::Property}} \textcolor{keyword}{const} \&p,}
+\DoxyCodeLine{                          std::string name,}
+\DoxyCodeLine{                  std::string content,}
+\DoxyCodeLine{                  std::string unit) \{}
+\DoxyCodeLine{  \textcolor{keywordflow}{if} (name==\textcolor{stringliteral}{"{}Duff"{}}) doSomething(content, unit);}
+\DoxyCodeLine{  \textcolor{keywordflow}{else} A::setParameter(p, name, content, unit);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} that matches {\itshape name} ({\itshape p.\+name} == {\itshape name} or {\itshape p.\+name\+\_\+false} == {\itshape name}) \\
+\hline
+{\em name} & XML name of the parameter (XML entity) \\
+\hline
+{\em content} & string representation of the value \\
+\hline
+{\em unit} & string representation of the unit \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_polish_doughnut_a13a8a59bd3738f5739db0550dbb42003}{Gyoto\+::\+Astrobj\+::\+Polish\+Doughnut}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a0077ac6a240b042dbe3487298eac4ef0}\label{class_gyoto_1_1_metric_1_1_generic_a0077ac6a240b042dbe3487298eac4ef0}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!SysPrimeToTdot@{SysPrimeToTdot}}
+\index{SysPrimeToTdot@{SysPrimeToTdot}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{SysPrimeToTdot()}{SysPrimeToTdot()}}
+{\footnotesize\ttfamily virtual double Gyoto\+::\+Metric\+::\+Generic\+::\+Sys\+Prime\+To\+Tdot (\begin{DoxyParamCaption}\item[{const double}]{coord\mbox{[}4\mbox{]},  }\item[{const double}]{v\mbox{[}3\mbox{]} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Compute tdot as a function of dr/dt, dtheta/dt and dphi/dt. Everything is in geometrical units. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & 4-\/position (geometrical units); \\
+\hline
+{\em v} & 3-\/velocity dx1/dx0, dx2/dx0, dx3/dx0; \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+tdot = dx0/dtau. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gyoto_1_1_hook_1_1_teller_af9a1daa629900f00538096987e398a13}\label{class_gyoto_1_1_hook_1_1_teller_af9a1daa629900f00538096987e398a13}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!tellListeners@{tellListeners}}
+\index{tellListeners@{tellListeners}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{tellListeners()}{tellListeners()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Hook\+::\+Teller\+::tell\+Listeners (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Call tell() on each hooked Listener. 
+
+Whenever a Teller mutates, it should warn any Listener hooked to it using \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller_af9a1daa629900f00538096987e398a13}{tell\+Listeners()}}. \mbox{\Hypertarget{class_gyoto_1_1_hook_1_1_teller_a8bcbb785f92fefe4e76afe76eb175f8a}\label{class_gyoto_1_1_hook_1_1_teller_a8bcbb785f92fefe4e76afe76eb175f8a}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!unhook@{unhook}}
+\index{unhook@{unhook}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{unhook()}{unhook()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Hook\+::\+Teller\+::unhook (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_hook_1_1_listener}{Listener}} $\ast$}]{listener }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Stop listening. 
+
+Use from a \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_listener}{Hook\+::\+Listener}} object method\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{teller-\/>unhook(\textcolor{keyword}{this})}
+
+\end{DoxyCode}
+
+
+where \char`\"{}this\char`\"{} is a Listener, \char`\"{}teller\char`\"{} is a Teller, and \char`\"{}this\char`\"{} has called teller-\/$>$hook(this) previously.
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & pointer to the listener \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_abd6bfc4aef563b64318b5168f83a49fb}\label{class_gyoto_1_1_metric_1_1_generic_abd6bfc4aef563b64318b5168f83a49fb}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!unitLength@{unitLength}}
+\index{unitLength@{unitLength}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{unitLength()}{unitLength()}}
+{\footnotesize\ttfamily double Gyoto\+::\+Metric\+::\+Generic\+::unit\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+M $\ast$ G / c$^\wedge$2, M is in kg, unit\+Length in meters. 
+
+Metrics implementations are free to express lengths and distances in whatever unit they see fit (presumably most often geometrical units). This function returns this unit in SI (meters). \mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a325f414c1c393c7142b42889e2be8257}\label{class_gyoto_1_1_metric_1_1_generic_a325f414c1c393c7142b42889e2be8257}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!zamoVelocity@{zamoVelocity}}
+\index{zamoVelocity@{zamoVelocity}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{zamoVelocity()}{zamoVelocity()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Metric\+::\+Generic\+::zamo\+Velocity (\begin{DoxyParamCaption}\item[{double const}]{pos\mbox{[}4\mbox{]},  }\item[{double}]{vel\mbox{[}4\mbox{]} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Yield ZAMO velocity at a given position. 
+
+Give the velocity of a zero angular momentul observer (whatever is closest to \char`\"{}at rest\char`\"{}). The default implementation simply projects (1, 0, 0, 0) othogonally along ephi and normalizes it, thus ensuring that vel is orthogonal to ephi.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & input\+: position, \\
+\hline
+{\em vel} & output\+: velocity, \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_kerr_b_l_a944a39adafbf76b4804929589a618b01}{Gyoto\+::\+Metric\+::\+Kerr\+BL}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a9d17cce6d1615f47e9e30ba1fe6e88ca}\label{class_gyoto_1_1_metric_1_1_generic_a9d17cce6d1615f47e9e30ba1fe6e88ca}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!\_\_defaultfeatures@{\_\_defaultfeatures}}
+\index{\_\_defaultfeatures@{\_\_defaultfeatures}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{\_\_defaultfeatures}{\_\_defaultfeatures}}
+{\footnotesize\ttfamily int Gyoto\+::\+Metric\+::\+Generic\+::\+\_\+\+\_\+defaultfeatures\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+
+
+Whether some virtual methods are implemented. 
+
+The default implementations of some methods call one-\/another. This member is used internally to avoid infinite recursion. \mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}\label{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!class\_@{class\_}}
+\index{class\_@{class\_}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{class\_}{class\_}}
+{\footnotesize\ttfamily std\+::string Gyoto\+::\+Python\+::\+Base\+::class\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Name of the \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python}{Python}} class that we want to expose. 
+
+\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} name\+: Class. \mbox{\Hypertarget{class_gyoto_1_1_metric_1_1_generic_a87c5eb06a56f68905ebc7ff17ed2a24c}\label{class_gyoto_1_1_metric_1_1_generic_a87c5eb06a56f68905ebc7ff17ed2a24c}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!delta\_max\_over\_r\_@{delta\_max\_over\_r\_}}
+\index{delta\_max\_over\_r\_@{delta\_max\_over\_r\_}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{delta\_max\_over\_r\_}{delta\_max\_over\_r\_}}
+{\footnotesize\ttfamily double Gyoto\+::\+Metric\+::\+Generic\+::delta\+\_\+max\+\_\+over\+\_\+r\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Numerical tuning parameter. 
+
+Ensure that delta (the numerical integration step) is never larger than a fraction of the distance between the current location and the center of the coordinate system.
+
+For investigations close to the event horizon, 0.\+5 is usually fine. If high accuracy is needed long after deflection (weak lensing), then this must be smaller. A good test is to look at a Min\+Distance map for a Fixed\+Star\+: it must be smooth. \mbox{\Hypertarget{class_gyoto_1_1_object_ac48ad88e3ef229ba0d0fe68a94a7118f}\label{class_gyoto_1_1_object_ac48ad88e3ef229ba0d0fe68a94a7118f}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!kind\_@{kind\_}}
+\index{kind\_@{kind\_}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{kind\_}{kind\_}}
+{\footnotesize\ttfamily std\+::string Gyoto\+::\+Object\+::kind\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+The \char`\"{}kind\char`\"{} that is output in the XML entity. 
+
+E.\+g. for an \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}}, fill\+Element() will ensure 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<Astrobj \mbox{\hyperlink{class_gyoto_1_1_object_a9f46de678c67e9050cf3a8b9677e1d73}{kind}}=\textcolor{stringliteral}{"{}kind\_"{}} ...>...</Astrobj>}
+
+\end{DoxyCode}
+ is written. \mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_a7f6558bf7597b6e6c8f1bd198895b077}\label{class_gyoto_1_1_python_1_1_base_a7f6558bf7597b6e6c8f1bd198895b077}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!module\_@{module\_}}
+\index{module\_@{module\_}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{module\_}{module\_}}
+{\footnotesize\ttfamily std\+::string Gyoto\+::\+Python\+::\+Base\+::module\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Name of the \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python}{Python}} module that holds the class. 
+
+For instance, if the class is implemented in toto.\+py, the module name is \char`\"{}toto\char`\"{}. \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} name\+: Module. \mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_abf1c1e431cdd4f08f13de581cccb6770}\label{class_gyoto_1_1_smart_pointee_abf1c1e431cdd4f08f13de581cccb6770}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!mutex\_@{mutex\_}}
+\index{mutex\_@{mutex\_}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{mutex\_}{mutex\_}}
+{\footnotesize\ttfamily pthread\+\_\+mutex\+\_\+t Gyoto\+::\+Smart\+Pointee\+::mutex\+\_\+\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+
+
+A mutex. 
+
+When compiled with libpthread \mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_aa033dfe530617afb7c7a27e6536bb88c}\label{class_gyoto_1_1_python_1_1_base_aa033dfe530617afb7c7a27e6536bb88c}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!parameters\_@{parameters\_}}
+\index{parameters\_@{parameters\_}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{parameters\_}{parameters\_}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ Gyoto\+::\+Python\+::\+Base\+::parameters\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Parameters that this class needs. 
+
+A list of parameters (doubles) can be passed in the \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} Parameters. They will be sent to the \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python}{Python}} instance using {\bfseries{setitem}}. \mbox{\Hypertarget{class_gyoto_1_1_object_a01832761cd5f0a12319e3e24ce9a9fba}\label{class_gyoto_1_1_object_a01832761cd5f0a12319e3e24ce9a9fba}} 
+\index{Gyoto::Metric::Python@{Gyoto::Metric::Python}!plugins\_@{plugins\_}}
+\index{plugins\_@{plugins\_}!Gyoto::Metric::Python@{Gyoto::Metric::Python}}
+\doxysubsubsection{\texorpdfstring{plugins\_}{plugins\_}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Gyoto\+::\+Object\+::plugins\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+The plug-\/ins that needs to be loaded to access this instance\textquotesingle{}s class. 
+
+E.\+g. for an \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}}, fill\+Element() will ensure 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<Astrobj ... plugin=\textcolor{stringliteral}{"{}plugins\_"{}}>...</Astrobj>}
+
+\end{DoxyCode}
+ is written. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_gyoto_python_8h}{Gyoto\+Python.\+h}}\end{DoxyCompactItemize}

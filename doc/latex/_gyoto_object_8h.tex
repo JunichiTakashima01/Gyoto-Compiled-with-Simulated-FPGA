@@ -1,0 +1,144 @@
+\hypertarget{_gyoto_object_8h}{}\doxysection{Gyoto\+Object.\+h File Reference}
+\label{_gyoto_object_8h}\index{GyotoObject.h@{GyotoObject.h}}
+
+
+Introspectable objects.  
+
+
+{\ttfamily \#include \char`\"{}Gyoto\+Config.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Gyoto\+Smart\+Pointer.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_gyoto_1_1_object}{Gyoto\+::\+Object}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_gyoto_1_1_object}{Object}} with properties. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_gyoto}{Gyoto}}
+\begin{DoxyCompactList}\small\item\em Namespace for the \mbox{\hyperlink{namespace_gyoto}{Gyoto}} library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_gyoto_object_8h_af1ddb642d51d8f768b9f9ec64c3f5ab2}{GYOTO\+\_\+\+OBJECT\+\_\+\+ACCESSORS\+\_\+\+STRING}}(method)
+\begin{DoxyCompactList}\small\item\em Declare a pair of accessors to string member in a class declaration. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_object_8h_aa001974b9ed7a36300e4b4e003d0491b}{GYOTO\+\_\+\+OBJECT\+\_\+\+ACCESSORS}}(type,  method)
+\begin{DoxyCompactList}\small\item\em Declare a pair of accessors to scalar member in a class declaration. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_object_8h_a81a17d29a5cdd84b65b37066f9fd8e21}{GYOTO\+\_\+\+OBJECT\+\_\+\+ACCESSORS\+\_\+\+UNIT}}(method)
+\begin{DoxyCompactList}\small\item\em Declare a quadruplet of accessors to double member that supports unit. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_object_8h_a750e7a43779f63bdb13111eaf0271203}{GYOTO\+\_\+\+OBJECT}}
+\begin{DoxyCompactList}\small\item\em Declare class\+::properties and class\+::get\+Properties() \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_object_8h_a6806b7f836d51dbe45cdf7bd60377a40}{GYOTO\+\_\+\+OBJECT\+\_\+\+THREAD\+\_\+\+SAFETY}}~  virtual bool is\+Thread\+Safe() const
+\begin{DoxyCompactList}\small\item\em Declare virtual bool is\+Thread\+Safe() const. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Introspectable objects. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_gyoto_object_8h_a750e7a43779f63bdb13111eaf0271203}\label{_gyoto_object_8h_a750e7a43779f63bdb13111eaf0271203}} 
+\index{GyotoObject.h@{GyotoObject.h}!GYOTO\_OBJECT@{GYOTO\_OBJECT}}
+\index{GYOTO\_OBJECT@{GYOTO\_OBJECT}!GyotoObject.h@{GyotoObject.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_OBJECT}{GYOTO\_OBJECT}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+OBJECT}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keyword}{static} Property \textcolor{keyword}{const}  properties[];                  \(\backslash\)}
+\DoxyCodeLine{  virtual Property \textcolor{keyword}{const} * getProperties() \textcolor{keyword}{const};       \(\backslash\)}
+\DoxyCodeLine{  static \textcolor{keyword}{const} std::string builtinPluginValue;          \(\backslash\)}
+\DoxyCodeLine{  virtual \textcolor{keywordtype}{void} plugins(std::vector<std::string> \textcolor{keyword}{const} \& plugname);      \(\backslash\)}
+\DoxyCodeLine{  virtual std::vector<std::string> plugins() const}
+
+\end{DoxyCode}
+
+
+Declare class\+::properties and class\+::get\+Properties() 
+
+Any derived class that does define Properties (i.\+e. the macro \mbox{\hyperlink{_gyoto_property_8h_add8e16ed1e17ab2683b08cc330b341d4}{GYOTO\+\_\+\+PROPERTY\+\_\+\+START()}} is called somewhere in the .C file) must call the \mbox{\hyperlink{_gyoto_object_8h_a750e7a43779f63bdb13111eaf0271203}{GYOTO\+\_\+\+OBJECT}} macro in a \char`\"{}public\+:\char`\"{} section of the class declaration. Else, the property list is inherited from the direct parent, and calling \mbox{\hyperlink{_gyoto_property_8h_add8e16ed1e17ab2683b08cc330b341d4}{GYOTO\+\_\+\+PROPERTY\+\_\+\+START()}} in the .C file leads to a compile-\/time error. \mbox{\Hypertarget{_gyoto_object_8h_aa001974b9ed7a36300e4b4e003d0491b}\label{_gyoto_object_8h_aa001974b9ed7a36300e4b4e003d0491b}} 
+\index{GyotoObject.h@{GyotoObject.h}!GYOTO\_OBJECT\_ACCESSORS@{GYOTO\_OBJECT\_ACCESSORS}}
+\index{GYOTO\_OBJECT\_ACCESSORS@{GYOTO\_OBJECT\_ACCESSORS}!GyotoObject.h@{GyotoObject.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_OBJECT\_ACCESSORS}{GYOTO\_OBJECT\_ACCESSORS}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+OBJECT\+\_\+\+ACCESSORS(\begin{DoxyParamCaption}\item[{}]{type,  }\item[{}]{method }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} method(type);                                            \(\backslash\)}
+\DoxyCodeLine{  virtual type method() \textcolor{keyword}{const};}
+
+\end{DoxyCode}
+
+
+Declare a pair of accessors to scalar member in a class declaration. 
+
+The accessors must also be defined in the .C file, which can be done using \mbox{\hyperlink{_gyoto_property_8h_a988f660aa95584c1ce360cefee775a49}{GYOTO\+\_\+\+PROPERTY\+\_\+\+ACCESSORS}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & data type of the memebr beeing accessed. Any scalar type (double, long, size\+\_\+t, Smart\+Pointer$<$\+Metric\+::\+Generic$>$ etc). \\
+\hline
+{\em method} & name of the accessors. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_gyoto_object_8h_af1ddb642d51d8f768b9f9ec64c3f5ab2}\label{_gyoto_object_8h_af1ddb642d51d8f768b9f9ec64c3f5ab2}} 
+\index{GyotoObject.h@{GyotoObject.h}!GYOTO\_OBJECT\_ACCESSORS\_STRING@{GYOTO\_OBJECT\_ACCESSORS\_STRING}}
+\index{GYOTO\_OBJECT\_ACCESSORS\_STRING@{GYOTO\_OBJECT\_ACCESSORS\_STRING}!GyotoObject.h@{GyotoObject.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_OBJECT\_ACCESSORS\_STRING}{GYOTO\_OBJECT\_ACCESSORS\_STRING}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+OBJECT\+\_\+\+ACCESSORS\+\_\+\+STRING(\begin{DoxyParamCaption}\item[{}]{method }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} method(std::string \textcolor{keyword}{const}\&);                              \(\backslash\)}
+\DoxyCodeLine{  virtual std::string method() \textcolor{keyword}{const};}
+
+\end{DoxyCode}
+
+
+Declare a pair of accessors to string member in a class declaration. 
+
+The accessors must also be defined in the .C file
+
+
+\begin{DoxyParams}{Parameters}
+{\em method} & name of the accessors. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_gyoto_object_8h_a81a17d29a5cdd84b65b37066f9fd8e21}\label{_gyoto_object_8h_a81a17d29a5cdd84b65b37066f9fd8e21}} 
+\index{GyotoObject.h@{GyotoObject.h}!GYOTO\_OBJECT\_ACCESSORS\_UNIT@{GYOTO\_OBJECT\_ACCESSORS\_UNIT}}
+\index{GYOTO\_OBJECT\_ACCESSORS\_UNIT@{GYOTO\_OBJECT\_ACCESSORS\_UNIT}!GyotoObject.h@{GyotoObject.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_OBJECT\_ACCESSORS\_UNIT}{GYOTO\_OBJECT\_ACCESSORS\_UNIT}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+OBJECT\+\_\+\+ACCESSORS\+\_\+\+UNIT(\begin{DoxyParamCaption}\item[{}]{method }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \mbox{\hyperlink{_gyoto_object_8h_aa001974b9ed7a36300e4b4e003d0491b}{GYOTO\_OBJECT\_ACCESSORS}}(\textcolor{keywordtype}{double}, method)                          \(\backslash\)}
+\DoxyCodeLine{  virtual \textcolor{keywordtype}{void} method(\textcolor{keywordtype}{double}, std::string \textcolor{keyword}{const} \&);                     \(\backslash\)}
+\DoxyCodeLine{  virtual \textcolor{keywordtype}{double} method(std::string \textcolor{keyword}{const} \&) \textcolor{keyword}{const};}
+
+\end{DoxyCode}
+
+
+Declare a quadruplet of accessors to double member that supports unit. 
+
+The accessors must also be defined in the .C file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em method} & name of the accessors. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_gyoto_object_8h_a6806b7f836d51dbe45cdf7bd60377a40}\label{_gyoto_object_8h_a6806b7f836d51dbe45cdf7bd60377a40}} 
+\index{GyotoObject.h@{GyotoObject.h}!GYOTO\_OBJECT\_THREAD\_SAFETY@{GYOTO\_OBJECT\_THREAD\_SAFETY}}
+\index{GYOTO\_OBJECT\_THREAD\_SAFETY@{GYOTO\_OBJECT\_THREAD\_SAFETY}!GyotoObject.h@{GyotoObject.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_OBJECT\_THREAD\_SAFETY}{GYOTO\_OBJECT\_THREAD\_SAFETY}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+OBJECT\+\_\+\+THREAD\+\_\+\+SAFETY~  virtual bool is\+Thread\+Safe() const}
+
+
+
+Declare virtual bool is\+Thread\+Safe() const. 
+
+Use this to declare that the object is not (or not always) thread safe. The corresponding definition of is\+Thread\+Safe() must exist. If the object is always thread unsafe (e.\+g. Lorene Metrics of Python based objects), you can simply use GYOTO\+\_\+\+PROPERTY\+\_\+\+THREAD\+\_\+\+SAFETY in the corresponding .C file. 

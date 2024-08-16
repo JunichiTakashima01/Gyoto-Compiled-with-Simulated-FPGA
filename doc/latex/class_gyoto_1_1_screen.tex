@@ -1,0 +1,1309 @@
+\hypertarget{class_gyoto_1_1_screen}{}\doxysection{Gyoto\+::Screen Class Reference}
+\label{class_gyoto_1_1_screen}\index{Gyoto::Screen@{Gyoto::Screen}}
+
+
+The camera with which the \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}} is observed.  
+
+
+
+
+{\ttfamily \#include $<$Gyoto\+Screen.\+h$>$}
+
+Inheritance diagram for Gyoto\+::Screen\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_gyoto_1_1_screen}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_angles}{Angles}}
+\begin{DoxyCompactList}\small\item\em 1D specifier for an arbitrary angle coordinate set. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_bucket}{Bucket}}
+\begin{DoxyCompactList}\small\item\em Class containing arbitrary 2D-\/points. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_coord1d_set}{Coord1d\+Set}}
+\begin{DoxyCompactList}\small\item\em Set of 1-\/d coordinates\+: indices or angles. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_coord2d_set}{Coord2d\+Set}}
+\begin{DoxyCompactList}\small\item\em Class to specify a set of points on the \mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_empty}{Empty}}
+\begin{DoxyCompactList}\small\item\em A dummy, empty 2D set. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_grid}{Grid}}
+\begin{DoxyCompactList}\small\item\em Class containing 2D-\/points organized in a grid. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_indices}{Indices}}
+\begin{DoxyCompactList}\small\item\em 1D specifier for an arbitrary pixel coordinate set. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_range}{Range}}
+\begin{DoxyCompactList}\small\item\em 1D coordinated specifier for a range \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_repeat_angle}{Repeat\+Angle}}
+\begin{DoxyCompactList}\small\item\em 1D specifier for an angle that is repeated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a3d039508310efe3dcbf50204a3619b2f}\label{class_gyoto_1_1_screen_a3d039508310efe3dcbf50204a3619b2f}} 
+enum \mbox{\hyperlink{class_gyoto_1_1_screen_a3d039508310efe3dcbf50204a3619b2f}{Coord\+Type\+\_\+e}} \{ {\bfseries angle}
+, {\bfseries pixel}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum to specify whether a coordinate set (\mbox{\hyperlink{class_gyoto_1_1_screen_1_1_coord1d_set}{Coord1d\+Set}} or \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_coord2d_set}{Coord2d\+Set}}) holds pixel values or angles. \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_smart_pointee}{Gyoto\+::\+Smart\+Pointee}} $>$ \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}{Subcontractor\+\_\+t}}(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$, std\+::vector$<$ std\+::string $>$ const \&)
+\begin{DoxyCompactList}\small\item\em A subcontractor builds an object upon order from the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const  $\ast$ \mbox{\hyperlink{class_gyoto_1_1_screen_a636e5e881825a8835d4f962b9f0d1b47}{get\+Properties}} () const
+\begin{DoxyCompactList}\small\item\em Get list of properties. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a3e8ee3fae738eebcd30ec468effd446a}\label{class_gyoto_1_1_screen_a3e8ee3fae738eebcd30ec468effd446a}} 
+\mbox{\hyperlink{class_gyoto_1_1_screen_a3e8ee3fae738eebcd30ec468effd446a}{Screen}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a1d163cecc0ac373f5b7553e8b03e6366}\label{class_gyoto_1_1_screen_a1d163cecc0ac373f5b7553e8b03e6366}} 
+\mbox{\hyperlink{class_gyoto_1_1_screen_a1d163cecc0ac373f5b7553e8b03e6366}{Screen}} (const \mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}} \&)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a78863fb072cf8fee8db3014b26ef8907}\label{class_gyoto_1_1_screen_a78863fb072cf8fee8db3014b26ef8907}} 
+\mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}} $\ast$ \mbox{\hyperlink{class_gyoto_1_1_screen_a78863fb072cf8fee8db3014b26ef8907}{clone}} () const
+\begin{DoxyCompactList}\small\item\em Cloner. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a25bf668b384b47043f5c802c9d7ea427}\label{class_gyoto_1_1_screen_a25bf668b384b47043f5c802c9d7ea427}} 
+virtual \mbox{\hyperlink{class_gyoto_1_1_screen_a25bf668b384b47043f5c802c9d7ea427}{$\sim$\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_aac0b885b8967104ee65c494a88158f57}\label{class_gyoto_1_1_screen_aac0b885b8967104ee65c494a88158f57}} 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_aac0b885b8967104ee65c494a88158f57}{set\+Projection}} (const double paln, const double \mbox{\hyperlink{class_gyoto_1_1_screen_a76e6f8eafa8bc1a7e3d600b9aac28a4f}{inclination}}, const double \mbox{\hyperlink{class_gyoto_1_1_screen_a520d6c146be00f52481bcbec17ec77d7}{argument}})
+\begin{DoxyCompactList}\small\item\em Set inclination etc. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_ad457be9c39ee196d2a252aaa29d96c69}\label{class_gyoto_1_1_screen_ad457be9c39ee196d2a252aaa29d96c69}} 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_ad457be9c39ee196d2a252aaa29d96c69}{set\+Projection}} (const double \mbox{\hyperlink{class_gyoto_1_1_screen_ae1a1645e79ee8897fa8a95c12cabb98b}{distance}}, const double paln, const double \mbox{\hyperlink{class_gyoto_1_1_screen_a76e6f8eafa8bc1a7e3d600b9aac28a4f}{inclination}}, const double \mbox{\hyperlink{class_gyoto_1_1_screen_a520d6c146be00f52481bcbec17ec77d7}{argument}})
+\begin{DoxyCompactList}\small\item\em Set distance, inclination etc. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_ae1a1645e79ee8897fa8a95c12cabb98b}{distance}} (double dist)
+\begin{DoxyCompactList}\small\item\em Set distance from observer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_a7e57ddb7fae5b89ae7b59859b9b68ccb}{d\+Max}} (double dist)
+\begin{DoxyCompactList}\small\item\em Set ray-\/tracing maximum distance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_a980a3e6f7f81fdcf81aa9fd063a1cd27}{distance}} (double dist, const std\+::string \&unit)
+\begin{DoxyCompactList}\small\item\em Set distance from observer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_a76e6f8eafa8bc1a7e3d600b9aac28a4f}{inclination}} (double)
+\begin{DoxyCompactList}\small\item\em Set inclination relative to line-\/of-\/sight. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_a9cd7ecfd7426b2b2567ea1f65a5d9b9e}{inclination}} (double, const std\+::string \&unit)
+\begin{DoxyCompactList}\small\item\em Set inclination relative to line-\/of-\/sight. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a3533fce8d94b1678634e00d6c5e908e7}\label{class_gyoto_1_1_screen_a3533fce8d94b1678634e00d6c5e908e7}} 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_a3533fce8d94b1678634e00d6c5e908e7}{PALN}} (double)
+\begin{DoxyCompactList}\small\item\em Set position angle of the line of nodes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a41d61e848badc884f04b9448072d93da}\label{class_gyoto_1_1_screen_a41d61e848badc884f04b9448072d93da}} 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_a41d61e848badc884f04b9448072d93da}{PALN}} (double, const std\+::string \&unit)
+\begin{DoxyCompactList}\small\item\em Set position angle of the line of nodes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a520d6c146be00f52481bcbec17ec77d7}\label{class_gyoto_1_1_screen_a520d6c146be00f52481bcbec17ec77d7}} 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_a520d6c146be00f52481bcbec17ec77d7}{argument}} (double)
+\begin{DoxyCompactList}\small\item\em Set angle beetwen line of nodes and X axis of object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a582d1c316a2d4c0fbf678b52426dc21c}\label{class_gyoto_1_1_screen_a582d1c316a2d4c0fbf678b52426dc21c}} 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_a582d1c316a2d4c0fbf678b52426dc21c}{argument}} (double, const std\+::string \&unit)
+\begin{DoxyCompactList}\small\item\em Set angle beetwen line of nodes and X axis of object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_ac4655e7c8f5b30d0e66d917006c6f262}\label{class_gyoto_1_1_screen_ac4655e7c8f5b30d0e66d917006c6f262}} 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_ac4655e7c8f5b30d0e66d917006c6f262}{spectrometer}} (\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic}{Spectrometer\+::\+Generic}} $>$ spectro)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_screen_ad0e0a42a7b99e8d5f8d2eb9748dee978}{Screen\+::spectro\+\_\+}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_aa04bcd493cf3cb4e48023f7fd52ef087}\label{class_gyoto_1_1_screen_aa04bcd493cf3cb4e48023f7fd52ef087}} 
+\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic}{Spectrometer\+::\+Generic}} $>$ \mbox{\hyperlink{class_gyoto_1_1_screen_aa04bcd493cf3cb4e48023f7fd52ef087}{spectrometer}} () const
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_gyoto_1_1_screen_ad0e0a42a7b99e8d5f8d2eb9748dee978}{Screen\+::spectro\+\_\+}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_a631c6f6c831dfb1ed35a3f7d81079d09}{freq\+Obs}} (double fo)
+\begin{DoxyCompactList}\small\item\em Set freq\+\_\+obs\+\_\+. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_a22d6664c292b69b2f0984a17592313a2}{freq\+Obs}} (double fo, const std\+::string \&unit)
+\begin{DoxyCompactList}\small\item\em Set freq\+\_\+obs\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a4a24c8f8b8fedf796630337c25be5b1c}\label{class_gyoto_1_1_screen_a4a24c8f8b8fedf796630337c25be5b1c}} 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_a4a24c8f8b8fedf796630337c25be5b1c}{freq\+Obs}} () const
+\begin{DoxyCompactList}\small\item\em Get freq\+\_\+obs\+\_\+. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_a3f8d6737fe0a3a73fbad975eca93ca45}{freq\+Obs}} (const std\+::string \&unit) const
+\begin{DoxyCompactList}\small\item\em Get freq\+\_\+obs\+\_\+. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_ac4738c59529e7a8ea0c5a0300866978e}{set\+Observer\+Pos}} (const double pos\mbox{[}4\mbox{]})
+\begin{DoxyCompactList}\small\item\em Alternative way to set projection. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a318640d216032ccc48098ed0211a7691}\label{class_gyoto_1_1_screen_a318640d216032ccc48098ed0211a7691}} 
+void {\bfseries observer\+Kind} (const std\+::string \&\mbox{\hyperlink{class_gyoto_1_1_object_aae3b80667884c6620c4796a1b8ef74e5}{kind}})
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a8b87259ba714cdcb7e46ffde8b811ec0}\label{class_gyoto_1_1_screen_a8b87259ba714cdcb7e46ffde8b811ec0}} 
+std\+::string {\bfseries observer\+Kind} () const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a6d64a13dc2178e2b12c70e31f56d3b81}\label{class_gyoto_1_1_screen_a6d64a13dc2178e2b12c70e31f56d3b81}} 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_a6d64a13dc2178e2b12c70e31f56d3b81}{set\+Four\+Vel}} (const double coord\mbox{[}4\mbox{]})
+\begin{DoxyCompactList}\small\item\em Sets the observer\textquotesingle{}s 4-\/velocity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_ad348a1f0eed557f45ba8ef885d150f18}\label{class_gyoto_1_1_screen_ad348a1f0eed557f45ba8ef885d150f18}} 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_ad348a1f0eed557f45ba8ef885d150f18}{set\+Screen1}} (const double coord\mbox{[}4\mbox{]})
+\begin{DoxyCompactList}\small\item\em Sets the screen vector e1. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a44a010e55ce14224f7bd3e254ff3a666}\label{class_gyoto_1_1_screen_a44a010e55ce14224f7bd3e254ff3a666}} 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_a44a010e55ce14224f7bd3e254ff3a666}{set\+Screen2}} (const double coord\mbox{[}4\mbox{]})
+\begin{DoxyCompactList}\small\item\em Sets the screen vector e2. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_aba397f13ceda3b3dd0139caf9f1ed29a}\label{class_gyoto_1_1_screen_aba397f13ceda3b3dd0139caf9f1ed29a}} 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_aba397f13ceda3b3dd0139caf9f1ed29a}{set\+Screen3}} (const double coord\mbox{[}4\mbox{]})
+\begin{DoxyCompactList}\small\item\em Sets the screen vector e3 (normal) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_gyoto_1_1_screen_a7a7a34bea4741958a822f58f2cd01e47}{coord\+Kind}} () const
+\begin{DoxyCompactList}\small\item\em Get coordinate kind. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_a4c49e20ef041790a0ba62cb8e8fda521}{distance}} () const
+\begin{DoxyCompactList}\small\item\em Get distance from observer. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_a5b304a11f3aefb290dd48d8ce39c83b7}{distance}} (const std\+::string \&) const
+\begin{DoxyCompactList}\small\item\em Get distance from observer. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_abbe7a679b861c54410b8460147d5b65d}{d\+Max}} () const
+\begin{DoxyCompactList}\small\item\em Get maximum ray-\/tracing distance. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_a5cb143136e6b5be8581038c1102cc114}{inclination}} () const
+\begin{DoxyCompactList}\small\item\em Get inclination relative to line-\/of-\/sight. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_afe808b65f296506f8f6a5f6ce33d56b6}{inclination}} (const std\+::string \&) const
+\begin{DoxyCompactList}\small\item\em Get inclination relative to line-\/of-\/sight. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a80b4539f8503b202f1e5390d917efb35}\label{class_gyoto_1_1_screen_a80b4539f8503b202f1e5390d917efb35}} 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_a80b4539f8503b202f1e5390d917efb35}{PALN}} () const
+\begin{DoxyCompactList}\small\item\em Get position angle of the line of nodes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a02df86989766df90d21648ff2ff2e598}\label{class_gyoto_1_1_screen_a02df86989766df90d21648ff2ff2e598}} 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_a02df86989766df90d21648ff2ff2e598}{PALN}} (const std\+::string \&) const
+\begin{DoxyCompactList}\small\item\em Get position angle of the line of nodes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a31dd1c28b3a455ceb8e8ff6e8dde4049}\label{class_gyoto_1_1_screen_a31dd1c28b3a455ceb8e8ff6e8dde4049}} 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_a31dd1c28b3a455ceb8e8ff6e8dde4049}{argument}} () const
+\begin{DoxyCompactList}\small\item\em Get angle between line of nodes and X axis of object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a704a91aa29ba29f117c5426425805c46}\label{class_gyoto_1_1_screen_a704a91aa29ba29f117c5426425805c46}} 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_a704a91aa29ba29f117c5426425805c46}{argument}} (const std\+::string \&) const
+\begin{DoxyCompactList}\small\item\em Get angle between line of nodes and X axis of object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a1407419c822f724399206a4d242d58ff}\label{class_gyoto_1_1_screen_a1407419c822f724399206a4d242d58ff}} 
+\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Metric\+::\+Generic}} $>$ \mbox{\hyperlink{class_gyoto_1_1_screen_a1407419c822f724399206a4d242d58ff}{metric}} () const
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_gyoto_1_1_screen_a011767f8a5b9db586c12c01f31970556}{Screen\+::gg\+\_\+}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_ae3f6f58a48826f3aaa02416881052a67}\label{class_gyoto_1_1_screen_ae3f6f58a48826f3aaa02416881052a67}} 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_ae3f6f58a48826f3aaa02416881052a67}{metric}} (\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Metric\+::\+Generic}} $>$ gg)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_screen_a011767f8a5b9db586c12c01f31970556}{Screen\+::gg\+\_\+}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a5dbc5df4fa324ac907a8ca1da41bc294}\label{class_gyoto_1_1_screen_a5dbc5df4fa324ac907a8ca1da41bc294}} 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_a5dbc5df4fa324ac907a8ca1da41bc294}{time}} () const
+\begin{DoxyCompactList}\small\item\em Get observing date in seconds. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a49cdd35ce8192c3239a8fd37ce70a3d5}\label{class_gyoto_1_1_screen_a49cdd35ce8192c3239a8fd37ce70a3d5}} 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_a49cdd35ce8192c3239a8fd37ce70a3d5}{time}} (const std\+::string \&) const
+\begin{DoxyCompactList}\small\item\em Get observing date in seconds. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a5889ce87531078d37976ad6ae5141249}\label{class_gyoto_1_1_screen_a5889ce87531078d37976ad6ae5141249}} 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_a5889ce87531078d37976ad6ae5141249}{time}} (double, const std\+::string \&)
+\begin{DoxyCompactList}\small\item\em Set observing date in specified unit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a79eb0a8b53104639b55a56d4118d29fd}\label{class_gyoto_1_1_screen_a79eb0a8b53104639b55a56d4118d29fd}} 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_a79eb0a8b53104639b55a56d4118d29fd}{time}} (double)
+\begin{DoxyCompactList}\small\item\em Set observing date in seconds. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a98c5dddc8210a162ebea3e24016defbd}\label{class_gyoto_1_1_screen_a98c5dddc8210a162ebea3e24016defbd}} 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_a98c5dddc8210a162ebea3e24016defbd}{field\+Of\+View}} () const
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_gyoto_1_1_screen_a05676dadaa657bdc43c36b3e5dca58dc}{Screen\+::fov\+\_\+}} in radians. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_aa209fe1f0d8743de6ea043dddfe68f82}\label{class_gyoto_1_1_screen_aa209fe1f0d8743de6ea043dddfe68f82}} 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_aa209fe1f0d8743de6ea043dddfe68f82}{field\+Of\+View}} (std\+::string const \&unit) const
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_gyoto_1_1_screen_a05676dadaa657bdc43c36b3e5dca58dc}{Screen\+::fov\+\_\+}} in specified unit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a4225900cd8522dccd1a5fdbcbb880758}\label{class_gyoto_1_1_screen_a4225900cd8522dccd1a5fdbcbb880758}} 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_a4225900cd8522dccd1a5fdbcbb880758}{field\+Of\+View}} (double)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_screen_a05676dadaa657bdc43c36b3e5dca58dc}{Screen\+::fov\+\_\+}} in radians. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_adf0b511778c832f3d19cf3222cb3a7f2}\label{class_gyoto_1_1_screen_adf0b511778c832f3d19cf3222cb3a7f2}} 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_adf0b511778c832f3d19cf3222cb3a7f2}{field\+Of\+View}} (double, const std\+::string \&unit)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_screen_a05676dadaa657bdc43c36b3e5dca58dc}{Screen\+::fov\+\_\+}} in specified unit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a16d474f38095d0e8572a5b72a5868e03}\label{class_gyoto_1_1_screen_a16d474f38095d0e8572a5b72a5868e03}} 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_a16d474f38095d0e8572a5b72a5868e03}{azimuthal\+Field\+Of\+View}} () const
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_gyoto_1_1_screen_a3bf1a87d30f464a041179bb24ff9d8a1}{Screen\+::azimuthal\+\_\+fov\+\_\+}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_ab02ca170914a86f04a9499e34036c0b4}\label{class_gyoto_1_1_screen_ab02ca170914a86f04a9499e34036c0b4}} 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_ab02ca170914a86f04a9499e34036c0b4}{azimuthal\+Field\+Of\+View}} (double ff)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_screen_a3bf1a87d30f464a041179bb24ff9d8a1}{Screen\+::azimuthal\+\_\+fov\+\_\+}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_ac39692312f15a033dc76dbecfe312f3b}\label{class_gyoto_1_1_screen_ac39692312f15a033dc76dbecfe312f3b}} 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_ac39692312f15a033dc76dbecfe312f3b}{dangle1}} (double)
+\begin{DoxyCompactList}\small\item\em Set increment to first position angle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a6c5f4cfd7f0c67bf1db6682a98ef85fc}\label{class_gyoto_1_1_screen_a6c5f4cfd7f0c67bf1db6682a98ef85fc}} 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_a6c5f4cfd7f0c67bf1db6682a98ef85fc}{dangle1}} (double, const std\+::string \&unit)
+\begin{DoxyCompactList}\small\item\em Set increment to first position angle in specified unit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_aa5069262e8644cd8ea002b1d3c6ea848}\label{class_gyoto_1_1_screen_aa5069262e8644cd8ea002b1d3c6ea848}} 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_aa5069262e8644cd8ea002b1d3c6ea848}{dangle1}} () const
+\begin{DoxyCompactList}\small\item\em Get increment to first position angle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a208f6e53aaff96defa11e7321b47e258}\label{class_gyoto_1_1_screen_a208f6e53aaff96defa11e7321b47e258}} 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_a208f6e53aaff96defa11e7321b47e258}{dangle1}} (std\+::string const \&unit) const
+\begin{DoxyCompactList}\small\item\em Get increment to first position angle in specified unit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a66ad14d834a9a54120b0d55c07ea5371}\label{class_gyoto_1_1_screen_a66ad14d834a9a54120b0d55c07ea5371}} 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_a66ad14d834a9a54120b0d55c07ea5371}{dangle2}} (double)
+\begin{DoxyCompactList}\small\item\em Set increment to second position angle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a823fede8d6c133e6059abe471ffd79bc}\label{class_gyoto_1_1_screen_a823fede8d6c133e6059abe471ffd79bc}} 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_a823fede8d6c133e6059abe471ffd79bc}{dangle2}} (double, const std\+::string \&unit)
+\begin{DoxyCompactList}\small\item\em Set increment to second position angle in specified unit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_ad5a3d67902a86bdddeba0dda3064cf77}\label{class_gyoto_1_1_screen_ad5a3d67902a86bdddeba0dda3064cf77}} 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_ad5a3d67902a86bdddeba0dda3064cf77}{dangle2}} () const
+\begin{DoxyCompactList}\small\item\em Get increment to second position angle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_ab42b28eb9de074ecd3b6488a61cb3552}\label{class_gyoto_1_1_screen_ab42b28eb9de074ecd3b6488a61cb3552}} 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_ab42b28eb9de074ecd3b6488a61cb3552}{dangle2}} (std\+::string const \&unit) const
+\begin{DoxyCompactList}\small\item\em Get increment to second position angle in specified unit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_abf443845495bb3c4a44bb42db8fbbf34}\label{class_gyoto_1_1_screen_abf443845495bb3c4a44bb42db8fbbf34}} 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_abf443845495bb3c4a44bb42db8fbbf34}{anglekind}} (int)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_screen_a5fe8cfa532a7ff58970519cf25040710}{Screen\+::anglekind\+\_\+}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a819bcf53da664d3779a94b91cc56e318}\label{class_gyoto_1_1_screen_a819bcf53da664d3779a94b91cc56e318}} 
+void {\bfseries anglekind} (std\+::string const \&)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_af7f616453c23f8490728033d517b019f}\label{class_gyoto_1_1_screen_af7f616453c23f8490728033d517b019f}} 
+std\+::string {\bfseries anglekind} () const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_aff7c6c6a235408bbaafff591d5fdf100}\label{class_gyoto_1_1_screen_aff7c6c6a235408bbaafff591d5fdf100}} 
+\mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} \mbox{\hyperlink{class_gyoto_1_1_screen_aff7c6c6a235408bbaafff591d5fdf100}{resolution}} () const
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_gyoto_1_1_screen_a1ad9755611f0442d1c9fe58a2998d133}{Screen\+::npix\+\_\+}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_aec5dbe603e61f05836e2dec202a96040}\label{class_gyoto_1_1_screen_aec5dbe603e61f05836e2dec202a96040}} 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_aec5dbe603e61f05836e2dec202a96040}{resolution}} (\mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}})
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_screen_a1ad9755611f0442d1c9fe58a2998d133}{Screen\+::npix\+\_\+}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_ae05314bd4dd6dd39d372f6abe4c695d8}{mask}} (double const $\ast$const mm, \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} \mbox{\hyperlink{class_gyoto_1_1_screen_aff7c6c6a235408bbaafff591d5fdf100}{resolution}}=0)
+\begin{DoxyCompactList}\small\item\em Set mask\+\_\+ from array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a329fda678b4d3df978741ab813f3df93}\label{class_gyoto_1_1_screen_a329fda678b4d3df978741ab813f3df93}} 
+double const  $\ast$ \mbox{\hyperlink{class_gyoto_1_1_screen_a329fda678b4d3df978741ab813f3df93}{mask}} () const
+\begin{DoxyCompactList}\small\item\em Retrieve const pointer to mask\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_afd1385de8586a147707dd21a24cdcb8e}\label{class_gyoto_1_1_screen_afd1385de8586a147707dd21a24cdcb8e}} 
+void {\bfseries mask\+File} (std\+::string const \&fname)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a83d2dbcf7402fac831126ca8298a14f6}\label{class_gyoto_1_1_screen_a83d2dbcf7402fac831126ca8298a14f6}} 
+std\+::string {\bfseries mask\+File} () const
+\item 
+bool \mbox{\hyperlink{class_gyoto_1_1_screen_ab6a2c480414850b30659855936493140}{operator()}} (\mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}}, \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}})
+\begin{DoxyCompactList}\small\item\em Whether this pixel should be ray-\/traced. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_a9668c6a836d0773248f9a3c0fa41ecf7}{get\+Observer\+Pos}} (double dest\mbox{[}4\mbox{]}) const
+\begin{DoxyCompactList}\small\item\em 4-\/Position of the observer relative to the metric \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_a91b9bc67e492948511a88b41f52da794}{get\+Four\+Vel}} (double dest\mbox{[}4\mbox{]}) const
+\begin{DoxyCompactList}\small\item\em Get copy of \mbox{\hyperlink{class_gyoto_1_1_screen_ab46edd61cb5363d03d906c02926696f5}{Screen\+::fourvel\+\_\+}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_af2b69ca19ed10d73a0e20f4fb083d048}\label{class_gyoto_1_1_screen_af2b69ca19ed10d73a0e20f4fb083d048}} 
+void {\bfseries four\+Vel} (std\+::vector$<$ double $>$ const \&)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a4ce2092b4b1ae097aac30b10c37fe97e}\label{class_gyoto_1_1_screen_a4ce2092b4b1ae097aac30b10c37fe97e}} 
+std\+::vector$<$ double $>$ {\bfseries four\+Vel} () const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_af57850c1f467fc65e44470304360e8d0}\label{class_gyoto_1_1_screen_af57850c1f467fc65e44470304360e8d0}} 
+void {\bfseries screen\+Vector1} (std\+::vector$<$ double $>$ const \&)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a5b2b0c72b9c5370130cb1b6aa4474353}\label{class_gyoto_1_1_screen_a5b2b0c72b9c5370130cb1b6aa4474353}} 
+std\+::vector$<$ double $>$ {\bfseries screen\+Vector1} () const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_ad668c4960a87c0b11b284f16fed6daba}\label{class_gyoto_1_1_screen_ad668c4960a87c0b11b284f16fed6daba}} 
+void {\bfseries screen\+Vector2} (std\+::vector$<$ double $>$ const \&)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a09600813e1705f08c213819a2aefbe92}\label{class_gyoto_1_1_screen_a09600813e1705f08c213819a2aefbe92}} 
+std\+::vector$<$ double $>$ {\bfseries screen\+Vector2} () const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a79675cd53ec834fa7f499453a771a515}\label{class_gyoto_1_1_screen_a79675cd53ec834fa7f499453a771a515}} 
+void {\bfseries screen\+Vector3} (std\+::vector$<$ double $>$ const \&)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a428082917bc87e85a0bfaeb07a5af6c0}\label{class_gyoto_1_1_screen_a428082917bc87e85a0bfaeb07a5af6c0}} 
+std\+::vector$<$ double $>$ {\bfseries screen\+Vector3} () const
+\item 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_a5e2e54d9c2fa7d1123c1229812736788}{get\+Screen1}} (double dest\mbox{[}4\mbox{]}) const
+\begin{DoxyCompactList}\small\item\em Get copy of \mbox{\hyperlink{class_gyoto_1_1_screen_a879052ef3c52f2a84c42bcb1383a9ba0}{Screen\+::screen1\+\_\+}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_a1ba625dd52784a24803e7aa26f32fc12}{get\+Screen2}} (double dest\mbox{[}4\mbox{]}) const
+\begin{DoxyCompactList}\small\item\em Get copy of \mbox{\hyperlink{class_gyoto_1_1_screen_addcecd0b24324e73d880af9813ff55ae}{Screen\+::screen2\+\_\+}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_a98afecb20824bbd141c2236198d68a22}{get\+Screen3}} (double dest\mbox{[}4\mbox{]}) const
+\begin{DoxyCompactList}\small\item\em Get copy of \mbox{\hyperlink{class_gyoto_1_1_screen_a10ce21458df390989b7b89621cd29fc7}{Screen\+::screen3\+\_\+}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_a8de2b660ee2bb8f3aa706a529638daa3}{get\+Ray\+Triad}} (double x, double y, double dest\mbox{[}8\mbox{]}, bool compute\+\_\+polar\+\_\+basis=false, double Ephi\mbox{[}4\mbox{]}=NULL, double Etheta\mbox{[}4\mbox{]}=NULL) const
+\begin{DoxyCompactList}\small\item\em Get 8-\/coordinate of \mbox{\hyperlink{class_gyoto_1_1_photon}{Photon}} hitting screen from a given direction and polarization basis if needed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_a5b4e7ce6c9731b530e4af289dc5e902d}{get\+Ray\+Triad}} (const \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} i, const \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} j, double dest\mbox{[}8\mbox{]}, bool compute\+\_\+polar\+\_\+basis=false, double Ephi\mbox{[}4\mbox{]}=NULL, double Etheta\mbox{[}4\mbox{]}=NULL) const
+\begin{DoxyCompactList}\small\item\em Get 8-\/coordinate of \mbox{\hyperlink{class_gyoto_1_1_photon}{Photon}} hitting screen pixel and polarization basis if needed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_a77a079f922c02a64d8050eef15029dbb}{coord\+To\+Sky}} (const double pos\mbox{[}4\mbox{]}, double dest\mbox{[}3\mbox{]}, bool geometrical=false) const
+\begin{DoxyCompactList}\small\item\em Convert metric 4-\/position to sky 3-\/position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_aa6e2f7ea7592507047318568b7282190}{sky\+To\+Coord}} (const double sky\mbox{[}3\mbox{]}, double dest\mbox{[}4\mbox{]}, bool geometrical=false) const
+\begin{DoxyCompactList}\small\item\em Convert sky 3-\/position to metric 4-\/position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_ad1c98038ca13ea2bbfa6b0908cc0eb2d}\label{class_gyoto_1_1_screen_ad1c98038ca13ea2bbfa6b0908cc0eb2d}} 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_ad1c98038ca13ea2bbfa6b0908cc0eb2d}{coord\+To\+XYZ}} (const double pos\mbox{[}4\mbox{]}, double dest\mbox{[}3\mbox{]}) const
+\begin{DoxyCompactList}\small\item\em Convert 4-\/position to 3-\/cartesian coordinates. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_af0257ec0a28ae5ebc2d6dfbe82ccd874}\label{class_gyoto_1_1_screen_af0257ec0a28ae5ebc2d6dfbe82ccd874}} 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_af0257ec0a28ae5ebc2d6dfbe82ccd874}{compute\+Base\+Vectors}} ()
+\begin{DoxyCompactList}\small\item\em Compute base vectors according to projection parameters. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{class_gyoto_1_1_screen_a9e77872fc01b8f58e270a1254acd5bc1}{print}} (std\+::ostream \&) const
+\begin{DoxyCompactList}\small\item\em Display. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a820e48cf8a982f699f9d769befcc8e54}\label{class_gyoto_1_1_screen_a820e48cf8a982f699f9d769befcc8e54}} 
+std\+::ostream \& \mbox{\hyperlink{class_gyoto_1_1_screen_a820e48cf8a982f699f9d769befcc8e54}{print\+Base\+Vectors}} (std\+::ostream \&) const
+\begin{DoxyCompactList}\small\item\em Debug helper. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_screen_a50f80add154ec088fc9509ba22ef0032}{fill\+Property}} (\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$fmp, \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&p) const
+\begin{DoxyCompactList}\small\item\em Output a single \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} to XML. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_a9ec09c51fd18dde7c13ef3b03fac1fad}\label{class_gyoto_1_1_smart_pointee_a9ec09c51fd18dde7c13ef3b03fac1fad}} 
+void \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_a9ec09c51fd18dde7c13ef3b03fac1fad}{inc\+Ref\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Increment the reference counter. Warning\+: Don\textquotesingle{}t mess with the counter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_a22a67609fb4690ee8ec0e95e4060e387}\label{class_gyoto_1_1_smart_pointee_a22a67609fb4690ee8ec0e95e4060e387}} 
+int \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_a22a67609fb4690ee8ec0e95e4060e387}{dec\+Ref\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Decrement the reference counter and return current value. Warning\+: Don\textquotesingle{}t mess with the counter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_a9a9cb35cd161bf19ce652f76e0a5bec0}\label{class_gyoto_1_1_smart_pointee_a9a9cb35cd161bf19ce652f76e0a5bec0}} 
+int \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_a9a9cb35cd161bf19ce652f76e0a5bec0}{get\+Ref\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Get the current number of references. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_gyoto_1_1_object_a06ea95dc396053466cdd63d419d1688c}{is\+Thread\+Safe}} () const
+\begin{DoxyCompactList}\small\item\em Whether this class is thread-\/safe. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_a58c4ecdaae1873dc6912e164b61826e0}\label{class_gyoto_1_1_object_a58c4ecdaae1873dc6912e164b61826e0}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_a58c4ecdaae1873dc6912e164b61826e0}{set}} (\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&p, \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} val)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} of a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_aa063e0df7c2e4b22207a784c76c6681f}\label{class_gyoto_1_1_object_aa063e0df7c2e4b22207a784c76c6681f}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_aa063e0df7c2e4b22207a784c76c6681f}{set}} (\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&p, \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} val, std\+::string const \&unit)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} (expressed in unit) of a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_aba6d35c5bbf814912ed84549109e117a}\label{class_gyoto_1_1_object_aba6d35c5bbf814912ed84549109e117a}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_aba6d35c5bbf814912ed84549109e117a}{set}} (std\+::string const \&pname, \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} val)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} of a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_abed03e16a8013699534b802e06751ef8}\label{class_gyoto_1_1_object_abed03e16a8013699534b802e06751ef8}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_abed03e16a8013699534b802e06751ef8}{set}} (std\+::string const \&pname, \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} val, std\+::string const \&unit)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} (expressed in unit) of a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_a8232112e660216a61caa15fab27b889f}\label{class_gyoto_1_1_object_a8232112e660216a61caa15fab27b889f}} 
+virtual \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} \mbox{\hyperlink{class_gyoto_1_1_object_a8232112e660216a61caa15fab27b889f}{get}} (\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&p) const
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} of a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_ad61a061d2073c841e9911be0395d4494}\label{class_gyoto_1_1_object_ad61a061d2073c841e9911be0395d4494}} 
+virtual \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} \mbox{\hyperlink{class_gyoto_1_1_object_ad61a061d2073c841e9911be0395d4494}{get}} (std\+::string const \&pname) const
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} of a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_ad4189c2c103030e9d91ee0f29ebcf13d}\label{class_gyoto_1_1_object_ad4189c2c103030e9d91ee0f29ebcf13d}} 
+virtual \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} \mbox{\hyperlink{class_gyoto_1_1_object_ad4189c2c103030e9d91ee0f29ebcf13d}{get}} (\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&p, std\+::string const \&unit) const
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} of a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}, converted to unit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_a99544282b6c383b8570a5bc51bed1ecf}\label{class_gyoto_1_1_object_a99544282b6c383b8570a5bc51bed1ecf}} 
+virtual \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} \mbox{\hyperlink{class_gyoto_1_1_object_a99544282b6c383b8570a5bc51bed1ecf}{get}} (std\+::string const \&pname, std\+::string const \&unit) const
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} of a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}, converted to unit. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const  $\ast$ \mbox{\hyperlink{class_gyoto_1_1_object_a424ef3538c714adfafad7eda249e0d58}{property}} (std\+::string const pname) const
+\begin{DoxyCompactList}\small\item\em Find property by name. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_a0ffc3f84b4c2372d639eb848605fb1f3}{fill\+Element}} (\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$fmp) const
+\begin{DoxyCompactList}\small\item\em Fill the XML element for this \mbox{\hyperlink{class_gyoto_1_1_object}{Object}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_aa0a8b119e7aa95b21be081f8c97e1626}{set\+Parameters}} (\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$fmp)
+\begin{DoxyCompactList}\small\item\em Main loop for parsing Properties from XML description. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_gyoto_1_1_object_a45969ac469cf6979037229c2741b226b}{set\+Parameter}} (std\+::string name, std\+::string content, std\+::string unit)
+\begin{DoxyCompactList}\small\item\em Set parameter by name. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_a43fe041144add66155668ca88a99fd98}{set\+Parameter}} (\mbox{\hyperlink{class_gyoto_1_1_property}{Gyoto\+::\+Property}} const \&p, std\+::string const \&name, std\+::string const \&content, std\+::string const \&unit)
+\begin{DoxyCompactList}\small\item\em Set parameter by \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} (and name) \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_gyoto_1_1_object_a741ba678188d7d167ff2e3bb13dd924f}{describe\+Property}} (\mbox{\hyperlink{class_gyoto_1_1_property}{Gyoto\+::\+Property}} const \&p) const
+\begin{DoxyCompactList}\small\item\em Format desrciption for a property. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_object_a13843618d84c49d47bd37ddfa31160c5}{help}} () const
+\begin{DoxyCompactList}\small\item\em Print (to stdout) some help on this class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_a9f46de678c67e9050cf3a8b9677e1d73}\label{class_gyoto_1_1_object_a9f46de678c67e9050cf3a8b9677e1d73}} 
+virtual std\+::string \mbox{\hyperlink{class_gyoto_1_1_object_a9f46de678c67e9050cf3a8b9677e1d73}{kind}} () const
+\begin{DoxyCompactList}\small\item\em Get kind\+\_\+. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_aed37ff18e75ac7dd135de624db80428e}\label{class_gyoto_1_1_screen_aed37ff18e75ac7dd135de624db80428e}} 
+static \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}} $>$ \mbox{\hyperlink{class_gyoto_1_1_screen_aed37ff18e75ac7dd135de624db80428e}{Subcontractor}} (\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}} $\ast$fmp)
+\begin{DoxyCompactList}\small\item\em Instanciate a \mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}} from XML entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a587c5d275234369eb01eab64f4cce18c}\label{class_gyoto_1_1_screen_a587c5d275234369eb01eab64f4cce18c}} 
+{\bfseries GYOTO\+\_\+\+OBJECT\+\_\+\+THREAD\+\_\+\+SAFETY}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_ae8b15135924b213a8c0169b45b4b448d}\label{class_gyoto_1_1_screen_ae8b15135924b213a8c0169b45b4b448d}} 
+static \mbox{\hyperlink{_gyoto_object_8h_a750e7a43779f63bdb13111eaf0271203}{GYOTO\+\_\+\+OBJECT}} \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const {\bfseries properties} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_aae3b80667884c6620c4796a1b8ef74e5}{kind}} (const std\+::string)
+\begin{DoxyCompactList}\small\item\em Set kind\+\_\+. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_gyoto_1_1_object_ac48ad88e3ef229ba0d0fe68a94a7118f}{kind\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The \char`\"{}kind\char`\"{} that is output in the XML entity. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_gyoto_1_1_object_a01832761cd5f0a12319e3e24ce9a9fba}{plugins\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The plug-\/ins that needs to be loaded to access this instance\textquotesingle{}s class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_adba440392f0fbee999c9df47c9b5fbbc}\label{class_gyoto_1_1_screen_adba440392f0fbee999c9df47c9b5fbbc}} 
+enum {\bfseries anglekind\+\_\+e} \{ {\bfseries equatorial\+\_\+angles} =0
+, {\bfseries rectilinear} =1
+, {\bfseries spherical\+\_\+angles} =2
+ \}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a7ca3191ddb07c0bdc6ecfb50ae8efe27}\label{class_gyoto_1_1_screen_a7ca3191ddb07c0bdc6ecfb50ae8efe27}} 
+typedef int {\bfseries anglekind\+\_\+t}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a8ed940061d9e8c6e0e235d76412b0908}\label{class_gyoto_1_1_screen_a8ed940061d9e8c6e0e235d76412b0908}} 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_a8ed940061d9e8c6e0e235d76412b0908}{tobs\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Observing date in s. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a05676dadaa657bdc43c36b3e5dca58dc}\label{class_gyoto_1_1_screen_a05676dadaa657bdc43c36b3e5dca58dc}} 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_a05676dadaa657bdc43c36b3e5dca58dc}{fov\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Field-\/of-\/view in rad. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a3bf1a87d30f464a041179bb24ff9d8a1}\label{class_gyoto_1_1_screen_a3bf1a87d30f464a041179bb24ff9d8a1}} 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_a3bf1a87d30f464a041179bb24ff9d8a1}{azimuthal\+\_\+fov\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Azimuthal field-\/of-\/view for Spherical \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_angles}{Angles}} images. Maximal extent of image in the azimuthal b-\/angle direction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a1ad9755611f0442d1c9fe58a2998d133}\label{class_gyoto_1_1_screen_a1ad9755611f0442d1c9fe58a2998d133}} 
+\mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} \mbox{\hyperlink{class_gyoto_1_1_screen_a1ad9755611f0442d1c9fe58a2998d133}{npix\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Resolution in pixels. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_ac3bf86898ecf9aac143b995d98c8df52}\label{class_gyoto_1_1_screen_ac3bf86898ecf9aac143b995d98c8df52}} 
+double $\ast$ \mbox{\hyperlink{class_gyoto_1_1_screen_ac3bf86898ecf9aac143b995d98c8df52}{mask\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Mask with 0 where the ray-\/tracing should not be performed. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_gyoto_1_1_screen_a4992e92935ebc335973ca93957fcc648}{mask\+\_\+filename\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Last read or written FITS file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a30c30ba3daebc04ede4a1a7fd700543b}\label{class_gyoto_1_1_screen_a30c30ba3daebc04ede4a1a7fd700543b}} 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_a30c30ba3daebc04ede4a1a7fd700543b}{distance\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Distance to the observer in m. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_ada4d6e039ed2e51d688c97421af91b96}\label{class_gyoto_1_1_screen_ada4d6e039ed2e51d688c97421af91b96}} 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_ada4d6e039ed2e51d688c97421af91b96}{dmax\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Maximum distance from which the photons are launched (geometrical units) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a5fe8cfa532a7ff58970519cf25040710}\label{class_gyoto_1_1_screen_a5fe8cfa532a7ff58970519cf25040710}} 
+anglekind\+\_\+t \mbox{\hyperlink{class_gyoto_1_1_screen_a5fe8cfa532a7ff58970519cf25040710}{anglekind\+\_\+}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}} angles kind (0\+: equatorial, 1\+: spherical) \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_a78512e2b290966a9324a63a18ccde5dc}{euler\+\_\+}} \mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em Euler angles. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a12c1dcc108221467b4610bd1e9d1bfd5}\label{class_gyoto_1_1_screen_a12c1dcc108221467b4610bd1e9d1bfd5}} 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_a12c1dcc108221467b4610bd1e9d1bfd5}{ex\+\_\+}} \mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em Sky coordinate of base X vector. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a23faaa0e30354203435ba5321fab87a3}\label{class_gyoto_1_1_screen_a23faaa0e30354203435ba5321fab87a3}} 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_a23faaa0e30354203435ba5321fab87a3}{ey\+\_\+}} \mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em Sky coordinate of base Y vector. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a1301fa88db90b65e1c7076fced77dc93}\label{class_gyoto_1_1_screen_a1301fa88db90b65e1c7076fced77dc93}} 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_a1301fa88db90b65e1c7076fced77dc93}{ez\+\_\+}} \mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em Sky coordinate of base Z vector. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_ab46edd61cb5363d03d906c02926696f5}\label{class_gyoto_1_1_screen_ab46edd61cb5363d03d906c02926696f5}} 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_ab46edd61cb5363d03d906c02926696f5}{fourvel\+\_\+}} \mbox{[}4\mbox{]}
+\begin{DoxyCompactList}\small\item\em Observer\textquotesingle{}s 4-\/velocity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a879052ef3c52f2a84c42bcb1383a9ba0}\label{class_gyoto_1_1_screen_a879052ef3c52f2a84c42bcb1383a9ba0}} 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_a879052ef3c52f2a84c42bcb1383a9ba0}{screen1\+\_\+}} \mbox{[}4\mbox{]}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}} e1 vector. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_addcecd0b24324e73d880af9813ff55ae}\label{class_gyoto_1_1_screen_addcecd0b24324e73d880af9813ff55ae}} 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_addcecd0b24324e73d880af9813ff55ae}{screen2\+\_\+}} \mbox{[}4\mbox{]}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}} e2 vector. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a10ce21458df390989b7b89621cd29fc7}\label{class_gyoto_1_1_screen_a10ce21458df390989b7b89621cd29fc7}} 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_a10ce21458df390989b7b89621cd29fc7}{screen3\+\_\+}} \mbox{[}4\mbox{]}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}} e3 vector (normal) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_abf6bd370ee528d28c5b33afc56a1cb4b}\label{class_gyoto_1_1_screen_abf6bd370ee528d28c5b33afc56a1cb4b}} 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_abf6bd370ee528d28c5b33afc56a1cb4b}{dangle1\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Increment to first position angle of \mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}}; can be typically alpha if in Equatorial \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_angles}{Angles}}, or a if in Spherical \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_angles}{Angles}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_aa20af9c764d367b86c6135cf402c226b}\label{class_gyoto_1_1_screen_aa20af9c764d367b86c6135cf402c226b}} 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_aa20af9c764d367b86c6135cf402c226b}{dangle2\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Increment to second position angle of \mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}}; can be typically delta if in Equatorial \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_angles}{Angles}}, or b if in Spherical \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_angles}{Angles}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a011767f8a5b9db586c12c01f31970556}\label{class_gyoto_1_1_screen_a011767f8a5b9db586c12c01f31970556}} 
+\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Metric\+::\+Generic}} $>$ \mbox{\hyperlink{class_gyoto_1_1_screen_a011767f8a5b9db586c12c01f31970556}{gg\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} in this end of the Universe. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_ad0e0a42a7b99e8d5f8d2eb9748dee978}\label{class_gyoto_1_1_screen_ad0e0a42a7b99e8d5f8d2eb9748dee978}} 
+\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic}{Spectrometer\+::\+Generic}} $>$ \mbox{\hyperlink{class_gyoto_1_1_screen_ad0e0a42a7b99e8d5f8d2eb9748dee978}{spectro\+\_\+}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_generic}{Gyoto\+::\+Spectrometer\+::\+Generic}} subclass instance used for quantities \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}} and Bin\+Spectrum. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_gyoto_1_1_screen_a02accc43491f2b87dc96f779f42a2a75}{freq\+\_\+obs\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Frequency at which the observer observes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a6a700fec56bcef3ca6088b1421259a2b}\label{class_gyoto_1_1_screen_a6a700fec56bcef3ca6088b1421259a2b}} 
+\mbox{\hyperlink{_gyoto_defs_8h_abdc37c8fde52ef588246ff7da367d65c}{obskind\+\_\+t}} \mbox{\hyperlink{class_gyoto_1_1_screen_a6a700fec56bcef3ca6088b1421259a2b}{observerkind\+\_\+}}
+\begin{DoxyCompactList}\small\item\em What kind of observer are we considering? (At infinity, ZAMO...) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_aaaf212a70fb1880b70e4d357e843cc85}\label{class_gyoto_1_1_smart_pointee_aaaf212a70fb1880b70e4d357e843cc85}} 
+int \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_aaaf212a70fb1880b70e4d357e843cc85}{ref\+Count}}
+\begin{DoxyCompactList}\small\item\em Reference counter. \end{DoxyCompactList}\item 
+pthread\+\_\+mutex\+\_\+t \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_abf1c1e431cdd4f08f13de581cccb6770}{mutex\+\_\+}}
+\begin{DoxyCompactList}\small\item\em A mutex. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_aa3d99a09ebfd623e66cb8cad4732c0ad}\label{class_gyoto_1_1_screen_aa3d99a09ebfd623e66cb8cad4732c0ad}} 
+class {\bfseries Gyoto\+::\+Smart\+Pointer$<$ Gyoto\+::\+Screen $>$}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The camera with which the \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}} is observed. 
+
+In the observer-\/centric point-\/of-\/view, the center of the \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}}\textquotesingle{}s coordinate system is positioned relatively to the observing \mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}} using three Euler angles and the distance (in meters). The three Euler angles are\+:
+\begin{DoxyItemize}
+\item position angle of the line of nodes (North of East);
+\item inclination (0 = face-\/on);
+\item argument of the X axis of the \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}}\textquotesingle{}s coordinate system. We use the z-\/x-\/z convention. See \href{http://en.wikipedia.org/wiki/Euler_angles}{\texttt{ http\+://en.\+wikipedia.\+org/wiki/\+Euler\+\_\+angles}}
+\end{DoxyItemize}
+
+In addition, the \mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}} conveys\+:
+\begin{DoxyItemize}
+\item the observing date (in geometrical units, but expect it to change to seconds in a future version);
+\item the field-\/of-\/view of the image;
+\item the resolution of the camera\+: number of pixels on each side (the camera is square);
+\item the observing frequency.
+\end{DoxyItemize}
+
+The scalar Freq\+Obs defines the observing frequency for \mbox{\hyperlink{class_gyoto_1_1_scenery}{Scenery}} quantity Intensity.
+
+Likewise, a \mbox{\hyperlink{namespace_gyoto_1_1_spectrometer}{Gyoto\+::\+Spectrometer}} defines for which frequencies spectra are computed (when the Quantity \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}} is requested in the \mbox{\hyperlink{class_gyoto_1_1_scenery}{Scenery}}).
+
+For the sake of theoreticians, there is an alternate way of specifying the relative position of the \mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}} and \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}}, by specifying the 4-\/coordinates of the \mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}} in the \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}}\textquotesingle{}s coordinate system (in that case, eerything is specified in geometrical units).
+
+So an XML stanza for a \mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}} may look like that\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<\mbox{\hyperlink{class_gyoto_1_1_screen_a3e8ee3fae738eebcd30ec468effd446a}{Screen}}>}
+\DoxyCodeLine{  <Time>       1000.      </Time>}
+\DoxyCodeLine{  <FieldOfView>   0.3141592653589793 </FieldOfView>}
+\DoxyCodeLine{  <Resolution>  128       </Resolution>}
+\DoxyCodeLine{  <Distance>      1e30    </Distance>}
+\DoxyCodeLine{  <\mbox{\hyperlink{class_gyoto_1_1_screen_a80b4539f8503b202f1e5390d917efb35}{PALN}}>          3.14159 </\mbox{\hyperlink{class_gyoto_1_1_screen_a80b4539f8503b202f1e5390d917efb35}{PALN}}>}
+\DoxyCodeLine{  <Inclination>   2.0944  </Inclination>}
+\DoxyCodeLine{  <Argument>     -\/2.0944  </Argument>}
+\DoxyCodeLine{  <Spectrometer \mbox{\hyperlink{class_gyoto_1_1_object_a9f46de678c67e9050cf3a8b9677e1d73}{kind}}=\textcolor{stringliteral}{"{}freqlog"{}} nsamples=\textcolor{stringliteral}{"{}10"{}}> 17. 23. </Spectrometer> }
+\DoxyCodeLine{  <FreqObs>       1e20    </FreqObs>}
+\DoxyCodeLine{</\mbox{\hyperlink{class_gyoto_1_1_screen_a3e8ee3fae738eebcd30ec468effd446a}{Screen}}>}
+
+\end{DoxyCode}
+
+
+or like that\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<\mbox{\hyperlink{class_gyoto_1_1_screen_a3e8ee3fae738eebcd30ec468effd446a}{Screen}}>}
+\DoxyCodeLine{  <Position> 1000. 1000. 0.15. 0.</Position>}
+\DoxyCodeLine{  <FieldOfView>   0.3141592653589793 </FieldOfView>}
+\DoxyCodeLine{  <Resolution>  128 </Resolution>}
+\DoxyCodeLine{  <Spectrometer \mbox{\hyperlink{class_gyoto_1_1_object_a9f46de678c67e9050cf3a8b9677e1d73}{kind}}=\textcolor{stringliteral}{"{}freqlog"{}} nsamples=\textcolor{stringliteral}{"{}10"{}}> 17. 23. </Spectrometer> }
+\DoxyCodeLine{  <FreqObs>       1e20    </FreqObs>}
+\DoxyCodeLine{</\mbox{\hyperlink{class_gyoto_1_1_screen_a3e8ee3fae738eebcd30ec468effd446a}{Screen}}>}
+
+\end{DoxyCode}
+
+
+\mbox{\hyperlink{namespace_gyoto_1_1_units}{Units}} can be specified using the unit attribute in the XML file, for instance\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<Distance unit=\textcolor{stringliteral}{"{}kpc"{}}> 8 </Distance>}
+
+\end{DoxyCode}
+
+
+Possible units are (with \mbox{[}\mbox{]} noting the default)\+:
+\begin{DoxyItemize}
+\item distance\+: \mbox{[}m\mbox{]}, geometrical, cm, km, AU, ly, pc, kpc, Mpc;
+\item PALN, inclination, argument\+: \mbox{[}rad\mbox{]}, deg.
+\item frequency\+: \mbox{[}Hz\mbox{]}, µm, GeV...
+\end{DoxyItemize}
+
+When the distance is really large and most of the ray-\/tracing would happen de facto in flat space, the camera is transported to a location at a reasonable distance from the metric and the images are scaled accordingly. The default value for this distance should be fine, but it can be customized using the \char`\"{}dmax\char`\"{} attribute of the \char`\"{}\+Distance\char`\"{} element. \char`\"{}dmax\char`\"{} is always expressed in geometrical units\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<Distance unit=\textcolor{stringliteral}{"{}kpc"{}} dmax=\textcolor{stringliteral}{"{}1e7"{}}> 8 </Distance>}
+
+\end{DoxyCode}
+
+
+Symptoms when dmax is too large include pixelization of the image (neighbouring photons are numerically identical) and other numerical overflows. dmax is too small when it is apparent that changing it yields projection effects. dmax must be large compared to rmax in the \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}} and ideally, changing it by an order of magnitude should not yield significant changes in the ray-\/traced image.
+
+A mask may be used to limit ray-\/tracing to only some portions of the field. The \mbox{\hyperlink{class_gyoto_1_1_scenery}{Scenery}} checks whether a mask is to be used using \mbox{\hyperlink{class_gyoto_1_1_screen_ab6a2c480414850b30659855936493140}{Screen\+::operator()(size\+\_\+t i, size\+\_\+t j)}}. The mask can be loaded from a FITS file as a square image of doubles\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<Mask>maskfile.fits</Mask>}
+
+\end{DoxyCode}
+ The mask needs to be have the same size as the \mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}} itself, so loading a mask also sets the resolution, and changing the resolution after setting a mask also removes the mask. The content of the Mask entity is parsed by \mbox{\hyperlink{class_gyoto_1_1_factory_a1adf0078f2541926fcfeac0221a21206}{Factory\+::full\+Path()}}, so it can be an absolute path, a path relative to where the XML file is stored, or relative to the current working directory if prefixed with \char`\"{}\`{}pwd\`{}/\char`\"{}. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}\label{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!Subcontractor\_t@{Subcontractor\_t}}
+\index{Subcontractor\_t@{Subcontractor\_t}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{Subcontractor\_t}{Subcontractor\_t}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$\mbox{\hyperlink{class_gyoto_1_1_smart_pointee}{Gyoto\+::\+Smart\+Pointee}}$>$ Gyoto\+::\+Smart\+Pointee\+::\+Subcontractor\+\_\+t(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$, std\+::vector$<$ std\+::string $>$ const \&)\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+A subcontractor builds an object upon order from the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}}. 
+
+Various classes need to provide a subcontractor to be able to instantiate themselves upon order from the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}}. A subcontractor is a function (often a static member function) which accepts a pointer to a \mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}} as unique parameter, communicates with the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}} using this messenger to read an XML description of the object to build, and returns this objet. \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}{Smart\+Pointee\+::\+Subcontractor\+\_\+t}}$\ast$ is just generic enough a typedef to cast to and from other subcontractor types\+: \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_aa53c7ada58c8c8f3799c3485b7d8f3bb}{Astrobj\+::\+Subcontractor\+\_\+t}}, \mbox{\hyperlink{namespace_gyoto_1_1_metric_ad6b33a642cc94ad67855184d2adb95df}{Metric\+::\+Subcontractor\+\_\+t}}, \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a163055eef14aee22dd8fa5188812d889}{Spectrum\+::\+Subcontractor\+\_\+t}}. A subcontractor needs to be registered using the relevant \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_abb6caf3023a51cb77b5f6793ac03b188}{Register()}} function\+: \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_abb6caf3023a51cb77b5f6793ac03b188}{Astrobj\+::\+Register()}}, \mbox{\hyperlink{namespace_gyoto_1_1_metric_a602cba49b001e7470f3d439d1ab3e8f7}{Metric\+::\+Register()}}, \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a517874749d838d7121880e7d9d14c626}{Spectrum\+::\+Register()}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a7a7a34bea4741958a822f58f2cd01e47}\label{class_gyoto_1_1_screen_a7a7a34bea4741958a822f58f2cd01e47}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!coordKind@{coordKind}}
+\index{coordKind@{coordKind}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{coordKind()}{coordKind()}}
+{\footnotesize\ttfamily int Gyoto\+::\+Screen\+::coord\+Kind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get coordinate kind. 
+
+From \mbox{\hyperlink{class_gyoto_1_1_screen_a011767f8a5b9db586c12c01f31970556}{Screen\+::gg\+\_\+}}. \mbox{\Hypertarget{class_gyoto_1_1_screen_a77a079f922c02a64d8050eef15029dbb}\label{class_gyoto_1_1_screen_a77a079f922c02a64d8050eef15029dbb}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!coordToSky@{coordToSky}}
+\index{coordToSky@{coordToSky}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{coordToSky()}{coordToSky()}}
+{\footnotesize\ttfamily void Gyoto\+::\+Screen\+::coord\+To\+Sky (\begin{DoxyParamCaption}\item[{const double}]{pos\mbox{[}4\mbox{]},  }\item[{double}]{dest\mbox{[}3\mbox{]},  }\item[{bool}]{geometrical = {\ttfamily false} }\end{DoxyParamCaption}) const}
+
+
+
+Convert metric 4-\/position to sky 3-\/position. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pos} & 4-\/position in metric coordinates. \\
+\hline
+\mbox{\texttt{ in}}  & {\em dest} & 3-\/position in plane of the sky\+: Cartesian East, North, front. \\
+\hline
+\mbox{\texttt{ in}}  & {\em geometrical} & if true, \#dest will be in geometrical units instead of meters. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_object_a741ba678188d7d167ff2e3bb13dd924f}\label{class_gyoto_1_1_object_a741ba678188d7d167ff2e3bb13dd924f}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!describeProperty@{describeProperty}}
+\index{describeProperty@{describeProperty}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{describeProperty()}{describeProperty()}}
+{\footnotesize\ttfamily std\+::string Gyoto\+::\+Object\+::describe\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_property}{Gyoto\+::\+Property}} const \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Format desrciption for a property. 
+
+Returns a string containing the name(s) and type of the property, as well as whether it supports unit. \mbox{\Hypertarget{class_gyoto_1_1_screen_a4c49e20ef041790a0ba62cb8e8fda521}\label{class_gyoto_1_1_screen_a4c49e20ef041790a0ba62cb8e8fda521}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!distance@{distance}}
+\index{distance@{distance}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{distance()}{distance()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily double Gyoto\+::\+Screen\+::distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get distance from observer. 
+
+In meters. \mbox{\Hypertarget{class_gyoto_1_1_screen_a5b304a11f3aefb290dd48d8ce39c83b7}\label{class_gyoto_1_1_screen_a5b304a11f3aefb290dd48d8ce39c83b7}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!distance@{distance}}
+\index{distance@{distance}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{distance()}{distance()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily double Gyoto\+::\+Screen\+::distance (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Get distance from observer. 
+
+In specified unit. Get distance from observer \mbox{\Hypertarget{class_gyoto_1_1_screen_ae1a1645e79ee8897fa8a95c12cabb98b}\label{class_gyoto_1_1_screen_ae1a1645e79ee8897fa8a95c12cabb98b}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!distance@{distance}}
+\index{distance@{distance}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{distance()}{distance()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void Gyoto\+::\+Screen\+::distance (\begin{DoxyParamCaption}\item[{double}]{dist }\end{DoxyParamCaption})}
+
+
+
+Set distance from observer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dist} & Distance in meters. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a980a3e6f7f81fdcf81aa9fd063a1cd27}\label{class_gyoto_1_1_screen_a980a3e6f7f81fdcf81aa9fd063a1cd27}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!distance@{distance}}
+\index{distance@{distance}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{distance()}{distance()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void Gyoto\+::\+Screen\+::distance (\begin{DoxyParamCaption}\item[{double}]{dist,  }\item[{const std\+::string \&}]{unit }\end{DoxyParamCaption})}
+
+
+
+Set distance from observer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dist} & the distance expressed in the specified unit; \\
+\hline
+{\em unit} & convertible to meters \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_screen_abbe7a679b861c54410b8460147d5b65d}\label{class_gyoto_1_1_screen_abbe7a679b861c54410b8460147d5b65d}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!dMax@{dMax}}
+\index{dMax@{dMax}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{dMax()}{dMax()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double Gyoto\+::\+Screen\+::d\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get maximum ray-\/tracing distance. 
+
+In geometrical units. \mbox{\Hypertarget{class_gyoto_1_1_screen_a7e57ddb7fae5b89ae7b59859b9b68ccb}\label{class_gyoto_1_1_screen_a7e57ddb7fae5b89ae7b59859b9b68ccb}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!dMax@{dMax}}
+\index{dMax@{dMax}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{dMax()}{dMax()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Gyoto\+::\+Screen\+::d\+Max (\begin{DoxyParamCaption}\item[{double}]{dist }\end{DoxyParamCaption})}
+
+
+
+Set ray-\/tracing maximum distance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dist} & Distance in geometrical units. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_object_a0ffc3f84b4c2372d639eb848605fb1f3}\label{class_gyoto_1_1_object_a0ffc3f84b4c2372d639eb848605fb1f3}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!fillElement@{fillElement}}
+\index{fillElement@{fillElement}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{fillElement()}{fillElement()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Object\+::fill\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$}]{fmp }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Fill the XML element for this \mbox{\hyperlink{class_gyoto_1_1_object}{Object}}. 
+
+The base implementation simply calls \mbox{\hyperlink{class_gyoto_1_1_screen_a50f80add154ec088fc9509ba22ef0032}{fill\+Property()}} for each \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} defined for the \mbox{\hyperlink{class_gyoto_1_1_object}{Object}}.
+
+Derived classes should avoid overriding \mbox{\hyperlink{class_gyoto_1_1_object_a0ffc3f84b4c2372d639eb848605fb1f3}{fill\+Element()}}. It may make sense occasionally, e.\+g. to make sure that the metric is output first.
+
+To customize how a given \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} is rendered, it is better to override \mbox{\hyperlink{class_gyoto_1_1_screen_a50f80add154ec088fc9509ba22ef0032}{fill\+Property()}}.
+
+If this method is overridden, the implementation should in general call \mbox{\hyperlink{class_gyoto_1_1_object_a0ffc3f84b4c2372d639eb848605fb1f3}{fill\+Element()}} on the direct base. 
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_scenery_a63501e86c47ea6b67e0c564c706a72f1}{Gyoto\+::\+Scenery}}, \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_complex_a0d73e5fd77b0e920af44894abfc96a99}{Gyoto\+::\+Spectrometer\+::\+Complex}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_complex_ada5f1fb56b87c56ff64113a49c76cca0}{Gyoto\+::\+Metric\+::\+Complex}}, and \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_complex_a88d6f38c5fa5401a860291fbb21526d5}{Gyoto\+::\+Astrobj\+::\+Complex}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a50f80add154ec088fc9509ba22ef0032}\label{class_gyoto_1_1_screen_a50f80add154ec088fc9509ba22ef0032}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!fillProperty@{fillProperty}}
+\index{fillProperty@{fillProperty}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{fillProperty()}{fillProperty()}}
+{\footnotesize\ttfamily void Gyoto\+::\+Screen\+::fill\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$}]{fmp,  }\item[{\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Output a single \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} to XML. 
+
+The base implementation decides what to do based on the {\itshape p.\+type}. The format matches how \mbox{\hyperlink{class_gyoto_1_1_object_aa0a8b119e7aa95b21be081f8c97e1626}{set\+Parameters()}} an \mbox{\hyperlink{class_gyoto_1_1_object_a45969ac469cf6979037229c2741b226b}{set\+Parameter()}} would interpret the XML descition.
+
+Overriding this method should be avoided, but makes sense in some cases (for instance \mbox{\hyperlink{class_gyoto_1_1_screen_a50f80add154ec088fc9509ba22ef0032}{Screen\+::fill\+Property()}} selects a different unit for {\itshape Distance} based on its magnitude, so that stellar sizes are expressed in solar radii while smaller sizes can be expressed in meters and larger sizes in parsecs).
+
+Overriding implementation should fall-\/back on calling the implementation in the direct parent class\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class }A: \textcolor{keyword}{public} \mbox{\hyperlink{class_gyoto_1_1_object_a5834e83ca1482a379c7ddefb1919457f}{Object}} \{\};}
+\DoxyCodeLine{\textcolor{keyword}{class }B: \textcolor{keyword}{public} A \{ }
+\DoxyCodeLine{ \textcolor{keyword}{using} B::setParameter;}
+\DoxyCodeLine{ \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_gyoto_1_1_screen_a50f80add154ec088fc9509ba22ef0032}{fillProperty}}(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto::FactoryMessenger}} *fmp,}
+\DoxyCodeLine{                        Property \textcolor{keyword}{const} \&p) \textcolor{keyword}{const} ;}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{\textcolor{keywordtype}{void} B::fillProperty(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto::FactoryMessenger}} *fmp,}
+\DoxyCodeLine{                        Property \textcolor{keyword}{const} \&p)\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{  \textcolor{keywordflow}{if} (name==\textcolor{stringliteral}{"{}Duff"{}}) fmp-\/>doSomething();}
+\DoxyCodeLine{  \textcolor{keywordflow}{else} A::fillProperty(fmp, p);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+
+Reimplemented from \mbox{\hyperlink{class_gyoto_1_1_object_a11892ef308d6f40add51eaea653a394b}{Gyoto\+::\+Object}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a3f8d6737fe0a3a73fbad975eca93ca45}\label{class_gyoto_1_1_screen_a3f8d6737fe0a3a73fbad975eca93ca45}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!freqObs@{freqObs}}
+\index{freqObs@{freqObs}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{freqObs()}{freqObs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily double Gyoto\+::\+Screen\+::freq\+Obs (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{unit }\end{DoxyParamCaption}) const}
+
+
+
+Get freq\+\_\+obs\+\_\+. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unit} & string\+: unit in which freq\+\_\+obs\+\_\+ should be returned is expressed, convertible to Herz or meters or energy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a631c6f6c831dfb1ed35a3f7d81079d09}\label{class_gyoto_1_1_screen_a631c6f6c831dfb1ed35a3f7d81079d09}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!freqObs@{freqObs}}
+\index{freqObs@{freqObs}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{freqObs()}{freqObs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Gyoto\+::\+Screen\+::freq\+Obs (\begin{DoxyParamCaption}\item[{double}]{fo }\end{DoxyParamCaption})}
+
+
+
+Set freq\+\_\+obs\+\_\+. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fo} & double\+: observing frequency in Hz \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a22d6664c292b69b2f0984a17592313a2}\label{class_gyoto_1_1_screen_a22d6664c292b69b2f0984a17592313a2}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!freqObs@{freqObs}}
+\index{freqObs@{freqObs}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{freqObs()}{freqObs()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Gyoto\+::\+Screen\+::freq\+Obs (\begin{DoxyParamCaption}\item[{double}]{fo,  }\item[{const std\+::string \&}]{unit }\end{DoxyParamCaption})}
+
+
+
+Set freq\+\_\+obs\+\_\+. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fo} & double\+: observing frequency (or wavelength) in \char`\"{}unit\char`\"{} \\
+\hline
+{\em unit} & string\+: unit in which fo is expressed, convertible to Herz or meters or energy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a91b9bc67e492948511a88b41f52da794}\label{class_gyoto_1_1_screen_a91b9bc67e492948511a88b41f52da794}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!getFourVel@{getFourVel}}
+\index{getFourVel@{getFourVel}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{getFourVel()}{getFourVel()}}
+{\footnotesize\ttfamily void Gyoto\+::\+Screen\+::get\+Four\+Vel (\begin{DoxyParamCaption}\item[{double}]{dest\mbox{[}4\mbox{]} }\end{DoxyParamCaption}) const}
+
+
+
+Get copy of \mbox{\hyperlink{class_gyoto_1_1_screen_ab46edd61cb5363d03d906c02926696f5}{Screen\+::fourvel\+\_\+}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em fourvel} & preallocated 4-\/element array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a9668c6a836d0773248f9a3c0fa41ecf7}\label{class_gyoto_1_1_screen_a9668c6a836d0773248f9a3c0fa41ecf7}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!getObserverPos@{getObserverPos}}
+\index{getObserverPos@{getObserverPos}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{getObserverPos()}{getObserverPos()}}
+{\footnotesize\ttfamily void Gyoto\+::\+Screen\+::get\+Observer\+Pos (\begin{DoxyParamCaption}\item[{double}]{dest\mbox{[}4\mbox{]} }\end{DoxyParamCaption}) const}
+
+
+
+4-\/Position of the observer relative to the metric 
+
+A \mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}} is positioned relative to the observer with four elements\+: \mbox{\hyperlink{class_gyoto_1_1_screen_ae1a1645e79ee8897fa8a95c12cabb98b}{Screen\+::distance}}, \mbox{\hyperlink{class_gyoto_1_1_screen_a76e6f8eafa8bc1a7e3d600b9aac28a4f}{Screen\+::inclination}}, Screen\+::paln and \mbox{\hyperlink{class_gyoto_1_1_screen_a520d6c146be00f52481bcbec17ec77d7}{Screen\+::argument}}.
+
+This function returns the position of the observer relative to the metric system in \mbox{\hyperlink{class_gyoto_1_1_screen_a011767f8a5b9db586c12c01f31970556}{Screen\+::gg\+\_\+}}, using these parameters. The output parameter is coord.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em coord} & position of the observer. Must be preallocated. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a636e5e881825a8835d4f962b9f0d1b47}\label{class_gyoto_1_1_screen_a636e5e881825a8835d4f962b9f0d1b47}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!getProperties@{getProperties}}
+\index{getProperties@{getProperties}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{getProperties()}{getProperties()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const$\ast$ Gyoto\+::\+Screen\+::get\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get list of properties. 
+
+This method is declared automatically by the \mbox{\hyperlink{_gyoto_object_8h_a750e7a43779f63bdb13111eaf0271203}{GYOTO\+\_\+\+OBJECT}} macro and defined automatically by the \mbox{\hyperlink{_gyoto_property_8h_a1356435ea7ee0e18d07201a80e034dcc}{GYOTO\+\_\+\+PROPERTY\+\_\+\+END}} macro. 
+
+Reimplemented from \mbox{\hyperlink{class_gyoto_1_1_object_afe00718a056ffc6293705c03f588088c}{Gyoto\+::\+Object}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a5b4e7ce6c9731b530e4af289dc5e902d}\label{class_gyoto_1_1_screen_a5b4e7ce6c9731b530e4af289dc5e902d}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!getRayTriad@{getRayTriad}}
+\index{getRayTriad@{getRayTriad}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{getRayTriad()}{getRayTriad()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Gyoto\+::\+Screen\+::get\+Ray\+Triad (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}}}]{i,  }\item[{const \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}}}]{j,  }\item[{double}]{dest\mbox{[}8\mbox{]},  }\item[{bool}]{compute\+\_\+polar\+\_\+basis = {\ttfamily false},  }\item[{double}]{Ephi\mbox{[}4\mbox{]} = {\ttfamily NULL},  }\item[{double}]{Etheta\mbox{[}4\mbox{]} = {\ttfamily NULL} }\end{DoxyParamCaption}) const}
+
+
+
+Get 8-\/coordinate of \mbox{\hyperlink{class_gyoto_1_1_photon}{Photon}} hitting screen pixel and polarization basis if needed. 
+
+Similar to \mbox{\hyperlink{class_gyoto_1_1_screen_a9668c6a836d0773248f9a3c0fa41ecf7}{Screen\+::get\+Observer\+Pos()}} but will return in addition the 4-\/velocity of a photon corresponding to the sky direction given by x and y. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i,j} & pixel coordinates ~\newline
+ \\
+\hline
+\mbox{\texttt{ out}}  & {\em dest} & position-\/velocity of the \mbox{\hyperlink{class_gyoto_1_1_photon}{Photon}}. Preallocated. \\
+\hline
+\mbox{\texttt{ in}}  & {\em compute\+\_\+polar\+\_\+basis} & True if polarization basis Ephi,Etheta is needed \\
+\hline
+\mbox{\texttt{ out}}  & {\em Ephi} & first polarisation direction. Preallocated. Default\+: NULL. \\
+\hline
+\mbox{\texttt{ out}}  & {\em Etheta} & second polarisation direction. Preallocated. Default\+: NULL. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a8de2b660ee2bb8f3aa706a529638daa3}\label{class_gyoto_1_1_screen_a8de2b660ee2bb8f3aa706a529638daa3}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!getRayTriad@{getRayTriad}}
+\index{getRayTriad@{getRayTriad}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{getRayTriad()}{getRayTriad()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Gyoto\+::\+Screen\+::get\+Ray\+Triad (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{dest\mbox{[}8\mbox{]},  }\item[{bool}]{compute\+\_\+polar\+\_\+basis = {\ttfamily false},  }\item[{double}]{Ephi\mbox{[}4\mbox{]} = {\ttfamily NULL},  }\item[{double}]{Etheta\mbox{[}4\mbox{]} = {\ttfamily NULL} }\end{DoxyParamCaption}) const}
+
+
+
+Get 8-\/coordinate of \mbox{\hyperlink{class_gyoto_1_1_photon}{Photon}} hitting screen from a given direction and polarization basis if needed. 
+
+Similar to \mbox{\hyperlink{class_gyoto_1_1_screen_a9668c6a836d0773248f9a3c0fa41ecf7}{Screen\+::get\+Observer\+Pos()}} but will return in addition the 4-\/velocity of a photon corresponding to the sky direction given by x and y. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & RA (d\+\_\+alpha$\ast$cos(delta)) offset in radians; \\
+\hline
+\mbox{\texttt{ in}}  & {\em y} & Dec offset (d\+\_\+delta) in radians; \\
+\hline
+\mbox{\texttt{ out}}  & {\em dest} & position-\/velocity of the observer \mbox{\hyperlink{class_gyoto_1_1_photon}{Photon}}. Preallocated. \\
+\hline
+\mbox{\texttt{ in}}  & {\em compute\+\_\+polar\+\_\+basis} & True if polarization basis Ephi,Etheta is needed \\
+\hline
+\mbox{\texttt{ out}}  & {\em Ephi} & first polarisation direction. Preallocated. Default\+: NULL. \\
+\hline
+\mbox{\texttt{ out}}  & {\em Etheta} & second polarisation direction. Preallocated. Default\+: NULL. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a5e2e54d9c2fa7d1123c1229812736788}\label{class_gyoto_1_1_screen_a5e2e54d9c2fa7d1123c1229812736788}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!getScreen1@{getScreen1}}
+\index{getScreen1@{getScreen1}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{getScreen1()}{getScreen1()}}
+{\footnotesize\ttfamily void Gyoto\+::\+Screen\+::get\+Screen1 (\begin{DoxyParamCaption}\item[{double}]{dest\mbox{[}4\mbox{]} }\end{DoxyParamCaption}) const}
+
+
+
+Get copy of \mbox{\hyperlink{class_gyoto_1_1_screen_a879052ef3c52f2a84c42bcb1383a9ba0}{Screen\+::screen1\+\_\+}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em dest} & preallocated 4-\/element array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a1ba625dd52784a24803e7aa26f32fc12}\label{class_gyoto_1_1_screen_a1ba625dd52784a24803e7aa26f32fc12}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!getScreen2@{getScreen2}}
+\index{getScreen2@{getScreen2}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{getScreen2()}{getScreen2()}}
+{\footnotesize\ttfamily void Gyoto\+::\+Screen\+::get\+Screen2 (\begin{DoxyParamCaption}\item[{double}]{dest\mbox{[}4\mbox{]} }\end{DoxyParamCaption}) const}
+
+
+
+Get copy of \mbox{\hyperlink{class_gyoto_1_1_screen_addcecd0b24324e73d880af9813ff55ae}{Screen\+::screen2\+\_\+}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em dest} & preallocated 4-\/element array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a98afecb20824bbd141c2236198d68a22}\label{class_gyoto_1_1_screen_a98afecb20824bbd141c2236198d68a22}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!getScreen3@{getScreen3}}
+\index{getScreen3@{getScreen3}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{getScreen3()}{getScreen3()}}
+{\footnotesize\ttfamily void Gyoto\+::\+Screen\+::get\+Screen3 (\begin{DoxyParamCaption}\item[{double}]{dest\mbox{[}4\mbox{]} }\end{DoxyParamCaption}) const}
+
+
+
+Get copy of \mbox{\hyperlink{class_gyoto_1_1_screen_a10ce21458df390989b7b89621cd29fc7}{Screen\+::screen3\+\_\+}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em dest} & preallocated 4-\/element array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_object_a13843618d84c49d47bd37ddfa31160c5}\label{class_gyoto_1_1_object_a13843618d84c49d47bd37ddfa31160c5}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!help@{help}}
+\index{help@{help}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{help()}{help()}}
+{\footnotesize\ttfamily void Gyoto\+::\+Object\+::help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Print (to stdout) some help on this class. 
+
+Describe all properties that this instance supports. \mbox{\Hypertarget{class_gyoto_1_1_screen_a5cb143136e6b5be8581038c1102cc114}\label{class_gyoto_1_1_screen_a5cb143136e6b5be8581038c1102cc114}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!inclination@{inclination}}
+\index{inclination@{inclination}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{inclination()}{inclination()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily double Gyoto\+::\+Screen\+::inclination (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get inclination relative to line-\/of-\/sight. 
+
+Inclination of z-\/axis relative to line-\/of-\/sight, or inclination of equatorial plane relative to plane of the sky, in radians. \mbox{\Hypertarget{class_gyoto_1_1_screen_afe808b65f296506f8f6a5f6ce33d56b6}\label{class_gyoto_1_1_screen_afe808b65f296506f8f6a5f6ce33d56b6}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!inclination@{inclination}}
+\index{inclination@{inclination}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{inclination()}{inclination()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily double Gyoto\+::\+Screen\+::inclination (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Get inclination relative to line-\/of-\/sight. 
+
+Inclination of z-\/axis relative to line-\/of-\/sight, or inclination of equatorial plane relative to plane of the sky, in specified unit. \mbox{\Hypertarget{class_gyoto_1_1_screen_a76e6f8eafa8bc1a7e3d600b9aac28a4f}\label{class_gyoto_1_1_screen_a76e6f8eafa8bc1a7e3d600b9aac28a4f}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!inclination@{inclination}}
+\index{inclination@{inclination}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{inclination()}{inclination()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void Gyoto\+::\+Screen\+::inclination (\begin{DoxyParamCaption}\item[{double}]{ }\end{DoxyParamCaption})}
+
+
+
+Set inclination relative to line-\/of-\/sight. 
+
+Inclination of z-\/axis relative to line-\/of-\/sight, or inclination of equatorial plane relative to plane of the sky, in radians \mbox{\Hypertarget{class_gyoto_1_1_screen_a9cd7ecfd7426b2b2567ea1f65a5d9b9e}\label{class_gyoto_1_1_screen_a9cd7ecfd7426b2b2567ea1f65a5d9b9e}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!inclination@{inclination}}
+\index{inclination@{inclination}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{inclination()}{inclination()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void Gyoto\+::\+Screen\+::inclination (\begin{DoxyParamCaption}\item[{double}]{,  }\item[{const std\+::string \&}]{unit }\end{DoxyParamCaption})}
+
+
+
+Set inclination relative to line-\/of-\/sight. 
+
+Inclination of z-\/axis relative to line-\/of-\/sight, or inclination of equatorial plane relative to plane of the sky, in specified unit. \mbox{\Hypertarget{class_gyoto_1_1_object_a06ea95dc396053466cdd63d419d1688c}\label{class_gyoto_1_1_object_a06ea95dc396053466cdd63d419d1688c}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!isThreadSafe@{isThreadSafe}}
+\index{isThreadSafe@{isThreadSafe}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{isThreadSafe()}{isThreadSafe()}}
+{\footnotesize\ttfamily virtual bool Gyoto\+::\+Object\+::is\+Thread\+Safe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Whether this class is thread-\/safe. 
+
+Return True if this object is thread-\/safe, i.\+e. if an instance and its clone can be used in parallel threads (in the context of Scenery\+::raytrace()). Known objects which are not thread-\/safe include Lorene metrics and everything from the \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} plug-\/in.
+
+The default implementation considers that the class itself is thread safe and recurses into the declared properties to check whether they are safe too. Classes that abide to the Object/\+Property paradigm and are themselves thread-\/safe have nothing special to do.
+
+Objects that clone children in their copy constructor that are not declared as properties must take these children into account.
+
+Classes that are never thread-\/safe must declare it. It acn be easily done using GYOTO\+\_\+\+OBJECT\+\_\+\+THREAD\+\_\+\+SAFETY in the class declaration and GYOTO\+\_\+\+PROPERTY\+\_\+\+THREAD\+\_\+\+UNSAFE in the class definition. \mbox{\Hypertarget{class_gyoto_1_1_object_aae3b80667884c6620c4796a1b8ef74e5}\label{class_gyoto_1_1_object_aae3b80667884c6620c4796a1b8ef74e5}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!kind@{kind}}
+\index{kind@{kind}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{kind()}{kind()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Object\+::kind (\begin{DoxyParamCaption}\item[{const std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Set kind\+\_\+. 
+
+\mbox{\hyperlink{class_gyoto_1_1_object_aae3b80667884c6620c4796a1b8ef74e5}{kind(const std\+::string)}} is protected because, for most Objects, it should not be changed in runtime. Set kind\+\_\+ \mbox{\Hypertarget{class_gyoto_1_1_screen_ae05314bd4dd6dd39d372f6abe4c695d8}\label{class_gyoto_1_1_screen_ae05314bd4dd6dd39d372f6abe4c695d8}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!mask@{mask}}
+\index{mask@{mask}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{mask()}{mask()}}
+{\footnotesize\ttfamily void Gyoto\+::\+Screen\+::mask (\begin{DoxyParamCaption}\item[{double const $\ast$const}]{mm,  }\item[{\mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}}}]{resolution = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Set mask\+\_\+ from array. 
+
+mm will be copied. mm must be a square resolution x resolution array. If mm==NULL, just deallocate mask\+\_\+. \mbox{\Hypertarget{class_gyoto_1_1_screen_ab6a2c480414850b30659855936493140}\label{class_gyoto_1_1_screen_ab6a2c480414850b30659855936493140}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!operator()@{operator()}}
+\index{operator()@{operator()}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily bool Gyoto\+::\+Screen\+::operator() (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}}}]{,  }\item[{\mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Whether this pixel should be ray-\/traced. 
+
+If mask\+\_\+ is not set, always true. Else, true for non-\/zero cells in mask\+\_\+. \mbox{\Hypertarget{class_gyoto_1_1_screen_a9e77872fc01b8f58e270a1254acd5bc1}\label{class_gyoto_1_1_screen_a9e77872fc01b8f58e270a1254acd5bc1}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!print@{print}}
+\index{print@{print}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily std\+::ostream\& Gyoto\+::\+Screen\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Display. 
+
+Debug helper \mbox{\Hypertarget{class_gyoto_1_1_object_a424ef3538c714adfafad7eda249e0d58}\label{class_gyoto_1_1_object_a424ef3538c714adfafad7eda249e0d58}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!property@{property}}
+\index{property@{property}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{property()}{property()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const$\ast$ Gyoto\+::\+Object\+::property (\begin{DoxyParamCaption}\item[{std\+::string const}]{pname }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Find property by name. 
+
+Look into the \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} list for a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} whose {\itshape name} (or {\itshape name\+\_\+false}, for a boolean \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}) is {\itshape pname}. Return a const pointer to the first such property found, or NULL if none is found. \mbox{\Hypertarget{class_gyoto_1_1_screen_ac4738c59529e7a8ea0c5a0300866978e}\label{class_gyoto_1_1_screen_ac4738c59529e7a8ea0c5a0300866978e}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!setObserverPos@{setObserverPos}}
+\index{setObserverPos@{setObserverPos}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{setObserverPos()}{setObserverPos()}}
+{\footnotesize\ttfamily void Gyoto\+::\+Screen\+::set\+Observer\+Pos (\begin{DoxyParamCaption}\item[{const double}]{pos\mbox{[}4\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Alternative way to set projection. 
+
+Beware \+: paln can not be set this way, setting later other parameters change the observer\textquotesingle{}s coordinates. For observationnal ray-\/tracing purposes, prefer \mbox{\hyperlink{class_gyoto_1_1_screen_aac0b885b8967104ee65c494a88158f57}{set\+Projection()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pos} & position of observer in \mbox{\hyperlink{class_gyoto_1_1_screen}{Screen}}\textquotesingle{}s coordinate system. Content is copied. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_object_a43fe041144add66155668ca88a99fd98}\label{class_gyoto_1_1_object_a43fe041144add66155668ca88a99fd98}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!setParameter@{setParameter}}
+\index{setParameter@{setParameter}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{setParameter()}{setParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Object\+::set\+Parameter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_property}{Gyoto\+::\+Property}} const \&}]{p,  }\item[{std\+::string const \&}]{name,  }\item[{std\+::string const \&}]{content,  }\item[{std\+::string const \&}]{unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Set parameter by \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} (and name) 
+
+This function is used when parsing an XML description, if \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} ({\itshape p}) of this {\itshape name} is found (i.\+e. either {\itshape p.\+name} or {\itshape p.\+name\+\_\+false} is equal to {\itshape name}). Implementation should fall-\/back on calling the direct\textquotesingle{}s parent implementation\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class }A: \textcolor{keyword}{public} \mbox{\hyperlink{class_gyoto_1_1_object_a5834e83ca1482a379c7ddefb1919457f}{Object}} \{\};}
+\DoxyCodeLine{\textcolor{keyword}{class }B: \textcolor{keyword}{public} A \{ }
+\DoxyCodeLine{ \textcolor{keyword}{using} B::setParameter;}
+\DoxyCodeLine{ \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_gyoto_1_1_object_a45969ac469cf6979037229c2741b226b}{setParameter}}(\mbox{\hyperlink{class_gyoto_1_1_property}{Gyoto::Property}} \textcolor{keyword}{const} \&p,}
+\DoxyCodeLine{                           std::string name,}
+\DoxyCodeLine{                        std::string content,}
+\DoxyCodeLine{                        std::string unit);}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{\textcolor{keywordtype}{void} B::setParameter(\mbox{\hyperlink{class_gyoto_1_1_property}{Gyoto::Property}} \textcolor{keyword}{const} \&p,}
+\DoxyCodeLine{                          std::string name,}
+\DoxyCodeLine{                  std::string content,}
+\DoxyCodeLine{                  std::string unit) \{}
+\DoxyCodeLine{  \textcolor{keywordflow}{if} (name==\textcolor{stringliteral}{"{}Duff"{}}) doSomething(content, unit);}
+\DoxyCodeLine{  \textcolor{keywordflow}{else} A::setParameter(p, name, content, unit);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} that matches {\itshape name} ({\itshape p.\+name} == {\itshape name} or {\itshape p.\+name\+\_\+false} == {\itshape name}) \\
+\hline
+{\em name} & XML name of the parameter (XML entity) \\
+\hline
+{\em content} & string representation of the value \\
+\hline
+{\em unit} & string representation of the unit \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_polish_doughnut_a13a8a59bd3738f5739db0550dbb42003}{Gyoto\+::\+Astrobj\+::\+Polish\+Doughnut}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_object_a45969ac469cf6979037229c2741b226b}\label{class_gyoto_1_1_object_a45969ac469cf6979037229c2741b226b}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!setParameter@{setParameter}}
+\index{setParameter@{setParameter}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{setParameter()}{setParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual int Gyoto\+::\+Object\+::set\+Parameter (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{content,  }\item[{std\+::string}]{unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Set parameter by name. 
+
+This function is used when parsing an XML description, if no \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} of this {\itshape name} is found. Overriding implementation should fall-\/back on calling the direct\textquotesingle{}s parent implementation\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class }A: \textcolor{keyword}{public} \mbox{\hyperlink{class_gyoto_1_1_object_a5834e83ca1482a379c7ddefb1919457f}{Object}} \{\};}
+\DoxyCodeLine{\textcolor{keyword}{class }B: \textcolor{keyword}{public} A \{ }
+\DoxyCodeLine{ \textcolor{keyword}{using} B::setParameter;}
+\DoxyCodeLine{ \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_gyoto_1_1_object_a45969ac469cf6979037229c2741b226b}{setParameter}}(std::string name,}
+\DoxyCodeLine{                    std::string content,}
+\DoxyCodeLine{                    std::string unit);}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{\textcolor{keywordtype}{int} B::setParameter(std::string name,}
+\DoxyCodeLine{                    std::string content,}
+\DoxyCodeLine{                    std::string unit) \{}
+\DoxyCodeLine{  \textcolor{keywordflow}{if} (name==\textcolor{stringliteral}{"{}Duff"{}}) doSomething(content, unit);}
+\DoxyCodeLine{  \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} A::setParameter(name, content, unit);}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} 0;  \textcolor{comment}{// name was known}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & XML name of the parameter (XML entity). This may have a path component, e.\+g. \char`\"{}\+Astrobj\+::\+Radius\char`\"{}, in which case a property named \char`\"{}\+Astrobj\char`\"{} will be sought in the current object, and set\+Parameter will be called recusrively on this \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}} with Radius as name. \\
+\hline
+{\em content} & string representation of the value \\
+\hline
+{\em unit} & string representation of the unit \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if this parameter is known, 1 if it is not. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_rot_star3__1_ac2fbf2bb5796e3d7c7eb80dccfe20af7}{Gyoto\+::\+Metric\+::\+Rot\+Star3\+\_\+1}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_star_a628aa18277af464450896efd63206527}{Gyoto\+::\+Astrobj\+::\+Star}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_kerr_k_s_a4c9d3a51c5d1478908516a0b96a42135}{Gyoto\+::\+Metric\+::\+Kerr\+KS}}, and \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_equatorial_hot_spot_a0c6f1aee4a478c5ef695348d64eae2d4}{Gyoto\+::\+Astrobj\+::\+Equatorial\+Hot\+Spot}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_object_aa0a8b119e7aa95b21be081f8c97e1626}\label{class_gyoto_1_1_object_aa0a8b119e7aa95b21be081f8c97e1626}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!setParameters@{setParameters}}
+\index{setParameters@{setParameters}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{setParameters()}{setParameters()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Object\+::set\+Parameters (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$}]{fmp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Main loop for parsing Properties from XML description. 
+
+\begin{DoxyVerb} This function queries the FactoryMessenger for elements to parse,
+ and tries to matche each element to a Property to set it
+ accordingly.
+
+ Any class that tries to be buildable from XML must supply a
+ subcontractor (for base classes such as Metric, Astrobj, Spectrum
+ and Spectrometer, it is done as a template that must be
+ specialized for each class).
+
+ This subcontractor typically looks somewhat like this:
+\end{DoxyVerb}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{SmartPointer<Metric::Generic>}
+\DoxyCodeLine{\mbox{\hyperlink{namespace_gyoto_1_1_astrobj_a889583a9d40c821bd55c4191cb3201ed}{Gyoto::Metric::MyKind::Subcontractor}}(FactoryMessenger* fmp) \{}
+\DoxyCodeLine{  SmartPointer<MyKind> gg = \textcolor{keyword}{new} MyKind();}
+\DoxyCodeLine{  gg -\/> \mbox{\hyperlink{class_gyoto_1_1_object_aa0a8b119e7aa95b21be081f8c97e1626}{setParameters}}(fmp);}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} gg;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ \begin{DoxyVerb} Although this is discouraged, it is possible to override the
+ following functions to customize how XML entities are parsed:
+   - setParameters() if low-level access to the
+     FactoryMessenger is required;
+   - setParameter(std::string name,
+                  std::string content,
+                  std::string unit)
+     to interpret an entity that does not match a Property
+     (e.g. alternative name);
+   - setParameter(Gyoto::Property const &p,
+                  std::string const &name,
+                  std::string const &content,
+                  std::string const &unit)
+     to change how a Property is interpreted.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_oscil_torus_a0e4df99b42b3d3722d6ea39972d1421d}{Gyoto\+::\+Astrobj\+::\+Oscil\+Torus}}, \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_uniform_aaca1850f712a089a6c5e0188aec0e5a4}{Gyoto\+::\+Spectrometer\+::\+Uniform}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_star_ad1ad60d3ce8861dfa8626ca908e5789e}{Gyoto\+::\+Astrobj\+::\+Star}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_shift_a81a5f0f4f32f5be884a4445f1d1d5b17}{Gyoto\+::\+Metric\+::\+Shift}}, \mbox{\hyperlink{class_gyoto_1_1_photon_a7a6664a5de91b1c59ba1b57d54ba1dd9}{Gyoto\+::\+Photon}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_equatorial_hot_spot_a931ca188ae49a0d8e9764a151edd3553}{Gyoto\+::\+Astrobj\+::\+Equatorial\+Hot\+Spot}}, \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_complex_a008340295dbb21fbddfa6ad7612da80e}{Gyoto\+::\+Spectrometer\+::\+Complex}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_complex_a5607f9166dc2c1a0a7bd61cde6a71c57}{Gyoto\+::\+Metric\+::\+Complex}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_complex_a635b0ea47d78c02a999d932eec8b16c5}{Gyoto\+::\+Astrobj\+::\+Complex}}, and \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a1872b827525ccb1fdedb614474992a6a}{Gyoto\+::\+Astrobj\+::\+Generic}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_screen_aa6e2f7ea7592507047318568b7282190}\label{class_gyoto_1_1_screen_aa6e2f7ea7592507047318568b7282190}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!skyToCoord@{skyToCoord}}
+\index{skyToCoord@{skyToCoord}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{skyToCoord()}{skyToCoord()}}
+{\footnotesize\ttfamily void Gyoto\+::\+Screen\+::sky\+To\+Coord (\begin{DoxyParamCaption}\item[{const double}]{sky\mbox{[}3\mbox{]},  }\item[{double}]{dest\mbox{[}4\mbox{]},  }\item[{bool}]{geometrical = {\ttfamily false} }\end{DoxyParamCaption}) const}
+
+
+
+Convert sky 3-\/position to metric 4-\/position. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em sky} & 3-\/position in plane of the sky. \\
+\hline
+\mbox{\texttt{ in}}  & {\em dest} & 4-\/position in metric coordinates (dest\mbox{[}0\mbox{]} is not modified). \\
+\hline
+\mbox{\texttt{ in}}  & {\em geometrical} & set to true if \#sky is in geometrical units instead of meters. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_screen_a78512e2b290966a9324a63a18ccde5dc}\label{class_gyoto_1_1_screen_a78512e2b290966a9324a63a18ccde5dc}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!euler\_@{euler\_}}
+\index{euler\_@{euler\_}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{euler\_}{euler\_}}
+{\footnotesize\ttfamily double Gyoto\+::\+Screen\+::euler\+\_\+\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Euler angles. 
+
+The angles are position angle of the line of nodes (North of East), inclination (0 = face-\/on), argument of X axis. We use the z-\/x-\/z convention. See \href{http://en.wikipedia.org/wiki/Euler_angles}{\texttt{ http\+://en.\+wikipedia.\+org/wiki/\+Euler\+\_\+angles}} \mbox{\Hypertarget{class_gyoto_1_1_screen_a02accc43491f2b87dc96f779f42a2a75}\label{class_gyoto_1_1_screen_a02accc43491f2b87dc96f779f42a2a75}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!freq\_obs\_@{freq\_obs\_}}
+\index{freq\_obs\_@{freq\_obs\_}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{freq\_obs\_}{freq\_obs\_}}
+{\footnotesize\ttfamily double Gyoto\+::\+Screen\+::freq\+\_\+obs\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Frequency at which the observer observes. 
+
+For the quantity Intensity \mbox{\Hypertarget{class_gyoto_1_1_object_ac48ad88e3ef229ba0d0fe68a94a7118f}\label{class_gyoto_1_1_object_ac48ad88e3ef229ba0d0fe68a94a7118f}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!kind\_@{kind\_}}
+\index{kind\_@{kind\_}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{kind\_}{kind\_}}
+{\footnotesize\ttfamily std\+::string Gyoto\+::\+Object\+::kind\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+The \char`\"{}kind\char`\"{} that is output in the XML entity. 
+
+E.\+g. for an \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}}, \mbox{\hyperlink{class_gyoto_1_1_object_a0ffc3f84b4c2372d639eb848605fb1f3}{fill\+Element()}} will ensure 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<Astrobj \mbox{\hyperlink{class_gyoto_1_1_object_a9f46de678c67e9050cf3a8b9677e1d73}{kind}}=\textcolor{stringliteral}{"{}kind\_"{}} ...>...</Astrobj>}
+
+\end{DoxyCode}
+ is written. \mbox{\Hypertarget{class_gyoto_1_1_screen_a4992e92935ebc335973ca93957fcc648}\label{class_gyoto_1_1_screen_a4992e92935ebc335973ca93957fcc648}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!mask\_filename\_@{mask\_filename\_}}
+\index{mask\_filename\_@{mask\_filename\_}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{mask\_filename\_}{mask\_filename\_}}
+{\footnotesize\ttfamily std\+::string Gyoto\+::\+Screen\+::mask\+\_\+filename\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Last read or written FITS file. 
+
+Used when saving to XML\+: if the mask was saved or loaded from FITS file, output this file name in the XML. \mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_abf1c1e431cdd4f08f13de581cccb6770}\label{class_gyoto_1_1_smart_pointee_abf1c1e431cdd4f08f13de581cccb6770}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!mutex\_@{mutex\_}}
+\index{mutex\_@{mutex\_}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{mutex\_}{mutex\_}}
+{\footnotesize\ttfamily pthread\+\_\+mutex\+\_\+t Gyoto\+::\+Smart\+Pointee\+::mutex\+\_\+\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+
+
+A mutex. 
+
+When compiled with libpthread \mbox{\Hypertarget{class_gyoto_1_1_object_a01832761cd5f0a12319e3e24ce9a9fba}\label{class_gyoto_1_1_object_a01832761cd5f0a12319e3e24ce9a9fba}} 
+\index{Gyoto::Screen@{Gyoto::Screen}!plugins\_@{plugins\_}}
+\index{plugins\_@{plugins\_}!Gyoto::Screen@{Gyoto::Screen}}
+\doxysubsubsection{\texorpdfstring{plugins\_}{plugins\_}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Gyoto\+::\+Object\+::plugins\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+The plug-\/ins that needs to be loaded to access this instance\textquotesingle{}s class. 
+
+E.\+g. for an \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}}, \mbox{\hyperlink{class_gyoto_1_1_object_a0ffc3f84b4c2372d639eb848605fb1f3}{fill\+Element()}} will ensure 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<Astrobj ... plugin=\textcolor{stringliteral}{"{}plugins\_"{}}>...</Astrobj>}
+
+\end{DoxyCode}
+ is written. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_gyoto_screen_8h}{Gyoto\+Screen.\+h}}\end{DoxyCompactItemize}

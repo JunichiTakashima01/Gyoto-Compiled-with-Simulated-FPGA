@@ -1,0 +1,481 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_gyoto_numerical_metric_lorene_8h" kind="file" language="C++">
+    <compoundname>GyotoNumericalMetricLorene.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">fstream</includes>
+    <includes refid="_gyoto_metric_8h" local="no">GyotoMetric.h</includes>
+    <includes refid="_gyoto_worldline_8h" local="no">GyotoWorldline.h</includes>
+    <includes refid="_gyoto_smart_pointer_8h" local="no">GyotoSmartPointer.h</includes>
+    <includes refid="_gyoto_register_8h" local="no">GyotoRegister.h</includes>
+    <includedby refid="_gyoto_neutron_star_8h" local="no">GyotoNeutronStar.h</includedby>
+    <includedby refid="_gyoto_neutron_star_analytic_emission_8h" local="no">GyotoNeutronStarAnalyticEmission.h</includedby>
+    <includedby refid="_gyoto_neutron_star_model_atmosphere_8h" local="no">GyotoNeutronStarModelAtmosphere.h</includedby>
+    <incdepgraph>
+      <node id="18">
+        <label>iomanip</label>
+      </node>
+      <node id="11">
+        <label>float.h</label>
+      </node>
+      <node id="8">
+        <label>GyotoUtils.h</label>
+        <link refid="_gyoto_utils_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>eigen3/Eigen/Dense</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="7">
+        <label>GyotoSmartPointer.h</label>
+        <link refid="_gyoto_smart_pointer_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>GyotoObject.h</label>
+        <link refid="_gyoto_object_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>stddef.h</label>
+      </node>
+      <node id="3">
+        <label>fstream</label>
+      </node>
+      <node id="22">
+        <label>GyotoRegister.h</label>
+        <link refid="_gyoto_register_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>GyotoSpectrometer.h</label>
+        <link refid="_gyoto_spectrometer_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>GyotoMetric.h</label>
+        <link refid="_gyoto_metric_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>GyotoDefs.h</label>
+        <link refid="_gyoto_defs_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>GyotoWorldline.h</label>
+        <link refid="_gyoto_worldline_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>pthread.h</label>
+      </node>
+      <node id="15">
+        <label>typeinfo</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+      <node id="10">
+        <label>GyotoConfig.h</label>
+        <link refid="_gyoto_config_8h"/>
+      </node>
+      <node id="20">
+        <label>sstream</label>
+      </node>
+      <node id="1">
+        <label>GyotoNumericalMetricLorene.h</label>
+        <link refid="_gyoto_numerical_metric_lorene_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>GyotoAstrobj.h</label>
+        <link refid="_gyoto_astrobj_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+      <node id="13">
+        <label>GyotoError.h</label>
+        <link refid="_gyoto_error_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>GyotoHooks.h</label>
+        <link refid="_gyoto_hooks_8h"/>
+      </node>
+      <node id="25">
+        <label>GyotoScreen.h</label>
+        <link refid="_gyoto_screen_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>GyotoConverters.h</label>
+        <link refid="_gyoto_converters_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>GyotoNeutronStarAnalyticEmission.h</label>
+        <link refid="_gyoto_neutron_star_analytic_emission_8h"/>
+      </node>
+      <node id="4">
+        <label>GyotoNeutronStarModelAtmosphere.h</label>
+        <link refid="_gyoto_neutron_star_model_atmosphere_8h"/>
+      </node>
+      <node id="1">
+        <label>GyotoNumericalMetricLorene.h</label>
+        <link refid="_gyoto_numerical_metric_lorene_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>GyotoNeutronStar.h</label>
+        <link refid="_gyoto_neutron_star_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene" prot="public">Gyoto::Metric::NumericalMetricLorene</innerclass>
+    <innernamespace refid="namespace_gyoto">Gyoto</innernamespace>
+    <innernamespace refid="namespace_gyoto_1_1_metric">Gyoto::Metric</innernamespace>
+    <innernamespace refid="namespace_lorene">Lorene</innernamespace>
+    <briefdescription>
+<para>Base class for 3+1 numerical metrics computed by LORENE. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Copyright<sp/>(c)<sp/>2014-2018,<sp/>2020<sp/>Frederic<sp/>Vincent,<sp/>Thibaut<sp/>Paumard</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__GyotoNumericalMetricLoreneMetric_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__GyotoNumericalMetricLoreneMetric_H_<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_gyoto" kindref="compound">Gyoto</ref><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Metric<sp/>{<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_numerical_metric_lorene" kindref="compound">NumericalMetricLorene</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">FactoryMessenger;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Forward<sp/>declarations<sp/>of<sp/>Lorene<sp/>classes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Lorene<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Scalar;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Vector;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Sym_tensor;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Valeur;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_metric_8h" kindref="compound">GyotoMetric.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_worldline_8h" kindref="compound">GyotoWorldline.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_smart_pointer_8h" kindref="compound">GyotoSmartPointer.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>GYOTO_USE_XERCES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_register_8h" kindref="compound">GyotoRegister.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene" kindref="compound">Gyoto::Metric::NumericalMetricLorene</ref></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_metric_1_1_generic" kindref="compound">Gyoto::Metric::Generic</ref></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt;<ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>::<ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene" kindref="compound">Metric::NumericalMetricLorene</ref>&gt;;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="53" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a85cab08842594775732b2e74173f8ffe" refkind="member"><highlight class="normal"><sp/><sp/>char*<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a85cab08842594775732b2e74173f8ffe" kindref="member">filename_</ref>;<sp/></highlight></codeline>
+<codeline lineno="54" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a39dc0bce71d2f6849957765d6d30c82a" refkind="member"><highlight class="normal"><sp/><sp/>bool<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a39dc0bce71d2f6849957765d6d30c82a" kindref="member">mapet_</ref>;<sp/></highlight></codeline>
+<codeline lineno="55" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1ad8a1e43aab055d19990fc1d44b93d094" refkind="member"><highlight class="normal"><sp/><sp/>bool<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1ad8a1e43aab055d19990fc1d44b93d094" kindref="member">axisymCirc_</ref>;<sp/></highlight></codeline>
+<codeline lineno="56" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1ae3c4376b9bf074bd54fd1a0d94f1592a" refkind="member"><highlight class="normal"><sp/><sp/>bool<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1ae3c4376b9bf074bd54fd1a0d94f1592a" kindref="member">bosonstarcircular_</ref>;<sp/></highlight></codeline>
+<codeline lineno="57" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a35fe55c7054c0bc1a688cd03b7f6358a" refkind="member"><highlight class="normal"><sp/><sp/>int<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a35fe55c7054c0bc1a688cd03b7f6358a" kindref="member">has_surface_</ref>;<sp/></highlight></codeline>
+<codeline lineno="58" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a99bd7858e8c5d35151bd4d117d905100" refkind="member"><highlight class="normal"><sp/><sp/>int<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a99bd7858e8c5d35151bd4d117d905100" kindref="member">has_acceleration_vector_</ref>;<sp/></highlight></codeline>
+<codeline lineno="60" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1ad77c1fd7bd097bec803b9ad56343a7dd" refkind="member"><highlight class="normal"><sp/><sp/>int<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1ad77c1fd7bd097bec803b9ad56343a7dd" kindref="member">specify_marginalorbits_</ref>;<sp/></highlight></codeline>
+<codeline lineno="61" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1ad343fbe343c0f951db55de659e6c1b81" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1ad343fbe343c0f951db55de659e6c1b81" kindref="member">horizon_</ref>;<sp/></highlight></codeline>
+<codeline lineno="62" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a7cda10e94f579989925770a777ce9d6c" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a7cda10e94f579989925770a777ce9d6c" kindref="member">initial_time_</ref>;<sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>Lorene::Scalar**<sp/>lapse_tab_;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>Lorene::Vector**<sp/>shift_tab_;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>Lorene::Sym_tensor**<sp/>gamcov_tab_;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>Lorene::Sym_tensor**<sp/>gamcon_tab_;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>Lorene::Sym_tensor**<sp/>kij_tab_;</highlight></codeline>
+<codeline lineno="68" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1aa6a7ea9b4f9c0f82cdd149c8ab95159e" refkind="member"><highlight class="normal"><sp/><sp/>double*<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1aa6a7ea9b4f9c0f82cdd149c8ab95159e" kindref="member">times_</ref>;<sp/></highlight></codeline>
+<codeline lineno="69" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1aa93ab7936a242429fc9f020c76984e19" refkind="member"><highlight class="normal"><sp/><sp/>int<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1aa93ab7936a242429fc9f020c76984e19" kindref="member">nb_times_</ref>;<sp/></highlight></codeline>
+<codeline lineno="70" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a7e6c0144bb8fbd8fbbda0283c626fdc1" refkind="member"><highlight class="normal"><sp/><sp/>Lorene::Valeur**<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a7e6c0144bb8fbd8fbbda0283c626fdc1" kindref="member">nssurf_tab_</ref>;<sp/></highlight></codeline>
+<codeline lineno="71" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a59c34a03baf4fbd04a134d9e667c2953" refkind="member"><highlight class="normal"><sp/><sp/>Lorene::Vector**<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a59c34a03baf4fbd04a134d9e667c2953" kindref="member">vsurf_tab_</ref>;<sp/></highlight></codeline>
+<codeline lineno="72" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1abe5d14c7e4d0a04f6135fa282771f6fa" refkind="member"><highlight class="normal"><sp/><sp/>Lorene::Vector**<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1abe5d14c7e4d0a04f6135fa282771f6fa" kindref="member">accel_tab_</ref>;<sp/></highlight></codeline>
+<codeline lineno="73" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1af734cc861e5d52ee57ebf37458fc0f87" refkind="member"><highlight class="normal"><sp/><sp/>Lorene::Scalar**<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1af734cc861e5d52ee57ebf37458fc0f87" kindref="member">lorentz_tab_</ref>;<sp/></highlight></codeline>
+<codeline lineno="74" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a584225e6bc0f05bf8c75d81202f60cc2" refkind="member"><highlight class="normal"><sp/><sp/>Lorene::Valeur**<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a584225e6bc0f05bf8c75d81202f60cc2" kindref="member">hor_tab_</ref>;<sp/></highlight></codeline>
+<codeline lineno="75" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a30e8fb10a708b63e0b572fc55888d03b" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a30e8fb10a708b63e0b572fc55888d03b" kindref="member">risco_</ref>;<sp/></highlight></codeline>
+<codeline lineno="76" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1ae6cc364305f322073af3a5877943f857" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1ae6cc364305f322073af3a5877943f857" kindref="member">rico_</ref>;<sp/></highlight></codeline>
+<codeline lineno="77" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a9f6bc350c0e0522490fb249d26f7ce3b" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a9f6bc350c0e0522490fb249d26f7ce3b" kindref="member">rmb_</ref>;<sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a49ba08e8ade9220e07219afbe4ba4dae" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a49ba08e8ade9220e07219afbe4ba4dae" kindref="member">free</ref>();<sp/></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="82" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1af752a39af393f53a94b1b691eab03070" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" kindref="member">GYOTO_OBJECT</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_object_8h_1a6806b7f836d51dbe45cdf7bd60377a40" kindref="member">GYOTO_OBJECT_THREAD_SAFETY</ref>;</highlight></codeline>
+<codeline lineno="84" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a83f0d694436243fd7d015baeecdbf104" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene" kindref="compound">NumericalMetricLorene</ref>();<sp/></highlight></codeline>
+<codeline lineno="85" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a73a6d383efbaa82662158dfac5052ef1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene" kindref="compound">NumericalMetricLorene</ref>(const<sp/>NumericalMetricLorene&amp;);<sp/></highlight></codeline>
+<codeline lineno="86" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a08e7c9ac4e675109300b8d70d482ead2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene" kindref="compound">NumericalMetricLorene</ref>*<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a08e7c9ac4e675109300b8d70d482ead2" kindref="member">clone</ref>()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="87" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a793b13b8a8a512fb403cc12d2da30474" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene" kindref="compound">NumericalMetricLorene</ref>()<sp/>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a5e11657ab3a91bb281857051bf188ec9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a5e11657ab3a91bb281857051bf188ec9" kindref="member">setMetricSource</ref>();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>void<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>directory(std::string<sp/>const<sp/>&amp;dir)<sp/>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>std::string<sp/>directory()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>double<sp/>initialTime()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>void<sp/><sp/><sp/>initialTime(double<sp/>t0);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>double<sp/>horizon()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>void<sp/><sp/><sp/>horizon(double<sp/>t0);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>double<sp/>rico()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>void<sp/><sp/><sp/>rico(double<sp/>r0);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>bool<sp/>hasSurface()<sp/>const;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>void<sp/>hasSurface(bool<sp/>s);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>bool<sp/>hasAccelerationVector()<sp/>const;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/>void<sp/>hasAccelerationVector(bool<sp/>aa);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/>bool<sp/>bosonstarcircular()<sp/>const;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>void<sp/>bosonstarcircular(bool);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>bool<sp/>specifyMarginalOrbits()<sp/>const;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/>void<sp/>specifyMarginalOrbits(bool<sp/>s);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/>bool<sp/>mapEt()<sp/>const;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/>void<sp/>mapEt(bool<sp/>s);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/>bool<sp/>axisymCirc()<sp/>const;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/>void<sp/>axisymCirc(bool<sp/>s);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>Lorene::Vector**<sp/>getShift_tab()<sp/>const;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>Lorene::Scalar**<sp/>getLapse_tab()<sp/>const;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>Lorene::Sym_tensor**<sp/>getGamcon_tab()<sp/>const;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>Lorene::Sym_tensor**<sp/>getGamcov_tab()<sp/>const;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>double*<sp/>getTimes()<sp/>const;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>int<sp/>getNbtimes()<sp/>const;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>Lorene::Valeur**<sp/>getNssurf_tab()<sp/>const;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/>Lorene::Vector**<sp/>getVsurf_tab()<sp/>const;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/>Lorene::Vector**<sp/>getAccel_tab()<sp/>const;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/>Lorene::Scalar**<sp/>getLorentz_tab()<sp/>const;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>Lorene::Valeur**<sp/>getHor_tab()<sp/>const;</highlight></codeline>
+<codeline lineno="126" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a919e2eec75a7b820c370aacbb7682c4b" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a919e2eec75a7b820c370aacbb7682c4b" kindref="member">getRms</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="127" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a2f33d1cb9df0d06d74c208a6b5df26db" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a2f33d1cb9df0d06d74c208a6b5df26db" kindref="member">getRmb</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>void<sp/>setLapse_tab(Lorene::Scalar*<sp/>lapse,<sp/>int<sp/>ii);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/>void<sp/>setShift_tab(Lorene::Vector*<sp/>shift,<sp/>int<sp/>ii);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/>void<sp/>setGamcov_tab(Lorene::Sym_tensor*<sp/>gamcov,<sp/>int<sp/>ii);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/>void<sp/>setGamcon_tab(Lorene::Sym_tensor*<sp/>gamcon,<sp/>int<sp/>ii);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>void<sp/>setKij_tab(Lorene::Sym_tensor*<sp/>kij,<sp/>int<sp/>ii);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/>void<sp/>setTimes(double<sp/>time,int<sp/>ii);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1ac320d09b9032e7af2c1ee5eb2a9e6003" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1ac320d09b9032e7af2c1ee5eb2a9e6003" kindref="member">getSpecificAngularMomentum</ref>(double<sp/>rr)<sp/>const;</highlight></codeline>
+<codeline lineno="136" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1aff0b16b0dc119876a0a56af3b5fc4a1b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1aff0b16b0dc119876a0a56af3b5fc4a1b" kindref="member">getPotential</ref>(double<sp/>const<sp/>pos[4],<sp/>double<sp/>l_cst)<sp/>const;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="141" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a2a9d44edb0c23a76872e875e97995010" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a2a9d44edb0c23a76872e875e97995010" kindref="member">computeNBeta</ref>(const<sp/>double<sp/>coord[4],double<sp/>&amp;NN,double<sp/>beta[3])<sp/>const;</highlight><highlight class="comment">//Compute<sp/>lapse<sp/>and<sp/>shift<sp/>at<sp/>coord</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/>using<sp/><ref refid="class_gyoto_1_1_metric_1_1_generic_1a763b7fd883fb049973df233d92264600" kindref="member">Generic::gmunu</ref>;</highlight></codeline>
+<codeline lineno="147" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1aeccd860908d6b8f05fba36bf542cc390" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a763b7fd883fb049973df233d92264600" kindref="member">gmunu</ref>(const<sp/>double<sp/>x[4],<sp/>int<sp/>mu,<sp/>int<sp/>nu)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a763b7fd883fb049973df233d92264600" kindref="member">gmunu</ref>(const<sp/>double<sp/>x[3],<sp/>int<sp/>indice_time,<sp/>int<sp/>mu,<sp/>int<sp/>nu)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a895992a8c0a433475cfb629006d6de96" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a895992a8c0a433475cfb629006d6de96" kindref="member">gmunu_up</ref>(double<sp/>ARGOUT_ARRAY2[4][4],<sp/>const<sp/>double<sp/>IN_ARRAY1[4])<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a895992a8c0a433475cfb629006d6de96" kindref="member">gmunu_up</ref>(double<sp/>gup[4][4],<sp/>const<sp/>double<sp/>x[4],<sp/>int<sp/>indice_time)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/>void<sp/>gmunu_di(const<sp/>double<sp/>pos[4],</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>gmunudr[4][4],</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>gmunudth[4][4])<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/>void<sp/>gmunu_di(const<sp/>double<sp/>pos[4],</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>indice_time,</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>gmunudr[4][4],</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>gmunudth[4][4])<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a2ac21205ecebe01aa79fd106ea9c8a3e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a2ac21205ecebe01aa79fd106ea9c8a3e" kindref="member">jacobian</ref>(double<sp/>ARGOUT_ARRAY3[4][4][4],<sp/>const<sp/>double<sp/>IN_ARRAY1[4])<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a7738d5a08b4d7e09dc85d8019fdb347d" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a7738d5a08b4d7e09dc85d8019fdb347d" kindref="member">gmunu_up_dr</ref>(const<sp/>double<sp/>x[4],<sp/>int<sp/>mu,<sp/>int<sp/>nu)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a7738d5a08b4d7e09dc85d8019fdb347d" kindref="member">gmunu_up_dr</ref>(const<sp/>double<sp/>x[3],<sp/>int<sp/>indice_time,<sp/>int<sp/>mu,<sp/>int<sp/>nu)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="173" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a5e1cc9cbc9ac8152f2d5ecc7bf09abbd" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a5e1cc9cbc9ac8152f2d5ecc7bf09abbd" kindref="member">christoffel</ref>(const<sp/>double<sp/>coord[4],<sp/>const<sp/>int<sp/>alpha,<sp/>const<sp/>int<sp/>mu,</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>int<sp/>nu)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a5e1cc9cbc9ac8152f2d5ecc7bf09abbd" kindref="member">christoffel</ref>(const<sp/>double<sp/>coord[4],</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>int<sp/>alpha,<sp/></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>int<sp/>mu,<sp/>const<sp/>int<sp/>nu,</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>int<sp/>indice_time)<sp/>const;</highlight></codeline>
+<codeline lineno="179" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a45efde00a13fabe4dd5d37fef0873242" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>int<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a5e1cc9cbc9ac8152f2d5ecc7bf09abbd" kindref="member">christoffel</ref>(double<sp/>dst[4][4][4],</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>double<sp/>coord[4])<sp/>const;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/>int<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a5e1cc9cbc9ac8152f2d5ecc7bf09abbd" kindref="member">christoffel</ref>(double<sp/>dst[4][4][4],</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>double<sp/>coord[4],</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>int<sp/>indice_time)<sp/>const;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a22693b88564e9fa32572c9d4441aaeae" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a22693b88564e9fa32572c9d4441aaeae" kindref="member">Interpol3rdOrder</ref>(double<sp/>tt,<sp/>int<sp/>indice_time,<sp/>double<sp/>values[4])<sp/>const;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a06d5ed5db7a6d4388ed091f82a36e4ca" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a06d5ed5db7a6d4388ed091f82a36e4ca" kindref="member">computeHorizon</ref>(const<sp/>double*<sp/>pos)<sp/>const;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a06d5ed5db7a6d4388ed091f82a36e4ca" kindref="member">computeHorizon</ref>(const<sp/>double*<sp/>pos,<sp/>int<sp/>indice)<sp/>const;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//using<sp/>Generic::diff;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1aabd3b34960ee07865a2afb2addf862c0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>int<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1aabd3b34960ee07865a2afb2addf862c0" kindref="member">diff</ref>(state_t<sp/>const<sp/>&amp;coord,<sp/>state_t<sp/>&amp;res,<sp/>double<sp/>mass)<sp/>const;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/>int<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1aabd3b34960ee07865a2afb2addf862c0" kindref="member">diff</ref>(double<sp/>tt,<sp/>const<sp/>double<sp/>y[7],<sp/>double<sp/>res[7])<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>int<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1aabd3b34960ee07865a2afb2addf862c0" kindref="member">diff</ref>(const<sp/>double<sp/>y[7],<sp/>double<sp/>res[7],<sp/>int<sp/>indice_time)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="208" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1ac25e55887eb7cf8fef2303812b7eef7d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>int<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1ac25e55887eb7cf8fef2303812b7eef7d" kindref="member">diff31</ref>(state_t<sp/>const<sp/>&amp;x,<sp/>state_t<sp/>&amp;dxdt,<sp/>double<sp/>mass)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229" refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1aff0e97377246e56c45d5d58db26bd4e2" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1aff0e97377246e56c45d5d58db26bd4e2" kindref="member">circularVelocity</ref>(double<sp/>const<sp/>coor[4],<sp/>double<sp/>vel[3],</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>dir)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1aff0e97377246e56c45d5d58db26bd4e2" kindref="member">circularVelocity</ref>(double<sp/>const<sp/>coor[4],<sp/>double<sp/>vel[3],</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>dir,<sp/>int<sp/>indice_time)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/junichi/Gyoto/include/GyotoNumericalMetricLorene.h"/>
+  </compounddef>
+</doxygen>

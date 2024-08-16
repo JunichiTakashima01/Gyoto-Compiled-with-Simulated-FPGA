@@ -1,0 +1,103 @@
+\hypertarget{_gyoto_worldline_8h}{}\doxysection{Gyoto\+Worldline.\+h File Reference}
+\label{_gyoto_worldline_8h}\index{GyotoWorldline.h@{GyotoWorldline.h}}
+
+
+Timelike or null geodesics.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$Gyoto\+Defs.\+h$>$}\newline
+{\ttfamily \#include $<$Gyoto\+Smart\+Pointer.\+h$>$}\newline
+{\ttfamily \#include $<$Gyoto\+Metric.\+h$>$}\newline
+{\ttfamily \#include $<$Gyoto\+Screen.\+h$>$}\newline
+{\ttfamily \#include $<$Gyoto\+Hooks.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_gyoto_1_1_worldline}{Gyoto\+::\+Worldline}}
+\begin{DoxyCompactList}\small\item\em Timelike or null geodesics. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state}{Gyoto\+::\+Worldline\+::\+Integ\+State}}
+\item 
+class \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic}{Gyoto\+::\+Worldline\+::\+Integ\+State\+::\+Generic}}
+\begin{DoxyCompactList}\small\item\em Current state of a geodesic integration. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy}{Gyoto\+::\+Worldline\+::\+Integ\+State\+::\+Legacy}}
+\begin{DoxyCompactList}\small\item\em Obsolete\+: Home-\/brewed integrator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_gyoto}{Gyoto}}
+\begin{DoxyCompactList}\small\item\em Namespace for the \mbox{\hyperlink{namespace_gyoto}{Gyoto}} library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_gyoto_worldline_8h_aa765beed747e6fb92152b6188097dba7}{GYOTO\+\_\+\+WORLDLINE\+\_\+\+PROPERTIES}}(c)
+\begin{DoxyCompactList}\small\item\em Define the bunch of Properties that make up the Worldline interface. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_worldline_8h_a92ffb7845551c3f7812bfbd5e69f3c9a}{GYOTO\+\_\+\+WORLDLINE\+\_\+\+ACCESSORS}}(c)
+\begin{DoxyCompactList}\small\item\em Define the wrapper accessors used in \mbox{\hyperlink{_gyoto_worldline_8h_aa765beed747e6fb92152b6188097dba7}{GYOTO\+\_\+\+WORLDLINE\+\_\+\+PROPERTIES(class)}} \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_worldline_8h_a1be18e74aa4c1176ff9bcb6e72cc3faf}{GYOTO\+\_\+\+WORLDLINE\+\_\+\+PROPERTY\+\_\+\+END}}(c,  a)
+\begin{DoxyCompactList}\small\item\em Drop-\/in replacement for \mbox{\hyperlink{_gyoto_property_8h_a1356435ea7ee0e18d07201a80e034dcc}{GYOTO\+\_\+\+PROPERTY\+\_\+\+END()}}, which adds the Worldline interface. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_gyoto_worldline_8h_ad22d501635a94e86f28ee2adab6242c8}{GYOTO\+\_\+\+WORLDLINE}}
+\begin{DoxyCompactList}\small\item\em Declare the Worldline interface wrappers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Timelike or null geodesics. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_gyoto_worldline_8h_ad22d501635a94e86f28ee2adab6242c8}\label{_gyoto_worldline_8h_ad22d501635a94e86f28ee2adab6242c8}} 
+\index{GyotoWorldline.h@{GyotoWorldline.h}!GYOTO\_WORLDLINE@{GYOTO\_WORLDLINE}}
+\index{GYOTO\_WORLDLINE@{GYOTO\_WORLDLINE}!GyotoWorldline.h@{GyotoWorldline.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_WORLDLINE}{GYOTO\_WORLDLINE}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+WORLDLINE}
+
+
+
+Declare the Worldline interface wrappers. 
+
+This macro must be called in the class declaration (.h file), in a public section. Its sibling \mbox{\hyperlink{_gyoto_worldline_8h_a92ffb7845551c3f7812bfbd5e69f3c9a}{GYOTO\+\_\+\+WORLDLINE\+\_\+\+ACCESSORS(c)}} must be called with the class method definition (.C file). Note that \mbox{\hyperlink{_gyoto_worldline_8h_a1be18e74aa4c1176ff9bcb6e72cc3faf}{GYOTO\+\_\+\+WORLDLINE\+\_\+\+PROPERTY\+\_\+\+END(c, a)}} calls \mbox{\hyperlink{_gyoto_worldline_8h_a92ffb7845551c3f7812bfbd5e69f3c9a}{GYOTO\+\_\+\+WORLDLINE\+\_\+\+ACCESSORS(c)}}. \mbox{\Hypertarget{_gyoto_worldline_8h_a92ffb7845551c3f7812bfbd5e69f3c9a}\label{_gyoto_worldline_8h_a92ffb7845551c3f7812bfbd5e69f3c9a}} 
+\index{GyotoWorldline.h@{GyotoWorldline.h}!GYOTO\_WORLDLINE\_ACCESSORS@{GYOTO\_WORLDLINE\_ACCESSORS}}
+\index{GYOTO\_WORLDLINE\_ACCESSORS@{GYOTO\_WORLDLINE\_ACCESSORS}!GyotoWorldline.h@{GyotoWorldline.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_WORLDLINE\_ACCESSORS}{GYOTO\_WORLDLINE\_ACCESSORS}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+WORLDLINE\+\_\+\+ACCESSORS(\begin{DoxyParamCaption}\item[{}]{c }\end{DoxyParamCaption})}
+
+
+
+Define the wrapper accessors used in \mbox{\hyperlink{_gyoto_worldline_8h_aa765beed747e6fb92152b6188097dba7}{GYOTO\+\_\+\+WORLDLINE\+\_\+\+PROPERTIES(class)}} 
+
+This macro, which is called automatically by \mbox{\hyperlink{_gyoto_worldline_8h_a1be18e74aa4c1176ff9bcb6e72cc3faf}{GYOTO\+\_\+\+WORLDLINE\+\_\+\+PROPERTY\+\_\+\+END(c, a)}}, must be called once with the definition of the methods (.C file) of any class that derives from Worldline. The corresponding macro GYOTO\+\_\+\+WORLDLINE must be called in the corresponding class declaration (.h file).
+
+This is made necessary by how multiple inheritence works\+: directly using the accessors in the Worldline API leads to segfault at runtime (unless too much extra care is taken) and may go unnoticed.
+
+These accessors must be declared in the class declaration using the GYOTO\+\_\+\+WORLDLINE macro. \mbox{\Hypertarget{_gyoto_worldline_8h_aa765beed747e6fb92152b6188097dba7}\label{_gyoto_worldline_8h_aa765beed747e6fb92152b6188097dba7}} 
+\index{GyotoWorldline.h@{GyotoWorldline.h}!GYOTO\_WORLDLINE\_PROPERTIES@{GYOTO\_WORLDLINE\_PROPERTIES}}
+\index{GYOTO\_WORLDLINE\_PROPERTIES@{GYOTO\_WORLDLINE\_PROPERTIES}!GyotoWorldline.h@{GyotoWorldline.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_WORLDLINE\_PROPERTIES}{GYOTO\_WORLDLINE\_PROPERTIES}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+WORLDLINE\+\_\+\+PROPERTIES(\begin{DoxyParamCaption}\item[{}]{c }\end{DoxyParamCaption})}
+
+
+
+Define the bunch of Properties that make up the Worldline interface. 
+
+This macro, which is called automatically by \mbox{\hyperlink{_gyoto_worldline_8h_a1be18e74aa4c1176ff9bcb6e72cc3faf}{GYOTO\+\_\+\+WORLDLINE\+\_\+\+PROPERTY\+\_\+\+END(c, a)}}, must be inserted in the definition of the Property list for any class derived from Worldline. \mbox{\Hypertarget{_gyoto_worldline_8h_a1be18e74aa4c1176ff9bcb6e72cc3faf}\label{_gyoto_worldline_8h_a1be18e74aa4c1176ff9bcb6e72cc3faf}} 
+\index{GyotoWorldline.h@{GyotoWorldline.h}!GYOTO\_WORLDLINE\_PROPERTY\_END@{GYOTO\_WORLDLINE\_PROPERTY\_END}}
+\index{GYOTO\_WORLDLINE\_PROPERTY\_END@{GYOTO\_WORLDLINE\_PROPERTY\_END}!GyotoWorldline.h@{GyotoWorldline.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_WORLDLINE\_PROPERTY\_END}{GYOTO\_WORLDLINE\_PROPERTY\_END}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+WORLDLINE\+\_\+\+PROPERTY\+\_\+\+END(\begin{DoxyParamCaption}\item[{}]{c,  }\item[{}]{a }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \mbox{\hyperlink{_gyoto_worldline_8h_aa765beed747e6fb92152b6188097dba7}{GYOTO\_WORLDLINE\_PROPERTIES}}(c)                  \(\backslash\)}
+\DoxyCodeLine{  GYOTO\_PROPERTY\_END(c, a)                 \(\backslash\)}
+\DoxyCodeLine{  GYOTO\_WORLDLINE\_ACCESSORS(c)}
+
+\end{DoxyCode}
+
+
+Drop-\/in replacement for \mbox{\hyperlink{_gyoto_property_8h_a1356435ea7ee0e18d07201a80e034dcc}{GYOTO\+\_\+\+PROPERTY\+\_\+\+END()}}, which adds the Worldline interface. 
+
+This macro replaces \mbox{\hyperlink{_gyoto_property_8h_a1356435ea7ee0e18d07201a80e034dcc}{GYOTO\+\_\+\+PROPERTY\+\_\+\+END(c, a)}} for classes that derive from Worldline. It calls \mbox{\hyperlink{_gyoto_worldline_8h_aa765beed747e6fb92152b6188097dba7}{GYOTO\+\_\+\+WORLDLINE\+\_\+\+PROPERTIES(a)}} and \mbox{\hyperlink{_gyoto_worldline_8h_a92ffb7845551c3f7812bfbd5e69f3c9a}{GYOTO\+\_\+\+WORLDLINE\+\_\+\+ACCESSORS(c)}}. If this macro is used, GYOTO\+\_\+\+WORLDLINE must be called in the class declaration (.h file). 

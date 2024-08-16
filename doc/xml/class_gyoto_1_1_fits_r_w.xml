@@ -1,0 +1,476 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_gyoto_1_1_fits_r_w" kind="class" language="C++" prot="public">
+    <compoundname>Gyoto::FitsRW</compoundname>
+    <derivedcompoundref refid="class_gyoto_1_1_astrobj_1_1_plasmoid" prot="public" virt="non-virtual">Gyoto::Astrobj::Plasmoid</derivedcompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_fits_r_w_1a10a0a3b083eb2c1fcc12919ec2bad052" prot="private" static="no" mutable="no">
+        <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+        <definition>size_t Gyoto::FitsRW::nnu_</definition>
+        <argsstring></argsstring>
+        <name>nnu_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFitsRW.h" line="54" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoFitsRW.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_fits_r_w_1a94a04f2771440e81b4d1b3c6e4d29854" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::FitsRW::numin_</definition>
+        <argsstring></argsstring>
+        <name>numin_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFitsRW.h" line="55" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoFitsRW.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_fits_r_w_1a018580f837c25a4919b95a77ebb5fbea" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::FitsRW::numax_</definition>
+        <argsstring></argsstring>
+        <name>numax_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFitsRW.h" line="56" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoFitsRW.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_fits_r_w_1addc1e4d45f6f70c0772aa2a11112614d" prot="private" static="no" mutable="no">
+        <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+        <definition>size_t Gyoto::FitsRW::nt_</definition>
+        <argsstring></argsstring>
+        <name>nt_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFitsRW.h" line="57" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoFitsRW.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_fits_r_w_1af4b29f91f536976485cdcf4b36263b08" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::FitsRW::dt_</definition>
+        <argsstring></argsstring>
+        <name>dt_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFitsRW.h" line="58" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoFitsRW.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_fits_r_w_1a7f21ee6956ffe28ae36b86ccdd61e63f" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::FitsRW::tmin_</definition>
+        <argsstring></argsstring>
+        <name>tmin_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFitsRW.h" line="59" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoFitsRW.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_fits_r_w_1a93d2ec4a27a4ef7f2d44836d1fb1b186" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::FitsRW::tmax_</definition>
+        <argsstring></argsstring>
+        <name>tmax_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFitsRW.h" line="60" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoFitsRW.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gyoto_1_1_fits_r_w_1a0caeff4b020d150f2b879bba05f038a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::FitsRW::FitsRW</definition>
+        <argsstring>()</argsstring>
+        <name>FitsRW</name>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFitsRW.h" line="63" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_fits_r_w_1af423b2db473aa19f2de976bfeb8004ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::FitsRW::FitsRW</definition>
+        <argsstring>(const FitsRW &amp;)</argsstring>
+        <name>FitsRW</name>
+        <param>
+          <type>const <ref refid="class_gyoto_1_1_fits_r_w" kindref="compound">FitsRW</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFitsRW.h" line="64" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_fits_r_w_1adc59606e73c8b69015f429c563ddcea1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_gyoto_1_1_fits_r_w" kindref="compound">FitsRW</ref> *</type>
+        <definition>virtual FitsRW* Gyoto::FitsRW::clone</definition>
+        <argsstring>() const</argsstring>
+        <name>clone</name>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_plasmoid_1a755b08e5729e34da8a7d9b3c52e0a6fd">clone</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFitsRW.h" line="65" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_fits_r_w_1ab6e0358850d4b8378c8011d940aa0ce3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Gyoto::FitsRW::~FitsRW</definition>
+        <argsstring>()</argsstring>
+        <name>~FitsRW</name>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFitsRW.h" line="66" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_fits_r_w_1a14618821e7ff186cd77f3fe5faa701f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::FitsRW::numin</definition>
+        <argsstring>(double numn)</argsstring>
+        <name>numin</name>
+        <param>
+          <type>double</type>
+          <declname>numn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFitsRW.h" line="69" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_fits_r_w_1a150d23f4b7e8c4605e461dae265475e8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::FitsRW::numin</definition>
+        <argsstring>() const</argsstring>
+        <name>numin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFitsRW.h" line="70" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_fits_r_w_1a8e5a19b9e67e5c9b09a79d67c3205580" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::FitsRW::numax</definition>
+        <argsstring>(double numx)</argsstring>
+        <name>numax</name>
+        <param>
+          <type>double</type>
+          <declname>numx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFitsRW.h" line="71" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_fits_r_w_1a2c7e004208a1db06bfa1938f93de7eda" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::FitsRW::numax</definition>
+        <argsstring>() const</argsstring>
+        <name>numax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFitsRW.h" line="72" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_fits_r_w_1a82febeee4c59cc8a34f934ed17acc825" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::FitsRW::nnu</definition>
+        <argsstring>(size_t nn)</argsstring>
+        <name>nnu</name>
+        <param>
+          <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+          <declname>nn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFitsRW.h" line="73" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_fits_r_w_1af701f65e85f5e2091eb6ec1aed2b386b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+        <definition>size_t Gyoto::FitsRW::nnu</definition>
+        <argsstring>() const</argsstring>
+        <name>nnu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFitsRW.h" line="74" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_fits_r_w_1aff02a975aa91dc1326522a94dc28d39b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::FitsRW::tmin</definition>
+        <argsstring>(double tmn)</argsstring>
+        <name>tmin</name>
+        <param>
+          <type>double</type>
+          <declname>tmn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFitsRW.h" line="75" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_fits_r_w_1a1956a5596ca90e35e452d928c144b17f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::FitsRW::tmin</definition>
+        <argsstring>() const</argsstring>
+        <name>tmin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFitsRW.h" line="76" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_fits_r_w_1ade47d79d05c48535112033bc59c3dfe3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::FitsRW::tmax</definition>
+        <argsstring>(double tmx)</argsstring>
+        <name>tmax</name>
+        <param>
+          <type>double</type>
+          <declname>tmx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFitsRW.h" line="77" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_fits_r_w_1ac26e70dc8022e2db7b66b905db9254bc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::FitsRW::tmax</definition>
+        <argsstring>() const</argsstring>
+        <name>tmax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFitsRW.h" line="78" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_fits_r_w_1a4623fc86fd9a15e02a9cf69afd39b4a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::FitsRW::nt</definition>
+        <argsstring>(size_t nn)</argsstring>
+        <name>nt</name>
+        <param>
+          <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+          <declname>nn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFitsRW.h" line="79" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_fits_r_w_1aeeac4977e6a717ff16ecc1c9f8547fc6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+        <definition>size_t Gyoto::FitsRW::nt</definition>
+        <argsstring>() const</argsstring>
+        <name>nt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFitsRW.h" line="80" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_fits_r_w_1ad3b31c5c66bad239d37a8fdb8a7b19b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::FitsRW::dt</definition>
+        <argsstring>(double dd)</argsstring>
+        <name>dt</name>
+        <param>
+          <type>double</type>
+          <declname>dd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFitsRW.h" line="81" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_fits_r_w_1a138b0e1ed14b34f90fb0c9c6129701ef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::FitsRW::dt</definition>
+        <argsstring>() const</argsstring>
+        <name>dt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFitsRW.h" line="82" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_fits_r_w_1a27f9d9fabf314c8d791dd003c764b078" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::FitsRW::getIndices</definition>
+        <argsstring>(size_t i[2], double const nu, double const tt, double *const freq_array) const</argsstring>
+        <name>getIndices</name>
+        <param>
+          <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+          <declname>i</declname>
+          <array>[2]</array>
+        </param>
+        <param>
+          <type>double const</type>
+          <declname>nu</declname>
+        </param>
+        <param>
+          <type>double const</type>
+          <declname>tt</declname>
+        </param>
+        <param>
+          <type>double *const</type>
+          <declname>freq_array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFitsRW.h" line="131" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_fits_r_w_1af2ffb96dc970c8ba6fd1a8413bc3eadb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::FitsRW::interpolate</definition>
+        <argsstring>(double nu, double tt, double *const array, double *const freq_array) const</argsstring>
+        <name>interpolate</name>
+        <param>
+          <type>double</type>
+          <declname>nu</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>tt</declname>
+        </param>
+        <param>
+          <type>double *const</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>double *const</type>
+          <declname>freq_array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFitsRW.h" line="132" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Gyoto::Astrobj::Plasmoid</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_plasmoid"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gyoto::FitsRW</label>
+        <link refid="class_gyoto_1_1_fits_r_w"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/junichi/Gyoto/include/GyotoFitsRW.h" line="50" column="1" bodyfile="/home/junichi/Gyoto/include/GyotoFitsRW.h" bodystart="51" bodyend="134"/>
+    <listofallmembers>
+      <member refid="class_gyoto_1_1_fits_r_w_1adc59606e73c8b69015f429c563ddcea1" prot="public" virt="virtual"><scope>Gyoto::FitsRW</scope><name>clone</name></member>
+      <member refid="class_gyoto_1_1_fits_r_w_1ad3b31c5c66bad239d37a8fdb8a7b19b8" prot="public" virt="non-virtual"><scope>Gyoto::FitsRW</scope><name>dt</name></member>
+      <member refid="class_gyoto_1_1_fits_r_w_1a138b0e1ed14b34f90fb0c9c6129701ef" prot="public" virt="non-virtual"><scope>Gyoto::FitsRW</scope><name>dt</name></member>
+      <member refid="class_gyoto_1_1_fits_r_w_1af4b29f91f536976485cdcf4b36263b08" prot="private" virt="non-virtual"><scope>Gyoto::FitsRW</scope><name>dt_</name></member>
+      <member refid="class_gyoto_1_1_fits_r_w_1a0caeff4b020d150f2b879bba05f038a7" prot="public" virt="non-virtual"><scope>Gyoto::FitsRW</scope><name>FitsRW</name></member>
+      <member refid="class_gyoto_1_1_fits_r_w_1af423b2db473aa19f2de976bfeb8004ba" prot="public" virt="non-virtual"><scope>Gyoto::FitsRW</scope><name>FitsRW</name></member>
+      <member refid="class_gyoto_1_1_fits_r_w_1a27f9d9fabf314c8d791dd003c764b078" prot="public" virt="non-virtual"><scope>Gyoto::FitsRW</scope><name>getIndices</name></member>
+      <member refid="class_gyoto_1_1_fits_r_w_1af2ffb96dc970c8ba6fd1a8413bc3eadb" prot="public" virt="non-virtual"><scope>Gyoto::FitsRW</scope><name>interpolate</name></member>
+      <member refid="class_gyoto_1_1_fits_r_w_1a82febeee4c59cc8a34f934ed17acc825" prot="public" virt="non-virtual"><scope>Gyoto::FitsRW</scope><name>nnu</name></member>
+      <member refid="class_gyoto_1_1_fits_r_w_1af701f65e85f5e2091eb6ec1aed2b386b" prot="public" virt="non-virtual"><scope>Gyoto::FitsRW</scope><name>nnu</name></member>
+      <member refid="class_gyoto_1_1_fits_r_w_1a10a0a3b083eb2c1fcc12919ec2bad052" prot="private" virt="non-virtual"><scope>Gyoto::FitsRW</scope><name>nnu_</name></member>
+      <member refid="class_gyoto_1_1_fits_r_w_1a4623fc86fd9a15e02a9cf69afd39b4a1" prot="public" virt="non-virtual"><scope>Gyoto::FitsRW</scope><name>nt</name></member>
+      <member refid="class_gyoto_1_1_fits_r_w_1aeeac4977e6a717ff16ecc1c9f8547fc6" prot="public" virt="non-virtual"><scope>Gyoto::FitsRW</scope><name>nt</name></member>
+      <member refid="class_gyoto_1_1_fits_r_w_1addc1e4d45f6f70c0772aa2a11112614d" prot="private" virt="non-virtual"><scope>Gyoto::FitsRW</scope><name>nt_</name></member>
+      <member refid="class_gyoto_1_1_fits_r_w_1a8e5a19b9e67e5c9b09a79d67c3205580" prot="public" virt="non-virtual"><scope>Gyoto::FitsRW</scope><name>numax</name></member>
+      <member refid="class_gyoto_1_1_fits_r_w_1a2c7e004208a1db06bfa1938f93de7eda" prot="public" virt="non-virtual"><scope>Gyoto::FitsRW</scope><name>numax</name></member>
+      <member refid="class_gyoto_1_1_fits_r_w_1a018580f837c25a4919b95a77ebb5fbea" prot="private" virt="non-virtual"><scope>Gyoto::FitsRW</scope><name>numax_</name></member>
+      <member refid="class_gyoto_1_1_fits_r_w_1a14618821e7ff186cd77f3fe5faa701f3" prot="public" virt="non-virtual"><scope>Gyoto::FitsRW</scope><name>numin</name></member>
+      <member refid="class_gyoto_1_1_fits_r_w_1a150d23f4b7e8c4605e461dae265475e8" prot="public" virt="non-virtual"><scope>Gyoto::FitsRW</scope><name>numin</name></member>
+      <member refid="class_gyoto_1_1_fits_r_w_1a94a04f2771440e81b4d1b3c6e4d29854" prot="private" virt="non-virtual"><scope>Gyoto::FitsRW</scope><name>numin_</name></member>
+      <member refid="class_gyoto_1_1_fits_r_w_1ade47d79d05c48535112033bc59c3dfe3" prot="public" virt="non-virtual"><scope>Gyoto::FitsRW</scope><name>tmax</name></member>
+      <member refid="class_gyoto_1_1_fits_r_w_1ac26e70dc8022e2db7b66b905db9254bc" prot="public" virt="non-virtual"><scope>Gyoto::FitsRW</scope><name>tmax</name></member>
+      <member refid="class_gyoto_1_1_fits_r_w_1a93d2ec4a27a4ef7f2d44836d1fb1b186" prot="private" virt="non-virtual"><scope>Gyoto::FitsRW</scope><name>tmax_</name></member>
+      <member refid="class_gyoto_1_1_fits_r_w_1aff02a975aa91dc1326522a94dc28d39b" prot="public" virt="non-virtual"><scope>Gyoto::FitsRW</scope><name>tmin</name></member>
+      <member refid="class_gyoto_1_1_fits_r_w_1a1956a5596ca90e35e452d928c144b17f" prot="public" virt="non-virtual"><scope>Gyoto::FitsRW</scope><name>tmin</name></member>
+      <member refid="class_gyoto_1_1_fits_r_w_1a7f21ee6956ffe28ae36b86ccdd61e63f" prot="private" virt="non-virtual"><scope>Gyoto::FitsRW</scope><name>tmin_</name></member>
+      <member refid="class_gyoto_1_1_fits_r_w_1ab6e0358850d4b8378c8011d940aa0ce3" prot="public" virt="virtual"><scope>Gyoto::FitsRW</scope><name>~FitsRW</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

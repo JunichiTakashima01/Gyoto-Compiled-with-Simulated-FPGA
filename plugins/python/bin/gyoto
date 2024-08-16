@@ -1,0 +1,10 @@
+#!/bin/sh
+set -e
+
+export LD_LIBRARY_PATH=/home/junichi/Gyoto/plugins/python/lib/.libs:$LD_LIBRARY_PATH
+export DYLD_LIBRARY_PATH=/home/junichi/Gyoto/plugins/python/lib/.libs:$DYLD_LIBRARY_PATH
+export GYOTO_PLUGINS=stdplug,nofail:lorene,python3.10
+
+/home/junichi/Gyoto/bin/gyoto $@
+
+exit 0

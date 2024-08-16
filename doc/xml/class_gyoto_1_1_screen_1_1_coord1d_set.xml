@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_gyoto_1_1_screen_1_1_coord1d_set" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Gyoto::Screen::Coord1dSet</compoundname>
+    <derivedcompoundref refid="class_gyoto_1_1_screen_1_1_angles" prot="public" virt="non-virtual">Gyoto::Screen::Angles</derivedcompoundref>
+    <derivedcompoundref refid="class_gyoto_1_1_screen_1_1_indices" prot="public" virt="non-virtual">Gyoto::Screen::Indices</derivedcompoundref>
+    <derivedcompoundref refid="class_gyoto_1_1_screen_1_1_range" prot="public" virt="non-virtual">Gyoto::Screen::Range</derivedcompoundref>
+    <derivedcompoundref refid="class_gyoto_1_1_screen_1_1_repeat_angle" prot="public" virt="non-virtual">Gyoto::Screen::RepeatAngle</derivedcompoundref>
+    <includes refid="_gyoto_screen_8h" local="no">GyotoScreen.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_screen_1_1_coord1d_set_1a1726f8ee2c39e25b3476b9e8cc257e1a" prot="public" static="no" mutable="no">
+        <type>const <ref refid="class_gyoto_1_1_screen_1a3d039508310efe3dcbf50204a3619b2f" kindref="member">CoordType_e</ref></type>
+        <definition>const CoordType_e Gyoto::Screen::Coord1dSet::kind</definition>
+        <argsstring></argsstring>
+        <name>kind</name>
+        <briefdescription>
+<para>Whether this specifier represents angles or pixels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="649" column="25" bodyfile="/home/junichi/Gyoto/include/GyotoScreen.h" bodystart="649" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gyoto_1_1_screen_1_1_coord1d_set_1aba29ec15bbbce1d87adb45c95f038277" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Screen::Coord1dSet::Coord1dSet</definition>
+        <argsstring>(CoordType_e k)</argsstring>
+        <name>Coord1dSet</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_screen_1a3d039508310efe3dcbf50204a3619b2f" kindref="member">CoordType_e</ref></type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+<para>Set kind during initialization. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="652" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_screen_1_1_coord1d_set_1aec39e7f4e09beb31e586a8c1e36a76fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Gyoto::Screen::Coord1dSet::~Coord1dSet</definition>
+        <argsstring>()</argsstring>
+        <name>~Coord1dSet</name>
+        <briefdescription>
+<para>Virtual destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="654" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_screen_1_1_coord1d_set_1a2bf82eac3458d79af3f21ebf005b87eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Screen::Coord1dSet::begin</definition>
+        <argsstring>()=0</argsstring>
+        <name>begin</name>
+        <reimplementedby refid="class_gyoto_1_1_screen_1_1_range_1a1950b31c1665d91b211d6e5a1d48fe6e">begin</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_screen_1_1_indices_1a923c175bb16c22df518c09ba4e0842fe">begin</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_screen_1_1_angles_1a4ba9094d47c7543b6872e19a72a59725">begin</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_screen_1_1_repeat_angle_1a92c95e94049645c11588af8ef2c61ce8">begin</reimplementedby>
+        <briefdescription>
+<para>Reset specifier to point to the first value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="656" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_screen_1_1_coord1d_set_1a7d823697b2cbf7ee12a7c18e50ca0fdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Gyoto::Screen::Coord1dSet::valid</definition>
+        <argsstring>()=0</argsstring>
+        <name>valid</name>
+        <reimplementedby refid="class_gyoto_1_1_screen_1_1_range_1a14f4b3f9f6e80612ddc0641b63c3207d">valid</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_screen_1_1_indices_1a5dd9f09adef16b7f00567d27a31c5e3a">valid</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_screen_1_1_angles_1afce50c5dc440e6ff34ad0d393873fd68">valid</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_screen_1_1_repeat_angle_1af3171d1131f881b88381fdd7572df1b6">valid</reimplementedby>
+        <briefdescription>
+<para>True if pointing to something, false if end has been reached. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="658" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_screen_1_1_coord1d_set_1a7b1c70cecb3c9f3a09713f66a5dc6dbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+        <definition>virtual size_t Gyoto::Screen::Coord1dSet::size</definition>
+        <argsstring>()=0</argsstring>
+        <name>size</name>
+        <reimplementedby refid="class_gyoto_1_1_screen_1_1_range_1a4392cab874a2917f56d33825a8a60960">size</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_screen_1_1_indices_1a645b2ef656a896263aa239d85c4d5b0d">size</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_screen_1_1_angles_1ae80abe1739bbe7b5e1e9ef133ddc9635">size</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_screen_1_1_repeat_angle_1ab3bd823340921d0ac1f7ad7e05e69cd2">size</reimplementedby>
+        <briefdescription>
+<para>Number of values in this container. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="660" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_screen_1_1_coord1d_set_1afa9b992fd12a2229ed6144184a6806df" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+        <definition>virtual size_t Gyoto::Screen::Coord1dSet::operator*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator*</name>
+        <reimplementedby refid="class_gyoto_1_1_screen_1_1_range_1a5535682dfa2c1eb3ad3ed120ce3d47b4">operator*</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_screen_1_1_indices_1af65883549a5f3faf4abea99ddd457e47">operator*</reimplementedby>
+        <briefdescription>
+<para>Get size_t value currently pointed to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="662" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_screen_1_1_coord1d_set_1a9b3a6aef00f09e8f918616f75ba86089" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double Gyoto::Screen::Coord1dSet::angle</definition>
+        <argsstring>() const</argsstring>
+        <name>angle</name>
+        <reimplementedby refid="class_gyoto_1_1_screen_1_1_angles_1a8a744ee3545d1c7c06f1c9e91f5d983c">angle</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_screen_1_1_repeat_angle_1a3be0dc75c13772eee143a575fe184cd7">angle</reimplementedby>
+        <briefdescription>
+<para>Get double value currently pointed to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="664" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_screen_1_1_coord1d_set_1a4673770278cc88ccfd96b4330c87af73" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_gyoto_1_1_screen_1_1_coord1d_set" kindref="compound">Coord1dSet</ref> &amp;</type>
+        <definition>virtual Coord1dSet&amp; Gyoto::Screen::Coord1dSet::operator++</definition>
+        <argsstring>()=0</argsstring>
+        <name>operator++</name>
+        <reimplementedby refid="class_gyoto_1_1_screen_1_1_range_1ae422e8807f45572cb000f181d0e0954a">operator++</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_screen_1_1_indices_1aceafb034d7a83af2500af9612bb9b678">operator++</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_screen_1_1_angles_1af14f72b3439b06de89e3edd4b3e2fba3">operator++</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_screen_1_1_repeat_angle_1ac52d2c935093592d80b6c862c57bea83">operator++</reimplementedby>
+        <briefdescription>
+<para>Increment iterator (point to next value) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="666" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_screen_1_1_coord1d_set_1a4788421884ca4bbc0914910956b7f19a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+        <definition>virtual size_t Gyoto::Screen::Coord1dSet::index</definition>
+        <argsstring>() const =0</argsstring>
+        <name>index</name>
+        <reimplementedby refid="class_gyoto_1_1_screen_1_1_range_1a15adf4d0b20888a70e3e0eed25b21851">index</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_screen_1_1_indices_1ae2c0b975c2e266f0e7d66a260c457485">index</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_screen_1_1_angles_1a65844515b23df98cb7dac287faa6e1d6">index</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_screen_1_1_repeat_angle_1a75ad2c681712dea72634e4eb9bf75d8b">index</reimplementedby>
+        <briefdescription>
+<para>Get index of value currently pointed to. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Starts at 0 and is implemented each time operator++ is called. Depending on the implementation, this may be a real index or computed on demand. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="673" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Set of 1-d coordinates: indices or angles. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Acts like a container (array-like) of either size_t (pixel coordinate) or double (angle) values. This container can be iterated-through using the <ref refid="class_gyoto_1_1_screen_1_1_coord1d_set_1a4673770278cc88ccfd96b4330c87af73" kindref="member">operator++()</ref>, derefenced using the <ref refid="class_gyoto_1_1_screen_1_1_coord1d_set_1afa9b992fd12a2229ed6144184a6806df" kindref="member">operator*()</ref> (if containing pixel coordinates) or <ref refid="class_gyoto_1_1_screen_1_1_coord1d_set_1a9b3a6aef00f09e8f918616f75ba86089" kindref="member">angle()</ref> (in containing angles). </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>Gyoto::Screen::RepeatAngle</label>
+        <link refid="class_gyoto_1_1_screen_1_1_repeat_angle"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Gyoto::Screen::Indices</label>
+        <link refid="class_gyoto_1_1_screen_1_1_indices"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Gyoto::Screen::Range</label>
+        <link refid="class_gyoto_1_1_screen_1_1_range"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gyoto::Screen::Angles</label>
+        <link refid="class_gyoto_1_1_screen_1_1_angles"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gyoto::Screen::Coord1dSet</label>
+        <link refid="class_gyoto_1_1_screen_1_1_coord1d_set"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="646" column="5" bodyfile="/home/junichi/Gyoto/include/GyotoScreen.h" bodystart="646" bodyend="674"/>
+    <listofallmembers>
+      <member refid="class_gyoto_1_1_screen_1_1_coord1d_set_1a9b3a6aef00f09e8f918616f75ba86089" prot="public" virt="virtual"><scope>Gyoto::Screen::Coord1dSet</scope><name>angle</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_coord1d_set_1a2bf82eac3458d79af3f21ebf005b87eb" prot="public" virt="pure-virtual"><scope>Gyoto::Screen::Coord1dSet</scope><name>begin</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_coord1d_set_1aba29ec15bbbce1d87adb45c95f038277" prot="public" virt="non-virtual"><scope>Gyoto::Screen::Coord1dSet</scope><name>Coord1dSet</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_coord1d_set_1a4788421884ca4bbc0914910956b7f19a" prot="public" virt="pure-virtual"><scope>Gyoto::Screen::Coord1dSet</scope><name>index</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_coord1d_set_1a1726f8ee2c39e25b3476b9e8cc257e1a" prot="public" virt="non-virtual"><scope>Gyoto::Screen::Coord1dSet</scope><name>kind</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_coord1d_set_1afa9b992fd12a2229ed6144184a6806df" prot="public" virt="virtual"><scope>Gyoto::Screen::Coord1dSet</scope><name>operator*</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_coord1d_set_1a4673770278cc88ccfd96b4330c87af73" prot="public" virt="pure-virtual"><scope>Gyoto::Screen::Coord1dSet</scope><name>operator++</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_coord1d_set_1a7b1c70cecb3c9f3a09713f66a5dc6dbf" prot="public" virt="pure-virtual"><scope>Gyoto::Screen::Coord1dSet</scope><name>size</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_coord1d_set_1a7d823697b2cbf7ee12a7c18e50ca0fdc" prot="public" virt="pure-virtual"><scope>Gyoto::Screen::Coord1dSet</scope><name>valid</name></member>
+      <member refid="class_gyoto_1_1_screen_1_1_coord1d_set_1aec39e7f4e09beb31e586a8c1e36a76fd" prot="public" virt="virtual"><scope>Gyoto::Screen::Coord1dSet</scope><name>~Coord1dSet</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

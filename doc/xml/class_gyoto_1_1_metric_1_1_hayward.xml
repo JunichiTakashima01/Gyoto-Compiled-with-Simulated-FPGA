@@ -1,0 +1,3376 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_gyoto_1_1_metric_1_1_hayward" kind="class" language="C++" prot="public">
+    <compoundname>Gyoto::Metric::Hayward</compoundname>
+    <basecompoundref refid="class_gyoto_1_1_metric_1_1_generic" prot="public" virt="non-virtual">Gyoto::Metric::Generic</basecompoundref>
+    <includes refid="_gyoto_hayward_8h" local="no">GyotoHayward.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_gyoto_1_1_metric_1_1_hayward_1a517c67a8871a44b2032ba1261e7694a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class Gyoto::SmartPointer&lt; Gyoto::Metric::Hayward &gt;</definition>
+        <argsstring></argsstring>
+        <name>Gyoto::SmartPointer&lt; Gyoto::Metric::Hayward &gt;</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_metric_1_1_hayward" kindref="compound">Gyoto::Metric::Hayward</ref> &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHayward.h" line="1" column="0" bodyfile="/home/junichi/Gyoto/include/GyotoHayward.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_metric_1_1_hayward_1ad97b48e1e85cb89d9d7ac3fc7aa63a1a" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::Metric::Hayward::charge_</definition>
+        <argsstring></argsstring>
+        <name>charge_</name>
+        <briefdescription>
+<para>Magnetic charge parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHayward.h" line="72" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoHayward.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_metric_1_1_hayward_1af659b77997060b737b7882556efc8e40" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::Metric::Hayward::spin_</definition>
+        <argsstring></argsstring>
+        <name>spin_</name>
+        <briefdescription>
+<para>Angular momentum parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHayward.h" line="73" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoHayward.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_metric_1_1_hayward_1ac03cec63f065f9754e25f8ac03806665" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::Metric::Hayward::a2_</definition>
+        <argsstring></argsstring>
+        <name>a2_</name>
+        <briefdescription>
+<para>spin_*spin_ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHayward.h" line="74" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoHayward.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_metric_1_1_hayward_1abcbc9594d5b566fb62a57c325355ca3f" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::Metric::Hayward::a3_</definition>
+        <argsstring></argsstring>
+        <name>a3_</name>
+        <briefdescription>
+<para>a2_*spin_ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHayward.h" line="75" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoHayward.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_metric_1_1_hayward_1a070a141e0740d361bfc4c77895e6468c" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::Metric::Hayward::a4_</definition>
+        <argsstring></argsstring>
+        <name>a4_</name>
+        <briefdescription>
+<para>a2_*a2_ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHayward.h" line="76" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoHayward.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_metric_1_1_hayward_1ad7bc51297f1c01f1a89772087576b42e" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::Metric::Hayward::b2_</definition>
+        <argsstring></argsstring>
+        <name>b2_</name>
+        <briefdescription>
+<para>charge_*charge_ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHayward.h" line="77" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoHayward.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_metric_1_1_generic_1a546e231862e8bb473845cfa18b086378" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::Metric::Generic::delta_min_</definition>
+        <argsstring></argsstring>
+        <name>delta_min_</name>
+        <briefdescription>
+<para>Minimum integration step for the adaptive integrator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="179" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoMetric.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_metric_1_1_generic_1a53722a985ed8e0b4f7947cd88c032a13" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::Metric::Generic::delta_max_</definition>
+        <argsstring></argsstring>
+        <name>delta_max_</name>
+        <briefdescription>
+<para>Maximum integration step for the adaptive integrator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="180" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoMetric.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_metric_1_1_generic_1a87c5eb06a56f68905ebc7ff17ed2a24c" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::Metric::Generic::delta_max_over_r_</definition>
+        <argsstring></argsstring>
+        <name>delta_max_over_r_</name>
+        <briefdescription>
+<para>Numerical tuning parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Ensure that delta (the numerical integration step) is never larger than a fraction of the distance between the current location and the center of the coordinate system.</para>
+<para>For investigations close to the event horizon, 0.5 is usually fine. If high accuracy is needed long after deflection (weak lensing), then this must be smaller. A good test is to look at a MinDistance map for a FixedStar: it must be smooth. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="194" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoMetric.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_metric_1_1_generic_1a39b87eec8135757dc1b5b5f5729da5c4" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gyoto::Metric::Generic::keplerian_</definition>
+        <argsstring></argsstring>
+        <name>keplerian_</name>
+        <briefdescription>
+<para>1 if circularVelocity should return the Newtonian Keplerian velocity, in r^-3/2 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="196" column="8" bodyfile="/home/junichi/Gyoto/include/GyotoMetric.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_object_1ac48ad88e3ef229ba0d0fe68a94a7118f" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gyoto::Object::kind_</definition>
+        <argsstring></argsstring>
+        <name>kind_</name>
+        <briefdescription>
+<para>The &quot;kind&quot; that is output in the XML entity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>E.g. for an <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref>, <ref refid="class_gyoto_1_1_object_1a0ffc3f84b4c2372d639eb848605fb1f3" kindref="member">fillElement()</ref> will ensure <programlisting><codeline><highlight class="normal">&lt;Astrobj<sp/>kind=&quot;kind_&quot;<sp/>...&gt;...&lt;/Astrobj&gt;</highlight></codeline>
+</programlisting> is written. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="162" column="15" bodyfile="/home/junichi/Gyoto/include/GyotoObject.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_object_1a01832761cd5f0a12319e3e24ce9a9fba" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; Gyoto::Object::plugins_</definition>
+        <argsstring></argsstring>
+        <name>plugins_</name>
+        <briefdescription>
+<para>The plug-ins that needs to be loaded to access this instance&apos;s class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>E.g. for an <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref>, <ref refid="class_gyoto_1_1_object_1a0ffc3f84b4c2372d639eb848605fb1f3" kindref="member">fillElement()</ref> will ensure <programlisting><codeline><highlight class="normal">&lt;Astrobj<sp/>...<sp/>plugin=&quot;plugins_&quot;&gt;...&lt;/Astrobj&gt;</highlight></codeline>
+</programlisting> is written. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="172" column="15" bodyfile="/home/junichi/Gyoto/include/GyotoObject.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_metric_1_1_hayward_1a9d8b93c22c7a474d88a08c7c3233f754" prot="public" static="yes" mutable="no">
+        <type><ref refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" kindref="member">GYOTO_OBJECT</ref> <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const</type>
+        <definition>GYOTO_OBJECT Property const Gyoto::Metric::Hayward::properties[]</definition>
+        <argsstring>[]</argsstring>
+        <name>properties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHayward.h" line="82" column="42" bodyfile="/home/junichi/Gyoto/include/GyotoHayward.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_hayward_1ae5e2a3f3c19d045fb40fcb62e5e1d959" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const  *</type>
+        <definition>virtual Property const* Gyoto::Metric::Hayward::getProperties</definition>
+        <argsstring>() const</argsstring>
+        <name>getProperties</name>
+        <reimplements refid="class_gyoto_1_1_metric_1_1_generic_1a0cc1a0a93d1d49b83ba88e613d5bd9d3">getProperties</reimplements>
+        <briefdescription>
+<para>Get list of properties. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is declared automatically by the <ref refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" kindref="member">GYOTO_OBJECT</ref> macro and defined automatically by the <ref refid="_gyoto_property_8h_1a1356435ea7ee0e18d07201a80e034dcc" kindref="member">GYOTO_PROPERTY_END</ref> macro. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHayward.h" line="82" column="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_hayward_1af1c28983894541a2f1f3f9f07d67d4fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Metric::Hayward::Hayward</definition>
+        <argsstring>()</argsstring>
+        <name>Hayward</name>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHayward.h" line="83" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_hayward_1abec3dee6acae3629fa733a7ecc9d96af" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_gyoto_1_1_metric_1_1_hayward" kindref="compound">Hayward</ref> *</type>
+        <definition>virtual Hayward* Gyoto::Metric::Hayward::clone</definition>
+        <argsstring>() const</argsstring>
+        <name>clone</name>
+        <reimplements refid="class_gyoto_1_1_metric_1_1_generic_1a2bb06777240b34baf3e1b7390674ae4f">clone</reimplements>
+        <briefdescription>
+<para>Virtual copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHayward.h" line="84" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_hayward_1ad0102b80c0dddb83e81b1e96d7e24527" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Metric::Hayward::spin</definition>
+        <argsstring>(const double spin)</argsstring>
+        <name>spin</name>
+        <param>
+          <type>const double</type>
+          <declname>spin</declname>
+        </param>
+        <briefdescription>
+<para>Set spin. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHayward.h" line="88" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_hayward_1a7e309e276a919df0e1c47a3f03d4d41f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Metric::Hayward::spin</definition>
+        <argsstring>() const</argsstring>
+        <name>spin</name>
+        <briefdescription>
+<para>Returns spin. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHayward.h" line="89" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_hayward_1af698693eabef496ecfacce2103aaa5d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Metric::Hayward::charge</definition>
+        <argsstring>(const double charge)</argsstring>
+        <name>charge</name>
+        <param>
+          <type>const double</type>
+          <declname>charge</declname>
+        </param>
+        <briefdescription>
+<para>Set charge. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHayward.h" line="90" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_hayward_1a5d68ff770a2b37b860224b8809c5e617" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Metric::Hayward::charge</definition>
+        <argsstring>() const</argsstring>
+        <name>charge</name>
+        <briefdescription>
+<para>Returns charge. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHayward.h" line="91" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_hayward_1ac3d0c351d970a8f22e0e1d4786996e5b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double Gyoto::Metric::Hayward::getSpecificAngularMomentum</definition>
+        <argsstring>(double rr) const</argsstring>
+        <name>getSpecificAngularMomentum</name>
+        <reimplements refid="class_gyoto_1_1_metric_1_1_generic_1a745db8f6377b8b9e1ced42ea174de938">getSpecificAngularMomentum</reimplements>
+        <param>
+          <type>double</type>
+          <declname>rr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the specific angular momentum l=-u_phi/u_t Should be implemented in derived classes if useful If called on the base class, returns an error </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHayward.h" line="94" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_hayward_1adbdab25beb020afdff6575a10933f395" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double Gyoto::Metric::Hayward::getPotential</definition>
+        <argsstring>(double const pos[4], double l_cst) const</argsstring>
+        <name>getPotential</name>
+        <reimplements refid="class_gyoto_1_1_metric_1_1_generic_1ab045442f6aa20bec44cb7017bac91103">getPotential</reimplements>
+        <param>
+          <type>double const</type>
+          <declname>pos</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>l_cst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns potential W=-ln(|u_t|) for a cst specific angular momentum l_cst Should be implemented in derived classes if useful If called on the base class, returns an error </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHayward.h" line="95" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_hayward_1a6f04a7ed03855723ddb7ccce6d797169" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Metric::Hayward::circularVelocity</definition>
+        <argsstring>(double const coor[4], double vel[4], double dir) const</argsstring>
+        <name>circularVelocity</name>
+        <reimplements refid="class_gyoto_1_1_metric_1_1_generic_1afcaf16029a21fff9c110b4171956f079">circularVelocity</reimplements>
+        <param>
+          <type>double const</type>
+          <declname>pos</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>vel</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+<para>Yield circular velocity at a given position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Give the velocity of a massive particle in circular orbit at the given position projected onto the equatorial plane. Such a velocity may not exist everywhere (or anywhere) for a given metric. This method is intended to be used by <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref> classes such as Torus or ThinDisk.</para>
+<para>If keplerian_ is set to true, this method should return the Keplerian velcity instead (derived classes should ensure this, see <ref refid="class_gyoto_1_1_metric_1_1_kerr_b_l_1a553b15f36f209215cffe92be812629e6" kindref="member">KerrBL::circularVelocity()</ref> for instance).</para>
+<para>The default implementation throws an error if keplerian_ is set to false.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input: position, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output: velocity, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1 for corotating, -1 for counterrotating. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHayward.h" line="98" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_hayward_1ada32a695e229fb476a09c32087171547" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gyoto::Metric::Hayward::gmunu</definition>
+        <argsstring>(double ARGOUT_ARRAY2[4][4], const double IN_ARRAY1[4]) const</argsstring>
+        <name>gmunu</name>
+        <reimplements refid="class_gyoto_1_1_metric_1_1_generic_1a299bbfa89f2bbd5afc94f6eec68a7818">gmunu</reimplements>
+        <param>
+          <type>double</type>
+          <declname>ARGOUT_ARRAY2</declname>
+          <array>[4][4]</array>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>IN_ARRAY1</declname>
+          <array>[4]</array>
+        </param>
+        <briefdescription>
+<para><ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> coefficients. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default implementation calls double gmunu(const double * x, int mu, int nu) const.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">ARGOUT_ARRAY2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(g) 4x4 array to store the coeefficients </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">IN_ARRAY1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(x) 4-position at which to compute the coefficients; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> coefficient g<subscript><mu/>,<nu/></subscript> at point x </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHayward.h" line="102" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_hayward_1a36ca2ffee58cd7a3e48b5812a4f87361" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double Gyoto::Metric::Hayward::gmunu</definition>
+        <argsstring>(double const x[4], int mu, int nu) const</argsstring>
+        <name>gmunu</name>
+        <reimplements refid="class_gyoto_1_1_metric_1_1_generic_1a763b7fd883fb049973df233d92264600">gmunu</reimplements>
+        <param>
+          <type>double const</type>
+          <declname>x</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nu</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> coefficients. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default implementation calls <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref>:: gmunu(double g[4][4], const double * pos) const</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>4-position at which to compute the coefficient; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1st index of coefficient, 0<le/><mu/><le/>3; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>2nd index of coefficient, 0<le/><nu/><le/>3; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> coefficient g<subscript><mu/>,<nu/></subscript> at point x </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHayward.h" line="103" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_hayward_1a7cc3fe0aa9695182b6abfd56db74c2b3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gyoto::Metric::Hayward::gmunu_up</definition>
+        <argsstring>(double ARGOUT_ARRAY2[4][4], const double IN_ARRAY1[4]) const</argsstring>
+        <name>gmunu_up</name>
+        <reimplements refid="class_gyoto_1_1_metric_1_1_generic_1a87740431cdee0939eaaca6445b222863">gmunu_up</reimplements>
+        <param>
+          <type>double</type>
+          <declname>ARGOUT_ARRAY2</declname>
+          <array>[4][4]</array>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>IN_ARRAY1</declname>
+          <array>[4]</array>
+        </param>
+        <briefdescription>
+<para><ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> contravariant coefficients. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default implementation inverts the covariant coefficients matrix. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHayward.h" line="104" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_hayward_1a522465c8e3a6b9e6bd4d21a8dc68eb2a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double Gyoto::Metric::Hayward::gmunu_up</definition>
+        <argsstring>(double const x[4], int mu, int nu) const</argsstring>
+        <name>gmunu_up</name>
+        <reimplements refid="class_gyoto_1_1_metric_1_1_generic_1acdd26facb907606d51ba1e1bb17c3474">gmunu_up</reimplements>
+        <param>
+          <type>double const</type>
+          <declname>x</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nu</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> contravariant coefficients. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default implementation calls <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref>:: gmunu_up(double g[4][4], const double * pos) const</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>4-position at which to compute the coefficient; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1st index of coefficient, 0<le/><mu/><le/>3; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>2nd index of coefficient, 0<le/><nu/><le/>3; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> coefficient g<superscript><mu/>,<nu/></superscript> at point x </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHayward.h" line="105" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_hayward_1ac861de2db8008150f4f0ebf06d80302e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Gyoto::Metric::Hayward::christoffel</definition>
+        <argsstring>(double dst[4][4][4], const double pos[4]) const</argsstring>
+        <name>christoffel</name>
+        <reimplements refid="class_gyoto_1_1_metric_1_1_generic_1aa011ca4f331ef9b56223ed52c8e5a665">christoffel</reimplements>
+        <param>
+          <type>double</type>
+          <declname>dst</declname>
+          <array>[4][4][4]</array>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>coord</declname>
+          <array>[4]</array>
+        </param>
+        <briefdescription>
+<para>Chistoffel symbol. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> of Christoffel symbol <Gamma/><superscript><alpha/></superscript><subscript><mu/><nu/></subscript> at point (x<subscript>1</subscript>, x<subscript>2</subscript>, x<subscript>3</subscript>).</para>
+<para><simplesect kind="return"><para>1 on error, 0 otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHayward.h" line="107" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_hayward_1a73722ddfcd3783aed6ddcdd265ba78c8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double Gyoto::Metric::Hayward::ScalarProd</definition>
+        <argsstring>(const double pos[4], const double u1[4], const double u2[4]) const</argsstring>
+        <name>ScalarProd</name>
+        <reimplements refid="class_gyoto_1_1_metric_1_1_generic_1ac5bfd30a216cb6654cd992c1a42d6075">ScalarProd</reimplements>
+        <param>
+          <type>const double</type>
+          <declname>pos</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>u1</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>u2</declname>
+          <array>[4]</array>
+        </param>
+        <briefdescription>
+<para>Scalar product. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute the scalarproduct of the two quadrivectors u1 and u2 in this <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref>, at point pos expressed in coordinate system sys. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>4-position; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>u1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1st quadrivector; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>u2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>2nd quadrivector; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>u1*u2 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHayward.h" line="110" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_hayward_1a596d2b3773e278f95ea362ec43ed9667" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>virtual double Gyoto::Metric::Generic::christoffel</definition>
+        <argsstring>(const double coord[4], const int alpha, const int mu, const int nu) const</argsstring>
+        <name>christoffel</name>
+        <param>
+          <type>const double</type>
+          <declname>coord</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>nu</declname>
+        </param>
+        <briefdescription>
+<para>Chistoffel symbol. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> of Christoffel symbol <Gamma/><superscript><alpha/></superscript><subscript><mu/><nu/></subscript> at point (x<subscript>1</subscript>, x<subscript>2</subscript>, x<subscript>3</subscript>). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHayward.h" line="106" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_hayward_1aa011ca4f331ef9b56223ed52c8e5a665" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>virtual int Gyoto::Metric::Generic::christoffel</definition>
+        <argsstring>(double dst[4][4][4], const double coord[4]) const</argsstring>
+        <name>christoffel</name>
+        <param>
+          <type>double</type>
+          <declname>dst</declname>
+          <array>[4][4][4]</array>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>coord</declname>
+          <array>[4]</array>
+        </param>
+        <briefdescription>
+<para>Chistoffel symbol. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> of Christoffel symbol <Gamma/><superscript><alpha/></superscript><subscript><mu/><nu/></subscript> at point (x<subscript>1</subscript>, x<subscript>2</subscript>, x<subscript>3</subscript>).</para>
+<para><simplesect kind="return"><para>1 on error, 0 otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHayward.h" line="106" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1af77fb58e4ed3399aece00dbcbcdb821b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gyoto::Metric::Generic::coordKind</definition>
+        <argsstring>() const</argsstring>
+        <name>coordKind</name>
+        <briefdescription>
+<para>Get coordinate kind. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="229" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a795ec4f876df5d582df28a9923fd6411" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gyoto::Metric::Generic::getRefCount</definition>
+        <argsstring>()</argsstring>
+        <name>getRefCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="211" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1aa3dbb89d1eee82617b1632f2f1e35b60" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Metric::Generic::mass</definition>
+        <argsstring>(const double)</argsstring>
+        <name>mass</name>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_shift_1a9bfa851217dc0dc40d9cde54c650a915">mass</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_python_1a935d32b21af382aeabf85908d1b51517">mass</reimplementedby>
+        <param>
+          <type>const double</type>
+        </param>
+        <briefdescription>
+<para>Set mass used in <ref refid="class_gyoto_1_1_metric_1_1_generic_1abd6bfc4aef563b64318b5168f83a49fb" kindref="member">unitLength()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="224" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1af61769eacdd15f6d6c411214b575c62b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Metric::Generic::mass</definition>
+        <argsstring>(const double, const std::string &amp;unit)</argsstring>
+        <name>mass</name>
+        <param>
+          <type>const double</type>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Set mass used in <ref refid="class_gyoto_1_1_metric_1_1_generic_1abd6bfc4aef563b64318b5168f83a49fb" kindref="member">unitLength()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="225" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a9ae43ad3fcad9bb2ee21a5d8de104eda" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Metric::Generic::mass</definition>
+        <argsstring>() const</argsstring>
+        <name>mass</name>
+        <briefdescription>
+<para>Get mass used in <ref refid="class_gyoto_1_1_metric_1_1_generic_1abd6bfc4aef563b64318b5168f83a49fb" kindref="member">unitLength()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="231" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a3f71a0587fd43e8446cab025bfdd327c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Metric::Generic::mass</definition>
+        <argsstring>(const std::string &amp;unit) const</argsstring>
+        <name>mass</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Get mass used in <ref refid="class_gyoto_1_1_metric_1_1_generic_1abd6bfc4aef563b64318b5168f83a49fb" kindref="member">unitLength()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="232" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1abd6bfc4aef563b64318b5168f83a49fb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Metric::Generic::unitLength</definition>
+        <argsstring>() const</argsstring>
+        <name>unitLength</name>
+        <briefdescription>
+<para>M * G / c^2, M is in kg, unitLength in meters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Metrics implementations are free to express lengths and distances in whatever unit they see fit (presumably most often geometrical units). This function returns this unit in SI (meters). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="239" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a74c7861961278d587a15b067c43069f0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Metric::Generic::unitLength</definition>
+        <argsstring>(const std::string &amp;unit) const</argsstring>
+        <name>unitLength</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>unitLength expressed in specified unit </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="240" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a9b3e894772e2bce0cf107fa632ed4496" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double Gyoto::Metric::Generic::getRmb</definition>
+        <argsstring>() const</argsstring>
+        <name>getRmb</name>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_kerr_b_l_1a29326b092fa6e76a6395558e1b0151b9">getRmb</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a2f33d1cb9df0d06d74c208a6b5df26db">getRmb</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_rezzolla_zhidenko_1a14f3820829339d0fdbaebf197341a2f3">getRmb</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_python_1abf1781d71384204e5fd98bf6e8e43298">getRmb</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the marginally bound radius Should be implemented in derived classes if useful If called on the base class, returns an error </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="247" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a4dab1e5dadbafd87992d52e731e1c9f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double Gyoto::Metric::Generic::getRms</definition>
+        <argsstring>() const</argsstring>
+        <name>getRms</name>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_kerr_b_l_1a13365421462e5d0228c8f6a3e16f5921">getRms</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a919e2eec75a7b820c370aacbb7682c4b">getRms</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_rezzolla_zhidenko_1a60354ba0b6e8e5a90e60ac6c41428e34">getRms</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_python_1a8e052561441fa18973a80d50bef31b8f">getRms</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the marginally stable (ISCO) radius Should be implemented in derived classes if useful If called on the base class, returns an error </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="254" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a809e6419cb528829c8afa30430b710ab" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Metric::Generic::deltaMin</definition>
+        <argsstring>() const</argsstring>
+        <name>deltaMin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get delta_min_ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="273" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a7b4a5908eb4ed3ed255947966f6faf50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Metric::Generic::deltaMin</definition>
+        <argsstring>(double h1)</argsstring>
+        <name>deltaMin</name>
+        <param>
+          <type>double</type>
+          <declname>h1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set delta_min_ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="278" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a0747da4b348993a84c958d0a6e669c62" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Metric::Generic::deltaMax</definition>
+        <argsstring>() const</argsstring>
+        <name>deltaMax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get delta_max_ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="283" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a1d349921ec1e0549b47bbdd3c31e8bc2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double Gyoto::Metric::Generic::deltaMax</definition>
+        <argsstring>(double const pos[8], double delta_max_external) const</argsstring>
+        <name>deltaMax</name>
+        <param>
+          <type>double const</type>
+          <declname>pos</declname>
+          <array>[8]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>delta_max_external</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get delta max at a given position</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>4-position </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>[optional]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>delta_max_external external constraint on delta_max </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the smallest value between delta_max_, delta_max_external, and R*delta_max_over_r_ where R is pos[1] in spherical coordinates and max(x1, x2, x3) in Cartesian coordinates. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="295" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a17791da16af037e2acb7c6ace2cfd5a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Metric::Generic::deltaMax</definition>
+        <argsstring>(double h1)</argsstring>
+        <name>deltaMax</name>
+        <param>
+          <type>double</type>
+          <declname>h1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set delta_max_ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="300" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1abe2328a722fb2dc37d55c6ae98bd659a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Metric::Generic::deltaMaxOverR</definition>
+        <argsstring>() const</argsstring>
+        <name>deltaMaxOverR</name>
+        <briefdescription>
+<para>Get delta_max_over_r_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="302" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a2c9ed9d165040f96e72136043a674b3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Metric::Generic::deltaMaxOverR</definition>
+        <argsstring>(double t)</argsstring>
+        <name>deltaMaxOverR</name>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Set delta_max_over_r_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="303" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a3b60d77fac2903c94c3ae5fbd6566668" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gyoto::Metric::Generic::keplerian</definition>
+        <argsstring>() const</argsstring>
+        <name>keplerian</name>
+        <briefdescription>
+<para>Get keplerian_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="305" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a5aad6a8c1cf296ef0ad276b23614d35d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Metric::Generic::keplerian</definition>
+        <argsstring>(bool)</argsstring>
+        <name>keplerian</name>
+        <param>
+          <type>bool</type>
+        </param>
+        <briefdescription>
+<para>Set keplerian_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="306" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1ab0b9d853d673f621c960e1290db5e3c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Metric::Generic::cartesianVelocity</definition>
+        <argsstring>(double const coord[8], double vel[3])</argsstring>
+        <name>cartesianVelocity</name>
+        <param>
+          <type>double const</type>
+          <declname>coord</declname>
+          <array>[8]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>vel</declname>
+          <array>[3]</array>
+        </param>
+        <briefdescription>
+<para>Compute xprime, yprime and zprime from 8-coordinates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="308" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a0077ac6a240b042dbe3487298eac4ef0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double Gyoto::Metric::Generic::SysPrimeToTdot</definition>
+        <argsstring>(const double coord[4], const double v[3]) const</argsstring>
+        <name>SysPrimeToTdot</name>
+        <param>
+          <type>const double</type>
+          <declname>coord</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>v</declname>
+          <array>[3]</array>
+        </param>
+        <briefdescription>
+<para>Compute tdot as a function of dr/dt, dtheta/dt and dphi/dt. Everything is in geometrical units. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coord</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>4-position (geometrical units); </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>3-velocity dx1/dx0, dx2/dx0, dx3/dx0; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>tdot = dx0/dtau. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="316" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a325f414c1c393c7142b42889e2be8257" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Metric::Generic::zamoVelocity</definition>
+        <argsstring>(double const pos[4], double vel[4]) const</argsstring>
+        <name>zamoVelocity</name>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_kerr_b_l_1a944a39adafbf76b4804929589a618b01">zamoVelocity</reimplementedby>
+        <param>
+          <type>double const</type>
+          <declname>pos</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>vel</declname>
+          <array>[4]</array>
+        </param>
+        <briefdescription>
+<para>Yield ZAMO velocity at a given position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Give the velocity of a zero angular momentul observer (whatever is closest to &quot;at rest&quot;). The default implementation simply projects (1, 0, 0, 0) othogonally along ephi and normalizes it, thus ensuring that vel is orthogonal to ephi.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input: position, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output: velocity, </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="353" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1adaf7d03d118b4625447d20746857cdc8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Metric::Generic::nullifyCoord</definition>
+        <argsstring>(double coord[8]) const</argsstring>
+        <name>nullifyCoord</name>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_kerr_b_l_1a4b1d76722686bc76988eaac1a8923947">nullifyCoord</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>coord</declname>
+          <array>[8]</array>
+        </param>
+        <briefdescription>
+<para>Set tdot (coord[4]) such that coord is light-like. Everything is in geometrical units. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Set coord[4] so that the 4-velocity coord[4:7] is lightlike, i.e. of norm 0. There may be up to two solutions. coord[4] is set to the hightest. The lowest can be retrieved using <ref refid="class_gyoto_1_1_metric_1_1_generic_1ab1c920d3c040b73dc0c12197b0a430e5" kindref="member">nullifyCoord(double coord[8], double&amp; tdot2) const</ref>. Everything is expressed in geometrical units.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">coord</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>8-position, coord[4] will be set according to the other elements; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="365" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1ab1c920d3c040b73dc0c12197b0a430e5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Metric::Generic::nullifyCoord</definition>
+        <argsstring>(double coord[8], double &amp;tdot2) const</argsstring>
+        <name>nullifyCoord</name>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_kerr_b_l_1a24367da4de2e399f00ba3e3bca6919f8">nullifyCoord</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>coord</declname>
+          <array>[8]</array>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>tdot2</declname>
+        </param>
+        <briefdescription>
+<para>Set tdot (coord[4]) such that coord is light-like and return other possible tdot. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Set coord[4] so that the 4-velocity coord[4:7] is lightlike, i.e. of norm 0. There may be up to two solutions. coord[4] is set to the hightest. The lowest can be retrieved in tdot2. Everything is expressed in geometrical units.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">coord</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>8-position, coord[4] will be set according to the other elements; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">tdot2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be set to the smallest solution </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="378" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1aa8b34cc32bd8e324e7852f87d08cf6b2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Metric::Generic::normalizeFourVel</definition>
+        <argsstring>(double coord[8]) const</argsstring>
+        <name>normalizeFourVel</name>
+        <param>
+          <type>double</type>
+          <declname>coord</declname>
+          <array>[8]</array>
+        </param>
+        <briefdescription>
+<para>Normalize fourvelvel to -1. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>First computes threevel as xiprime=xidot/x0dot for i in {1, 2, 3}, then computes x0dot using SyPrimeToTdot, then computes again xidot as xidot=xiprime*x0dot.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">coord</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>8-position, coord[4-7] will be set according to the other elements; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="391" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a029c3c5e8851e218e2b77315cd6e9ab2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Metric::Generic::normalizeFourVel</definition>
+        <argsstring>(double const pos[4], double fourvel[4]) const</argsstring>
+        <name>normalizeFourVel</name>
+        <param>
+          <type>double const</type>
+          <declname>pos</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>fourvel</declname>
+          <array>[4]</array>
+        </param>
+        <briefdescription>
+<para>Normalize fourvelvel to -1. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>First computes threevel as xiprime=xidot/x0dot for i in {1, 2, 3}, then computes x0dot using SyPrimeToTdot, then computes again xidot as xidot=xiprime*x0dot.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>4-position; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">fourvel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>4-velocity, will be renormalized. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="403" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a4cf28a145ecb21cf674e967a0a937d7b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Metric::Generic::norm</definition>
+        <argsstring>(const double pos[4], const double u1[4]) const</argsstring>
+        <name>norm</name>
+        <param>
+          <type>const double</type>
+          <declname>pos</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>u1</declname>
+          <array>[4]</array>
+        </param>
+        <briefdescription>
+<para>Scalar product. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute the norm of the quadrivector u1 in this <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref>, at point pos expressed in coordinate system sys. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>4-position; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">u1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>quadrivector; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>||u1|| </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="424" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a706491b96fc929a9b04632a8fe5bc974" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Metric::Generic::multiplyFourVect</definition>
+        <argsstring>(double vect[4], double a) const</argsstring>
+        <name>multiplyFourVect</name>
+        <param>
+          <type>double</type>
+          <declname>vect</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>multiply vector by scalar </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="428" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a65842e339bb17e7270c630ee6d3c6bb8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Metric::Generic::addFourVect</definition>
+        <argsstring>(double u1[4], double const u2[4]) const</argsstring>
+        <name>addFourVect</name>
+        <param>
+          <type>double</type>
+          <declname>u1</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>double const</type>
+          <declname>u2</declname>
+          <array>[4]</array>
+        </param>
+        <briefdescription>
+<para>add second vector to first one </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="431" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a7801b41c8686f337356de47a3a054f10" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Metric::Generic::projectFourVect</definition>
+        <argsstring>(double const pos[4], double u1[4], double const u2[4]) const</argsstring>
+        <name>projectFourVect</name>
+        <param>
+          <type>double const</type>
+          <declname>pos</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>u1</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>double const</type>
+          <declname>u2</declname>
+          <array>[4]</array>
+        </param>
+        <briefdescription>
+<para>project u1 orthogonally to u2 at pos </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="434" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a397ca9eae8d37bf02f401e16fdfa6724" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Metric::Generic::dualOneForm</definition>
+        <argsstring>(double const IN_ARRAY1_1[4], double const IN_ARRAY1_2[4], double ARGOUT_ARRAY1[4]) const</argsstring>
+        <name>dualOneForm</name>
+        <param>
+          <type>double const</type>
+          <declname>IN_ARRAY1_1</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>double const</type>
+          <declname>IN_ARRAY1_2</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>ARGOUT_ARRAY1</declname>
+          <array>[4]</array>
+        </param>
+        <briefdescription>
+<para>Computes dual 1-form Compute the dual 1-form of 4-vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>IN_ARRAY1_1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>4-position; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>IN_ARRAY1_2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>quadrivector; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">ARGOUT_ARRAY1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output 1-form </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="443" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a2a558c51175c19722fe733f7919b0a11" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Metric::Generic::observerTetrad</definition>
+        <argsstring>(obskind_t obskind, double const pos[4], double fourvel[4], double screen1[4], double screen2[4], double screen3[4]) const</argsstring>
+        <name>observerTetrad</name>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_minkowski_1a6e736715f33da07a47d4e314a99cd614">observerTetrad</reimplementedby>
+        <param>
+          <type><ref refid="_gyoto_defs_8h_1abdc37c8fde52ef588246ff7da367d65c" kindref="member">obskind_t</ref></type>
+          <declname>obskind</declname>
+        </param>
+        <param>
+          <type>double const</type>
+          <declname>pos</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>fourvel</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>screen1</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>screen2</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>screen3</declname>
+          <array>[4]</array>
+        </param>
+        <briefdescription>
+<para>Computes the orthonormal local tetrad of the observer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obskind</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input: kind of observer (eg: &quot;ZAMO&quot;,&quot;KeplerianObserver&quot;...) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input: position, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fourvel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output: observer 4-velocity (norm -1) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>screen1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output: first vector in the screen plane </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>screen2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output: second vector in the screen plane </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>screen3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output: vector normal to the screen </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="455" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1aa2eed2cdff07431271fa056f84ed7afd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Metric::Generic::observerTetrad</definition>
+        <argsstring>(double const pos[4], double fourvel[4], double screen1[4], double screen2[4], double screen3[4]) const</argsstring>
+        <name>observerTetrad</name>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_kerr_b_l_1ac9a334295a48a70a7c873c9c64d0f37d">observerTetrad</reimplementedby>
+        <param>
+          <type>double const</type>
+          <declname>pos</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>fourvel</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>screen1</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>screen2</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>screen3</declname>
+          <array>[4]</array>
+        </param>
+        <briefdescription>
+<para>Computes the orthonormal local tetrad of the observer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">fourvel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>observer 4-velocity (norm -1) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">screen1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>first vector in the screen plane </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">screen2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>second vector in the screen plane </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">screen3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector normal to the screen </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="469" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1ad49c73bfe5b1996c634d73e8714dce95" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Metric::Generic::GramSchmidt</definition>
+        <argsstring>(double const pos[4], double u0[4], double u1[4], double u2[4], double u3[4]) const</argsstring>
+        <name>GramSchmidt</name>
+        <param>
+          <type>double const</type>
+          <declname>pos</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>u0</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>u1</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>u2</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>u3</declname>
+          <array>[4]</array>
+        </param>
+        <briefdescription>
+<para>Apply Gram-Schmidt orthonormalization to a basis. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>On input, u0 to u3 must be four non-zero norm, independent 4-vectors. On output, they will form an orthonormal basis.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">u0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>basis vector </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">u1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>basis vector </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">u2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>basis vector </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">u3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>basis vector </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="485" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1af399d0bc46c9f42d38fae679e3f02e10" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Metric::Generic::jacobian</definition>
+        <argsstring>(double ARGOUT_ARRAY3[4][4][4], const double IN_ARRAY1[4]) const</argsstring>
+        <name>jacobian</name>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_complex_1a9fff8be760b6b735e15256f6e94567ae">jacobian</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a2ac21205ecebe01aa79fd106ea9c8a3e">jacobian</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_shift_1ae35d576be6edbde6800c368a44be67f4">jacobian</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_kerr_k_s_1a6ca50bf0eeb9c07ce4fde05f0823ca84">jacobian</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>ARGOUT_ARRAY3</declname>
+          <array>[4][4][4]</array>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>IN_ARRAY1</declname>
+          <array>[4]</array>
+        </param>
+        <briefdescription>
+<para>Derivatives of the metric covariant coefficients. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default implementation evaluates them numerically. The gmunu matrix is assumed to be symmetrical but no other assumptions are made at the moment. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="541" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1ac52fb670eabffbeee285d21cc7ac2116" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Metric::Generic::gmunu_up_and_jacobian</definition>
+        <argsstring>(double ARGOUT_ARRAY2[4][4], double ARGOUT_ARRAY3[4][4][4], const double IN_ARRAY1[4]) const</argsstring>
+        <name>gmunu_up_and_jacobian</name>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_kerr_k_s_1af90128992cec313b61fd8e0ded65deff">gmunu_up_and_jacobian</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>ARGOUT_ARRAY2</declname>
+          <array>[4][4]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>ARGOUT_ARRAY3</declname>
+          <array>[4][4][4]</array>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>IN_ARRAY1</declname>
+          <array>[4]</array>
+        </param>
+        <briefdescription>
+<para><ref refid="class_gyoto_1_1_metric_1_1_generic_1acdd26facb907606d51ba1e1bb17c3474" kindref="member">gmunu_up()</ref> and <ref refid="class_gyoto_1_1_metric_1_1_generic_1af399d0bc46c9f42d38fae679e3f02e10" kindref="member">jacobian()</ref> in one go </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="547" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a6749f8cf44dfd15cf81cf2a3295fa3d7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Metric::Generic::computeNBeta</definition>
+        <argsstring>(const double coord[4], double &amp;NN, double beta[3]) const</argsstring>
+        <name>computeNBeta</name>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_kerr_b_l_1aad82cb55f24d37892fac0120f31da50b">computeNBeta</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a2a9d44edb0c23a76872e875e97995010">computeNBeta</reimplementedby>
+        <param>
+          <type>const double</type>
+          <declname>coord</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>NN</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>beta</declname>
+          <array>[3]</array>
+        </param>
+        <briefdescription>
+<para>Computes lapse scalar and shift vector at coord. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="553" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a596d2b3773e278f95ea362ec43ed9667" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double Gyoto::Metric::Generic::christoffel</definition>
+        <argsstring>(const double coord[4], const int alpha, const int mu, const int nu) const</argsstring>
+        <name>christoffel</name>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_chern_simons_1a807841063bd13d39a13f70f632c5008a">christoffel</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_minkowski_1a13567edab6e3d18d078ce9cf7038dfc6">christoffel</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1a5e1cc9cbc9ac8152f2d5ecc7bf09abbd">christoffel</reimplementedby>
+        <param>
+          <type>const double</type>
+          <declname>coord</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>nu</declname>
+        </param>
+        <briefdescription>
+<para>Chistoffel symbol. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> of Christoffel symbol <Gamma/><superscript><alpha/></superscript><subscript><mu/><nu/></subscript> at point (x<subscript>1</subscript>, x<subscript>2</subscript>, x<subscript>3</subscript>). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="562" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1aaff73c866dd220ab4c5dbac8743ffb48" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int Gyoto::Metric::Generic::myrk4</definition>
+        <argsstring>(Worldline *line, state_t const &amp;coord, double h, state_t &amp;res) const</argsstring>
+        <name>myrk4</name>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_kerr_b_l_1abc1ef0b81ecae48c75857a857859d51b">myrk4</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_worldline" kindref="compound">Worldline</ref> *</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>state_t const &amp;</type>
+          <declname>coord</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>state_t &amp;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+<para>RK4 integrator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="581" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a8123ba5985a21ea8f8e26c7645667fc2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int Gyoto::Metric::Generic::myrk4</definition>
+        <argsstring>(Worldline *line, const double coord[8], double h, double res[8]) const =delete</argsstring>
+        <name>myrk4</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_worldline" kindref="compound">Worldline</ref> *</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>coord</declname>
+          <array>[8]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>res</declname>
+          <array>[8]</array>
+        </param>
+        <briefdescription>
+<para>Obsolete, update your code. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="583" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1abe3fd89e28cbcd6a584f24275001c2fa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int Gyoto::Metric::Generic::myrk4_adaptive</definition>
+        <argsstring>(Gyoto::Worldline *line, state_t const &amp;coord, double lastnorm, double normref, state_t &amp;coordnew, double h0, double &amp;h1, double deltamax=GYOTO_DEFAULT_DELTA_MAX) const</argsstring>
+        <name>myrk4_adaptive</name>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_kerr_b_l_1a094bddd0ffbc736cf39c10533efa23a8">myrk4_adaptive</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a864c8be72765a4235e864f6a8369a8ae">myrk4_adaptive</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_worldline" kindref="compound">Gyoto::Worldline</ref> *</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>state_t const &amp;</type>
+          <declname>coord</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>lastnorm</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>normref</declname>
+        </param>
+        <param>
+          <type>state_t &amp;</type>
+          <declname>coordnew</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>h0</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>h1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>deltamax</declname>
+          <defval><ref refid="_gyoto_defs_8h_1a61e9f37f6e15229a442c03e3928c2ace" kindref="member">GYOTO_DEFAULT_DELTA_MAX</ref></defval>
+        </param>
+        <briefdescription>
+<para>RK4 integrator with adaptive step. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="588" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1aca8ee9239d0502c6e311589b01c9c74f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int Gyoto::Metric::Generic::myrk4_adaptive</definition>
+        <argsstring>(Gyoto::Worldline *line, const double coord[8], double lastnorm, double normref, double coordnew[8], double h0, double &amp;h1, double deltamax=GYOTO_DEFAULT_DELTA_MAX) const =delete</argsstring>
+        <name>myrk4_adaptive</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_worldline" kindref="compound">Gyoto::Worldline</ref> *</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>coord</declname>
+          <array>[8]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>lastnorm</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>normref</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>coordnew</declname>
+          <array>[8]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>h0</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>h1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>deltamax</declname>
+          <defval><ref refid="_gyoto_defs_8h_1a61e9f37f6e15229a442c03e3928c2ace" kindref="member">GYOTO_DEFAULT_DELTA_MAX</ref></defval>
+        </param>
+        <briefdescription>
+<para>Obsolete, update your code. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="593" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a67db9a833cd77098dc602ee6521c7770" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int Gyoto::Metric::Generic::isStopCondition</definition>
+        <argsstring>(double const coord[8]) const</argsstring>
+        <name>isStopCondition</name>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_complex_1acf0d4e596acb9aab0608d17988961b6b">isStopCondition</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_kerr_b_l_1a68840a95a12f0c7518b4b01476263d8c">isStopCondition</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_kerr_k_s_1ac9b64b67244e126487f23f0a8e4f6663">isStopCondition</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_rezzolla_zhidenko_1a47939b75b4bd9a10ace7bb41fbf7a7ef">isStopCondition</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_schwarzschild_harmonic_1a8c597b1a8b2604f05649d86b929a43c1">isStopCondition</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_shift_1aedfe37352b46cb5ca790f9cb8423e163">isStopCondition</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_python_1af7db3499d2f44b060254681bcde4c278">isStopCondition</reimplementedby>
+        <param>
+          <type>double const</type>
+          <declname>coord</declname>
+          <array>[8]</array>
+        </param>
+        <briefdescription>
+<para>Check whether integration should stop. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The integrating loop will ask this the <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> through this method whether or not it is happy to continue the integration. Typically, the <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> should answer 0 when everything is fine, 1 when too close to the event horizon, inside the BH...</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coord</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>8-coordinate vector to check. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="609" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a9b17fec10be1b3c3862079ba0871a18a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int Gyoto::Metric::Generic::diff</definition>
+        <argsstring>(state_t const &amp;x, state_t &amp;dxdt, double mass) const</argsstring>
+        <name>diff</name>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1aabd3b34960ee07865a2afb2addf862c0">diff</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a002cce8a5a1eb83d617ee9bc637b30c8">diff</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_minkowski_1a66613ee25f8f2734fcdc3802431f35aa">diff</reimplementedby>
+        <param>
+          <type>state_t const &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>state_t &amp;</type>
+          <declname>dxdt</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mass</declname>
+        </param>
+        <briefdescription>
+<para>F function such as dx/dt=F(x,cst) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="614" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a09fda57a1008370aea06c93df40ff911" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int Gyoto::Metric::Generic::diff</definition>
+        <argsstring>(state_t const &amp;x, state_t &amp;dxdt) const =delete</argsstring>
+        <name>diff</name>
+        <param>
+          <type>state_t const &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>state_t &amp;</type>
+          <declname>dxdt</declname>
+        </param>
+        <briefdescription>
+<para>Obsolete, update your code. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="616" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a6949e18630b1d61dd800c8531f44587a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int Gyoto::Metric::Generic::diff</definition>
+        <argsstring>(const double y[8], double res[8]) const =delete</argsstring>
+        <name>diff</name>
+        <param>
+          <type>const double</type>
+          <declname>y</declname>
+          <array>[8]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>res</declname>
+          <array>[8]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="617" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a9093f4cdb46360edabcbec4a1bd108fe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int Gyoto::Metric::Generic::diff31</definition>
+        <argsstring>(state_t const &amp;x, state_t &amp;dxdt, double mass) const</argsstring>
+        <name>diff31</name>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_kerr_b_l_1a41a2a6b37183dfb1042aa5612b5c91ea">diff31</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1ac25e55887eb7cf8fef2303812b7eef7d">diff31</reimplementedby>
+        <param>
+          <type>state_t const &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>state_t &amp;</type>
+          <declname>dxdt</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mass</declname>
+        </param>
+        <briefdescription>
+<para>F function such as dx/dt=F(x,cst) for 3+1 case. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="622" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a6b818df2f1494dd35d4d4f230a721712" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Metric::Generic::setParticleProperties</definition>
+        <argsstring>(Gyoto::Worldline *line, double const coord[8]) const</argsstring>
+        <name>setParticleProperties</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_worldline" kindref="compound">Gyoto::Worldline</ref> *</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>double const</type>
+          <declname>coord</declname>
+          <array>[8]</array>
+        </param>
+        <briefdescription>
+<para>Set Metric-specific constants of motion. Used e.g. in <ref refid="class_gyoto_1_1_metric_1_1_kerr_b_l" kindref="compound">KerrBL</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="627" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_smart_pointee_1a9ec09c51fd18dde7c13ef3b03fac1fad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::SmartPointee::incRefCount</definition>
+        <argsstring>()</argsstring>
+        <name>incRefCount</name>
+        <briefdescription>
+<para>Increment the reference counter. Warning: Don&apos;t mess with the counter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="96" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_smart_pointee_1a22a67609fb4690ee8ec0e95e4060e387" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gyoto::SmartPointee::decRefCount</definition>
+        <argsstring>()</argsstring>
+        <name>decRefCount</name>
+        <briefdescription>
+<para>Decrement the reference counter and return current value. Warning: Don&apos;t mess with the counter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="97" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a06ea95dc396053466cdd63d419d1688c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Gyoto::Object::isThreadSafe</definition>
+        <argsstring>() const</argsstring>
+        <name>isThreadSafe</name>
+        <briefdescription>
+<para>Whether this class is thread-safe. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Return True if this object is thread-safe, i.e. if an instance and its clone can be used in parallel threads (in the context of Scenery::raytrace()). Known objects which are not thread-safe include Lorene metrics and everything from the <ref refid="namespace_gyoto_1_1_python" kindref="compound">Python</ref> plug-in.</para>
+<para>The default implementation considers that the class itself is thread safe and recurses into the declared properties to check whether they are safe too. Classes that abide to the Object/Property paradigm and are themselves thread-safe have nothing special to do.</para>
+<para>Objects that clone children in their copy constructor that are not declared as properties must take these children into account.</para>
+<para>Classes that are never thread-safe must declare it. It acn be easily done using GYOTO_OBJECT_THREAD_SAFETY in the class declaration and GYOTO_PROPERTY_THREAD_UNSAFE in the class definition. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="197" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a58c4ecdaae1873dc6912e164b61826e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::set</definition>
+        <argsstring>(Property const &amp;p, Value val)</argsstring>
+        <name>set</name>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab3aa615a6b576b663f9ee524831280c8">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab3aa615a6b576b663f9ee524831280c8">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab3aa615a6b576b663f9ee524831280c8">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab3aa615a6b576b663f9ee524831280c8">set</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="237" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1aa063e0df7c2e4b22207a784c76c6681f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::set</definition>
+        <argsstring>(Property const &amp;p, Value val, std::string const &amp;unit)</argsstring>
+        <name>set</name>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab601136e5837e6bd99c4bf3b0beee718">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab601136e5837e6bd99c4bf3b0beee718">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab601136e5837e6bd99c4bf3b0beee718">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab601136e5837e6bd99c4bf3b0beee718">set</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Set <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> (expressed in unit) of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="240" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1aba6d35c5bbf814912ed84549109e117a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::set</definition>
+        <argsstring>(std::string const &amp;pname, Value val)</argsstring>
+        <name>set</name>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ad4aff23562b0ae6a36e05741eb631c82">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ad4aff23562b0ae6a36e05741eb631c82">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ad4aff23562b0ae6a36e05741eb631c82">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ad4aff23562b0ae6a36e05741eb631c82">set</reimplementedby>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>pname</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="243" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1abed03e16a8013699534b802e06751ef8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::set</definition>
+        <argsstring>(std::string const &amp;pname, Value val, std::string const &amp;unit)</argsstring>
+        <name>set</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>pname</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Set <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> (expressed in unit) of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="246" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a8232112e660216a61caa15fab27b889f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+        <definition>virtual Value Gyoto::Object::get</definition>
+        <argsstring>(Property const &amp;p) const</argsstring>
+        <name>get</name>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1abeaf3c1bd632fda3a48118d30105c871">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1abeaf3c1bd632fda3a48118d30105c871">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1abeaf3c1bd632fda3a48118d30105c871">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1abeaf3c1bd632fda3a48118d30105c871">get</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Get <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="249" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1ad61a061d2073c841e9911be0395d4494" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+        <definition>virtual Value Gyoto::Object::get</definition>
+        <argsstring>(std::string const &amp;pname) const</argsstring>
+        <name>get</name>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1aa91e924b2c7c3e58764f8aee6b174926">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1aa91e924b2c7c3e58764f8aee6b174926">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1aa91e924b2c7c3e58764f8aee6b174926">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1aa91e924b2c7c3e58764f8aee6b174926">get</reimplementedby>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>pname</declname>
+        </param>
+        <briefdescription>
+<para>Get <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="252" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1ad4189c2c103030e9d91ee0f29ebcf13d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+        <definition>virtual Value Gyoto::Object::get</definition>
+        <argsstring>(Property const &amp;p, std::string const &amp;unit) const</argsstring>
+        <name>get</name>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a042952734a5d4bd00b73a4c03cc23af4">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a042952734a5d4bd00b73a4c03cc23af4">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a042952734a5d4bd00b73a4c03cc23af4">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a042952734a5d4bd00b73a4c03cc23af4">get</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Get <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>, converted to unit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="255" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a99544282b6c383b8570a5bc51bed1ecf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+        <definition>virtual Value Gyoto::Object::get</definition>
+        <argsstring>(std::string const &amp;pname, std::string const &amp;unit) const</argsstring>
+        <name>get</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>pname</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Get <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>, converted to unit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="258" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a424ef3538c714adfafad7eda249e0d58" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const  *</type>
+        <definition>Property const* Gyoto::Object::property</definition>
+        <argsstring>(std::string const pname) const</argsstring>
+        <name>property</name>
+        <param>
+          <type>std::string const</type>
+          <declname>pname</declname>
+        </param>
+        <briefdescription>
+<para>Find property by name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Look into the <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> list for a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> whose <emphasis>name</emphasis> (or <emphasis>name_false</emphasis>, for a boolean <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>) is <emphasis>pname</emphasis>. Return a const pointer to the first such property found, or NULL if none is found. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="267" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a11892ef308d6f40add51eaea653a394b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::fillProperty</definition>
+        <argsstring>(Gyoto::FactoryMessenger *fmp, Property const &amp;p) const</argsstring>
+        <name>fillProperty</name>
+        <reimplementedby refid="class_gyoto_1_1_scenery_1a9bc2f2025deb97a71f21f2be5c0f5022">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a42a558bc44010a73986909dd9a2fdd41">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a160d18feeb44b24f396c1001abec7bd6">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_dynamical_disk_1abbc14f98531888e96547665a8a6a20ca">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_equatorial_hot_spot_1a5acba2e137e389070bb5f7c71ea31ed5">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_neutron_star_model_atmosphere_1a65604453c31dac828adeaeb7c35ca23d">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_pattern_disk_1acc548bda88d62932275e8d0fcd630ca9">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_polish_doughnut_1acbe2c229f702905204ea0d822b94e17c">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_screen_1a50f80add154ec088fc9509ba22ef0032">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_shift_1a234a2d08bb7918e1bc62e4a710a4df77">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_star_1a152074fdddb29950936d3193d3aea55d">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_spectrometer_1_1_uniform_1af5ccaceb5c188a7a0ea11791885919bc">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_xillver_reflection_1a9e8bc6375f3c981042b74d99ee7adf91">fillProperty</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">Gyoto::FactoryMessenger</ref> *</type>
+          <declname>fmp</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Output a single <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> to XML. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The base implementation decides what to do based on the <emphasis>p.type</emphasis>. The format matches how <ref refid="class_gyoto_1_1_object_1aa0a8b119e7aa95b21be081f8c97e1626" kindref="member">setParameters()</ref> an <ref refid="class_gyoto_1_1_object_1a45969ac469cf6979037229c2741b226b" kindref="member">setParameter()</ref> would interpret the XML descition.</para>
+<para>Overriding this method should be avoided, but makes sense in some cases (for instance <ref refid="class_gyoto_1_1_screen_1a50f80add154ec088fc9509ba22ef0032" kindref="member">Screen::fillProperty()</ref> selects a different unit for <emphasis>Distance</emphasis> based on its magnitude, so that stellar sizes are expressed in solar radii while smaller sizes can be expressed in meters and larger sizes in parsecs).</para>
+<para>Overriding implementation should fall-back on calling the implementation in the direct parent class: <programlisting><codeline><highlight class="normal">class<sp/>A:<sp/>public<sp/>Object<sp/>{};</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>B:<sp/>public<sp/>A<sp/>{<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>using<sp/>B::setParameter;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>virtual<sp/>void<sp/>fillProperty(Gyoto::FactoryMessenger<sp/>*fmp,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Property<sp/>const<sp/>&amp;p)<sp/>const<sp/>;</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal">void<sp/>B::fillProperty(Gyoto::FactoryMessenger<sp/>*fmp,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Property<sp/>const<sp/>&amp;p)<sp/>const<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>if<sp/>(name==&quot;Duff&quot;)<sp/>fmp-&gt;doSomething();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>else<sp/>A::fillProperty(fmp,<sp/>p);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="298" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a0ffc3f84b4c2372d639eb848605fb1f3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::fillElement</definition>
+        <argsstring>(Gyoto::FactoryMessenger *fmp) const</argsstring>
+        <name>fillElement</name>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_complex_1a88d6f38c5fa5401a860291fbb21526d5">fillElement</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_complex_1ada5f1fb56b87c56ff64113a49c76cca0">fillElement</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_spectrometer_1_1_complex_1a0d73e5fd77b0e920af44894abfc96a99">fillElement</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_scenery_1a63501e86c47ea6b67e0c564c706a72f1">fillElement</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a7524ab9c2d51d32f7de7177df5b544a1">fillElement</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a7524ab9c2d51d32f7de7177df5b544a1">fillElement</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a7524ab9c2d51d32f7de7177df5b544a1">fillElement</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a7524ab9c2d51d32f7de7177df5b544a1">fillElement</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">Gyoto::FactoryMessenger</ref> *</type>
+          <declname>fmp</declname>
+        </param>
+        <briefdescription>
+<para>Fill the XML element for this <ref refid="class_gyoto_1_1_object" kindref="compound">Object</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The base implementation simply calls <ref refid="class_gyoto_1_1_object_1a11892ef308d6f40add51eaea653a394b" kindref="member">fillProperty()</ref> for each <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> defined for the <ref refid="class_gyoto_1_1_object" kindref="compound">Object</ref>.</para>
+<para>Derived classes should avoid overriding <ref refid="class_gyoto_1_1_object_1a0ffc3f84b4c2372d639eb848605fb1f3" kindref="member">fillElement()</ref>. It may make sense occasionally, e.g. to make sure that the metric is output first.</para>
+<para>To customize how a given <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> is rendered, it is better to override <ref refid="class_gyoto_1_1_object_1a11892ef308d6f40add51eaea653a394b" kindref="member">fillProperty()</ref>.</para>
+<para>If this method is overridden, the implementation should in general call <ref refid="class_gyoto_1_1_object_1a0ffc3f84b4c2372d639eb848605fb1f3" kindref="member">fillElement()</ref> on the direct base. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="316" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1aa0a8b119e7aa95b21be081f8c97e1626" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::setParameters</definition>
+        <argsstring>(Gyoto::FactoryMessenger *fmp)</argsstring>
+        <name>setParameters</name>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_generic_1a1872b827525ccb1fdedb614474992a6a">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_complex_1a635b0ea47d78c02a999d932eec8b16c5">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_complex_1a5607f9166dc2c1a0a7bd61cde6a71c57">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_spectrometer_1_1_complex_1a008340295dbb21fbddfa6ad7612da80e">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_equatorial_hot_spot_1a931ca188ae49a0d8e9764a151edd3553">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_photon_1a7a6664a5de91b1c59ba1b57d54ba1dd9">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_shift_1a81a5f0f4f32f5be884a4445f1d1d5b17">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_star_1ad1ad60d3ce8861dfa8626ca908e5789e">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_spectrometer_1_1_uniform_1aaca1850f712a089a6c5e0188aec0e5a4">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a0e4df99b42b3d3722d6ea39972d1421d">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a84ea2cab6209f1ed0de3a73223c6a5e8">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a84ea2cab6209f1ed0de3a73223c6a5e8">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a84ea2cab6209f1ed0de3a73223c6a5e8">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a84ea2cab6209f1ed0de3a73223c6a5e8">setParameters</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">Gyoto::FactoryMessenger</ref> *</type>
+          <declname>fmp</declname>
+        </param>
+        <briefdescription>
+<para>Main loop for parsing Properties from XML description. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim> This function queries the FactoryMessenger for elements to parse,
+ and tries to matche each element to a Property to set it
+ accordingly.
+
+ Any class that tries to be buildable from XML must supply a
+ subcontractor (for base classes such as Metric, Astrobj, Spectrum
+ and Spectrometer, it is done as a template that must be
+ specialized for each class).
+
+ This subcontractor typically looks somewhat like this:
+</verbatim> <programlisting><codeline><highlight class="normal">SmartPointer&lt;Metric::Generic&gt;</highlight></codeline>
+<codeline><highlight class="normal">Gyoto::Metric::MyKind::Subcontractor(FactoryMessenger*<sp/>fmp)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>SmartPointer&lt;MyKind&gt;<sp/>gg<sp/>=<sp/>new<sp/>MyKind();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>gg<sp/>-&gt;<sp/>setParameters(fmp);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>return<sp/>gg;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> <verbatim> Although this is discouraged, it is possible to override the
+ following functions to customize how XML entities are parsed:
+   - setParameters() if low-level access to the
+     FactoryMessenger is required;
+   - setParameter(std::string name,
+                  std::string content,
+                  std::string unit)
+     to interpret an entity that does not match a Property
+     (e.g. alternative name);
+   - setParameter(Gyoto::Property const &amp;p,
+                  std::string const &amp;name,
+                  std::string const &amp;content,
+                  std::string const &amp;unit)
+     to change how a Property is interpreted.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="355" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a45969ac469cf6979037229c2741b226b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int Gyoto::Object::setParameter</definition>
+        <argsstring>(std::string name, std::string content, std::string unit)</argsstring>
+        <name>setParameter</name>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_equatorial_hot_spot_1a0c6f1aee4a478c5ef695348d64eae2d4">setParameter</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_kerr_k_s_1a4c9d3a51c5d1478908516a0b96a42135">setParameter</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_star_1a628aa18277af464450896efd63206527">setParameter</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab4fd3efea9c85b8f8c1aaafa2597dfa4">setParameter</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab4fd3efea9c85b8f8c1aaafa2597dfa4">setParameter</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab4fd3efea9c85b8f8c1aaafa2597dfa4">setParameter</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab4fd3efea9c85b8f8c1aaafa2597dfa4">setParameter</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1ac2fbf2bb5796e3d7c7eb80dccfe20af7">setParameter</reimplementedby>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>content</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Set parameter by name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is used when parsing an XML description, if no <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> of this <emphasis>name</emphasis> is found. Overriding implementation should fall-back on calling the direct&apos;s parent implementation:</para>
+<para><programlisting><codeline><highlight class="normal">class<sp/>A:<sp/>public<sp/>Object<sp/>{};</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>B:<sp/>public<sp/>A<sp/>{<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>using<sp/>B::setParameter;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>virtual<sp/>int<sp/>setParameter(std::string<sp/>name,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>content,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>unit);</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal">int<sp/>B::setParameter(std::string<sp/>name,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>content,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>unit)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>if<sp/>(name==&quot;Duff&quot;)<sp/>doSomething(content,<sp/>unit);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>else<sp/>return<sp/>A::setParameter(name,<sp/>content,<sp/>unit);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>return<sp/>0;<sp/><sp/>//<sp/>name<sp/>was<sp/>known</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>XML name of the parameter (XML entity). This may have a path component, e.g. &quot;Astrobj::Radius&quot;, in which case a property named &quot;Astrobj&quot; will be sought in the current object, and setParameter will be called recusrively on this <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref> with Radius as name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string representation of the value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string representation of the unit </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if this parameter is known, 1 if it is not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="390" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a43fe041144add66155668ca88a99fd98" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::setParameter</definition>
+        <argsstring>(Gyoto::Property const &amp;p, std::string const &amp;name, std::string const &amp;content, std::string const &amp;unit)</argsstring>
+        <name>setParameter</name>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_polish_doughnut_1a13a8a59bd3738f5739db0550dbb42003">setParameter</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Gyoto::Property</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>content</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Set parameter by <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> (and name) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is used when parsing an XML description, if <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> (<emphasis>p</emphasis>) of this <emphasis>name</emphasis> is found (i.e. either <emphasis>p.name</emphasis> or <emphasis>p.name_false</emphasis> is equal to <emphasis>name</emphasis>). Implementation should fall-back on calling the direct&apos;s parent implementation:</para>
+<para><programlisting><codeline><highlight class="normal">class<sp/>A:<sp/>public<sp/>Object<sp/>{};</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>B:<sp/>public<sp/>A<sp/>{<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>using<sp/>B::setParameter;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>virtual<sp/>void<sp/>setParameter(Gyoto::Property<sp/>const<sp/>&amp;p,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>content,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>unit);</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal">void<sp/>B::setParameter(Gyoto::Property<sp/>const<sp/>&amp;p,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>content,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>unit)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>if<sp/>(name==&quot;Duff&quot;)<sp/>doSomething(content,<sp/>unit);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>else<sp/>A::setParameter(p,<sp/>name,<sp/>content,<sp/>unit);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> that matches <emphasis>name</emphasis> (<emphasis>p.name</emphasis> == <emphasis>name</emphasis> or <emphasis>p.name_false</emphasis> == <emphasis>name</emphasis>) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>XML name of the parameter (XML entity) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string representation of the value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string representation of the unit </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="426" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a741ba678188d7d167ff2e3bb13dd924f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Gyoto::Object::describeProperty</definition>
+        <argsstring>(Gyoto::Property const &amp;p) const</argsstring>
+        <name>describeProperty</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Gyoto::Property</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Format desrciption for a property. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a string containing the name(s) and type of the property, as well as whether it supports unit. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="437" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a13843618d84c49d47bd37ddfa31160c5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Object::help</definition>
+        <argsstring>() const</argsstring>
+        <name>help</name>
+        <briefdescription>
+<para>Print (to stdout) some help on this class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Describe all properties that this instance supports. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="444" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a9f46de678c67e9050cf3a8b9677e1d73" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string Gyoto::Object::kind</definition>
+        <argsstring>() const</argsstring>
+        <name>kind</name>
+        <reimplementedby refid="class_gyoto_1_1_spectrometer_1_1_uniform_1af6c1082ac163e833fff9e934b417b194">kind</reimplementedby>
+        <briefdescription>
+<para>Get kind_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="456" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_hook_1_1_teller_1a55dca3f3b9707bd18ae4a0dd98befd70" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Hook::Teller::hook</definition>
+        <argsstring>(Listener *listener)</argsstring>
+        <name>hook</name>
+        <param>
+          <type>Listener *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+<para>Start listening. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use from a <ref refid="class_gyoto_1_1_hook_1_1_listener" kindref="compound">Hook::Listener</ref> object method: <programlisting><codeline><highlight class="normal">teller-&gt;hook(this)</highlight></codeline>
+</programlisting> where &quot;this&quot; is a <ref refid="class_gyoto_1_1_hook_1_1_listener" kindref="compound">Listener</ref> and &quot;teller&quot; is a <ref refid="class_gyoto_1_1_hook_1_1_teller" kindref="compound">Teller</ref>.</para>
+<para>Use <ref refid="class_gyoto_1_1_hook_1_1_teller_1a8bcbb785f92fefe4e76afe76eb175f8a" kindref="member">unhook()</ref> later to stop listening to a given <ref refid="class_gyoto_1_1_hook_1_1_teller" kindref="compound">Teller</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>listener</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the new listener </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHooks.h" line="114" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_hook_1_1_teller_1a8bcbb785f92fefe4e76afe76eb175f8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Hook::Teller::unhook</definition>
+        <argsstring>(Listener *listener)</argsstring>
+        <name>unhook</name>
+        <param>
+          <type>Listener *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+<para>Stop listening. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use from a <ref refid="class_gyoto_1_1_hook_1_1_listener" kindref="compound">Hook::Listener</ref> object method: <programlisting><codeline><highlight class="normal">teller-&gt;unhook(this)</highlight></codeline>
+</programlisting></para>
+<para>where &quot;this&quot; is a <ref refid="class_gyoto_1_1_hook_1_1_listener" kindref="compound">Listener</ref>, &quot;teller&quot; is a <ref refid="class_gyoto_1_1_hook_1_1_teller" kindref="compound">Teller</ref>, and &quot;this&quot; has called teller-&gt;hook(this) previously.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>listener</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the listener </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHooks.h" line="129" column="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_metric_1_1_generic_1ae0da95aa14ef7aa8df1af598d34d2efa" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::Metric::Generic::mass_</definition>
+        <argsstring></argsstring>
+        <name>mass_</name>
+        <briefdescription>
+<para>Mass yielding geometrical unit (in kg). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="166" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoMetric.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_metric_1_1_generic_1a691390867f76f4aaaef6848bb5366fc7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gyoto::Metric::Generic::coordkind_</definition>
+        <argsstring></argsstring>
+        <name>coordkind_</name>
+        <briefdescription>
+<para>Kind of coordinates (cartesian-like, spherical-like, unspecified) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="167" column="7" bodyfile="/home/junichi/Gyoto/include/GyotoMetric.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_metric_1_1_generic_1a9d17cce6d1615f47e9e30ba1fe6e88ca" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gyoto::Metric::Generic::__defaultfeatures</definition>
+        <argsstring></argsstring>
+        <name>__defaultfeatures</name>
+        <briefdescription>
+<para>Whether some virtual methods are implemented. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default implementations of some methods call one-another. This member is used internally to avoid infinite recursion. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="176" column="7" bodyfile="/home/junichi/Gyoto/include/GyotoMetric.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_smart_pointee_1aaaf212a70fb1880b70e4d357e843cc85" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gyoto::SmartPointee::refCount</definition>
+        <argsstring></argsstring>
+        <name>refCount</name>
+        <briefdescription>
+<para>Reference counter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="83" column="7" bodyfile="/home/junichi/Gyoto/include/GyotoSmartPointer.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_smart_pointee_1abf1c1e431cdd4f08f13de581cccb6770" prot="private" static="no" mutable="no">
+        <type>pthread_mutex_t</type>
+        <definition>pthread_mutex_t Gyoto::SmartPointee::mutex_</definition>
+        <argsstring></argsstring>
+        <name>mutex_</name>
+        <briefdescription>
+<para>A mutex. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>When compiled with libpthread </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="89" column="19" bodyfile="/home/junichi/Gyoto/include/GyotoSmartPointer.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_hook_1_1_teller_1ae336573bbbf1b8a5b71d8fbac1408030" prot="private" static="no" mutable="no">
+        <type><ref refid="class_listener_item" kindref="compound">ListenerItem</ref> *</type>
+        <definition>ListenerItem* Gyoto::Hook::Teller::listeners_</definition>
+        <argsstring></argsstring>
+        <name>listeners_</name>
+        <briefdescription>
+<para>Linked list of <ref refid="class_gyoto_1_1_hook_1_1_listener" kindref="compound">Listener</ref> items. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHooks.h" line="94" column="16" bodyfile="/home/junichi/Gyoto/include/GyotoHooks.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_gyoto_1_1_metric_1_1_generic_1a1789582ce7d0d3c204d6d5cfa59b3e7a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Metric::Generic::coordKind</definition>
+        <argsstring>(int coordkind)</argsstring>
+        <name>coordKind</name>
+        <param>
+          <type>int</type>
+          <declname>coordkind</declname>
+        </param>
+        <briefdescription>
+<para>Set coordkind_. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>coordkind(int coordkind) is protected because, for most Metrics, it should not be changed in runtime. Set coordinate kind </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="205" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1aae3b80667884c6620c4796a1b8ef74e5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::kind</definition>
+        <argsstring>(const std::string)</argsstring>
+        <name>kind</name>
+        <param>
+          <type>const std::string</type>
+        </param>
+        <briefdescription>
+<para>Set kind_. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_gyoto_1_1_object_1aae3b80667884c6620c4796a1b8ef74e5" kindref="member">kind(const std::string)</ref> is protected because, for most Objects, it should not be changed in runtime. Set kind_ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="453" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_hook_1_1_teller_1af9a1daa629900f00538096987e398a13" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Hook::Teller::tellListeners</definition>
+        <argsstring>()</argsstring>
+        <name>tellListeners</name>
+        <briefdescription>
+<para>Call tell() on each hooked <ref refid="class_gyoto_1_1_hook_1_1_listener" kindref="compound">Listener</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Whenever a <ref refid="class_gyoto_1_1_hook_1_1_teller" kindref="compound">Teller</ref> mutates, it should warn any <ref refid="class_gyoto_1_1_hook_1_1_listener" kindref="compound">Listener</ref> hooked to it using <ref refid="class_gyoto_1_1_hook_1_1_teller_1af9a1daa629900f00538096987e398a13" kindref="member">tellListeners()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoHooks.h" line="138" column="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" prot="public" static="no">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_smart_pointee" kindref="compound">Gyoto::SmartPointee</ref> &gt;</type>
+        <definition>typedef Gyoto::SmartPointer&lt;Gyoto::SmartPointee&gt; Gyoto::SmartPointee::Subcontractor_t(Gyoto::FactoryMessenger *, std::vector&lt; std::string &gt; const &amp;)</definition>
+        <argsstring>(Gyoto::FactoryMessenger *, std::vector&lt; std::string &gt; const &amp;)</argsstring>
+        <name>Subcontractor_t</name>
+        <briefdescription>
+<para>A subcontractor builds an object upon order from the <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Various classes need to provide a subcontractor to be able to instantiate themselves upon order from the <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref>. A subcontractor is a function (often a static member function) which accepts a pointer to a <ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref> as unique parameter, communicates with the <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref> using this messenger to read an XML description of the object to build, and returns this objet. <ref refid="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" kindref="member">SmartPointee::Subcontractor_t</ref>* is just generic enough a typedef to cast to and from other subcontractor types: <ref refid="namespace_gyoto_1_1_astrobj_1aa53c7ada58c8c8f3799c3485b7d8f3bb" kindref="member">Astrobj::Subcontractor_t</ref>, <ref refid="namespace_gyoto_1_1_metric_1ad6b33a642cc94ad67855184d2adb95df" kindref="member">Metric::Subcontractor_t</ref>, <ref refid="namespace_gyoto_1_1_spectrum_1a163055eef14aee22dd8fa5188812d889" kindref="member">Spectrum::Subcontractor_t</ref>. A subcontractor needs to be registered using the relevant <ref refid="namespace_gyoto_1_1_astrobj_1abb6caf3023a51cb77b5f6793ac03b188" kindref="member">Register()</ref> function: <ref refid="namespace_gyoto_1_1_astrobj_1abb6caf3023a51cb77b5f6793ac03b188" kindref="member">Astrobj::Register()</ref>, <ref refid="namespace_gyoto_1_1_metric_1a602cba49b001e7470f3d439d1ab3e8f7" kindref="member">Metric::Register()</ref>, <ref refid="namespace_gyoto_1_1_spectrum_1a517874749d838d7121880e7d9d14c626" kindref="member">Spectrum::Register()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="114" column="5" bodyfile="/home/junichi/Gyoto/include/GyotoSmartPointer.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> of a regular rotating black hole or naked worm-hole. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This is a regular rotating extension of <ref refid="class_gyoto_1_1_metric_1_1_hayward" kindref="compound">Hayward</ref>&apos;s metric.</para>
+<para>The metric reads: ds^2=-(1-2*M(r)*r/Sigma)*dt^2-(4*a*M(r)*sin^2(theta)/Sigma)*dt*dphi+(Sigma/Delta)*dr^2+(Sigma)*dtheta^2+sin^2(theta)*[r^2+a^2+2*a^2*r*M(r)*sin^2(theta)/Sigma]*dphi^2, where: Sigma=r^2+a^2*cos^2(theta) Delta=r^2-2*M(r)*r+a^2 M(r)=M*abs(r)^3/(abs(r)^3+2*m*b^2), m being the mass of the black hole seen at infinity and b a magnetic charge parameter.</para>
+<para>See Lamy et al. (2018), Classical and Quantum Gravity, submitted, <ulink url="https://arxiv.org/abs/1802.01635">https://arxiv.org/abs/1802.01635</ulink></para>
+<para>See <ref refid="class_gyoto_1_1_metric_1_1_hayward" kindref="compound">Hayward</ref> (2006) for the original nonrotating metric, <ulink url="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.96.031103">https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.96.031103</ulink></para>
+<para>See Bambi &amp; Modesto (2013) for a rotating (but singular) extension. <ulink url="https://www.sciencedirect.com/science/article/pii/S0370269313002505?via%3Dihub">https://www.sciencedirect.com/science/article/pii/S0370269313002505?via%3Dihub</ulink> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>Gyoto::Object</label>
+        <link refid="class_gyoto_1_1_object"/>
+      </node>
+      <node id="3">
+        <label>Gyoto::SmartPointee</label>
+        <link refid="class_gyoto_1_1_smart_pointee"/>
+      </node>
+      <node id="1">
+        <label>Gyoto::Metric::Hayward</label>
+        <link refid="class_gyoto_1_1_metric_1_1_hayward"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Gyoto::Hook::Teller</label>
+        <link refid="class_gyoto_1_1_hook_1_1_teller"/>
+      </node>
+      <node id="2">
+        <label>Gyoto::Metric::Generic</label>
+        <link refid="class_gyoto_1_1_metric_1_1_generic"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>Gyoto::Property</label>
+        <link refid="class_gyoto_1_1_property"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>getter_unit</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>getter</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>setter</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>setter_unit</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Astrobj::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="16">
+        <label>ListenerItem</label>
+        <link refid="class_listener_item"/>
+      </node>
+      <node id="12">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Screen &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="8">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Spectrometer::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="4">
+        <label>Gyoto::Object</label>
+        <link refid="class_gyoto_1_1_object"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>properties</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Metric::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="3">
+        <label>Gyoto::SmartPointee</label>
+        <link refid="class_gyoto_1_1_smart_pointee"/>
+      </node>
+      <node id="1">
+        <label>Gyoto::Metric::Hayward</label>
+        <link refid="class_gyoto_1_1_metric_1_1_hayward"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>properties</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Gyoto::Property::setter_t</label>
+        <link refid="union_gyoto_1_1_property_1_1setter__t"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>set_spectrometer</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>set_metric</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>set_spectrum</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>set_astrobj</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>set_screen</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Gyoto::Property::setter_unit_t</label>
+        <link refid="union_gyoto_1_1_property_1_1setter__unit__t"/>
+      </node>
+      <node id="10">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Spectrum::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="15">
+        <label>Gyoto::Hook::Teller</label>
+        <link refid="class_gyoto_1_1_hook_1_1_teller"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>listeners_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gyoto::Metric::Generic</label>
+        <link refid="class_gyoto_1_1_metric_1_1_generic"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>properties</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Gyoto::Property::getter_unit_t</label>
+        <link refid="union_gyoto_1_1_property_1_1getter__unit__t"/>
+      </node>
+      <node id="7">
+        <label>Gyoto::Property::getter_t</label>
+        <link refid="union_gyoto_1_1_property_1_1getter__t"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>get_spectrometer</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>get_metric</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>get_spectrum</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>get_astrobj</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>get_screen</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/junichi/Gyoto/include/GyotoHayward.h" line="66" column="1" bodyfile="/home/junichi/Gyoto/include/GyotoHayward.h" bodystart="66" bodyend="113"/>
+    <listofallmembers>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a9d17cce6d1615f47e9e30ba1fe6e88ca" prot="private" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>__defaultfeatures</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_hayward_1ac03cec63f065f9754e25f8ac03806665" prot="protected" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>a2_</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_hayward_1abcbc9594d5b566fb62a57c325355ca3f" prot="protected" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>a3_</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_hayward_1a070a141e0740d361bfc4c77895e6468c" prot="protected" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>a4_</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a65842e339bb17e7270c630ee6d3c6bb8" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>addFourVect</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_hayward_1ad7bc51297f1c01f1a89772087576b42e" prot="protected" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>b2_</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1ab0b9d853d673f621c960e1290db5e3c7" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>cartesianVelocity</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_hayward_1af698693eabef496ecfacce2103aaa5d5" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>charge</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_hayward_1a5d68ff770a2b37b860224b8809c5e617" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>charge</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_hayward_1ad97b48e1e85cb89d9d7ac3fc7aa63a1a" prot="protected" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>charge_</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_hayward_1ac861de2db8008150f4f0ebf06d80302e" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>christoffel</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_hayward_1a596d2b3773e278f95ea362ec43ed9667" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>christoffel</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_hayward_1aa011ca4f331ef9b56223ed52c8e5a665" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>christoffel</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a596d2b3773e278f95ea362ec43ed9667" prot="public" virt="virtual" ambiguityscope="Gyoto::Metric::Generic::"><scope>Gyoto::Metric::Hayward</scope><name>christoffel</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_hayward_1a6f04a7ed03855723ddb7ccce6d797169" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>circularVelocity</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_hayward_1abec3dee6acae3629fa733a7ecc9d96af" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>clone</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a6749f8cf44dfd15cf81cf2a3295fa3d7" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>computeNBeta</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a1789582ce7d0d3c204d6d5cfa59b3e7a" prot="protected" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>coordKind</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1af77fb58e4ed3399aece00dbcbcdb821b" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>coordKind</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a691390867f76f4aaaef6848bb5366fc7" prot="private" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>coordkind_</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1a22a67609fb4690ee8ec0e95e4060e387" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>decRefCount</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a53722a985ed8e0b4f7947cd88c032a13" prot="protected" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>delta_max_</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a87c5eb06a56f68905ebc7ff17ed2a24c" prot="protected" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>delta_max_over_r_</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a546e231862e8bb473845cfa18b086378" prot="protected" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>delta_min_</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a0747da4b348993a84c958d0a6e669c62" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>deltaMax</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a1d349921ec1e0549b47bbdd3c31e8bc2" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>deltaMax</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a17791da16af037e2acb7c6ace2cfd5a0" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>deltaMax</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1abe2328a722fb2dc37d55c6ae98bd659a" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>deltaMaxOverR</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a2c9ed9d165040f96e72136043a674b3c" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>deltaMaxOverR</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a809e6419cb528829c8afa30430b710ab" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>deltaMin</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a7b4a5908eb4ed3ed255947966f6faf50" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>deltaMin</name></member>
+      <member refid="class_gyoto_1_1_object_1a741ba678188d7d167ff2e3bb13dd924f" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>describeProperty</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a9b17fec10be1b3c3862079ba0871a18a" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>diff</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a09fda57a1008370aea06c93df40ff911" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>diff</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a6949e18630b1d61dd800c8531f44587a" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>diff</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a9093f4cdb46360edabcbec4a1bd108fe" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>diff31</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a397ca9eae8d37bf02f401e16fdfa6724" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>dualOneForm</name></member>
+      <member refid="class_gyoto_1_1_object_1a0ffc3f84b4c2372d639eb848605fb1f3" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>fillElement</name></member>
+      <member refid="class_gyoto_1_1_object_1a11892ef308d6f40add51eaea653a394b" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>fillProperty</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a980eca855ee3606bfef4fcb080f241f5" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>Generic</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1afd4ff54aea9d5c88a3b88b2d9b8a2c67" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>Generic</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a5fbc128b5c83dc294ead5da577528f03" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>Generic</name></member>
+      <member refid="class_gyoto_1_1_object_1a8232112e660216a61caa15fab27b889f" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>get</name></member>
+      <member refid="class_gyoto_1_1_object_1ad61a061d2073c841e9911be0395d4494" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>get</name></member>
+      <member refid="class_gyoto_1_1_object_1ad4189c2c103030e9d91ee0f29ebcf13d" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>get</name></member>
+      <member refid="class_gyoto_1_1_object_1a99544282b6c383b8570a5bc51bed1ecf" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>get</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_hayward_1adbdab25beb020afdff6575a10933f395" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>getPotential</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_hayward_1ae5e2a3f3c19d045fb40fcb62e5e1d959" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>getProperties</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a795ec4f876df5d582df28a9923fd6411" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>getRefCount</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a9b3e894772e2bce0cf107fa632ed4496" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>getRmb</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a4dab1e5dadbafd87992d52e731e1c9f2" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>getRms</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_hayward_1ac3d0c351d970a8f22e0e1d4786996e5b" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>getSpecificAngularMomentum</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_hayward_1ada32a695e229fb476a09c32087171547" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>gmunu</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_hayward_1a36ca2ffee58cd7a3e48b5812a4f87361" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>gmunu</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_hayward_1a7cc3fe0aa9695182b6abfd56db74c2b3" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>gmunu_up</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_hayward_1a522465c8e3a6b9e6bd4d21a8dc68eb2a" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>gmunu_up</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1ac52fb670eabffbeee285d21cc7ac2116" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>gmunu_up_and_jacobian</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1ad49c73bfe5b1996c634d73e8714dce95" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>GramSchmidt</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_hayward_1a517c67a8871a44b2032ba1261e7694a0" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>Gyoto::SmartPointer&lt; Gyoto::Metric::Hayward &gt;</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_hayward_1af1c28983894541a2f1f3f9f07d67d4fa" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>Hayward</name></member>
+      <member refid="class_gyoto_1_1_object_1a13843618d84c49d47bd37ddfa31160c5" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>help</name></member>
+      <member refid="class_gyoto_1_1_hook_1_1_teller_1a55dca3f3b9707bd18ae4a0dd98befd70" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>hook</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1a9ec09c51fd18dde7c13ef3b03fac1fad" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>incRefCount</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a67db9a833cd77098dc602ee6521c7770" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>isStopCondition</name></member>
+      <member refid="class_gyoto_1_1_object_1a06ea95dc396053466cdd63d419d1688c" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>isThreadSafe</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1af399d0bc46c9f42d38fae679e3f02e10" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>jacobian</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a3b60d77fac2903c94c3ae5fbd6566668" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>keplerian</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a5aad6a8c1cf296ef0ad276b23614d35d" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>keplerian</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a39b87eec8135757dc1b5b5f5729da5c4" prot="protected" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>keplerian_</name></member>
+      <member refid="class_gyoto_1_1_object_1aae3b80667884c6620c4796a1b8ef74e5" prot="protected" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>kind</name></member>
+      <member refid="class_gyoto_1_1_object_1a9f46de678c67e9050cf3a8b9677e1d73" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>kind</name></member>
+      <member refid="class_gyoto_1_1_object_1ac48ad88e3ef229ba0d0fe68a94a7118f" prot="protected" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>kind_</name></member>
+      <member refid="class_gyoto_1_1_hook_1_1_teller_1ae336573bbbf1b8a5b71d8fbac1408030" prot="private" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>listeners_</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1aa3dbb89d1eee82617b1632f2f1e35b60" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>mass</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1af61769eacdd15f6d6c411214b575c62b" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>mass</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a9ae43ad3fcad9bb2ee21a5d8de104eda" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>mass</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a3f71a0587fd43e8446cab025bfdd327c" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>mass</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1ae0da95aa14ef7aa8df1af598d34d2efa" prot="private" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>mass_</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a706491b96fc929a9b04632a8fe5bc974" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>multiplyFourVect</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1abf1c1e431cdd4f08f13de581cccb6770" prot="private" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>mutex_</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1aaff73c866dd220ab4c5dbac8743ffb48" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>myrk4</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a8123ba5985a21ea8f8e26c7645667fc2" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>myrk4</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1abe3fd89e28cbcd6a584f24275001c2fa" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>myrk4_adaptive</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1aca8ee9239d0502c6e311589b01c9c74f" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>myrk4_adaptive</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a4cf28a145ecb21cf674e967a0a937d7b" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>norm</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1aa8b34cc32bd8e324e7852f87d08cf6b2" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>normalizeFourVel</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a029c3c5e8851e218e2b77315cd6e9ab2" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>normalizeFourVel</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1adaf7d03d118b4625447d20746857cdc8" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>nullifyCoord</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1ab1c920d3c040b73dc0c12197b0a430e5" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>nullifyCoord</name></member>
+      <member refid="class_gyoto_1_1_object_1a5173d279a53bbc9850771e344d6b79b0" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>Object</name></member>
+      <member refid="class_gyoto_1_1_object_1a5834e83ca1482a379c7ddefb1919457f" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>Object</name></member>
+      <member refid="class_gyoto_1_1_object_1a1fbd53bedaf8d18f67b12ec0660b8aa7" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>Object</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a2a558c51175c19722fe733f7919b0a11" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>observerTetrad</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1aa2eed2cdff07431271fa056f84ed7afd" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>observerTetrad</name></member>
+      <member refid="class_gyoto_1_1_object_1a01832761cd5f0a12319e3e24ce9a9fba" prot="protected" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>plugins_</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a7801b41c8686f337356de47a3a054f10" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>projectFourVect</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_hayward_1a9d8b93c22c7a474d88a08c7c3233f754" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>properties</name></member>
+      <member refid="class_gyoto_1_1_object_1a424ef3538c714adfafad7eda249e0d58" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>property</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1aaaf212a70fb1880b70e4d357e843cc85" prot="private" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>refCount</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_hayward_1a73722ddfcd3783aed6ddcdd265ba78c8" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>ScalarProd</name></member>
+      <member refid="class_gyoto_1_1_object_1a58c4ecdaae1873dc6912e164b61826e0" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>set</name></member>
+      <member refid="class_gyoto_1_1_object_1aa063e0df7c2e4b22207a784c76c6681f" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>set</name></member>
+      <member refid="class_gyoto_1_1_object_1aba6d35c5bbf814912ed84549109e117a" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>set</name></member>
+      <member refid="class_gyoto_1_1_object_1abed03e16a8013699534b802e06751ef8" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>set</name></member>
+      <member refid="class_gyoto_1_1_object_1a45969ac469cf6979037229c2741b226b" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>setParameter</name></member>
+      <member refid="class_gyoto_1_1_object_1a43fe041144add66155668ca88a99fd98" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>setParameter</name></member>
+      <member refid="class_gyoto_1_1_object_1aa0a8b119e7aa95b21be081f8c97e1626" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>setParameters</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a6b818df2f1494dd35d4d4f230a721712" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>setParticleProperties</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1a7d212bcd7d3ac4147e18683c47ca910d" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>SmartPointee</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1adc075b08ca5d3c0635bc97f843835f8a" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>SmartPointee</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_hayward_1ad0102b80c0dddb83e81b1e96d7e24527" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>spin</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_hayward_1a7e309e276a919df0e1c47a3f03d4d41f" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>spin</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_hayward_1af659b77997060b737b7882556efc8e40" prot="protected" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>spin_</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>Subcontractor_t</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a0077ac6a240b042dbe3487298eac4ef0" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>SysPrimeToTdot</name></member>
+      <member refid="class_gyoto_1_1_hook_1_1_teller_1adb1af4c097a95ac19070cb452e280abb" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>Teller</name></member>
+      <member refid="class_gyoto_1_1_hook_1_1_teller_1add28f0a06265233ccacf5e9ac8537bf2" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>Teller</name></member>
+      <member refid="class_gyoto_1_1_hook_1_1_teller_1af9a1daa629900f00538096987e398a13" prot="protected" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>tellListeners</name></member>
+      <member refid="class_gyoto_1_1_hook_1_1_teller_1a8bcbb785f92fefe4e76afe76eb175f8a" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>unhook</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1abd6bfc4aef563b64318b5168f83a49fb" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>unitLength</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a74c7861961278d587a15b067c43069f0" prot="public" virt="non-virtual"><scope>Gyoto::Metric::Hayward</scope><name>unitLength</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a325f414c1c393c7142b42889e2be8257" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>zamoVelocity</name></member>
+      <member refid="class_gyoto_1_1_metric_1_1_generic_1a0531d5721cac74104d511994de69bb10" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>~Generic</name></member>
+      <member refid="class_gyoto_1_1_object_1ab6f302f93bfd1f07ae2a6a48b3c74932" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>~Object</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1a4301d456d1d36ed7912d073b742c74e1" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>~SmartPointee</name></member>
+      <member refid="class_gyoto_1_1_hook_1_1_teller_1a7228f637ed7a007a0c6a810a89f3b188" prot="public" virt="virtual"><scope>Gyoto::Metric::Hayward</scope><name>~Teller</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,165 @@
+\hypertarget{namespace_gyoto_1_1_metric}{}\doxysection{Gyoto\+::Metric Namespace Reference}
+\label{namespace_gyoto_1_1_metric}\index{Gyoto::Metric@{Gyoto::Metric}}
+
+
+Access to metrics.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_chern_simons}{Chern\+Simons}}
+\item 
+class \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_complex}{Complex}}
+\begin{DoxyCompactList}\small\item\em Combine several metrics. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_hayward}{Hayward}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} of a regular rotating black hole or naked worm-\/hole. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_kerr_b_l}{Kerr\+BL}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} around a Kerr black-\/hole in Boyer-\/\+Lindquist coordinates. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_kerr_k_s}{Kerr\+KS}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} around a Kerr black-\/hole in Kerr-\/\+Schild coordinates Warning\+: this metric is seldom used and may be buggy. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Generic}}
+\begin{DoxyCompactList}\small\item\em Base class for metrics. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_minkowski}{Minkowski}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_minkowski}{Minkowski}} flat-\/space metric. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_numerical_metric_lorene}{Numerical\+Metric\+Lorene}}
+\item 
+class \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_rezzolla_zhidenko}{Rezzolla\+Zhidenko}}
+\item 
+class \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_rot_star3__1}{Rot\+Star3\+\_\+1}}
+\begin{DoxyCompactList}\small\item\em Numerical metric around a rotating star in 3+1 formalism. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_schwarzschild_harmonic}{Schwarzschild\+Harmonic}}
+\item 
+class \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_shift}{Shift}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_shift}{Shift}} flat-\/space metric. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python}{Python}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} coded in \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python}{Python}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Metric\+::\+Generic}} $>$ \mbox{\hyperlink{namespace_gyoto_1_1_metric_ad6b33a642cc94ad67855184d2adb95df}{Subcontractor\+\_\+t}}(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}} $\ast$, std\+::vector$<$ std\+::string $>$ const \&)
+\begin{DoxyCompactList}\small\item\em A function to build instances of a specific \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Metric\+::\+Generic}} sub-\/class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Metric\+::\+Generic}} $>$ \mbox{\hyperlink{namespace_gyoto_1_1_metric_a1a83660652b0d0b88e56ace1109a1736}{Subcontractor}} (\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}} $\ast$fmp, std\+::vector$<$ std\+::string $>$ const \&plugins)
+\begin{DoxyCompactList}\small\item\em Subcontractor template. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_gyoto_1_1_metric_ad6b33a642cc94ad67855184d2adb95df}{Gyoto\+::\+Metric\+::\+Subcontractor\+\_\+t}} $\ast$ \mbox{\hyperlink{namespace_gyoto_1_1_metric_ac6c88d7fec42b5aa192e90b3a721993b}{get\+Subcontractor}} (std\+::string name, std\+::vector$<$ std\+::string $>$ \&plugin, int errmode=0)
+\begin{DoxyCompactList}\small\item\em Query the \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} register. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_gyoto_1_1_metric_a602cba49b001e7470f3d439d1ab3e8f7}{Register}} (std\+::string kind, \mbox{\hyperlink{namespace_gyoto_1_1_metric_ad6b33a642cc94ad67855184d2adb95df}{Gyoto\+::\+Metric\+::\+Subcontractor\+\_\+t}} $\ast$scp)
+\begin{DoxyCompactList}\small\item\em Make a \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} kind known to the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_gyoto_1_1_metric_aa7a0e7013dc6fbaf30254461ea1757c0}{init\+Register}} ()
+\begin{DoxyCompactList}\small\item\em Empty the \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} register. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_gyoto_1_1_register_1_1_entry}{Register\+::\+Entry}} $\ast$ \mbox{\hyperlink{namespace_gyoto_1_1_metric_a774ad4fb5e72204fe70e34d3bbe288a0}{Register\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} register. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Access to metrics. 
+
+Objects which describe space-\/time geometry must inherit from the \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Gyoto\+::\+Metric\+::\+Generic}} class.
+
+To be usable, a \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Metric\+::\+Generic}} sub-\/class should register a \mbox{\hyperlink{namespace_gyoto_1_1_metric_ad6b33a642cc94ad67855184d2adb95df}{Metric\+::\+Subcontractor\+\_\+t}} function using the \mbox{\hyperlink{namespace_gyoto_1_1_metric_a602cba49b001e7470f3d439d1ab3e8f7}{Metric\+::\+Register()}} function. See also \mbox{\hyperlink{writing_plugins_page}{Writing plug-\/ins for Gyoto}} . 
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{namespace_gyoto_1_1_metric_ad6b33a642cc94ad67855184d2adb95df}\label{namespace_gyoto_1_1_metric_ad6b33a642cc94ad67855184d2adb95df}} 
+\index{Gyoto::Metric@{Gyoto::Metric}!Subcontractor\_t@{Subcontractor\_t}}
+\index{Subcontractor\_t@{Subcontractor\_t}!Gyoto::Metric@{Gyoto::Metric}}
+\doxysubsubsection{\texorpdfstring{Subcontractor\_t}{Subcontractor\_t}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$\mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Metric\+::\+Generic}}$>$ Gyoto\+::\+Metric\+::\+Subcontractor\+\_\+t(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}} $\ast$, std\+::vector$<$ std\+::string $>$ const \&)}
+
+
+
+A function to build instances of a specific \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Metric\+::\+Generic}} sub-\/class. 
+
+This is a more specific version of the \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}{Smart\+Pointee\+::\+Subcontractor\+\_\+t}} type. A Metric\+::\+Subcontrator\+\_\+t is called by the \mbox{\hyperlink{class_gyoto_1_1_factory}{Gyoto\+::\+Factory}} to build an instance of the kind of metric specified in an XML file (see \mbox{\hyperlink{namespace_gyoto_1_1_metric_a602cba49b001e7470f3d439d1ab3e8f7}{Register()}}). The \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}} and Subcontractor\+\_\+t function communicate through a \mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}}. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_gyoto_1_1_metric_ac6c88d7fec42b5aa192e90b3a721993b}\label{namespace_gyoto_1_1_metric_ac6c88d7fec42b5aa192e90b3a721993b}} 
+\index{Gyoto::Metric@{Gyoto::Metric}!getSubcontractor@{getSubcontractor}}
+\index{getSubcontractor@{getSubcontractor}!Gyoto::Metric@{Gyoto::Metric}}
+\doxysubsubsection{\texorpdfstring{getSubcontractor()}{getSubcontractor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_gyoto_1_1_metric_ad6b33a642cc94ad67855184d2adb95df}{Gyoto\+::\+Metric\+::\+Subcontractor\+\_\+t}}$\ast$ Gyoto\+::\+Metric\+::get\+Subcontractor (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::vector$<$ std\+::string $>$ \&}]{plugin,  }\item[{int}]{errmode = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Query the \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} register. 
+
+Query the \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} register to get the \mbox{\hyperlink{namespace_gyoto_1_1_metric_ad6b33a642cc94ad67855184d2adb95df}{Metric\+::\+Subcontractor\+\_\+t}} correspondig to a given kind name. This function is normally called only from the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}}. If plugin is specified, only a subcontractor matching both name and plugin will be returned, loading the plug-\/in if necessary. If plugin is the empty string, then the first subcontractor matching name will be returned, and the name of the plug-\/in it belongs to will be returned in plugin upon output.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em name} & e.\+g. \char`\"{}\+Kerr\+BL\char`\"{} \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em plugin} & e.\+g. \char`\"{}stdplug\char`\"{}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em errmode} & int=0. If errmode==0, failure to find a registered \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} by that name is an error. Else, simply return NULL pointer in that case. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to the corresponding subcontractor. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_gyoto_1_1_metric_aa7a0e7013dc6fbaf30254461ea1757c0}\label{namespace_gyoto_1_1_metric_aa7a0e7013dc6fbaf30254461ea1757c0}} 
+\index{Gyoto::Metric@{Gyoto::Metric}!initRegister@{initRegister}}
+\index{initRegister@{initRegister}!Gyoto::Metric@{Gyoto::Metric}}
+\doxysubsubsection{\texorpdfstring{initRegister()}{initRegister()}}
+{\footnotesize\ttfamily void Gyoto\+::\+Metric\+::init\+Register (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Empty the \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} register. 
+
+This must be called once. It is called by \mbox{\hyperlink{namespace_gyoto_1_1_register_ab550850763355e20c312f60e1698e4c6}{Gyoto\+::\+Register\+::init()}}. \mbox{\Hypertarget{namespace_gyoto_1_1_metric_a602cba49b001e7470f3d439d1ab3e8f7}\label{namespace_gyoto_1_1_metric_a602cba49b001e7470f3d439d1ab3e8f7}} 
+\index{Gyoto::Metric@{Gyoto::Metric}!Register@{Register}}
+\index{Register@{Register}!Gyoto::Metric@{Gyoto::Metric}}
+\doxysubsubsection{\texorpdfstring{Register()}{Register()}}
+{\footnotesize\ttfamily void Gyoto\+::\+Metric\+::\+Register (\begin{DoxyParamCaption}\item[{std\+::string}]{kind,  }\item[{\mbox{\hyperlink{namespace_gyoto_1_1_metric_ad6b33a642cc94ad67855184d2adb95df}{Gyoto\+::\+Metric\+::\+Subcontractor\+\_\+t}} $\ast$}]{scp }\end{DoxyParamCaption})}
+
+
+
+Make a \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} kind known to the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}}. 
+
+\mbox{\hyperlink{namespace_gyoto_1_1_register}{Register}} a new \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Metric\+::\+Generic}} sub-\/class so that the \mbox{\hyperlink{class_gyoto_1_1_factory}{Gyoto\+::\+Factory}} knows it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em kind} & The kind name which identifies this object type in an XML file, as in $<$\mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} kind=\char`\"{}name\char`\"{}$>$\\
+\hline
+{\em scp} & A pointer to the subcontractor, which will communicate with the \mbox{\hyperlink{class_gyoto_1_1_factory}{Gyoto\+::\+Factory}} to build an instance of the class from its XML description \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_gyoto_1_1_metric_a1a83660652b0d0b88e56ace1109a1736}\label{namespace_gyoto_1_1_metric_a1a83660652b0d0b88e56ace1109a1736}} 
+\index{Gyoto::Metric@{Gyoto::Metric}!Subcontractor@{Subcontractor}}
+\index{Subcontractor@{Subcontractor}!Gyoto::Metric@{Gyoto::Metric}}
+\doxysubsubsection{\texorpdfstring{Subcontractor()}{Subcontractor()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$\mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Metric\+::\+Generic}}$>$ Gyoto\+::\+Metric\+::\+Subcontractor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}} $\ast$}]{fmp,  }\item[{std\+::vector$<$ std\+::string $>$ const \&}]{plugins }\end{DoxyParamCaption})}
+
+
+
+Subcontractor template. 
+
+Instead of reimplementing the wheel, your subcontractor can simply be \mbox{\hyperlink{namespace_gyoto_1_1_metric_a1a83660652b0d0b88e56ace1109a1736}{Gyoto\+::\+Metric\+::\+Subcontractor$<$\+My\+Kind$>$}}
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Sub-\/class of \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Metric\+::\+Generic}} \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespace_gyoto_1_1_metric_a774ad4fb5e72204fe70e34d3bbe288a0}\label{namespace_gyoto_1_1_metric_a774ad4fb5e72204fe70e34d3bbe288a0}} 
+\index{Gyoto::Metric@{Gyoto::Metric}!Register\_@{Register\_}}
+\index{Register\_@{Register\_}!Gyoto::Metric@{Gyoto::Metric}}
+\doxysubsubsection{\texorpdfstring{Register\_}{Register\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gyoto_1_1_register_1_1_entry}{Register\+::\+Entry}}$\ast$ Gyoto\+::\+Metric\+::\+Register\+\_\+\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+The \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} register. 
+
+Use the \mbox{\hyperlink{namespace_gyoto_1_1_metric_aa7a0e7013dc6fbaf30254461ea1757c0}{Metric\+::init\+Register()}} once in your program to initiliaze it, the \mbox{\hyperlink{namespace_gyoto_1_1_metric_a602cba49b001e7470f3d439d1ab3e8f7}{Metric\+::\+Register()}} function to fill it, and the \mbox{\hyperlink{namespace_gyoto_1_1_metric_ac6c88d7fec42b5aa192e90b3a721993b}{Metric\+::get\+Subcontractor()}} function to query it. 

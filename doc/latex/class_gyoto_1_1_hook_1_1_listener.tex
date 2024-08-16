@@ -1,0 +1,71 @@
+\hypertarget{class_gyoto_1_1_hook_1_1_listener}{}\doxysection{Gyoto\+::Hook\+::Listener Class Reference}
+\label{class_gyoto_1_1_hook_1_1_listener}\index{Gyoto::Hook::Listener@{Gyoto::Hook::Listener}}
+
+
+I might listen to a \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller}{Teller}}.  
+
+
+
+
+{\ttfamily \#include $<$Gyoto\+Hooks.\+h$>$}
+
+Inheritance diagram for Gyoto\+::Hook\+::Listener\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_gyoto_1_1_hook_1_1_listener}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_hook_1_1_listener_a44482865ba840a67bb5a4de050304913}\label{class_gyoto_1_1_hook_1_1_listener_a44482865ba840a67bb5a4de050304913}} 
+\mbox{\hyperlink{class_gyoto_1_1_hook_1_1_listener_a44482865ba840a67bb5a4de050304913}{Listener}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_hook_1_1_listener_a68ee73f312f9e50d2a4563543ff15a57}\label{class_gyoto_1_1_hook_1_1_listener_a68ee73f312f9e50d2a4563543ff15a57}} 
+virtual \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_listener_a68ee73f312f9e50d2a4563543ff15a57}{$\sim$\+Listener}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_listener_a900ac53b9f989d3e2de0a917d440d9a1}{tell}} (\mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller}{Gyoto\+::\+Hook\+::\+Teller}} $\ast$msg)
+\begin{DoxyCompactList}\small\item\em This is how a \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller}{Teller}} tells. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_hook_1_1_listener_aec1a78d8b9607883c48e5190075da26e}\label{class_gyoto_1_1_hook_1_1_listener_aec1a78d8b9607883c48e5190075da26e}} 
+class {\bfseries Gyoto\+::\+Hook\+::\+Teller}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+I might listen to a \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller}{Teller}}. 
+
+Whisper to my ear by using my \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_listener_a900ac53b9f989d3e2de0a917d440d9a1}{tell()}} method. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_hook_1_1_listener_a900ac53b9f989d3e2de0a917d440d9a1}\label{class_gyoto_1_1_hook_1_1_listener_a900ac53b9f989d3e2de0a917d440d9a1}} 
+\index{Gyoto::Hook::Listener@{Gyoto::Hook::Listener}!tell@{tell}}
+\index{tell@{tell}!Gyoto::Hook::Listener@{Gyoto::Hook::Listener}}
+\doxysubsubsection{\texorpdfstring{tell()}{tell()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Hook\+::\+Listener\+::tell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller}{Gyoto\+::\+Hook\+::\+Teller}} $\ast$}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+This is how a \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller}{Teller}} tells. 
+
+A teller will basically call listener-\/$>$tell(this).
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & Teller$\ast$ the \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller}{Teller}} who is telling... Useful if the \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_listener}{Listener}} listens to several Tellers. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_xillver_reflection_aede0d2350b85a96d1f6066691f789406}{Gyoto\+::\+Astrobj\+::\+Xillver\+Reflection}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_shift_a14bf173fd9de0ae8cfdf3a8686ef19af}{Gyoto\+::\+Metric\+::\+Shift}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_polish_doughnut_aa9b86e321868f68ef17c0b1c06b00593}{Gyoto\+::\+Astrobj\+::\+Polish\+Doughnut}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_page_thorne_disk_ac064f018902a54fabdd1915ba4624c04}{Gyoto\+::\+Astrobj\+::\+Page\+Thorne\+Disk}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_oscil_torus_a70bf196b683c127441d8f22f5f1d506f}{Gyoto\+::\+Astrobj\+::\+Oscil\+Torus}}, \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_complex_a4a20a269150ee958daa76819b2a28b6c}{Gyoto\+::\+Spectrometer\+::\+Complex}}, and \mbox{\hyperlink{class_gyoto_1_1_worldline_a8255e38edb46d20eda2d669cfae4d960}{Gyoto\+::\+Worldline}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_gyoto_hooks_8h}{Gyoto\+Hooks.\+h}}\end{DoxyCompactItemize}

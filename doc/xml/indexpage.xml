@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>Gyoto</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><bold><center> General relativitY Orbit Tracer of Observatoire de Paris</center></bold></para>
+<para><ref refid="index_1download_sec" kindref="member">Downloading and installing</ref> | <ref refid="index_1manual_sec" kindref="member">User manual</ref> | <ref refid="index_1conditions_sec" kindref="member">Conditions for use</ref></para>
+<para><ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> aims at providing a framework for computing orbits and ray-traced images in General relativity. It consists of a library (libgyoto), utility programs, a plug-in for the Yorick programing language, and an extension for the Python 3 programing language. <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> is known to run under Linux and Mac OS X. Please do tell us if you manage to run <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> under a different OS. It should compile and run with moderate effort on most UNIX-like systems.</para>
+<para><ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> can be expanded with plug-ins providing custom <ref refid="class_gyoto_1_1_metric_1_1_generic" kindref="compound">Gyoto::Metric::Generic</ref>, <ref refid="class_gyoto_1_1_astrobj_1_1_generic" kindref="compound">Gyoto::Astrobj::Generic</ref> and <ref refid="class_gyoto_1_1_spectrum_1_1_generic" kindref="compound">Gyoto::Spectrum::Generic</ref> classes, which describe respectively analytical or numerical metrics, astronomical objects, and spectral shapes for astronomical objects (see <ref refid="writing_plugins_page" kindref="compound">Writing plug-ins for Gyoto</ref>). Custom <ref refid="class_gyoto_1_1_metric_1_1_generic" kindref="compound">Gyoto::Metric::Generic</ref>, <ref refid="class_gyoto_1_1_astrobj_1_1_generic" kindref="compound">Gyoto::Astrobj::Generic</ref> and <ref refid="class_gyoto_1_1_spectrum_1_1_generic" kindref="compound">Gyoto::Spectrum::Generic</ref> classes can also be written in the <ulink url="https://www.python.org/">Python</ulink> 3.x interpreted language using the <computeroutput>python</computeroutput> plug-in for <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>, see below. Beware that a Python implementation of a custom class will run significantly slower than the equivalent C++ implementation, but sometimes saving on development time is better than saving on computing time.</para>
+<para>The base distribution includes three plug-ins: the standard plug-in (<computeroutput>stdplug</computeroutput>), a plug-in for using <ulink url="http://www.lorene.obspm.fr/">LORENE</ulink>-based numerical metrics (<computeroutput>lorene</computeroutput>) and a plug-in for writing custom astronomical objects or metrics in the <ulink url="https://www.python.org/">Python</ulink> 3.x interpreted language (<computeroutput>python</computeroutput>).</para>
+<para>A graphical user interface for tracing stellar orbits is provided with the Yorick plug-in (see <ref refid="yorick_plugin_page" kindref="compound">Gyoto for Yorick</ref>).</para>
+<para>To visit the code <bold>Picture Gallery</bold>: click <ulink url="gallery/index.html">here</ulink>!</para>
+<para><image type="html" name="gyotoy_screenshot.png"></image>
+</para>
+<sect1 id="index_1download_sec">
+<title>Downloading and installing</title>
+<para>Detailed information on installing <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> is available <ulink url="http://github.com/gyoto/Gyoto/blob/master/INSTALL.Gyoto.md"><bold>here</bold></ulink>. The user manual below is also a valuable read.</para>
+</sect1>
+<sect1 id="index_1manual_sec">
+<title>User manual</title>
+<para>The user manual is available <ulink url="GyotoManual.pdf"><bold>here</bold></ulink>.</para>
+</sect1>
+<sect1 id="index_1conditions_sec">
+<title>Conditions for use</title>
+<para>We request that use of <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> in scientific publications be properly acknowledged. Please cite:</para>
+<para>F. H. Vincent, T. Paumard, E. Gourgoulhon &amp; G. Perrin: <emphasis>GYOTO: a new general relativistic ray-tracing code</emphasis>, Classical and Quantum Gravity <bold>28</bold>, 225011 (2011) [<ulink url="http://dx.doi.org/10.1088/0264-9381/28/22/225011">published version</ulink>] [<ulink url="http://arxiv.org/abs/1109.4769">preprint: arXiv:1109.4769</ulink>]</para>
+<para>We also request that <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> modifications, extensions or plug-ins leading to a scientific publication be made public as free software reasonably fast (within one year after publication of the scientific paper), for instance by contributing it directly to the <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> code base. Contributors will be listed in the relevant source files as well as in the AUTHORS file in the package.</para>
+<para><ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> is Copyright 2011-2016 Thibaut Paumard, Fr<eacute/>d<eacute/>ric Vincent and Odele Straub.</para>
+<para><ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. </para>
+</sect1>
+    </detaileddescription>
+    <location file="/home/junichi/Gyoto/include/Gyoto.h"/>
+  </compounddef>
+</doxygen>

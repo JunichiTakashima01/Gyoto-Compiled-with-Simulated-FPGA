@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespace_gyoto_1_1_metric" kind="namespace" language="C++">
+    <compoundname>Gyoto::Metric</compoundname>
+    <innerclass refid="class_gyoto_1_1_metric_1_1_chern_simons" prot="public">Gyoto::Metric::ChernSimons</innerclass>
+    <innerclass refid="class_gyoto_1_1_metric_1_1_complex" prot="public">Gyoto::Metric::Complex</innerclass>
+    <innerclass refid="class_gyoto_1_1_metric_1_1_hayward" prot="public">Gyoto::Metric::Hayward</innerclass>
+    <innerclass refid="class_gyoto_1_1_metric_1_1_kerr_b_l" prot="public">Gyoto::Metric::KerrBL</innerclass>
+    <innerclass refid="class_gyoto_1_1_metric_1_1_kerr_k_s" prot="public">Gyoto::Metric::KerrKS</innerclass>
+    <innerclass refid="class_gyoto_1_1_metric_1_1_generic" prot="public">Gyoto::Metric::Generic</innerclass>
+    <innerclass refid="class_gyoto_1_1_metric_1_1_minkowski" prot="public">Gyoto::Metric::Minkowski</innerclass>
+    <innerclass refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene" prot="public">Gyoto::Metric::NumericalMetricLorene</innerclass>
+    <innerclass refid="class_gyoto_1_1_metric_1_1_rezzolla_zhidenko" prot="public">Gyoto::Metric::RezzollaZhidenko</innerclass>
+    <innerclass refid="class_gyoto_1_1_metric_1_1_rot_star3__1" prot="public">Gyoto::Metric::RotStar3_1</innerclass>
+    <innerclass refid="class_gyoto_1_1_metric_1_1_schwarzschild_harmonic" prot="public">Gyoto::Metric::SchwarzschildHarmonic</innerclass>
+    <innerclass refid="class_gyoto_1_1_metric_1_1_shift" prot="public">Gyoto::Metric::Shift</innerclass>
+    <innerclass refid="class_gyoto_1_1_metric_1_1_python" prot="public">Gyoto::Metric::Python</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespace_gyoto_1_1_metric_1ad6b33a642cc94ad67855184d2adb95df" prot="public" static="no">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_metric_1_1_generic" kindref="compound">Metric::Generic</ref> &gt;</type>
+        <definition>typedef SmartPointer&lt;Metric::Generic&gt; Gyoto::Metric::Subcontractor_t(FactoryMessenger *, std::vector&lt; std::string &gt; const &amp;)</definition>
+        <argsstring>(FactoryMessenger *, std::vector&lt; std::string &gt; const &amp;)</argsstring>
+        <name>Subcontractor_t</name>
+        <briefdescription>
+<para>A function to build instances of a specific <ref refid="class_gyoto_1_1_metric_1_1_generic" kindref="compound">Metric::Generic</ref> sub-class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a more specific version of the <ref refid="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" kindref="member">SmartPointee::Subcontractor_t</ref> type. A Metric::Subcontrator_t is called by the <ref refid="class_gyoto_1_1_factory" kindref="compound">Gyoto::Factory</ref> to build an instance of the kind of metric specified in an XML file (see <ref refid="namespace_gyoto_1_1_metric_1a602cba49b001e7470f3d439d1ab3e8f7" kindref="member">Register()</ref>). The <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref> and Subcontractor_t function communicate through a <ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">Gyoto::FactoryMessenger</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="60" column="26" bodyfile="/home/junichi/Gyoto/include/GyotoMetric.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespace_gyoto_1_1_metric_1a774ad4fb5e72204fe70e34d3bbe288a0" prot="public" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_register_1_1_entry" kindref="compound">Register::Entry</ref> *</type>
+        <definition>Register::Entry* Gyoto::Metric::Register_</definition>
+        <argsstring></argsstring>
+        <name>Register_</name>
+        <briefdescription>
+<para>The <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> register. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use the <ref refid="namespace_gyoto_1_1_metric_1aa7a0e7013dc6fbaf30254461ea1757c0" kindref="member">Metric::initRegister()</ref> once in your program to initiliaze it, the <ref refid="namespace_gyoto_1_1_metric_1a602cba49b001e7470f3d439d1ab3e8f7" kindref="member">Metric::Register()</ref> function to fill it, and the <ref refid="namespace_gyoto_1_1_metric_1ac6c88d7fec42b5aa192e90b3a721993b" kindref="member">Metric::getSubcontractor()</ref> function to query it. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="109" column="29" declfile="/home/junichi/Gyoto/include/GyotoMetric.h" declline="109" declcolumn="29"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_gyoto_1_1_metric_1a1a83660652b0d0b88e56ace1109a1736" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_metric_1_1_generic" kindref="compound">Metric::Generic</ref> &gt;</type>
+        <definition>SmartPointer&lt;Metric::Generic&gt; Gyoto::Metric::Subcontractor</definition>
+        <argsstring>(FactoryMessenger *fmp, std::vector&lt; std::string &gt; const &amp;plugins)</argsstring>
+        <name>Subcontractor</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref> *</type>
+          <declname>fmp</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; const &amp;</type>
+          <declname>plugins</declname>
+        </param>
+        <briefdescription>
+<para>Subcontractor template. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Instead of reimplementing the wheel, your subcontractor can simply be <ref refid="namespace_gyoto_1_1_metric_1a1a83660652b0d0b88e56ace1109a1736" kindref="member">Gyoto::Metric::Subcontractor&lt;MyKind&gt;</ref></para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sub-class of <ref refid="class_gyoto_1_1_metric_1_1_generic" kindref="compound">Metric::Generic</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="71" column="29" bodyfile="/home/junichi/Gyoto/include/GyotoMetric.h" bodystart="72" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_metric_1ac6c88d7fec42b5aa192e90b3a721993b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_gyoto_1_1_metric_1ad6b33a642cc94ad67855184d2adb95df" kindref="member">Gyoto::Metric::Subcontractor_t</ref> *</type>
+        <definition>Gyoto::Metric::Subcontractor_t* Gyoto::Metric::getSubcontractor</definition>
+        <argsstring>(std::string name, std::vector&lt; std::string &gt; &amp;plugin, int errmode=0)</argsstring>
+        <name>getSubcontractor</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; &amp;</type>
+          <declname>plugin</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errmode</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Query the <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> register. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Query the <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> register to get the <ref refid="namespace_gyoto_1_1_metric_1ad6b33a642cc94ad67855184d2adb95df" kindref="member">Metric::Subcontractor_t</ref> correspondig to a given kind name. This function is normally called only from the <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref>. If plugin is specified, only a subcontractor matching both name and plugin will be returned, loading the plug-in if necessary. If plugin is the empty string, then the first subcontractor matching name will be returned, and the name of the plug-in it belongs to will be returned in plugin upon output.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>e.g. &quot;KerrBL&quot; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">plugin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>e.g. &quot;stdplug&quot;. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">errmode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int=0. If errmode==0, failure to find a registered <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> by that name is an error. Else, simply return NULL pointer in that case. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the corresponding subcontractor. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="99" column="36" declfile="/home/junichi/Gyoto/include/GyotoMetric.h" declline="99" declcolumn="36"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_metric_1a602cba49b001e7470f3d439d1ab3e8f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Metric::Register</definition>
+        <argsstring>(std::string kind, Gyoto::Metric::Subcontractor_t *scp)</argsstring>
+        <name>Register</name>
+        <param>
+          <type>std::string</type>
+          <declname>kind</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_gyoto_1_1_metric_1ad6b33a642cc94ad67855184d2adb95df" kindref="member">Gyoto::Metric::Subcontractor_t</ref> *</type>
+          <declname>scp</declname>
+        </param>
+        <briefdescription>
+<para>Make a <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> kind known to the <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="namespace_gyoto_1_1_register" kindref="compound">Register</ref> a new <ref refid="class_gyoto_1_1_metric_1_1_generic" kindref="compound">Metric::Generic</ref> sub-class so that the <ref refid="class_gyoto_1_1_factory" kindref="compound">Gyoto::Factory</ref> knows it.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>kind</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The kind name which identifies this object type in an XML file, as in &lt;<ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> kind=&quot;name&quot;&gt;</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the subcontractor, which will communicate with the <ref refid="class_gyoto_1_1_factory" kindref="compound">Gyoto::Factory</ref> to build an instance of the class from its XML description </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="123" column="11" declfile="/home/junichi/Gyoto/include/GyotoMetric.h" declline="123" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_metric_1aa7a0e7013dc6fbaf30254461ea1757c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Metric::initRegister</definition>
+        <argsstring>()</argsstring>
+        <name>initRegister</name>
+        <briefdescription>
+<para>Empty the <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> register. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This must be called once. It is called by <ref refid="namespace_gyoto_1_1_register_1ab550850763355e20c312f60e1698e4c6" kindref="member">Gyoto::Register::init()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoMetric.h" line="130" column="11" declfile="/home/junichi/Gyoto/include/GyotoMetric.h" declline="130" declcolumn="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Access to metrics. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Objects which describe space-time geometry must inherit from the <ref refid="class_gyoto_1_1_metric_1_1_generic" kindref="compound">Gyoto::Metric::Generic</ref> class.</para>
+<para>To be usable, a <ref refid="class_gyoto_1_1_metric_1_1_generic" kindref="compound">Metric::Generic</ref> sub-class should register a <ref refid="namespace_gyoto_1_1_metric_1ad6b33a642cc94ad67855184d2adb95df" kindref="member">Metric::Subcontractor_t</ref> function using the <ref refid="namespace_gyoto_1_1_metric_1a602cba49b001e7470f3d439d1ab3e8f7" kindref="member">Metric::Register()</ref> function. See also <ref refid="writing_plugins_page" kindref="compound">Writing plug-ins for Gyoto</ref> . </para>
+    </detaileddescription>
+    <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="47" column="3"/>
+  </compounddef>
+</doxygen>

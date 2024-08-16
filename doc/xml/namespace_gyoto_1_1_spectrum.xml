@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespace_gyoto_1_1_spectrum" kind="namespace" language="C++">
+    <compoundname>Gyoto::Spectrum</compoundname>
+    <innerclass refid="class_gyoto_1_1_spectrum_1_1_black_body" prot="public">Gyoto::Spectrum::BlackBody</innerclass>
+    <innerclass refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron" prot="public">Gyoto::Spectrum::KappaDistributionSynchrotron</innerclass>
+    <innerclass refid="class_gyoto_1_1_spectrum_1_1_power_law" prot="public">Gyoto::Spectrum::PowerLaw</innerclass>
+    <innerclass refid="class_gyoto_1_1_spectrum_1_1_power_law_synchrotron" prot="public">Gyoto::Spectrum::PowerLawSynchrotron</innerclass>
+    <innerclass refid="class_gyoto_1_1_spectrum_1_1_generic" prot="public">Gyoto::Spectrum::Generic</innerclass>
+    <innerclass refid="class_gyoto_1_1_spectrum_1_1_thermal_bremsstrahlung" prot="public">Gyoto::Spectrum::ThermalBremsstrahlung</innerclass>
+    <innerclass refid="class_gyoto_1_1_spectrum_1_1_thermal_synchrotron" prot="public">Gyoto::Spectrum::ThermalSynchrotron</innerclass>
+    <innerclass refid="class_gyoto_1_1_spectrum_1_1_python" prot="public">Gyoto::Spectrum::Python</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespace_gyoto_1_1_spectrum_1a163055eef14aee22dd8fa5188812d889" prot="public" static="no">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_spectrum_1_1_generic" kindref="compound">Gyoto::Spectrum::Generic</ref> &gt;</type>
+        <definition>typedef Gyoto::SmartPointer&lt;Gyoto::Spectrum::Generic&gt; Gyoto::Spectrum::Subcontractor_t(Gyoto::FactoryMessenger *fmp, std::vector&lt; std::string &gt; const &amp;)</definition>
+        <argsstring>(Gyoto::FactoryMessenger *fmp, std::vector&lt; std::string &gt; const &amp;)</argsstring>
+        <name>Subcontractor_t</name>
+        <briefdescription>
+<para>A function to build instances of a specific <ref refid="class_gyoto_1_1_spectrum_1_1_generic" kindref="compound">Spectrum::Generic</ref> sub-class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a more specific version of the <ref refid="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" kindref="member">SmartPointee::Subcontractor_t</ref> type. A Spectrum::Subcontrator_t is called by the <ref refid="class_gyoto_1_1_factory" kindref="compound">Gyoto::Factory</ref> to build an instance of the kind of spectrum specified in an XML file (see <ref refid="namespace_gyoto_1_1_spectrum_1a517874749d838d7121880e7d9d14c626" kindref="member">Register()</ref>). The <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref> and Subcontractor_t function communicate through a <ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">Gyoto::FactoryMessenger</ref>. A template is provided so that you may not have to code anything. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSpectrum.h" line="52" column="7" bodyfile="/home/junichi/Gyoto/include/GyotoSpectrum.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespace_gyoto_1_1_spectrum_1abd9408c073597a886e49a146d6327757" prot="public" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_register_1_1_entry" kindref="compound">Register::Entry</ref> *</type>
+        <definition>Register::Entry* Gyoto::Spectrum::Register_</definition>
+        <argsstring></argsstring>
+        <name>Register_</name>
+        <briefdescription>
+<para>The <ref refid="namespace_gyoto_1_1_spectrum" kindref="compound">Spectrum</ref> register. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use the <ref refid="namespace_gyoto_1_1_spectrum_1ae185b506437dc07b948f64f1e5e8e21c" kindref="member">Spectrum::initRegister()</ref> once in your program to initiliaze it, the <ref refid="namespace_gyoto_1_1_spectrum_1a517874749d838d7121880e7d9d14c626" kindref="member">Spectrum::Register()</ref> function to fill it, and the <ref refid="namespace_gyoto_1_1_spectrum_1a757d3ef145cea78a26ae1049f24b3789" kindref="member">Spectrum::getSubcontractor()</ref> function to query it. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSpectrum.h" line="114" column="28" declfile="/home/junichi/Gyoto/include/GyotoSpectrum.h" declline="114" declcolumn="28"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_gyoto_1_1_spectrum_1a928efb5440d9060b646aa4a28d7750fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_spectrum_1_1_generic" kindref="compound">Spectrum::Generic</ref> &gt;</type>
+        <definition>SmartPointer&lt;Spectrum::Generic&gt; Gyoto::Spectrum::Subcontractor</definition>
+        <argsstring>(FactoryMessenger *fmp, std::vector&lt; std::string &gt; const &amp;plugins)</argsstring>
+        <name>Subcontractor</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref> *</type>
+          <declname>fmp</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; const &amp;</type>
+          <declname>plugins</declname>
+        </param>
+        <briefdescription>
+<para>Subcontractor template. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Instead of reimplementing the wheel, your subcontractor can simply be <ref refid="namespace_gyoto_1_1_spectrum_1a928efb5440d9060b646aa4a28d7750fd" kindref="member">Gyoto::Spectrum::Subcontractor&lt;MyKind&gt;</ref></para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sub-class of <ref refid="class_gyoto_1_1_spectrum_1_1_generic" kindref="compound">Spectrum::Generic</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSpectrum.h" line="62" column="29" bodyfile="/home/junichi/Gyoto/include/GyotoSpectrum.h" bodystart="63" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_spectrum_1a517874749d838d7121880e7d9d14c626" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Spectrum::Register</definition>
+        <argsstring>(std::string kind, Gyoto::Spectrum::Subcontractor_t *scp)</argsstring>
+        <name>Register</name>
+        <param>
+          <type>std::string</type>
+          <declname>kind</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_gyoto_1_1_spectrum_1a163055eef14aee22dd8fa5188812d889" kindref="member">Gyoto::Spectrum::Subcontractor_t</ref> *</type>
+          <declname>scp</declname>
+        </param>
+        <briefdescription>
+<para>Make a <ref refid="namespace_gyoto_1_1_spectrum" kindref="compound">Spectrum</ref> kind known to the <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="namespace_gyoto_1_1_register" kindref="compound">Register</ref> a new <ref refid="class_gyoto_1_1_spectrum_1_1_generic" kindref="compound">Spectrum::Generic</ref> sub-class so that the <ref refid="class_gyoto_1_1_factory" kindref="compound">Gyoto::Factory</ref> knows it.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>kind</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The kind name which identifies this object type in an XML file, as in &lt;<ref refid="namespace_gyoto_1_1_spectrum" kindref="compound">Spectrum</ref> kind=&quot;name&quot;&gt;</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the subcontractor, which will communicate with the <ref refid="class_gyoto_1_1_factory" kindref="compound">Gyoto::Factory</ref> to build an instance of the class from its XML description </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSpectrum.h" line="84" column="10" declfile="/home/junichi/Gyoto/include/GyotoSpectrum.h" declline="84" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_spectrum_1a757d3ef145cea78a26ae1049f24b3789" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_gyoto_1_1_spectrum_1a163055eef14aee22dd8fa5188812d889" kindref="member">Gyoto::Spectrum::Subcontractor_t</ref> *</type>
+        <definition>Gyoto::Spectrum::Subcontractor_t* Gyoto::Spectrum::getSubcontractor</definition>
+        <argsstring>(std::string name, std::vector&lt; std::string &gt; &amp;plugins, int errmode=0)</argsstring>
+        <name>getSubcontractor</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; &amp;</type>
+          <declname>plugins</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errmode</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Query the <ref refid="namespace_gyoto_1_1_spectrum" kindref="compound">Spectrum</ref> register. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Query the <ref refid="namespace_gyoto_1_1_spectrum" kindref="compound">Spectrum</ref> register to get the <ref refid="namespace_gyoto_1_1_metric_1ad6b33a642cc94ad67855184d2adb95df" kindref="member">Metric::Subcontractor_t</ref> correspondig to a given kind name. This function is normally called only from the <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref>. If plugin is specified, only a subcontractor matching both name and plugin will be returned, loading the plug-in if necessary. If plugin is the empty string, then the first subcontractor matching name will be returned, and the name of the plug-in it belongs to will be returned in plugin upon output.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>e.g. &quot;PowerLaw&quot; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">plugin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>e.g. &quot;stdplug&quot;. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">errmode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int=0. If errmode==0, failure to find a registered <ref refid="namespace_gyoto_1_1_spectrum" kindref="compound">Spectrum</ref> by that name is an error. Else, simply return NULL pointer in that case. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the corresponding subcontractor. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSpectrum.h" line="104" column="38" declfile="/home/junichi/Gyoto/include/GyotoSpectrum.h" declline="104" declcolumn="38"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_spectrum_1ae185b506437dc07b948f64f1e5e8e21c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Spectrum::initRegister</definition>
+        <argsstring>()</argsstring>
+        <name>initRegister</name>
+        <briefdescription>
+<para>Empty the <ref refid="namespace_gyoto_1_1_spectrum" kindref="compound">Spectrum</ref> register. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This must be called once. It is called by <ref refid="namespace_gyoto_1_1_register_1ab550850763355e20c312f60e1698e4c6" kindref="member">Gyoto::Register::init()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSpectrum.h" line="121" column="10" declfile="/home/junichi/Gyoto/include/GyotoSpectrum.h" declline="121" declcolumn="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="namespace_gyoto_1_1_spectrum" kindref="compound">Spectrum</ref> of a simple object (e.g. a <ref refid="class_gyoto_1_1_astrobj_1_1_star" kindref="compound">Gyoto::Astrobj::Star</ref>) </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/junichi/Gyoto/include/GyotoBlackBodySpectrum.h" line="35" column="3"/>
+  </compounddef>
+</doxygen>

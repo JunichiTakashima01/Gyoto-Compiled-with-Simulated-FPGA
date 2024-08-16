@@ -1,0 +1,691 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_gyoto_1_1_python_1_1_object" kind="class" language="C++" prot="public">
+    <compoundname>Gyoto::Python::Object</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">O</basecompoundref>
+    <basecompoundref refid="class_gyoto_1_1_python_1_1_base" prot="public" virt="non-virtual">Gyoto::Python::Base</basecompoundref>
+    <includes refid="_gyoto_python_8h" local="no">GyotoPython.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class O</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gyoto_1_1_python_1_1_object_1a9ebdd38ce6f787942688ab460c1b3aa9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Python::Object&lt; O &gt;::Object</definition>
+        <argsstring>()</argsstring>
+        <name>Object</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="323" column="3" bodyfile="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" bodystart="323" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_python_1_1_object_1a323886ea8a4ec42ca658794a89d0294b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Python::Object&lt; O &gt;::Object</definition>
+        <argsstring>(const Object &amp;o)</argsstring>
+        <name>Object</name>
+        <param>
+          <type>const <ref refid="class_gyoto_1_1_python_1_1_object" kindref="compound">Object</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="324" column="3" bodyfile="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" bodystart="324" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_python_1_1_object_1af0760f1ceb18207d2e3678295b23af2b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Gyoto::Python::Object&lt; O &gt;::~Object</definition>
+        <argsstring>()</argsstring>
+        <name>~Object</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="325" column="11" bodyfile="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" bodystart="325" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_python_1_1_object_1ad4aff23562b0ae6a36e05741eb631c82" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Python::Object&lt; O &gt;::set</definition>
+        <argsstring>(std::string const &amp;key, Value val)</argsstring>
+        <name>set</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="329" column="16" bodyfile="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" bodystart="329" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_python_1_1_object_1ab3aa615a6b576b663f9ee524831280c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Python::Object&lt; O &gt;::set</definition>
+        <argsstring>(Property const &amp;p, Value val)</argsstring>
+        <name>set</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="341" column="16" bodyfile="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" bodystart="341" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_python_1_1_object_1ab601136e5837e6bd99c4bf3b0beee718" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Python::Object&lt; O &gt;::set</definition>
+        <argsstring>(Property const &amp;p, Value val, std::string const &amp;unit)</argsstring>
+        <name>set</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="352" column="16" bodyfile="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" bodystart="352" bodyend="362"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_python_1_1_object_1aa91e924b2c7c3e58764f8aee6b174926" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+        <definition>virtual Value Gyoto::Python::Object&lt; O &gt;::get</definition>
+        <argsstring>(std::string const &amp;key) const</argsstring>
+        <name>get</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="366" column="17" bodyfile="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" bodystart="366" bodyend="373"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_python_1_1_object_1a042952734a5d4bd00b73a4c03cc23af4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+        <definition>Value Gyoto::Python::Object&lt; O &gt;::get</definition>
+        <argsstring>(Property const &amp;p, std::string const &amp;unit) const</argsstring>
+        <name>get</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="375" column="9" bodyfile="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" bodystart="375" bodyend="382"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_python_1_1_object_1abeaf3c1bd632fda3a48118d30105c871" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+        <definition>Value Gyoto::Python::Object&lt; O &gt;::get</definition>
+        <argsstring>(Property const &amp;p) const</argsstring>
+        <name>get</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="384" column="9" bodyfile="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" bodystart="384" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_python_1_1_object_1ab4fd3efea9c85b8f8c1aaafa2597dfa4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int Gyoto::Python::Object&lt; O &gt;::setParameter</definition>
+        <argsstring>(std::string name, std::string content, std::string unit)</argsstring>
+        <name>setParameter</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>content</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="394" column="15" bodyfile="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" bodystart="394" bodyend="407"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_python_1_1_object_1a7524ab9c2d51d32f7de7177df5b544a1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Python::Object&lt; O &gt;::fillElement</definition>
+        <argsstring>(Gyoto::FactoryMessenger *fmp) const</argsstring>
+        <name>fillElement</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">Gyoto::FactoryMessenger</ref> *</type>
+          <declname>fmp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="409" column="16" bodyfile="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" bodystart="409" bodyend="422"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_python_1_1_object_1a84ea2cab6209f1ed0de3a73223c6a5e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Python::Object&lt; O &gt;::setParameters</definition>
+        <argsstring>(Gyoto::FactoryMessenger *fmp)</argsstring>
+        <name>setParameters</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">Gyoto::FactoryMessenger</ref> *</type>
+          <declname>fmp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="425" column="8" bodyfile="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" bodystart="425" bodyend="485"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_python_1_1_base_1a9a814881f2741b5ccdf8ca91d1b4ebf7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string Gyoto::Python::Base::module</definition>
+        <argsstring>() const</argsstring>
+        <name>module</name>
+        <reimplementedby refid="class_gyoto_1_1_spectrum_1_1_python_1ad306d8a512881fa5d0eeda24d193bd2d">module</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_python_1a1e19d7037aeee1bffb119b8f2c5e5f00">module</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard_1a257de97dbef49bd2c6828090eea4de50">module</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_1af7d2cfd1dc5f6ba3b8e033c7508b93de">module</reimplementedby>
+        <briefdescription>
+<para>Return module_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="254" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_python_1_1_base_1a4cb3d486914da158dafcd1e562827fed" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Python::Base::module</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>module</name>
+        <reimplementedby refid="class_gyoto_1_1_spectrum_1_1_python_1a217fab133edf1b0435295112b70e93a8">module</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_python_1a3718604728f0dce0a8927e45921a7ed8">module</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard_1a4a94de855ab50bfb0303b8afc2f2b67a">module</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_1a6356c48534d038f0aac4f5dd50a9ca7b">module</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <briefdescription>
+<para>Set <ref refid="class_gyoto_1_1_python_1_1_base_1a7f6558bf7597b6e6c8f1bd198895b077" kindref="member">module_</ref> and import the <ref refid="namespace_gyoto_1_1_python" kindref="compound">Python</ref> module. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Side effects:<itemizedlist>
+<listitem><para>sets <ref refid="class_gyoto_1_1_python_1_1_base_1ae0c6e2e9b883adaa081e7a3b402d3bb2" kindref="member">inline_module_</ref> to &quot;&quot;;</para>
+</listitem><listitem><para>calls <ref refid="class_gyoto_1_1_python_1_1_base_1a894cfd1e8f4424b4a27b79020bc95a95" kindref="member">klass</ref>(<ref refid="class_gyoto_1_1_python_1_1_base_1a69af6b343cb744e7e34022d395f93ab4" kindref="member">class_</ref>) if <ref refid="class_gyoto_1_1_python_1_1_base_1a69af6b343cb744e7e34022d395f93ab4" kindref="member">class_</ref> is already known, so <ref refid="class_gyoto_1_1_python_1_1_base_1a7f6558bf7597b6e6c8f1bd198895b077" kindref="member">module_</ref> can be set (or reset) after <ref refid="class_gyoto_1_1_python_1_1_base_1a69af6b343cb744e7e34022d395f93ab4" kindref="member">class_</ref>. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="265" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_python_1_1_base_1a79f704f70a42edf5f37d1e28ee88037a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string Gyoto::Python::Base::inlineModule</definition>
+        <argsstring>() const</argsstring>
+        <name>inlineModule</name>
+        <reimplementedby refid="class_gyoto_1_1_spectrum_1_1_python_1a15f085937942324f8bd30b38993d2328">inlineModule</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_python_1a5aa16fe612f6ed1e9f7a7172cbe07241">inlineModule</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard_1a54e22665edcbd570612bd2546e336139">inlineModule</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_1a3cd84a0bf6a468b0bf5409b40bf70705">inlineModule</reimplementedby>
+        <briefdescription>
+<para>Return inline_module_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="255" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_python_1_1_base_1a3436f643ba19cb9e53d8a7e95b64f0df" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Python::Base::inlineModule</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>inlineModule</name>
+        <reimplementedby refid="class_gyoto_1_1_spectrum_1_1_python_1aadff9b3ca45129d98dc4012d0c8465d1">inlineModule</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_python_1a2faed173e725f3192666abb0ad1a054c">inlineModule</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard_1a34ff93e25b631d25445d9c05339e955b">inlineModule</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_1a5e0d327f7d7d2718fdd66ce7b41d7856">inlineModule</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <briefdescription>
+<para>Set <ref refid="class_gyoto_1_1_python_1_1_base_1ae0c6e2e9b883adaa081e7a3b402d3bb2" kindref="member">inline_module_</ref> and import the <ref refid="namespace_gyoto_1_1_python" kindref="compound">Python</ref> module. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Side effects:<itemizedlist>
+<listitem><para>sets <ref refid="class_gyoto_1_1_python_1_1_base_1a7f6558bf7597b6e6c8f1bd198895b077" kindref="member">module_</ref> to &quot;&quot;;</para>
+</listitem><listitem><para>calls <ref refid="class_gyoto_1_1_python_1_1_base_1a894cfd1e8f4424b4a27b79020bc95a95" kindref="member">klass</ref>(<ref refid="class_gyoto_1_1_python_1_1_base_1a69af6b343cb744e7e34022d395f93ab4" kindref="member">class_</ref>) if <ref refid="class_gyoto_1_1_python_1_1_base_1a69af6b343cb744e7e34022d395f93ab4" kindref="member">class_</ref> is already known, so <ref refid="class_gyoto_1_1_python_1_1_base_1a7f6558bf7597b6e6c8f1bd198895b077" kindref="member">module_</ref> can be set (or reset) after <ref refid="class_gyoto_1_1_python_1_1_base_1a69af6b343cb744e7e34022d395f93ab4" kindref="member">class_</ref>. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="275" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_python_1_1_base_1a894cfd1e8f4424b4a27b79020bc95a95" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string Gyoto::Python::Base::klass</definition>
+        <argsstring>() const</argsstring>
+        <name>klass</name>
+        <reimplementedby refid="class_gyoto_1_1_spectrum_1_1_python_1ab6fa56d42ac5c1472b094d865a899357">klass</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_python_1a9708bdef837a896e529accc4e1720655">klass</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard_1ac37e7398e73e09e1fe4543418d3ce967">klass</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_1a987a360677d0f4f8ca16bb606cbad1f4">klass</reimplementedby>
+        <briefdescription>
+<para>Retrieve <ref refid="class_gyoto_1_1_python_1_1_base_1a69af6b343cb744e7e34022d395f93ab4" kindref="member">class_</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="278" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_python_1_1_base_1acce1645b213fe517f73483a99e7789be" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Python::Base::klass</definition>
+        <argsstring>(const std::string &amp;c)</argsstring>
+        <name>klass</name>
+        <reimplementedby refid="class_gyoto_1_1_spectrum_1_1_python_1acab5164d2806f32ed1beccce64dde497">klass</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_python_1a41b59b3d5e8f36d0d7d0865ae2efceb1">klass</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard_1a2d173c0c05b4ad4c4642f7823e6e73e8">klass</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_1a2e9e943c6b9c78d08ec6458e68609dce">klass</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Set <ref refid="class_gyoto_1_1_python_1_1_base_1a69af6b343cb744e7e34022d395f93ab4" kindref="member">class_</ref> and instantiate the <ref refid="namespace_gyoto_1_1_python" kindref="compound">Python</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets <ref refid="class_gyoto_1_1_python_1_1_base_1aab2145b455aa9848024b643d06016b35" kindref="member">pInstance_</ref>.</para>
+<para>This generic implementation takes care of the common ground, but does not set &apos;this&apos; or call <ref refid="class_gyoto_1_1_python_1_1_base_1a1f83483692c3f761777f5a8a863d0a83" kindref="member">parameters</ref>(<ref refid="class_gyoto_1_1_python_1_1_base_1aa033dfe530617afb7c7a27e6536bb88c" kindref="member">parameters_</ref>). Therefore, all the derived classes should reimplement this method and at least call Python::Base::klass(c) and <ref refid="class_gyoto_1_1_python_1_1_base_1a1f83483692c3f761777f5a8a863d0a83" kindref="member">parameters</ref>(<ref refid="class_gyoto_1_1_python_1_1_base_1aa033dfe530617afb7c7a27e6536bb88c" kindref="member">parameters_</ref>). Between the two is the right moment to check that the <ref refid="namespace_gyoto_1_1_python" kindref="compound">Python</ref> class implements the required API and to cache PyObject* pointers to class methods. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="293" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_python_1_1_base_1a1f83483692c3f761777f5a8a863d0a83" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>virtual std::vector&lt;double&gt; Gyoto::Python::Base::parameters</definition>
+        <argsstring>() const</argsstring>
+        <name>parameters</name>
+        <reimplementedby refid="class_gyoto_1_1_spectrum_1_1_python_1aee2f5c686605b792bfdb382a41846d5e">parameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_python_1a97c57b0c9a8c22375d8668d1e1b189a8">parameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard_1a57c225357ebfa68bed48e309aaf13ee0">parameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_1ad3fd7c2bb76de035b1ba37fad34e9d5b">parameters</reimplementedby>
+        <briefdescription>
+<para>Retrieve <ref refid="class_gyoto_1_1_python_1_1_base_1aa033dfe530617afb7c7a27e6536bb88c" kindref="member">parameters_</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="296" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_python_1_1_base_1ad60df11071a344829956610aa8015a58" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Python::Base::parameters</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;)</argsstring>
+        <name>parameters</name>
+        <reimplementedby refid="class_gyoto_1_1_spectrum_1_1_python_1a640a1029c8e750cc6958894d6c429bea">parameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_python_1a0116ead0d5baed6dbe02f18e7e4a31df">parameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard_1adbd242f453a565255460e3fd555457b2">parameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_1a581acf6668db9476d28fe60927be3d8d">parameters</reimplementedby>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+        </param>
+        <briefdescription>
+<para>Set <ref refid="class_gyoto_1_1_python_1_1_base_1aa033dfe530617afb7c7a27e6536bb88c" kindref="member">parameters_</ref> and send them to <ref refid="class_gyoto_1_1_python_1_1_base_1aab2145b455aa9848024b643d06016b35" kindref="member">pInstance_</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The parameters are sent to the class instance using the <bold>setitem</bold> method with numerical keys. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="303" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_python_1_1_base_1af62c327a27345056f6012b771fa970b8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Gyoto::Python::Base::hasPythonProperty</definition>
+        <argsstring>(std::string const &amp;key) const</argsstring>
+        <name>hasPythonProperty</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="305" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_python_1_1_base_1a888b32520799d6f002536e153060b6fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Python::Base::setPythonProperty</definition>
+        <argsstring>(std::string const &amp;key, Value val)</argsstring>
+        <name>setPythonProperty</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="306" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_python_1_1_base_1abea99a3924aca45cd00c543fab7bd155" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+        <definition>virtual Value Gyoto::Python::Base::getPythonProperty</definition>
+        <argsstring>(std::string const &amp;key) const</argsstring>
+        <name>getPythonProperty</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="307" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_python_1_1_base_1a02a869483c7dd153661b7867c892f505" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int Gyoto::Python::Base::pythonPropertyType</definition>
+        <argsstring>(std::string const &amp;key) const</argsstring>
+        <name>pythonPropertyType</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="308" column="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_python_1_1_base_1a7f6558bf7597b6e6c8f1bd198895b077" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gyoto::Python::Base::module_</definition>
+        <argsstring></argsstring>
+        <name>module_</name>
+        <briefdescription>
+<para>Name of the <ref refid="namespace_gyoto_1_1_python" kindref="compound">Python</ref> module that holds the class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For instance, if the class is implemented in toto.py, the module name is &quot;toto&quot;. <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> name: Module. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="200" column="15" bodyfile="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_python_1_1_base_1ae0c6e2e9b883adaa081e7a3b402d3bb2" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gyoto::Python::Base::inline_module_</definition>
+        <argsstring></argsstring>
+        <name>inline_module_</name>
+        <briefdescription>
+<para><ref refid="namespace_gyoto_1_1_python" kindref="compound">Python</ref> source code for module that holds the class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="206" column="15" bodyfile="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_python_1_1_base_1a69af6b343cb744e7e34022d395f93ab4" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gyoto::Python::Base::class_</definition>
+        <argsstring></argsstring>
+        <name>class_</name>
+        <briefdescription>
+<para>Name of the <ref refid="namespace_gyoto_1_1_python" kindref="compound">Python</ref> class that we want to expose. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> name: Class. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="213" column="15" bodyfile="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_python_1_1_base_1aa033dfe530617afb7c7a27e6536bb88c" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Gyoto::Python::Base::parameters_</definition>
+        <argsstring></argsstring>
+        <name>parameters_</name>
+        <briefdescription>
+<para>Parameters that this class needs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A list of parameters (doubles) can be passed in the <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> Parameters. They will be sent to the <ref refid="namespace_gyoto_1_1_python" kindref="compound">Python</ref> instance using <bold>setitem</bold>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="222" column="15" bodyfile="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_python_1_1_base_1af652cb4b7a2f473e9a86a4bf1e47e973" prot="protected" static="no" mutable="no">
+        <type>PyObject *</type>
+        <definition>PyObject* Gyoto::Python::Base::pModule_</definition>
+        <argsstring></argsstring>
+        <name>pModule_</name>
+        <briefdescription>
+<para>Reference to the python module once it has been loaded. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="227" column="13" bodyfile="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_python_1_1_base_1aab2145b455aa9848024b643d06016b35" prot="protected" static="no" mutable="no">
+        <type>PyObject *</type>
+        <definition>PyObject* Gyoto::Python::Base::pInstance_</definition>
+        <argsstring></argsstring>
+        <name>pInstance_</name>
+        <briefdescription>
+<para>Reference to the python instance once it has been instantiated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="232" column="13" bodyfile="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_python_1_1_base_1a7e9289775df2ec09ca222ba290cf35c7" prot="protected" static="no" mutable="no">
+        <type>PyObject *</type>
+        <definition>PyObject* Gyoto::Python::Base::pProperties_</definition>
+        <argsstring></argsstring>
+        <name>pProperties_</name>
+        <briefdescription>
+<para>Reference to the properties member. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="237" column="13" bodyfile="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_python_1_1_base_1a8f1ddee73aaa84dcdc1b1d2b0b3d8f7c" prot="protected" static="no" mutable="no">
+        <type>PyObject *</type>
+        <definition>PyObject* Gyoto::Python::Base::pSet_</definition>
+        <argsstring></argsstring>
+        <name>pSet_</name>
+        <briefdescription>
+<para>Reference to the (optional) Set method. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="242" column="13" bodyfile="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_python_1_1_base_1a758de1b2cdd3d9cd55506b5c599290f1" prot="protected" static="no" mutable="no">
+        <type>PyObject *</type>
+        <definition>PyObject* Gyoto::Python::Base::pGet_</definition>
+        <argsstring></argsstring>
+        <name>pGet_</name>
+        <briefdescription>
+<para>Reference to the (optional) Get method. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="247" column="13" bodyfile="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class template to implement parts of the <ref refid="class_gyoto_1_1_object" kindref="compound">Gyoto::Object</ref> API. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>O</label>
+      </node>
+      <node id="3">
+        <label>Gyoto::Python::Base</label>
+        <link refid="class_gyoto_1_1_python_1_1_base"/>
+      </node>
+      <node id="1">
+        <label>Gyoto::Python::Object&lt; O &gt;</label>
+        <link refid="class_gyoto_1_1_python_1_1_object"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>O</label>
+      </node>
+      <node id="3">
+        <label>Gyoto::Python::Base</label>
+        <link refid="class_gyoto_1_1_python_1_1_base"/>
+      </node>
+      <node id="1">
+        <label>Gyoto::Python::Object&lt; O &gt;</label>
+        <link refid="class_gyoto_1_1_python_1_1_object"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="313" column="1" bodyfile="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" bodystart="321" bodyend="486"/>
+    <listofallmembers>
+      <member refid="class_gyoto_1_1_python_1_1_base_1abfc27f1504c6c5342ad9ff4efe5566b2" prot="public" virt="non-virtual"><scope>Gyoto::Python::Object</scope><name>Base</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_base_1ae3b870fd182c26b7923db3e0473c703b" prot="public" virt="non-virtual"><scope>Gyoto::Python::Object</scope><name>Base</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_base_1a69af6b343cb744e7e34022d395f93ab4" prot="protected" virt="non-virtual"><scope>Gyoto::Python::Object</scope><name>class_</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_object_1a7524ab9c2d51d32f7de7177df5b544a1" prot="public" virt="virtual"><scope>Gyoto::Python::Object</scope><name>fillElement</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_object_1aa91e924b2c7c3e58764f8aee6b174926" prot="public" virt="virtual"><scope>Gyoto::Python::Object</scope><name>get</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_object_1a042952734a5d4bd00b73a4c03cc23af4" prot="public" virt="non-virtual"><scope>Gyoto::Python::Object</scope><name>get</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_object_1abeaf3c1bd632fda3a48118d30105c871" prot="public" virt="non-virtual"><scope>Gyoto::Python::Object</scope><name>get</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_base_1abea99a3924aca45cd00c543fab7bd155" prot="public" virt="virtual"><scope>Gyoto::Python::Object</scope><name>getPythonProperty</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_base_1af62c327a27345056f6012b771fa970b8" prot="public" virt="virtual"><scope>Gyoto::Python::Object</scope><name>hasPythonProperty</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_base_1ae0c6e2e9b883adaa081e7a3b402d3bb2" prot="protected" virt="non-virtual"><scope>Gyoto::Python::Object</scope><name>inline_module_</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_base_1a79f704f70a42edf5f37d1e28ee88037a" prot="public" virt="virtual"><scope>Gyoto::Python::Object</scope><name>inlineModule</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_base_1a3436f643ba19cb9e53d8a7e95b64f0df" prot="public" virt="virtual"><scope>Gyoto::Python::Object</scope><name>inlineModule</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_base_1a894cfd1e8f4424b4a27b79020bc95a95" prot="public" virt="virtual"><scope>Gyoto::Python::Object</scope><name>klass</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_base_1acce1645b213fe517f73483a99e7789be" prot="public" virt="virtual"><scope>Gyoto::Python::Object</scope><name>klass</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_base_1a9a814881f2741b5ccdf8ca91d1b4ebf7" prot="public" virt="virtual"><scope>Gyoto::Python::Object</scope><name>module</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_base_1a4cb3d486914da158dafcd1e562827fed" prot="public" virt="virtual"><scope>Gyoto::Python::Object</scope><name>module</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_base_1a7f6558bf7597b6e6c8f1bd198895b077" prot="protected" virt="non-virtual"><scope>Gyoto::Python::Object</scope><name>module_</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_object_1a9ebdd38ce6f787942688ab460c1b3aa9" prot="public" virt="non-virtual"><scope>Gyoto::Python::Object</scope><name>Object</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_object_1a323886ea8a4ec42ca658794a89d0294b" prot="public" virt="non-virtual"><scope>Gyoto::Python::Object</scope><name>Object</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_base_1a1f83483692c3f761777f5a8a863d0a83" prot="public" virt="virtual"><scope>Gyoto::Python::Object</scope><name>parameters</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_base_1ad60df11071a344829956610aa8015a58" prot="public" virt="virtual"><scope>Gyoto::Python::Object</scope><name>parameters</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_base_1aa033dfe530617afb7c7a27e6536bb88c" prot="protected" virt="non-virtual"><scope>Gyoto::Python::Object</scope><name>parameters_</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_base_1a758de1b2cdd3d9cd55506b5c599290f1" prot="protected" virt="non-virtual"><scope>Gyoto::Python::Object</scope><name>pGet_</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_base_1aab2145b455aa9848024b643d06016b35" prot="protected" virt="non-virtual"><scope>Gyoto::Python::Object</scope><name>pInstance_</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_base_1af652cb4b7a2f473e9a86a4bf1e47e973" prot="protected" virt="non-virtual"><scope>Gyoto::Python::Object</scope><name>pModule_</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_base_1a7e9289775df2ec09ca222ba290cf35c7" prot="protected" virt="non-virtual"><scope>Gyoto::Python::Object</scope><name>pProperties_</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_base_1a8f1ddee73aaa84dcdc1b1d2b0b3d8f7c" prot="protected" virt="non-virtual"><scope>Gyoto::Python::Object</scope><name>pSet_</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_base_1a02a869483c7dd153661b7867c892f505" prot="public" virt="virtual"><scope>Gyoto::Python::Object</scope><name>pythonPropertyType</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_object_1ad4aff23562b0ae6a36e05741eb631c82" prot="public" virt="virtual"><scope>Gyoto::Python::Object</scope><name>set</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_object_1ab3aa615a6b576b663f9ee524831280c8" prot="public" virt="virtual"><scope>Gyoto::Python::Object</scope><name>set</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_object_1ab601136e5837e6bd99c4bf3b0beee718" prot="public" virt="virtual"><scope>Gyoto::Python::Object</scope><name>set</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_object_1ab4fd3efea9c85b8f8c1aaafa2597dfa4" prot="public" virt="virtual"><scope>Gyoto::Python::Object</scope><name>setParameter</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_object_1a84ea2cab6209f1ed0de3a73223c6a5e8" prot="public" virt="non-virtual"><scope>Gyoto::Python::Object</scope><name>setParameters</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_base_1a888b32520799d6f002536e153060b6fe" prot="public" virt="virtual"><scope>Gyoto::Python::Object</scope><name>setPythonProperty</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_base_1a1ef2825c473f7ad7c48fe8822eda8c16" prot="public" virt="non-virtual"><scope>Gyoto::Python::Object</scope><name>~Base</name></member>
+      <member refid="class_gyoto_1_1_python_1_1_object_1af0760f1ceb18207d2e3678295b23af2b" prot="public" virt="virtual"><scope>Gyoto::Python::Object</scope><name>~Object</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

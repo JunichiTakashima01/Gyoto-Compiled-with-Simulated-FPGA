@@ -1,0 +1,1035 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_gyoto_1_1_factory_messenger" kind="class" language="C++" prot="public">
+    <compoundname>Gyoto::FactoryMessenger</compoundname>
+    <includes refid="_gyoto_factory_messenger_8h" local="no">GyotoFactoryMessenger.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_factory_messenger_1a872915bff11693cb686e32b7f443e346" prot="private" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_factory" kindref="compound">Gyoto::Factory</ref> *</type>
+        <definition>Gyoto::Factory* Gyoto::FactoryMessenger::employer_</definition>
+        <argsstring></argsstring>
+        <name>employer_</name>
+        <briefdescription>
+<para>The <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref> that sent this messenger. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="94" column="18" bodyfile="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_factory_messenger_1a378caf5b3eb30c091a015d4351fb0f09" prot="private" static="no" mutable="no">
+        <type>xercesc::DOMElement *</type>
+        <definition>xercesc::DOMElement* Gyoto::FactoryMessenger::element_</definition>
+        <argsstring></argsstring>
+        <name>element_</name>
+        <briefdescription>
+<para>The XML element concerned by this transaction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="96" column="23" bodyfile="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_factory_messenger_1a9c8eb521fb3b2d8e72ec2ab12079dbc4" prot="private" static="no" mutable="no">
+        <type>xercesc::DOMNodeList *</type>
+        <definition>xercesc::DOMNodeList* Gyoto::FactoryMessenger::children_</definition>
+        <argsstring></argsstring>
+        <name>children_</name>
+        <briefdescription>
+<para>The children of the XML element concerned by this transaction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="98" column="24" bodyfile="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_factory_messenger_1a4ea5dc21b68de8f29da9323f8b1f3238" prot="private" static="no" mutable="no">
+        <type>XMLSize_t</type>
+        <definition>XMLSize_t Gyoto::FactoryMessenger::nodeCount_</definition>
+        <argsstring></argsstring>
+        <name>nodeCount_</name>
+        <briefdescription>
+<para>The number of children of the XML element concerned by this transaction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="100" column="13" bodyfile="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_factory_messenger_1af34b6cfe2f353c8a5408340667ccc36c" prot="private" static="no" mutable="no">
+        <type>XMLSize_t</type>
+        <definition>XMLSize_t Gyoto::FactoryMessenger::curNodeIndex_</definition>
+        <argsstring></argsstring>
+        <name>curNodeIndex_</name>
+        <briefdescription>
+<para>Current child. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="102" column="13" bodyfile="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1a0bfc9828d0554895ff2c4781935848bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::FactoryMessenger::FactoryMessenger</definition>
+        <argsstring>(Gyoto::Factory *, xercesc::DOMElement *)</argsstring>
+        <name>FactoryMessenger</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_factory" kindref="compound">Gyoto::Factory</ref> *</type>
+        </param>
+        <param>
+          <type>xercesc::DOMElement *</type>
+        </param>
+        <briefdescription>
+<para>Constructor called before subcontracting. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="105" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1a1eefa10fe88405224ead5a0c97acce32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::FactoryMessenger::FactoryMessenger</definition>
+        <argsstring>(const FactoryMessenger &amp;parent, std::string)</argsstring>
+        <name>FactoryMessenger</name>
+        <param>
+          <type>const <ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref> &amp;</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+        </param>
+        <briefdescription>
+<para>Constructor called before fillElement. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="107" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1acfaf0c728ad6768bdfd25ad5e15fcd13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::FactoryMessenger::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+<para>Get back to first parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="110" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1a20033615402e9d7a7c21fc5ef4ebf386" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_metric_1_1_generic" kindref="compound">Metric::Generic</ref> &gt;</type>
+        <definition>SmartPointer&lt;Metric::Generic&gt; Gyoto::FactoryMessenger::metric</definition>
+        <argsstring>()</argsstring>
+        <name>metric</name>
+        <briefdescription>
+<para>Build and get the <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> described in this XML file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>An <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> XML file may contain at most a single <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> section and it may be present about anywhere in the XML tree. Individual subcontractors should not try to interpret this section directly, but should call <ref refid="class_gyoto_1_1_factory_messenger_1a20033615402e9d7a7c21fc5ef4ebf386" kindref="member">metric()</ref> to find and interpret the <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> section. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="122" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1a59571b4b88162856c69af230f2c11f95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_screen" kindref="compound">Screen</ref> &gt;</type>
+        <definition>SmartPointer&lt;Screen&gt; Gyoto::FactoryMessenger::screen</definition>
+        <argsstring>()</argsstring>
+        <name>screen</name>
+        <briefdescription>
+<para>Build and get the <ref refid="class_gyoto_1_1_screen" kindref="compound">Screen</ref> described in this XML file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>An <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> XML file may contain at most a single <ref refid="class_gyoto_1_1_screen" kindref="compound">Screen</ref> section and it may be present about anywhere in the XML tree. Individual subcontractors should not try to interpret this section directly, but should call <ref refid="class_gyoto_1_1_factory_messenger_1a59571b4b88162856c69af230f2c11f95" kindref="member">screen()</ref> to find and interpret the <ref refid="class_gyoto_1_1_screen" kindref="compound">Screen</ref> section. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="132" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1a7acd40d3f59dc9cc8660baba0151bd11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref> &gt;</type>
+        <definition>SmartPointer&lt;Photon&gt; Gyoto::FactoryMessenger::photon</definition>
+        <argsstring>()</argsstring>
+        <name>photon</name>
+        <briefdescription>
+<para>Build and get the <ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref> described in this XML file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>An <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> XML file may contain at most a single <ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref> section and it may be present about anywhere in the XML tree. Individual subcontractors should not try to interpret this section directly, but should call <ref refid="class_gyoto_1_1_factory_messenger_1a7acd40d3f59dc9cc8660baba0151bd11" kindref="member">photon()</ref> to find and interpret the <ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref> section. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="142" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1aea5108fe2bb15a154883e2776885a593" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_astrobj_1_1_generic" kindref="compound">Astrobj::Generic</ref> &gt;</type>
+        <definition>SmartPointer&lt;Astrobj::Generic&gt; Gyoto::FactoryMessenger::astrobj</definition>
+        <argsstring>()</argsstring>
+        <name>astrobj</name>
+        <briefdescription>
+<para>Build and get the <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref> described in this XML file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>An <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> XML file may contain at most a single <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref> section and it may be present about anywhere in the XML tree. Individual subcontractors should not try to interpret this section directly, but should call <ref refid="class_gyoto_1_1_factory_messenger_1aea5108fe2bb15a154883e2776885a593" kindref="member">astrobj()</ref> to find and interpret the <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref> section. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="152" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1a716340221e527c61a05af389590b53f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gyoto::FactoryMessenger::getNextParameter</definition>
+        <argsstring>(std::string *name, std::string *content, std::string *unit=NULL)</argsstring>
+        <name>getNextParameter</name>
+        <param>
+          <type>std::string *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::string *</type>
+          <declname>content</declname>
+        </param>
+        <param>
+          <type>std::string *</type>
+          <declname>unit</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Get name and value of next parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>On each call, return a pair name-content of one of the children_. Usually, &quot;name&quot; is the name of a parameter and &quot;content&quot; is the string representation of the corresponding value. For instance: <programlisting><codeline><highlight class="normal">&lt;Name&gt;Content&lt;/Name&gt;</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>upon output, name of the child </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the child </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unit=</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>propertty of the child </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 if there remains parameters to retrieve, 0 otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="169" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1a3abfe9dcb058996a0d46dd357f1e8d3c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Gyoto::FactoryMessenger::getSelfAttribute</definition>
+        <argsstring>(std::string attrname) const</argsstring>
+        <name>getSelfAttribute</name>
+        <param>
+          <type>std::string</type>
+          <declname>attrname</declname>
+        </param>
+        <briefdescription>
+<para>Get attribute of <ref refid="class_gyoto_1_1_factory_messenger_1a378caf5b3eb30c091a015d4351fb0f09" kindref="member">FactoryMessenger::element_</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For instance a <ref refid="namespace_gyoto_1_1_spectrometer" kindref="compound">Spectrometer</ref> description looks like this <programlisting><codeline><highlight class="normal">&lt;Spectrometer<sp/>kind=&quot;wave&quot;<sp/>nsamples=&quot;10&quot;&gt;<sp/>2.0e-6<sp/>2.4e-6&lt;/Astrobj&gt;</highlight></codeline>
+</programlisting> and the <ref refid="namespace_gyoto_1_1_spectrometer" kindref="compound">Spectrometer</ref> builder uses <ref refid="class_gyoto_1_1_factory_messenger_1a3abfe9dcb058996a0d46dd357f1e8d3c" kindref="member">getSelfAttribute()</ref> to retrieve the attributes &quot;kind&quot; and &quot;nsamples&quot;.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attrname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the attribute </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>attrvalue </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="185" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1a48555295390ec53540322c28581394f9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Gyoto::FactoryMessenger::getAttribute</definition>
+        <argsstring>(std::string attrname) const</argsstring>
+        <name>getAttribute</name>
+        <param>
+          <type>std::string</type>
+          <declname>attrname</declname>
+        </param>
+        <briefdescription>
+<para>Get attribute of a last retrieved parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For instance <programlisting><codeline><highlight class="normal">&lt;ParameterName<sp/>attrname=&quot;attrvalue&quot;&gt;ParameterContent&lt;/ParameterName&gt;</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attrname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the attribute </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>attrvalue </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="197" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1a468f8e44ec2f2b847c423eae6bb7ef9a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Gyoto::FactoryMessenger::getFullContent</definition>
+        <argsstring>() const</argsstring>
+        <name>getFullContent</name>
+        <briefdescription>
+<para>Get full content of element_. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>In exceptional circumstances, it may be necessary to get the entire text content of the topmost element <ref refid="class_gyoto_1_1_factory_messenger_1a378caf5b3eb30c091a015d4351fb0f09" kindref="member">FactoryMessenger::element_</ref> instead or getting only the individual <ref refid="class_gyoto_1_1_factory_messenger_1a9c8eb521fb3b2d8e72ec2ab12079dbc4" kindref="member">FactoryMessenger::children_</ref> .</para>
+<para>For instance a <ref refid="namespace_gyoto_1_1_spectrometer" kindref="compound">Spectrometer</ref> description looks like this: <programlisting><codeline><highlight class="normal">&lt;Spectrometer<sp/>kind=&quot;wave&quot;<sp/>nsamples=&quot;10&quot;&gt;<sp/>2.0e-6<sp/>2.4e-6&lt;/Astrobj&gt;</highlight></codeline>
+</programlisting> and the <ref refid="namespace_gyoto_1_1_spectrometer" kindref="compound">Spectrometer</ref> builder uses <ref refid="class_gyoto_1_1_factory_messenger_1a468f8e44ec2f2b847c423eae6bb7ef9a" kindref="member">getFullContent()</ref> to retrieve the spectral boundaries (2.0e-6 and 2.4e-6 here). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="213" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1a45eecd6b12e2577f9d8abf12e0aa76bc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref> *</type>
+        <definition>FactoryMessenger* Gyoto::FactoryMessenger::getChild</definition>
+        <argsstring>() const</argsstring>
+        <name>getChild</name>
+        <briefdescription>
+<para>Get another <ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref> instance initialized to current child. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If one of the <ref refid="class_gyoto_1_1_factory_messenger_1a9c8eb521fb3b2d8e72ec2ab12079dbc4" kindref="member">FactoryMessenger::children_</ref> is complex (for instance the complete description of a <ref refid="namespace_gyoto_1_1_spectrum" kindref="compound">Gyoto::Spectrum</ref>), it is possible to initialize a new <ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref> and call the correct subcontractor: <programlisting><codeline><highlight class="normal">SmartPointer&lt;Spectrum::Generic&gt;<sp/>spectrum<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal">while<sp/>(messenger-&gt;getNextParameter(name,<sp/>content)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/>if<sp/>(name==&quot;Spectrum&quot;)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>content<sp/>=<sp/>messenger-&gt;getAttribute(&quot;kind&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>FactoryMessenger*<sp/>child<sp/>=<sp/>messenger-&gt;getChild();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>deliverable-&gt;spectrum(<sp/>(*Spectrum::getSubcontractor(content))(child)<sp/>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>delete<sp/>child;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> The child is allocated with new and must be deleted after use. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="234" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1a343e324a387d3a30c93bd391828a9858" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Gyoto::FactoryMessenger::fullPath</definition>
+        <argsstring>(std::string relpath)</argsstring>
+        <name>fullPath</name>
+        <param>
+          <type>std::string</type>
+          <declname>relpath</declname>
+        </param>
+        <briefdescription>
+<para>Transform path into full path specification. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function takes a relative path (e.g. ../foo/bar.data) and transforms it into a full path (starting with &quot;/&quot;). It is not guaranteed to be portable (we assume that the path separator is &quot;/&quot; and that absolute paths start with &quot;/&quot;).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>relpath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>path relative to the directory where the XML file on which the <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref> works is located.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>fullpath at full path specification to the same point pon the file-system. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="250" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1a8ab9c2e09c674dfac3cf443b694ed2a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::FactoryMessenger::metric</definition>
+        <argsstring>(SmartPointer&lt; Metric::Generic &gt;)</argsstring>
+        <name>metric</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_metric_1_1_generic" kindref="compound">Metric::Generic</ref> &gt;</type>
+        </param>
+        <briefdescription>
+<para>Set the <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>At most one <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> section may be present in a give <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> XML file.</para>
+<para>When an object&apos;s fillElement() method is called, if this object is connected to a <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref>, it should call <ref refid="class_gyoto_1_1_factory_messenger_1a20033615402e9d7a7c21fc5ef4ebf386" kindref="member">metric()</ref> with this <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref>. Very often, the <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> will already have been set previously. The <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref> will check that all the objects in the hierarchy are attached to the same <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> instance, and save this instance only once. Trying to set the <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> to something else than the already set <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> instance is an error condition.</para>
+<para>To make things clearer: Assume &quot;scenery&quot; is a fully filled <ref refid="class_gyoto_1_1_scenery" kindref="compound">Scenery</ref>. scenery-&gt;fillElement(messenger) will call: <programlisting><codeline><highlight class="normal">messenger-&gt;metric(Scenery::gg_)</highlight></codeline>
+<codeline><highlight class="normal">messenger-&gt;screen(Scenery::screen_)</highlight></codeline>
+<codeline><highlight class="normal">messenger-&gt;astrobj(Scenery::obj_);</highlight></codeline>
+</programlisting></para>
+<para>The <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref> will then call screen_-&gt;fillElement(child_messenger) and obj_-&gt;fillElement(child_messenger), each of which will also call <ref refid="class_gyoto_1_1_factory_messenger_1a20033615402e9d7a7c21fc5ef4ebf386" kindref="member">metric()</ref>. If the same <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> is connected to the <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref>, to the <ref refid="class_gyoto_1_1_screen" kindref="compound">Screen</ref> and to the <ref refid="class_gyoto_1_1_scenery" kindref="compound">Scenery</ref>, all is well. Else, you have a bug to fix. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="281" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1a8dae584154a5108e5d3533728f316a4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::FactoryMessenger::astrobj</definition>
+        <argsstring>(SmartPointer&lt; Astrobj::Generic &gt;)</argsstring>
+        <name>astrobj</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_astrobj_1_1_generic" kindref="compound">Astrobj::Generic</ref> &gt;</type>
+        </param>
+        <briefdescription>
+<para>Set the <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Same as <ref refid="class_gyoto_1_1_factory_messenger_1a20033615402e9d7a7c21fc5ef4ebf386" kindref="member">metric()</ref>, but for the <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="287" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1a409a59154d6fe6f8475cf3d8a7d59de5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::FactoryMessenger::screen</definition>
+        <argsstring>(SmartPointer&lt; Screen &gt;)</argsstring>
+        <name>screen</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_screen" kindref="compound">Screen</ref> &gt;</type>
+        </param>
+        <briefdescription>
+<para>Set the <ref refid="class_gyoto_1_1_screen" kindref="compound">Screen</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Same as <ref refid="class_gyoto_1_1_factory_messenger_1a20033615402e9d7a7c21fc5ef4ebf386" kindref="member">metric()</ref>, but for the <ref refid="class_gyoto_1_1_screen" kindref="compound">Screen</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="293" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1a7285f6988ee8c0be458e683615885703" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::FactoryMessenger::setParameter</definition>
+        <argsstring>(std::string name)</argsstring>
+        <name>setParameter</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Output parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Create child XML element of the form <programlisting><codeline><highlight class="normal">&lt;name/&gt;</highlight></codeline>
+</programlisting> for instance when &quot;name&quot; is boolean (present or absent), or only takes attributes (see FactoryMessenger::setAttribute()). As an example, <ref refid="class_gyoto_1_1_object_1a0ffc3f84b4c2372d639eb848605fb1f3" kindref="member">Astrobj::Generic::fillElement()</ref> uses <ref refid="class_gyoto_1_1_factory_messenger_1a7285f6988ee8c0be458e683615885703" kindref="member">setParameter()</ref> to set either Opticallythin or OpticallyThick. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="307" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1a6ef06141e38e2babe1137f473a10d287" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::FactoryMessenger::setParameter</definition>
+        <argsstring>(std::string name, double value)</argsstring>
+        <name>setParameter</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Output parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert value to striing &quot;svalue&quot; and create an XML child element of the form <programlisting><codeline><highlight class="normal">&lt;name&gt;svalue&lt;/name&gt;</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="317" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1a5674fe6319b0634cb83d33ec7c475d1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::FactoryMessenger::setParameter</definition>
+        <argsstring>(std::string name, long int value)</argsstring>
+        <name>setParameter</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>long int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Output parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert value to striing &quot;svalue&quot; and create an XML child element of the form <programlisting><codeline><highlight class="normal">&lt;name&gt;svalue&lt;/name&gt;</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="327" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1ab5b5572bcdb3b5bee2e1343bb1f77c8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::FactoryMessenger::setParameter</definition>
+        <argsstring>(std::string name, unsigned int value)</argsstring>
+        <name>setParameter</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Output parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert value to striing &quot;svalue&quot; and create an XML child element of the form <programlisting><codeline><highlight class="normal">&lt;name&gt;svalue&lt;/name&gt;</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="337" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1a2f132e5caea6cdfbc257eda9538cac1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::FactoryMessenger::setParameter</definition>
+        <argsstring>(std::string name, unsigned long value)</argsstring>
+        <name>setParameter</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Output parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert value to striing &quot;svalue&quot; and create an XML child element of the form <programlisting><codeline><highlight class="normal">&lt;name&gt;svalue&lt;/name&gt;</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="347" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1af48912fc28014db9d8a4479d111a24f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::FactoryMessenger::setParameter</definition>
+        <argsstring>(std::string name, int value)</argsstring>
+        <name>setParameter</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Output parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert value to string &quot;svalue&quot; and create an XML child element of the form <programlisting><codeline><highlight class="normal">&lt;name&gt;svalue&lt;/name&gt;</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="357" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1aca812ff248777ea84c2eda83fc36fbf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::FactoryMessenger::setParameter</definition>
+        <argsstring>(std::string name, std::string value)</argsstring>
+        <name>setParameter</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Output parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an XML child element of the form <programlisting><codeline><highlight class="normal">&lt;name&gt;value&lt;/name&gt;</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="366" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1a394034fa69500a9cdd1ec4e9a99856e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::FactoryMessenger::setParameter</definition>
+        <argsstring>(std::string name, double val[], size_t n, FactoryMessenger **child=NULL)</argsstring>
+        <name>setParameter</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref> **</type>
+          <declname>child</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Output an array of parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For instance: <programlisting><codeline><highlight class="normal">double<sp/>val[4]<sp/>=<sp/>{1.,<sp/>2.,<sp/>3.,<sp/>4.};</highlight></codeline>
+<codeline><highlight class="normal">messenger-&gt;setParameter(&quot;MyArray&quot;,<sp/>val,<sp/>4);</highlight></codeline>
+</programlisting> will result in something like this: <programlisting><codeline><highlight class="normal">&lt;MyArray&gt;1.000000<sp/>2.000000<sp/>3.000000<sp/>4.000000&lt;/MyArray&gt;</highlight></codeline>
+</programlisting></para>
+<para>The exact format is unspecified, determined at compile time, and by default, unlike in the example above, outputs a large number of digits for each double (about 20).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the parameter </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val[]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an array of doubles </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of cells in val[] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>child</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(optional) if not NULL, a new <ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref> is created to access the new parameter element e.g. to set attributes in it (using <ref refid="class_gyoto_1_1_factory_messenger_1a9f459c70f3d7495465e6cccb29195710" kindref="member">setSelfAttribute()</ref>). You then need to delete the child. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="392" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1ae54ea09b36e25caac020a68fb8c226e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::FactoryMessenger::setParameter</definition>
+        <argsstring>(std::string name, std::vector&lt; double &gt; const &amp;val, FactoryMessenger **child=NULL)</argsstring>
+        <name>setParameter</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; const &amp;</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref> **</type>
+          <declname>child</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="396" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1afbbe49d4453e88e97ed4fd7e8c93932c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::FactoryMessenger::setParameter</definition>
+        <argsstring>(std::string name, std::vector&lt; unsigned long &gt; const &amp;val, FactoryMessenger **child=NULL)</argsstring>
+        <name>setParameter</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; unsigned long &gt; const &amp;</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref> **</type>
+          <declname>child</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Output a vector of parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="398" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1a9f459c70f3d7495465e6cccb29195710" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::FactoryMessenger::setSelfAttribute</definition>
+        <argsstring>(std::string attrname, std::string value)</argsstring>
+        <name>setSelfAttribute</name>
+        <param>
+          <type>std::string</type>
+          <declname>attrname</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set attribute in <ref refid="class_gyoto_1_1_factory_messenger_1a378caf5b3eb30c091a015d4351fb0f09" kindref="member">FactoryMessenger::element_</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For instance Spectrometer::fillElement() sets its &quot;kind&quot; attribute somewhat like this: <programlisting><codeline><highlight class="normal">messenger-&gt;setSelfAttribute(&quot;kind&quot;,<sp/>&quot;wave&quot;);</highlight></codeline>
+</programlisting> to produce something like this: <programlisting><codeline><highlight class="normal">&lt;Spectrometer<sp/>kind=&quot;wave&quot;/&gt;</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="413" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1ae14ea235e15c79cadcf26d6f021bd7a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::FactoryMessenger::setSelfAttribute</definition>
+        <argsstring>(std::string attrname, unsigned long value)</argsstring>
+        <name>setSelfAttribute</name>
+        <param>
+          <type>std::string</type>
+          <declname>attrname</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set attribute in <ref refid="class_gyoto_1_1_factory_messenger_1a378caf5b3eb30c091a015d4351fb0f09" kindref="member">FactoryMessenger::element_</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="class_gyoto_1_1_factory_messenger_1a9f459c70f3d7495465e6cccb29195710" kindref="member">setSelfAttribute(std::string attrname, std::string value)</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="419" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1af28276c1fb03adb47b1073c0e4002371" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::FactoryMessenger::setSelfAttribute</definition>
+        <argsstring>(std::string attrname, unsigned int value)</argsstring>
+        <name>setSelfAttribute</name>
+        <param>
+          <type>std::string</type>
+          <declname>attrname</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set attribute in <ref refid="class_gyoto_1_1_factory_messenger_1a378caf5b3eb30c091a015d4351fb0f09" kindref="member">FactoryMessenger::element_</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="class_gyoto_1_1_factory_messenger_1a9f459c70f3d7495465e6cccb29195710" kindref="member">setSelfAttribute(std::string attrname, std::string value)</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="425" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1a788d642f4e37c989bc8ebb0797fb4c46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::FactoryMessenger::setSelfAttribute</definition>
+        <argsstring>(std::string attrname, double value)</argsstring>
+        <name>setSelfAttribute</name>
+        <param>
+          <type>std::string</type>
+          <declname>attrname</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set attribute in <ref refid="class_gyoto_1_1_factory_messenger_1a378caf5b3eb30c091a015d4351fb0f09" kindref="member">FactoryMessenger::element_</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="class_gyoto_1_1_factory_messenger_1a9f459c70f3d7495465e6cccb29195710" kindref="member">setSelfAttribute(std::string attrname, std::string value)</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="431" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1a4e9a421b73be417f797c33385d79af87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::FactoryMessenger::setFullContent</definition>
+        <argsstring>(std::string value)</argsstring>
+        <name>setFullContent</name>
+        <param>
+          <type>std::string</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Low level, prefer <ref refid="class_gyoto_1_1_factory_messenger_1a7285f6988ee8c0be458e683615885703" kindref="member">setParameter()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Exceptionnaly, a class instance may be best described by setting the entire content of the corresponding element than by setting a bunch of &quot;parameters&quot;. This is the case of the spectrometer, which sets a couple of attributes and reserves the full content for the spectral boundaries (see Spectrometer::fillElement()). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="441" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1ae0ac2e5f5138eb84c53607685d8df7b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref> *</type>
+        <definition>FactoryMessenger* Gyoto::FactoryMessenger::makeChild</definition>
+        <argsstring>(std::string name)</argsstring>
+        <name>makeChild</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Create child <ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To be used from fillElement() methods. For instance, the Star::fillElement() method calls <ref refid="class_gyoto_1_1_factory_messenger_1ae0ac2e5f5138eb84c53607685d8df7b0" kindref="member">makeChild()</ref> to save the Star&apos;s <ref refid="namespace_gyoto_1_1_spectrum" kindref="compound">Spectrum</ref> and Opacity members somewhat like this: <programlisting><codeline><highlight class="normal">FactoryMessenger<sp/>*<sp/>child;</highlight></codeline>
+<codeline><highlight class="normal">child<sp/>=<sp/>messenger-&gt;<sp/>makeChild(&quot;Spectrum&quot;);</highlight></codeline>
+<codeline><highlight class="normal">spectrum_<sp/>-&gt;<sp/>fillElement(child);</highlight></codeline>
+<codeline><highlight class="normal">delete<sp/>child;</highlight></codeline>
+<codeline><highlight class="normal">child<sp/>=<sp/>messenger-&gt;<sp/>makeChild(&quot;Opacity&quot;);</highlight></codeline>
+<codeline><highlight class="normal">opacity_<sp/>-&gt;<sp/>fillElement(child);</highlight></codeline>
+<codeline><highlight class="normal">delete<sp/>child;</highlight></codeline>
+<codeline><highlight class="normal">child=NULL;</highlight></codeline>
+</programlisting></para>
+<para>The child messenger is allocated with new, you need to delete it after use. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="462" column="20"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1a8fa6e9d68b48773a0d608159c933b8c9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+        <definition>static size_t Gyoto::FactoryMessenger::parseArray</definition>
+        <argsstring>(std::string src, double dst[], size_t max_tokens)</argsstring>
+        <name>parseArray</name>
+        <param>
+          <type>std::string</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dst</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+          <declname>max_tokens</declname>
+        </param>
+        <briefdescription>
+<para>Parse string into array. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse at most max_tokens tokens from string src into pre-allocated array dst. Returns the number of tokens actually found (interpreted using atof). dst must be at least of size max_tokens. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="473" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1a3ba0af4bedc47932f06010b2499d85a6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>static std::vector&lt;double&gt; Gyoto::FactoryMessenger::parseArray</definition>
+        <argsstring>(std::string src)</argsstring>
+        <name>parseArray</name>
+        <param>
+          <type>std::string</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+<para>Parse string into array. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse tokens from string src, returns them into a std::vector&lt;double&gt;. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="481" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_factory_messenger_1af774aa9700f29251db97c66766506c27" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; unsigned long &gt;</type>
+        <definition>static std::vector&lt;unsigned long&gt; Gyoto::FactoryMessenger::parseArrayULong</definition>
+        <argsstring>(std::string src)</argsstring>
+        <name>parseArrayULong</name>
+        <param>
+          <type>std::string</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+<para>Parse string into array. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse tokens from string src, returns them into a std::vector&lt;unsigned long&gt;. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="489" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref> / <ref refid="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" kindref="member">SmartPointee::Subcontractor_t</ref> interface. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A <ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref> instance is like an employee passing messages between its employer (the <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref>) and a subcontractor (a function of the <ref refid="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" kindref="member">SmartPointee::Subcontractor_t</ref> type).</para>
+<para>The <ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref> also communicate with the fillElement method of some classes (<ref refid="class_gyoto_1_1_object_1a0ffc3f84b4c2372d639eb848605fb1f3" kindref="member">Astrobj::Generic::fillElement()</ref>, <ref refid="class_gyoto_1_1_object_1a0ffc3f84b4c2372d639eb848605fb1f3" kindref="member">Metric::Generic::fillElement()</ref>, <ref refid="class_gyoto_1_1_object_1a0ffc3f84b4c2372d639eb848605fb1f3" kindref="member">Spectrum::Generic::fillElement()</ref>).</para>
+<para>A subcontractor function typically loops calling <ref refid="class_gyoto_1_1_factory_messenger_1a716340221e527c61a05af389590b53f4" kindref="member">getNextParameter()</ref> to read all the parameters provided for it in an XML file. If BASE is one of <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref>, <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> or <ref refid="namespace_gyoto_1_1_spectrum" kindref="compound">Spectrum</ref>, and MyClass is an implementation of BASE::Generic, the subcontractor static member function often looks like this:</para>
+<para><programlisting><codeline><highlight class="normal"><sp/>SmartPointer&lt;Gyoto::BASE::Generic&gt;<sp/>MyClass::Subcontractor(Gyoto::FactoryMessenger<sp/>*messenger)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/>SmartPointer&lt;Gyoto::BASE::MyClass&gt;<sp/>deliverable<sp/>=<sp/>new<sp/>MyClass();</highlight></codeline>
+<codeline><highlight class="normal"><sp/>while<sp/>(messenger-&gt;getNextParameter(name,<sp/>content)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>if<sp/>(name==&quot;SomeProperty&quot;)<sp/>deliverable<sp/>-&gt;<sp/>setSomeProperty(content);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>else<sp/>if<sp/>(name==&quot;AnotherProperty&quot;)<sp/>deliverable<sp/>-&gt;<sp/>setAnotherProperty(content);</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/>return<sp/>deliverable;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>Other get* methods are provided to cope with more complex syntax (e.g. when XML attributes are used, as in &lt;ParameterName attribute=&quot;attrvalue&quot;&gt;ParameterValue&lt;/ParameterName&gt;</para>
+<para>Conversely, the <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref> asks certain <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> classes through their fillElement() method how they should be printed or saved to an XML file. Those fillElement() methods use the FactoryMessenger::set*() methods (in particular <ref refid="class_gyoto_1_1_factory_messenger_1a7285f6988ee8c0be458e683615885703" kindref="member">setParameter()</ref>) as well as, occasionally, <ref refid="class_gyoto_1_1_factory_messenger_1ae0ac2e5f5138eb84c53607685d8df7b0" kindref="member">makeChild()</ref> to describe themselves to the <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref>. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Gyoto::FactoryMessenger</label>
+        <link refid="class_gyoto_1_1_factory_messenger"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>employer_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Astrobj::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="2">
+        <label>Gyoto::Factory</label>
+        <link refid="class_gyoto_1_1_factory"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>gg_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>obj_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Metric::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" line="92" column="1" bodyfile="/home/junichi/Gyoto/include/GyotoFactoryMessenger.h" bodystart="92" bodyend="490"/>
+    <listofallmembers>
+      <member refid="class_gyoto_1_1_factory_messenger_1aea5108fe2bb15a154883e2776885a593" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>astrobj</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1a8dae584154a5108e5d3533728f316a4f" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>astrobj</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1a9c8eb521fb3b2d8e72ec2ab12079dbc4" prot="private" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>children_</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1af34b6cfe2f353c8a5408340667ccc36c" prot="private" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>curNodeIndex_</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1a378caf5b3eb30c091a015d4351fb0f09" prot="private" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>element_</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1a872915bff11693cb686e32b7f443e346" prot="private" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>employer_</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1a0bfc9828d0554895ff2c4781935848bb" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>FactoryMessenger</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1a1eefa10fe88405224ead5a0c97acce32" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>FactoryMessenger</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1a343e324a387d3a30c93bd391828a9858" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>fullPath</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1a48555295390ec53540322c28581394f9" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>getAttribute</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1a45eecd6b12e2577f9d8abf12e0aa76bc" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>getChild</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1a468f8e44ec2f2b847c423eae6bb7ef9a" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>getFullContent</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1a716340221e527c61a05af389590b53f4" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>getNextParameter</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1a3abfe9dcb058996a0d46dd357f1e8d3c" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>getSelfAttribute</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1ae0ac2e5f5138eb84c53607685d8df7b0" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>makeChild</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1a20033615402e9d7a7c21fc5ef4ebf386" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>metric</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1a8ab9c2e09c674dfac3cf443b694ed2a0" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>metric</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1a4ea5dc21b68de8f29da9323f8b1f3238" prot="private" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>nodeCount_</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1a8fa6e9d68b48773a0d608159c933b8c9" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>parseArray</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1a3ba0af4bedc47932f06010b2499d85a6" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>parseArray</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1af774aa9700f29251db97c66766506c27" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>parseArrayULong</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1a7acd40d3f59dc9cc8660baba0151bd11" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>photon</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1acfaf0c728ad6768bdfd25ad5e15fcd13" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>reset</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1a59571b4b88162856c69af230f2c11f95" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>screen</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1a409a59154d6fe6f8475cf3d8a7d59de5" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>screen</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1a4e9a421b73be417f797c33385d79af87" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>setFullContent</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1a7285f6988ee8c0be458e683615885703" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>setParameter</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1a6ef06141e38e2babe1137f473a10d287" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>setParameter</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1a5674fe6319b0634cb83d33ec7c475d1a" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>setParameter</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1ab5b5572bcdb3b5bee2e1343bb1f77c8a" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>setParameter</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1a2f132e5caea6cdfbc257eda9538cac1a" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>setParameter</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1af48912fc28014db9d8a4479d111a24f2" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>setParameter</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1aca812ff248777ea84c2eda83fc36fbf3" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>setParameter</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1a394034fa69500a9cdd1ec4e9a99856e8" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>setParameter</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1ae54ea09b36e25caac020a68fb8c226e9" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>setParameter</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1afbbe49d4453e88e97ed4fd7e8c93932c" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>setParameter</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1a9f459c70f3d7495465e6cccb29195710" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>setSelfAttribute</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1ae14ea235e15c79cadcf26d6f021bd7a5" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>setSelfAttribute</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1af28276c1fb03adb47b1073c0e4002371" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>setSelfAttribute</name></member>
+      <member refid="class_gyoto_1_1_factory_messenger_1a788d642f4e37c989bc8ebb0797fb4c46" prot="public" virt="non-virtual"><scope>Gyoto::FactoryMessenger</scope><name>setSelfAttribute</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

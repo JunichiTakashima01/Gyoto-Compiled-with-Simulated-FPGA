@@ -1,0 +1,35 @@
+\hypertarget{_gyoto_jet_8h}{}\doxysection{Gyoto\+Jet.\+h File Reference}
+\label{_gyoto_jet_8h}\index{GyotoJet.h@{GyotoJet.h}}
+
+
+Simple jet model with thermal or kappa-\/distribution synchrotron emission from Pandya et al. (2016)  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$Gyoto\+Standard\+Astrobj.\+h$>$}\newline
+{\ttfamily \#include $<$Gyoto\+Kappa\+Distribution\+Synchrotron\+Spectrum.\+h$>$}\newline
+{\ttfamily \#include $<$Gyoto\+Thermal\+Synchrotron\+Spectrum.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_jet}{Gyoto\+::\+Astrobj\+::\+Jet}}
+\begin{DoxyCompactList}\small\item\em Simple jet model with thermal or kappa-\/distribution synchrotron emission from Pandya et al. (2016) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_gyoto}{Gyoto}}
+\begin{DoxyCompactList}\small\item\em Namespace for the \mbox{\hyperlink{namespace_gyoto}{Gyoto}} library. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Gyoto\+::\+Astrobj}}
+\begin{DoxyCompactList}\small\item\em Access to astronomical objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Simple jet model with thermal or kappa-\/distribution synchrotron emission from Pandya et al. (2016) 
+
+This class implements a jet defined as the volume contained between the two conical surfaces defined by angles jet\+Inner\+Opening\+Angle\+\_\+ and jet\+Outer\+Opening\+Angle\+\_\+, with apex located on the black hole rotation axis at altitude jet\+Base\+Height\+\_\+ in units of M.
+
+The Lorentz factor is assumed constant at gamma\+Jet\+\_\+. The electron number density at the base of the jet is base\+Number\+Density\+\_\+cgs\+\_\+, its z-\/evolution is dedictated by mass conservation. The electron temperature is base\+Temperature\+\_\+, its z-\/evolution is assumed to follow a power law z$^\wedge$temperature\+Slope\+\_\+. The magnetic field amplitude is defined by the magnetization parameter, magnetization\+Parameter\+\_\+.
+
+The jet emits synchrotron radiation, assuming that the electrons follow a thermal or kappa distribution, ie the smooth gluing of a thermal distribution at low electron Lorentz factor, to a power-\/law distribution at high electron Lorentz factor. This distribution, as well as the resulting emission and absorption coefficients are taken from\+: Pandya et al., ApJ, 822, 34 (2016), section 5.\+3.\+3 

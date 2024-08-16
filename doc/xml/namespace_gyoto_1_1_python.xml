@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespace_gyoto_1_1_python" kind="namespace" language="C++">
+    <compoundname>Gyoto::Python</compoundname>
+    <innerclass refid="class_gyoto_1_1_python_1_1_object" prot="public">Gyoto::Python::Object</innerclass>
+    <innerclass refid="class_gyoto_1_1_python_1_1_base" prot="public">Gyoto::Python::Base</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_gyoto_1_1_python_1acd3feb4e4929c63e9d845a5c2bf927fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PyObject *</type>
+        <definition>PyObject* Gyoto::Python::PyObject_FromGyotoValue</definition>
+        <argsstring>(const Gyoto::Value &amp;)</argsstring>
+        <name>PyObject_FromGyotoValue</name>
+        <param>
+          <type>const <ref refid="class_gyoto_1_1_value" kindref="compound">Gyoto::Value</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Convert <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> to <ref refid="namespace_gyoto_1_1_python" kindref="compound">Python</ref> <ref refid="class_gyoto_1_1_python_1_1_object" kindref="compound">Object</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="111" column="15" declfile="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" declline="111" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_python_1a5a630b13b6471dbe150545ea6cd51512" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PyObject *</type>
+        <definition>PyObject* Gyoto::Python::PyInstance_GetMethod</definition>
+        <argsstring>(PyObject *pInstance, const char *name)</argsstring>
+        <name>PyInstance_GetMethod</name>
+        <param>
+          <type>PyObject *</type>
+          <declname>pInstance</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return new reference to method, or NULL if method not found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="114" column="15" declfile="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" declline="114" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_python_1af924bb5bdb5989e445e79444b94105b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PyObject *</type>
+        <definition>PyObject* Gyoto::Python::PyImport_Gyoto</definition>
+        <argsstring>()</argsstring>
+        <name>PyImport_Gyoto</name>
+        <briefdescription>
+<para>Return refernce to the gyoto module, or NULL. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="117" column="15" declfile="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" declline="117" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_python_1a9ebbef049d400c8f608e962b0c84b41b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Python::PyInstance_SetThis</definition>
+        <argsstring>(PyObject *pInstance, PyObject *pNew, void *ptr)</argsstring>
+        <name>PyInstance_SetThis</name>
+        <param>
+          <type>PyObject *</type>
+          <declname>pInstance</declname>
+        </param>
+        <param>
+          <type>PyObject *</type>
+          <declname>pNew</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Set &quot;this&quot; attribute in instance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="120" column="10" declfile="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" declline="120" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_python_1af2334e280806d1eb1cace53d40203e4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gyoto::Python::PyCallable_HasVarArg</definition>
+        <argsstring>(PyObject *pMethod)</argsstring>
+        <name>PyCallable_HasVarArg</name>
+        <param>
+          <type>PyObject *</type>
+          <declname>pMethod</declname>
+        </param>
+        <briefdescription>
+<para>Check whether method accepts the varargs argument. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="125" column="10" declfile="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" declline="125" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_python_1a97cc1be1b60b7781faa3c0717db795a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PyObject *</type>
+        <definition>PyObject* Gyoto::Python::PyModule_NewFromPythonCode</definition>
+        <argsstring>(const char *code)</argsstring>
+        <name>PyModule_NewFromPythonCode</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+<para>Create module from <ref refid="namespace_gyoto_1_1_python" kindref="compound">Python</ref> source code in a C string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="128" column="15" declfile="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" declline="128" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_python_1a777bdc01ccd7bcf9b1a9049cf99107c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PyObject *</type>
+        <definition>PyObject* Gyoto::Python::pGyotoSpectrum</definition>
+        <argsstring>()</argsstring>
+        <name>pGyotoSpectrum</name>
+        <briefdescription>
+<para>Get reference to the <ref refid="namespace_gyoto_1_1_spectrum" kindref="compound">Spectrum</ref> constructor in the gyoto <ref refid="namespace_gyoto_1_1_python" kindref="compound">Python</ref> extension. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="131" column="15" declfile="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" declline="131" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_python_1a1e955fe12e8f05c9487ad6a1deae1064" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PyObject *</type>
+        <definition>PyObject* Gyoto::Python::pGyotoMetric</definition>
+        <argsstring>()</argsstring>
+        <name>pGyotoMetric</name>
+        <briefdescription>
+<para>Get reference to the <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> constructor in the gyoto <ref refid="namespace_gyoto_1_1_python" kindref="compound">Python</ref> extension. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="133" column="15" declfile="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" declline="133" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_python_1a480f10798e065fd76ee79152d67fe441" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PyObject *</type>
+        <definition>PyObject* Gyoto::Python::pGyotoStandardAstrobj</definition>
+        <argsstring>()</argsstring>
+        <name>pGyotoStandardAstrobj</name>
+        <briefdescription>
+<para>Get reference to the StandardAstrobj constructor in the gyoto <ref refid="namespace_gyoto_1_1_python" kindref="compound">Python</ref> extension. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="135" column="15" declfile="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" declline="135" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_python_1af50719b81c5cdbccf038cc49e6161d7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PyObject *</type>
+        <definition>PyObject* Gyoto::Python::pGyotoThinDisk</definition>
+        <argsstring>()</argsstring>
+        <name>pGyotoThinDisk</name>
+        <briefdescription>
+<para>Get reference to the ThinDisk constructor in the gyoto <ref refid="namespace_gyoto_1_1_python" kindref="compound">Python</ref> extension. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="137" column="15" declfile="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" declline="137" declcolumn="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Helpers for the classes deriving from <ref refid="class_gyoto_1_1_python_1_1_base" kindref="compound">Gyoto::Python::Base</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/junichi/Gyoto/plugins/python/include/GyotoPython.h" line="103" column="1"/>
+  </compounddef>
+</doxygen>

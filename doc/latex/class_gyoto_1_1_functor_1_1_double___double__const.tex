@@ -1,0 +1,82 @@
+\hypertarget{class_gyoto_1_1_functor_1_1_double___double__const}{}\doxysection{Gyoto\+::Functor\+::Double\+\_\+\+Double\+\_\+const Class Reference}
+\label{class_gyoto_1_1_functor_1_1_double___double__const}\index{Gyoto::Functor::Double\_Double\_const@{Gyoto::Functor::Double\_Double\_const}}
+
+
+A functor like double (func) (double) const.  
+
+
+
+
+{\ttfamily \#include $<$Gyoto\+Functors.\+h$>$}
+
+Inheritance diagram for Gyoto\+::Functor\+::Double\+\_\+\+Double\+\_\+const\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_gyoto_1_1_functor_1_1_double___double__const}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_functor_1_1_double___double__const_a04c5a5b9446dfa5c71fdcd91cae9ae27}\label{class_gyoto_1_1_functor_1_1_double___double__const_a04c5a5b9446dfa5c71fdcd91cae9ae27}} 
+virtual double \mbox{\hyperlink{class_gyoto_1_1_functor_1_1_double___double__const_a04c5a5b9446dfa5c71fdcd91cae9ae27}{operator()}} (double) const =0
+\begin{DoxyCompactList}\small\item\em The actual function. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_gyoto_1_1_functor_1_1_double___double__const_a3322b1d8670ec7cb80962e1a680b6dd2}{ridders}} (double from, double to) const
+\begin{DoxyCompactList}\small\item\em Ridder\textquotesingle{}s root-\/finding method applied on \mbox{\hyperlink{class_gyoto_1_1_functor_1_1_double___double__const_a04c5a5b9446dfa5c71fdcd91cae9ae27}{operator()()}} \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_gyoto_1_1_functor_1_1_double___double__const_a6063638089204e028c693db3e41f3361}{secant}} (double from, double to)
+\begin{DoxyCompactList}\small\item\em Secant root-\/finding method applied on \mbox{\hyperlink{class_gyoto_1_1_functor_1_1_double___double__const_a04c5a5b9446dfa5c71fdcd91cae9ae27}{operator()()}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_functor_1_1_double___double__const_a1cec50c19b669404da1365354f31ec23}\label{class_gyoto_1_1_functor_1_1_double___double__const_a1cec50c19b669404da1365354f31ec23}} 
+int \mbox{\hyperlink{class_gyoto_1_1_functor_1_1_double___double__const_a1cec50c19b669404da1365354f31ec23}{status}}
+\begin{DoxyCompactList}\small\item\em Exit status code of \char`\"{}various\char`\"{} methods (at least \mbox{\hyperlink{class_gyoto_1_1_functor_1_1_double___double__const_a6063638089204e028c693db3e41f3361}{secant()}} !) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A functor like double (func) (double) const. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_functor_1_1_double___double__const_a3322b1d8670ec7cb80962e1a680b6dd2}\label{class_gyoto_1_1_functor_1_1_double___double__const_a3322b1d8670ec7cb80962e1a680b6dd2}} 
+\index{Gyoto::Functor::Double\_Double\_const@{Gyoto::Functor::Double\_Double\_const}!ridders@{ridders}}
+\index{ridders@{ridders}!Gyoto::Functor::Double\_Double\_const@{Gyoto::Functor::Double\_Double\_const}}
+\doxysubsubsection{\texorpdfstring{ridders()}{ridders()}}
+{\footnotesize\ttfamily double Gyoto\+::\+Functor\+::\+Double\+\_\+\+Double\+\_\+const\+::ridders (\begin{DoxyParamCaption}\item[{double}]{from,  }\item[{double}]{to }\end{DoxyParamCaption}) const}
+
+
+
+Ridder\textquotesingle{}s root-\/finding method applied on \mbox{\hyperlink{class_gyoto_1_1_functor_1_1_double___double__const_a04c5a5b9446dfa5c71fdcd91cae9ae27}{operator()()}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from,to} & boundaries for root-\/searching \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the root 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gyoto_1_1_functor_1_1_double___double__const_a6063638089204e028c693db3e41f3361}\label{class_gyoto_1_1_functor_1_1_double___double__const_a6063638089204e028c693db3e41f3361}} 
+\index{Gyoto::Functor::Double\_Double\_const@{Gyoto::Functor::Double\_Double\_const}!secant@{secant}}
+\index{secant@{secant}!Gyoto::Functor::Double\_Double\_const@{Gyoto::Functor::Double\_Double\_const}}
+\doxysubsubsection{\texorpdfstring{secant()}{secant()}}
+{\footnotesize\ttfamily double Gyoto\+::\+Functor\+::\+Double\+\_\+\+Double\+\_\+const\+::secant (\begin{DoxyParamCaption}\item[{double}]{from,  }\item[{double}]{to }\end{DoxyParamCaption})}
+
+
+
+Secant root-\/finding method applied on \mbox{\hyperlink{class_gyoto_1_1_functor_1_1_double___double__const_a04c5a5b9446dfa5c71fdcd91cae9ae27}{operator()()}} 
+
+Sets status to -\/0 in case of convergence -\/1 if two distinct inputs evaluated to the same output -\/2 if maximum number of iterations (20) reached
+
+
+\begin{DoxyParams}{Parameters}
+{\em from,to} & boundaries for root-\/finding \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the root 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_gyoto_functors_8h}{Gyoto\+Functors.\+h}}\end{DoxyCompactItemize}

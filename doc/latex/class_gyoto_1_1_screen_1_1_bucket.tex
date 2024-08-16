@@ -1,0 +1,66 @@
+\hypertarget{class_gyoto_1_1_screen_1_1_bucket}{}\doxysection{Gyoto\+::Screen\+::Bucket Class Reference}
+\label{class_gyoto_1_1_screen_1_1_bucket}\index{Gyoto::Screen::Bucket@{Gyoto::Screen::Bucket}}
+
+
+Class containing arbitrary 2D-\/points.  
+
+
+
+
+{\ttfamily \#include $<$Gyoto\+Screen.\+h$>$}
+
+Inheritance diagram for Gyoto\+::Screen\+::Bucket\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_gyoto_1_1_screen_1_1_bucket}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_1_1_bucket_a06878fa84a361bc8fbc2d995edcf3927}\label{class_gyoto_1_1_screen_1_1_bucket_a06878fa84a361bc8fbc2d995edcf3927}} 
+{\bfseries Bucket} (\mbox{\hyperlink{class_gyoto_1_1_screen_1_1_coord1d_set}{Coord1d\+Set}} \&iset, \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_coord1d_set}{Coord1d\+Set}} \&jset)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_1_1_bucket_ade16399dc9ce85555dde26db7d42fcd6}\label{class_gyoto_1_1_screen_1_1_bucket_ade16399dc9ce85555dde26db7d42fcd6}} 
+virtual \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_coord2d_set}{Coord2d\+Set}} \& \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_bucket_ade16399dc9ce85555dde26db7d42fcd6}{operator++}} ()
+\begin{DoxyCompactList}\small\item\em Increment pointer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_1_1_bucket_abe14909aea13679a63185e77aed280f8}\label{class_gyoto_1_1_screen_1_1_bucket_abe14909aea13679a63185e77aed280f8}} 
+virtual \mbox{\hyperlink{class_g_y_o_t_o___a_r_r_a_y}{GYOTO\+\_\+\+ARRAY}}$<$ double, 2 $>$ \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_bucket_abe14909aea13679a63185e77aed280f8}{angles}} () const
+\begin{DoxyCompactList}\small\item\em Get angle coordinates. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_1_1_bucket_a84d8d3a2e5cf69e4c0d8bce5afe5abf0}\label{class_gyoto_1_1_screen_1_1_bucket_a84d8d3a2e5cf69e4c0d8bce5afe5abf0}} 
+virtual \mbox{\hyperlink{class_g_y_o_t_o___a_r_r_a_y}{GYOTO\+\_\+\+ARRAY}}$<$ \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}}, 2 $>$ \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_bucket_a84d8d3a2e5cf69e4c0d8bce5afe5abf0}{operator$\ast$}} () const
+\begin{DoxyCompactList}\small\item\em Get pixel coordinates. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_1_1_bucket_a8b6748bae0b5ce38ed37335123633ecf}\label{class_gyoto_1_1_screen_1_1_bucket_a8b6748bae0b5ce38ed37335123633ecf}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_bucket_a8b6748bae0b5ce38ed37335123633ecf}{begin}} ()
+\begin{DoxyCompactList}\small\item\em Reset pointer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_1_1_bucket_aebf5fff48553097cadfbf8c03ccdb7ea}\label{class_gyoto_1_1_screen_1_1_bucket_aebf5fff48553097cadfbf8c03ccdb7ea}} 
+virtual bool \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_bucket_aebf5fff48553097cadfbf8c03ccdb7ea}{valid}} ()
+\begin{DoxyCompactList}\small\item\em Whether the end has not been passed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_1_1_bucket_a6041875091ed0c23cf8a482594d54c86}\label{class_gyoto_1_1_screen_1_1_bucket_a6041875091ed0c23cf8a482594d54c86}} 
+virtual \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_bucket_a6041875091ed0c23cf8a482594d54c86}{size}} ()
+\begin{DoxyCompactList}\small\item\em Number of positions contained. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_1_1_coord2d_set_a5fef2cb615b4865456865223be1135a8}\label{class_gyoto_1_1_screen_1_1_coord2d_set_a5fef2cb615b4865456865223be1135a8}} 
+const \mbox{\hyperlink{class_gyoto_1_1_screen_a3d039508310efe3dcbf50204a3619b2f}{Coord\+Type\+\_\+e}} \mbox{\hyperlink{class_gyoto_1_1_screen_1_1_coord2d_set_a5fef2cb615b4865456865223be1135a8}{kind}}
+\begin{DoxyCompactList}\small\item\em Whether this set holds pixels or angle specifications. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_1_1_bucket_a7feaab2deb7ac983fb95ea2f8c712ed1}\label{class_gyoto_1_1_screen_1_1_bucket_a7feaab2deb7ac983fb95ea2f8c712ed1}} 
+\mbox{\hyperlink{class_gyoto_1_1_screen_1_1_coord1d_set}{Coord1d\+Set}} \& {\bfseries alpha\+\_\+}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_screen_1_1_bucket_a0b2de4646a52bf90911e2c78806dc2e4}\label{class_gyoto_1_1_screen_1_1_bucket_a0b2de4646a52bf90911e2c78806dc2e4}} 
+\mbox{\hyperlink{class_gyoto_1_1_screen_1_1_coord1d_set}{Coord1d\+Set}} \& {\bfseries delta\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class containing arbitrary 2D-\/points. 
+
+ispec\+\_\+ and jspec\+\_\+ must be the same size. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_gyoto_screen_8h}{Gyoto\+Screen.\+h}}\end{DoxyCompactItemize}

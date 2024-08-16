@@ -1,0 +1,36 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+pkglibdir=${libdir}/gyoto
+localpkglibdir=
+
+GYOTO=${exec_prefix}/bin/gyoto
+
+GYOTO_SOVERS=9-unreleased
+GYOTO_PLUGDIR=${pkglibdir}/${GYOTO_SOVERS}
+GYOTO_PLUGIN_SFX=so
+
+YORICK=yorick
+Y_INST_HOME=${exec_prefix}/lib/yorick
+Y_INST_SITE=${prefix}/lib/yorick
+
+PYTHON=/usr/bin/python3
+SWIG=/usr/bin/swig3.0
+
+HOME_LORENE=
+LORENECPPFLAGS=
+LORENELDFLAGS=
+
+MPICXX=mpic++
+CXX=mpic++
+
+Name: Gyoto
+Description: Relativistic geodesic integration and ray-tracing
+Version: 2.0.0
+URL: http://gyoto.obspm.fr
+Requires:  udunits xerces-c eigen3 cfitsio
+Conflicts:
+Libs: -L${libdir} -lgyoto-unreleased -ldl   -lflint-arb 
+Libs.private:
+Cflags: -g -O2 -I${includedir}/Gyoto    

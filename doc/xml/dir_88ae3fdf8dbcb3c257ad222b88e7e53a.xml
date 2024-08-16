@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_88ae3fdf8dbcb3c257ad222b88e7e53a" kind="dir">
+    <compoundname>include</compoundname>
+    <innerfile refid="_gyoto_python_8h">GyotoPython.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/junichi/Gyoto/plugins/python/include/"/>
+  </compounddef>
+</doxygen>

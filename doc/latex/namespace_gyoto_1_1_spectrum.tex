@@ -1,0 +1,151 @@
+\hypertarget{namespace_gyoto_1_1_spectrum}{}\doxysection{Gyoto\+::Spectrum Namespace Reference}
+\label{namespace_gyoto_1_1_spectrum}\index{Gyoto::Spectrum@{Gyoto::Spectrum}}
+
+
+\mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}} of a simple object (e.\+g. a \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_star}{Gyoto\+::\+Astrobj\+::\+Star}})  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_black_body}{Black\+Body}}
+\begin{DoxyCompactList}\small\item\em Black Body. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron}{Kappa\+Distribution\+Synchrotron}}
+\begin{DoxyCompactList}\small\item\em Kappa-\/distribution synchrotron spectrum from Pandya et al. (2016) \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_power_law}{Power\+Law}}
+\begin{DoxyCompactList}\small\item\em I\+\_\+nu=constant\+\_\+$\ast$nu$^\wedge$exponent\+\_\+. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_power_law_synchrotron}{Power\+Law\+Synchrotron}}
+\begin{DoxyCompactList}\small\item\em Powerlaw synchrotron spectrum. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_generic}{Generic}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}} emitted by an \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_thermal_bremsstrahlung}{Thermal\+Bremsstrahlung}}
+\begin{DoxyCompactList}\small\item\em Thermal brems spectrum. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron}{Thermal\+Synchrotron}}
+\begin{DoxyCompactList}\small\item\em Thermal synchrotron spectrum. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_python}{Python}}
+\begin{DoxyCompactList}\small\item\em Loader for \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_python}{Python}} classes implementing the \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}} interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_generic}{Gyoto\+::\+Spectrum\+::\+Generic}} $>$ \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a163055eef14aee22dd8fa5188812d889}{Subcontractor\+\_\+t}}(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$fmp, std\+::vector$<$ std\+::string $>$ const \&)
+\begin{DoxyCompactList}\small\item\em A function to build instances of a specific \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_generic}{Spectrum\+::\+Generic}} sub-\/class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_generic}{Spectrum\+::\+Generic}} $>$ \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a928efb5440d9060b646aa4a28d7750fd}{Subcontractor}} (\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}} $\ast$fmp, std\+::vector$<$ std\+::string $>$ const \&plugins)
+\begin{DoxyCompactList}\small\item\em Subcontractor template. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a517874749d838d7121880e7d9d14c626}{Register}} (std\+::string kind, \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a163055eef14aee22dd8fa5188812d889}{Gyoto\+::\+Spectrum\+::\+Subcontractor\+\_\+t}} $\ast$scp)
+\begin{DoxyCompactList}\small\item\em Make a \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}} kind known to the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a163055eef14aee22dd8fa5188812d889}{Gyoto\+::\+Spectrum\+::\+Subcontractor\+\_\+t}} $\ast$ \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a757d3ef145cea78a26ae1049f24b3789}{get\+Subcontractor}} (std\+::string name, std\+::vector$<$ std\+::string $>$ \&plugins, int errmode=0)
+\begin{DoxyCompactList}\small\item\em Query the \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}} register. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_ae185b506437dc07b948f64f1e5e8e21c}{init\+Register}} ()
+\begin{DoxyCompactList}\small\item\em Empty the \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}} register. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_gyoto_1_1_register_1_1_entry}{Register\+::\+Entry}} $\ast$ \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_abd9408c073597a886e49a146d6327757}{Register\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}} register. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}} of a simple object (e.\+g. a \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_star}{Gyoto\+::\+Astrobj\+::\+Star}}) 
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{namespace_gyoto_1_1_spectrum_a163055eef14aee22dd8fa5188812d889}\label{namespace_gyoto_1_1_spectrum_a163055eef14aee22dd8fa5188812d889}} 
+\index{Gyoto::Spectrum@{Gyoto::Spectrum}!Subcontractor\_t@{Subcontractor\_t}}
+\index{Subcontractor\_t@{Subcontractor\_t}!Gyoto::Spectrum@{Gyoto::Spectrum}}
+\doxysubsubsection{\texorpdfstring{Subcontractor\_t}{Subcontractor\_t}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$\mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_generic}{Gyoto\+::\+Spectrum\+::\+Generic}}$>$ Gyoto\+::\+Spectrum\+::\+Subcontractor\+\_\+t(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$fmp, std\+::vector$<$ std\+::string $>$ const \&)}
+
+
+
+A function to build instances of a specific \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_generic}{Spectrum\+::\+Generic}} sub-\/class. 
+
+This is a more specific version of the \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}{Smart\+Pointee\+::\+Subcontractor\+\_\+t}} type. A Spectrum\+::\+Subcontrator\+\_\+t is called by the \mbox{\hyperlink{class_gyoto_1_1_factory}{Gyoto\+::\+Factory}} to build an instance of the kind of spectrum specified in an XML file (see \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a517874749d838d7121880e7d9d14c626}{Register()}}). The \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}} and Subcontractor\+\_\+t function communicate through a \mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}}. A template is provided so that you may not have to code anything. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_gyoto_1_1_spectrum_a757d3ef145cea78a26ae1049f24b3789}\label{namespace_gyoto_1_1_spectrum_a757d3ef145cea78a26ae1049f24b3789}} 
+\index{Gyoto::Spectrum@{Gyoto::Spectrum}!getSubcontractor@{getSubcontractor}}
+\index{getSubcontractor@{getSubcontractor}!Gyoto::Spectrum@{Gyoto::Spectrum}}
+\doxysubsubsection{\texorpdfstring{getSubcontractor()}{getSubcontractor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a163055eef14aee22dd8fa5188812d889}{Gyoto\+::\+Spectrum\+::\+Subcontractor\+\_\+t}}$\ast$ Gyoto\+::\+Spectrum\+::get\+Subcontractor (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::vector$<$ std\+::string $>$ \&}]{plugins,  }\item[{int}]{errmode = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Query the \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}} register. 
+
+Query the \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}} register to get the \mbox{\hyperlink{namespace_gyoto_1_1_metric_ad6b33a642cc94ad67855184d2adb95df}{Metric\+::\+Subcontractor\+\_\+t}} correspondig to a given kind name. This function is normally called only from the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}}. If plugin is specified, only a subcontractor matching both name and plugin will be returned, loading the plug-\/in if necessary. If plugin is the empty string, then the first subcontractor matching name will be returned, and the name of the plug-\/in it belongs to will be returned in plugin upon output.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em name} & e.\+g. \char`\"{}\+Power\+Law\char`\"{} \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em plugin} & e.\+g. \char`\"{}stdplug\char`\"{}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em errmode} & int=0. If errmode==0, failure to find a registered \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}} by that name is an error. Else, simply return NULL pointer in that case. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to the corresponding subcontractor. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_gyoto_1_1_spectrum_ae185b506437dc07b948f64f1e5e8e21c}\label{namespace_gyoto_1_1_spectrum_ae185b506437dc07b948f64f1e5e8e21c}} 
+\index{Gyoto::Spectrum@{Gyoto::Spectrum}!initRegister@{initRegister}}
+\index{initRegister@{initRegister}!Gyoto::Spectrum@{Gyoto::Spectrum}}
+\doxysubsubsection{\texorpdfstring{initRegister()}{initRegister()}}
+{\footnotesize\ttfamily void Gyoto\+::\+Spectrum\+::init\+Register (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Empty the \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}} register. 
+
+This must be called once. It is called by \mbox{\hyperlink{namespace_gyoto_1_1_register_ab550850763355e20c312f60e1698e4c6}{Gyoto\+::\+Register\+::init()}}. \mbox{\Hypertarget{namespace_gyoto_1_1_spectrum_a517874749d838d7121880e7d9d14c626}\label{namespace_gyoto_1_1_spectrum_a517874749d838d7121880e7d9d14c626}} 
+\index{Gyoto::Spectrum@{Gyoto::Spectrum}!Register@{Register}}
+\index{Register@{Register}!Gyoto::Spectrum@{Gyoto::Spectrum}}
+\doxysubsubsection{\texorpdfstring{Register()}{Register()}}
+{\footnotesize\ttfamily void Gyoto\+::\+Spectrum\+::\+Register (\begin{DoxyParamCaption}\item[{std\+::string}]{kind,  }\item[{\mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a163055eef14aee22dd8fa5188812d889}{Gyoto\+::\+Spectrum\+::\+Subcontractor\+\_\+t}} $\ast$}]{scp }\end{DoxyParamCaption})}
+
+
+
+Make a \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}} kind known to the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}}. 
+
+\mbox{\hyperlink{namespace_gyoto_1_1_register}{Register}} a new \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_generic}{Spectrum\+::\+Generic}} sub-\/class so that the \mbox{\hyperlink{class_gyoto_1_1_factory}{Gyoto\+::\+Factory}} knows it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em kind} & The kind name which identifies this object type in an XML file, as in $<$\mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}} kind=\char`\"{}name\char`\"{}$>$\\
+\hline
+{\em scp} & A pointer to the subcontractor, which will communicate with the \mbox{\hyperlink{class_gyoto_1_1_factory}{Gyoto\+::\+Factory}} to build an instance of the class from its XML description \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_gyoto_1_1_spectrum_a928efb5440d9060b646aa4a28d7750fd}\label{namespace_gyoto_1_1_spectrum_a928efb5440d9060b646aa4a28d7750fd}} 
+\index{Gyoto::Spectrum@{Gyoto::Spectrum}!Subcontractor@{Subcontractor}}
+\index{Subcontractor@{Subcontractor}!Gyoto::Spectrum@{Gyoto::Spectrum}}
+\doxysubsubsection{\texorpdfstring{Subcontractor()}{Subcontractor()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$\mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_generic}{Spectrum\+::\+Generic}}$>$ Gyoto\+::\+Spectrum\+::\+Subcontractor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}} $\ast$}]{fmp,  }\item[{std\+::vector$<$ std\+::string $>$ const \&}]{plugins }\end{DoxyParamCaption})}
+
+
+
+Subcontractor template. 
+
+Instead of reimplementing the wheel, your subcontractor can simply be \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a928efb5440d9060b646aa4a28d7750fd}{Gyoto\+::\+Spectrum\+::\+Subcontractor$<$\+My\+Kind$>$}}
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Sub-\/class of \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_generic}{Spectrum\+::\+Generic}} \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespace_gyoto_1_1_spectrum_abd9408c073597a886e49a146d6327757}\label{namespace_gyoto_1_1_spectrum_abd9408c073597a886e49a146d6327757}} 
+\index{Gyoto::Spectrum@{Gyoto::Spectrum}!Register\_@{Register\_}}
+\index{Register\_@{Register\_}!Gyoto::Spectrum@{Gyoto::Spectrum}}
+\doxysubsubsection{\texorpdfstring{Register\_}{Register\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gyoto_1_1_register_1_1_entry}{Register\+::\+Entry}}$\ast$ Gyoto\+::\+Spectrum\+::\+Register\+\_\+\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+The \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}} register. 
+
+Use the \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_ae185b506437dc07b948f64f1e5e8e21c}{Spectrum\+::init\+Register()}} once in your program to initiliaze it, the \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a517874749d838d7121880e7d9d14c626}{Spectrum\+::\+Register()}} function to fill it, and the \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a757d3ef145cea78a26ae1049f24b3789}{Spectrum\+::get\+Subcontractor()}} function to query it. 

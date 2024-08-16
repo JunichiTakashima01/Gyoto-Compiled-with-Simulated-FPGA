@@ -1,0 +1,718 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_gyoto_1_1_value" kind="class" language="C++" prot="public">
+    <compoundname>Gyoto::Value</compoundname>
+    <includes refid="_gyoto_value_8h" local="no">GyotoValue.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_value_1a00a3df91f3f8ff83a7257151077aab87" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gyoto::Value::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>Type of this instance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="72" column="7" bodyfile="/home/junichi/Gyoto/include/GyotoValue.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_value_1a81db47475e771b9aed047ff1be1d2007" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::Value::Double</definition>
+        <argsstring></argsstring>
+        <name>Double</name>
+        <briefdescription>
+<para>A double value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="76" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoValue.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_value_1aff8fc635df76baf5937a20e94a5ea7f6" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gyoto::Value::Bool</definition>
+        <argsstring></argsstring>
+        <name>Bool</name>
+        <briefdescription>
+<para>A boolean value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="85" column="8" bodyfile="/home/junichi/Gyoto/include/GyotoValue.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_value_1ae97da2b619e3031d014dedce378776c0" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long Gyoto::Value::Long</definition>
+        <argsstring></argsstring>
+        <name>Long</name>
+        <briefdescription>
+<para>A long value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="94" column="8" bodyfile="/home/junichi/Gyoto/include/GyotoValue.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_value_1af4338f8cead5e6a48ab94a68e3204a0d" prot="private" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long Gyoto::Value::ULong</definition>
+        <argsstring></argsstring>
+        <name>ULong</name>
+        <briefdescription>
+<para>An unsigned long (a.k.a. size_t) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="103" column="17" bodyfile="/home/junichi/Gyoto/include/GyotoValue.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_value_1a5bb9c38b4dee8e31d341ce9f39f53279" prot="private" static="no" mutable="no">
+        <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+        <definition>size_t Gyoto::Value::SizeT</definition>
+        <argsstring></argsstring>
+        <name>SizeT</name>
+        <briefdescription>
+<para>A size_t (only if distinct from unsigned long) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="112" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoValue.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_value_1a9498bc3b299821ea859fe90d37b11b87" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gyoto::Value::String</definition>
+        <argsstring></argsstring>
+        <name>String</name>
+        <briefdescription>
+<para>A string value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="123" column="15" bodyfile="/home/junichi/Gyoto/include/GyotoValue.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_value_1af1f14a120d7dd4bfa39a4af91b81e23f" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Gyoto::Value::VDouble</definition>
+        <argsstring></argsstring>
+        <name>VDouble</name>
+        <briefdescription>
+<para>A vector of double values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="132" column="15" bodyfile="/home/junichi/Gyoto/include/GyotoValue.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_value_1af165c78dfd5b9b0f7bc6aaedb45889b6" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned long &gt;</type>
+        <definition>std::vector&lt;unsigned long&gt; Gyoto::Value::VULong</definition>
+        <argsstring></argsstring>
+        <name>VULong</name>
+        <briefdescription>
+<para>A vector of unsigned long values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="141" column="15" bodyfile="/home/junichi/Gyoto/include/GyotoValue.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_value_1a807bb74c61c267b250f73a64aa2b0d70" prot="private" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_metric_1_1_generic" kindref="compound">Gyoto::Metric::Generic</ref> &gt;</type>
+        <definition>Gyoto::SmartPointer&lt;Gyoto::Metric::Generic&gt; Gyoto::Value::Metric</definition>
+        <argsstring></argsstring>
+        <name>Metric</name>
+        <briefdescription>
+<para>A <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="150" column="23" bodyfile="/home/junichi/Gyoto/include/GyotoValue.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_value_1ac3035b233878accf1facea07c57702cb" prot="private" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_astrobj_1_1_generic" kindref="compound">Gyoto::Astrobj::Generic</ref> &gt;</type>
+        <definition>Gyoto::SmartPointer&lt;Gyoto::Astrobj::Generic&gt; Gyoto::Value::Astrobj</definition>
+        <argsstring></argsstring>
+        <name>Astrobj</name>
+        <briefdescription>
+<para>An <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref> <ref refid="class_gyoto_1_1_object" kindref="compound">Object</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="159" column="23" bodyfile="/home/junichi/Gyoto/include/GyotoValue.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_value_1a3f8b13aa6d53b2ddc7ca1ad17a98031e" prot="private" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_spectrum_1_1_generic" kindref="compound">Gyoto::Spectrum::Generic</ref> &gt;</type>
+        <definition>Gyoto::SmartPointer&lt;Gyoto::Spectrum::Generic&gt; Gyoto::Value::Spectrum</definition>
+        <argsstring></argsstring>
+        <name>Spectrum</name>
+        <briefdescription>
+<para>A <ref refid="namespace_gyoto_1_1_spectrum" kindref="compound">Spectrum</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="168" column="23" bodyfile="/home/junichi/Gyoto/include/GyotoValue.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_value_1a1d94b05e51d90c5c43d8b114044a4db5" prot="private" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_spectrometer_1_1_generic" kindref="compound">Gyoto::Spectrometer::Generic</ref> &gt;</type>
+        <definition>Gyoto::SmartPointer&lt;Gyoto::Spectrometer::Generic&gt; Gyoto::Value::Spectrometer</definition>
+        <argsstring></argsstring>
+        <name>Spectrometer</name>
+        <briefdescription>
+<para>A <ref refid="namespace_gyoto_1_1_spectrometer" kindref="compound">Spectrometer</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="177" column="23" bodyfile="/home/junichi/Gyoto/include/GyotoValue.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_value_1a83f45eb483b2ab5627371c5bb1a37217" prot="private" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_screen" kindref="compound">Gyoto::Screen</ref> &gt;</type>
+        <definition>Gyoto::SmartPointer&lt;Gyoto::Screen&gt; Gyoto::Value::Screen</definition>
+        <argsstring></argsstring>
+        <name>Screen</name>
+        <briefdescription>
+<para>A <ref refid="class_gyoto_1_1_screen" kindref="compound">Screen</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="186" column="23" bodyfile="/home/junichi/Gyoto/include/GyotoValue.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gyoto_1_1_value_1a6fa7d65bbefed0da9d75dee76a46023f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Value::Value</definition>
+        <argsstring>()</argsstring>
+        <name>Value</name>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="63" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_value_1aebd4d3ad6dcb92ce5ca9cb35a249efc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Value::~Value</definition>
+        <argsstring>()</argsstring>
+        <name>~Value</name>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="66" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_value_1a273eb1f14632167b16a5ad3c9f798769" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> &amp;</type>
+        <definition>Value&amp; Gyoto::Value::operator=</definition>
+        <argsstring>(Value const &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+<para>Assignement operator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="69" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_value_1a741c7e0edbe32039295cb684f83026c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Value::Value</definition>
+        <argsstring>(double)</argsstring>
+        <name>Value</name>
+        <param>
+          <type>double</type>
+        </param>
+        <briefdescription>
+<para>Construct/cast from double. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="79" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_value_1ae9407279f56fb9c675f5b58f5c89bacc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Value::operator double</definition>
+        <argsstring>() const</argsstring>
+        <name>operator double</name>
+        <briefdescription>
+<para>Cast to double. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="81" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_value_1aa344fd930781502df8addc34fb10c835" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Value::Value</definition>
+        <argsstring>(bool)</argsstring>
+        <name>Value</name>
+        <param>
+          <type>bool</type>
+        </param>
+        <briefdescription>
+<para>Construct/cast from boolean. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="88" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_value_1acd6b864f44687a422faba4b4ee09eaa0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Value::operator bool</definition>
+        <argsstring>() const</argsstring>
+        <name>operator bool</name>
+        <briefdescription>
+<para>Cast to bool. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="90" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_value_1a06786a2f8bf5e11f4ece4abaff0931fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Value::Value</definition>
+        <argsstring>(long)</argsstring>
+        <name>Value</name>
+        <param>
+          <type>long</type>
+        </param>
+        <briefdescription>
+<para>Construct/cast from long. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="97" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_value_1a5beb8122507b068ee837c86b75959a63" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Value::operator long</definition>
+        <argsstring>() const</argsstring>
+        <name>operator long</name>
+        <briefdescription>
+<para>Cast to long. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="99" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_value_1a4c69d3df5682df4c9bd7a17347ac753c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Value::Value</definition>
+        <argsstring>(unsigned long)</argsstring>
+        <name>Value</name>
+        <param>
+          <type>unsigned long</type>
+        </param>
+        <briefdescription>
+<para>Construct/cast from unsigned long. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="106" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_value_1a44dfdf56a587bc3343b6912205faa4da" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Value::operator unsigned long</definition>
+        <argsstring>() const</argsstring>
+        <name>operator unsigned long</name>
+        <briefdescription>
+<para>Cast to unsigned long. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="108" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_value_1a2c8860898327c90591df11371b9ab084" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Value::Value</definition>
+        <argsstring>(std::string)</argsstring>
+        <name>Value</name>
+        <param>
+          <type>std::string</type>
+        </param>
+        <briefdescription>
+<para>Construct/cast from string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="126" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_value_1a5e96ca79b1a3477e1e976f057942af93" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Value::operator std::string</definition>
+        <argsstring>() const</argsstring>
+        <name>operator std::string</name>
+        <briefdescription>
+<para>Cast to string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="128" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_value_1aa783f2b86b44d7443c66883bbe6ead1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Value::Value</definition>
+        <argsstring>(std::vector&lt; double &gt;)</argsstring>
+        <name>Value</name>
+        <param>
+          <type>std::vector&lt; double &gt;</type>
+        </param>
+        <briefdescription>
+<para>Construct/cast from vector of doubles. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="135" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_value_1a2214ae5ca571ad2114184a4273af89ab" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Value::operator std::vector&lt; double &gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator std::vector&lt; double &gt;</name>
+        <briefdescription>
+<para>Cast to vector of doubles. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="137" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_value_1ac59704ba4395c2f5958034704172abac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Value::Value</definition>
+        <argsstring>(std::vector&lt; unsigned long &gt;)</argsstring>
+        <name>Value</name>
+        <param>
+          <type>std::vector&lt; unsigned long &gt;</type>
+        </param>
+        <briefdescription>
+<para>Construct/cast from vector of unsigned long values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="144" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_value_1aae7a73ca46689d092557055c971ab68d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Value::operator std::vector&lt; unsigned long &gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator std::vector&lt; unsigned long &gt;</name>
+        <briefdescription>
+<para>Cast to vector of unsigned long values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="146" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_value_1a268bc8b56f6078003ed4ba7ef1bc81d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Value::Value</definition>
+        <argsstring>(Gyoto::SmartPointer&lt; Gyoto::Metric::Generic &gt;)</argsstring>
+        <name>Value</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_metric_1_1_generic" kindref="compound">Gyoto::Metric::Generic</ref> &gt;</type>
+        </param>
+        <briefdescription>
+<para>Cast from <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="153" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_value_1ad690d19d5ac662acdf0627a23517db72" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Value::operator Gyoto::SmartPointer&lt; Gyoto::Metric::Generic &gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator Gyoto::SmartPointer&lt; Gyoto::Metric::Generic &gt;</name>
+        <briefdescription>
+<para>Cast to <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="155" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_value_1af027c8e4c6f4a97bae19139bf6544805" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Value::Value</definition>
+        <argsstring>(Gyoto::SmartPointer&lt; Gyoto::Astrobj::Generic &gt;)</argsstring>
+        <name>Value</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_astrobj_1_1_generic" kindref="compound">Gyoto::Astrobj::Generic</ref> &gt;</type>
+        </param>
+        <briefdescription>
+<para>Cast from <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="162" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_value_1ac3050608b5c0b0e90255007ef9c3b7ee" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Value::operator Gyoto::SmartPointer&lt; Gyoto::Astrobj::Generic &gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator Gyoto::SmartPointer&lt; Gyoto::Astrobj::Generic &gt;</name>
+        <briefdescription>
+<para>Cast to <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="164" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_value_1aba1eeff15db4380d29741d59febf6132" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Value::Value</definition>
+        <argsstring>(Gyoto::SmartPointer&lt; Gyoto::Spectrum::Generic &gt;)</argsstring>
+        <name>Value</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_spectrum_1_1_generic" kindref="compound">Gyoto::Spectrum::Generic</ref> &gt;</type>
+        </param>
+        <briefdescription>
+<para>Cast from <ref refid="namespace_gyoto_1_1_spectrum" kindref="compound">Spectrum</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="171" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_value_1a292c88a3dc86583df5edc0db21652db4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Value::operator Gyoto::SmartPointer&lt; Gyoto::Spectrum::Generic &gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator Gyoto::SmartPointer&lt; Gyoto::Spectrum::Generic &gt;</name>
+        <briefdescription>
+<para>Cast to <ref refid="namespace_gyoto_1_1_spectrum" kindref="compound">Spectrum</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="173" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_value_1abf825dade6d6b24ac89a6177e3602d12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Value::Value</definition>
+        <argsstring>(Gyoto::SmartPointer&lt; Gyoto::Spectrometer::Generic &gt;)</argsstring>
+        <name>Value</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_spectrometer_1_1_generic" kindref="compound">Gyoto::Spectrometer::Generic</ref> &gt;</type>
+        </param>
+        <briefdescription>
+<para>Cast from <ref refid="namespace_gyoto_1_1_spectrometer" kindref="compound">Spectrometer</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="180" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_value_1a53570875b4f928ca07805156efdf81f7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Value::operator Gyoto::SmartPointer&lt; Gyoto::Spectrometer::Generic &gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator Gyoto::SmartPointer&lt; Gyoto::Spectrometer::Generic &gt;</name>
+        <briefdescription>
+<para>Cast to <ref refid="namespace_gyoto_1_1_spectrometer" kindref="compound">Spectrometer</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="182" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_value_1a75548ebc5886311ca34dab2d78bc0367" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Value::Value</definition>
+        <argsstring>(Gyoto::SmartPointer&lt; Gyoto::Screen &gt;)</argsstring>
+        <name>Value</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_screen" kindref="compound">Gyoto::Screen</ref> &gt;</type>
+        </param>
+        <briefdescription>
+<para>Cast from <ref refid="class_gyoto_1_1_screen" kindref="compound">Screen</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="189" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_value_1a4f6c5bbe500aa6d42be65fd10f5bd7e8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Value::operator Gyoto::SmartPointer&lt; Gyoto::Screen &gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator Gyoto::SmartPointer&lt; Gyoto::Screen &gt;</name>
+        <briefdescription>
+<para>Cast to <ref refid="class_gyoto_1_1_screen" kindref="compound">Screen</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="191" column="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Container for the value of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> class is very similar to the C union type (although not as memory efficient): it can hold several type of values, but only one at a time. Care must be taken to ensure only the member that was set is retrieved. The purpose of the <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> class is to be used together with the <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> class: code determines dynamicaly the type of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>, reads the corresponding value appropriateley (e.g. from XML or from the Yorick prompt), stores the value in a <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> instance, and sets the <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> using the <ref refid="class_gyoto_1_1_object_1a58c4ecdaae1873dc6912e164b61826e0" kindref="member">Object::set()</ref> method. Likewise, the <ref refid="class_gyoto_1_1_object_1a8232112e660216a61caa15fab27b889f" kindref="member">Object::get()</ref> method returns a <ref refid="class_gyoto_1_1_value" kindref="compound">Gyoto::Value</ref>. <ref refid="class_gyoto_1_1_property_1affac9b81023457fb24781c7dd678f154" kindref="member">Property::type</ref> must be used to determine which member of the <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> is meaningful.</para>
+<para>Casting between <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> and the various data type it can hold is normally automatic, but the members can also be accessed explicitly make code more easy to read and less ambiguous. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Astrobj::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="6">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Screen &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="2">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Spectrometer::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="3">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Metric::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="4">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Spectrum::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="1">
+        <label>Gyoto::Value</label>
+        <link refid="class_gyoto_1_1_value"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Spectrometer</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Metric</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Spectrum</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>Astrobj</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>Screen</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/junichi/Gyoto/include/GyotoValue.h" line="60" column="1" bodyfile="/home/junichi/Gyoto/include/GyotoValue.h" bodystart="60" bodyend="192"/>
+    <listofallmembers>
+      <member refid="class_gyoto_1_1_value_1ac3035b233878accf1facea07c57702cb" prot="private" virt="non-virtual"><scope>Gyoto::Value</scope><name>Astrobj</name></member>
+      <member refid="class_gyoto_1_1_value_1aff8fc635df76baf5937a20e94a5ea7f6" prot="private" virt="non-virtual"><scope>Gyoto::Value</scope><name>Bool</name></member>
+      <member refid="class_gyoto_1_1_value_1a81db47475e771b9aed047ff1be1d2007" prot="private" virt="non-virtual"><scope>Gyoto::Value</scope><name>Double</name></member>
+      <member refid="class_gyoto_1_1_value_1ae97da2b619e3031d014dedce378776c0" prot="private" virt="non-virtual"><scope>Gyoto::Value</scope><name>Long</name></member>
+      <member refid="class_gyoto_1_1_value_1a807bb74c61c267b250f73a64aa2b0d70" prot="private" virt="non-virtual"><scope>Gyoto::Value</scope><name>Metric</name></member>
+      <member refid="class_gyoto_1_1_value_1acd6b864f44687a422faba4b4ee09eaa0" prot="public" virt="non-virtual"><scope>Gyoto::Value</scope><name>operator bool</name></member>
+      <member refid="class_gyoto_1_1_value_1ae9407279f56fb9c675f5b58f5c89bacc" prot="public" virt="non-virtual"><scope>Gyoto::Value</scope><name>operator double</name></member>
+      <member refid="class_gyoto_1_1_value_1ac3050608b5c0b0e90255007ef9c3b7ee" prot="public" virt="non-virtual"><scope>Gyoto::Value</scope><name>operator Gyoto::SmartPointer&lt; Gyoto::Astrobj::Generic &gt;</name></member>
+      <member refid="class_gyoto_1_1_value_1ad690d19d5ac662acdf0627a23517db72" prot="public" virt="non-virtual"><scope>Gyoto::Value</scope><name>operator Gyoto::SmartPointer&lt; Gyoto::Metric::Generic &gt;</name></member>
+      <member refid="class_gyoto_1_1_value_1a4f6c5bbe500aa6d42be65fd10f5bd7e8" prot="public" virt="non-virtual"><scope>Gyoto::Value</scope><name>operator Gyoto::SmartPointer&lt; Gyoto::Screen &gt;</name></member>
+      <member refid="class_gyoto_1_1_value_1a53570875b4f928ca07805156efdf81f7" prot="public" virt="non-virtual"><scope>Gyoto::Value</scope><name>operator Gyoto::SmartPointer&lt; Gyoto::Spectrometer::Generic &gt;</name></member>
+      <member refid="class_gyoto_1_1_value_1a292c88a3dc86583df5edc0db21652db4" prot="public" virt="non-virtual"><scope>Gyoto::Value</scope><name>operator Gyoto::SmartPointer&lt; Gyoto::Spectrum::Generic &gt;</name></member>
+      <member refid="class_gyoto_1_1_value_1a5beb8122507b068ee837c86b75959a63" prot="public" virt="non-virtual"><scope>Gyoto::Value</scope><name>operator long</name></member>
+      <member refid="class_gyoto_1_1_value_1a5e96ca79b1a3477e1e976f057942af93" prot="public" virt="non-virtual"><scope>Gyoto::Value</scope><name>operator std::string</name></member>
+      <member refid="class_gyoto_1_1_value_1a2214ae5ca571ad2114184a4273af89ab" prot="public" virt="non-virtual"><scope>Gyoto::Value</scope><name>operator std::vector&lt; double &gt;</name></member>
+      <member refid="class_gyoto_1_1_value_1aae7a73ca46689d092557055c971ab68d" prot="public" virt="non-virtual"><scope>Gyoto::Value</scope><name>operator std::vector&lt; unsigned long &gt;</name></member>
+      <member refid="class_gyoto_1_1_value_1a44dfdf56a587bc3343b6912205faa4da" prot="public" virt="non-virtual"><scope>Gyoto::Value</scope><name>operator unsigned long</name></member>
+      <member refid="class_gyoto_1_1_value_1a273eb1f14632167b16a5ad3c9f798769" prot="public" virt="non-virtual"><scope>Gyoto::Value</scope><name>operator=</name></member>
+      <member refid="class_gyoto_1_1_value_1a83f45eb483b2ab5627371c5bb1a37217" prot="private" virt="non-virtual"><scope>Gyoto::Value</scope><name>Screen</name></member>
+      <member refid="class_gyoto_1_1_value_1a5bb9c38b4dee8e31d341ce9f39f53279" prot="private" virt="non-virtual"><scope>Gyoto::Value</scope><name>SizeT</name></member>
+      <member refid="class_gyoto_1_1_value_1a1d94b05e51d90c5c43d8b114044a4db5" prot="private" virt="non-virtual"><scope>Gyoto::Value</scope><name>Spectrometer</name></member>
+      <member refid="class_gyoto_1_1_value_1a3f8b13aa6d53b2ddc7ca1ad17a98031e" prot="private" virt="non-virtual"><scope>Gyoto::Value</scope><name>Spectrum</name></member>
+      <member refid="class_gyoto_1_1_value_1a9498bc3b299821ea859fe90d37b11b87" prot="private" virt="non-virtual"><scope>Gyoto::Value</scope><name>String</name></member>
+      <member refid="class_gyoto_1_1_value_1a00a3df91f3f8ff83a7257151077aab87" prot="public" virt="non-virtual"><scope>Gyoto::Value</scope><name>type</name></member>
+      <member refid="class_gyoto_1_1_value_1af4338f8cead5e6a48ab94a68e3204a0d" prot="private" virt="non-virtual"><scope>Gyoto::Value</scope><name>ULong</name></member>
+      <member refid="class_gyoto_1_1_value_1a6fa7d65bbefed0da9d75dee76a46023f" prot="public" virt="non-virtual"><scope>Gyoto::Value</scope><name>Value</name></member>
+      <member refid="class_gyoto_1_1_value_1a741c7e0edbe32039295cb684f83026c1" prot="public" virt="non-virtual"><scope>Gyoto::Value</scope><name>Value</name></member>
+      <member refid="class_gyoto_1_1_value_1aa344fd930781502df8addc34fb10c835" prot="public" virt="non-virtual"><scope>Gyoto::Value</scope><name>Value</name></member>
+      <member refid="class_gyoto_1_1_value_1a06786a2f8bf5e11f4ece4abaff0931fe" prot="public" virt="non-virtual"><scope>Gyoto::Value</scope><name>Value</name></member>
+      <member refid="class_gyoto_1_1_value_1a4c69d3df5682df4c9bd7a17347ac753c" prot="public" virt="non-virtual"><scope>Gyoto::Value</scope><name>Value</name></member>
+      <member refid="class_gyoto_1_1_value_1a2c8860898327c90591df11371b9ab084" prot="public" virt="non-virtual"><scope>Gyoto::Value</scope><name>Value</name></member>
+      <member refid="class_gyoto_1_1_value_1aa783f2b86b44d7443c66883bbe6ead1e" prot="public" virt="non-virtual"><scope>Gyoto::Value</scope><name>Value</name></member>
+      <member refid="class_gyoto_1_1_value_1ac59704ba4395c2f5958034704172abac" prot="public" virt="non-virtual"><scope>Gyoto::Value</scope><name>Value</name></member>
+      <member refid="class_gyoto_1_1_value_1a268bc8b56f6078003ed4ba7ef1bc81d7" prot="public" virt="non-virtual"><scope>Gyoto::Value</scope><name>Value</name></member>
+      <member refid="class_gyoto_1_1_value_1af027c8e4c6f4a97bae19139bf6544805" prot="public" virt="non-virtual"><scope>Gyoto::Value</scope><name>Value</name></member>
+      <member refid="class_gyoto_1_1_value_1aba1eeff15db4380d29741d59febf6132" prot="public" virt="non-virtual"><scope>Gyoto::Value</scope><name>Value</name></member>
+      <member refid="class_gyoto_1_1_value_1abf825dade6d6b24ac89a6177e3602d12" prot="public" virt="non-virtual"><scope>Gyoto::Value</scope><name>Value</name></member>
+      <member refid="class_gyoto_1_1_value_1a75548ebc5886311ca34dab2d78bc0367" prot="public" virt="non-virtual"><scope>Gyoto::Value</scope><name>Value</name></member>
+      <member refid="class_gyoto_1_1_value_1af1f14a120d7dd4bfa39a4af91b81e23f" prot="private" virt="non-virtual"><scope>Gyoto::Value</scope><name>VDouble</name></member>
+      <member refid="class_gyoto_1_1_value_1af165c78dfd5b9b0f7bc6aaedb45889b6" prot="private" virt="non-virtual"><scope>Gyoto::Value</scope><name>VULong</name></member>
+      <member refid="class_gyoto_1_1_value_1aebd4d3ad6dcb92ce5ca9cb35a249efc3" prot="public" virt="non-virtual"><scope>Gyoto::Value</scope><name>~Value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

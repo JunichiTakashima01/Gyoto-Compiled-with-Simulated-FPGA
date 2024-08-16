@@ -1,0 +1,2669 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_gyoto_1_1_scenery" kind="class" language="C++" prot="public">
+    <compoundname>Gyoto::Scenery</compoundname>
+    <basecompoundref refid="class_gyoto_1_1_smart_pointee" prot="public" virt="non-virtual">Gyoto::SmartPointee</basecompoundref>
+    <basecompoundref refid="class_gyoto_1_1_object" prot="public" virt="non-virtual">Gyoto::Object</basecompoundref>
+    <includes refid="_gyoto_scenery_8h" local="no">GyotoScenery.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_gyoto_1_1_scenery_1aa0c6445670c17eac9b23e59be5a58d69" prot="public" static="no" strong="no">
+        <type></type>
+        <name>mpi_tag</name>
+        <enumvalue id="class_gyoto_1_1_scenery_1aa0c6445670c17eac9b23e59be5a58d69a77f01cf14a73d46465f6d8479565adbe" prot="public">
+          <name>give_task</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_gyoto_1_1_scenery_1aa0c6445670c17eac9b23e59be5a58d69a4165b62b1da3f91091d1d50bd48abd0b" prot="public">
+          <name>read_scenery</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_gyoto_1_1_scenery_1aa0c6445670c17eac9b23e59be5a58d69a9369517d75cf13c43f7f9ef1e089dac9" prot="public">
+          <name>terminate</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_gyoto_1_1_scenery_1aa0c6445670c17eac9b23e59be5a58d69a7a4d7c1a4efb770745b785062a82a7fe" prot="public">
+          <name>raytrace</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_gyoto_1_1_scenery_1aa0c6445670c17eac9b23e59be5a58d69a4a84f449ff6778c060a71d38bdffb49b" prot="public">
+          <name>raytrace_done</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_gyoto_1_1_scenery_1aa0c6445670c17eac9b23e59be5a58d69ac3a383b5cc10ced896efc6b632e8a45a" prot="public">
+          <name>ready</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_gyoto_1_1_scenery_1aa0c6445670c17eac9b23e59be5a58d69af93801a8f55b7da14e88666b8e1d282a" prot="public">
+          <name>impactcoords</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_gyoto_1_1_scenery_1aa0c6445670c17eac9b23e59be5a58d69a5f2ddd60d572a018a74876fc17f98c87" prot="public">
+          <name>noimpactcoords</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Tags that may be sent to communicate with workers using MPI_Send() </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="264" column="3" bodyfile="/home/junichi/Gyoto/include/GyotoScenery.h" bodystart="264" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" prot="public" static="no">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_smart_pointee" kindref="compound">Gyoto::SmartPointee</ref> &gt;</type>
+        <definition>typedef Gyoto::SmartPointer&lt;Gyoto::SmartPointee&gt; Gyoto::SmartPointee::Subcontractor_t(Gyoto::FactoryMessenger *, std::vector&lt; std::string &gt; const &amp;)</definition>
+        <argsstring>(Gyoto::FactoryMessenger *, std::vector&lt; std::string &gt; const &amp;)</argsstring>
+        <name>Subcontractor_t</name>
+        <briefdescription>
+<para>A subcontractor builds an object upon order from the <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Various classes need to provide a subcontractor to be able to instantiate themselves upon order from the <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref>. A subcontractor is a function (often a static member function) which accepts a pointer to a <ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref> as unique parameter, communicates with the <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref> using this messenger to read an XML description of the object to build, and returns this objet. <ref refid="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" kindref="member">SmartPointee::Subcontractor_t</ref>* is just generic enough a typedef to cast to and from other subcontractor types: <ref refid="namespace_gyoto_1_1_astrobj_1aa53c7ada58c8c8f3799c3485b7d8f3bb" kindref="member">Astrobj::Subcontractor_t</ref>, <ref refid="namespace_gyoto_1_1_metric_1ad6b33a642cc94ad67855184d2adb95df" kindref="member">Metric::Subcontractor_t</ref>, <ref refid="namespace_gyoto_1_1_spectrum_1a163055eef14aee22dd8fa5188812d889" kindref="member">Spectrum::Subcontractor_t</ref>. A subcontractor needs to be registered using the relevant <ref refid="namespace_gyoto_1_1_astrobj_1abb6caf3023a51cb77b5f6793ac03b188" kindref="member">Register()</ref> function: <ref refid="namespace_gyoto_1_1_astrobj_1abb6caf3023a51cb77b5f6793ac03b188" kindref="member">Astrobj::Register()</ref>, <ref refid="namespace_gyoto_1_1_metric_1a602cba49b001e7470f3d439d1ab3e8f7" kindref="member">Metric::Register()</ref>, <ref refid="namespace_gyoto_1_1_spectrum_1a517874749d838d7121880e7d9d14c626" kindref="member">Spectrum::Register()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="114" column="5" bodyfile="/home/junichi/Gyoto/include/GyotoSmartPointer.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_gyoto_1_1_scenery_1aab22011938ebad38e886dca6cb39bc20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class Gyoto::SmartPointer&lt; Gyoto::Scenery &gt;</definition>
+        <argsstring></argsstring>
+        <name>Gyoto::SmartPointer&lt; Gyoto::Scenery &gt;</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_scenery" kindref="compound">Gyoto::Scenery</ref> &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="1" column="0" bodyfile="/home/junichi/Gyoto/include/GyotoScenery.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_scenery_1ae5fd1c4017101dd5863b314ad2856d2c" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_screen" kindref="compound">Screen</ref> &gt;</type>
+        <definition>SmartPointer&lt;Screen&gt; Gyoto::Scenery::screen_</definition>
+        <argsstring></argsstring>
+        <name>screen_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_gyoto_1_1_screen" kindref="compound">Screen</ref>, the camera for this scenery. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="176" column="16" bodyfile="/home/junichi/Gyoto/include/GyotoScenery.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_scenery_1a5a7bb09f9a7b683448509830f0a4f329" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::Scenery::delta_</definition>
+        <argsstring></argsstring>
+        <name>delta_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default integration step for the photons </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="182" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoScenery.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_scenery_1ae9d64f82cb58af5452be5a65629efae0" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespace_gyoto_1a009cbd7f025ce417907a5344a15a1463" kindref="member">Gyoto::Quantity_t</ref></type>
+        <definition>Gyoto::Quantity_t Gyoto::Scenery::quantities_</definition>
+        <argsstring></argsstring>
+        <name>quantities_</name>
+        <briefdescription>
+<para>Quantities to compute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Bitwise OR of quantities that will be computed, for instance: <programlisting><codeline><highlight class="normal">GYOTO_QUANTITY_INTENSITY<sp/>|<sp/>GYOTO_QUANTITY_EMISSIONTIME<sp/>|<sp/>...</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="191" column="21" bodyfile="/home/junichi/Gyoto/include/GyotoScenery.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_scenery_1ab04f1bf232df51977463ba0094c33346" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_photon" kindref="compound">Gyoto::Photon</ref></type>
+        <definition>Gyoto::Photon Gyoto::Scenery::ph_</definition>
+        <argsstring></argsstring>
+        <name>ph_</name>
+        <briefdescription>
+<para>Template <ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Used internally to not always reallocate memory when operator() is called and to store all the parameters which affect the integration, except delta_. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="198" column="17" bodyfile="/home/junichi/Gyoto/include/GyotoScenery.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_scenery_1a6d364f1f7f2b55a5c5ead77461fc6c0d" prot="protected" static="no" mutable="no">
+        <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+        <definition>size_t Gyoto::Scenery::nthreads_</definition>
+        <argsstring></argsstring>
+        <name>nthreads_</name>
+        <briefdescription>
+<para>Number of parallel threads to use in <ref refid="class_gyoto_1_1_scenery_1af723cfca27f75ba37bd439225ba60219" kindref="member">rayTrace()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para>When compiled with libpthread, <ref refid="class_gyoto_1_1_scenery_1af723cfca27f75ba37bd439225ba60219" kindref="member">Scenery::rayTrace()</ref> may compute several points of the image in parallel threads. This is the number of threads to use. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="205" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoScenery.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_scenery_1a433b98c2bada736879301e02b95e426c" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gyoto::Scenery::nprocesses_</definition>
+        <argsstring></argsstring>
+        <name>nprocesses_</name>
+        <briefdescription>
+<para>Number of parallel processes to use in <ref refid="class_gyoto_1_1_scenery_1af723cfca27f75ba37bd439225ba60219" kindref="member">rayTrace()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="207" column="7" bodyfile="/home/junichi/Gyoto/include/GyotoScenery.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_object_1ac48ad88e3ef229ba0d0fe68a94a7118f" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gyoto::Object::kind_</definition>
+        <argsstring></argsstring>
+        <name>kind_</name>
+        <briefdescription>
+<para>The &quot;kind&quot; that is output in the XML entity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>E.g. for an <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref>, <ref refid="class_gyoto_1_1_object_1a0ffc3f84b4c2372d639eb848605fb1f3" kindref="member">fillElement()</ref> will ensure <programlisting><codeline><highlight class="normal">&lt;Astrobj<sp/>kind=&quot;kind_&quot;<sp/>...&gt;...&lt;/Astrobj&gt;</highlight></codeline>
+</programlisting> is written. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="162" column="15" bodyfile="/home/junichi/Gyoto/include/GyotoObject.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_object_1a01832761cd5f0a12319e3e24ce9a9fba" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; Gyoto::Object::plugins_</definition>
+        <argsstring></argsstring>
+        <name>plugins_</name>
+        <briefdescription>
+<para>The plug-ins that needs to be loaded to access this instance&apos;s class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>E.g. for an <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref>, <ref refid="class_gyoto_1_1_object_1a0ffc3f84b4c2372d639eb848605fb1f3" kindref="member">fillElement()</ref> will ensure <programlisting><codeline><highlight class="normal">&lt;Astrobj<sp/>...<sp/>plugin=&quot;plugins_&quot;&gt;...&lt;/Astrobj&gt;</highlight></codeline>
+</programlisting> is written. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="172" column="15" bodyfile="/home/junichi/Gyoto/include/GyotoObject.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_scenery_1aa32d9f9342e767f491274de13d7f32f0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Gyoto::Scenery::GYOTO_OBJECT_THREAD_SAFETY</definition>
+        <argsstring></argsstring>
+        <name>GYOTO_OBJECT_THREAD_SAFETY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="219" column="3" bodyfile="/home/junichi/Gyoto/include/GyotoScenery.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_scenery_1abf6f3161daa6971dfe05b7b35cce88ef" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Gyoto::Scenery::GYOTO_WORLDLINE</definition>
+        <argsstring></argsstring>
+        <name>GYOTO_WORLDLINE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="282" column="3" bodyfile="/home/junichi/Gyoto/include/GyotoScenery.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_scenery_1aa561b75fdaafc7116b3fb408755601a0" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool Gyoto::Scenery::am_worker</definition>
+        <argsstring></argsstring>
+        <name>am_worker</name>
+        <briefdescription>
+<para>True in instance of gyoto-mpi-worker, otherwise false. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="229" column="15" bodyfile="/home/junichi/Gyoto/include/GyotoScenery.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_scenery_1a930776765680d52b95dd7b8758591705" prot="public" static="yes" mutable="no">
+        <type><ref refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" kindref="member">GYOTO_OBJECT</ref> <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const</type>
+        <definition>GYOTO_OBJECT Property const Gyoto::Scenery::properties[]</definition>
+        <argsstring>[]</argsstring>
+        <name>properties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="281" column="42" bodyfile="/home/junichi/Gyoto/include/GyotoScenery.h" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a73447871c31ca79690aef7d9e255aea6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::mpiSpawn</definition>
+        <argsstring>(int nbchildren)</argsstring>
+        <name>mpiSpawn</name>
+        <param>
+          <type>int</type>
+          <declname>nbchildren</declname>
+        </param>
+        <briefdescription>
+<para>Spawn gyoto-mpi-worker processes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If nbchildren is -1 set #mpi_team_ to MPI_COMM_WORLD else spawn nbchildren processes and set <ref refid="class_gyoto_1_1_scenery_1a433b98c2bada736879301e02b95e426c" kindref="member">nprocesses_</ref> accordingly. If a different number of workers are already running, terminate them first. If nbchildren is 0, just terminate running workers.</para>
+<para>The approach of <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> to MPI is that a manager process (of rank 0 within a given MPI communicator) will distribute ray-tracing tasks across worker processes. Several scenarii are supported, including spawning instances of the gyoto-mpi-worker.version executable, where &quot;version&quot; matches the version component in the library name (typically a number, possibly followed by &quot;unreleased&quot;).</para>
+<para>In all cases, the manager process needs to call this function, either with -1 if the worker processes are already running or &gt;1 if workers need to be spawned.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">nbchildren</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of processes to spawn. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="252" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a21982b10cdb8e9b9e1e2c4111043e713" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::mpiTerminate</definition>
+        <argsstring>()</argsstring>
+        <name>mpiTerminate</name>
+        <briefdescription>
+<para>Terminate worker processes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="255" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a7556c80a8bc0a00efb0eb3e7a3c94ba9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::mpiClone</definition>
+        <argsstring>()</argsstring>
+        <name>mpiClone</name>
+        <briefdescription>
+<para>Send a copy of self to the mpi workers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Always call <ref refid="class_gyoto_1_1_scenery_1a7556c80a8bc0a00efb0eb3e7a3c94ba9" kindref="member">mpiClone()</ref> before ray-tracing if workers are running. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="261" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1afbd1f62b03a00c7d5a71e938328054cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::mpiTask</definition>
+        <argsstring>(mpi_tag &amp;tag)</argsstring>
+        <name>mpiTask</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_scenery_1aa0c6445670c17eac9b23e59be5a58d69" kindref="member">mpi_tag</ref> &amp;</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+<para>Send a tag to workers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="269" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1af7be9ef397a8e28f6cae994a16dfed38" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const  *</type>
+        <definition>virtual Property const* Gyoto::Scenery::getProperties</definition>
+        <argsstring>() const</argsstring>
+        <name>getProperties</name>
+        <reimplements refid="class_gyoto_1_1_object_1afe00718a056ffc6293705c03f588088c">getProperties</reimplements>
+        <briefdescription>
+<para>Get list of properties. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is declared automatically by the <ref refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" kindref="member">GYOTO_OBJECT</ref> macro and defined automatically by the <ref refid="_gyoto_property_8h_1a1356435ea7ee0e18d07201a80e034dcc" kindref="member">GYOTO_PROPERTY_END</ref> macro. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="281" column="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a588239ef21e8b6aad435c146a199277c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Scenery::Scenery</definition>
+        <argsstring>()</argsstring>
+        <name>Scenery</name>
+        <briefdescription>
+<para>Set everything to defaults. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="283" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a4079e952d1506047f390d9333e89cb5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Scenery::Scenery</definition>
+        <argsstring>(const Scenery &amp;o)</argsstring>
+        <name>Scenery</name>
+        <param>
+          <type>const <ref refid="class_gyoto_1_1_scenery" kindref="compound">Scenery</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="284" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a8cc6ec06fb353a3f6156b46ba730f755" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_gyoto_1_1_scenery" kindref="compound">Scenery</ref> *</type>
+        <definition>Scenery* Gyoto::Scenery::clone</definition>
+        <argsstring>() const</argsstring>
+        <name>clone</name>
+        <briefdescription>
+<para>Cloner. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="285" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1ab945c66d36821f6cee4f8ec1651faa1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Scenery::Scenery</definition>
+        <argsstring>(SmartPointer&lt; Metric::Generic &gt;, SmartPointer&lt; Screen &gt;, SmartPointer&lt; Astrobj::Generic &gt;)</argsstring>
+        <name>Scenery</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_metric_1_1_generic" kindref="compound">Metric::Generic</ref> &gt;</type>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_screen" kindref="compound">Screen</ref> &gt;</type>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_astrobj_1_1_generic" kindref="compound">Astrobj::Generic</ref> &gt;</type>
+        </param>
+        <briefdescription>
+<para>Constructor setting Scenery::gg_, <ref refid="class_gyoto_1_1_scenery_1ae5fd1c4017101dd5863b314ad2856d2c" kindref="member">Scenery::screen_</ref>, and Scenery::obj_. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To ensure consistency, the <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> will be forcibly attached to the <ref refid="class_gyoto_1_1_screen" kindref="compound">Screen</ref> and to the <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref> (if they are not NULL). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="292" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a18ed2b1f8772fd1ed3b416af0857da00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Scenery::~Scenery</definition>
+        <argsstring>()</argsstring>
+        <name>~Scenery</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="294" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a6ef177b70c1f3b70aebb5588b8c6406b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_metric_1_1_generic" kindref="compound">Metric::Generic</ref> &gt;</type>
+        <definition>SmartPointer&lt;Metric::Generic&gt; Gyoto::Scenery::metric</definition>
+        <argsstring>() const</argsstring>
+        <name>metric</name>
+        <briefdescription>
+<para>Get ph_.Worldline::metric_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="301" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1afe534cc73b12043e0376a22bc8b7b8b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::metric</definition>
+        <argsstring>(SmartPointer&lt; Metric::Generic &gt;)</argsstring>
+        <name>metric</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_metric_1_1_generic" kindref="compound">Metric::Generic</ref> &gt;</type>
+        </param>
+        <briefdescription>
+<para>Set Scenery::gg_. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The provided <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> will also be atached to the <ref refid="class_gyoto_1_1_screen" kindref="compound">Screen</ref> and the <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="305" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a1a809448dc2666080652c01071029491" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_screen" kindref="compound">Screen</ref> &gt;</type>
+        <definition>SmartPointer&lt;Screen&gt; Gyoto::Scenery::screen</definition>
+        <argsstring>() const</argsstring>
+        <name>screen</name>
+        <briefdescription>
+<para>Get <ref refid="class_gyoto_1_1_scenery_1ae5fd1c4017101dd5863b314ad2856d2c" kindref="member">Scenery::screen_</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="306" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a4da0a95115519238f204898c78c351df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::screen</definition>
+        <argsstring>(SmartPointer&lt; Screen &gt;)</argsstring>
+        <name>screen</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_screen" kindref="compound">Screen</ref> &gt;</type>
+        </param>
+        <briefdescription>
+<para>Set <ref refid="class_gyoto_1_1_scenery_1ae5fd1c4017101dd5863b314ad2856d2c" kindref="member">Scenery::screen_</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> attached to the <ref refid="class_gyoto_1_1_scenery" kindref="compound">Scenery</ref> will be attached to the <ref refid="class_gyoto_1_1_screen" kindref="compound">Screen</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="311" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a58fe7f752d5239f7facf4e597af856bd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_astrobj_1_1_generic" kindref="compound">Astrobj::Generic</ref> &gt;</type>
+        <definition>SmartPointer&lt;Astrobj::Generic&gt; Gyoto::Scenery::astrobj</definition>
+        <argsstring>() const</argsstring>
+        <name>astrobj</name>
+        <briefdescription>
+<para>Get ph_.obj_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="312" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a3eba0639f5a1b7b010ac758019b43868" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::astrobj</definition>
+        <argsstring>(SmartPointer&lt; Astrobj::Generic &gt;)</argsstring>
+        <name>astrobj</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_astrobj_1_1_generic" kindref="compound">Astrobj::Generic</ref> &gt;</type>
+        </param>
+        <briefdescription>
+<para>Set ph_.obj_. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> attached to the <ref refid="class_gyoto_1_1_scenery" kindref="compound">Scenery</ref> will be attached to the <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="316" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a1a5b2902766dfd74a340d999d41298e9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref> &gt;</type>
+        <definition>SmartPointer&lt;Photon&gt; Gyoto::Scenery::clonePhoton</definition>
+        <argsstring>() const</argsstring>
+        <name>clonePhoton</name>
+        <briefdescription>
+<para>Get clone of template <ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Clone the internal <ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="322" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a947b7fb22668dcbeaf6209e1ec3920b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref> &gt;</type>
+        <definition>SmartPointer&lt;Photon&gt; Gyoto::Scenery::clonePhoton</definition>
+        <argsstring>(size_t i, size_t j)</argsstring>
+        <name>clonePhoton</name>
+        <param>
+          <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Get clone of template <ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref>, intitializing it to pixel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="327" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a5dbfcc90c7df57469b1cd0539c423b9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref> &gt;</type>
+        <definition>SmartPointer&lt;Photon&gt; Gyoto::Scenery::clonePhoton</definition>
+        <argsstring>(double a, double d)</argsstring>
+        <name>clonePhoton</name>
+        <param>
+          <type>double</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Get clone of template <ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref>, intitializing it to direction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="332" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a9c8e3015e2a4704d2304e25158906ba9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::updatePhoton</definition>
+        <argsstring>()</argsstring>
+        <name>updatePhoton</name>
+        <briefdescription>
+<para>Update values in cached <ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="334" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1ab4a431480e6f8f751a88df7f42473e3c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Scenery::delta</definition>
+        <argsstring>() const</argsstring>
+        <name>delta</name>
+        <briefdescription>
+<para>Get default step in geometrical units. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="336" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1acd33e8898b4673eec0a5c3e50425e9ca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Scenery::delta</definition>
+        <argsstring>(const std::string &amp;unit) const</argsstring>
+        <name>delta</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Get default step in specified units. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="337" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a00c741e9eadea328407f9be118922569" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::delta</definition>
+        <argsstring>(double)</argsstring>
+        <name>delta</name>
+        <param>
+          <type>double</type>
+        </param>
+        <briefdescription>
+<para>set default step in geometrical units </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="338" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a6ce7c0426d7209e35980a4c58954c5ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::delta</definition>
+        <argsstring>(double, const std::string &amp;unit)</argsstring>
+        <name>delta</name>
+        <param>
+          <type>double</type>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>set default step in specified units </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="339" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1acc30a8f408cb1523f72881d1b787dd85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::initCoord</definition>
+        <argsstring>(std::vector&lt; double &gt; c)</argsstring>
+        <name>initCoord</name>
+        <param>
+          <type>std::vector&lt; double &gt;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="341" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1adee556f083c475a2f502f4e3a7d961c4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Gyoto::Scenery::initCoord</definition>
+        <argsstring>() const</argsstring>
+        <name>initCoord</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="342" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1acaed08cd4fa2113101d26436cd96aebd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::setRequestedQuantities</definition>
+        <argsstring>(Quantity_t quant)</argsstring>
+        <name>setRequestedQuantities</name>
+        <param>
+          <type><ref refid="namespace_gyoto_1a009cbd7f025ce417907a5344a15a1463" kindref="member">Quantity_t</ref></type>
+          <declname>quant</declname>
+        </param>
+        <briefdescription>
+<para>Set <ref refid="class_gyoto_1_1_scenery_1ae9d64f82cb58af5452be5a65629efae0" kindref="member">Scenery::quantities_</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>quant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bitwise OR of desired quantities, e.g.<programlisting><codeline><highlight class="normal">GYOTO_QUANTITY_SPECTRUM<sp/>|<sp/>GYOTO_QUANTITY_MIN_DISTANCE<sp/></highlight></codeline>
+</programlisting> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="349" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a2f31ce0783dac2a2e7d8905360c49891" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::requestedQuantitiesString</definition>
+        <argsstring>(std::string const &amp;squant)</argsstring>
+        <name>requestedQuantitiesString</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>squant</declname>
+        </param>
+        <briefdescription>
+<para>Set <ref refid="class_gyoto_1_1_scenery_1ae9d64f82cb58af5452be5a65629efae0" kindref="member">Scenery::quantities_</ref> from string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>squant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coma-separated list of quantities, e.g. &quot;Spectrum
+MinDistance&quot;. The order is not relevant. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="356" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a830963a77e6b6b94423fb2b2f3405f31" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_gyoto_1a009cbd7f025ce417907a5344a15a1463" kindref="member">Quantity_t</ref></type>
+        <definition>Quantity_t Gyoto::Scenery::getRequestedQuantities</definition>
+        <argsstring>() const</argsstring>
+        <name>getRequestedQuantities</name>
+        <briefdescription>
+<para>Get <ref refid="class_gyoto_1_1_scenery_1ae9d64f82cb58af5452be5a65629efae0" kindref="member">Scenery::quantities_</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="359" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a8066b1fb7d3ce6081177a6d3ddeecbfc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Gyoto::Scenery::requestedQuantitiesString</definition>
+        <argsstring>() const</argsstring>
+        <name>requestedQuantitiesString</name>
+        <briefdescription>
+<para>Get a string representation of <ref refid="class_gyoto_1_1_scenery_1ae9d64f82cb58af5452be5a65629efae0" kindref="member">Scenery::quantities_</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="362" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1afff82f969d4dc2b6ac6982b837d72c2a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+        <definition>size_t Gyoto::Scenery::getScalarQuantitiesCount</definition>
+        <argsstring>(Quantity_t *q=NULL) const</argsstring>
+        <name>getScalarQuantitiesCount</name>
+        <param>
+          <type><ref refid="namespace_gyoto_1a009cbd7f025ce417907a5344a15a1463" kindref="member">Quantity_t</ref> *</type>
+          <declname>q</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Get number of requested quantities of scalar nature. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is all quantities except <ref refid="namespace_gyoto_1_1_spectrum" kindref="compound">Spectrum</ref>, BinSpectrum and ImpactCoords. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="368" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1ae982bc4678e60572fc881f22842c144f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+        <definition>size_t Gyoto::Scenery::getSpectralQuantitiesCount</definition>
+        <argsstring>(Quantity_t *q=NULL) const</argsstring>
+        <name>getSpectralQuantitiesCount</name>
+        <param>
+          <type><ref refid="namespace_gyoto_1a009cbd7f025ce417907a5344a15a1463" kindref="member">Quantity_t</ref> *</type>
+          <declname>q</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Get number of requested quantities of spectral nature. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is <ref refid="namespace_gyoto_1_1_spectrum" kindref="compound">Spectrum</ref>, SpectrumStokesQ, SpectrumStokesU, SpectrumStokesV and BinSpectrum. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="374" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1ac68ceb452765957fae20613ac6247008" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Scenery::tMin</definition>
+        <argsstring>() const</argsstring>
+        <name>tMin</name>
+        <briefdescription>
+<para>Get ph_.tmin_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="377" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1aaa7d749d92d856f0731898127fde22fb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Scenery::tMin</definition>
+        <argsstring>(const std::string &amp;unit) const</argsstring>
+        <name>tMin</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Get ph_.tmin_ in specified unit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="379" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1ad59e3313b6f543e4eb845ba10803e729" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::tMin</definition>
+        <argsstring>(double)</argsstring>
+        <name>tMin</name>
+        <param>
+          <type>double</type>
+        </param>
+        <briefdescription>
+<para>Set ph_.tmin_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="381" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a104f86c96f7141c3bf3098ff9ddb1d64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::tMin</definition>
+        <argsstring>(double, const std::string &amp;unit)</argsstring>
+        <name>tMin</name>
+        <param>
+          <type>double</type>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Set ph_.tmin_ in specified unit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="383" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a2e35c3521f27ab4b8c4c3a278d646d62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::adaptive</definition>
+        <argsstring>(bool mode)</argsstring>
+        <name>adaptive</name>
+        <param>
+          <type>bool</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Set ph_.adaptive_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="385" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a240c1207d3dfa14a544affc7ab3f9abb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gyoto::Scenery::adaptive</definition>
+        <argsstring>() const</argsstring>
+        <name>adaptive</name>
+        <briefdescription>
+<para>Get ph_.adaptive_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="386" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1ac1fa04963e059d0ab87a7bca28bd74fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::integrator</definition>
+        <argsstring>(std::string type)</argsstring>
+        <name>integrator</name>
+        <param>
+          <type>std::string</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Passed to <ref refid="class_gyoto_1_1_scenery_1ab04f1bf232df51977463ba0094c33346" kindref="member">ph_</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="389" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a4e07c57aae8e2d5e23c2510688dd8c81" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Gyoto::Scenery::integrator</definition>
+        <argsstring>() const</argsstring>
+        <name>integrator</name>
+        <briefdescription>
+<para>Passed to <ref refid="class_gyoto_1_1_scenery_1ab04f1bf232df51977463ba0094c33346" kindref="member">ph_</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="391" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1aaefde3b712155d6c3cde04f21e3c9fe9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Scenery::deltaMin</definition>
+        <argsstring>() const</argsstring>
+        <name>deltaMin</name>
+        <briefdescription>
+<para>Passed to <ref refid="class_gyoto_1_1_scenery_1ab04f1bf232df51977463ba0094c33346" kindref="member">ph_</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="394" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1af0f1714ca2b7e3ae24b213572356a508" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::deltaMin</definition>
+        <argsstring>(double h1)</argsstring>
+        <name>deltaMin</name>
+        <param>
+          <type>double</type>
+          <declname>h1</declname>
+        </param>
+        <briefdescription>
+<para>Passed to <ref refid="class_gyoto_1_1_scenery_1ab04f1bf232df51977463ba0094c33346" kindref="member">ph_</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="396" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1aceccaad06000e3074b8c4f4736ba381e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Scenery::deltaMax</definition>
+        <argsstring>() const</argsstring>
+        <name>deltaMax</name>
+        <briefdescription>
+<para>Passed to <ref refid="class_gyoto_1_1_scenery_1ab04f1bf232df51977463ba0094c33346" kindref="member">ph_</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="399" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a30071c48c3ad19ec33d991387f12e571" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::deltaMax</definition>
+        <argsstring>(double h1)</argsstring>
+        <name>deltaMax</name>
+        <param>
+          <type>double</type>
+          <declname>h1</declname>
+        </param>
+        <briefdescription>
+<para>Passed to <ref refid="class_gyoto_1_1_scenery_1ab04f1bf232df51977463ba0094c33346" kindref="member">ph_</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="402" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a4e6e077adf554fe4fba8aa61261c06c9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Scenery::deltaMaxOverR</definition>
+        <argsstring>() const</argsstring>
+        <name>deltaMaxOverR</name>
+        <briefdescription>
+<para>Passed to <ref refid="class_gyoto_1_1_scenery_1ab04f1bf232df51977463ba0094c33346" kindref="member">ph_</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="405" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a4cbae878a3b83d2cd728850a17988b02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::deltaMaxOverR</definition>
+        <argsstring>(double t)</argsstring>
+        <name>deltaMaxOverR</name>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Passed to <ref refid="class_gyoto_1_1_scenery_1ab04f1bf232df51977463ba0094c33346" kindref="member">ph_</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="407" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a76c46272f521a938af53bdbe55c6d58a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::absTol</definition>
+        <argsstring>(double)</argsstring>
+        <name>absTol</name>
+        <param>
+          <type>double</type>
+        </param>
+        <briefdescription>
+<para>Passed to <ref refid="class_gyoto_1_1_scenery_1ab04f1bf232df51977463ba0094c33346" kindref="member">ph_</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="410" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a53fce03060c481c94d556b94470abbf7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Scenery::absTol</definition>
+        <argsstring>() const</argsstring>
+        <name>absTol</name>
+        <briefdescription>
+<para>Passed to <ref refid="class_gyoto_1_1_scenery_1ab04f1bf232df51977463ba0094c33346" kindref="member">ph_</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="412" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a60b7da6c1894072d053604bbffa365ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::relTol</definition>
+        <argsstring>(double)</argsstring>
+        <name>relTol</name>
+        <param>
+          <type>double</type>
+        </param>
+        <briefdescription>
+<para>Passed to <ref refid="class_gyoto_1_1_scenery_1ab04f1bf232df51977463ba0094c33346" kindref="member">ph_</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="414" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a1e3a6f0d11825a768e0d3dc2f185ca81" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Scenery::relTol</definition>
+        <argsstring>() const</argsstring>
+        <name>relTol</name>
+        <briefdescription>
+<para>Passed to <ref refid="class_gyoto_1_1_scenery_1ab04f1bf232df51977463ba0094c33346" kindref="member">ph_</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="416" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a3b88fc635e73485effc9333815c5d24f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::maxCrossEqplane</definition>
+        <argsstring>(double)</argsstring>
+        <name>maxCrossEqplane</name>
+        <param>
+          <type>double</type>
+        </param>
+        <briefdescription>
+<para>Passed to <ref refid="class_gyoto_1_1_scenery_1ab04f1bf232df51977463ba0094c33346" kindref="member">ph_</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="419" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a2afef841f919d9cee7d6b6ca78a215ca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Scenery::maxCrossEqplane</definition>
+        <argsstring>() const</argsstring>
+        <name>maxCrossEqplane</name>
+        <briefdescription>
+<para>Passed to <ref refid="class_gyoto_1_1_scenery_1ab04f1bf232df51977463ba0094c33346" kindref="member">ph_</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="421" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a2774346b7dca72aed6f36239058db9d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::secondary</definition>
+        <argsstring>(bool sec)</argsstring>
+        <name>secondary</name>
+        <param>
+          <type>bool</type>
+          <declname>sec</declname>
+        </param>
+        <briefdescription>
+<para>Set ph_.secondary_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="423" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1abb9f7604cc0fb46eaf88c1795b057762" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gyoto::Scenery::secondary</definition>
+        <argsstring>() const</argsstring>
+        <name>secondary</name>
+        <briefdescription>
+<para>Get ph_.secondary_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="424" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a2bf041919a3d1572da0dbb68a8721577" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::integ31</definition>
+        <argsstring>(bool integ)</argsstring>
+        <name>integ31</name>
+        <param>
+          <type>bool</type>
+          <declname>integ</declname>
+        </param>
+        <briefdescription>
+<para>Set WorldlinIntegState integ_31_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="426" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a810c5b341d9a2306f263eebc5d2059d7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gyoto::Scenery::integ31</definition>
+        <argsstring>() const</argsstring>
+        <name>integ31</name>
+        <briefdescription>
+<para>Get WorldlinIntegState integ_31_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="427" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1ad25705695fe4a80cb120f7620b101ea2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::parallelTransport</definition>
+        <argsstring>(bool pt)</argsstring>
+        <name>parallelTransport</name>
+        <param>
+          <type>bool</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+<para>Set ph_.parallel_transport_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="429" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a3ad0b503be882f0f292e5df38dd8a8b6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gyoto::Scenery::parallelTransport</definition>
+        <argsstring>() const</argsstring>
+        <name>parallelTransport</name>
+        <briefdescription>
+<para>Get ph_.parallel_transport_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="430" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1ae06630125b72e8d488876e5b3a25a679" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::maxiter</definition>
+        <argsstring>(size_t miter)</argsstring>
+        <name>maxiter</name>
+        <param>
+          <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+          <declname>miter</declname>
+        </param>
+        <briefdescription>
+<para>Set ph_.maxiter_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="432" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a6fd392ff08c78ddf9b2a5d6f0b50aa17" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+        <definition>size_t Gyoto::Scenery::maxiter</definition>
+        <argsstring>() const</argsstring>
+        <name>maxiter</name>
+        <briefdescription>
+<para>Get ph_.maxiter_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="433" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a483022b37bd5547b9277c50f0f433961" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::nThreads</definition>
+        <argsstring>(size_t)</argsstring>
+        <name>nThreads</name>
+        <param>
+          <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+        </param>
+        <briefdescription>
+<para>Set nthreads_;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="435" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a02f92b41c90536a60a073e85b9cef929" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+        <definition>size_t Gyoto::Scenery::nThreads</definition>
+        <argsstring>() const</argsstring>
+        <name>nThreads</name>
+        <briefdescription>
+<para>Get nthreads_;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="436" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a94726d408e3a8457efa1c11b53984d30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::nProcesses</definition>
+        <argsstring>(size_t)</argsstring>
+        <name>nProcesses</name>
+        <param>
+          <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+        </param>
+        <briefdescription>
+<para>Set nprocesses_;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="438" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1ae01e0d92d17a61f29ff36c06e7aa99bc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+        <definition>size_t Gyoto::Scenery::nProcesses</definition>
+        <argsstring>() const</argsstring>
+        <name>nProcesses</name>
+        <briefdescription>
+<para>Get nprocesses_;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="439" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1abee69acfee889060b686b734a83eeaf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::intensityConverter</definition>
+        <argsstring>(std::string unit)</argsstring>
+        <name>intensityConverter</name>
+        <param>
+          <type>std::string</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Set Scenery::intensity_converter_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="442" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1ac71e2d5fc1958b8d77cd0a3f6eedc045" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::spectrumConverter</definition>
+        <argsstring>(std::string unit)</argsstring>
+        <name>spectrumConverter</name>
+        <param>
+          <type>std::string</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Set Scenery::spectrum_converter_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="444" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a67321a135d1b57ca04b2648930e8a98d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::binSpectrumConverter</definition>
+        <argsstring>(std::string unit)</argsstring>
+        <name>binSpectrumConverter</name>
+        <param>
+          <type>std::string</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Set Scenery::binspectrum_converter_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="446" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a7b34829c90c7a7381dd487f4718c00a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::setPropertyConverters</definition>
+        <argsstring>(Gyoto::Astrobj::Properties *prop)</argsstring>
+        <name>setPropertyConverters</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_astrobj_1_1_properties" kindref="compound">Gyoto::Astrobj::Properties</ref> *</type>
+          <declname>prop</declname>
+        </param>
+        <briefdescription>
+<para>Copy converters to <ref refid="class_gyoto_1_1_astrobj_1_1_properties" kindref="compound">Astrobj::Properties</ref> instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy Scenery::intensity_converter_, Scenery::spectrum_converter_ and Scenery::binspectrum_converter_ to there alter ego in *prop. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="453" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1af723cfca27f75ba37bd439225ba60219" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::rayTrace</definition>
+        <argsstring>(Screen::Coord2dSet &amp;ij, Astrobj::Properties *data, double *impactcoords=NULL)</argsstring>
+        <name>rayTrace</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_screen_1_1_coord2d_set" kindref="compound">Screen::Coord2dSet</ref> &amp;</type>
+          <declname>ij</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_astrobj_1_1_properties" kindref="compound">Astrobj::Properties</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>impactcoords</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Perform ray-tracing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For each directions specified, launch a <ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref> back in time to compute the various quantities.</para>
+<para>At this time, the computed quantities depend on on the pointers in *data which are not NULL.</para>
+<para><ref refid="class_gyoto_1_1_scenery_1af723cfca27f75ba37bd439225ba60219" kindref="member">rayTrace()</ref> uses<itemizedlist>
+<listitem><para><ref refid="class_gyoto_1_1_scenery_1a7b34829c90c7a7381dd487f4718c00a0" kindref="member">setPropertyConverters()</ref> to set the converters in *data;</para>
+</listitem><listitem><para><ref refid="class_gyoto_1_1_astrobj_1_1_properties_1ab2ad1321af280ec137b57ca70d285a0a" kindref="member">Astrobj::Properties::init()</ref> to initialize each cell in *data;</para>
+</listitem><listitem><para><ref refid="class_gyoto_1_1_astrobj_1_1_properties_1aa30b899a1dcbc53567641d34b70997f3" kindref="member">Astrobj::Properties::operator++()</ref> to step through the arrays in *data.</para>
+</listitem></itemizedlist>
+</para>
+<para>data must have been instantiated prior to calling rayTrace and the various pointers in *data must be NULL or point to the first cell in an array of size at least <ref refid="class_gyoto_1_1_screen_1a1ad9755611f0442d1c9fe58a2998d133" kindref="member">Screen::npix_</ref> squared.</para>
+<para>If MPI support is built-in, MPI_Init() has been called, and nprocesses_ is <ge/>1, then <ref refid="class_gyoto_1_1_scenery_1af723cfca27f75ba37bd439225ba60219" kindref="member">rayTrace()</ref> will use several processes, launching them using <ref refid="class_gyoto_1_1_scenery_1a73447871c31ca79690aef7d9e255aea6" kindref="member">mpiSpawn()</ref> if necessary.</para>
+<para>Else, if <ref refid="class_gyoto_1_1_scenery_1a6d364f1f7f2b55a5c5ead77461fc6c0d" kindref="member">Scenery::nthreads_</ref> is <ge/>2 and <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> has been compiled with pthreads support, <ref refid="class_gyoto_1_1_scenery_1af723cfca27f75ba37bd439225ba60219" kindref="member">rayTrace()</ref> will use <ref refid="class_gyoto_1_1_scenery_1a6d364f1f7f2b55a5c5ead77461fc6c0d" kindref="member">Scenery::nthreads_</ref> threads and launch photons in parallel. This works only if the <ref refid="class_gyoto_1_1_astrobj_1_1_generic_1af5e9f81e6888919dea2437639a871a3e" kindref="member">Astrobj::Generic::clone()</ref> and <ref refid="class_gyoto_1_1_metric_1_1_generic_1a2bb06777240b34baf3e1b7390674ae4f" kindref="member">Metric::Generic::clone()</ref> methods have been properly implemented for the specific astrobj and metric kind, and if they are both thread-safe. At the moment, unfortunately, Lorene metrics are known to not be thread-safe.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ij</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_gyoto_1_1_screen_1_1_coord2d_set" kindref="compound">Screen::Coord2dSet</ref> specification of rays to trace. e.g.:</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<programlisting><codeline><highlight class="normal">Screen::Range<sp/>irange(imin,<sp/>imax,<sp/>di);<sp/></highlight></codeline>
+<codeline><highlight class="normal">Screen::Range<sp/>jrange(jmin,<sp/>jmax,<sp/>dj);</highlight></codeline>
+<codeline><highlight class="normal">Screen::Grid<sp/>ij(irange,<sp/>jrange);<sp/></highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a preallocated <ref refid="class_gyoto_1_1_astrobj_1_1_properties" kindref="compound">Astrobj::Properties</ref> instance which sets which quantities must be computed and where to store the output.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">impactcoords</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional pointer to an array of pre-computed impact coordinates. If impactcoords is provided, rayTracing is skipped and the quantities in *data are fill assuming that the impact coordinates are correct. This only makes sense in optically thick mode, when ray-tracing several sceneries for which the shape of the object is identical but their emission distributions are not. impactcoords can be computed using the ImpactCoords quantity. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="507" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a2f91e3d67d6846b50011be7d72fa3af6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::operator()</definition>
+        <argsstring>(size_t i, size_t j, Astrobj::Properties *data, double *impactcoords=NULL, Photon *ph=NULL)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_astrobj_1_1_properties" kindref="compound">Astrobj::Properties</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>impactcoords</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref> *</type>
+          <declname>ph</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Ray-trace a single pixel in <ref refid="class_gyoto_1_1_scenery_1ae5fd1c4017101dd5863b314ad2856d2c" kindref="member">Scenery::screen_</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Almost identical to <ref refid="class_gyoto_1_1_scenery_1af723cfca27f75ba37bd439225ba60219" kindref="member">rayTrace()</ref>, but for a single pixel.</para>
+<para>If ph is passed, it is assumed to have been properly initialized (with the right metric and astrobj etc.) already. Else, use &amp;<ref refid="class_gyoto_1_1_scenery_1ab04f1bf232df51977463ba0094c33346" kindref="member">Scenery::ph_</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="524" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1aa3d3b54079bd1c219783122346e98da1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::operator()</definition>
+        <argsstring>(double alpha, double delta, Astrobj::Properties *data, Photon *ph=NULL)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>double</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_astrobj_1_1_properties" kindref="compound">Astrobj::Properties</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref> *</type>
+          <declname>ph</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Ray-trace single direction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Almost identical to <ref refid="class_gyoto_1_1_scenery_1af723cfca27f75ba37bd439225ba60219" kindref="member">rayTrace()</ref>, but for a single direction.</para>
+<para>If ph is passed, it is assumed to have been properly initialized (with the right metric and astrobj etc.) already. Else, use &amp;<ref refid="class_gyoto_1_1_scenery_1ab04f1bf232df51977463ba0094c33346" kindref="member">Scenery::ph_</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="535" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a9bc2f2025deb97a71f21f2be5c0f5022" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::fillProperty</definition>
+        <argsstring>(FactoryMessenger *fmp, Property const &amp;p) const</argsstring>
+        <name>fillProperty</name>
+        <reimplements refid="class_gyoto_1_1_object_1a11892ef308d6f40add51eaea653a394b">fillProperty</reimplements>
+        <param>
+          <type><ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref> *</type>
+          <declname>fmp</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Output a single <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> to XML. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The base implementation decides what to do based on the <emphasis>p.type</emphasis>. The format matches how <ref refid="class_gyoto_1_1_object_1aa0a8b119e7aa95b21be081f8c97e1626" kindref="member">setParameters()</ref> an <ref refid="class_gyoto_1_1_object_1a45969ac469cf6979037229c2741b226b" kindref="member">setParameter()</ref> would interpret the XML descition.</para>
+<para>Overriding this method should be avoided, but makes sense in some cases (for instance <ref refid="class_gyoto_1_1_screen_1a50f80add154ec088fc9509ba22ef0032" kindref="member">Screen::fillProperty()</ref> selects a different unit for <emphasis>Distance</emphasis> based on its magnitude, so that stellar sizes are expressed in solar radii while smaller sizes can be expressed in meters and larger sizes in parsecs).</para>
+<para>Overriding implementation should fall-back on calling the implementation in the direct parent class: <programlisting><codeline><highlight class="normal">class<sp/>A:<sp/>public<sp/>Object<sp/>{};</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>B:<sp/>public<sp/>A<sp/>{<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>using<sp/>B::setParameter;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>virtual<sp/>void<sp/>fillProperty(Gyoto::FactoryMessenger<sp/>*fmp,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Property<sp/>const<sp/>&amp;p)<sp/>const<sp/>;</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal">void<sp/>B::fillProperty(Gyoto::FactoryMessenger<sp/>*fmp,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Property<sp/>const<sp/>&amp;p)<sp/>const<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>if<sp/>(name==&quot;Duff&quot;)<sp/>fmp-&gt;doSomething();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>else<sp/>A::fillProperty(fmp,<sp/>p);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="541" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a63501e86c47ea6b67e0c564c706a72f1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Gyoto::Scenery::fillElement</definition>
+        <argsstring>(FactoryMessenger *fmp) const</argsstring>
+        <name>fillElement</name>
+        <reimplements refid="class_gyoto_1_1_object_1a0ffc3f84b4c2372d639eb848605fb1f3">fillElement</reimplements>
+        <param>
+          <type><ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref> *</type>
+          <declname>fmp</declname>
+        </param>
+        <briefdescription>
+<para>Fill the XML element for this <ref refid="class_gyoto_1_1_object" kindref="compound">Object</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The base implementation simply calls <ref refid="class_gyoto_1_1_scenery_1a9bc2f2025deb97a71f21f2be5c0f5022" kindref="member">fillProperty()</ref> for each <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> defined for the <ref refid="class_gyoto_1_1_object" kindref="compound">Object</ref>.</para>
+<para>Derived classes should avoid overriding <ref refid="class_gyoto_1_1_scenery_1a63501e86c47ea6b67e0c564c706a72f1" kindref="member">fillElement()</ref>. It may make sense occasionally, e.g. to make sure that the metric is output first.</para>
+<para>To customize how a given <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> is rendered, it is better to override <ref refid="class_gyoto_1_1_scenery_1a9bc2f2025deb97a71f21f2be5c0f5022" kindref="member">fillProperty()</ref>.</para>
+<para>If this method is overridden, the implementation should in general call <ref refid="class_gyoto_1_1_scenery_1a63501e86c47ea6b67e0c564c706a72f1" kindref="member">fillElement()</ref> on the direct base. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="543" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_smart_pointee_1a9ec09c51fd18dde7c13ef3b03fac1fad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::SmartPointee::incRefCount</definition>
+        <argsstring>()</argsstring>
+        <name>incRefCount</name>
+        <briefdescription>
+<para>Increment the reference counter. Warning: Don&apos;t mess with the counter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="96" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_smart_pointee_1a22a67609fb4690ee8ec0e95e4060e387" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gyoto::SmartPointee::decRefCount</definition>
+        <argsstring>()</argsstring>
+        <name>decRefCount</name>
+        <briefdescription>
+<para>Decrement the reference counter and return current value. Warning: Don&apos;t mess with the counter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="97" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_smart_pointee_1a9a9cb35cd161bf19ce652f76e0a5bec0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gyoto::SmartPointee::getRefCount</definition>
+        <argsstring>()</argsstring>
+        <name>getRefCount</name>
+        <briefdescription>
+<para>Get the current number of references. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="98" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a06ea95dc396053466cdd63d419d1688c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Gyoto::Object::isThreadSafe</definition>
+        <argsstring>() const</argsstring>
+        <name>isThreadSafe</name>
+        <briefdescription>
+<para>Whether this class is thread-safe. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Return True if this object is thread-safe, i.e. if an instance and its clone can be used in parallel threads (in the context of Scenery::raytrace()). Known objects which are not thread-safe include Lorene metrics and everything from the <ref refid="namespace_gyoto_1_1_python" kindref="compound">Python</ref> plug-in.</para>
+<para>The default implementation considers that the class itself is thread safe and recurses into the declared properties to check whether they are safe too. Classes that abide to the Object/Property paradigm and are themselves thread-safe have nothing special to do.</para>
+<para>Objects that clone children in their copy constructor that are not declared as properties must take these children into account.</para>
+<para>Classes that are never thread-safe must declare it. It acn be easily done using GYOTO_OBJECT_THREAD_SAFETY in the class declaration and GYOTO_PROPERTY_THREAD_UNSAFE in the class definition. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="197" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a58c4ecdaae1873dc6912e164b61826e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::set</definition>
+        <argsstring>(Property const &amp;p, Value val)</argsstring>
+        <name>set</name>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab3aa615a6b576b663f9ee524831280c8">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab3aa615a6b576b663f9ee524831280c8">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab3aa615a6b576b663f9ee524831280c8">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab3aa615a6b576b663f9ee524831280c8">set</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="237" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1aa063e0df7c2e4b22207a784c76c6681f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::set</definition>
+        <argsstring>(Property const &amp;p, Value val, std::string const &amp;unit)</argsstring>
+        <name>set</name>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab601136e5837e6bd99c4bf3b0beee718">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab601136e5837e6bd99c4bf3b0beee718">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab601136e5837e6bd99c4bf3b0beee718">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab601136e5837e6bd99c4bf3b0beee718">set</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Set <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> (expressed in unit) of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="240" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1aba6d35c5bbf814912ed84549109e117a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::set</definition>
+        <argsstring>(std::string const &amp;pname, Value val)</argsstring>
+        <name>set</name>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ad4aff23562b0ae6a36e05741eb631c82">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ad4aff23562b0ae6a36e05741eb631c82">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ad4aff23562b0ae6a36e05741eb631c82">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ad4aff23562b0ae6a36e05741eb631c82">set</reimplementedby>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>pname</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="243" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1abed03e16a8013699534b802e06751ef8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::set</definition>
+        <argsstring>(std::string const &amp;pname, Value val, std::string const &amp;unit)</argsstring>
+        <name>set</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>pname</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Set <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> (expressed in unit) of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="246" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a8232112e660216a61caa15fab27b889f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+        <definition>virtual Value Gyoto::Object::get</definition>
+        <argsstring>(Property const &amp;p) const</argsstring>
+        <name>get</name>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1abeaf3c1bd632fda3a48118d30105c871">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1abeaf3c1bd632fda3a48118d30105c871">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1abeaf3c1bd632fda3a48118d30105c871">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1abeaf3c1bd632fda3a48118d30105c871">get</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Get <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="249" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1ad61a061d2073c841e9911be0395d4494" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+        <definition>virtual Value Gyoto::Object::get</definition>
+        <argsstring>(std::string const &amp;pname) const</argsstring>
+        <name>get</name>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1aa91e924b2c7c3e58764f8aee6b174926">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1aa91e924b2c7c3e58764f8aee6b174926">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1aa91e924b2c7c3e58764f8aee6b174926">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1aa91e924b2c7c3e58764f8aee6b174926">get</reimplementedby>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>pname</declname>
+        </param>
+        <briefdescription>
+<para>Get <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="252" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1ad4189c2c103030e9d91ee0f29ebcf13d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+        <definition>virtual Value Gyoto::Object::get</definition>
+        <argsstring>(Property const &amp;p, std::string const &amp;unit) const</argsstring>
+        <name>get</name>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a042952734a5d4bd00b73a4c03cc23af4">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a042952734a5d4bd00b73a4c03cc23af4">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a042952734a5d4bd00b73a4c03cc23af4">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a042952734a5d4bd00b73a4c03cc23af4">get</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Get <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>, converted to unit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="255" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a99544282b6c383b8570a5bc51bed1ecf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+        <definition>virtual Value Gyoto::Object::get</definition>
+        <argsstring>(std::string const &amp;pname, std::string const &amp;unit) const</argsstring>
+        <name>get</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>pname</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Get <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>, converted to unit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="258" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a424ef3538c714adfafad7eda249e0d58" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const  *</type>
+        <definition>Property const* Gyoto::Object::property</definition>
+        <argsstring>(std::string const pname) const</argsstring>
+        <name>property</name>
+        <param>
+          <type>std::string const</type>
+          <declname>pname</declname>
+        </param>
+        <briefdescription>
+<para>Find property by name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Look into the <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> list for a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> whose <emphasis>name</emphasis> (or <emphasis>name_false</emphasis>, for a boolean <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>) is <emphasis>pname</emphasis>. Return a const pointer to the first such property found, or NULL if none is found. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="267" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1aa0a8b119e7aa95b21be081f8c97e1626" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::setParameters</definition>
+        <argsstring>(Gyoto::FactoryMessenger *fmp)</argsstring>
+        <name>setParameters</name>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_generic_1a1872b827525ccb1fdedb614474992a6a">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_complex_1a635b0ea47d78c02a999d932eec8b16c5">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_complex_1a5607f9166dc2c1a0a7bd61cde6a71c57">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_spectrometer_1_1_complex_1a008340295dbb21fbddfa6ad7612da80e">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_equatorial_hot_spot_1a931ca188ae49a0d8e9764a151edd3553">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_photon_1a7a6664a5de91b1c59ba1b57d54ba1dd9">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_shift_1a81a5f0f4f32f5be884a4445f1d1d5b17">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_star_1ad1ad60d3ce8861dfa8626ca908e5789e">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_spectrometer_1_1_uniform_1aaca1850f712a089a6c5e0188aec0e5a4">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a0e4df99b42b3d3722d6ea39972d1421d">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a84ea2cab6209f1ed0de3a73223c6a5e8">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a84ea2cab6209f1ed0de3a73223c6a5e8">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a84ea2cab6209f1ed0de3a73223c6a5e8">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a84ea2cab6209f1ed0de3a73223c6a5e8">setParameters</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">Gyoto::FactoryMessenger</ref> *</type>
+          <declname>fmp</declname>
+        </param>
+        <briefdescription>
+<para>Main loop for parsing Properties from XML description. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim> This function queries the FactoryMessenger for elements to parse,
+ and tries to matche each element to a Property to set it
+ accordingly.
+
+ Any class that tries to be buildable from XML must supply a
+ subcontractor (for base classes such as Metric, Astrobj, Spectrum
+ and Spectrometer, it is done as a template that must be
+ specialized for each class).
+
+ This subcontractor typically looks somewhat like this:
+</verbatim> <programlisting><codeline><highlight class="normal">SmartPointer&lt;Metric::Generic&gt;</highlight></codeline>
+<codeline><highlight class="normal">Gyoto::Metric::MyKind::Subcontractor(FactoryMessenger*<sp/>fmp)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>SmartPointer&lt;MyKind&gt;<sp/>gg<sp/>=<sp/>new<sp/>MyKind();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>gg<sp/>-&gt;<sp/>setParameters(fmp);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>return<sp/>gg;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> <verbatim> Although this is discouraged, it is possible to override the
+ following functions to customize how XML entities are parsed:
+   - setParameters() if low-level access to the
+     FactoryMessenger is required;
+   - setParameter(std::string name,
+                  std::string content,
+                  std::string unit)
+     to interpret an entity that does not match a Property
+     (e.g. alternative name);
+   - setParameter(Gyoto::Property const &amp;p,
+                  std::string const &amp;name,
+                  std::string const &amp;content,
+                  std::string const &amp;unit)
+     to change how a Property is interpreted.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="355" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a45969ac469cf6979037229c2741b226b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int Gyoto::Object::setParameter</definition>
+        <argsstring>(std::string name, std::string content, std::string unit)</argsstring>
+        <name>setParameter</name>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_equatorial_hot_spot_1a0c6f1aee4a478c5ef695348d64eae2d4">setParameter</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_kerr_k_s_1a4c9d3a51c5d1478908516a0b96a42135">setParameter</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_star_1a628aa18277af464450896efd63206527">setParameter</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab4fd3efea9c85b8f8c1aaafa2597dfa4">setParameter</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab4fd3efea9c85b8f8c1aaafa2597dfa4">setParameter</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab4fd3efea9c85b8f8c1aaafa2597dfa4">setParameter</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab4fd3efea9c85b8f8c1aaafa2597dfa4">setParameter</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1ac2fbf2bb5796e3d7c7eb80dccfe20af7">setParameter</reimplementedby>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>content</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Set parameter by name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is used when parsing an XML description, if no <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> of this <emphasis>name</emphasis> is found. Overriding implementation should fall-back on calling the direct&apos;s parent implementation:</para>
+<para><programlisting><codeline><highlight class="normal">class<sp/>A:<sp/>public<sp/>Object<sp/>{};</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>B:<sp/>public<sp/>A<sp/>{<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>using<sp/>B::setParameter;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>virtual<sp/>int<sp/>setParameter(std::string<sp/>name,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>content,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>unit);</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal">int<sp/>B::setParameter(std::string<sp/>name,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>content,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>unit)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>if<sp/>(name==&quot;Duff&quot;)<sp/>doSomething(content,<sp/>unit);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>else<sp/>return<sp/>A::setParameter(name,<sp/>content,<sp/>unit);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>return<sp/>0;<sp/><sp/>//<sp/>name<sp/>was<sp/>known</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>XML name of the parameter (XML entity). This may have a path component, e.g. &quot;Astrobj::Radius&quot;, in which case a property named &quot;Astrobj&quot; will be sought in the current object, and setParameter will be called recusrively on this <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref> with Radius as name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string representation of the value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string representation of the unit </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if this parameter is known, 1 if it is not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="390" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a43fe041144add66155668ca88a99fd98" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::setParameter</definition>
+        <argsstring>(Gyoto::Property const &amp;p, std::string const &amp;name, std::string const &amp;content, std::string const &amp;unit)</argsstring>
+        <name>setParameter</name>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_polish_doughnut_1a13a8a59bd3738f5739db0550dbb42003">setParameter</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Gyoto::Property</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>content</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Set parameter by <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> (and name) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is used when parsing an XML description, if <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> (<emphasis>p</emphasis>) of this <emphasis>name</emphasis> is found (i.e. either <emphasis>p.name</emphasis> or <emphasis>p.name_false</emphasis> is equal to <emphasis>name</emphasis>). Implementation should fall-back on calling the direct&apos;s parent implementation:</para>
+<para><programlisting><codeline><highlight class="normal">class<sp/>A:<sp/>public<sp/>Object<sp/>{};</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>B:<sp/>public<sp/>A<sp/>{<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>using<sp/>B::setParameter;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>virtual<sp/>void<sp/>setParameter(Gyoto::Property<sp/>const<sp/>&amp;p,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>content,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>unit);</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal">void<sp/>B::setParameter(Gyoto::Property<sp/>const<sp/>&amp;p,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>content,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>unit)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>if<sp/>(name==&quot;Duff&quot;)<sp/>doSomething(content,<sp/>unit);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>else<sp/>A::setParameter(p,<sp/>name,<sp/>content,<sp/>unit);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> that matches <emphasis>name</emphasis> (<emphasis>p.name</emphasis> == <emphasis>name</emphasis> or <emphasis>p.name_false</emphasis> == <emphasis>name</emphasis>) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>XML name of the parameter (XML entity) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string representation of the value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string representation of the unit </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="426" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a741ba678188d7d167ff2e3bb13dd924f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Gyoto::Object::describeProperty</definition>
+        <argsstring>(Gyoto::Property const &amp;p) const</argsstring>
+        <name>describeProperty</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Gyoto::Property</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Format desrciption for a property. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a string containing the name(s) and type of the property, as well as whether it supports unit. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="437" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a13843618d84c49d47bd37ddfa31160c5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Object::help</definition>
+        <argsstring>() const</argsstring>
+        <name>help</name>
+        <briefdescription>
+<para>Print (to stdout) some help on this class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Describe all properties that this instance supports. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="444" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a9f46de678c67e9050cf3a8b9677e1d73" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string Gyoto::Object::kind</definition>
+        <argsstring>() const</argsstring>
+        <name>kind</name>
+        <reimplementedby refid="class_gyoto_1_1_spectrometer_1_1_uniform_1af6c1082ac163e833fff9e934b417b194">kind</reimplementedby>
+        <briefdescription>
+<para>Get kind_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="456" column="23"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a65b614b2123d0cc1745da1d3e400b572" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Gyoto::Scenery::mpiWorker</definition>
+        <argsstring>()</argsstring>
+        <name>mpiWorker</name>
+        <briefdescription>
+<para>Become an MPI worker. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Worker processes need to call this function after having called MPI_Init(). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="276" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_scenery_1a6c4c57b83b803da4af96c38f55160951" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_scenery" kindref="compound">Scenery</ref> &gt;</type>
+        <definition>static SmartPointer&lt;Scenery&gt; Gyoto::Scenery::Subcontractor</definition>
+        <argsstring>(Gyoto::FactoryMessenger *)</argsstring>
+        <name>Subcontractor</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">Gyoto::FactoryMessenger</ref> *</type>
+        </param>
+        <briefdescription>
+<para>Instanciate <ref refid="class_gyoto_1_1_scenery" kindref="compound">Scenery</ref> from an XML description. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="545" column="23"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_smart_pointee_1aaaf212a70fb1880b70e4d357e843cc85" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gyoto::SmartPointee::refCount</definition>
+        <argsstring></argsstring>
+        <name>refCount</name>
+        <briefdescription>
+<para>Reference counter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="83" column="7" bodyfile="/home/junichi/Gyoto/include/GyotoSmartPointer.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_smart_pointee_1abf1c1e431cdd4f08f13de581cccb6770" prot="private" static="no" mutable="no">
+        <type>pthread_mutex_t</type>
+        <definition>pthread_mutex_t Gyoto::SmartPointee::mutex_</definition>
+        <argsstring></argsstring>
+        <name>mutex_</name>
+        <briefdescription>
+<para>A mutex. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>When compiled with libpthread </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="89" column="19" bodyfile="/home/junichi/Gyoto/include/GyotoSmartPointer.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_gyoto_1_1_object_1aae3b80667884c6620c4796a1b8ef74e5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::kind</definition>
+        <argsstring>(const std::string)</argsstring>
+        <name>kind</name>
+        <param>
+          <type>const std::string</type>
+        </param>
+        <briefdescription>
+<para>Set kind_. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_gyoto_1_1_object_1aae3b80667884c6620c4796a1b8ef74e5" kindref="member">kind(const std::string)</ref> is protected because, for most Objects, it should not be changed in runtime. Set kind_ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="453" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Ray-tracing scene. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>An <ref refid="class_gyoto_1_1_scenery" kindref="compound">Scenery</ref> contains:<itemizedlist>
+<listitem><para>a <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref>: used in <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref>, <ref refid="class_gyoto_1_1_screen" kindref="compound">Screen</ref> and <ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref>;</para>
+</listitem><listitem><para>a <ref refid="class_gyoto_1_1_screen" kindref="compound">Screen</ref>: sets the field-of-view, the position of the camera, the observation time, and the <ref refid="namespace_gyoto_1_1_spectrometer" kindref="compound">Spectrometer</ref>;</para>
+</listitem><listitem><para>an <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref>: light emitter.</para>
+</listitem></itemizedlist>
+</para>
+<para>In addition, Quantities may be specified (or the default Quantity will be produced: generally Intensity). Not all <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref> implement all Quantities. The order in which Quantities are listed is not relevant (it is not stored). Possible Quantities:</para>
+<para><itemizedlist>
+<listitem><para>Intensity: the intensity that reaches the object, integrated over the line-of-sight;</para>
+</listitem><listitem><para>EmissionTime: date of emission;</para>
+</listitem><listitem><para>MinDistance: minimum distance between the <ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref> reaching each pixel and the <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref>;</para>
+</listitem><listitem><para>FirstDistMin: last closest approach between <ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref> and <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref>;</para>
+</listitem><listitem><para>Redshift;</para>
+</listitem><listitem><para>ImpactCoords: 8-coordinates of the object and photon at impact;</para>
+</listitem><listitem><para><ref refid="namespace_gyoto_1_1_spectrum" kindref="compound">Spectrum</ref>: I<subscript><nu/></subscript> computed at various values frequencies, corresponding to the <ref refid="class_gyoto_1_1_screen" kindref="compound">Screen</ref>&apos;s <ref refid="namespace_gyoto_1_1_spectrometer" kindref="compound">Spectrometer</ref>.</para>
+</listitem><listitem><para>BinSpectrum: <int/><subscript><nu/><subscript>1</subscript></subscript><superscript><nu/><subscript>2</subscript></superscript>I<subscript><nu/></subscript>d<nu/> computed between various (<nu/><subscript>1</subscript>, <nu/><subscript>2</subscript> pairs corresponding to the <ref refid="class_gyoto_1_1_screen" kindref="compound">Screen</ref>&apos;s <ref refid="namespace_gyoto_1_1_spectrometer" kindref="compound">Spectrometer</ref>. This is what a physical spectrometer measures.</para>
+</listitem></itemizedlist>
+</para>
+<para>In addition, it is possible to ray-trace an image using several cores on a single machine (if <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> has been compiled with POSIX threads support). The number of threads can be specified using NThreads entity. Setting NThreads to 0 is equivalent to setting it to 1. Beware that setting NThreads to a number higher than the actual number of cores available on the machine usually leads to a decrease in performance.</para>
+<para>Finally, <ref refid="class_gyoto_1_1_scenery" kindref="compound">Scenery</ref> accepts a number of numerical tuning parameters that are passed directly to the underlying photons (actually, the <ref refid="class_gyoto_1_1_scenery" kindref="compound">Scenery</ref> object holds a <ref refid="class_gyoto_1_1_photon" kindref="compound">Photon</ref> instance which stores many parameters, including the <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Metric</ref> and <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref>): Adaptive/NonAdaptive, Delta, MinimumTime, MaxIter, PrimaryOnly.</para>
+<para>Thus a fully populated <ref refid="class_gyoto_1_1_scenery" kindref="compound">Scenery</ref> XML looks like that (the values are examples, they are not necessary the default nor the best or even good values): <programlisting><codeline><highlight class="normal"><sp/>&lt;?xml<sp/>version=&quot;1.0&quot;<sp/>encoding=&quot;UTF-8&quot;</highlight></codeline>
+<codeline><highlight class="normal">standalone=&quot;no&quot;?&gt;<sp/>&lt;Scenery&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>&lt;Metric<sp/>kind<sp/>=<sp/>&quot;MetricKind&quot;&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>&lt;MetricProperties/&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;/Metric&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>&lt;Screen&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>&lt;ScreenProperties/&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;/Screen&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>&lt;Astrobj<sp/>kind<sp/>=<sp/>&quot;AstrobjKind&quot;&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>&lt;AstrobjParameters/&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;/Astrobj&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>&lt;Quantities&gt;<sp/>Spectrum<sp/>Intensity<sp/>...&lt;/Quantities&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>&lt;NThreads&gt;<sp/>2<sp/>&lt;/NThreads&gt;<sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>Next<sp/>come<sp/>the<sp/>numerical<sp/>tuning<sp/>parameters:</highlight></codeline>
+<codeline><highlight class="normal"><sp/>Integration<sp/>step,<sp/>initial<sp/>in<sp/>case<sp/>of<sp/>adaptive,<sp/>reset<sp/>for</highlight></codeline>
+<codeline><highlight class="normal"><sp/>for<sp/>each<sp/>ray<sp/>being<sp/>traced:</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;Delta<sp/>unit=&quot;geometrical&quot;&gt;<sp/>1<sp/>&lt;/Delta&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>Adaptive<sp/>or<sp/>NonAdaptive:</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;Adaptive/&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>The<sp/>integrator<sp/>to<sp/>use<sp/>for<sp/>integrating<sp/>the<sp/>photons:</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;Integrator&gt;runge_kutta_fehlberg78&lt;/Integrator&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>The<sp/>&quot;Legacy&quot;<sp/>integrator<sp/>is<sp/>coded<sp/>in</highlight></codeline>
+<codeline><highlight class="normal"><sp/>Metric::Generic::myrk4_adaptive(),<sp/>may<sp/>be<sp/>re-implemented<sp/>in<sp/>othe</highlight></codeline>
+<codeline><highlight class="normal"><sp/>metrics,<sp/>and<sp/>therefore<sp/>takes<sp/>its<sp/>tuning<sp/>parameters<sp/>in<sp/>the<sp/>Metric</highlight></codeline>
+<codeline><highlight class="normal"><sp/>section.<sp/>The<sp/>other<sp/>integrators<sp/>(runge_kutta_fehlberg78,</highlight></codeline>
+<codeline><highlight class="normal"><sp/>runge_kutta_cash_karp54,<sp/>runge_kutta_dopri5,</highlight></codeline>
+<codeline><highlight class="normal"><sp/>runge_kutta_cash_karp54_classic)<sp/>accept<sp/>the<sp/>following<sp/>tuning</highlight></codeline>
+<codeline><highlight class="normal"><sp/>parameters,<sp/>directly<sp/>in<sp/>the<sp/>Scenery<sp/>section:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>Absolute<sp/>and<sp/>relative<sp/>tolerance<sp/>for<sp/>the<sp/>adaptive<sp/>step:</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;AbsTol&gt;1e-11&lt;/AbsTol&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;RelTol&gt;1e-11&lt;/RelTol&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>Normally,<sp/>you<sp/>should<sp/>not<sp/>need<sp/>to<sp/>tune<sp/>the<sp/>other<sp/>three.<sp/>If<sp/>you<sp/>need</highlight></codeline>
+<codeline><highlight class="normal"><sp/>to,<sp/>try<sp/>using<sp/>a<sp/>higher<sp/>order<sp/>integrator:</highlight></codeline>
+<codeline><highlight class="normal"><sp/>maximum<sp/>integration<sp/>step:</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;DeltaMax&gt;<sp/>100<sp/>&lt;/DeltaMax&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>delta_max/R<sp/>where<sp/>R<sp/>is<sp/>the<sp/>current<sp/>distance<sp/>to<sp/>the<sp/>origin:</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;DeltaMaxOverR&gt;<sp/>0.1<sp/>&lt;/DeltaMaxOverR&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>minimum<sp/>step:</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;DeltaMin&gt;1e-20&lt;/DeltaMin&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>A<sp/>few<sp/>safe-guards<sp/>to<sp/>avoid<sp/>infinite<sp/>loops:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>Maximum<sp/>number<sp/>of<sp/>iterations<sp/>for<sp/>each<sp/>ray:</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;Maxiter&gt;<sp/>1000000<sp/>&lt;/Maxiter&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>Minimum<sp/>date<sp/>a<sp/>photon<sp/>may<sp/>reach<sp/>backwards<sp/>in<sp/>time:</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;MinimumTime<sp/>unit=&quot;yr&quot;&gt;25e3&lt;/MinimumTime&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>This<sp/>one<sp/>is<sp/>an<sp/>experimental,<sp/>poorly<sp/>specified<sp/>feature:</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;!--PrimaryOnly/--&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;/Scenery&gt;</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Gyoto::Scenery</label>
+        <link refid="class_gyoto_1_1_scenery"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Gyoto::Object</label>
+        <link refid="class_gyoto_1_1_object"/>
+      </node>
+      <node id="2">
+        <label>Gyoto::SmartPointee</label>
+        <link refid="class_gyoto_1_1_smart_pointee"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>Gyoto::Property</label>
+        <link refid="class_gyoto_1_1_property"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>getter_unit</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>getter</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>setter</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>setter_unit</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Gyoto::Photon</label>
+        <link refid="class_gyoto_1_1_photon"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>spectro_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>properties</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>object_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gyoto::Scenery</label>
+        <link refid="class_gyoto_1_1_scenery"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>ph_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>properties</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>screen_</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Astrobj::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="11">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Screen &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="7">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Spectrometer::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="3">
+        <label>Gyoto::Object</label>
+        <link refid="class_gyoto_1_1_object"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>properties</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Metric::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="2">
+        <label>Gyoto::SmartPointee</label>
+        <link refid="class_gyoto_1_1_smart_pointee"/>
+      </node>
+      <node id="12">
+        <label>Gyoto::Property::setter_t</label>
+        <link refid="union_gyoto_1_1_property_1_1setter__t"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>set_spectrometer</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>set_metric</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>set_spectrum</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>set_astrobj</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>set_screen</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Gyoto::Property::setter_unit_t</label>
+        <link refid="union_gyoto_1_1_property_1_1setter__unit__t"/>
+      </node>
+      <node id="9">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Spectrum::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="15">
+        <label>Gyoto::Worldline</label>
+        <link refid="class_gyoto_1_1_worldline"/>
+        <childnode refid="16" relation="protected-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>metric_</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Gyoto::Hook::Listener</label>
+        <link refid="class_gyoto_1_1_hook_1_1_listener"/>
+      </node>
+      <node id="5">
+        <label>Gyoto::Property::getter_unit_t</label>
+        <link refid="union_gyoto_1_1_property_1_1getter__unit__t"/>
+      </node>
+      <node id="6">
+        <label>Gyoto::Property::getter_t</label>
+        <link refid="union_gyoto_1_1_property_1_1getter__t"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>get_spectrometer</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>get_metric</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>get_spectrum</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>get_astrobj</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>get_screen</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/junichi/Gyoto/include/GyotoScenery.h" line="162" column="1" bodyfile="/home/junichi/Gyoto/include/GyotoScenery.h" bodystart="165" bodyend="549"/>
+    <listofallmembers>
+      <member refid="class_gyoto_1_1_scenery_1a76c46272f521a938af53bdbe55c6d58a" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>absTol</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a53fce03060c481c94d556b94470abbf7" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>absTol</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a2e35c3521f27ab4b8c4c3a278d646d62" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>adaptive</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a240c1207d3dfa14a544affc7ab3f9abb" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>adaptive</name></member>
+      <member refid="class_gyoto_1_1_scenery_1aa561b75fdaafc7116b3fb408755601a0" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>am_worker</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a58fe7f752d5239f7facf4e597af856bd" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>astrobj</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a3eba0639f5a1b7b010ac758019b43868" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>astrobj</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a67321a135d1b57ca04b2648930e8a98d" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>binSpectrumConverter</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a8cc6ec06fb353a3f6156b46ba730f755" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>clone</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a1a5b2902766dfd74a340d999d41298e9" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>clonePhoton</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a947b7fb22668dcbeaf6209e1ec3920b1" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>clonePhoton</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a5dbfcc90c7df57469b1cd0539c423b9d" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>clonePhoton</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1a22a67609fb4690ee8ec0e95e4060e387" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>decRefCount</name></member>
+      <member refid="class_gyoto_1_1_scenery_1ab4a431480e6f8f751a88df7f42473e3c" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>delta</name></member>
+      <member refid="class_gyoto_1_1_scenery_1acd33e8898b4673eec0a5c3e50425e9ca" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>delta</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a00c741e9eadea328407f9be118922569" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>delta</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a6ce7c0426d7209e35980a4c58954c5ca" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>delta</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a5a7bb09f9a7b683448509830f0a4f329" prot="protected" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>delta_</name></member>
+      <member refid="class_gyoto_1_1_scenery_1aceccaad06000e3074b8c4f4736ba381e" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>deltaMax</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a30071c48c3ad19ec33d991387f12e571" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>deltaMax</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a4e6e077adf554fe4fba8aa61261c06c9" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>deltaMaxOverR</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a4cbae878a3b83d2cd728850a17988b02" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>deltaMaxOverR</name></member>
+      <member refid="class_gyoto_1_1_scenery_1aaefde3b712155d6c3cde04f21e3c9fe9" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>deltaMin</name></member>
+      <member refid="class_gyoto_1_1_scenery_1af0f1714ca2b7e3ae24b213572356a508" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>deltaMin</name></member>
+      <member refid="class_gyoto_1_1_object_1a741ba678188d7d167ff2e3bb13dd924f" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>describeProperty</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a63501e86c47ea6b67e0c564c706a72f1" prot="public" virt="virtual"><scope>Gyoto::Scenery</scope><name>fillElement</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a9bc2f2025deb97a71f21f2be5c0f5022" prot="public" virt="virtual"><scope>Gyoto::Scenery</scope><name>fillProperty</name></member>
+      <member refid="class_gyoto_1_1_object_1a8232112e660216a61caa15fab27b889f" prot="public" virt="virtual"><scope>Gyoto::Scenery</scope><name>get</name></member>
+      <member refid="class_gyoto_1_1_object_1ad61a061d2073c841e9911be0395d4494" prot="public" virt="virtual"><scope>Gyoto::Scenery</scope><name>get</name></member>
+      <member refid="class_gyoto_1_1_object_1ad4189c2c103030e9d91ee0f29ebcf13d" prot="public" virt="virtual"><scope>Gyoto::Scenery</scope><name>get</name></member>
+      <member refid="class_gyoto_1_1_object_1a99544282b6c383b8570a5bc51bed1ecf" prot="public" virt="virtual"><scope>Gyoto::Scenery</scope><name>get</name></member>
+      <member refid="class_gyoto_1_1_scenery_1af7be9ef397a8e28f6cae994a16dfed38" prot="public" virt="virtual"><scope>Gyoto::Scenery</scope><name>getProperties</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1a9a9cb35cd161bf19ce652f76e0a5bec0" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>getRefCount</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a830963a77e6b6b94423fb2b2f3405f31" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>getRequestedQuantities</name></member>
+      <member refid="class_gyoto_1_1_scenery_1afff82f969d4dc2b6ac6982b837d72c2a" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>getScalarQuantitiesCount</name></member>
+      <member refid="class_gyoto_1_1_scenery_1ae982bc4678e60572fc881f22842c144f" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>getSpectralQuantitiesCount</name></member>
+      <member refid="class_gyoto_1_1_scenery_1aa0c6445670c17eac9b23e59be5a58d69a77f01cf14a73d46465f6d8479565adbe" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>give_task</name></member>
+      <member refid="class_gyoto_1_1_scenery_1aab22011938ebad38e886dca6cb39bc20" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>Gyoto::SmartPointer&lt; Gyoto::Scenery &gt;</name></member>
+      <member refid="class_gyoto_1_1_scenery_1aa32d9f9342e767f491274de13d7f32f0" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>GYOTO_OBJECT_THREAD_SAFETY</name></member>
+      <member refid="class_gyoto_1_1_scenery_1abf6f3161daa6971dfe05b7b35cce88ef" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>GYOTO_WORLDLINE</name></member>
+      <member refid="class_gyoto_1_1_object_1a13843618d84c49d47bd37ddfa31160c5" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>help</name></member>
+      <member refid="class_gyoto_1_1_scenery_1aa0c6445670c17eac9b23e59be5a58d69af93801a8f55b7da14e88666b8e1d282a" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>impactcoords</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1a9ec09c51fd18dde7c13ef3b03fac1fad" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>incRefCount</name></member>
+      <member refid="class_gyoto_1_1_scenery_1acc30a8f408cb1523f72881d1b787dd85" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>initCoord</name></member>
+      <member refid="class_gyoto_1_1_scenery_1adee556f083c475a2f502f4e3a7d961c4" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>initCoord</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a2bf041919a3d1572da0dbb68a8721577" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>integ31</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a810c5b341d9a2306f263eebc5d2059d7" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>integ31</name></member>
+      <member refid="class_gyoto_1_1_scenery_1ac1fa04963e059d0ab87a7bca28bd74fd" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>integrator</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a4e07c57aae8e2d5e23c2510688dd8c81" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>integrator</name></member>
+      <member refid="class_gyoto_1_1_scenery_1abee69acfee889060b686b734a83eeaf4" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>intensityConverter</name></member>
+      <member refid="class_gyoto_1_1_object_1a06ea95dc396053466cdd63d419d1688c" prot="public" virt="virtual"><scope>Gyoto::Scenery</scope><name>isThreadSafe</name></member>
+      <member refid="class_gyoto_1_1_object_1aae3b80667884c6620c4796a1b8ef74e5" prot="protected" virt="virtual"><scope>Gyoto::Scenery</scope><name>kind</name></member>
+      <member refid="class_gyoto_1_1_object_1a9f46de678c67e9050cf3a8b9677e1d73" prot="public" virt="virtual"><scope>Gyoto::Scenery</scope><name>kind</name></member>
+      <member refid="class_gyoto_1_1_object_1ac48ad88e3ef229ba0d0fe68a94a7118f" prot="protected" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>kind_</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a3b88fc635e73485effc9333815c5d24f" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>maxCrossEqplane</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a2afef841f919d9cee7d6b6ca78a215ca" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>maxCrossEqplane</name></member>
+      <member refid="class_gyoto_1_1_scenery_1ae06630125b72e8d488876e5b3a25a679" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>maxiter</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a6fd392ff08c78ddf9b2a5d6f0b50aa17" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>maxiter</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a6ef177b70c1f3b70aebb5588b8c6406b" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>metric</name></member>
+      <member refid="class_gyoto_1_1_scenery_1afe534cc73b12043e0376a22bc8b7b8b7" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>metric</name></member>
+      <member refid="class_gyoto_1_1_scenery_1aa0c6445670c17eac9b23e59be5a58d69" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>mpi_tag</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a7556c80a8bc0a00efb0eb3e7a3c94ba9" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>mpiClone</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a73447871c31ca79690aef7d9e255aea6" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>mpiSpawn</name></member>
+      <member refid="class_gyoto_1_1_scenery_1afbd1f62b03a00c7d5a71e938328054cc" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>mpiTask</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a21982b10cdb8e9b9e1e2c4111043e713" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>mpiTerminate</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a65b614b2123d0cc1745da1d3e400b572" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>mpiWorker</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1abf1c1e431cdd4f08f13de581cccb6770" prot="private" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>mutex_</name></member>
+      <member refid="class_gyoto_1_1_scenery_1aa0c6445670c17eac9b23e59be5a58d69a5f2ddd60d572a018a74876fc17f98c87" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>noimpactcoords</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a94726d408e3a8457efa1c11b53984d30" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>nProcesses</name></member>
+      <member refid="class_gyoto_1_1_scenery_1ae01e0d92d17a61f29ff36c06e7aa99bc" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>nProcesses</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a433b98c2bada736879301e02b95e426c" prot="protected" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>nprocesses_</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a483022b37bd5547b9277c50f0f433961" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>nThreads</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a02f92b41c90536a60a073e85b9cef929" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>nThreads</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a6d364f1f7f2b55a5c5ead77461fc6c0d" prot="protected" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>nthreads_</name></member>
+      <member refid="class_gyoto_1_1_object_1a5173d279a53bbc9850771e344d6b79b0" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>Object</name></member>
+      <member refid="class_gyoto_1_1_object_1a5834e83ca1482a379c7ddefb1919457f" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>Object</name></member>
+      <member refid="class_gyoto_1_1_object_1a1fbd53bedaf8d18f67b12ec0660b8aa7" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>Object</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a2f91e3d67d6846b50011be7d72fa3af6" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>operator()</name></member>
+      <member refid="class_gyoto_1_1_scenery_1aa3d3b54079bd1c219783122346e98da1" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>operator()</name></member>
+      <member refid="class_gyoto_1_1_scenery_1ad25705695fe4a80cb120f7620b101ea2" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>parallelTransport</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a3ad0b503be882f0f292e5df38dd8a8b6" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>parallelTransport</name></member>
+      <member refid="class_gyoto_1_1_scenery_1ab04f1bf232df51977463ba0094c33346" prot="protected" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>ph_</name></member>
+      <member refid="class_gyoto_1_1_object_1a01832761cd5f0a12319e3e24ce9a9fba" prot="protected" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>plugins_</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a930776765680d52b95dd7b8758591705" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>properties</name></member>
+      <member refid="class_gyoto_1_1_object_1a424ef3538c714adfafad7eda249e0d58" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>property</name></member>
+      <member refid="class_gyoto_1_1_scenery_1ae9d64f82cb58af5452be5a65629efae0" prot="protected" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>quantities_</name></member>
+      <member refid="class_gyoto_1_1_scenery_1aa0c6445670c17eac9b23e59be5a58d69a7a4d7c1a4efb770745b785062a82a7fe" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>raytrace</name></member>
+      <member refid="class_gyoto_1_1_scenery_1af723cfca27f75ba37bd439225ba60219" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>rayTrace</name></member>
+      <member refid="class_gyoto_1_1_scenery_1aa0c6445670c17eac9b23e59be5a58d69a4a84f449ff6778c060a71d38bdffb49b" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>raytrace_done</name></member>
+      <member refid="class_gyoto_1_1_scenery_1aa0c6445670c17eac9b23e59be5a58d69a4165b62b1da3f91091d1d50bd48abd0b" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>read_scenery</name></member>
+      <member refid="class_gyoto_1_1_scenery_1aa0c6445670c17eac9b23e59be5a58d69ac3a383b5cc10ced896efc6b632e8a45a" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>ready</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1aaaf212a70fb1880b70e4d357e843cc85" prot="private" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>refCount</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a60b7da6c1894072d053604bbffa365ff" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>relTol</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a1e3a6f0d11825a768e0d3dc2f185ca81" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>relTol</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a2f31ce0783dac2a2e7d8905360c49891" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>requestedQuantitiesString</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a8066b1fb7d3ce6081177a6d3ddeecbfc" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>requestedQuantitiesString</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a588239ef21e8b6aad435c146a199277c" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>Scenery</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a4079e952d1506047f390d9333e89cb5a" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>Scenery</name></member>
+      <member refid="class_gyoto_1_1_scenery_1ab945c66d36821f6cee4f8ec1651faa1a" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>Scenery</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a1a809448dc2666080652c01071029491" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>screen</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a4da0a95115519238f204898c78c351df" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>screen</name></member>
+      <member refid="class_gyoto_1_1_scenery_1ae5fd1c4017101dd5863b314ad2856d2c" prot="protected" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>screen_</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a2774346b7dca72aed6f36239058db9d1" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>secondary</name></member>
+      <member refid="class_gyoto_1_1_scenery_1abb9f7604cc0fb46eaf88c1795b057762" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>secondary</name></member>
+      <member refid="class_gyoto_1_1_object_1a58c4ecdaae1873dc6912e164b61826e0" prot="public" virt="virtual"><scope>Gyoto::Scenery</scope><name>set</name></member>
+      <member refid="class_gyoto_1_1_object_1aa063e0df7c2e4b22207a784c76c6681f" prot="public" virt="virtual"><scope>Gyoto::Scenery</scope><name>set</name></member>
+      <member refid="class_gyoto_1_1_object_1aba6d35c5bbf814912ed84549109e117a" prot="public" virt="virtual"><scope>Gyoto::Scenery</scope><name>set</name></member>
+      <member refid="class_gyoto_1_1_object_1abed03e16a8013699534b802e06751ef8" prot="public" virt="virtual"><scope>Gyoto::Scenery</scope><name>set</name></member>
+      <member refid="class_gyoto_1_1_object_1a45969ac469cf6979037229c2741b226b" prot="public" virt="virtual"><scope>Gyoto::Scenery</scope><name>setParameter</name></member>
+      <member refid="class_gyoto_1_1_object_1a43fe041144add66155668ca88a99fd98" prot="public" virt="virtual"><scope>Gyoto::Scenery</scope><name>setParameter</name></member>
+      <member refid="class_gyoto_1_1_object_1aa0a8b119e7aa95b21be081f8c97e1626" prot="public" virt="virtual"><scope>Gyoto::Scenery</scope><name>setParameters</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a7b34829c90c7a7381dd487f4718c00a0" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>setPropertyConverters</name></member>
+      <member refid="class_gyoto_1_1_scenery_1acaed08cd4fa2113101d26436cd96aebd" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>setRequestedQuantities</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1a7d212bcd7d3ac4147e18683c47ca910d" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>SmartPointee</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1adc075b08ca5d3c0635bc97f843835f8a" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>SmartPointee</name></member>
+      <member refid="class_gyoto_1_1_scenery_1ac71e2d5fc1958b8d77cd0a3f6eedc045" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>spectrumConverter</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a6c4c57b83b803da4af96c38f55160951" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>Subcontractor</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>Subcontractor_t</name></member>
+      <member refid="class_gyoto_1_1_scenery_1aa0c6445670c17eac9b23e59be5a58d69a9369517d75cf13c43f7f9ef1e089dac9" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>terminate</name></member>
+      <member refid="class_gyoto_1_1_scenery_1ac68ceb452765957fae20613ac6247008" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>tMin</name></member>
+      <member refid="class_gyoto_1_1_scenery_1aaa7d749d92d856f0731898127fde22fb" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>tMin</name></member>
+      <member refid="class_gyoto_1_1_scenery_1ad59e3313b6f543e4eb845ba10803e729" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>tMin</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a104f86c96f7141c3bf3098ff9ddb1d64" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>tMin</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a9c8e3015e2a4704d2304e25158906ba9" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>updatePhoton</name></member>
+      <member refid="class_gyoto_1_1_object_1ab6f302f93bfd1f07ae2a6a48b3c74932" prot="public" virt="virtual"><scope>Gyoto::Scenery</scope><name>~Object</name></member>
+      <member refid="class_gyoto_1_1_scenery_1a18ed2b1f8772fd1ed3b416af0857da00" prot="public" virt="non-virtual"><scope>Gyoto::Scenery</scope><name>~Scenery</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1a4301d456d1d36ed7912d073b742c74e1" prot="public" virt="virtual"><scope>Gyoto::Scenery</scope><name>~SmartPointee</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

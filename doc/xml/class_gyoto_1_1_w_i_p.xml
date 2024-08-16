@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_gyoto_1_1_w_i_p" kind="class" language="C++" prot="public">
+    <compoundname>Gyoto::WIP</compoundname>
+    <derivedcompoundref refid="class_gyoto_1_1_metric_1_1_complex" prot="private" virt="non-virtual">Gyoto::Metric::Complex</derivedcompoundref>
+    <includes refid="_gyoto_w_i_p_8h" local="no">GyotoWIP.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gyoto_1_1_w_i_p_1a6af69111e4aca73ac3c40370bdd28d8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::WIP::WIP</definition>
+        <argsstring>()</argsstring>
+        <name>WIP</name>
+        <briefdescription>
+<para>Issue a warning. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoWIP.h" line="50" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_w_i_p_1abf626972af50f76afc17cd88db1ef2d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::WIP::WIP</definition>
+        <argsstring>(std::string classname)</argsstring>
+        <name>WIP</name>
+        <param>
+          <type>std::string</type>
+          <declname>classname</declname>
+        </param>
+        <briefdescription>
+<para>Issue a warning specifying the name of the derived class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If classname is the empty string (&quot;&quot;), the warning is not issued. Use this to mark that a class is no more work in progress without breaking the ABI (i.e. in the <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> stable branch). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoWIP.h" line="57" column="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for work in progress. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The constructors of this class simply issue a warning that the (derived) class is work in progress. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Gyoto::WIP</label>
+        <link refid="class_gyoto_1_1_w_i_p"/>
+      </node>
+      <node id="2">
+        <label>Gyoto::Metric::Complex</label>
+        <link refid="class_gyoto_1_1_metric_1_1_complex"/>
+        <childnode refid="1" relation="private-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/junichi/Gyoto/include/GyotoWIP.h" line="46" column="1" bodyfile="/home/junichi/Gyoto/include/GyotoWIP.h" bodystart="47" bodyend="58"/>
+    <listofallmembers>
+      <member refid="class_gyoto_1_1_w_i_p_1a6af69111e4aca73ac3c40370bdd28d8b" prot="public" virt="non-virtual"><scope>Gyoto::WIP</scope><name>WIP</name></member>
+      <member refid="class_gyoto_1_1_w_i_p_1abf626972af50f76afc17cd88db1ef2d0" prot="public" virt="non-virtual"><scope>Gyoto::WIP</scope><name>WIP</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

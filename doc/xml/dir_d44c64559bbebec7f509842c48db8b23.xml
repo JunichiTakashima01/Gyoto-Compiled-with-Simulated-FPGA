@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_d44c64559bbebec7f509842c48db8b23" kind="dir">
+    <compoundname>include</compoundname>
+    <innerfile refid="_gyoto_8h">Gyoto.h</innerfile>
+    <innerfile refid="_gyoto_astrobj_8h">GyotoAstrobj.h</innerfile>
+    <innerfile refid="_gyoto_black_body_spectrum_8h">GyotoBlackBodySpectrum.h</innerfile>
+    <innerfile refid="_gyoto_blob_8h">GyotoBlob.h</innerfile>
+    <innerfile refid="_gyoto_chern_simons_8h">GyotoChernSimons.h</innerfile>
+    <innerfile refid="_gyoto_complex_astrobj_8h">GyotoComplexAstrobj.h</innerfile>
+    <innerfile refid="_gyoto_complex_metric_8h">GyotoComplexMetric.h</innerfile>
+    <innerfile refid="_gyoto_complex_spectrometer_8h">GyotoComplexSpectrometer.h</innerfile>
+    <innerfile refid="_gyoto_config_8h">GyotoConfig.h</innerfile>
+    <innerfile refid="_gyoto_converters_8h">GyotoConverters.h</innerfile>
+    <innerfile refid="_gyoto_deformed_torus_8h">GyotoDeformedTorus.h</innerfile>
+    <innerfile refid="_gyoto_defs_8h">GyotoDefs.h</innerfile>
+    <innerfile refid="_gyoto_directional_disk_8h">GyotoDirectionalDisk.h</innerfile>
+    <innerfile refid="_gyoto_disk3_d_8h">GyotoDisk3D.h</innerfile>
+    <innerfile refid="_gyoto_dynamical_disk_8h">GyotoDynamicalDisk.h</innerfile>
+    <innerfile refid="_gyoto_dynamical_disk3_d_8h">GyotoDynamicalDisk3D.h</innerfile>
+    <innerfile refid="_gyoto_dynamical_disk_bolometric_8h">GyotoDynamicalDiskBolometric.h</innerfile>
+    <innerfile refid="_gyoto_equatorial_hot_spot_8h">GyotoEquatorialHotSpot.h</innerfile>
+    <innerfile refid="_gyoto_error_8h">GyotoError.h</innerfile>
+    <innerfile refid="_gyoto_factory_8h">GyotoFactory.h</innerfile>
+    <innerfile refid="_gyoto_factory_messenger_8h">GyotoFactoryMessenger.h</innerfile>
+    <innerfile refid="_gyoto_fits_r_w_8h">GyotoFitsRW.h</innerfile>
+    <innerfile refid="_gyoto_fixed_star_8h">GyotoFixedStar.h</innerfile>
+    <innerfile refid="_gyoto_flared_disk_synchrotron_8h">GyotoFlaredDiskSynchrotron.h</innerfile>
+    <innerfile refid="_gyoto_free_star_8h">GyotoFreeStar.h</innerfile>
+    <innerfile refid="_gyoto_functors_8h">GyotoFunctors.h</innerfile>
+    <innerfile refid="_gyoto_grid_data2_d_8h">GyotoGridData2D.h</innerfile>
+    <innerfile refid="_gyoto_hayward_8h">GyotoHayward.h</innerfile>
+    <innerfile refid="_gyoto_hooks_8h">GyotoHooks.h</innerfile>
+    <innerfile refid="_gyoto_inflate_star_8h">GyotoInflateStar.h</innerfile>
+    <innerfile refid="_gyoto_jet_8h">GyotoJet.h</innerfile>
+    <innerfile refid="_gyoto_kappa_distribution_synchrotron_spectrum_8h">GyotoKappaDistributionSynchrotronSpectrum.h</innerfile>
+    <innerfile refid="_gyoto_kerr_b_l_8h">GyotoKerrBL.h</innerfile>
+    <innerfile refid="_gyoto_kerr_k_s_8h">GyotoKerrKS.h</innerfile>
+    <innerfile refid="_gyoto_metric_8h">GyotoMetric.h</innerfile>
+    <innerfile refid="_gyoto_minkowski_8h">GyotoMinkowski.h</innerfile>
+    <innerfile refid="_gyoto_neutron_star_8h">GyotoNeutronStar.h</innerfile>
+    <innerfile refid="_gyoto_neutron_star_analytic_emission_8h">GyotoNeutronStarAnalyticEmission.h</innerfile>
+    <innerfile refid="_gyoto_neutron_star_model_atmosphere_8h">GyotoNeutronStarModelAtmosphere.h</innerfile>
+    <innerfile refid="_gyoto_numerical_metric_lorene_8h">GyotoNumericalMetricLorene.h</innerfile>
+    <innerfile refid="_gyoto_object_8h">GyotoObject.h</innerfile>
+    <innerfile refid="_gyoto_oscil_torus_8h">GyotoOscilTorus.h</innerfile>
+    <innerfile refid="_gyoto_page_thorne_disk_8h">GyotoPageThorneDisk.h</innerfile>
+    <innerfile refid="_gyoto_pattern_disk_8h">GyotoPatternDisk.h</innerfile>
+    <innerfile refid="_gyoto_pattern_disk_b_b_8h">GyotoPatternDiskBB.h</innerfile>
+    <innerfile refid="_gyoto_photon_8h">GyotoPhoton.h</innerfile>
+    <innerfile refid="_gyoto_plasmoid_8h">GyotoPlasmoid.h</innerfile>
+    <innerfile refid="_gyoto_polish_doughnut_8h">GyotoPolishDoughnut.h</innerfile>
+    <innerfile refid="_gyoto_power_law_spectrum_8h">GyotoPowerLawSpectrum.h</innerfile>
+    <innerfile refid="_gyoto_power_law_synchrotron_spectrum_8h">GyotoPowerLawSynchrotronSpectrum.h</innerfile>
+    <innerfile refid="_gyoto_property_8h">GyotoProperty.h</innerfile>
+    <innerfile refid="_gyoto_register_8h">GyotoRegister.h</innerfile>
+    <innerfile refid="_gyoto_rezzolla_zhidenko_8h">GyotoRezzollaZhidenko.h</innerfile>
+    <innerfile refid="_gyoto_rot_star3__1_8h">GyotoRotStar3_1.h</innerfile>
+    <innerfile refid="_gyoto_scenery_8h">GyotoScenery.h</innerfile>
+    <innerfile refid="_gyoto_schwarzschild_harmonic_8h">GyotoSchwarzschildHarmonic.h</innerfile>
+    <innerfile refid="_gyoto_screen_8h">GyotoScreen.h</innerfile>
+    <innerfile refid="_gyoto_shift_8h">GyotoShift.h</innerfile>
+    <innerfile refid="_gyoto_smart_pointer_8h">GyotoSmartPointer.h</innerfile>
+    <innerfile refid="_gyoto_spectrometer_8h">GyotoSpectrometer.h</innerfile>
+    <innerfile refid="_gyoto_spectrum_8h">GyotoSpectrum.h</innerfile>
+    <innerfile refid="_gyoto_spherical_accretion_8h">GyotoSphericalAccretion.h</innerfile>
+    <innerfile refid="_gyoto_standard_astrobj_8h">GyotoStandardAstrobj.h</innerfile>
+    <innerfile refid="_gyoto_star_8h">GyotoStar.h</innerfile>
+    <innerfile refid="_gyoto_star_trace_8h">GyotoStarTrace.h</innerfile>
+    <innerfile refid="_gyoto_thermal_bremsstrahlung_spectrum_8h">GyotoThermalBremsstrahlungSpectrum.h</innerfile>
+    <innerfile refid="_gyoto_thermal_synchrotron_spectrum_8h">GyotoThermalSynchrotronSpectrum.h</innerfile>
+    <innerfile refid="_gyoto_thick_disk_8h">GyotoThickDisk.h</innerfile>
+    <innerfile refid="_gyoto_thin_disk_8h">GyotoThinDisk.h</innerfile>
+    <innerfile refid="_gyoto_thin_disk_grid_intensity_8h">GyotoThinDiskGridIntensity.h</innerfile>
+    <innerfile refid="_gyoto_thin_disk_iron_line_8h">GyotoThinDiskIronLine.h</innerfile>
+    <innerfile refid="_gyoto_thin_disk_p_l_8h">GyotoThinDiskPL.h</innerfile>
+    <innerfile refid="_gyoto_thin_disk_profile_8h">GyotoThinDiskProfile.h</innerfile>
+    <innerfile refid="_gyoto_torus_8h">GyotoTorus.h</innerfile>
+    <innerfile refid="_gyoto_uniform_spectrometer_8h">GyotoUniformSpectrometer.h</innerfile>
+    <innerfile refid="_gyoto_uniform_sphere_8h">GyotoUniformSphere.h</innerfile>
+    <innerfile refid="_gyoto_utils_8h">GyotoUtils.h</innerfile>
+    <innerfile refid="_gyoto_value_8h">GyotoValue.h</innerfile>
+    <innerfile refid="_gyoto_w_i_p_8h">GyotoWIP.h</innerfile>
+    <innerfile refid="_gyoto_worldline_8h">GyotoWorldline.h</innerfile>
+    <innerfile refid="_gyoto_xillver_reflection_8h">GyotoXillverReflection.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/junichi/Gyoto/include/"/>
+  </compounddef>
+</doxygen>

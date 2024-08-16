@@ -1,0 +1,1405 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_gyoto_1_1_object" kind="class" language="C++" prot="public">
+    <compoundname>Gyoto::Object</compoundname>
+    <derivedcompoundref refid="class_gyoto_1_1_astrobj_1_1_generic" prot="public" virt="non-virtual">Gyoto::Astrobj::Generic</derivedcompoundref>
+    <derivedcompoundref refid="class_gyoto_1_1_metric_1_1_generic" prot="public" virt="non-virtual">Gyoto::Metric::Generic</derivedcompoundref>
+    <derivedcompoundref refid="class_gyoto_1_1_photon" prot="public" virt="non-virtual">Gyoto::Photon</derivedcompoundref>
+    <derivedcompoundref refid="class_gyoto_1_1_scenery" prot="public" virt="non-virtual">Gyoto::Scenery</derivedcompoundref>
+    <derivedcompoundref refid="class_gyoto_1_1_screen" prot="public" virt="non-virtual">Gyoto::Screen</derivedcompoundref>
+    <derivedcompoundref refid="class_gyoto_1_1_spectrometer_1_1_generic" prot="public" virt="non-virtual">Gyoto::Spectrometer::Generic</derivedcompoundref>
+    <derivedcompoundref refid="class_gyoto_1_1_spectrum_1_1_generic" prot="public" virt="non-virtual">Gyoto::Spectrum::Generic</derivedcompoundref>
+    <includes refid="_gyoto_object_8h" local="no">GyotoObject.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_object_1ac48ad88e3ef229ba0d0fe68a94a7118f" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gyoto::Object::kind_</definition>
+        <argsstring></argsstring>
+        <name>kind_</name>
+        <briefdescription>
+<para>The &quot;kind&quot; that is output in the XML entity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>E.g. for an <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref>, <ref refid="class_gyoto_1_1_object_1a0ffc3f84b4c2372d639eb848605fb1f3" kindref="member">fillElement()</ref> will ensure <programlisting><codeline><highlight class="normal">&lt;Astrobj<sp/>kind=&quot;kind_&quot;<sp/>...&gt;...&lt;/Astrobj&gt;</highlight></codeline>
+</programlisting> is written. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="162" column="15" bodyfile="/home/junichi/Gyoto/include/GyotoObject.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_object_1a01832761cd5f0a12319e3e24ce9a9fba" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; Gyoto::Object::plugins_</definition>
+        <argsstring></argsstring>
+        <name>plugins_</name>
+        <briefdescription>
+<para>The plug-ins that needs to be loaded to access this instance&apos;s class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>E.g. for an <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref>, <ref refid="class_gyoto_1_1_object_1a0ffc3f84b4c2372d639eb848605fb1f3" kindref="member">fillElement()</ref> will ensure <programlisting><codeline><highlight class="normal">&lt;Astrobj<sp/>...<sp/>plugin=&quot;plugins_&quot;&gt;...&lt;/Astrobj&gt;</highlight></codeline>
+</programlisting> is written. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="172" column="15" bodyfile="/home/junichi/Gyoto/include/GyotoObject.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_object_1a9a61c6b5cfcd0c8f4361727e1c49a6ea" prot="public" static="yes" mutable="no">
+        <type><ref refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" kindref="member">GYOTO_OBJECT</ref> <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const</type>
+        <definition>static Property const Gyoto::Object::properties[]</definition>
+        <argsstring>[]</argsstring>
+        <name>properties</name>
+        <briefdescription>
+<para><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This static member is declared automatically by the <ref refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" kindref="member">GYOTO_OBJECT</ref> macro and defined automatically by the <ref refid="_gyoto_property_8h_1add8e16ed1e17ab2683b08cc330b341d4" kindref="member">GYOTO_PROPERTY_START</ref>, <ref refid="_gyoto_property_8h_1a1356435ea7ee0e18d07201a80e034dcc" kindref="member">GYOTO_PROPERTY_END</ref> and GYOTO_PROPERTY_* macros.</para>
+<para>The list of properties is implemented as a static array of <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> instances. The last item in a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> of type <ref refid="class_gyoto_1_1_property_1a7d63b9734691b36b96ce778357b288f8a83a494e6387163d77fcf7ce5b7eeea63" kindref="member">Property::empty_t</ref>, which evaluates to false, so the list can be considered to be NULL-terminated (it is actually rather false-terminated). This empty_t last item can be a link to another <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> list: for instance, the last item in Gyoto::Astrobj::Standard::properties is a link to Gyoto::Astrobj::Generic::properties. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="200" column="42" bodyfile="/home/junichi/Gyoto/include/GyotoObject.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a06ea95dc396053466cdd63d419d1688c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Gyoto::Object::isThreadSafe</definition>
+        <argsstring>() const</argsstring>
+        <name>isThreadSafe</name>
+        <briefdescription>
+<para>Whether this class is thread-safe. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Return True if this object is thread-safe, i.e. if an instance and its clone can be used in parallel threads (in the context of Scenery::raytrace()). Known objects which are not thread-safe include Lorene metrics and everything from the <ref refid="namespace_gyoto_1_1_python" kindref="compound">Python</ref> plug-in.</para>
+<para>The default implementation considers that the class itself is thread safe and recurses into the declared properties to check whether they are safe too. Classes that abide to the Object/Property paradigm and are themselves thread-safe have nothing special to do.</para>
+<para>Objects that clone children in their copy constructor that are not declared as properties must take these children into account.</para>
+<para>Classes that are never thread-safe must declare it. It acn be easily done using GYOTO_OBJECT_THREAD_SAFETY in the class declaration and GYOTO_PROPERTY_THREAD_UNSAFE in the class definition. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="197" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1afe00718a056ffc6293705c03f588088c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const  *</type>
+        <definition>Property const  * Gyoto::Object::getProperties</definition>
+        <argsstring>() const</argsstring>
+        <name>getProperties</name>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_generic_1a74d7af85268e2b8050fc97aff4dd37c6">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_spectrum_1_1_black_body_1ac61f2b4e99e07f38030cb91d3f41f831">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_blob_1a1e2b5026d024236ea9a8970f1296def2">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_chern_simons_1a31c46729e2d5aca45a122bf21e2c89c7">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_deformed_torus_1afc35ebb527a9d054920d436d8c0aefdf">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a51eac4eb24f2bcd038142407e197612b">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a7b50c212395e0d0417ecc6f415931649">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_dynamical_disk_1ac85333380215125755dfe5c4a49ab2fc">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_dynamical_disk3_d_1a7babb137c86cb15bcfe8fc58f3a7c9a2">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_dynamical_disk_bolometric_1ae5f6783b331831b0392689affbb410a6">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_equatorial_hot_spot_1ad489d0a821daf71aef8c84be89dcf58d">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_fixed_star_1a9e035043b5abe335979f133f4913fb85">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_flared_disk_synchrotron_1a5f6aa6ab5bdf33234790241402db6225">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_free_star_1a72bddb14f8802e8d650537494cb9a285">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_hayward_1ae5e2a3f3c19d045fb40fcb62e5e1d959">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_inflate_star_1ab8de50a4a530785c1652d35f8f5c512f">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_jet_1ae768b7b5bc60e00134debab76a48543b">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1ae04da73acf294f0ffd3c301490c8c9ee">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_kerr_b_l_1a6d54625a5d08ec34d60f1ee4f967528b">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_kerr_k_s_1a533d67a8328e2e21ea768a0b65ca8005">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_generic_1a0cc1a0a93d1d49b83ba88e613d5bd9d3">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_minkowski_1adfbb0cadd5a5a065dd998591d80a66dd">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_neutron_star_1a53fc12ab6a595104a3d49474e278ce7f">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_neutron_star_analytic_emission_1a252adbdb5f571a05d860e61195af471c">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_neutron_star_model_atmosphere_1abdfa46b9e7b146d22adcc9cb464e90be">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene_1af752a39af393f53a94b1b691eab03070">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a0426500cf59fea67114bdc97f82aebf5">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_page_thorne_disk_1a51003b7d0a023932cb4b7a94e04277fb">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_pattern_disk_1ae611397be89790bc67cd621095e6771f">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_pattern_disk_b_b_1a1d2211e40adc1a1eea80963c481e4647">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_photon_1a53984cd69b1ee216f45cdac4741aa1f5">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_plasmoid_1ab07e281a440cecc6156d9a65a9166b6a">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_polish_doughnut_1a143dcc27c175a682977e9fc7db775046">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_spectrum_1_1_power_law_1ac90e9834fc4c5ffd7f57734aa75f1939">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_spectrum_1_1_power_law_synchrotron_1ae0368afcf582795c1c518edb10ca281e">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_rezzolla_zhidenko_1a8e3bf221748020c6947fe0c5ebd48676">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a4cd3cf76f93a64d31c4a67a7fb845bf8">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_scenery_1af7be9ef397a8e28f6cae994a16dfed38">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_schwarzschild_harmonic_1a174f524ff4d1bbf2ccfdbaddfb881e48">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_screen_1a636e5e881825a8835d4f962b9f0d1b47">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_shift_1a47396c2024142cc52cbaad543f736955">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_spectrometer_1_1_generic_1afe4eca833e1f41126d186253fe097aec">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_spectrum_1_1_generic_1af54a57e8ab3c283962e50c3712d77226">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion_1ad624c4f4ed894c9d142edd94b0179c67">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_standard_1a7cfca1aa6f8fc7b4826dae937ca98f24">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_star_1a0153c6e720d7300454bd78ee1e17d3c5">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_star_trace_1aa37e430dfb273f6cba60a0fd6369330f">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_spectrum_1_1_thermal_bremsstrahlung_1a33e93fe930371d03cafed8ac34cc7451">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_1aff5cc1b7a47aa54f49bd801482156816">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_thick_disk_1a7d54121f53004e760d6d2274f1301e05">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_thin_disk_1afdf2b814aabc8f939bda736cf9d7da24">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_thin_disk_grid_intensity_1ace36538f7925d4cbafb5dc2e4c1d564b">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_thin_disk_iron_line_1a6484e0eb28bf767158982ac422d1c038">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_thin_disk_p_l_1a00ed3ce6f34df429add621b3617d759f">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_thin_disk_profile_1a4391a7fb7c82fc45d00f6a5116fb0c60">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_torus_1a909ae9a7bf05bee4a10d74bbf80a4914">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_spectrometer_1_1_uniform_1a4529fb36ec7d5793aec5dfde7315116c">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1a21ee6813c28d7a90d13e0f1083946fea">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_xillver_reflection_1a023db20d459c9768ef845e99d8df7995">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_spectrum_1_1_python_1a40953e08d4c833b6ef97ac948285e7f4">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_python_1af4c7119b0a717a18531d5910bbd10b7d">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard_1aa01d7fafbb99a0648d923731bdd81585">getProperties</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_1a288b2b142bf3a0445447fa7a52c14e51">getProperties</reimplementedby>
+        <briefdescription>
+<para>Get list of properties. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is declared automatically by the <ref refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" kindref="member">GYOTO_OBJECT</ref> macro and defined automatically by the <ref refid="_gyoto_property_8h_1a1356435ea7ee0e18d07201a80e034dcc" kindref="member">GYOTO_PROPERTY_END</ref> macro. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="200" column="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a5173d279a53bbc9850771e344d6b79b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Object::Object</definition>
+        <argsstring>(std::string const &amp;kind)</argsstring>
+        <name>Object</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>kind</declname>
+        </param>
+        <briefdescription>
+<para>Constructor setting kind. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="225" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a5834e83ca1482a379c7ddefb1919457f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Object::Object</definition>
+        <argsstring>()</argsstring>
+        <name>Object</name>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="228" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a1fbd53bedaf8d18f67b12ec0660b8aa7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Object::Object</definition>
+        <argsstring>(Object const &amp;orig)</argsstring>
+        <name>Object</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_object" kindref="compound">Object</ref> const &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+<para>Deep copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="231" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1ab6f302f93bfd1f07ae2a6a48b3c74932" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Gyoto::Object::~Object</definition>
+        <argsstring>()</argsstring>
+        <name>~Object</name>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1af0760f1ceb18207d2e3678295b23af2b">~Object</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1af0760f1ceb18207d2e3678295b23af2b">~Object</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1af0760f1ceb18207d2e3678295b23af2b">~Object</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1af0760f1ceb18207d2e3678295b23af2b">~Object</reimplementedby>
+        <briefdescription>
+<para>Virtual destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="234" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a58c4ecdaae1873dc6912e164b61826e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::set</definition>
+        <argsstring>(Property const &amp;p, Value val)</argsstring>
+        <name>set</name>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab3aa615a6b576b663f9ee524831280c8">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab3aa615a6b576b663f9ee524831280c8">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab3aa615a6b576b663f9ee524831280c8">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab3aa615a6b576b663f9ee524831280c8">set</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="237" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1aa063e0df7c2e4b22207a784c76c6681f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::set</definition>
+        <argsstring>(Property const &amp;p, Value val, std::string const &amp;unit)</argsstring>
+        <name>set</name>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab601136e5837e6bd99c4bf3b0beee718">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab601136e5837e6bd99c4bf3b0beee718">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab601136e5837e6bd99c4bf3b0beee718">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab601136e5837e6bd99c4bf3b0beee718">set</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Set <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> (expressed in unit) of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="240" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1aba6d35c5bbf814912ed84549109e117a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::set</definition>
+        <argsstring>(std::string const &amp;pname, Value val)</argsstring>
+        <name>set</name>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ad4aff23562b0ae6a36e05741eb631c82">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ad4aff23562b0ae6a36e05741eb631c82">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ad4aff23562b0ae6a36e05741eb631c82">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ad4aff23562b0ae6a36e05741eb631c82">set</reimplementedby>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>pname</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="243" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1abed03e16a8013699534b802e06751ef8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::set</definition>
+        <argsstring>(std::string const &amp;pname, Value val, std::string const &amp;unit)</argsstring>
+        <name>set</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>pname</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Set <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> (expressed in unit) of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="246" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a8232112e660216a61caa15fab27b889f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+        <definition>virtual Value Gyoto::Object::get</definition>
+        <argsstring>(Property const &amp;p) const</argsstring>
+        <name>get</name>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1abeaf3c1bd632fda3a48118d30105c871">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1abeaf3c1bd632fda3a48118d30105c871">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1abeaf3c1bd632fda3a48118d30105c871">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1abeaf3c1bd632fda3a48118d30105c871">get</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Get <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="249" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1ad61a061d2073c841e9911be0395d4494" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+        <definition>virtual Value Gyoto::Object::get</definition>
+        <argsstring>(std::string const &amp;pname) const</argsstring>
+        <name>get</name>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1aa91e924b2c7c3e58764f8aee6b174926">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1aa91e924b2c7c3e58764f8aee6b174926">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1aa91e924b2c7c3e58764f8aee6b174926">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1aa91e924b2c7c3e58764f8aee6b174926">get</reimplementedby>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>pname</declname>
+        </param>
+        <briefdescription>
+<para>Get <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="252" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1ad4189c2c103030e9d91ee0f29ebcf13d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+        <definition>virtual Value Gyoto::Object::get</definition>
+        <argsstring>(Property const &amp;p, std::string const &amp;unit) const</argsstring>
+        <name>get</name>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a042952734a5d4bd00b73a4c03cc23af4">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a042952734a5d4bd00b73a4c03cc23af4">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a042952734a5d4bd00b73a4c03cc23af4">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a042952734a5d4bd00b73a4c03cc23af4">get</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Get <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>, converted to unit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="255" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a99544282b6c383b8570a5bc51bed1ecf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+        <definition>virtual Value Gyoto::Object::get</definition>
+        <argsstring>(std::string const &amp;pname, std::string const &amp;unit) const</argsstring>
+        <name>get</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>pname</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Get <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>, converted to unit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="258" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a424ef3538c714adfafad7eda249e0d58" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const  *</type>
+        <definition>Property const* Gyoto::Object::property</definition>
+        <argsstring>(std::string const pname) const</argsstring>
+        <name>property</name>
+        <param>
+          <type>std::string const</type>
+          <declname>pname</declname>
+        </param>
+        <briefdescription>
+<para>Find property by name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Look into the <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> list for a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> whose <emphasis>name</emphasis> (or <emphasis>name_false</emphasis>, for a boolean <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>) is <emphasis>pname</emphasis>. Return a const pointer to the first such property found, or NULL if none is found. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="267" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a11892ef308d6f40add51eaea653a394b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::fillProperty</definition>
+        <argsstring>(Gyoto::FactoryMessenger *fmp, Property const &amp;p) const</argsstring>
+        <name>fillProperty</name>
+        <reimplementedby refid="class_gyoto_1_1_scenery_1a9bc2f2025deb97a71f21f2be5c0f5022">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a42a558bc44010a73986909dd9a2fdd41">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a160d18feeb44b24f396c1001abec7bd6">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_dynamical_disk_1abbc14f98531888e96547665a8a6a20ca">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_equatorial_hot_spot_1a5acba2e137e389070bb5f7c71ea31ed5">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_neutron_star_model_atmosphere_1a65604453c31dac828adeaeb7c35ca23d">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_pattern_disk_1acc548bda88d62932275e8d0fcd630ca9">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_polish_doughnut_1acbe2c229f702905204ea0d822b94e17c">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_screen_1a50f80add154ec088fc9509ba22ef0032">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_shift_1a234a2d08bb7918e1bc62e4a710a4df77">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_star_1a152074fdddb29950936d3193d3aea55d">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_spectrometer_1_1_uniform_1af5ccaceb5c188a7a0ea11791885919bc">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_xillver_reflection_1a9e8bc6375f3c981042b74d99ee7adf91">fillProperty</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">Gyoto::FactoryMessenger</ref> *</type>
+          <declname>fmp</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Output a single <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> to XML. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The base implementation decides what to do based on the <emphasis>p.type</emphasis>. The format matches how <ref refid="class_gyoto_1_1_object_1aa0a8b119e7aa95b21be081f8c97e1626" kindref="member">setParameters()</ref> an <ref refid="class_gyoto_1_1_object_1a45969ac469cf6979037229c2741b226b" kindref="member">setParameter()</ref> would interpret the XML descition.</para>
+<para>Overriding this method should be avoided, but makes sense in some cases (for instance <ref refid="class_gyoto_1_1_screen_1a50f80add154ec088fc9509ba22ef0032" kindref="member">Screen::fillProperty()</ref> selects a different unit for <emphasis>Distance</emphasis> based on its magnitude, so that stellar sizes are expressed in solar radii while smaller sizes can be expressed in meters and larger sizes in parsecs).</para>
+<para>Overriding implementation should fall-back on calling the implementation in the direct parent class: <programlisting><codeline><highlight class="normal">class<sp/>A:<sp/>public<sp/>Object<sp/>{};</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>B:<sp/>public<sp/>A<sp/>{<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>using<sp/>B::setParameter;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>virtual<sp/>void<sp/>fillProperty(Gyoto::FactoryMessenger<sp/>*fmp,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Property<sp/>const<sp/>&amp;p)<sp/>const<sp/>;</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal">void<sp/>B::fillProperty(Gyoto::FactoryMessenger<sp/>*fmp,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Property<sp/>const<sp/>&amp;p)<sp/>const<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>if<sp/>(name==&quot;Duff&quot;)<sp/>fmp-&gt;doSomething();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>else<sp/>A::fillProperty(fmp,<sp/>p);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="298" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a0ffc3f84b4c2372d639eb848605fb1f3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::fillElement</definition>
+        <argsstring>(Gyoto::FactoryMessenger *fmp) const</argsstring>
+        <name>fillElement</name>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_complex_1a88d6f38c5fa5401a860291fbb21526d5">fillElement</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_complex_1ada5f1fb56b87c56ff64113a49c76cca0">fillElement</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_spectrometer_1_1_complex_1a0d73e5fd77b0e920af44894abfc96a99">fillElement</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_scenery_1a63501e86c47ea6b67e0c564c706a72f1">fillElement</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a7524ab9c2d51d32f7de7177df5b544a1">fillElement</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a7524ab9c2d51d32f7de7177df5b544a1">fillElement</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a7524ab9c2d51d32f7de7177df5b544a1">fillElement</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a7524ab9c2d51d32f7de7177df5b544a1">fillElement</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">Gyoto::FactoryMessenger</ref> *</type>
+          <declname>fmp</declname>
+        </param>
+        <briefdescription>
+<para>Fill the XML element for this <ref refid="class_gyoto_1_1_object" kindref="compound">Object</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The base implementation simply calls <ref refid="class_gyoto_1_1_object_1a11892ef308d6f40add51eaea653a394b" kindref="member">fillProperty()</ref> for each <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> defined for the <ref refid="class_gyoto_1_1_object" kindref="compound">Object</ref>.</para>
+<para>Derived classes should avoid overriding <ref refid="class_gyoto_1_1_object_1a0ffc3f84b4c2372d639eb848605fb1f3" kindref="member">fillElement()</ref>. It may make sense occasionally, e.g. to make sure that the metric is output first.</para>
+<para>To customize how a given <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> is rendered, it is better to override <ref refid="class_gyoto_1_1_object_1a11892ef308d6f40add51eaea653a394b" kindref="member">fillProperty()</ref>.</para>
+<para>If this method is overridden, the implementation should in general call <ref refid="class_gyoto_1_1_object_1a0ffc3f84b4c2372d639eb848605fb1f3" kindref="member">fillElement()</ref> on the direct base. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="316" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1aa0a8b119e7aa95b21be081f8c97e1626" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::setParameters</definition>
+        <argsstring>(Gyoto::FactoryMessenger *fmp)</argsstring>
+        <name>setParameters</name>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_generic_1a1872b827525ccb1fdedb614474992a6a">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_complex_1a635b0ea47d78c02a999d932eec8b16c5">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_complex_1a5607f9166dc2c1a0a7bd61cde6a71c57">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_spectrometer_1_1_complex_1a008340295dbb21fbddfa6ad7612da80e">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_equatorial_hot_spot_1a931ca188ae49a0d8e9764a151edd3553">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_photon_1a7a6664a5de91b1c59ba1b57d54ba1dd9">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_shift_1a81a5f0f4f32f5be884a4445f1d1d5b17">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_star_1ad1ad60d3ce8861dfa8626ca908e5789e">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_spectrometer_1_1_uniform_1aaca1850f712a089a6c5e0188aec0e5a4">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a0e4df99b42b3d3722d6ea39972d1421d">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a84ea2cab6209f1ed0de3a73223c6a5e8">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a84ea2cab6209f1ed0de3a73223c6a5e8">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a84ea2cab6209f1ed0de3a73223c6a5e8">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a84ea2cab6209f1ed0de3a73223c6a5e8">setParameters</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">Gyoto::FactoryMessenger</ref> *</type>
+          <declname>fmp</declname>
+        </param>
+        <briefdescription>
+<para>Main loop for parsing Properties from XML description. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim> This function queries the FactoryMessenger for elements to parse,
+ and tries to matche each element to a Property to set it
+ accordingly.
+
+ Any class that tries to be buildable from XML must supply a
+ subcontractor (for base classes such as Metric, Astrobj, Spectrum
+ and Spectrometer, it is done as a template that must be
+ specialized for each class).
+
+ This subcontractor typically looks somewhat like this:
+</verbatim> <programlisting><codeline><highlight class="normal">SmartPointer&lt;Metric::Generic&gt;</highlight></codeline>
+<codeline><highlight class="normal">Gyoto::Metric::MyKind::Subcontractor(FactoryMessenger*<sp/>fmp)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>SmartPointer&lt;MyKind&gt;<sp/>gg<sp/>=<sp/>new<sp/>MyKind();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>gg<sp/>-&gt;<sp/>setParameters(fmp);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>return<sp/>gg;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> <verbatim> Although this is discouraged, it is possible to override the
+ following functions to customize how XML entities are parsed:
+   - setParameters() if low-level access to the
+     FactoryMessenger is required;
+   - setParameter(std::string name,
+                  std::string content,
+                  std::string unit)
+     to interpret an entity that does not match a Property
+     (e.g. alternative name);
+   - setParameter(Gyoto::Property const &amp;p,
+                  std::string const &amp;name,
+                  std::string const &amp;content,
+                  std::string const &amp;unit)
+     to change how a Property is interpreted.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="355" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a45969ac469cf6979037229c2741b226b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int Gyoto::Object::setParameter</definition>
+        <argsstring>(std::string name, std::string content, std::string unit)</argsstring>
+        <name>setParameter</name>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_equatorial_hot_spot_1a0c6f1aee4a478c5ef695348d64eae2d4">setParameter</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_kerr_k_s_1a4c9d3a51c5d1478908516a0b96a42135">setParameter</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_star_1a628aa18277af464450896efd63206527">setParameter</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab4fd3efea9c85b8f8c1aaafa2597dfa4">setParameter</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab4fd3efea9c85b8f8c1aaafa2597dfa4">setParameter</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab4fd3efea9c85b8f8c1aaafa2597dfa4">setParameter</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab4fd3efea9c85b8f8c1aaafa2597dfa4">setParameter</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1ac2fbf2bb5796e3d7c7eb80dccfe20af7">setParameter</reimplementedby>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>content</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Set parameter by name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is used when parsing an XML description, if no <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> of this <emphasis>name</emphasis> is found. Overriding implementation should fall-back on calling the direct&apos;s parent implementation:</para>
+<para><programlisting><codeline><highlight class="normal">class<sp/>A:<sp/>public<sp/>Object<sp/>{};</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>B:<sp/>public<sp/>A<sp/>{<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>using<sp/>B::setParameter;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>virtual<sp/>int<sp/>setParameter(std::string<sp/>name,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>content,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>unit);</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal">int<sp/>B::setParameter(std::string<sp/>name,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>content,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>unit)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>if<sp/>(name==&quot;Duff&quot;)<sp/>doSomething(content,<sp/>unit);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>else<sp/>return<sp/>A::setParameter(name,<sp/>content,<sp/>unit);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>return<sp/>0;<sp/><sp/>//<sp/>name<sp/>was<sp/>known</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>XML name of the parameter (XML entity). This may have a path component, e.g. &quot;Astrobj::Radius&quot;, in which case a property named &quot;Astrobj&quot; will be sought in the current object, and setParameter will be called recusrively on this <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref> with Radius as name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string representation of the value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string representation of the unit </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if this parameter is known, 1 if it is not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="390" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a43fe041144add66155668ca88a99fd98" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::setParameter</definition>
+        <argsstring>(Gyoto::Property const &amp;p, std::string const &amp;name, std::string const &amp;content, std::string const &amp;unit)</argsstring>
+        <name>setParameter</name>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_polish_doughnut_1a13a8a59bd3738f5739db0550dbb42003">setParameter</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Gyoto::Property</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>content</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Set parameter by <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> (and name) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is used when parsing an XML description, if <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> (<emphasis>p</emphasis>) of this <emphasis>name</emphasis> is found (i.e. either <emphasis>p.name</emphasis> or <emphasis>p.name_false</emphasis> is equal to <emphasis>name</emphasis>). Implementation should fall-back on calling the direct&apos;s parent implementation:</para>
+<para><programlisting><codeline><highlight class="normal">class<sp/>A:<sp/>public<sp/>Object<sp/>{};</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>B:<sp/>public<sp/>A<sp/>{<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>using<sp/>B::setParameter;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>virtual<sp/>void<sp/>setParameter(Gyoto::Property<sp/>const<sp/>&amp;p,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>content,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>unit);</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal">void<sp/>B::setParameter(Gyoto::Property<sp/>const<sp/>&amp;p,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>content,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>unit)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>if<sp/>(name==&quot;Duff&quot;)<sp/>doSomething(content,<sp/>unit);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>else<sp/>A::setParameter(p,<sp/>name,<sp/>content,<sp/>unit);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> that matches <emphasis>name</emphasis> (<emphasis>p.name</emphasis> == <emphasis>name</emphasis> or <emphasis>p.name_false</emphasis> == <emphasis>name</emphasis>) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>XML name of the parameter (XML entity) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string representation of the value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string representation of the unit </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="426" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a741ba678188d7d167ff2e3bb13dd924f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Gyoto::Object::describeProperty</definition>
+        <argsstring>(Gyoto::Property const &amp;p) const</argsstring>
+        <name>describeProperty</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Gyoto::Property</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Format desrciption for a property. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a string containing the name(s) and type of the property, as well as whether it supports unit. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="437" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a13843618d84c49d47bd37ddfa31160c5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Object::help</definition>
+        <argsstring>() const</argsstring>
+        <name>help</name>
+        <briefdescription>
+<para>Print (to stdout) some help on this class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Describe all properties that this instance supports. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="444" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a9f46de678c67e9050cf3a8b9677e1d73" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string Gyoto::Object::kind</definition>
+        <argsstring>() const</argsstring>
+        <name>kind</name>
+        <reimplementedby refid="class_gyoto_1_1_spectrometer_1_1_uniform_1af6c1082ac163e833fff9e934b417b194">kind</reimplementedby>
+        <briefdescription>
+<para>Get kind_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="456" column="23"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_gyoto_1_1_object_1aae3b80667884c6620c4796a1b8ef74e5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::kind</definition>
+        <argsstring>(const std::string)</argsstring>
+        <name>kind</name>
+        <param>
+          <type>const std::string</type>
+        </param>
+        <briefdescription>
+<para>Set kind_. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_gyoto_1_1_object_1aae3b80667884c6620c4796a1b8ef74e5" kindref="member">kind(const std::string)</ref> is protected because, for most Objects, it should not be changed in runtime. Set kind_ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="453" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_gyoto_1_1_object" kindref="compound">Object</ref> with properties. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="class_gyoto_1_1_object" kindref="compound">Object</ref> API allows declaring a list of Properties that can be set and retrieved using a common, text-based interface. This interface simplifies a lot how to read and write XML, as well as writing bindings for interpreted langages (e.g. the Yorick interface).</para>
+<para>In fact, any class member that has an interface implemented as a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> can be readily read and written from/to XML as well as from the Yorick plug-in, without the need for any additional code.</para>
+<para>To declare a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> list:<orderedlist>
+<listitem><para>declare (in the class declaration, .h file) and define (.C file) the pair or quadruplet of accessors for your <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> (see <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> class documentation;</para>
+</listitem><listitem><para>call the <ref refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" kindref="member">GYOTO_OBJECT</ref> macro in in a public section of the class declaration (in the .h file): <programlisting><codeline><highlight class="normal">class<sp/>A:<sp/>public<sp/>Object<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>public:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>GYOTO_OBJECT;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>A();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/>~A();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting></para>
+</listitem><listitem><para>call the various GYOTO_PROPERTY_* macros in the corresponding .C file (see the documentation of the <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> class).</para>
+</listitem></orderedlist>
+</para>
+<para>It is possible to get a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> by name (Assume <emphasis>A</emphasis> is a class deriving from <ref refid="class_gyoto_1_1_object" kindref="compound">Object</ref>): <programlisting><codeline><highlight class="normal">A<sp/>myobj();</highlight></codeline>
+<codeline><highlight class="normal">Property<sp/>const<sp/>*prop=NULL;</highlight></codeline>
+<codeline><highlight class="normal">prop<sp/>=<sp/>myobj.property(&quot;PropertyName&quot;);</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>(!prop)<sp/>throwError(&quot;No<sp/>Property<sp/>by<sp/>that<sp/>name<sp/>in<sp/>this<sp/>object&quot;);</highlight></codeline>
+</programlisting> It then becomes possible to set or get the <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> from or to a <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref>: <programlisting><codeline><highlight class="normal">myobj.set(*prop,<sp/>size_t(12));</highlight></codeline>
+<codeline><highlight class="normal">size_t<sp/>val<sp/>=<sp/>myobj.get(*prop);</highlight></codeline>
+</programlisting> Of course the type of the <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> instance and of the <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> instance must match. Refer to the documentation of these to classes for details. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="28">
+        <label>Gyoto::Astrobj::ThinDisk</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_thin_disk"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>Gyoto::Spectrum::Generic</label>
+        <link refid="class_gyoto_1_1_spectrum_1_1_generic"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>Gyoto::Astrobj::ThinDiskPL</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_thin_disk_p_l"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>Gyoto::Astrobj::EquatorialHotSpot</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_equatorial_hot_spot"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Gyoto::Astrobj::DirectionalDisk</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_directional_disk"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Gyoto::Astrobj::NeutronStar</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_neutron_star"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Gyoto::Astrobj::PolishDoughnut</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_polish_doughnut"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>Gyoto::Astrobj::ThinDiskProfile</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_thin_disk_profile"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>Gyoto::Spectrometer::Complex</label>
+        <link refid="class_gyoto_1_1_spectrometer_1_1_complex"/>
+        <childnode refid="61" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>Gyoto::Photon::Refined</label>
+        <link refid="class_gyoto_1_1_photon_1_1_refined"/>
+        <childnode refid="57" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Gyoto::Python::Object&lt; Gyoto::Astrobj::Standard &gt;</label>
+        <link refid="class_gyoto_1_1_python_1_1_object"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>Gyoto::Photon</label>
+        <link refid="class_gyoto_1_1_photon"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>Gyoto::Python::Object&lt; Gyoto::Metric::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_python_1_1_object"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>Gyoto::Python::Object&lt; Gyoto::Astrobj::ThinDisk &gt;</label>
+        <link refid="class_gyoto_1_1_python_1_1_object"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Gyoto::Astrobj::UniformSphere</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>Gyoto::Scenery</label>
+        <link refid="class_gyoto_1_1_scenery"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Gyoto::Astrobj::ThickDisk</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_thick_disk"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>Gyoto::Spectrum::BlackBody</label>
+        <link refid="class_gyoto_1_1_spectrum_1_1_black_body"/>
+        <childnode refid="64" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>Gyoto::Metric::Minkowski</label>
+        <link refid="class_gyoto_1_1_metric_1_1_minkowski"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Gyoto::Astrobj::DynamicalDiskBolometric</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_dynamical_disk_bolometric"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Gyoto::Astrobj::NeutronStarAnalyticEmission</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_neutron_star_analytic_emission"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Gyoto::Astrobj::DeformedTorus</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_deformed_torus"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>Gyoto::Astrobj::Plasmoid</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_plasmoid"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Gyoto::Astrobj::Standard</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_standard"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>Gyoto::Metric::Shift</label>
+        <link refid="class_gyoto_1_1_metric_1_1_shift"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>Gyoto::Spectrum::Python</label>
+        <link refid="class_gyoto_1_1_spectrum_1_1_python"/>
+        <childnode refid="65" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>Gyoto::Metric::KerrBL</label>
+        <link refid="class_gyoto_1_1_metric_1_1_kerr_b_l"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Gyoto::Astrobj::Complex</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_complex"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>Gyoto::Python::Object&lt; Gyoto::Spectrum::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_python_1_1_object"/>
+        <childnode refid="64" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gyoto::Astrobj::Generic</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_generic"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>Gyoto::Metric::RotStar3_1</label>
+        <link refid="class_gyoto_1_1_metric_1_1_rot_star3__1"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>Gyoto::Astrobj::Python::ThinDisk</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>Gyoto::Spectrum::KappaDistributionSynchrotron</label>
+        <link refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron"/>
+        <childnode refid="64" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>Gyoto::Metric::SchwarzschildHarmonic</label>
+        <link refid="class_gyoto_1_1_metric_1_1_schwarzschild_harmonic"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>Gyoto::Spectrum::PowerLaw</label>
+        <link refid="class_gyoto_1_1_spectrum_1_1_power_law"/>
+        <childnode refid="64" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Gyoto::Astrobj::NeutronStarModelAtmosphere</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_neutron_star_model_atmosphere"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>Gyoto::Astrobj::ThinDiskGridIntensity</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_thin_disk_grid_intensity"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>Gyoto::Metric::Complex</label>
+        <link refid="class_gyoto_1_1_metric_1_1_complex"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gyoto::Object</label>
+        <link refid="class_gyoto_1_1_object"/>
+      </node>
+      <node id="21">
+        <label>Gyoto::Astrobj::FixedStar</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_fixed_star"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>Gyoto::Astrobj::Torus</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_torus"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>Gyoto::Metric::Hayward</label>
+        <link refid="class_gyoto_1_1_metric_1_1_hayward"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>Gyoto::Metric::NumericalMetricLorene</label>
+        <link refid="class_gyoto_1_1_metric_1_1_numerical_metric_lorene"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>Gyoto::Metric::ChernSimons</label>
+        <link refid="class_gyoto_1_1_metric_1_1_chern_simons"/>
+        <childnode refid="48" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>Gyoto::Astrobj::DynamicalDisk</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_dynamical_disk"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>Gyoto::Astrobj::Blob</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_blob"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Gyoto::Astrobj::FlaredDiskSynchrotron</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_flared_disk_synchrotron"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>Gyoto::Spectrum::ThermalBremsstrahlung</label>
+        <link refid="class_gyoto_1_1_spectrum_1_1_thermal_bremsstrahlung"/>
+        <childnode refid="64" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>Gyoto::Metric::KerrKS</label>
+        <link refid="class_gyoto_1_1_metric_1_1_kerr_k_s"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>Gyoto::Astrobj::PageThorneDisk</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_page_thorne_disk"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>Gyoto::Astrobj::InflateStar</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_inflate_star"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Gyoto::Astrobj::Disk3D</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_disk3_d"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>Gyoto::Astrobj::StarTrace</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_star_trace"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>Gyoto::Astrobj::XillverReflection</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_xillver_reflection"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>Gyoto::Spectrometer::Generic</label>
+        <link refid="class_gyoto_1_1_spectrometer_1_1_generic"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Gyoto::Astrobj::DynamicalDisk3D</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_dynamical_disk3_d"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>Gyoto::Metric::Python</label>
+        <link refid="class_gyoto_1_1_metric_1_1_python"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>Gyoto::Astrobj::ThinDiskIronLine</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_thin_disk_iron_line"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Gyoto::Astrobj::OscilTorus</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_oscil_torus"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>Gyoto::Astrobj::PatternDiskBB</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_pattern_disk_b_b"/>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Gyoto::Astrobj::Jet</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_jet"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>Gyoto::Metric::RezzollaZhidenko</label>
+        <link refid="class_gyoto_1_1_metric_1_1_rezzolla_zhidenko"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>Gyoto::Astrobj::FreeStar</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_free_star"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>Gyoto::Metric::Generic</label>
+        <link refid="class_gyoto_1_1_metric_1_1_generic"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>Gyoto::Screen</label>
+        <link refid="class_gyoto_1_1_screen"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Gyoto::Astrobj::Star</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_star"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>Gyoto::Spectrometer::Uniform</label>
+        <link refid="class_gyoto_1_1_spectrometer_1_1_uniform"/>
+        <childnode refid="61" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>Gyoto::Astrobj::PatternDisk</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_pattern_disk"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>Gyoto::Astrobj::SphericalAccretion</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>Gyoto::Spectrum::ThermalSynchrotron</label>
+        <link refid="class_gyoto_1_1_spectrum_1_1_thermal_synchrotron"/>
+        <childnode refid="64" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>Gyoto::Spectrum::PowerLawSynchrotron</label>
+        <link refid="class_gyoto_1_1_spectrum_1_1_power_law_synchrotron"/>
+        <childnode refid="64" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Gyoto::Astrobj::Python::Standard</label>
+        <link refid="class_gyoto_1_1_astrobj_1_1_python_1_1_standard"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Gyoto::Property</label>
+        <link refid="class_gyoto_1_1_property"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>getter_unit</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>getter</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>setter</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>setter_unit</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Astrobj::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="9">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Screen &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="5">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Spectrometer::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="1">
+        <label>Gyoto::Object</label>
+        <link refid="class_gyoto_1_1_object"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>properties</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Metric::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="10">
+        <label>Gyoto::Property::setter_t</label>
+        <link refid="union_gyoto_1_1_property_1_1setter__t"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>set_spectrometer</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>set_metric</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>set_spectrum</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>set_astrobj</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>set_screen</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Gyoto::Property::setter_unit_t</label>
+        <link refid="union_gyoto_1_1_property_1_1setter__unit__t"/>
+      </node>
+      <node id="7">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Spectrum::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="3">
+        <label>Gyoto::Property::getter_unit_t</label>
+        <link refid="union_gyoto_1_1_property_1_1getter__unit__t"/>
+      </node>
+      <node id="4">
+        <label>Gyoto::Property::getter_t</label>
+        <link refid="union_gyoto_1_1_property_1_1getter__t"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>get_spectrometer</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>get_metric</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>get_spectrum</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>get_astrobj</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>get_screen</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="151" column="1" bodyfile="/home/junichi/Gyoto/include/GyotoObject.h" bodystart="152" bodyend="458"/>
+    <listofallmembers>
+      <member refid="class_gyoto_1_1_object_1a741ba678188d7d167ff2e3bb13dd924f" prot="public" virt="non-virtual"><scope>Gyoto::Object</scope><name>describeProperty</name></member>
+      <member refid="class_gyoto_1_1_object_1a0ffc3f84b4c2372d639eb848605fb1f3" prot="public" virt="virtual"><scope>Gyoto::Object</scope><name>fillElement</name></member>
+      <member refid="class_gyoto_1_1_object_1a11892ef308d6f40add51eaea653a394b" prot="public" virt="virtual"><scope>Gyoto::Object</scope><name>fillProperty</name></member>
+      <member refid="class_gyoto_1_1_object_1a8232112e660216a61caa15fab27b889f" prot="public" virt="virtual"><scope>Gyoto::Object</scope><name>get</name></member>
+      <member refid="class_gyoto_1_1_object_1ad61a061d2073c841e9911be0395d4494" prot="public" virt="virtual"><scope>Gyoto::Object</scope><name>get</name></member>
+      <member refid="class_gyoto_1_1_object_1ad4189c2c103030e9d91ee0f29ebcf13d" prot="public" virt="virtual"><scope>Gyoto::Object</scope><name>get</name></member>
+      <member refid="class_gyoto_1_1_object_1a99544282b6c383b8570a5bc51bed1ecf" prot="public" virt="virtual"><scope>Gyoto::Object</scope><name>get</name></member>
+      <member refid="class_gyoto_1_1_object_1afe00718a056ffc6293705c03f588088c" prot="public" virt="virtual"><scope>Gyoto::Object</scope><name>getProperties</name></member>
+      <member refid="class_gyoto_1_1_object_1a13843618d84c49d47bd37ddfa31160c5" prot="public" virt="non-virtual"><scope>Gyoto::Object</scope><name>help</name></member>
+      <member refid="class_gyoto_1_1_object_1a06ea95dc396053466cdd63d419d1688c" prot="public" virt="virtual"><scope>Gyoto::Object</scope><name>isThreadSafe</name></member>
+      <member refid="class_gyoto_1_1_object_1aae3b80667884c6620c4796a1b8ef74e5" prot="protected" virt="virtual"><scope>Gyoto::Object</scope><name>kind</name></member>
+      <member refid="class_gyoto_1_1_object_1a9f46de678c67e9050cf3a8b9677e1d73" prot="public" virt="virtual"><scope>Gyoto::Object</scope><name>kind</name></member>
+      <member refid="class_gyoto_1_1_object_1ac48ad88e3ef229ba0d0fe68a94a7118f" prot="protected" virt="non-virtual"><scope>Gyoto::Object</scope><name>kind_</name></member>
+      <member refid="class_gyoto_1_1_object_1a5173d279a53bbc9850771e344d6b79b0" prot="public" virt="non-virtual"><scope>Gyoto::Object</scope><name>Object</name></member>
+      <member refid="class_gyoto_1_1_object_1a5834e83ca1482a379c7ddefb1919457f" prot="public" virt="non-virtual"><scope>Gyoto::Object</scope><name>Object</name></member>
+      <member refid="class_gyoto_1_1_object_1a1fbd53bedaf8d18f67b12ec0660b8aa7" prot="public" virt="non-virtual"><scope>Gyoto::Object</scope><name>Object</name></member>
+      <member refid="class_gyoto_1_1_object_1a01832761cd5f0a12319e3e24ce9a9fba" prot="protected" virt="non-virtual"><scope>Gyoto::Object</scope><name>plugins_</name></member>
+      <member refid="class_gyoto_1_1_object_1a9a61c6b5cfcd0c8f4361727e1c49a6ea" prot="public" virt="non-virtual"><scope>Gyoto::Object</scope><name>properties</name></member>
+      <member refid="class_gyoto_1_1_object_1a424ef3538c714adfafad7eda249e0d58" prot="public" virt="non-virtual"><scope>Gyoto::Object</scope><name>property</name></member>
+      <member refid="class_gyoto_1_1_object_1a58c4ecdaae1873dc6912e164b61826e0" prot="public" virt="virtual"><scope>Gyoto::Object</scope><name>set</name></member>
+      <member refid="class_gyoto_1_1_object_1aa063e0df7c2e4b22207a784c76c6681f" prot="public" virt="virtual"><scope>Gyoto::Object</scope><name>set</name></member>
+      <member refid="class_gyoto_1_1_object_1aba6d35c5bbf814912ed84549109e117a" prot="public" virt="virtual"><scope>Gyoto::Object</scope><name>set</name></member>
+      <member refid="class_gyoto_1_1_object_1abed03e16a8013699534b802e06751ef8" prot="public" virt="virtual"><scope>Gyoto::Object</scope><name>set</name></member>
+      <member refid="class_gyoto_1_1_object_1a45969ac469cf6979037229c2741b226b" prot="public" virt="virtual"><scope>Gyoto::Object</scope><name>setParameter</name></member>
+      <member refid="class_gyoto_1_1_object_1a43fe041144add66155668ca88a99fd98" prot="public" virt="virtual"><scope>Gyoto::Object</scope><name>setParameter</name></member>
+      <member refid="class_gyoto_1_1_object_1aa0a8b119e7aa95b21be081f8c97e1626" prot="public" virt="virtual"><scope>Gyoto::Object</scope><name>setParameters</name></member>
+      <member refid="class_gyoto_1_1_object_1ab6f302f93bfd1f07ae2a6a48b3c74932" prot="public" virt="virtual"><scope>Gyoto::Object</scope><name>~Object</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

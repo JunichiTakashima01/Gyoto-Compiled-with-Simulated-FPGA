@@ -1,0 +1,649 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespace_gyoto_1_1_units" kind="namespace" language="C++">
+    <compoundname>Gyoto::Units</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_gyoto_1_1_units_1aade66d5933d035fb5f0fbb0501e9e972" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Units::Init</definition>
+        <argsstring>()</argsstring>
+        <name>Init</name>
+        <briefdescription>
+<para>Load and initialize all (non-context-sensitive) units. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If udunits is used (preprocessor macro HAVE_UDUNITS), <ref refid="namespace_gyoto_1_1_units_1aade66d5933d035fb5f0fbb0501e9e972" kindref="member">Init()</ref> initializes the ut_system used throughout <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> and maps a few additional units to the unit system. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConverters.h" line="152" column="10" declfile="/home/junichi/Gyoto/include/GyotoConverters.h" declline="152" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_units_1a8bbdf5974f8bcc22e4d7f20a118e435c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Units::ToMeters</definition>
+        <argsstring>(double value, const std::string &amp;unit, const Gyoto::SmartPointer&lt; Gyoto::Metric::Generic &gt; &amp;gg=NULL)</argsstring>
+        <name>ToMeters</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_metric_1_1_generic" kindref="compound">Gyoto::Metric::Generic</ref> &gt; &amp;</type>
+          <declname>gg</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Convert from arbitrary length unit to meters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert value from unit represented by &quot;unit&quot; to meters.</para>
+<para>If gg is provided (and not NULL), use it to interpret the string &quot;geometrical&quot; as representing gg-&gt;<ref refid="class_gyoto_1_1_metric_1_1_generic_1abd6bfc4aef563b64318b5168f83a49fb" kindref="member">Gyoto::Metric::Generic::unitLength()</ref>.</para>
+<para><ref refid="namespace_gyoto_1_1_units_1a8bbdf5974f8bcc22e4d7f20a118e435c" kindref="member">ToMeters()</ref> will also convert time, frequency and energy units to meters (as in frequency -&gt; wavelength).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(double) the value to convert, expressed according to &quot;unit&quot; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(std::string) the &quot;unit&quot; from which to convert, e.g. &quot;km&quot;, &quot;sunradius&quot; or &quot;geometrical&quot;. More units are supported if <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> was compiled with udunits support. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(const Gyoto::SmartPointer&lt;Gyoto::Metric::Generic&gt; &amp;, NULL if not specified) optional metric to interpret &quot;geometrical&quot;.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>value, expressed in meters. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConverters.h" line="177" column="12" declfile="/home/junichi/Gyoto/include/GyotoConverters.h" declline="177" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_units_1aa9bd775b2619656456bb8ed2b0a3b416" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Units::FromMeters</definition>
+        <argsstring>(double value, const std::string &amp;unit, const Gyoto::SmartPointer&lt; Gyoto::Metric::Generic &gt; &amp;gg=NULL)</argsstring>
+        <name>FromMeters</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_metric_1_1_generic" kindref="compound">Gyoto::Metric::Generic</ref> &gt; &amp;</type>
+          <declname>gg</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Convert to arbitrary length unit from meters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert value to unit represented by &quot;unit&quot; from meters.</para>
+<para>If gg is provided (and not NULL), use it to interpret the string &quot;geometrical&quot; as representing gg-&gt;<ref refid="class_gyoto_1_1_metric_1_1_generic_1abd6bfc4aef563b64318b5168f83a49fb" kindref="member">Gyoto::Metric::Generic::unitLength()</ref>.</para>
+<para><ref refid="namespace_gyoto_1_1_units_1a8bbdf5974f8bcc22e4d7f20a118e435c" kindref="member">ToMeters()</ref> will also convert to time, frequency and energy units (as in wavelength -&gt; frequency).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(double) the value to convert, expressed in meters. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(std::string) the &quot;unit&quot; to which to convert, e.g. &quot;km&quot;, &quot;sunradius&quot; or &quot;geometrical&quot;. More units are supported if <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> was compiled with udunits support. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(const Gyoto::SmartPointer&lt;Gyoto::Metric::Generic&gt; &amp;, NULL if not specified) optional metric to interpret &quot;geometrical&quot;.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>value, expressed in &quot;unit&quot;. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConverters.h" line="203" column="12" declfile="/home/junichi/Gyoto/include/GyotoConverters.h" declline="203" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_units_1a66909f5bdf3c6cdb8256b3909700e6b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Units::ToSeconds</definition>
+        <argsstring>(double value, const std::string &amp;unit, const Gyoto::SmartPointer&lt; Gyoto::Metric::Generic &gt; &amp;gg=NULL)</argsstring>
+        <name>ToSeconds</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_metric_1_1_generic" kindref="compound">Gyoto::Metric::Generic</ref> &gt; &amp;</type>
+          <declname>gg</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Convert from arbitrary time unit to seconds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert value from unit represented by &quot;unit&quot; to seconds.</para>
+<para>If gg is provided (and not NULL), use it to interpret the string &quot;geometrical_time&quot; as representing gg-&gt;<ref refid="class_gyoto_1_1_metric_1_1_generic_1abd6bfc4aef563b64318b5168f83a49fb" kindref="member">Gyoto::Metric::Generic::unitLength()</ref>/GYOTO_C.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(double) the value to convert, expressed according to &quot;unit&quot; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(std::string) the &quot;unit&quot; from which to convert, e.g. &quot;s&quot;, &quot;yr&quot; or &quot;geometrical_time&quot;. More units are supported if <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> was compiled with udunits support. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(const Gyoto::SmartPointer&lt;Gyoto::Metric::Generic&gt; &amp;, NULL if not specified) optional metric to interpret &quot;geometrical&quot;.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>value, expressed in seconds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConverters.h" line="226" column="12" declfile="/home/junichi/Gyoto/include/GyotoConverters.h" declline="226" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_units_1a05147a9f52ed99ac43a3df68d24a0043" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Units::FromSeconds</definition>
+        <argsstring>(double value, const std::string &amp;unit, const Gyoto::SmartPointer&lt; Gyoto::Metric::Generic &gt; &amp;gg=NULL)</argsstring>
+        <name>FromSeconds</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_metric_1_1_generic" kindref="compound">Gyoto::Metric::Generic</ref> &gt; &amp;</type>
+          <declname>gg</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Convert to arbitrary time unit from seconds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert value to unit represented by &quot;unit&quot; from seconds.</para>
+<para>If gg is provided (and not NULL), use it to interpret the string &quot;geometrical_time&quot; as representing gg-&gt;<ref refid="class_gyoto_1_1_metric_1_1_generic_1abd6bfc4aef563b64318b5168f83a49fb" kindref="member">Gyoto::Metric::Generic::unitLength()</ref>/GYOTO_C.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(double) the value to convert, expressed in seconds. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(std::string) the &quot;unit&quot; to which to convert, e.g. &quot;s&quot;, &quot;yr&quot; or &quot;geometrical_time&quot;. More units are supported if <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> was compiled with udunits support. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(const Gyoto::SmartPointer&lt;Gyoto::Metric::Generic&gt; &amp;, NULL if not specified) optional metric to interpret &quot;geometrical&quot;.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>value, expressed in &quot;unit&quot;. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConverters.h" line="249" column="12" declfile="/home/junichi/Gyoto/include/GyotoConverters.h" declline="249" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_units_1aaa1d780cf0f0acb4006e3f908bffd9c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Units::ToKilograms</definition>
+        <argsstring>(double value, const std::string &amp;unit)</argsstring>
+        <name>ToKilograms</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Convert from arbitrary mass unit to kilograms. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert value from unit represented by &quot;unit&quot; to kilograms.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(double) the value to convert, expressed according to &quot;unit&quot; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(std::string) the &quot;unit&quot; from which to convert, e.g. &quot;g&quot;, &quot;kg&quot; or &quot;sunmass&quot;. More units are supported if <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> was compiled with udunits support.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>value, expressed in kilograms. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConverters.h" line="265" column="12" declfile="/home/junichi/Gyoto/include/GyotoConverters.h" declline="265" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_units_1a38218ba258440d51a1451e97a02baf35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Units::FromKilograms</definition>
+        <argsstring>(double value, const std::string &amp;unit)</argsstring>
+        <name>FromKilograms</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Convert to arbitrary mass unit from kilograms. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert value from unit represented by &quot;unit&quot; from kilograms.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(double) the value to convert, expressed inkilograms. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(std::string) the &quot;unit&quot; to which to convert, e.g. &quot;g&quot;, &quot;kg&quot; or &quot;sunmass&quot;. More units are supported if <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> was compiled with udunits support.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>value, expressed in &quot;unit&quot;. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConverters.h" line="280" column="12" declfile="/home/junichi/Gyoto/include/GyotoConverters.h" declline="280" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_units_1a1f7dcca7f30de2b52aa1c682d62454ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Units::ToGeometrical</definition>
+        <argsstring>(double value, const std::string &amp;unit, const Gyoto::SmartPointer&lt; Gyoto::Metric::Generic &gt; &amp;gg)</argsstring>
+        <name>ToGeometrical</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_metric_1_1_generic" kindref="compound">Gyoto::Metric::Generic</ref> &gt; &amp;</type>
+          <declname>gg</declname>
+        </param>
+        <briefdescription>
+<para>Convert from arbitrary length unit to geometrical units. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert value from unit represented by &quot;unit&quot; to geometrical units.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(double) the value to convert, expressed according to &quot;unit&quot;. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(std::string) the &quot;unit&quot; from which to convert, e.g. &quot;km&quot;, &quot;sunradius&quot; or &quot;geometrical&quot;. More units are supported if <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> was compiled with udunits support. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(const Gyoto::SmartPointer&lt;Gyoto::Metric::Generic&gt; &amp;) metric to interpret &quot;geometrical&quot;.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>value, expressed in geometrical units. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConverters.h" line="297" column="12" declfile="/home/junichi/Gyoto/include/GyotoConverters.h" declline="297" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_units_1a4c3c4a6f2720c630900a843c0aba12cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Units::FromGeometrical</definition>
+        <argsstring>(double value, const std::string &amp;unit, const Gyoto::SmartPointer&lt; Gyoto::Metric::Generic &gt; &amp;gg)</argsstring>
+        <name>FromGeometrical</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_metric_1_1_generic" kindref="compound">Gyoto::Metric::Generic</ref> &gt; &amp;</type>
+          <declname>gg</declname>
+        </param>
+        <briefdescription>
+<para>Convert to arbitrary length unit from geometrical units. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert value to unit represented by &quot;unit&quot; from geometrical units.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(double) the value to convert, expressed in geometrical units. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(std::string) the &quot;unit&quot; to which to convert, e.g. &quot;km&quot;, &quot;sunradius&quot; or &quot;geometrical&quot;. More units are supported if <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> was compiled with udunits support. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(const Gyoto::SmartPointer&lt;Gyoto::Metric::Generic&gt; &amp;) metric to interpret &quot;geometrical&quot;.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>value, expressed in &quot;unit&quot;. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConverters.h" line="315" column="12" declfile="/home/junichi/Gyoto/include/GyotoConverters.h" declline="315" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_units_1a1780c8989ec56098a7f9de36d4b45436" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Units::ToGeometricalTime</definition>
+        <argsstring>(double value, const std::string &amp;unit, const Gyoto::SmartPointer&lt; Gyoto::Metric::Generic &gt; &amp;gg)</argsstring>
+        <name>ToGeometricalTime</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_metric_1_1_generic" kindref="compound">Gyoto::Metric::Generic</ref> &gt; &amp;</type>
+          <declname>gg</declname>
+        </param>
+        <briefdescription>
+<para>Convert from arbitrary time unit to geometrical units. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(double) the value to convert, expressed according to &quot;unit&quot;. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(std::string) the &quot;unit&quot; from which to convert, e.g. &quot;s&quot;, &quot;kyr&quot; or &quot;geometrical_time&quot;. More units are supported if <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> was compiled with udunits support. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(const Gyoto::SmartPointer&lt;Gyoto::Metric::Generic&gt; &amp;) metric to interpret &quot;geometrical_time&quot;.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>value, expressed in geometrical (time) units. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConverters.h" line="331" column="12" declfile="/home/junichi/Gyoto/include/GyotoConverters.h" declline="331" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_units_1a4115532aab1e34c121bb064d2fa61632" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Units::FromGeometricalTime</definition>
+        <argsstring>(double value, const std::string &amp;unit, const Gyoto::SmartPointer&lt; Gyoto::Metric::Generic &gt; &amp;gg)</argsstring>
+        <name>FromGeometricalTime</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_metric_1_1_generic" kindref="compound">Gyoto::Metric::Generic</ref> &gt; &amp;</type>
+          <declname>gg</declname>
+        </param>
+        <briefdescription>
+<para>Convert to arbitrary time unit from geometrical units. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(double) the value to convert, expressed in geometrical units. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(std::string) the &quot;unit&quot; to which to convert, e.g. &quot;yr&quot;, &quot;s&quot; or &quot;geometrical_time&quot;. More units are supported if <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> was compiled with udunits support. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(const Gyoto::SmartPointer&lt;Gyoto::Metric::Generic&gt; &amp;) metric to interpret &quot;geometrical_time&quot;.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>value, expressed in &quot;unit&quot;. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConverters.h" line="347" column="12" declfile="/home/junichi/Gyoto/include/GyotoConverters.h" declline="347" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_units_1ab36bd9e55d135bbd88cfb5f0855d4ae4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Units::ToHerz</definition>
+        <argsstring>(double value, const std::string &amp;unit)</argsstring>
+        <name>ToHerz</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Convert from arbitrary frequency unit to Herz. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>ToHerz will also convert from length and energy units (such as &quot;eV&quot;).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(double) the value to convert, expressed according to &quot;unit&quot;. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(std::string) the &quot;unit&quot; from which to convert, e.g. &quot;MHz&quot;, &quot;keV&quot;</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>value, expressed in &quot;Hz&quot;. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConverters.h" line="364" column="12" declfile="/home/junichi/Gyoto/include/GyotoConverters.h" declline="364" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_units_1a552ac4625c1532e0ee6b2f2331387d16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Units::FromHerz</definition>
+        <argsstring>(double value, const std::string &amp;unit)</argsstring>
+        <name>FromHerz</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Convert to arbitrary frequency unit from Herz. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>FromHerz will also convert to length and energy units (such as &quot;eV&quot;).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(double) the value to convert, expressed according in &quot;Hz&quot;. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(std::string) the &quot;unit&quot; from which to convert, e.g. &quot;MHz&quot;, &quot;keV&quot;</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>value, expressed in &quot;units&quot;. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoConverters.h" line="379" column="12" declfile="/home/junichi/Gyoto/include/GyotoConverters.h" declline="379" declcolumn="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Units-related classes and functions. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/junichi/Gyoto/include/GyotoConverters.h" line="98" column="3"/>
+  </compounddef>
+</doxygen>

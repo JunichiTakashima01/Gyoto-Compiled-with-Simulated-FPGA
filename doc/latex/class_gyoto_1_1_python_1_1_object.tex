@@ -1,0 +1,222 @@
+\hypertarget{class_gyoto_1_1_python_1_1_object}{}\doxysection{Gyoto\+::Python\+::Object$<$ O $>$ Class Template Reference}
+\label{class_gyoto_1_1_python_1_1_object}\index{Gyoto::Python::Object$<$ O $>$@{Gyoto::Python::Object$<$ O $>$}}
+
+
+Class template to implement parts of the \mbox{\hyperlink{class_gyoto_1_1_object}{Gyoto\+::\+Object}} API.  
+
+
+
+
+{\ttfamily \#include $<$Gyoto\+Python.\+h$>$}
+
+Inheritance diagram for Gyoto\+::Python\+::Object$<$ O $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_gyoto_1_1_python_1_1_object}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_object_a323886ea8a4ec42ca658794a89d0294b}\label{class_gyoto_1_1_python_1_1_object_a323886ea8a4ec42ca658794a89d0294b}} 
+{\bfseries Object} (const \mbox{\hyperlink{class_gyoto_1_1_python_1_1_object}{Object}} \&o)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_object_ad4aff23562b0ae6a36e05741eb631c82}\label{class_gyoto_1_1_python_1_1_object_ad4aff23562b0ae6a36e05741eb631c82}} 
+virtual void {\bfseries set} (std\+::string const \&key, \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} val)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_object_ab3aa615a6b576b663f9ee524831280c8}\label{class_gyoto_1_1_python_1_1_object_ab3aa615a6b576b663f9ee524831280c8}} 
+virtual void {\bfseries set} (\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&p, \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} val)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_object_ab601136e5837e6bd99c4bf3b0beee718}\label{class_gyoto_1_1_python_1_1_object_ab601136e5837e6bd99c4bf3b0beee718}} 
+virtual void {\bfseries set} (\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&p, \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} val, std\+::string const \&unit)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_object_aa91e924b2c7c3e58764f8aee6b174926}\label{class_gyoto_1_1_python_1_1_object_aa91e924b2c7c3e58764f8aee6b174926}} 
+virtual \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} {\bfseries get} (std\+::string const \&key) const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_object_a042952734a5d4bd00b73a4c03cc23af4}\label{class_gyoto_1_1_python_1_1_object_a042952734a5d4bd00b73a4c03cc23af4}} 
+\mbox{\hyperlink{class_gyoto_1_1_value}{Value}} {\bfseries get} (\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&p, std\+::string const \&unit) const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_object_abeaf3c1bd632fda3a48118d30105c871}\label{class_gyoto_1_1_python_1_1_object_abeaf3c1bd632fda3a48118d30105c871}} 
+\mbox{\hyperlink{class_gyoto_1_1_value}{Value}} {\bfseries get} (\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&p) const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_object_ab4fd3efea9c85b8f8c1aaafa2597dfa4}\label{class_gyoto_1_1_python_1_1_object_ab4fd3efea9c85b8f8c1aaafa2597dfa4}} 
+virtual int {\bfseries set\+Parameter} (std\+::string name, std\+::string content, std\+::string unit)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_object_a7524ab9c2d51d32f7de7177df5b544a1}\label{class_gyoto_1_1_python_1_1_object_a7524ab9c2d51d32f7de7177df5b544a1}} 
+virtual void {\bfseries fill\+Element} (\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$fmp) const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_object_a84ea2cab6209f1ed0de3a73223c6a5e8}\label{class_gyoto_1_1_python_1_1_object_a84ea2cab6209f1ed0de3a73223c6a5e8}} 
+void {\bfseries set\+Parameters} (\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$fmp)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_a9a814881f2741b5ccdf8ca91d1b4ebf7}\label{class_gyoto_1_1_python_1_1_base_a9a814881f2741b5ccdf8ca91d1b4ebf7}} 
+virtual std\+::string \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a9a814881f2741b5ccdf8ca91d1b4ebf7}{module}} () const
+\begin{DoxyCompactList}\small\item\em Return module\+\_\+. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a4cb3d486914da158dafcd1e562827fed}{module}} (const std\+::string \&)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a7f6558bf7597b6e6c8f1bd198895b077}{module\+\_\+}} and import the \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} module. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_a79f704f70a42edf5f37d1e28ee88037a}\label{class_gyoto_1_1_python_1_1_base_a79f704f70a42edf5f37d1e28ee88037a}} 
+virtual std\+::string \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a79f704f70a42edf5f37d1e28ee88037a}{inline\+Module}} () const
+\begin{DoxyCompactList}\small\item\em Return inline\+\_\+module\+\_\+. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a3436f643ba19cb9e53d8a7e95b64f0df}{inline\+Module}} (const std\+::string \&)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_ae0c6e2e9b883adaa081e7a3b402d3bb2}{inline\+\_\+module\+\_\+}} and import the \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} module. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_a894cfd1e8f4424b4a27b79020bc95a95}\label{class_gyoto_1_1_python_1_1_base_a894cfd1e8f4424b4a27b79020bc95a95}} 
+virtual std\+::string \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a894cfd1e8f4424b4a27b79020bc95a95}{klass}} () const
+\begin{DoxyCompactList}\small\item\em Retrieve \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}{class\+\_\+}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_acce1645b213fe517f73483a99e7789be}{klass}} (const std\+::string \&c)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}{class\+\_\+}} and instantiate the \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_a1f83483692c3f761777f5a8a863d0a83}\label{class_gyoto_1_1_python_1_1_base_a1f83483692c3f761777f5a8a863d0a83}} 
+virtual std\+::vector$<$ double $>$ \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a1f83483692c3f761777f5a8a863d0a83}{parameters}} () const
+\begin{DoxyCompactList}\small\item\em Retrieve \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_aa033dfe530617afb7c7a27e6536bb88c}{parameters\+\_\+}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_ad60df11071a344829956610aa8015a58}{parameters}} (const std\+::vector$<$ double $>$ \&)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_aa033dfe530617afb7c7a27e6536bb88c}{parameters\+\_\+}} and send them to \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_aab2145b455aa9848024b643d06016b35}{p\+Instance\+\_\+}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_af62c327a27345056f6012b771fa970b8}\label{class_gyoto_1_1_python_1_1_base_af62c327a27345056f6012b771fa970b8}} 
+virtual bool {\bfseries has\+Python\+Property} (std\+::string const \&key) const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_a888b32520799d6f002536e153060b6fe}\label{class_gyoto_1_1_python_1_1_base_a888b32520799d6f002536e153060b6fe}} 
+virtual void {\bfseries set\+Python\+Property} (std\+::string const \&key, \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} val)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_abea99a3924aca45cd00c543fab7bd155}\label{class_gyoto_1_1_python_1_1_base_abea99a3924aca45cd00c543fab7bd155}} 
+virtual \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} {\bfseries get\+Python\+Property} (std\+::string const \&key) const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_a02a869483c7dd153661b7867c892f505}\label{class_gyoto_1_1_python_1_1_base_a02a869483c7dd153661b7867c892f505}} 
+virtual int {\bfseries python\+Property\+Type} (std\+::string const \&key) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a7f6558bf7597b6e6c8f1bd198895b077}{module\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Name of the \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} module that holds the class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_ae0c6e2e9b883adaa081e7a3b402d3bb2}\label{class_gyoto_1_1_python_1_1_base_ae0c6e2e9b883adaa081e7a3b402d3bb2}} 
+std\+::string \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_ae0c6e2e9b883adaa081e7a3b402d3bb2}{inline\+\_\+module\+\_\+}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} source code for module that holds the class. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}{class\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Name of the \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} class that we want to expose. \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_aa033dfe530617afb7c7a27e6536bb88c}{parameters\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Parameters that this class needs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_af652cb4b7a2f473e9a86a4bf1e47e973}\label{class_gyoto_1_1_python_1_1_base_af652cb4b7a2f473e9a86a4bf1e47e973}} 
+Py\+Object $\ast$ \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_af652cb4b7a2f473e9a86a4bf1e47e973}{p\+Module\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Reference to the python module once it has been loaded. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_aab2145b455aa9848024b643d06016b35}\label{class_gyoto_1_1_python_1_1_base_aab2145b455aa9848024b643d06016b35}} 
+Py\+Object $\ast$ \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_aab2145b455aa9848024b643d06016b35}{p\+Instance\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Reference to the python instance once it has been instantiated. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_a7e9289775df2ec09ca222ba290cf35c7}\label{class_gyoto_1_1_python_1_1_base_a7e9289775df2ec09ca222ba290cf35c7}} 
+Py\+Object $\ast$ \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a7e9289775df2ec09ca222ba290cf35c7}{p\+Properties\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Reference to the properties member. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_a8f1ddee73aaa84dcdc1b1d2b0b3d8f7c}\label{class_gyoto_1_1_python_1_1_base_a8f1ddee73aaa84dcdc1b1d2b0b3d8f7c}} 
+Py\+Object $\ast$ \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a8f1ddee73aaa84dcdc1b1d2b0b3d8f7c}{p\+Set\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Reference to the (optional) Set method. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_a758de1b2cdd3d9cd55506b5c599290f1}\label{class_gyoto_1_1_python_1_1_base_a758de1b2cdd3d9cd55506b5c599290f1}} 
+Py\+Object $\ast$ \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a758de1b2cdd3d9cd55506b5c599290f1}{p\+Get\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Reference to the (optional) Get method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class O$>$\newline
+class Gyoto\+::\+Python\+::\+Object$<$ O $>$}
+
+Class template to implement parts of the \mbox{\hyperlink{class_gyoto_1_1_object}{Gyoto\+::\+Object}} API. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_a3436f643ba19cb9e53d8a7e95b64f0df}\label{class_gyoto_1_1_python_1_1_base_a3436f643ba19cb9e53d8a7e95b64f0df}} 
+\index{Gyoto::Python::Object$<$ O $>$@{Gyoto::Python::Object$<$ O $>$}!inlineModule@{inlineModule}}
+\index{inlineModule@{inlineModule}!Gyoto::Python::Object$<$ O $>$@{Gyoto::Python::Object$<$ O $>$}}
+\doxysubsubsection{\texorpdfstring{inlineModule()}{inlineModule()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Python\+::\+Base\+::inline\+Module (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Set \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_ae0c6e2e9b883adaa081e7a3b402d3bb2}{inline\+\_\+module\+\_\+}} and import the \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} module. 
+
+Side effects\+:
+\begin{DoxyItemize}
+\item sets \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a7f6558bf7597b6e6c8f1bd198895b077}{module\+\_\+}} to \char`\"{}\char`\"{};
+\item calls \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a894cfd1e8f4424b4a27b79020bc95a95}{klass}}(\mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}{class\+\_\+}}) if \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}{class\+\_\+}} is already known, so \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a7f6558bf7597b6e6c8f1bd198895b077}{module\+\_\+}} can be set (or reset) after \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}{class\+\_\+}}. 
+\end{DoxyItemize}
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a5e0d327f7d7d2718fdd66ce7b41d7856}{Gyoto\+::\+Astrobj\+::\+Python\+::\+Thin\+Disk}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_standard_a34ff93e25b631d25445d9c05339e955b}{Gyoto\+::\+Astrobj\+::\+Python\+::\+Standard}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_a2faed173e725f3192666abb0ad1a054c}{Gyoto\+::\+Metric\+::\+Python}}, and \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_python_aadff9b3ca45129d98dc4012d0c8465d1}{Gyoto\+::\+Spectrum\+::\+Python}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_acce1645b213fe517f73483a99e7789be}\label{class_gyoto_1_1_python_1_1_base_acce1645b213fe517f73483a99e7789be}} 
+\index{Gyoto::Python::Object$<$ O $>$@{Gyoto::Python::Object$<$ O $>$}!klass@{klass}}
+\index{klass@{klass}!Gyoto::Python::Object$<$ O $>$@{Gyoto::Python::Object$<$ O $>$}}
+\doxysubsubsection{\texorpdfstring{klass()}{klass()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Python\+::\+Base\+::klass (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Set \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}{class\+\_\+}} and instantiate the \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} class. 
+
+Sets \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_aab2145b455aa9848024b643d06016b35}{p\+Instance\+\_\+}}.
+
+This generic implementation takes care of the common ground, but does not set \textquotesingle{}this\textquotesingle{} or call \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a1f83483692c3f761777f5a8a863d0a83}{parameters}}(\mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_aa033dfe530617afb7c7a27e6536bb88c}{parameters\+\_\+}}). Therefore, all the derived classes should reimplement this method and at least call Python\+::\+Base\+::klass(c) and \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a1f83483692c3f761777f5a8a863d0a83}{parameters}}(\mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_aa033dfe530617afb7c7a27e6536bb88c}{parameters\+\_\+}}). Between the two is the right moment to check that the \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} class implements the required API and to cache Py\+Object$\ast$ pointers to class methods. 
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a2e9e943c6b9c78d08ec6458e68609dce}{Gyoto\+::\+Astrobj\+::\+Python\+::\+Thin\+Disk}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_standard_a2d173c0c05b4ad4c4642f7823e6e73e8}{Gyoto\+::\+Astrobj\+::\+Python\+::\+Standard}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_a41b59b3d5e8f36d0d7d0865ae2efceb1}{Gyoto\+::\+Metric\+::\+Python}}, and \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_python_acab5164d2806f32ed1beccce64dde497}{Gyoto\+::\+Spectrum\+::\+Python}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_a4cb3d486914da158dafcd1e562827fed}\label{class_gyoto_1_1_python_1_1_base_a4cb3d486914da158dafcd1e562827fed}} 
+\index{Gyoto::Python::Object$<$ O $>$@{Gyoto::Python::Object$<$ O $>$}!module@{module}}
+\index{module@{module}!Gyoto::Python::Object$<$ O $>$@{Gyoto::Python::Object$<$ O $>$}}
+\doxysubsubsection{\texorpdfstring{module()}{module()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Python\+::\+Base\+::module (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Set \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a7f6558bf7597b6e6c8f1bd198895b077}{module\+\_\+}} and import the \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} module. 
+
+Side effects\+:
+\begin{DoxyItemize}
+\item sets \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_ae0c6e2e9b883adaa081e7a3b402d3bb2}{inline\+\_\+module\+\_\+}} to \char`\"{}\char`\"{};
+\item calls \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a894cfd1e8f4424b4a27b79020bc95a95}{klass}}(\mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}{class\+\_\+}}) if \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}{class\+\_\+}} is already known, so \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a7f6558bf7597b6e6c8f1bd198895b077}{module\+\_\+}} can be set (or reset) after \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}{class\+\_\+}}. 
+\end{DoxyItemize}
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a6356c48534d038f0aac4f5dd50a9ca7b}{Gyoto\+::\+Astrobj\+::\+Python\+::\+Thin\+Disk}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_standard_a4a94de855ab50bfb0303b8afc2f2b67a}{Gyoto\+::\+Astrobj\+::\+Python\+::\+Standard}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_a3718604728f0dce0a8927e45921a7ed8}{Gyoto\+::\+Metric\+::\+Python}}, and \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_python_a217fab133edf1b0435295112b70e93a8}{Gyoto\+::\+Spectrum\+::\+Python}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_ad60df11071a344829956610aa8015a58}\label{class_gyoto_1_1_python_1_1_base_ad60df11071a344829956610aa8015a58}} 
+\index{Gyoto::Python::Object$<$ O $>$@{Gyoto::Python::Object$<$ O $>$}!parameters@{parameters}}
+\index{parameters@{parameters}!Gyoto::Python::Object$<$ O $>$@{Gyoto::Python::Object$<$ O $>$}}
+\doxysubsubsection{\texorpdfstring{parameters()}{parameters()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Python\+::\+Base\+::parameters (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Set \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_aa033dfe530617afb7c7a27e6536bb88c}{parameters\+\_\+}} and send them to \mbox{\hyperlink{class_gyoto_1_1_python_1_1_base_aab2145b455aa9848024b643d06016b35}{p\+Instance\+\_\+}}. 
+
+The parameters are sent to the class instance using the {\bfseries{setitem}} method with numerical keys. 
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_thin_disk_a581acf6668db9476d28fe60927be3d8d}{Gyoto\+::\+Astrobj\+::\+Python\+::\+Thin\+Disk}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_python_1_1_standard_adbd242f453a565255460e3fd555457b2}{Gyoto\+::\+Astrobj\+::\+Python\+::\+Standard}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_python_a0116ead0d5baed6dbe02f18e7e4a31df}{Gyoto\+::\+Metric\+::\+Python}}, and \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_python_a640a1029c8e750cc6958894d6c429bea}{Gyoto\+::\+Spectrum\+::\+Python}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}\label{class_gyoto_1_1_python_1_1_base_a69af6b343cb744e7e34022d395f93ab4}} 
+\index{Gyoto::Python::Object$<$ O $>$@{Gyoto::Python::Object$<$ O $>$}!class\_@{class\_}}
+\index{class\_@{class\_}!Gyoto::Python::Object$<$ O $>$@{Gyoto::Python::Object$<$ O $>$}}
+\doxysubsubsection{\texorpdfstring{class\_}{class\_}}
+{\footnotesize\ttfamily std\+::string Gyoto\+::\+Python\+::\+Base\+::class\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Name of the \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} class that we want to expose. 
+
+\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} name\+: Class. \mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_a7f6558bf7597b6e6c8f1bd198895b077}\label{class_gyoto_1_1_python_1_1_base_a7f6558bf7597b6e6c8f1bd198895b077}} 
+\index{Gyoto::Python::Object$<$ O $>$@{Gyoto::Python::Object$<$ O $>$}!module\_@{module\_}}
+\index{module\_@{module\_}!Gyoto::Python::Object$<$ O $>$@{Gyoto::Python::Object$<$ O $>$}}
+\doxysubsubsection{\texorpdfstring{module\_}{module\_}}
+{\footnotesize\ttfamily std\+::string Gyoto\+::\+Python\+::\+Base\+::module\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Name of the \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} module that holds the class. 
+
+For instance, if the class is implemented in toto.\+py, the module name is \char`\"{}toto\char`\"{}. \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} name\+: Module. \mbox{\Hypertarget{class_gyoto_1_1_python_1_1_base_aa033dfe530617afb7c7a27e6536bb88c}\label{class_gyoto_1_1_python_1_1_base_aa033dfe530617afb7c7a27e6536bb88c}} 
+\index{Gyoto::Python::Object$<$ O $>$@{Gyoto::Python::Object$<$ O $>$}!parameters\_@{parameters\_}}
+\index{parameters\_@{parameters\_}!Gyoto::Python::Object$<$ O $>$@{Gyoto::Python::Object$<$ O $>$}}
+\doxysubsubsection{\texorpdfstring{parameters\_}{parameters\_}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ Gyoto\+::\+Python\+::\+Base\+::parameters\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Parameters that this class needs. 
+
+A list of parameters (doubles) can be passed in the \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} Parameters. They will be sent to the \mbox{\hyperlink{namespace_gyoto_1_1_python}{Python}} instance using {\bfseries{setitem}}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_gyoto_python_8h}{Gyoto\+Python.\+h}}\end{DoxyCompactItemize}

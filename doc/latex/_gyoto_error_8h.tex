@@ -1,0 +1,69 @@
+\hypertarget{_gyoto_error_8h}{}\doxysection{Gyoto\+Error.\+h File Reference}
+\label{_gyoto_error_8h}\index{GyotoError.h@{GyotoError.h}}
+
+
+Error handling.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}Gyoto\+Defs.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_gyoto_1_1_error}{Gyoto\+::\+Error}}
+\begin{DoxyCompactList}\small\item\em Class for thowing exceptions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_gyoto}{Gyoto}}
+\begin{DoxyCompactList}\small\item\em Namespace for the \mbox{\hyperlink{namespace_gyoto}{Gyoto}} library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_gyoto_error_8h_a3781d05cd11f75afd5d988072c853e02}{GYOTO\+\_\+\+ERROR}}(msg)~\mbox{\hyperlink{namespace_gyoto_aa869193fe294f3badb84af224a83f3d8}{Gyoto\+::throw\+Error}}(std\+::string(\+\_\+\+\_\+\+FILE\+\_\+\+\_\+ \char`\"{}\+:\char`\"{} \mbox{\hyperlink{_gyoto_defs_8h_a2349d4f82e46b37392a9a0fbb72b2dbd}{GYOTO\+\_\+\+STRINGIFY}}(\+\_\+\+\_\+\+LINE\+\_\+\+\_\+) \char`\"{} in \char`\"{})+ \+\_\+\+\_\+\+PRETTY\+\_\+\+FUNCTION\+\_\+\+\_\+ + \char`\"{}\+: \char`\"{} + msg)
+\begin{DoxyCompactList}\small\item\em Throw a \mbox{\hyperlink{class_gyoto_1_1_error}{Gyoto\+::\+Error}} nicely. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_gyoto_aa869193fe294f3badb84af224a83f3d8}{Gyoto\+::throw\+Error}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Throw a \mbox{\hyperlink{class_gyoto_1_1_error}{Gyoto\+::\+Error}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Error handling. 
+
+\mbox{\hyperlink{namespace_gyoto}{Gyoto}} dlopens its plug-\/ins. The throw/catch C++ mechanism cannot pass the dlopen boundary. The \mbox{\hyperlink{class_gyoto_1_1_error}{Gyoto\+::\+Error}} mechanism alleviates this C++ language limitation.
+
+Every \mbox{\hyperlink{namespace_gyoto}{Gyoto}} method (either in the main \mbox{\hyperlink{namespace_gyoto}{Gyoto}} library or in a \mbox{\hyperlink{namespace_gyoto}{Gyoto}} plug-\/in) should check for possible error conditions and throw adequate \mbox{\hyperlink{class_gyoto_1_1_error}{Gyoto\+::\+Error}} exceptions through the Gyoto\+::\+Error\+::throw() function. For instance\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (error\_condition) Gyoto::Error::throw(\textcolor{stringliteral}{"{}Useful error message"{}});}
+
+\end{DoxyCode}
+
+
+If the main code has set Gyoto\+::\+Error\+::handler\+\_\+t error handler using \mbox{\hyperlink{class_gyoto_1_1_error_aa383fc8d096d3dccbb10d02ab3f561ae}{Gyoto\+::\+Error\+::set\+Handler()}}, these errors will then be passed to it. Else, the Error is C++-\/thrown at the main \mbox{\hyperlink{namespace_gyoto}{Gyoto}} library level, above the dlopen boundary.
+
+The main code can then catch these exceptions and act appropriately, for instance\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{try} \{ gyoto\_code ; \}}
+\DoxyCodeLine{\textcolor{keywordflow}{catch} (\mbox{\hyperlink{class_gyoto_1_1_error}{Gyoto::Error}} err)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{   err.\mbox{\hyperlink{class_gyoto_1_1_error_a3f2985711ebc1b936586eceb532ebc44}{Report}}();}
+\DoxyCodeLine{   abort();}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_gyoto_error_8h_a3781d05cd11f75afd5d988072c853e02}\label{_gyoto_error_8h_a3781d05cd11f75afd5d988072c853e02}} 
+\index{GyotoError.h@{GyotoError.h}!GYOTO\_ERROR@{GYOTO\_ERROR}}
+\index{GYOTO\_ERROR@{GYOTO\_ERROR}!GyotoError.h@{GyotoError.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_ERROR}{GYOTO\_ERROR}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+ERROR(\begin{DoxyParamCaption}\item[{}]{msg }\end{DoxyParamCaption})~\mbox{\hyperlink{namespace_gyoto_aa869193fe294f3badb84af224a83f3d8}{Gyoto\+::throw\+Error}}(std\+::string(\+\_\+\+\_\+\+FILE\+\_\+\+\_\+ \char`\"{}\+:\char`\"{} \mbox{\hyperlink{_gyoto_defs_8h_a2349d4f82e46b37392a9a0fbb72b2dbd}{GYOTO\+\_\+\+STRINGIFY}}(\+\_\+\+\_\+\+LINE\+\_\+\+\_\+) \char`\"{} in \char`\"{})+ \+\_\+\+\_\+\+PRETTY\+\_\+\+FUNCTION\+\_\+\+\_\+ + \char`\"{}\+: \char`\"{} + msg)}
+
+
+
+Throw a \mbox{\hyperlink{class_gyoto_1_1_error}{Gyoto\+::\+Error}} nicely. 
+
+Throw an Error, prepending current function name. Calls \mbox{\hyperlink{namespace_gyoto_aa869193fe294f3badb84af224a83f3d8}{Gyoto\+::throw\+Error(std\+::string)}}. 

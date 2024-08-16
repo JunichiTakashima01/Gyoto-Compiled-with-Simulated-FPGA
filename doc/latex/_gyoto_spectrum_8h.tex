@@ -1,0 +1,52 @@
+\hypertarget{_gyoto_spectrum_8h}{}\doxysection{Gyoto\+Spectrum.\+h File Reference}
+\label{_gyoto_spectrum_8h}\index{GyotoSpectrum.h@{GyotoSpectrum.h}}
+
+
+Spectrum of a simple object (e.\+g. Star)  
+
+
+{\ttfamily \#include \char`\"{}Gyoto\+Register.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Gyoto\+Object.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$Gyoto\+Smart\+Pointer.\+h$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_generic}{Gyoto\+::\+Spectrum\+::\+Generic}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}} emitted by an \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_gyoto}{Gyoto}}
+\begin{DoxyCompactList}\small\item\em Namespace for the \mbox{\hyperlink{namespace_gyoto}{Gyoto}} library. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_register}{Gyoto\+::\+Register}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_gyoto}{Gyoto}} registers. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Gyoto\+::\+Spectrum}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}} of a simple object (e.\+g. a \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_star}{Gyoto\+::\+Astrobj\+::\+Star}}) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_generic}{Gyoto\+::\+Spectrum\+::\+Generic}} $>$ \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a163055eef14aee22dd8fa5188812d889}{Gyoto\+::\+Spectrum\+::\+Subcontractor\+\_\+t}}(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$fmp, std\+::vector$<$ std\+::string $>$ const \&)
+\begin{DoxyCompactList}\small\item\em A function to build instances of a specific \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_generic}{Spectrum\+::\+Generic}} sub-\/class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\Smart\+Pointer$<$ Spectrum\+::\+Generic $>$ \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a928efb5440d9060b646aa4a28d7750fd}{Gyoto\+::\+Spectrum\+::\+Subcontractor}} (Factory\+Messenger $\ast$fmp, std\+::vector$<$ std\+::string $>$ const \&plugins)
+\begin{DoxyCompactList}\small\item\em Subcontractor template. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a517874749d838d7121880e7d9d14c626}{Gyoto\+::\+Spectrum\+::\+Register}} (std\+::string kind, \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a163055eef14aee22dd8fa5188812d889}{Gyoto\+::\+Spectrum\+::\+Subcontractor\+\_\+t}} $\ast$scp)
+\begin{DoxyCompactList}\small\item\em Make a \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}} kind known to the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a163055eef14aee22dd8fa5188812d889}{Gyoto\+::\+Spectrum\+::\+Subcontractor\+\_\+t}} $\ast$ \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a757d3ef145cea78a26ae1049f24b3789}{Gyoto\+::\+Spectrum\+::get\+Subcontractor}} (std\+::string name, std\+::vector$<$ std\+::string $>$ \&plugins, int errmode=0)
+\begin{DoxyCompactList}\small\item\em Query the \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}} register. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_ae185b506437dc07b948f64f1e5e8e21c}{Gyoto\+::\+Spectrum\+::init\+Register}} ()
+\begin{DoxyCompactList}\small\item\em Empty the \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}} register. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+Register\+::\+Entry $\ast$ \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_abd9408c073597a886e49a146d6327757}{Gyoto\+::\+Spectrum\+::\+Register\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{namespace_gyoto_1_1_spectrum}{Spectrum}} register. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Spectrum of a simple object (e.\+g. Star) 
+
+Light emitted by an astronomical object 

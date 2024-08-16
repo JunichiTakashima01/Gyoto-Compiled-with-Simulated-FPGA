@@ -1,0 +1,81 @@
+\hypertarget{_gyoto_register_8h}{}\doxysection{Gyoto\+Register.\+h File Reference}
+\label{_gyoto_register_8h}\index{GyotoRegister.h@{GyotoRegister.h}}
+
+
+\mbox{\hyperlink{namespace_gyoto}{Gyoto}} registers.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}Gyoto\+Smart\+Pointer.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_gyoto_1_1_register_1_1_entry}{Gyoto\+::\+Register\+::\+Entry}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_gyoto_1_1_register_1_1_entry}{Entry}} in a register (or a full register) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_gyoto}{Gyoto}}
+\begin{DoxyCompactList}\small\item\em Namespace for the \mbox{\hyperlink{namespace_gyoto}{Gyoto}} library. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_gyoto_1_1_register}{Gyoto\+::\+Register}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_gyoto}{Gyoto}} registers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries GYOTO\+\_\+\+GETSUBCONTRACTOR}(space)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_gyoto_1_1_register_ab550850763355e20c312f60e1698e4c6}{Gyoto\+::\+Register\+::init}} (char const $\ast$pluglist=NULL)
+\begin{DoxyCompactList}\small\item\em Initialise the various registers. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_1_1_register_a3406e0df28d0e5ee028ed9b1621e3ed6}\label{namespace_gyoto_1_1_register_a3406e0df28d0e5ee028ed9b1621e3ed6}} 
+void \mbox{\hyperlink{namespace_gyoto_1_1_register_a3406e0df28d0e5ee028ed9b1621e3ed6}{Gyoto\+::\+Register\+::list}} ()
+\begin{DoxyCompactList}\small\item\em List the various registers. \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{namespace_gyoto_a56de702e8700e13df208c9fb2d1d7203}{Gyoto\+::load\+Plugin}} (char const $\ast$const plugname, int nofail=0)
+\begin{DoxyCompactList}\small\item\em Load a plugin by name. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_gyoto_af73e539074f9bb44e80e5f8cb625979c}{Gyoto\+::have\+Plugin}} (std\+::string plugname)
+\begin{DoxyCompactList}\small\item\em Check whether a given plug-\/in has already been loaded. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_gyoto_a2855e9faa09ea310c38d7decf76c814a}{Gyoto\+::require\+Plugin}} (std\+::string plugname, int nofail=0)
+\begin{DoxyCompactList}\small\item\em Load a plugin by name, only if not loaded yet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{namespace_gyoto}{Gyoto}} registers. 
+
+\mbox{\hyperlink{class_gyoto_1_1_register_1_1_entry}{Gyoto\+::\+Register\+::\+Entry}} instances are used to map kind names to \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}{Gyoto\+::\+Smart\+Pointee\+::\+Subcontractor\+\_\+t}} functions used to instantiate objects from XML files through the \mbox{\hyperlink{class_gyoto_1_1_factory}{Gyoto\+::\+Factory}}. 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_gyoto_register_8h_a1bf7328f1bb8eeb5fb99c35782c8b2c4}\label{_gyoto_register_8h_a1bf7328f1bb8eeb5fb99c35782c8b2c4}} 
+\index{GyotoRegister.h@{GyotoRegister.h}!GYOTO\_GETSUBCONTRACTOR@{GYOTO\_GETSUBCONTRACTOR}}
+\index{GYOTO\_GETSUBCONTRACTOR@{GYOTO\_GETSUBCONTRACTOR}!GyotoRegister.h@{GyotoRegister.h}}
+\doxysubsubsection{\texorpdfstring{GYOTO\_GETSUBCONTRACTOR}{GYOTO\_GETSUBCONTRACTOR}}
+{\footnotesize\ttfamily \#define GYOTO\+\_\+\+GETSUBCONTRACTOR(\begin{DoxyParamCaption}\item[{}]{space }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_aa53c7ada58c8c8f3799c3485b7d8f3bb}{Gyoto::space::Subcontractor\_t}}*                                   \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_aff0e3a9c31318709959bb2471a22ff74}{\(\backslash\)}}}
+\DoxyCodeLine{\mbox{\hyperlink{namespace_gyoto_1_1_astrobj_aff0e3a9c31318709959bb2471a22ff74}{  Gyoto::space::getSubcontractor}}(std::string name, std::vector<std::string> \&plugin, \textcolor{keywordtype}{int} errmode) \{ \(\backslash\)}
+\DoxyCodeLine{  for (\textcolor{keywordtype}{size\_t} i=0; i<plugin.size(); ++i) \{                              \(\backslash\)}
+\DoxyCodeLine{    GYOTO\_DEBUG\_EXPR(plugin[i]);                                        \mbox{\hyperlink{namespace_gyoto_a2855e9faa09ea310c38d7decf76c814a}{\(\backslash\)}}}
+\DoxyCodeLine{\mbox{\hyperlink{namespace_gyoto_a2855e9faa09ea310c38d7decf76c814a}{    Gyoto::requirePlugin}}(plugin[i]);                                    \(\backslash\)}
+\DoxyCodeLine{  \}                                                                     \(\backslash\)}
+\DoxyCodeLine{  if (!\mbox{\hyperlink{namespace_gyoto_1_1_astrobj_afbaaaf16f567767a7bd87552a82d1ac8}{Gyoto::space::Register\_}}) \mbox{\hyperlink{namespace_gyoto_aa869193fe294f3badb84af224a83f3d8}{throwError}}(\textcolor{stringliteral}{"{}No "{}} \mbox{\hyperlink{_gyoto_defs_8h_a2349d4f82e46b37392a9a0fbb72b2dbd}{GYOTO\_STRINGIFY}}(space) \textcolor{stringliteral}{"{} kind registered!"{}}); \(\backslash\)}
+\DoxyCodeLine{  Subcontractor\_t* sctr= NULL;                                          \(\backslash\)}
+\DoxyCodeLine{  std::string plg(\textcolor{stringliteral}{"{}"{}});                                                  \(\backslash\)}
+\DoxyCodeLine{  if (!plugin.size()) \{                                                 \(\backslash\)}
+\DoxyCodeLine{  sctr =                                                                \(\backslash\)}
+\DoxyCodeLine{    (\mbox{\hyperlink{namespace_gyoto_1_1_astrobj_aa53c7ada58c8c8f3799c3485b7d8f3bb}{Subcontractor\_t}}*)\mbox{\hyperlink{namespace_gyoto_1_1_astrobj_afbaaaf16f567767a7bd87552a82d1ac8}{Gyoto::space::Register\_}}                             \(\backslash\)}
+\DoxyCodeLine{    -\/> \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_aff0e3a9c31318709959bb2471a22ff74}{getSubcontractor}}(name, plg, errmode);                            \(\backslash\)}
+\DoxyCodeLine{  plugin.push\_back(plg);                                                \(\backslash\)}
+\DoxyCodeLine{  \}                                                                     \(\backslash\)}
+\DoxyCodeLine{  for (\textcolor{keywordtype}{size\_t} i=plugin.size()-\/1; i>=0 \&\& sctr == NULL; -\/-\/i) \{           \(\backslash\)}
+\DoxyCodeLine{    sctr=                                                               \(\backslash\)}
+\DoxyCodeLine{      (\mbox{\hyperlink{namespace_gyoto_1_1_astrobj_aa53c7ada58c8c8f3799c3485b7d8f3bb}{Subcontractor\_t}}*)\mbox{\hyperlink{namespace_gyoto_1_1_astrobj_afbaaaf16f567767a7bd87552a82d1ac8}{Gyoto::space::Register\_}}                           \(\backslash\)}
+\DoxyCodeLine{      -\/> \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_aff0e3a9c31318709959bb2471a22ff74}{getSubcontractor}}(name, plugin[i], 1);                          \(\backslash\)}
+\DoxyCodeLine{  \}                                                                     \(\backslash\)}
+\DoxyCodeLine{  if (!errmode \&\& !sctr) \mbox{\hyperlink{namespace_gyoto_aa869193fe294f3badb84af224a83f3d8}{throwError}} (\textcolor{stringliteral}{"{}Kind not found in the specified plug-\/ins: "{}}+name); \(\backslash\)}
+\DoxyCodeLine{  return sctr;                                                          \(\backslash\)}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

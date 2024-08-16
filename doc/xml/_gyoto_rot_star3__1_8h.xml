@@ -1,0 +1,372 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_gyoto_rot_star3__1_8h" kind="file" language="C++">
+    <compoundname>GyotoRotStar3_1.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">fstream</includes>
+    <includes refid="_gyoto_metric_8h" local="no">GyotoMetric.h</includes>
+    <includes refid="_gyoto_worldline_8h" local="no">GyotoWorldline.h</includes>
+    <includes refid="_gyoto_smart_pointer_8h" local="no">GyotoSmartPointer.h</includes>
+    <includes refid="_gyoto_register_8h" local="no">GyotoRegister.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>GyotoRotStar3_1.h</label>
+        <link refid="_gyoto_rot_star3__1_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>iomanip</label>
+      </node>
+      <node id="11">
+        <label>float.h</label>
+      </node>
+      <node id="8">
+        <label>GyotoUtils.h</label>
+        <link refid="_gyoto_utils_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>eigen3/Eigen/Dense</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="7">
+        <label>GyotoSmartPointer.h</label>
+        <link refid="_gyoto_smart_pointer_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>GyotoObject.h</label>
+        <link refid="_gyoto_object_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>stddef.h</label>
+      </node>
+      <node id="3">
+        <label>fstream</label>
+      </node>
+      <node id="22">
+        <label>GyotoRegister.h</label>
+        <link refid="_gyoto_register_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>GyotoSpectrometer.h</label>
+        <link refid="_gyoto_spectrometer_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>GyotoMetric.h</label>
+        <link refid="_gyoto_metric_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>GyotoDefs.h</label>
+        <link refid="_gyoto_defs_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>GyotoWorldline.h</label>
+        <link refid="_gyoto_worldline_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>pthread.h</label>
+      </node>
+      <node id="15">
+        <label>typeinfo</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+      <node id="10">
+        <label>GyotoConfig.h</label>
+        <link refid="_gyoto_config_8h"/>
+      </node>
+      <node id="20">
+        <label>sstream</label>
+      </node>
+      <node id="17">
+        <label>GyotoAstrobj.h</label>
+        <link refid="_gyoto_astrobj_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+      <node id="13">
+        <label>GyotoError.h</label>
+        <link refid="_gyoto_error_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>GyotoHooks.h</label>
+        <link refid="_gyoto_hooks_8h"/>
+      </node>
+      <node id="25">
+        <label>GyotoScreen.h</label>
+        <link refid="_gyoto_screen_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>GyotoConverters.h</label>
+        <link refid="_gyoto_converters_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_gyoto_1_1_metric_1_1_rot_star3__1" prot="public">Gyoto::Metric::RotStar3_1</innerclass>
+    <innernamespace refid="namespace_lorene">Lorene</innernamespace>
+    <innernamespace refid="namespace_gyoto">Gyoto</innernamespace>
+    <innernamespace refid="namespace_gyoto_1_1_metric">Gyoto::Metric</innernamespace>
+    <briefdescription>
+<para>Numerical metric around a rotating star in 3+1 formalism. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>Copyright<sp/>2011-2014,<sp/>2016,<sp/>2018,<sp/>2020<sp/>Frederic<sp/>Vincent<sp/>&amp;<sp/>Thibaut<sp/>Paumard</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>Gyoto.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"></highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>Gyoto.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__GyotoRotStar3_1_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__GyotoRotStar3_1_H_<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Lorene{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Star_rot;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_gyoto" kindref="compound">Gyoto</ref><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Metric<sp/>{<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">RotStar3_1;<sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_metric_8h" kindref="compound">GyotoMetric.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_worldline_8h" kindref="compound">GyotoWorldline.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_smart_pointer_8h" kindref="compound">GyotoSmartPointer.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>GYOTO_USE_XERCES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_register_8h" kindref="compound">GyotoRegister.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="class_gyoto_1_1_metric_1_1_rot_star3__1" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_metric_1_1_rot_star3__1" kindref="compound">Gyoto::Metric::RotStar3_1</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_metric_1_1_generic" kindref="compound">Gyoto::Metric::Generic</ref><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt;<ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>::<ref refid="class_gyoto_1_1_metric_1_1_rot_star3__1" kindref="compound">Metric::RotStar3_1</ref>&gt;;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="58" refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1aebc2f8029b0d674ceb153113b97a0b8e" refkind="member"><highlight class="normal"><sp/><sp/>char*<sp/><ref refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1aebc2f8029b0d674ceb153113b97a0b8e" kindref="member">filename_</ref>;<sp/></highlight></codeline>
+<codeline lineno="59" refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1ac757ce602dce9e54589e66603d1f0f84" refkind="member"><highlight class="normal"><sp/><sp/>Lorene::Star_rot<sp/>*<sp/><ref refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1ac757ce602dce9e54589e66603d1f0f84" kindref="member">star_</ref>;<sp/></highlight></codeline>
+<codeline lineno="60" refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a2d595ff74f1243c292c74d7407ee84f4" refkind="member"><highlight class="normal"><sp/><sp/>int<sp/><ref refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a2d595ff74f1243c292c74d7407ee84f4" kindref="member">integ_kind_</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="63" refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a4cd3cf76f93a64d31c4a67a7fb845bf8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" kindref="member">GYOTO_OBJECT</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_object_8h_1a6806b7f836d51dbe45cdf7bd60377a40" kindref="member">GYOTO_OBJECT_THREAD_SAFETY</ref>;</highlight></codeline>
+<codeline lineno="65" refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a0e8496a9e8647ce1cdf9c22ef0ad675f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_metric_1_1_rot_star3__1" kindref="compound">RotStar3_1</ref>();<sp/></highlight></codeline>
+<codeline lineno="66" refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a314557ec91494c63473ce6376b2f876e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_metric_1_1_rot_star3__1" kindref="compound">RotStar3_1</ref>(const<sp/>RotStar3_1&amp;<sp/>)<sp/>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67" refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1afd34ca87ad653fb0072e79ef2a541e4f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_gyoto_1_1_metric_1_1_rot_star3__1" kindref="compound">RotStar3_1</ref>()<sp/>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68" refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a85fc95032cb96fe975704da5452c8b51" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_metric_1_1_rot_star3__1" kindref="compound">RotStar3_1</ref>*<sp/><ref refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a85fc95032cb96fe975704da5452c8b51" kindref="member">clone</ref>()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1af3ba7b44762be0074fa2e6c6a3c1cb69" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1aef9a9c61e3d2446c6c8ceb152ad9997a" kindref="member">fileName</ref>(char<sp/>const<sp/>*);<sp/></highlight></codeline>
+<codeline lineno="72" refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1aef9a9c61e3d2446c6c8ceb152ad9997a" refkind="member"><highlight class="normal"><sp/><sp/>char<sp/>const<sp/>*<sp/><ref refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1aef9a9c61e3d2446c6c8ceb152ad9997a" kindref="member">fileName</ref>()<sp/>const;<sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a287952343ff85d4f045ce89718e97613" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a452d4e08dd8e9f215bed36ac62a348de" kindref="member">file</ref>(std::string<sp/>const<sp/>&amp;);<sp/></highlight></codeline>
+<codeline lineno="75" refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a452d4e08dd8e9f215bed36ac62a348de" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a452d4e08dd8e9f215bed36ac62a348de" kindref="member">file</ref>()<sp/>const;<sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1aaffbaa28317dabb9650253897fa83a27" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a825f0feb70879a04844707af35f91536" kindref="member">integKind</ref>(int);<sp/></highlight></codeline>
+<codeline lineno="78" refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a825f0feb70879a04844707af35f91536" refkind="member"><highlight class="normal"><sp/><sp/>int<sp/><ref refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a825f0feb70879a04844707af35f91536" kindref="member">integKind</ref>()<sp/>const<sp/>;<sp/></highlight></codeline>
+<codeline lineno="79" refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a4485130f375a20bd9a91bd866393020e" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1af8757100b1d2e1173beca7ba4cc62cff" kindref="member">genericIntegrator</ref>(bool);<sp/></highlight></codeline>
+<codeline lineno="80" refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1af8757100b1d2e1173beca7ba4cc62cff" refkind="member"><highlight class="normal"><sp/><sp/>bool<sp/><ref refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1af8757100b1d2e1173beca7ba4cc62cff" kindref="member">genericIntegrator</ref>()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>using<sp/><ref refid="class_gyoto_1_1_metric_1_1_generic_1aaff73c866dd220ab4c5dbac8743ffb48" kindref="member">Metric::Generic::myrk4</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a24f74dc378631543e0b8034aede35aca" refkind="member"><highlight class="normal"><sp/><sp/>int<sp/><ref refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a24f74dc378631543e0b8034aede35aca" kindref="member">myrk4</ref>(const<sp/>double<sp/>coord[6],<sp/>double<sp/>h,<sp/>double<sp/>res[6])<sp/>const;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="98" refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a864c8be72765a4235e864f6a8369a8ae" refkind="member"><highlight class="normal"><sp/><sp/>int<sp/><ref refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a864c8be72765a4235e864f6a8369a8ae" kindref="member">myrk4_adaptive</ref>(Gyoto::Worldline*<sp/>line,<sp/>state_t<sp/>const<sp/>&amp;coord,<sp/>double<sp/>lastnorm,<sp/>double<sp/>normref,<sp/>state_t<sp/>&amp;coordnew,<sp/>double<sp/>h0,<sp/>double&amp;<sp/>h1,<sp/>double<sp/>h1max)<sp/>const;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a6838e336958a10327f76fa55330a427a" refkind="member"><highlight class="normal"><sp/><sp/>int<sp/><ref refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a864c8be72765a4235e864f6a8369a8ae" kindref="member">myrk4_adaptive</ref>(const<sp/>double<sp/>coor[6],<sp/>double<sp/>lastnorm,<sp/>double<sp/>normref,<sp/>double<sp/>coornew[6],<sp/>double<sp/>cst[2],<sp/>double&amp;<sp/>tdot_used,<sp/>double<sp/>h0,<sp/>double&amp;<sp/>h1,<sp/>double<sp/>h1max,<sp/>double&amp;<sp/>hused)<sp/>const;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a002cce8a5a1eb83d617ee9bc637b30c8" refkind="member"><highlight class="normal"><sp/><sp/>int<sp/><ref refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a002cce8a5a1eb83d617ee9bc637b30c8" kindref="member">diff</ref>(state_t<sp/>const<sp/>&amp;coord,<sp/>state_t<sp/>&amp;res,<sp/>double<sp/>mass)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a7bbfe20d4c70648179ca526945a8e9c1" refkind="member"><highlight class="normal"><sp/><sp/>int<sp/><ref refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a002cce8a5a1eb83d617ee9bc637b30c8" kindref="member">diff</ref>(const<sp/>double<sp/>y[6],<sp/>double<sp/>res[6],<sp/>int)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a315460af6c9f1efcc1d2e771c7573805" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/><ref refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a315460af6c9f1efcc1d2e771c7573805" kindref="member">Normalize4v</ref>(const<sp/>double<sp/>coordin[6],<sp/>double<sp/>coordout[6],<sp/>const<sp/>double<sp/>cst[2],<sp/>double&amp;<sp/>tdot_used)<sp/>const;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/>using<sp/><ref refid="class_gyoto_1_1_metric_1_1_generic_1a763b7fd883fb049973df233d92264600" kindref="member">Generic::gmunu</ref>;</highlight></codeline>
+<codeline lineno="128" refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a0cc2f00de0c63cf5d237d75c887f799b" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a763b7fd883fb049973df233d92264600" kindref="member">gmunu</ref>(double<sp/>const<sp/>x[4],<sp/>int<sp/>mu,<sp/>int<sp/>nu)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/>using<sp/><ref refid="class_gyoto_1_1_metric_1_1_generic_1a596d2b3773e278f95ea362ec43ed9667" kindref="member">Generic::christoffel</ref>;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a596d2b3773e278f95ea362ec43ed9667" kindref="member">christoffel</ref>(const<sp/>double<sp/>coord[8],<sp/>const<sp/>int<sp/>alpha,<sp/>const<sp/>int<sp/>mu,<sp/></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>int<sp/>nu)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a3266ed42094d9b8395fe1681aeb56983" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1a3266ed42094d9b8395fe1681aeb56983" kindref="member">ScalarProd</ref>(const<sp/>double<sp/>pos[4],</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>double<sp/>u1[4],<sp/>const<sp/>double<sp/>u2[4])<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1ac2fbf2bb5796e3d7c7eb80dccfe20af7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>int<sp/><ref refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1ac2fbf2bb5796e3d7c7eb80dccfe20af7" kindref="member">setParameter</ref>(std::string,<sp/>std::string,<sp/>std::string);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/junichi/Gyoto/include/GyotoRotStar3_1.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,793 @@
+\hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron}{}\doxysection{Gyoto\+::Spectrum\+::Thermal\+Synchrotron Class Reference}
+\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron}\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+
+
+Thermal synchrotron spectrum.  
+
+
+
+
+{\ttfamily \#include $<$Gyoto\+Thermal\+Synchrotron\+Spectrum.\+h$>$}
+
+Inheritance diagram for Gyoto\+::Spectrum\+::Thermal\+Synchrotron\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_smart_pointee}{Gyoto\+::\+Smart\+Pointee}} $>$ \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}{Subcontractor\+\_\+t}}(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$, std\+::vector$<$ std\+::string $>$ const \&)
+\begin{DoxyCompactList}\small\item\em A subcontractor builds an object upon order from the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const  $\ast$ \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_aff5cc1b7a47aa54f49bd801482156816}{get\+Properties}} () const
+\begin{DoxyCompactList}\small\item\em Get list of properties. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a76ea57c7f3710aa5c323ce83697f19ea}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a76ea57c7f3710aa5c323ce83697f19ea}} 
+{\bfseries Thermal\+Synchrotron} (const \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron}{Thermal\+Synchrotron}} \&)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_ae459730c45c3a76b6f6373943ae3ee65}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_ae459730c45c3a76b6f6373943ae3ee65}} 
+virtual \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron}{Thermal\+Synchrotron}} $\ast$ \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_ae459730c45c3a76b6f6373943ae3ee65}{clone}} () const
+\begin{DoxyCompactList}\small\item\em Cloner. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a0051871ca1b775375172a22b57ba5712}{operator()}} (double nu) const
+\item 
+virtual double \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_ae48f4585e57ff1a35403db7041f17c9e}{operator()}} (double nu, double, double ds) const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a44b961220be19672b9fa9d55751d6115}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a44b961220be19672b9fa9d55751d6115}} 
+double {\bfseries temperature} () const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a7f2879be16bfa7fed31930e8f1071fc5}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a7f2879be16bfa7fed31930e8f1071fc5}} 
+void {\bfseries temperature} (double tt)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a72658b14532c710138b4f41befd25abf}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a72658b14532c710138b4f41befd25abf}} 
+double {\bfseries numberdensity\+CGS} () const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_aff70efd2fbe0efeadb577c6877a210fc}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_aff70efd2fbe0efeadb577c6877a210fc}} 
+void {\bfseries numberdensity\+CGS} (double rho)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a1aa28ee81ccdd29ac78cb55e5d0bfcf2}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a1aa28ee81ccdd29ac78cb55e5d0bfcf2}} 
+double {\bfseries angle\+\_\+\+B\+\_\+pem} () const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a31f65f059db3e88af96940574ed85f27}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a31f65f059db3e88af96940574ed85f27}} 
+void {\bfseries angle\+\_\+\+B\+\_\+pem} (double rho)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a8a0255f97ca9c6d3a3e42e49dfaedf34}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a8a0255f97ca9c6d3a3e42e49dfaedf34}} 
+double {\bfseries cyclotron\+\_\+freq} () const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_aa87574c89bc85214becae29a465a0058}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_aa87574c89bc85214becae29a465a0058}} 
+void {\bfseries cyclotron\+\_\+freq} (double rho)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_aa5c8aa35e82f1d7c6f9a353b03dbbdcf}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_aa5c8aa35e82f1d7c6f9a353b03dbbdcf}} 
+bool {\bfseries angle\+\_\+averaged} () const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a690432a8b3d6683116f388997297127b}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a690432a8b3d6683116f388997297127b}} 
+void {\bfseries angle\+\_\+averaged} (bool ang)
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a7b05298bd485f9286d8c80f02ac867d9}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a7b05298bd485f9286d8c80f02ac867d9}} 
+double {\bfseries bessel\+K2} () const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_ad33ffffeb3142c7e8b47409b15d7470c}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_ad33ffffeb3142c7e8b47409b15d7470c}} 
+void {\bfseries bessel\+K2} (double bessel)
+\item 
+double \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_ab1d3289ea35d01639de11b4f5d796a9d}{jnu\+CGS}} (double nu) const
+\item 
+double \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_aa313dff3b0a1a23b99511084b85714fd}{j\+Qnu\+CGS}} (double nu) const
+\item 
+double \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a8b91fa80984e0cc19bbd5a6a86ab9a2e}{j\+Unu\+CGS}} (double nu) const
+\item 
+double \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_aa75da735bf79345a44ece29d347f6285}{j\+Vnu\+CGS}} (double nu) const
+\item 
+double \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_aa1d50af2b0d20448568d47944f6a31bb}{alphanu\+CGS}} (double nu) const
+\item 
+double \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_af3b14886f94d793caaf8fcbaa0a7bec3}{alpha\+Qnu\+CGS}} (double nu) const
+\item 
+double \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a199d2d4945fec88ebb565188df95cef9}{alpha\+Unu\+CGS}} (double nu) const
+\item 
+double \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a3743042ba37dd12d666e4f7b2ffa7818}{alpha\+Vnu\+CGS}} (double nu) const
+\item 
+double \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a88edca4cf335ff6a538e3ec1dc180fdd}{r\+Qnu\+CGS}} (double nu) const
+\item 
+double \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_abb5c48f30acd6ba81a45451bd580a042}{r\+Unu\+CGS}} (double nu) const
+\item 
+double \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a19d721876414b6f8d5eec6137adedfc1}{r\+Vnu\+CGS}} (double nu) const
+\item 
+void \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a32c6153f5607ad361d407daaccc0236e}{radiativeQ}} (double jnu\mbox{[}$\,$\mbox{]}, double anu\mbox{[}$\,$\mbox{]}, double const nu\+\_\+ems\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} nbnu)
+\item 
+void \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a3b6b17964e58fc851db85f36d1424b3b}{radiativeQ}} (double j\+Inu\mbox{[}$\,$\mbox{]}, double j\+Qnu\mbox{[}$\,$\mbox{]}, double j\+Unu\mbox{[}$\,$\mbox{]}, double j\+Vnu\mbox{[}$\,$\mbox{]}, double a\+Inu\mbox{[}$\,$\mbox{]}, double a\+Qnu\mbox{[}$\,$\mbox{]}, double a\+Unu\mbox{[}$\,$\mbox{]}, double a\+Vnu\mbox{[}$\,$\mbox{]}, double r\+Qnu\mbox{[}$\,$\mbox{]}, double r\+Unu\mbox{[}$\,$\mbox{]}, double r\+Vnu\mbox{[}$\,$\mbox{]}, double const nu\+\_\+ems\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}} nbnu)
+\item 
+virtual double \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_generic_aeb97e5a99a17c14a18569195e0bf0592}{integrate}} (double nu1, double nu2)
+\begin{DoxyCompactList}\small\item\em Integrate optically thick I\+\_\+nu. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_generic_a8be482d8edd773bc893ab167d0bc7473}{integrate}} (double nu1, double nu2, const \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_generic}{Spectrum\+::\+Generic}} $\ast$opacity, double ds)
+\begin{DoxyCompactList}\small\item\em Integrate optically thin I\+\_\+nu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_a9ec09c51fd18dde7c13ef3b03fac1fad}\label{class_gyoto_1_1_smart_pointee_a9ec09c51fd18dde7c13ef3b03fac1fad}} 
+void \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_a9ec09c51fd18dde7c13ef3b03fac1fad}{inc\+Ref\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Increment the reference counter. Warning\+: Don\textquotesingle{}t mess with the counter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_a22a67609fb4690ee8ec0e95e4060e387}\label{class_gyoto_1_1_smart_pointee_a22a67609fb4690ee8ec0e95e4060e387}} 
+int \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_a22a67609fb4690ee8ec0e95e4060e387}{dec\+Ref\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Decrement the reference counter and return current value. Warning\+: Don\textquotesingle{}t mess with the counter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_a9a9cb35cd161bf19ce652f76e0a5bec0}\label{class_gyoto_1_1_smart_pointee_a9a9cb35cd161bf19ce652f76e0a5bec0}} 
+int \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_a9a9cb35cd161bf19ce652f76e0a5bec0}{get\+Ref\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Get the current number of references. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_gyoto_1_1_object_a06ea95dc396053466cdd63d419d1688c}{is\+Thread\+Safe}} () const
+\begin{DoxyCompactList}\small\item\em Whether this class is thread-\/safe. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_a58c4ecdaae1873dc6912e164b61826e0}\label{class_gyoto_1_1_object_a58c4ecdaae1873dc6912e164b61826e0}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_a58c4ecdaae1873dc6912e164b61826e0}{set}} (\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&p, \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} val)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} of a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_aa063e0df7c2e4b22207a784c76c6681f}\label{class_gyoto_1_1_object_aa063e0df7c2e4b22207a784c76c6681f}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_aa063e0df7c2e4b22207a784c76c6681f}{set}} (\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&p, \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} val, std\+::string const \&unit)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} (expressed in unit) of a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_aba6d35c5bbf814912ed84549109e117a}\label{class_gyoto_1_1_object_aba6d35c5bbf814912ed84549109e117a}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_aba6d35c5bbf814912ed84549109e117a}{set}} (std\+::string const \&pname, \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} val)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} of a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_abed03e16a8013699534b802e06751ef8}\label{class_gyoto_1_1_object_abed03e16a8013699534b802e06751ef8}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_abed03e16a8013699534b802e06751ef8}{set}} (std\+::string const \&pname, \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} val, std\+::string const \&unit)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} (expressed in unit) of a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_a8232112e660216a61caa15fab27b889f}\label{class_gyoto_1_1_object_a8232112e660216a61caa15fab27b889f}} 
+virtual \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} \mbox{\hyperlink{class_gyoto_1_1_object_a8232112e660216a61caa15fab27b889f}{get}} (\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&p) const
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} of a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_ad61a061d2073c841e9911be0395d4494}\label{class_gyoto_1_1_object_ad61a061d2073c841e9911be0395d4494}} 
+virtual \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} \mbox{\hyperlink{class_gyoto_1_1_object_ad61a061d2073c841e9911be0395d4494}{get}} (std\+::string const \&pname) const
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} of a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_ad4189c2c103030e9d91ee0f29ebcf13d}\label{class_gyoto_1_1_object_ad4189c2c103030e9d91ee0f29ebcf13d}} 
+virtual \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} \mbox{\hyperlink{class_gyoto_1_1_object_ad4189c2c103030e9d91ee0f29ebcf13d}{get}} (\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&p, std\+::string const \&unit) const
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} of a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}, converted to unit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_a99544282b6c383b8570a5bc51bed1ecf}\label{class_gyoto_1_1_object_a99544282b6c383b8570a5bc51bed1ecf}} 
+virtual \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} \mbox{\hyperlink{class_gyoto_1_1_object_a99544282b6c383b8570a5bc51bed1ecf}{get}} (std\+::string const \&pname, std\+::string const \&unit) const
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_gyoto_1_1_value}{Value}} of a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}, converted to unit. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const  $\ast$ \mbox{\hyperlink{class_gyoto_1_1_object_a424ef3538c714adfafad7eda249e0d58}{property}} (std\+::string const pname) const
+\begin{DoxyCompactList}\small\item\em Find property by name. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_a11892ef308d6f40add51eaea653a394b}{fill\+Property}} (\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$fmp, \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&p) const
+\begin{DoxyCompactList}\small\item\em Output a single \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} to XML. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_a0ffc3f84b4c2372d639eb848605fb1f3}{fill\+Element}} (\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$fmp) const
+\begin{DoxyCompactList}\small\item\em Fill the XML element for this \mbox{\hyperlink{class_gyoto_1_1_object}{Object}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_aa0a8b119e7aa95b21be081f8c97e1626}{set\+Parameters}} (\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$fmp)
+\begin{DoxyCompactList}\small\item\em Main loop for parsing Properties from XML description. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_gyoto_1_1_object_a45969ac469cf6979037229c2741b226b}{set\+Parameter}} (std\+::string name, std\+::string content, std\+::string unit)
+\begin{DoxyCompactList}\small\item\em Set parameter by name. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_a43fe041144add66155668ca88a99fd98}{set\+Parameter}} (\mbox{\hyperlink{class_gyoto_1_1_property}{Gyoto\+::\+Property}} const \&p, std\+::string const \&name, std\+::string const \&content, std\+::string const \&unit)
+\begin{DoxyCompactList}\small\item\em Set parameter by \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} (and name) \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_gyoto_1_1_object_a741ba678188d7d167ff2e3bb13dd924f}{describe\+Property}} (\mbox{\hyperlink{class_gyoto_1_1_property}{Gyoto\+::\+Property}} const \&p) const
+\begin{DoxyCompactList}\small\item\em Format desrciption for a property. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_object_a13843618d84c49d47bd37ddfa31160c5}{help}} () const
+\begin{DoxyCompactList}\small\item\em Print (to stdout) some help on this class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_object_a9f46de678c67e9050cf3a8b9677e1d73}\label{class_gyoto_1_1_object_a9f46de678c67e9050cf3a8b9677e1d73}} 
+virtual std\+::string \mbox{\hyperlink{class_gyoto_1_1_object_a9f46de678c67e9050cf3a8b9677e1d73}{kind}} () const
+\begin{DoxyCompactList}\small\item\em Get kind\+\_\+. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a5fba59774ae3bfdcbb822c56f94751b3}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a5fba59774ae3bfdcbb822c56f94751b3}} 
+static \mbox{\hyperlink{_gyoto_object_8h_a750e7a43779f63bdb13111eaf0271203}{GYOTO\+\_\+\+OBJECT}} \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const {\bfseries properties} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_object_aae3b80667884c6620c4796a1b8ef74e5}{kind}} (const std\+::string)
+\begin{DoxyCompactList}\small\item\em Set kind\+\_\+. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a8d6a690380fe28d1bace1d6bc275b486}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a8d6a690380fe28d1bace1d6bc275b486}} 
+\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_black_body}{Spectrum\+::\+Black\+Body}} $>$ \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a8d6a690380fe28d1bace1d6bc275b486}{spectrum\+BB\+\_\+}}
+\begin{DoxyCompactList}\small\item\em blackbody emission \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_ad5a3aecee025a85d45cd8563bd001023}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_ad5a3aecee025a85d45cd8563bd001023}} 
+double \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_ad5a3aecee025a85d45cd8563bd001023}{T\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Temperature. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_aacda6d150f32f947acc436e105aa6ff5}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_aacda6d150f32f947acc436e105aa6ff5}} 
+double \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_aacda6d150f32f947acc436e105aa6ff5}{numberdensity\+CGS\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Number density in CGS UNITS (careful) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a5fd73b36e7083b4ad6835f776e3a07cf}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a5fd73b36e7083b4ad6835f776e3a07cf}} 
+double \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a5fd73b36e7083b4ad6835f776e3a07cf}{angle\+\_\+\+B\+\_\+pem\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Angle between Bfield and emission direction (rad) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a8eb914b2671d1ca0b8c4e37f2adb258b}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a8eb914b2671d1ca0b8c4e37f2adb258b}} 
+double \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a8eb914b2671d1ca0b8c4e37f2adb258b}{cyclotron\+\_\+freq\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Cyclotron frequency (e$\ast$B / 2$\ast$pi$\ast$me$\ast$c) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_af4b9cd81ec23ba599b99310bc4189d54}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_af4b9cd81ec23ba599b99310bc4189d54}} 
+bool \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_af4b9cd81ec23ba599b99310bc4189d54}{angle\+\_\+averaged\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Boolean for angle averaging. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a7c9459216e101f085e8c10c8eb98e42e}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a7c9459216e101f085e8c10c8eb98e42e}} 
+double \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a7c9459216e101f085e8c10c8eb98e42e}{bessel\+\_\+\+K2\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Bessel K2 function. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_gyoto_1_1_object_ac48ad88e3ef229ba0d0fe68a94a7118f}{kind\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The \char`\"{}kind\char`\"{} that is output in the XML entity. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_gyoto_1_1_object_a01832761cd5f0a12319e3e24ce9a9fba}{plugins\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The plug-\/ins that needs to be loaded to access this instance\textquotesingle{}s class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_aaaf212a70fb1880b70e4d357e843cc85}\label{class_gyoto_1_1_smart_pointee_aaaf212a70fb1880b70e4d357e843cc85}} 
+int \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_aaaf212a70fb1880b70e4d357e843cc85}{ref\+Count}}
+\begin{DoxyCompactList}\small\item\em Reference counter. \end{DoxyCompactList}\item 
+pthread\+\_\+mutex\+\_\+t \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_abf1c1e431cdd4f08f13de581cccb6770}{mutex\+\_\+}}
+\begin{DoxyCompactList}\small\item\em A mutex. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a5850ece64d44fc40e3c63daa60bca5a8}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a5850ece64d44fc40e3c63daa60bca5a8}} 
+class {\bfseries Gyoto\+::\+Smart\+Pointer$<$ Gyoto\+::\+Spectrum\+::\+Thermal\+Synchrotron $>$}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Thermal synchrotron spectrum. 
+
+Example XML entity\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<Spectrum \mbox{\hyperlink{class_gyoto_1_1_object_a9f46de678c67e9050cf3a8b9677e1d73}{kind}}=\textcolor{stringliteral}{"{}ThermalSynchrotron"{}}>}
+\DoxyCodeLine{</Spectrum>}
+
+\end{DoxyCode}
+ 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}\label{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}} 
+\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}!Subcontractor\_t@{Subcontractor\_t}}
+\index{Subcontractor\_t@{Subcontractor\_t}!Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+\doxysubsubsection{\texorpdfstring{Subcontractor\_t}{Subcontractor\_t}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$\mbox{\hyperlink{class_gyoto_1_1_smart_pointee}{Gyoto\+::\+Smart\+Pointee}}$>$ Gyoto\+::\+Smart\+Pointee\+::\+Subcontractor\+\_\+t(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$, std\+::vector$<$ std\+::string $>$ const \&)\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+A subcontractor builds an object upon order from the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}}. 
+
+Various classes need to provide a subcontractor to be able to instantiate themselves upon order from the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}}. A subcontractor is a function (often a static member function) which accepts a pointer to a \mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}} as unique parameter, communicates with the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}} using this messenger to read an XML description of the object to build, and returns this objet. \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}{Smart\+Pointee\+::\+Subcontractor\+\_\+t}}$\ast$ is just generic enough a typedef to cast to and from other subcontractor types\+: \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_aa53c7ada58c8c8f3799c3485b7d8f3bb}{Astrobj\+::\+Subcontractor\+\_\+t}}, \mbox{\hyperlink{namespace_gyoto_1_1_metric_ad6b33a642cc94ad67855184d2adb95df}{Metric\+::\+Subcontractor\+\_\+t}}, \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a163055eef14aee22dd8fa5188812d889}{Spectrum\+::\+Subcontractor\+\_\+t}}. A subcontractor needs to be registered using the relevant \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a517874749d838d7121880e7d9d14c626}{Register()}} function\+: \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_abb6caf3023a51cb77b5f6793ac03b188}{Astrobj\+::\+Register()}}, \mbox{\hyperlink{namespace_gyoto_1_1_metric_a602cba49b001e7470f3d439d1ab3e8f7}{Metric\+::\+Register()}}, \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a517874749d838d7121880e7d9d14c626}{Spectrum\+::\+Register()}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_aa1d50af2b0d20448568d47944f6a31bb}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_aa1d50af2b0d20448568d47944f6a31bb}} 
+\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}!alphanuCGS@{alphanuCGS}}
+\index{alphanuCGS@{alphanuCGS}!Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+\doxysubsubsection{\texorpdfstring{alphanuCGS()}{alphanuCGS()}}
+{\footnotesize\ttfamily double Gyoto\+::\+Spectrum\+::\+Thermal\+Synchrotron\+::alphanu\+CGS (\begin{DoxyParamCaption}\item[{double}]{nu }\end{DoxyParamCaption}) const}
+
+Returns the absorption coefficient alpha\+\_\+nu in cgs units \mbox{[}cm$^\wedge$-\/1\mbox{]}
+
+
+\begin{DoxyParams}{Parameters}
+{\em nu} & frequency in Hz \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_af3b14886f94d793caaf8fcbaa0a7bec3}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_af3b14886f94d793caaf8fcbaa0a7bec3}} 
+\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}!alphaQnuCGS@{alphaQnuCGS}}
+\index{alphaQnuCGS@{alphaQnuCGS}!Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+\doxysubsubsection{\texorpdfstring{alphaQnuCGS()}{alphaQnuCGS()}}
+{\footnotesize\ttfamily double Gyoto\+::\+Spectrum\+::\+Thermal\+Synchrotron\+::alpha\+Qnu\+CGS (\begin{DoxyParamCaption}\item[{double}]{nu }\end{DoxyParamCaption}) const}
+
+Returns the Stokes Q absorption coefficient alpha\+\_\+nu in cgs units \mbox{[}cm$^\wedge$-\/1\mbox{]}
+
+
+\begin{DoxyParams}{Parameters}
+{\em nu} & frequency in Hz \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a199d2d4945fec88ebb565188df95cef9}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a199d2d4945fec88ebb565188df95cef9}} 
+\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}!alphaUnuCGS@{alphaUnuCGS}}
+\index{alphaUnuCGS@{alphaUnuCGS}!Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+\doxysubsubsection{\texorpdfstring{alphaUnuCGS()}{alphaUnuCGS()}}
+{\footnotesize\ttfamily double Gyoto\+::\+Spectrum\+::\+Thermal\+Synchrotron\+::alpha\+Unu\+CGS (\begin{DoxyParamCaption}\item[{double}]{nu }\end{DoxyParamCaption}) const}
+
+Returns the Stokes U absorption coefficient alpha\+\_\+nu in cgs units \mbox{[}cm$^\wedge$-\/1\mbox{]}
+
+
+\begin{DoxyParams}{Parameters}
+{\em nu} & frequency in Hz \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a3743042ba37dd12d666e4f7b2ffa7818}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a3743042ba37dd12d666e4f7b2ffa7818}} 
+\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}!alphaVnuCGS@{alphaVnuCGS}}
+\index{alphaVnuCGS@{alphaVnuCGS}!Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+\doxysubsubsection{\texorpdfstring{alphaVnuCGS()}{alphaVnuCGS()}}
+{\footnotesize\ttfamily double Gyoto\+::\+Spectrum\+::\+Thermal\+Synchrotron\+::alpha\+Vnu\+CGS (\begin{DoxyParamCaption}\item[{double}]{nu }\end{DoxyParamCaption}) const}
+
+Returns the Stokes V absorption coefficient alpha\+\_\+nu in cgs units \mbox{[}cm$^\wedge$-\/1\mbox{]}
+
+
+\begin{DoxyParams}{Parameters}
+{\em nu} & frequency in Hz \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_object_a741ba678188d7d167ff2e3bb13dd924f}\label{class_gyoto_1_1_object_a741ba678188d7d167ff2e3bb13dd924f}} 
+\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}!describeProperty@{describeProperty}}
+\index{describeProperty@{describeProperty}!Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+\doxysubsubsection{\texorpdfstring{describeProperty()}{describeProperty()}}
+{\footnotesize\ttfamily std\+::string Gyoto\+::\+Object\+::describe\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_property}{Gyoto\+::\+Property}} const \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Format desrciption for a property. 
+
+Returns a string containing the name(s) and type of the property, as well as whether it supports unit. \mbox{\Hypertarget{class_gyoto_1_1_object_a0ffc3f84b4c2372d639eb848605fb1f3}\label{class_gyoto_1_1_object_a0ffc3f84b4c2372d639eb848605fb1f3}} 
+\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}!fillElement@{fillElement}}
+\index{fillElement@{fillElement}!Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+\doxysubsubsection{\texorpdfstring{fillElement()}{fillElement()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Object\+::fill\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$}]{fmp }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Fill the XML element for this \mbox{\hyperlink{class_gyoto_1_1_object}{Object}}. 
+
+The base implementation simply calls \mbox{\hyperlink{class_gyoto_1_1_object_a11892ef308d6f40add51eaea653a394b}{fill\+Property()}} for each \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} defined for the \mbox{\hyperlink{class_gyoto_1_1_object}{Object}}.
+
+Derived classes should avoid overriding \mbox{\hyperlink{class_gyoto_1_1_object_a0ffc3f84b4c2372d639eb848605fb1f3}{fill\+Element()}}. It may make sense occasionally, e.\+g. to make sure that the metric is output first.
+
+To customize how a given \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} is rendered, it is better to override \mbox{\hyperlink{class_gyoto_1_1_object_a11892ef308d6f40add51eaea653a394b}{fill\+Property()}}.
+
+If this method is overridden, the implementation should in general call \mbox{\hyperlink{class_gyoto_1_1_object_a0ffc3f84b4c2372d639eb848605fb1f3}{fill\+Element()}} on the direct base. 
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_scenery_a63501e86c47ea6b67e0c564c706a72f1}{Gyoto\+::\+Scenery}}, \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_complex_a0d73e5fd77b0e920af44894abfc96a99}{Gyoto\+::\+Spectrometer\+::\+Complex}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_complex_ada5f1fb56b87c56ff64113a49c76cca0}{Gyoto\+::\+Metric\+::\+Complex}}, and \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_complex_a88d6f38c5fa5401a860291fbb21526d5}{Gyoto\+::\+Astrobj\+::\+Complex}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_object_a11892ef308d6f40add51eaea653a394b}\label{class_gyoto_1_1_object_a11892ef308d6f40add51eaea653a394b}} 
+\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}!fillProperty@{fillProperty}}
+\index{fillProperty@{fillProperty}!Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+\doxysubsubsection{\texorpdfstring{fillProperty()}{fillProperty()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Object\+::fill\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$}]{fmp,  }\item[{\mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Output a single \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} to XML. 
+
+The base implementation decides what to do based on the {\itshape p.\+type}. The format matches how \mbox{\hyperlink{class_gyoto_1_1_object_aa0a8b119e7aa95b21be081f8c97e1626}{set\+Parameters()}} an \mbox{\hyperlink{class_gyoto_1_1_object_a45969ac469cf6979037229c2741b226b}{set\+Parameter()}} would interpret the XML descition.
+
+Overriding this method should be avoided, but makes sense in some cases (for instance \mbox{\hyperlink{class_gyoto_1_1_screen_a50f80add154ec088fc9509ba22ef0032}{Screen\+::fill\+Property()}} selects a different unit for {\itshape Distance} based on its magnitude, so that stellar sizes are expressed in solar radii while smaller sizes can be expressed in meters and larger sizes in parsecs).
+
+Overriding implementation should fall-\/back on calling the implementation in the direct parent class\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class }A: \textcolor{keyword}{public} \mbox{\hyperlink{class_gyoto_1_1_object_a5834e83ca1482a379c7ddefb1919457f}{Object}} \{\};}
+\DoxyCodeLine{\textcolor{keyword}{class }B: \textcolor{keyword}{public} A \{ }
+\DoxyCodeLine{ \textcolor{keyword}{using} B::setParameter;}
+\DoxyCodeLine{ \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_gyoto_1_1_object_a11892ef308d6f40add51eaea653a394b}{fillProperty}}(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto::FactoryMessenger}} *fmp,}
+\DoxyCodeLine{                        Property \textcolor{keyword}{const} \&p) \textcolor{keyword}{const} ;}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{\textcolor{keywordtype}{void} B::fillProperty(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto::FactoryMessenger}} *fmp,}
+\DoxyCodeLine{                        Property \textcolor{keyword}{const} \&p)\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{  \textcolor{keywordflow}{if} (name==\textcolor{stringliteral}{"{}Duff"{}}) fmp-\/>doSomething();}
+\DoxyCodeLine{  \textcolor{keywordflow}{else} A::fillProperty(fmp, p);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_xillver_reflection_a9e8bc6375f3c981042b74d99ee7adf91}{Gyoto\+::\+Astrobj\+::\+Xillver\+Reflection}}, \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_uniform_af5ccaceb5c188a7a0ea11791885919bc}{Gyoto\+::\+Spectrometer\+::\+Uniform}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_star_a152074fdddb29950936d3193d3aea55d}{Gyoto\+::\+Astrobj\+::\+Star}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_shift_a234a2d08bb7918e1bc62e4a710a4df77}{Gyoto\+::\+Metric\+::\+Shift}}, \mbox{\hyperlink{class_gyoto_1_1_screen_a50f80add154ec088fc9509ba22ef0032}{Gyoto\+::\+Screen}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_polish_doughnut_acbe2c229f702905204ea0d822b94e17c}{Gyoto\+::\+Astrobj\+::\+Polish\+Doughnut}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_pattern_disk_acc548bda88d62932275e8d0fcd630ca9}{Gyoto\+::\+Astrobj\+::\+Pattern\+Disk}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_neutron_star_model_atmosphere_a65604453c31dac828adeaeb7c35ca23d}{Gyoto\+::\+Astrobj\+::\+Neutron\+Star\+Model\+Atmosphere}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_equatorial_hot_spot_a5acba2e137e389070bb5f7c71ea31ed5}{Gyoto\+::\+Astrobj\+::\+Equatorial\+Hot\+Spot}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_dynamical_disk_abbc14f98531888e96547665a8a6a20ca}{Gyoto\+::\+Astrobj\+::\+Dynamical\+Disk}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_disk3_d_a160d18feeb44b24f396c1001abec7bd6}{Gyoto\+::\+Astrobj\+::\+Disk3D}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_directional_disk_a42a558bc44010a73986909dd9a2fdd41}{Gyoto\+::\+Astrobj\+::\+Directional\+Disk}}, and \mbox{\hyperlink{class_gyoto_1_1_scenery_a9bc2f2025deb97a71f21f2be5c0f5022}{Gyoto\+::\+Scenery}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_aff5cc1b7a47aa54f49bd801482156816}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_aff5cc1b7a47aa54f49bd801482156816}} 
+\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}!getProperties@{getProperties}}
+\index{getProperties@{getProperties}!Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+\doxysubsubsection{\texorpdfstring{getProperties()}{getProperties()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const$\ast$ Gyoto\+::\+Spectrum\+::\+Thermal\+Synchrotron\+::get\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get list of properties. 
+
+This method is declared automatically by the \mbox{\hyperlink{_gyoto_object_8h_a750e7a43779f63bdb13111eaf0271203}{GYOTO\+\_\+\+OBJECT}} macro and defined automatically by the \mbox{\hyperlink{_gyoto_property_8h_a1356435ea7ee0e18d07201a80e034dcc}{GYOTO\+\_\+\+PROPERTY\+\_\+\+END}} macro. 
+
+Reimplemented from \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_generic_af54a57e8ab3c283962e50c3712d77226}{Gyoto\+::\+Spectrum\+::\+Generic}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_object_a13843618d84c49d47bd37ddfa31160c5}\label{class_gyoto_1_1_object_a13843618d84c49d47bd37ddfa31160c5}} 
+\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}!help@{help}}
+\index{help@{help}!Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+\doxysubsubsection{\texorpdfstring{help()}{help()}}
+{\footnotesize\ttfamily void Gyoto\+::\+Object\+::help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Print (to stdout) some help on this class. 
+
+Describe all properties that this instance supports. \mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_generic_aeb97e5a99a17c14a18569195e0bf0592}\label{class_gyoto_1_1_spectrum_1_1_generic_aeb97e5a99a17c14a18569195e0bf0592}} 
+\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}!integrate@{integrate}}
+\index{integrate@{integrate}!Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+\doxysubsubsection{\texorpdfstring{integrate()}{integrate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual double Gyoto\+::\+Spectrum\+::\+Generic\+::integrate (\begin{DoxyParamCaption}\item[{double}]{nu1,  }\item[{double}]{nu2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Integrate optically thick I\+\_\+nu. 
+
+See \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a0051871ca1b775375172a22b57ba5712}{operator()(double nu) const}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em nu1,nu2} & boundaries for the integration \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I, the integral of I\+\_\+nu between nu1 and nu2 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_python_af5a00c71fbf4c9dfb3af77fa8966456f}{Gyoto\+::\+Spectrum\+::\+Python}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_generic_a8be482d8edd773bc893ab167d0bc7473}\label{class_gyoto_1_1_spectrum_1_1_generic_a8be482d8edd773bc893ab167d0bc7473}} 
+\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}!integrate@{integrate}}
+\index{integrate@{integrate}!Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+\doxysubsubsection{\texorpdfstring{integrate()}{integrate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual double Gyoto\+::\+Spectrum\+::\+Generic\+::integrate (\begin{DoxyParamCaption}\item[{double}]{nu1,  }\item[{double}]{nu2,  }\item[{const \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_generic}{Spectrum\+::\+Generic}} $\ast$}]{opacity,  }\item[{double}]{ds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Integrate optically thin I\+\_\+nu. 
+
+See \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_ae48f4585e57ff1a35403db7041f17c9e}{operator()(double nu, double opacity, double ds) const}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em nu1,nu2} & boundaries for the integration \\
+\hline
+{\em opacity} & the frequency-\/dependent opacity law given as a pointer to a \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_generic}{Gyoto\+::\+Spectrum\+::\+Generic}} sub-\/class instance \\
+\hline
+{\em ds} & the element length for spatial integration \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I, the integral of I\+\_\+nu between nu1 and nu2 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gyoto_1_1_object_a06ea95dc396053466cdd63d419d1688c}\label{class_gyoto_1_1_object_a06ea95dc396053466cdd63d419d1688c}} 
+\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}!isThreadSafe@{isThreadSafe}}
+\index{isThreadSafe@{isThreadSafe}!Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+\doxysubsubsection{\texorpdfstring{isThreadSafe()}{isThreadSafe()}}
+{\footnotesize\ttfamily virtual bool Gyoto\+::\+Object\+::is\+Thread\+Safe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Whether this class is thread-\/safe. 
+
+Return True if this object is thread-\/safe, i.\+e. if an instance and its clone can be used in parallel threads (in the context of Scenery\+::raytrace()). Known objects which are not thread-\/safe include Lorene metrics and everything from the \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_python}{Python}} plug-\/in.
+
+The default implementation considers that the class itself is thread safe and recurses into the declared properties to check whether they are safe too. Classes that abide to the Object/\+Property paradigm and are themselves thread-\/safe have nothing special to do.
+
+Objects that clone children in their copy constructor that are not declared as properties must take these children into account.
+
+Classes that are never thread-\/safe must declare it. It acn be easily done using GYOTO\+\_\+\+OBJECT\+\_\+\+THREAD\+\_\+\+SAFETY in the class declaration and GYOTO\+\_\+\+PROPERTY\+\_\+\+THREAD\+\_\+\+UNSAFE in the class definition. \mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_ab1d3289ea35d01639de11b4f5d796a9d}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_ab1d3289ea35d01639de11b4f5d796a9d}} 
+\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}!jnuCGS@{jnuCGS}}
+\index{jnuCGS@{jnuCGS}!Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+\doxysubsubsection{\texorpdfstring{jnuCGS()}{jnuCGS()}}
+{\footnotesize\ttfamily double Gyoto\+::\+Spectrum\+::\+Thermal\+Synchrotron\+::jnu\+CGS (\begin{DoxyParamCaption}\item[{double}]{nu }\end{DoxyParamCaption}) const}
+
+Returns the emission coefficient j\+\_\+nu in cgs units i.\+e. erg cm$^\wedge$-\/3 s$^\wedge$-\/1 ster$^\wedge$-\/1 Hz$^\wedge$-\/1
+
+
+\begin{DoxyParams}{Parameters}
+{\em nu} & frequency in Hz \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_aa313dff3b0a1a23b99511084b85714fd}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_aa313dff3b0a1a23b99511084b85714fd}} 
+\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}!jQnuCGS@{jQnuCGS}}
+\index{jQnuCGS@{jQnuCGS}!Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+\doxysubsubsection{\texorpdfstring{jQnuCGS()}{jQnuCGS()}}
+{\footnotesize\ttfamily double Gyoto\+::\+Spectrum\+::\+Thermal\+Synchrotron\+::j\+Qnu\+CGS (\begin{DoxyParamCaption}\item[{double}]{nu }\end{DoxyParamCaption}) const}
+
+Returns the Stokes Q emission coefficient j\+\_\+nu in cgs units i.\+e. erg cm$^\wedge$-\/3 s$^\wedge$-\/1 ster$^\wedge$-\/1 Hz$^\wedge$-\/1
+
+
+\begin{DoxyParams}{Parameters}
+{\em nu} & frequency in Hz \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a8b91fa80984e0cc19bbd5a6a86ab9a2e}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a8b91fa80984e0cc19bbd5a6a86ab9a2e}} 
+\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}!jUnuCGS@{jUnuCGS}}
+\index{jUnuCGS@{jUnuCGS}!Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+\doxysubsubsection{\texorpdfstring{jUnuCGS()}{jUnuCGS()}}
+{\footnotesize\ttfamily double Gyoto\+::\+Spectrum\+::\+Thermal\+Synchrotron\+::j\+Unu\+CGS (\begin{DoxyParamCaption}\item[{double}]{nu }\end{DoxyParamCaption}) const}
+
+Returns the Stokes U emission coefficient j\+\_\+nu in cgs units i.\+e. erg cm$^\wedge$-\/3 s$^\wedge$-\/1 ster$^\wedge$-\/1 Hz$^\wedge$-\/1
+
+
+\begin{DoxyParams}{Parameters}
+{\em nu} & frequency in Hz \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_aa75da735bf79345a44ece29d347f6285}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_aa75da735bf79345a44ece29d347f6285}} 
+\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}!jVnuCGS@{jVnuCGS}}
+\index{jVnuCGS@{jVnuCGS}!Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+\doxysubsubsection{\texorpdfstring{jVnuCGS()}{jVnuCGS()}}
+{\footnotesize\ttfamily double Gyoto\+::\+Spectrum\+::\+Thermal\+Synchrotron\+::j\+Vnu\+CGS (\begin{DoxyParamCaption}\item[{double}]{nu }\end{DoxyParamCaption}) const}
+
+Returns the Stokes V emission coefficient j\+\_\+nu in cgs units i.\+e. erg cm$^\wedge$-\/3 s$^\wedge$-\/1 ster$^\wedge$-\/1 Hz$^\wedge$-\/1
+
+
+\begin{DoxyParams}{Parameters}
+{\em nu} & frequency in Hz \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_object_aae3b80667884c6620c4796a1b8ef74e5}\label{class_gyoto_1_1_object_aae3b80667884c6620c4796a1b8ef74e5}} 
+\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}!kind@{kind}}
+\index{kind@{kind}!Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+\doxysubsubsection{\texorpdfstring{kind()}{kind()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Object\+::kind (\begin{DoxyParamCaption}\item[{const std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Set kind\+\_\+. 
+
+\mbox{\hyperlink{class_gyoto_1_1_object_aae3b80667884c6620c4796a1b8ef74e5}{kind(const std\+::string)}} is protected because, for most Objects, it should not be changed in runtime. Set kind\+\_\+ \mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a0051871ca1b775375172a22b57ba5712}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a0051871ca1b775375172a22b57ba5712}} 
+\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}!operator()@{operator()}}
+\index{operator()@{operator()}!Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual double Gyoto\+::\+Spectrum\+::\+Thermal\+Synchrotron\+::operator() (\begin{DoxyParamCaption}\item[{double}]{nu }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function returns the optically thick Inu which is not defined here, returns an error
+
+
+\begin{DoxyParams}{Parameters}
+{\em nu} & frequency in Hz \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_generic_a69b437909754d1ff25e1e8772803dc64}{Gyoto\+::\+Spectrum\+::\+Generic}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_ae48f4585e57ff1a35403db7041f17c9e}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_ae48f4585e57ff1a35403db7041f17c9e}} 
+\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}!operator()@{operator()}}
+\index{operator()@{operator()}!Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual double Gyoto\+::\+Spectrum\+::\+Thermal\+Synchrotron\+::operator() (\begin{DoxyParamCaption}\item[{double}]{nu,  }\item[{double}]{,  }\item[{double}]{ds }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function returns the optically thin increment to intensity d\+I\+\_\+nu = j\+\_\+nu$\ast$ds$\ast$exp(-\/alpha\+\_\+nu$\ast$ds) in SI units
+
+
+\begin{DoxyParams}{Parameters}
+{\em nu} & frequency in Hz \\
+\hline
+{\em ds} & length element in SI (careful to this) \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_generic_ac264d95ff1d31397c854e3245bfef193}{Gyoto\+::\+Spectrum\+::\+Generic}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_object_a424ef3538c714adfafad7eda249e0d58}\label{class_gyoto_1_1_object_a424ef3538c714adfafad7eda249e0d58}} 
+\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}!property@{property}}
+\index{property@{property}!Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+\doxysubsubsection{\texorpdfstring{property()}{property()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} const$\ast$ Gyoto\+::\+Object\+::property (\begin{DoxyParamCaption}\item[{std\+::string const}]{pname }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Find property by name. 
+
+Look into the \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} list for a \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} whose {\itshape name} (or {\itshape name\+\_\+false}, for a boolean \mbox{\hyperlink{class_gyoto_1_1_property}{Property}}) is {\itshape pname}. Return a const pointer to the first such property found, or NULL if none is found. \mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a3b6b17964e58fc851db85f36d1424b3b}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a3b6b17964e58fc851db85f36d1424b3b}} 
+\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}!radiativeQ@{radiativeQ}}
+\index{radiativeQ@{radiativeQ}!Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+\doxysubsubsection{\texorpdfstring{radiativeQ()}{radiativeQ()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Gyoto\+::\+Spectrum\+::\+Thermal\+Synchrotron\+::radiativeQ (\begin{DoxyParamCaption}\item[{double}]{j\+Inu\mbox{[}$\,$\mbox{]},  }\item[{double}]{j\+Qnu\mbox{[}$\,$\mbox{]},  }\item[{double}]{j\+Unu\mbox{[}$\,$\mbox{]},  }\item[{double}]{j\+Vnu\mbox{[}$\,$\mbox{]},  }\item[{double}]{a\+Inu\mbox{[}$\,$\mbox{]},  }\item[{double}]{a\+Qnu\mbox{[}$\,$\mbox{]},  }\item[{double}]{a\+Unu\mbox{[}$\,$\mbox{]},  }\item[{double}]{a\+Vnu\mbox{[}$\,$\mbox{]},  }\item[{double}]{r\+Qnu\mbox{[}$\,$\mbox{]},  }\item[{double}]{r\+Unu\mbox{[}$\,$\mbox{]},  }\item[{double}]{r\+Vnu\mbox{[}$\,$\mbox{]},  }\item[{double const}]{nu\+\_\+ems\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}}}]{nbnu }\end{DoxyParamCaption})}
+
+Returns the emission, absorption and Fraday rotation coef in SI for the 4 Stokes parameters \mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a32c6153f5607ad361d407daaccc0236e}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a32c6153f5607ad361d407daaccc0236e}} 
+\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}!radiativeQ@{radiativeQ}}
+\index{radiativeQ@{radiativeQ}!Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+\doxysubsubsection{\texorpdfstring{radiativeQ()}{radiativeQ()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Gyoto\+::\+Spectrum\+::\+Thermal\+Synchrotron\+::radiativeQ (\begin{DoxyParamCaption}\item[{double}]{jnu\mbox{[}$\,$\mbox{]},  }\item[{double}]{anu\mbox{[}$\,$\mbox{]},  }\item[{double const}]{nu\+\_\+ems\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{size\+\_\+t}}}]{nbnu }\end{DoxyParamCaption})}
+
+Returns the emission and absorption coef in SI \mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a88edca4cf335ff6a538e3ec1dc180fdd}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a88edca4cf335ff6a538e3ec1dc180fdd}} 
+\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}!rQnuCGS@{rQnuCGS}}
+\index{rQnuCGS@{rQnuCGS}!Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+\doxysubsubsection{\texorpdfstring{rQnuCGS()}{rQnuCGS()}}
+{\footnotesize\ttfamily double Gyoto\+::\+Spectrum\+::\+Thermal\+Synchrotron\+::r\+Qnu\+CGS (\begin{DoxyParamCaption}\item[{double}]{nu }\end{DoxyParamCaption}) const}
+
+Returns the Stokes Q Faraday rotation coefficient in cgs units \mbox{[}cm$^\wedge$-\/1\mbox{]}
+
+
+\begin{DoxyParams}{Parameters}
+{\em nu} & frequency in Hz \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_abb5c48f30acd6ba81a45451bd580a042}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_abb5c48f30acd6ba81a45451bd580a042}} 
+\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}!rUnuCGS@{rUnuCGS}}
+\index{rUnuCGS@{rUnuCGS}!Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+\doxysubsubsection{\texorpdfstring{rUnuCGS()}{rUnuCGS()}}
+{\footnotesize\ttfamily double Gyoto\+::\+Spectrum\+::\+Thermal\+Synchrotron\+::r\+Unu\+CGS (\begin{DoxyParamCaption}\item[{double}]{nu }\end{DoxyParamCaption}) const}
+
+Returns the Stokes U Faraday rotation coefficient in cgs units \mbox{[}cm$^\wedge$-\/1\mbox{]}
+
+
+\begin{DoxyParams}{Parameters}
+{\em nu} & frequency in Hz \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a19d721876414b6f8d5eec6137adedfc1}\label{class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_a19d721876414b6f8d5eec6137adedfc1}} 
+\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}!rVnuCGS@{rVnuCGS}}
+\index{rVnuCGS@{rVnuCGS}!Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+\doxysubsubsection{\texorpdfstring{rVnuCGS()}{rVnuCGS()}}
+{\footnotesize\ttfamily double Gyoto\+::\+Spectrum\+::\+Thermal\+Synchrotron\+::r\+Vnu\+CGS (\begin{DoxyParamCaption}\item[{double}]{nu }\end{DoxyParamCaption}) const}
+
+Returns the Stokes V Faraday rotation coefficient in cgs units \mbox{[}cm$^\wedge$-\/1\mbox{]}
+
+
+\begin{DoxyParams}{Parameters}
+{\em nu} & frequency in Hz \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_object_a43fe041144add66155668ca88a99fd98}\label{class_gyoto_1_1_object_a43fe041144add66155668ca88a99fd98}} 
+\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}!setParameter@{setParameter}}
+\index{setParameter@{setParameter}!Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+\doxysubsubsection{\texorpdfstring{setParameter()}{setParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Object\+::set\+Parameter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_property}{Gyoto\+::\+Property}} const \&}]{p,  }\item[{std\+::string const \&}]{name,  }\item[{std\+::string const \&}]{content,  }\item[{std\+::string const \&}]{unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Set parameter by \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} (and name) 
+
+This function is used when parsing an XML description, if \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} ({\itshape p}) of this {\itshape name} is found (i.\+e. either {\itshape p.\+name} or {\itshape p.\+name\+\_\+false} is equal to {\itshape name}). Implementation should fall-\/back on calling the direct\textquotesingle{}s parent implementation\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class }A: \textcolor{keyword}{public} \mbox{\hyperlink{class_gyoto_1_1_object_a5834e83ca1482a379c7ddefb1919457f}{Object}} \{\};}
+\DoxyCodeLine{\textcolor{keyword}{class }B: \textcolor{keyword}{public} A \{ }
+\DoxyCodeLine{ \textcolor{keyword}{using} B::setParameter;}
+\DoxyCodeLine{ \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_gyoto_1_1_object_a45969ac469cf6979037229c2741b226b}{setParameter}}(\mbox{\hyperlink{class_gyoto_1_1_property}{Gyoto::Property}} \textcolor{keyword}{const} \&p,}
+\DoxyCodeLine{                           std::string name,}
+\DoxyCodeLine{                        std::string content,}
+\DoxyCodeLine{                        std::string unit);}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{\textcolor{keywordtype}{void} B::setParameter(\mbox{\hyperlink{class_gyoto_1_1_property}{Gyoto::Property}} \textcolor{keyword}{const} \&p,}
+\DoxyCodeLine{                          std::string name,}
+\DoxyCodeLine{                  std::string content,}
+\DoxyCodeLine{                  std::string unit) \{}
+\DoxyCodeLine{  \textcolor{keywordflow}{if} (name==\textcolor{stringliteral}{"{}Duff"{}}) doSomething(content, unit);}
+\DoxyCodeLine{  \textcolor{keywordflow}{else} A::setParameter(p, name, content, unit);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} that matches {\itshape name} ({\itshape p.\+name} == {\itshape name} or {\itshape p.\+name\+\_\+false} == {\itshape name}) \\
+\hline
+{\em name} & XML name of the parameter (XML entity) \\
+\hline
+{\em content} & string representation of the value \\
+\hline
+{\em unit} & string representation of the unit \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_polish_doughnut_a13a8a59bd3738f5739db0550dbb42003}{Gyoto\+::\+Astrobj\+::\+Polish\+Doughnut}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_object_a45969ac469cf6979037229c2741b226b}\label{class_gyoto_1_1_object_a45969ac469cf6979037229c2741b226b}} 
+\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}!setParameter@{setParameter}}
+\index{setParameter@{setParameter}!Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+\doxysubsubsection{\texorpdfstring{setParameter()}{setParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual int Gyoto\+::\+Object\+::set\+Parameter (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{content,  }\item[{std\+::string}]{unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Set parameter by name. 
+
+This function is used when parsing an XML description, if no \mbox{\hyperlink{class_gyoto_1_1_property}{Property}} of this {\itshape name} is found. Overriding implementation should fall-\/back on calling the direct\textquotesingle{}s parent implementation\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class }A: \textcolor{keyword}{public} \mbox{\hyperlink{class_gyoto_1_1_object_a5834e83ca1482a379c7ddefb1919457f}{Object}} \{\};}
+\DoxyCodeLine{\textcolor{keyword}{class }B: \textcolor{keyword}{public} A \{ }
+\DoxyCodeLine{ \textcolor{keyword}{using} B::setParameter;}
+\DoxyCodeLine{ \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_gyoto_1_1_object_a45969ac469cf6979037229c2741b226b}{setParameter}}(std::string name,}
+\DoxyCodeLine{                    std::string content,}
+\DoxyCodeLine{                    std::string unit);}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{\textcolor{keywordtype}{int} B::setParameter(std::string name,}
+\DoxyCodeLine{                    std::string content,}
+\DoxyCodeLine{                    std::string unit) \{}
+\DoxyCodeLine{  \textcolor{keywordflow}{if} (name==\textcolor{stringliteral}{"{}Duff"{}}) doSomething(content, unit);}
+\DoxyCodeLine{  \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} A::setParameter(name, content, unit);}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} 0;  \textcolor{comment}{// name was known}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & XML name of the parameter (XML entity). This may have a path component, e.\+g. \char`\"{}\+Astrobj\+::\+Radius\char`\"{}, in which case a property named \char`\"{}\+Astrobj\char`\"{} will be sought in the current object, and set\+Parameter will be called recusrively on this \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}} with Radius as name. \\
+\hline
+{\em content} & string representation of the value \\
+\hline
+{\em unit} & string representation of the unit \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if this parameter is known, 1 if it is not. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_rot_star3__1_ac2fbf2bb5796e3d7c7eb80dccfe20af7}{Gyoto\+::\+Metric\+::\+Rot\+Star3\+\_\+1}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_star_a628aa18277af464450896efd63206527}{Gyoto\+::\+Astrobj\+::\+Star}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_kerr_k_s_a4c9d3a51c5d1478908516a0b96a42135}{Gyoto\+::\+Metric\+::\+Kerr\+KS}}, and \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_equatorial_hot_spot_a0c6f1aee4a478c5ef695348d64eae2d4}{Gyoto\+::\+Astrobj\+::\+Equatorial\+Hot\+Spot}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_object_aa0a8b119e7aa95b21be081f8c97e1626}\label{class_gyoto_1_1_object_aa0a8b119e7aa95b21be081f8c97e1626}} 
+\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}!setParameters@{setParameters}}
+\index{setParameters@{setParameters}!Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+\doxysubsubsection{\texorpdfstring{setParameters()}{setParameters()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Object\+::set\+Parameters (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$}]{fmp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Main loop for parsing Properties from XML description. 
+
+\begin{DoxyVerb} This function queries the FactoryMessenger for elements to parse,
+ and tries to matche each element to a Property to set it
+ accordingly.
+
+ Any class that tries to be buildable from XML must supply a
+ subcontractor (for base classes such as Metric, Astrobj, Spectrum
+ and Spectrometer, it is done as a template that must be
+ specialized for each class).
+
+ This subcontractor typically looks somewhat like this:
+\end{DoxyVerb}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{SmartPointer<Metric::Generic>}
+\DoxyCodeLine{\mbox{\hyperlink{namespace_gyoto_1_1_astrobj_a889583a9d40c821bd55c4191cb3201ed}{Gyoto::Metric::MyKind::Subcontractor}}(FactoryMessenger* fmp) \{}
+\DoxyCodeLine{  SmartPointer<MyKind> gg = \textcolor{keyword}{new} MyKind();}
+\DoxyCodeLine{  gg -\/> \mbox{\hyperlink{class_gyoto_1_1_object_aa0a8b119e7aa95b21be081f8c97e1626}{setParameters}}(fmp);}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} gg;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ \begin{DoxyVerb} Although this is discouraged, it is possible to override the
+ following functions to customize how XML entities are parsed:
+   - setParameters() if low-level access to the
+     FactoryMessenger is required;
+   - setParameter(std::string name,
+                  std::string content,
+                  std::string unit)
+     to interpret an entity that does not match a Property
+     (e.g. alternative name);
+   - setParameter(Gyoto::Property const &p,
+                  std::string const &name,
+                  std::string const &content,
+                  std::string const &unit)
+     to change how a Property is interpreted.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_oscil_torus_a0e4df99b42b3d3722d6ea39972d1421d}{Gyoto\+::\+Astrobj\+::\+Oscil\+Torus}}, \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_uniform_aaca1850f712a089a6c5e0188aec0e5a4}{Gyoto\+::\+Spectrometer\+::\+Uniform}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_star_ad1ad60d3ce8861dfa8626ca908e5789e}{Gyoto\+::\+Astrobj\+::\+Star}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_shift_a81a5f0f4f32f5be884a4445f1d1d5b17}{Gyoto\+::\+Metric\+::\+Shift}}, \mbox{\hyperlink{class_gyoto_1_1_photon_a7a6664a5de91b1c59ba1b57d54ba1dd9}{Gyoto\+::\+Photon}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_equatorial_hot_spot_a931ca188ae49a0d8e9764a151edd3553}{Gyoto\+::\+Astrobj\+::\+Equatorial\+Hot\+Spot}}, \mbox{\hyperlink{class_gyoto_1_1_spectrometer_1_1_complex_a008340295dbb21fbddfa6ad7612da80e}{Gyoto\+::\+Spectrometer\+::\+Complex}}, \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_complex_a5607f9166dc2c1a0a7bd61cde6a71c57}{Gyoto\+::\+Metric\+::\+Complex}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_complex_a635b0ea47d78c02a999d932eec8b16c5}{Gyoto\+::\+Astrobj\+::\+Complex}}, and \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic_a1872b827525ccb1fdedb614474992a6a}{Gyoto\+::\+Astrobj\+::\+Generic}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_object_ac48ad88e3ef229ba0d0fe68a94a7118f}\label{class_gyoto_1_1_object_ac48ad88e3ef229ba0d0fe68a94a7118f}} 
+\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}!kind\_@{kind\_}}
+\index{kind\_@{kind\_}!Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+\doxysubsubsection{\texorpdfstring{kind\_}{kind\_}}
+{\footnotesize\ttfamily std\+::string Gyoto\+::\+Object\+::kind\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+The \char`\"{}kind\char`\"{} that is output in the XML entity. 
+
+E.\+g. for an \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}}, \mbox{\hyperlink{class_gyoto_1_1_object_a0ffc3f84b4c2372d639eb848605fb1f3}{fill\+Element()}} will ensure 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<Astrobj \mbox{\hyperlink{class_gyoto_1_1_object_a9f46de678c67e9050cf3a8b9677e1d73}{kind}}=\textcolor{stringliteral}{"{}kind\_"{}} ...>...</Astrobj>}
+
+\end{DoxyCode}
+ is written. \mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_abf1c1e431cdd4f08f13de581cccb6770}\label{class_gyoto_1_1_smart_pointee_abf1c1e431cdd4f08f13de581cccb6770}} 
+\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}!mutex\_@{mutex\_}}
+\index{mutex\_@{mutex\_}!Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+\doxysubsubsection{\texorpdfstring{mutex\_}{mutex\_}}
+{\footnotesize\ttfamily pthread\+\_\+mutex\+\_\+t Gyoto\+::\+Smart\+Pointee\+::mutex\+\_\+\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+
+
+A mutex. 
+
+When compiled with libpthread \mbox{\Hypertarget{class_gyoto_1_1_object_a01832761cd5f0a12319e3e24ce9a9fba}\label{class_gyoto_1_1_object_a01832761cd5f0a12319e3e24ce9a9fba}} 
+\index{Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}!plugins\_@{plugins\_}}
+\index{plugins\_@{plugins\_}!Gyoto::Spectrum::ThermalSynchrotron@{Gyoto::Spectrum::ThermalSynchrotron}}
+\doxysubsubsection{\texorpdfstring{plugins\_}{plugins\_}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Gyoto\+::\+Object\+::plugins\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+The plug-\/ins that needs to be loaded to access this instance\textquotesingle{}s class. 
+
+E.\+g. for an \mbox{\hyperlink{namespace_gyoto_1_1_astrobj}{Astrobj}}, \mbox{\hyperlink{class_gyoto_1_1_object_a0ffc3f84b4c2372d639eb848605fb1f3}{fill\+Element()}} will ensure 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<Astrobj ... plugin=\textcolor{stringliteral}{"{}plugins\_"{}}>...</Astrobj>}
+
+\end{DoxyCode}
+ is written. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_gyoto_thermal_synchrotron_spectrum_8h}{Gyoto\+Thermal\+Synchrotron\+Spectrum.\+h}}\end{DoxyCompactItemize}

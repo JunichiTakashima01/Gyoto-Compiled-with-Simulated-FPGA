@@ -1,0 +1,121 @@
+\hypertarget{class_gyoto_1_1_hook_1_1_teller}{}\doxysection{Gyoto\+::Hook\+::Teller Class Reference}
+\label{class_gyoto_1_1_hook_1_1_teller}\index{Gyoto::Hook::Teller@{Gyoto::Hook::Teller}}
+
+
+Listen to me and I\textquotesingle{}ll warn you when I change.  
+
+
+
+
+{\ttfamily \#include $<$Gyoto\+Hooks.\+h$>$}
+
+Inheritance diagram for Gyoto\+::Hook\+::Teller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.254295cm]{class_gyoto_1_1_hook_1_1_teller}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_hook_1_1_teller_adb1af4c097a95ac19070cb452e280abb}\label{class_gyoto_1_1_hook_1_1_teller_adb1af4c097a95ac19070cb452e280abb}} 
+\mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller_adb1af4c097a95ac19070cb452e280abb}{Teller}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_hook_1_1_teller_add28f0a06265233ccacf5e9ac8537bf2}\label{class_gyoto_1_1_hook_1_1_teller_add28f0a06265233ccacf5e9ac8537bf2}} 
+\mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller_add28f0a06265233ccacf5e9ac8537bf2}{Teller}} (const \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller}{Teller}} \&)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_hook_1_1_teller_a7228f637ed7a007a0c6a810a89f3b188}\label{class_gyoto_1_1_hook_1_1_teller_a7228f637ed7a007a0c6a810a89f3b188}} 
+virtual \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller_a7228f637ed7a007a0c6a810a89f3b188}{$\sim$\+Teller}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller_a55dca3f3b9707bd18ae4a0dd98befd70}{hook}} (\mbox{\hyperlink{class_gyoto_1_1_hook_1_1_listener}{Listener}} $\ast$listener)
+\begin{DoxyCompactList}\small\item\em Start listening. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller_a8bcbb785f92fefe4e76afe76eb175f8a}{unhook}} (\mbox{\hyperlink{class_gyoto_1_1_hook_1_1_listener}{Listener}} $\ast$listener)
+\begin{DoxyCompactList}\small\item\em Stop listening. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller_af9a1daa629900f00538096987e398a13}{tell\+Listeners}} ()
+\begin{DoxyCompactList}\small\item\em Call tell() on each hooked \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_listener}{Listener}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_hook_1_1_teller_ae336573bbbf1b8a5b71d8fbac1408030}\label{class_gyoto_1_1_hook_1_1_teller_ae336573bbbf1b8a5b71d8fbac1408030}} 
+\mbox{\hyperlink{class_listener_item}{Listener\+Item}} $\ast$ \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller_ae336573bbbf1b8a5b71d8fbac1408030}{listeners\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Linked list of \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_listener}{Listener}} items. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_hook_1_1_teller_a65a9e1acf2d66b8c8b371265476e35e1}\label{class_gyoto_1_1_hook_1_1_teller_a65a9e1acf2d66b8c8b371265476e35e1}} 
+class {\bfseries Gyoto\+::\+Hook\+::\+Listener}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Listen to me and I\textquotesingle{}ll warn you when I change. 
+
+Listen to me by calling my \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller_a55dca3f3b9707bd18ae4a0dd98befd70}{hook()}} method. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_hook_1_1_teller_a55dca3f3b9707bd18ae4a0dd98befd70}\label{class_gyoto_1_1_hook_1_1_teller_a55dca3f3b9707bd18ae4a0dd98befd70}} 
+\index{Gyoto::Hook::Teller@{Gyoto::Hook::Teller}!hook@{hook}}
+\index{hook@{hook}!Gyoto::Hook::Teller@{Gyoto::Hook::Teller}}
+\doxysubsubsection{\texorpdfstring{hook()}{hook()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Hook\+::\+Teller\+::hook (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_hook_1_1_listener}{Listener}} $\ast$}]{listener }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Start listening. 
+
+Use from a \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_listener}{Hook\+::\+Listener}} object method\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{teller-\/>hook(\textcolor{keyword}{this})}
+
+\end{DoxyCode}
+ where \char`\"{}this\char`\"{} is a \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_listener}{Listener}} and \char`\"{}teller\char`\"{} is a \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller}{Teller}}.
+
+Use \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller_a8bcbb785f92fefe4e76afe76eb175f8a}{unhook()}} later to stop listening to a given \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller}{Teller}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & pointer to the new listener \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gyoto_1_1_hook_1_1_teller_af9a1daa629900f00538096987e398a13}\label{class_gyoto_1_1_hook_1_1_teller_af9a1daa629900f00538096987e398a13}} 
+\index{Gyoto::Hook::Teller@{Gyoto::Hook::Teller}!tellListeners@{tellListeners}}
+\index{tellListeners@{tellListeners}!Gyoto::Hook::Teller@{Gyoto::Hook::Teller}}
+\doxysubsubsection{\texorpdfstring{tellListeners()}{tellListeners()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Hook\+::\+Teller\+::tell\+Listeners (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Call tell() on each hooked \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_listener}{Listener}}. 
+
+Whenever a \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller}{Teller}} mutates, it should warn any \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_listener}{Listener}} hooked to it using \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller_af9a1daa629900f00538096987e398a13}{tell\+Listeners()}}. \mbox{\Hypertarget{class_gyoto_1_1_hook_1_1_teller_a8bcbb785f92fefe4e76afe76eb175f8a}\label{class_gyoto_1_1_hook_1_1_teller_a8bcbb785f92fefe4e76afe76eb175f8a}} 
+\index{Gyoto::Hook::Teller@{Gyoto::Hook::Teller}!unhook@{unhook}}
+\index{unhook@{unhook}!Gyoto::Hook::Teller@{Gyoto::Hook::Teller}}
+\doxysubsubsection{\texorpdfstring{unhook()}{unhook()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Hook\+::\+Teller\+::unhook (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_hook_1_1_listener}{Listener}} $\ast$}]{listener }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Stop listening. 
+
+Use from a \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_listener}{Hook\+::\+Listener}} object method\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{teller-\/>unhook(\textcolor{keyword}{this})}
+
+\end{DoxyCode}
+
+
+where \char`\"{}this\char`\"{} is a \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_listener}{Listener}}, \char`\"{}teller\char`\"{} is a \mbox{\hyperlink{class_gyoto_1_1_hook_1_1_teller}{Teller}}, and \char`\"{}this\char`\"{} has called teller-\/$>$hook(this) previously.
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & pointer to the listener \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_gyoto_hooks_8h}{Gyoto\+Hooks.\+h}}\end{DoxyCompactItemize}

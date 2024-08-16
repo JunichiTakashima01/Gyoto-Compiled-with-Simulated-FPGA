@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_g_y_o_t_o___a_r_r_a_y" kind="class" language="C++" prot="public">
+    <compoundname>GYOTO_ARRAY</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+        <declname>sz</declname>
+        <defname>sz</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_g_y_o_t_o___a_r_r_a_y_1a2701525a8914d0d06c1f9cf1313c7d46" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T GYOTO_ARRAY&lt; T, sz &gt;::buf[sz]</definition>
+        <argsstring>[sz]</argsstring>
+        <name>buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="45" column="5" bodyfile="/home/junichi/Gyoto/include/GyotoScreen.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_g_y_o_t_o___a_r_r_a_y_1a790b630aeae821278a177ceb80eb49c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; GYOTO_ARRAY&lt; T, sz &gt;::operator[]</definition>
+        <argsstring>(size_t c)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="47" column="5" bodyfile="/home/junichi/Gyoto/include/GyotoScreen.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/junichi/Gyoto/include/GyotoScreen.h" line="43" column="14" bodyfile="/home/junichi/Gyoto/include/GyotoScreen.h" bodystart="43" bodyend="48"/>
+    <listofallmembers>
+      <member refid="class_g_y_o_t_o___a_r_r_a_y_1a2701525a8914d0d06c1f9cf1313c7d46" prot="private" virt="non-virtual"><scope>GYOTO_ARRAY</scope><name>buf</name></member>
+      <member refid="class_g_y_o_t_o___a_r_r_a_y_1a790b630aeae821278a177ceb80eb49c2" prot="public" virt="non-virtual"><scope>GYOTO_ARRAY</scope><name>operator[]</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

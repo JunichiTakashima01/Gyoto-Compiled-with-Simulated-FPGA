@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="yorick_plugin_page" kind="page">
+    <compoundname>yorick_plugin_page</compoundname>
+    <title>Gyoto for Yorick</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="yorick_plugin_page_1yoprerec_sec">
+<title>Prerequisites</title>
+<sect2 id="yorick_plugin_page_1yo_sec">
+<title>Yorick</title>
+<para>For direct access to <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>, only Yorick (&gt;=2.2) is required. Yorick comes precompiled with many distributions of Linux and is present in the Macports. You can also find source code at <ulink url="https://github.com/dhmunro/yorick">https://github.com/dhmunro/yorick</ulink></para>
+<para>For the graphical user interface Gyotoy, you&apos;ll need a few additional pieces. First of all, I seriously doubt it will run under MS Windows, but please report any news on that front.</para>
+</sect2>
+<sect2 id="yorick_plugin_page_1yutils_sec">
+<title>Yutils</title>
+<para>A collection of utilities for Yorick, distributed as yorick-yutils in many Linux distributions. Actually, only pyk.i is used in Gyotoy (so far), and as of writing, the CVS version is required.</para>
+<para>Either get yutils &gt; 1.4.0 from e.g. <ulink url="http://www.maumae.net/yorick/packages/src/">http://www.maumae.net/yorick/packages/src/</ulink> or fetch pyk.i from the CVS browser at <ulink url="http://yorick.cvs.sourceforge.net/viewvc/yorick/yorick-yutils/pyk.i?view=markup">http://yorick.cvs.sourceforge.net/viewvc/yorick/yorick-yutils/pyk.i?view=markup</ulink></para>
+</sect2>
+<sect2 id="yorick_plugin_page_1pygtk_sec">
+<title>PyGObject</title>
+<para>The graphical interface gyotoy needs yorick-gy and the Gtk 3 GObject Introspection files. Get yorick-gy from: <ulink url="https://github.com/paumard/yorick-gy">https://github.com/paumard/yorick-gy</ulink></para>
+<para>Under Mac OS X (using macports), install the gtk3 package. Under a Debian derivative GNU/Linux system, install gir1.2-gtk-3.0. Check yorick/README.gyotoy in the source distribution for more details.</para>
+</sect2>
+</sect1>
+<sect1 id="yorick_plugin_page_1building_sec">
+<title>Building</title>
+<para>From the <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> source directory (i.e. the directory which contains the yorick/ subdirectory: <programlisting><codeline><highlight class="normal">make<sp/>yorick</highlight></codeline>
+</programlisting></para>
+<para>You can check the package by running <programlisting><codeline><highlight class="normal">make<sp/>check-yorick</highlight></codeline>
+</programlisting></para>
+</sect1>
+<sect1 id="yorick_plugin_page_1installing_sec">
+<title>Installing</title>
+<para><programlisting><codeline><highlight class="normal">sudo<sp/>make<sp/>install-yorick</highlight></codeline>
+</programlisting></para>
+</sect1>
+<sect1 id="yorick_plugin_page_1running_sec">
+<title>Running</title>
+<para>Read gyoto.i and check.i for using <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> from within Yorick.</para>
+<para>The graphical interface, Gyotoy, can be run with <programlisting><codeline><highlight class="normal">yorick<sp/>-i<sp/>gyotoy.i</highlight></codeline>
+</programlisting> or <programlisting><codeline><highlight class="normal">gyotoy</highlight></codeline>
+</programlisting> </para>
+</sect1>
+    </detaileddescription>
+    <location file="/home/junichi/Gyoto/include/Gyoto.h"/>
+  </compounddef>
+</doxygen>

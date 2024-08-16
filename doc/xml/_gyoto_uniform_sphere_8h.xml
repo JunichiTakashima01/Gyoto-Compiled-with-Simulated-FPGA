@@ -1,0 +1,422 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_gyoto_uniform_sphere_8h" kind="file" language="C++">
+    <compoundname>GyotoUniformSphere.h</compoundname>
+    <includes refid="_gyoto_metric_8h" local="no">GyotoMetric.h</includes>
+    <includes refid="_gyoto_standard_astrobj_8h" local="no">GyotoStandardAstrobj.h</includes>
+    <includes refid="_gyoto_spectrum_8h" local="no">GyotoSpectrum.h</includes>
+    <includes refid="_gyoto_register_8h" local="no">GyotoRegister.h</includes>
+    <includes local="no">string</includes>
+    <includedby refid="_gyoto_fixed_star_8h" local="no">GyotoFixedStar.h</includedby>
+    <includedby refid="_gyoto_free_star_8h" local="no">GyotoFreeStar.h</includedby>
+    <includedby refid="_gyoto_plasmoid_8h" local="no">GyotoPlasmoid.h</includedby>
+    <includedby refid="_gyoto_star_8h" local="no">GyotoStar.h</includedby>
+    <incdepgraph>
+      <node id="18">
+        <label>iomanip</label>
+      </node>
+      <node id="1">
+        <label>GyotoUniformSphere.h</label>
+        <link refid="_gyoto_uniform_sphere_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>float.h</label>
+      </node>
+      <node id="8">
+        <label>GyotoUtils.h</label>
+        <link refid="_gyoto_utils_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>GyotoSpectrum.h</label>
+        <link refid="_gyoto_spectrum_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>eigen3/Eigen/Dense</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="7">
+        <label>GyotoSmartPointer.h</label>
+        <link refid="_gyoto_smart_pointer_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>GyotoObject.h</label>
+        <link refid="_gyoto_object_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>stddef.h</label>
+      </node>
+      <node id="4">
+        <label>fstream</label>
+      </node>
+      <node id="22">
+        <label>GyotoRegister.h</label>
+        <link refid="_gyoto_register_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>GyotoStandardAstrobj.h</label>
+        <link refid="_gyoto_standard_astrobj_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>GyotoMetric.h</label>
+        <link refid="_gyoto_metric_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>GyotoDefs.h</label>
+        <link refid="_gyoto_defs_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>pthread.h</label>
+      </node>
+      <node id="15">
+        <label>typeinfo</label>
+      </node>
+      <node id="25">
+        <label>GyotoFunctors.h</label>
+        <link refid="_gyoto_functors_8h"/>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+      <node id="10">
+        <label>GyotoConfig.h</label>
+        <link refid="_gyoto_config_8h"/>
+      </node>
+      <node id="20">
+        <label>sstream</label>
+      </node>
+      <node id="17">
+        <label>GyotoAstrobj.h</label>
+        <link refid="_gyoto_astrobj_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="13">
+        <label>GyotoError.h</label>
+        <link refid="_gyoto_error_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>GyotoHooks.h</label>
+        <link refid="_gyoto_hooks_8h"/>
+      </node>
+      <node id="19">
+        <label>GyotoConverters.h</label>
+        <link refid="_gyoto_converters_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>GyotoUniformSphere.h</label>
+        <link refid="_gyoto_uniform_sphere_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>GyotoFixedStar.h</label>
+        <link refid="_gyoto_fixed_star_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>GyotoBlob.h</label>
+        <link refid="_gyoto_blob_8h"/>
+      </node>
+      <node id="4">
+        <label>GyotoFreeStar.h</label>
+        <link refid="_gyoto_free_star_8h_source"/>
+      </node>
+      <node id="9">
+        <label>GyotoStarTrace.h</label>
+        <link refid="_gyoto_star_trace_8h"/>
+      </node>
+      <node id="5">
+        <label>GyotoPlasmoid.h</label>
+        <link refid="_gyoto_plasmoid_8h"/>
+      </node>
+      <node id="8">
+        <label>GyotoInflateStar.h</label>
+        <link refid="_gyoto_inflate_star_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Gyoto.h</label>
+        <link refid="_gyoto_8h"/>
+      </node>
+      <node id="6">
+        <label>GyotoStar.h</label>
+        <link refid="_gyoto_star_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere" prot="public">Gyoto::Astrobj::UniformSphere</innerclass>
+    <innernamespace refid="namespace_gyoto">Gyoto</innernamespace>
+    <innernamespace refid="namespace_gyoto_1_1_astrobj">Gyoto::Astrobj</innernamespace>
+    <briefdescription>
+<para>Optically thick or thin, spherical objects. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere" kindref="compound">Gyoto::Astrobj::UniformSphere</ref> is an abstract type from which uniform, spherical objects inherit (in particular, the <ref refid="class_gyoto_1_1_astrobj_1_1_star" kindref="compound">Gyoto::Astrobj::Star</ref> and <ref refid="class_gyoto_1_1_astrobj_1_1_fixed_star" kindref="compound">Gyoto::Astrobj::FixedStar</ref> classes). </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>Copyright<sp/>2011-2014,<sp/>2018-2019<sp/>Frederic<sp/>Vincent,<sp/>Thibaut<sp/>Paumard</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>Gyoto.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"></highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"></highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"></highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>Gyoto.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__GyotoUniformSphere_H_<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__GyotoUniformSphere_H_<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Astrobj<sp/>{<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">UniformSphere;<sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_metric_8h" kindref="compound">GyotoMetric.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_standard_astrobj_8h" kindref="compound">GyotoStandardAstrobj.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_spectrum_8h" kindref="compound">GyotoSpectrum.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>GYOTO_USE_XERCES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_register_8h" kindref="compound">GyotoRegister.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere" kindref="compound">Gyoto::Astrobj::UniformSphere</ref><sp/>:</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_standard" kindref="compound">Gyoto::Astrobj::Standard</ref><sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt;<ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>::<ref refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere" kindref="compound">Astrobj::UniformSphere</ref>&gt;;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Data<sp/>:<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>-----</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="96" refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1aebf75bbc992ab038329bb19a5e39d756" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1aebf75bbc992ab038329bb19a5e39d756" kindref="member">radius_</ref><sp/>;<sp/></highlight></codeline>
+<codeline lineno="97" refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1ac169925e8414775f7dbfa876b5028e2d" refkind="member"><highlight class="normal"><sp/><sp/>bool<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1ac169925e8414775f7dbfa876b5028e2d" kindref="member">isotropic_</ref>;<sp/></highlight></codeline>
+<codeline lineno="98" refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1afbd7b86a1aeab73e9f94cc743e942046" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt;Spectrum::Generic&gt;<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1afbd7b86a1aeab73e9f94cc743e942046" kindref="member">spectrum_</ref>;<sp/></highlight></codeline>
+<codeline lineno="99" refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1a5a771f0843f820c25eb4e78fd5155058" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt;Spectrum::Generic&gt;<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1a5a771f0843f820c25eb4e78fd5155058" kindref="member">opacity_</ref>;<sp/></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1aeadb79c18400b7e308338690246be14c" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1aeadb79c18400b7e308338690246be14c" kindref="member">dltmor_</ref>;<sp/></highlight></codeline>
+<codeline lineno="102" refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1ad80007ec032c154b65d670d41c4db71e" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1ad80007ec032c154b65d670d41c4db71e" kindref="member">dltmod_</ref>;<sp/></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Constructors<sp/>-<sp/>Destructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>-------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="107" refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1a21ee6813c28d7a90d13e0f1083946fea" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" kindref="member">GYOTO_OBJECT</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1a3ddd27cf6ccd639a1dfe416c07be5ffc" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere" kindref="compound">UniformSphere</ref>(std::string<sp/>kind,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SmartPointer&lt;Metric::Generic&gt;<sp/>gg,<sp/>double<sp/>radius)<sp/>;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1a4c46ab5f3de6bf925c55cadedba7fad9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere" kindref="compound">UniformSphere</ref>(std::string<sp/>kind);<sp/></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="127" refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1ac9bb2f92e42132fe6e4d13f0143f6dfc" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere" kindref="compound">UniformSphere</ref>(const<sp/>UniformSphere&amp;<sp/>orig);<sp/></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1a2cd7a791cc9eb8244badc2bfd18f470a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere" kindref="compound">UniformSphere</ref>()<sp/>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Accessors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>---------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="134" refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1aa624d01af4be3614d349c1809516bb36" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1aa624d01af4be3614d349c1809516bb36" kindref="member">className</ref>()<sp/>const<sp/>;<sp/></highlight></codeline>
+<codeline lineno="135" refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1ad1ebbfdd4751504319b607fcfa3dfce5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1ad1ebbfdd4751504319b607fcfa3dfce5" kindref="member">className_l</ref>()<sp/>const<sp/>;<sp/></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1a6687bc8062ddb7b085531805f7e90218" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1a7a72bf3b1fb87c1641dc59a5c2c7e95d" kindref="member">spectrum</ref>(SmartPointer&lt;Spectrum::Generic&gt;);</highlight></codeline>
+<codeline lineno="139" refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1a7a72bf3b1fb87c1641dc59a5c2c7e95d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt;Spectrum::Generic&gt;<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1a7a72bf3b1fb87c1641dc59a5c2c7e95d" kindref="member">spectrum</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="141" refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1aa3fad5ceba1126c9792721dceaa54889" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1a6c6781d676a5d8755c69b9fb9a424c21" kindref="member">opacity</ref>(SmartPointer&lt;Spectrum::Generic&gt;);</highlight></codeline>
+<codeline lineno="143" refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1a6c6781d676a5d8755c69b9fb9a424c21" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt;Spectrum::Generic&gt;<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1a6c6781d676a5d8755c69b9fb9a424c21" kindref="member">opacity</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="145" refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1a2aea833f9a7d311ebe20ab5760fa224c" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1a2aea833f9a7d311ebe20ab5760fa224c" kindref="member">radius</ref>()<sp/>const<sp/>;<sp/></highlight></codeline>
+<codeline lineno="146" refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1a7e4cc8c5335694bf74684fd47421e5a2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><sp/><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1a2aea833f9a7d311ebe20ab5760fa224c" kindref="member">radius</ref>(double);<sp/></highlight></codeline>
+<codeline lineno="147" refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1aecdeb59ffd2238ea17d16edfbd9ac537" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1a2aea833f9a7d311ebe20ab5760fa224c" kindref="member">radius</ref>(std::string<sp/>const<sp/>&amp;)<sp/>const<sp/>;<sp/></highlight></codeline>
+<codeline lineno="148" refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1ace341bcc018e32817483518a2861737a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><sp/><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1a2aea833f9a7d311ebe20ab5760fa224c" kindref="member">radius</ref>(double,<sp/>std::string<sp/>const<sp/>&amp;);<sp/></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1a657c4e7d92af87a2baff31aab44e1ad4" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1a657c4e7d92af87a2baff31aab44e1ad4" kindref="member">deltaMaxOverRadius</ref>()<sp/>const<sp/>;<sp/></highlight></codeline>
+<codeline lineno="151" refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1a1a288e87aaac846c66785a3334ddbb14" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><sp/><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1a657c4e7d92af87a2baff31aab44e1ad4" kindref="member">deltaMaxOverRadius</ref>(double<sp/>f);<sp/></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1af06f064b6e6bf8b69891fb42bffe9ff1" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1af06f064b6e6bf8b69891fb42bffe9ff1" kindref="member">deltaMaxOverDistance</ref>()<sp/>const<sp/>;<sp/></highlight></codeline>
+<codeline lineno="154" refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1aa722f232b7256c5af7bba02283dc2444" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><sp/><sp/><ref refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1af06f064b6e6bf8b69891fb42bffe9ff1" kindref="member">deltaMaxOverDistance</ref>(double<sp/>f);<sp/></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/>bool<sp/>isotropic()<sp/>const;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/>void<sp/>isotropic(bool);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/>double<sp/>alpha()<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/>void<sp/>alpha(double);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1a1e4971aa995221805a8dfbd9ba3b2684" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/>operator()(double<sp/>const<sp/>coord[4])<sp/>;</highlight></codeline>
+<codeline lineno="165"></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1a167b6712b5b6adec7cbce993d5edce81" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1a167b6712b5b6adec7cbce993d5edce81" kindref="member">deltaMax</ref>(double*coord);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="178" refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1a5bb0f209ef90a9331297caf3013a9225" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1a5bb0f209ef90a9331297caf3013a9225" kindref="member">getCartesian</ref>(double<sp/>const<sp/>*<sp/>const<sp/>dates,<sp/>size_t<sp/>const<sp/>n_dates,</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>*<sp/>const<sp/>x,<sp/>double<sp/>*<sp/>const<sp/>y,</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>*<sp/>const<sp/>z,<sp/>double<sp/>*<sp/>const<sp/>xprime=NULL,</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>*<sp/>const<sp/>yprime=NULL,<sp/><sp/>double<sp/>*<sp/>const<sp/>zprime=NULL)<sp/>=0;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184" refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1aa3393591c9e1fef3171f4016109a888e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>void<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1aa3393591c9e1fef3171f4016109a888e" kindref="member">getVelocity</ref>(double<sp/>const<sp/>pos[4],<sp/>double<sp/>vel[4])<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/>using<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_generic_1a93d130767671c25823d5ec3fd477e28a" kindref="member">Standard::emission</ref>;</highlight></codeline>
+<codeline lineno="188" refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1a145deb35b7401163837aaa50ce6952ac" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1a145deb35b7401163837aaa50ce6952ac" kindref="member">emission</ref>(double<sp/>nu_em,<sp/>double<sp/>dsem,</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>state_t<sp/>const<sp/>&amp;cp,<sp/>double<sp/>const<sp/>co[8]=NULL)<sp/>const;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/>using<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_generic_1a320317a0c347ab4317152b93952dab24" kindref="member">Standard::integrateEmission</ref>;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/>integrateEmission(double<sp/>nu1,<sp/>double<sp/>nu2,<sp/>double<sp/>dsem,</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>state_t<sp/>const<sp/>&amp;c_ph,<sp/>double<sp/>const<sp/>*c_obj=NULL)<sp/>const;</highlight></codeline>
+<codeline lineno="194" refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1ae4a487638d2a645011a780b8f22caafc" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>double<sp/><ref refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere_1ae4a487638d2a645011a780b8f22caafc" kindref="member">transmission</ref>(double<sp/>nuem,<sp/>double<sp/>dsem,<sp/>state_t<sp/>const<sp/>&amp;,<sp/>double<sp/>const<sp/>*)<sp/>const<sp/>;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/junichi/Gyoto/include/GyotoUniformSphere.h"/>
+  </compounddef>
+</doxygen>

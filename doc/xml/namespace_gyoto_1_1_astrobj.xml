@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespace_gyoto_1_1_astrobj" kind="namespace" language="C++">
+    <compoundname>Gyoto::Astrobj</compoundname>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_generic" prot="public">Gyoto::Astrobj::Generic</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_properties" prot="public">Gyoto::Astrobj::Properties</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_blob" prot="public">Gyoto::Astrobj::Blob</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_complex" prot="public">Gyoto::Astrobj::Complex</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_deformed_torus" prot="public">Gyoto::Astrobj::DeformedTorus</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_directional_disk" prot="public">Gyoto::Astrobj::DirectionalDisk</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_disk3_d" prot="public">Gyoto::Astrobj::Disk3D</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_dynamical_disk" prot="public">Gyoto::Astrobj::DynamicalDisk</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_dynamical_disk3_d" prot="public">Gyoto::Astrobj::DynamicalDisk3D</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_dynamical_disk_bolometric" prot="public">Gyoto::Astrobj::DynamicalDiskBolometric</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_equatorial_hot_spot" prot="public">Gyoto::Astrobj::EquatorialHotSpot</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_fixed_star" prot="public">Gyoto::Astrobj::FixedStar</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_flared_disk_synchrotron" prot="public">Gyoto::Astrobj::FlaredDiskSynchrotron</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_free_star" prot="public">Gyoto::Astrobj::FreeStar</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_inflate_star" prot="public">Gyoto::Astrobj::InflateStar</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_jet" prot="public">Gyoto::Astrobj::Jet</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_neutron_star" prot="public">Gyoto::Astrobj::NeutronStar</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_neutron_star_analytic_emission" prot="public">Gyoto::Astrobj::NeutronStarAnalyticEmission</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_neutron_star_model_atmosphere" prot="public">Gyoto::Astrobj::NeutronStarModelAtmosphere</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_oscil_torus" prot="public">Gyoto::Astrobj::OscilTorus</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_page_thorne_disk" prot="public">Gyoto::Astrobj::PageThorneDisk</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_pattern_disk" prot="public">Gyoto::Astrobj::PatternDisk</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_pattern_disk_b_b" prot="public">Gyoto::Astrobj::PatternDiskBB</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_plasmoid" prot="public">Gyoto::Astrobj::Plasmoid</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_polish_doughnut" prot="public">Gyoto::Astrobj::PolishDoughnut</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_spherical_accretion" prot="public">Gyoto::Astrobj::SphericalAccretion</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_standard" prot="public">Gyoto::Astrobj::Standard</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_star" prot="public">Gyoto::Astrobj::Star</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_star_trace" prot="public">Gyoto::Astrobj::StarTrace</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_thick_disk" prot="public">Gyoto::Astrobj::ThickDisk</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_thin_disk" prot="public">Gyoto::Astrobj::ThinDisk</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_thin_disk_grid_intensity" prot="public">Gyoto::Astrobj::ThinDiskGridIntensity</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_thin_disk_iron_line" prot="public">Gyoto::Astrobj::ThinDiskIronLine</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_thin_disk_p_l" prot="public">Gyoto::Astrobj::ThinDiskPL</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_thin_disk_profile" prot="public">Gyoto::Astrobj::ThinDiskProfile</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_torus" prot="public">Gyoto::Astrobj::Torus</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_uniform_sphere" prot="public">Gyoto::Astrobj::UniformSphere</innerclass>
+    <innerclass refid="class_gyoto_1_1_astrobj_1_1_xillver_reflection" prot="public">Gyoto::Astrobj::XillverReflection</innerclass>
+    <innernamespace refid="namespace_gyoto_1_1_astrobj_1_1_python">Gyoto::Astrobj::Python</innernamespace>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespace_gyoto_1_1_astrobj_1aa53c7ada58c8c8f3799c3485b7d8f3bb" prot="public" static="no">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_astrobj_1_1_generic" kindref="compound">Gyoto::Astrobj::Generic</ref> &gt;</type>
+        <definition>typedef SmartPointer&lt;Gyoto::Astrobj::Generic&gt; Gyoto::Astrobj::Subcontractor_t(Gyoto::FactoryMessenger *, std::vector&lt; std::string &gt; const &amp;)</definition>
+        <argsstring>(Gyoto::FactoryMessenger *, std::vector&lt; std::string &gt; const &amp;)</argsstring>
+        <name>Subcontractor_t</name>
+        <briefdescription>
+<para>A function to build instances of a specific <ref refid="class_gyoto_1_1_astrobj_1_1_generic" kindref="compound">Astrobj::Generic</ref> sub-class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a more specific version of the <ref refid="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" kindref="member">SmartPointee::Subcontractor_t</ref> type. An Astrobj::Subcontrator_t is called by the <ref refid="class_gyoto_1_1_factory" kindref="compound">Gyoto::Factory</ref> to build an instance of the kind of astronomical object specified in an XML file (see <ref refid="namespace_gyoto_1_1_astrobj_1abb6caf3023a51cb77b5f6793ac03b188" kindref="member">Register()</ref>). The <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref> and Subcontractor_t function communicate through a <ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">Gyoto::FactoryMessenger</ref>. A template is provided so that you may not have to code anything. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="63" column="7" bodyfile="/home/junichi/Gyoto/include/GyotoAstrobj.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespace_gyoto_1_1_astrobj_1afbaaaf16f567767a7bd87552a82d1ac8" prot="public" static="no" mutable="no">
+        <type><ref refid="class_gyoto_1_1_register_1_1_entry" kindref="compound">Gyoto::Register::Entry</ref> *</type>
+        <definition>Gyoto::Register::Entry* Gyoto::Astrobj::Register_</definition>
+        <argsstring></argsstring>
+        <name>Register_</name>
+        <briefdescription>
+<para>The <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref> register. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use the <ref refid="namespace_gyoto_1_1_astrobj_1a5a349c75469ecf26bf31a03378549466" kindref="member">Astrobj::initRegister()</ref> once in your program to initiliaze it, the <ref refid="namespace_gyoto_1_1_astrobj_1abb6caf3023a51cb77b5f6793ac03b188" kindref="member">Astrobj::Register()</ref> function to fill it, and the <ref refid="namespace_gyoto_1_1_astrobj_1aff0e3a9c31318709959bb2471a22ff74" kindref="member">Astrobj::getSubcontractor()</ref> function to query it. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="113" column="36" declfile="/home/junichi/Gyoto/include/GyotoAstrobj.h" declline="113" declcolumn="36"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_gyoto_1_1_astrobj_1a889583a9d40c821bd55c4191cb3201ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_astrobj_1_1_generic" kindref="compound">Astrobj::Generic</ref> &gt;</type>
+        <definition>SmartPointer&lt;Astrobj::Generic&gt; Gyoto::Astrobj::Subcontractor</definition>
+        <argsstring>(FactoryMessenger *fmp, std::vector&lt; std::string &gt; const &amp;plugin)</argsstring>
+        <name>Subcontractor</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref> *</type>
+          <declname>fmp</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; const &amp;</type>
+          <declname>plugin</declname>
+        </param>
+        <briefdescription>
+<para>A template for Subcontractor_t functions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Instead of reimplementing the wheel, your subcontractor can simply be <ref refid="namespace_gyoto_1_1_astrobj_1a889583a9d40c821bd55c4191cb3201ed" kindref="member">Gyoto::Astrobj::Subcontractor&lt;MyKind&gt;</ref>.</para>
+<para>If MyKind accepts any XML parameters, it should re-implement <ref refid="class_gyoto_1_1_object_1a45969ac469cf6979037229c2741b226b" kindref="member">Astrobj::Generic::setParameter()</ref> or, if low-level access to the <ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref> is needed, <ref refid="class_gyoto_1_1_astrobj_1_1_generic_1a1872b827525ccb1fdedb614474992a6a" kindref="member">Generic::setParameters()</ref>.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_gyoto_1_1_astrobj_1_1_generic" kindref="compound">Gyoto::Astrobj::Generic</ref> sub-class </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="76" column="29" bodyfile="/home/junichi/Gyoto/include/GyotoAstrobj.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_astrobj_1aff0e3a9c31318709959bb2471a22ff74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_gyoto_1_1_astrobj_1aa53c7ada58c8c8f3799c3485b7d8f3bb" kindref="member">Gyoto::Astrobj::Subcontractor_t</ref> *</type>
+        <definition>Gyoto::Astrobj::Subcontractor_t* Gyoto::Astrobj::getSubcontractor</definition>
+        <argsstring>(std::string name, std::vector&lt; std::string &gt; &amp;plugin, int errmode=0)</argsstring>
+        <name>getSubcontractor</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; &amp;</type>
+          <declname>plugin</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errmode</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Query the <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref> register. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Query the <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref> register to get the <ref refid="namespace_gyoto_1_1_astrobj_1aa53c7ada58c8c8f3799c3485b7d8f3bb" kindref="member">Astrobj::Subcontractor_t</ref> corresponding to a given kind name. This function is normally called only from the <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref>. If plugin is specified, only a subcontractor matching both name and plugin will be returned, loading the plug-in if necessary. If plugin is the empty string, then the first subcontractor matching name will be returned, and the name of the plug-in it belongs to will be returned in plugin upon output.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>e.g. &quot;Star&quot; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">plugin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>e.g. &quot;stdplug&quot;. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">errmode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1 to return NULL in case of failure instead of throwing an <ref refid="class_gyoto_1_1_error" kindref="compound">Error</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the corresponding subcontractor. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="104" column="37" declfile="/home/junichi/Gyoto/include/GyotoAstrobj.h" declline="104" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_astrobj_1a5a349c75469ecf26bf31a03378549466" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Astrobj::initRegister</definition>
+        <argsstring>()</argsstring>
+        <name>initRegister</name>
+        <briefdescription>
+<para>Empty the <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref> register. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This must be called once. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="119" column="10" declfile="/home/junichi/Gyoto/include/GyotoAstrobj.h" declline="119" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1_1_astrobj_1abb6caf3023a51cb77b5f6793ac03b188" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Astrobj::Register</definition>
+        <argsstring>(std::string name, Gyoto::Astrobj::Subcontractor_t *scp)</argsstring>
+        <name>Register</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_gyoto_1_1_astrobj_1aa53c7ada58c8c8f3799c3485b7d8f3bb" kindref="member">Gyoto::Astrobj::Subcontractor_t</ref> *</type>
+          <declname>scp</declname>
+        </param>
+        <briefdescription>
+<para>Make an <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref> kind known to the <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="namespace_gyoto_1_1_register" kindref="compound">Register</ref> a new <ref refid="class_gyoto_1_1_astrobj_1_1_generic" kindref="compound">Astrobj::Generic</ref> sub-class so that the <ref refid="class_gyoto_1_1_factory" kindref="compound">Gyoto::Factory</ref> knows it.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The kind name which identifies this object type in an XML file, as in &lt;<ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref> kind=&quot;name&quot;&gt;</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the subcontractor, which will communicate with the <ref refid="class_gyoto_1_1_factory" kindref="compound">Gyoto::Factory</ref> to build an instance of the class from its XML description </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="133" column="10" declfile="/home/junichi/Gyoto/include/GyotoAstrobj.h" declline="133" declcolumn="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Access to astronomical objects. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Objects which are supposed to be the target of the ray-tracing code should inherit from the <ref refid="class_gyoto_1_1_astrobj_1_1_generic" kindref="compound">Gyoto::Astrobj::Generic</ref> class.</para>
+<para>When implementing a new object, you must:<itemizedlist>
+<listitem><para>make sure the object can be loaded from XML by providing a Subcontractor_t using the <ref refid="namespace_gyoto_1_1_astrobj_1abb6caf3023a51cb77b5f6793ac03b188" kindref="member">Gyoto::Astrobj::Register</ref>(std::string name, <ref refid="namespace_gyoto_1_1_astrobj_1aa53c7ada58c8c8f3799c3485b7d8f3bb" kindref="member">Gyoto::Astrobj::Subcontractor_t</ref>* scp) function;</para>
+</listitem><listitem><para>make sure this subcontractor is registerred in the initialization routine of your plug-in;</para>
+</listitem><listitem><para>make sure <ref refid="class_gyoto_1_1_astrobj_1_1_generic_1a73a731c15af0c247fc4c46ca934b1b14" kindref="member">Generic::Impact()</ref> works (see below).</para>
+</listitem></itemizedlist>
+</para>
+<para>In addition, you should make sure that your object plays nicely in the Yorick plug-in, which means:<itemizedlist>
+<listitem><para>implement the copy constructor and the <ref refid="class_gyoto_1_1_astrobj_1_1_generic_1af5e9f81e6888919dea2437639a871a3e" kindref="member">Generic::clone()</ref> method;</para>
+</listitem><listitem><para>implement the fillElement method, used for printing and saving to XML.</para>
+</listitem></itemizedlist>
+</para>
+<para>There are basically two ways of making <ref refid="class_gyoto_1_1_astrobj_1_1_generic_1a73a731c15af0c247fc4c46ca934b1b14" kindref="member">Generic::Impact()</ref> work: either by making the <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref> a sub-class of the low-level <ref refid="class_gyoto_1_1_astrobj_1_1_generic" kindref="compound">Gyoto::Astrobj::Generic</ref> class ans providing your own <ref refid="class_gyoto_1_1_astrobj_1_1_generic_1a73a731c15af0c247fc4c46ca934b1b14" kindref="member">Generic::Impact()</ref> function (which, in principle, should rely on <ref refid="class_gyoto_1_1_astrobj_1_1_generic_1aa6f20e6d108357f6355493c4fdd5bb2f" kindref="member">Generic::processHitQuantities()</ref>), or by making the <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref> a sub-class of the higher-level <ref refid="class_gyoto_1_1_astrobj_1_1_standard" kindref="compound">Gyoto::Astrobj::Standard</ref> class and implementing two lower level, simpler functions which are used by the <ref refid="class_gyoto_1_1_astrobj_1_1_standard_1a1d1cc899a7919c4369261a83c7656ad7" kindref="member">Standard::Impact()</ref>:<itemizedlist>
+<listitem><para><ref refid="class_gyoto_1_1_astrobj_1_1_standard_1a764b9a17fee369e61349acd3aa4ddd88" kindref="member">Standard::operator()()</ref> yields a distance or potential defining the interior of the object;</para>
+</listitem><listitem><para><ref refid="class_gyoto_1_1_astrobj_1_1_standard_1acdc2e44eb25269f41b0710f62acfee40" kindref="member">Standard::getVelocity()</ref> yields the velocity field of the fluid.</para>
+</listitem></itemizedlist>
+</para>
+<para><ref refid="class_gyoto_1_1_astrobj_1_1_generic_1aa6f20e6d108357f6355493c4fdd5bb2f" kindref="member">Generic::processHitQuantities()</ref> itself is an intermediate-level function which you may choose to reimplement. It uses three low-level, easy to implement functions:<itemizedlist>
+<listitem><para><ref refid="class_gyoto_1_1_astrobj_1_1_generic_1a93d130767671c25823d5ec3fd477e28a" kindref="member">Generic::emission()</ref>;</para>
+</listitem><listitem><para><ref refid="class_gyoto_1_1_astrobj_1_1_generic_1a320317a0c347ab4317152b93952dab24" kindref="member">Generic::integrateEmission()</ref>;</para>
+</listitem><listitem><para><ref refid="class_gyoto_1_1_astrobj_1_1_generic_1a12691b14048aa4e3aa9fad7a427a198d" kindref="member">Generic::transmission()</ref>. Default implementations of these three functions exist, they have little physical relevance but allow quick 0-th order vizualisation of your object.</para>
+</listitem></itemizedlist>
+</para>
+<para>To be usable, a <ref refid="class_gyoto_1_1_astrobj_1_1_generic" kindref="compound">Astrobj::Generic</ref> (or <ref refid="class_gyoto_1_1_astrobj_1_1_standard" kindref="compound">Astrobj::Standard</ref>) sub-classe should register an <ref refid="namespace_gyoto_1_1_astrobj_1aa53c7ada58c8c8f3799c3485b7d8f3bb" kindref="member">Astrobj::Subcontractor_t</ref> function using the <ref refid="namespace_gyoto_1_1_astrobj_1abb6caf3023a51cb77b5f6793ac03b188" kindref="member">Astrobj::Register()</ref> function. See also <ref refid="writing_plugins_page" kindref="compound">Writing plug-ins for Gyoto</ref> . If your clas implements setParameter() and/or, if necessary, setParameters(), registering it is normally done using the provided template: <programlisting><codeline><highlight class="normal">Astrobj::Register(&quot;MyKind&quot;,<sp/>&amp;(Astrobj::Subcontractor&lt;Astrobj::MyKind&gt;));</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="49" column="3"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,946 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_gyoto_object_8h" kind="file" language="C++">
+    <compoundname>GyotoObject.h</compoundname>
+    <includes refid="_gyoto_config_8h" local="yes">GyotoConfig.h</includes>
+    <includes refid="_gyoto_smart_pointer_8h" local="yes">GyotoSmartPointer.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="_gyoto_astrobj_8h" local="no">GyotoAstrobj.h</includedby>
+    <includedby refid="_gyoto_metric_8h" local="no">GyotoMetric.h</includedby>
+    <includedby refid="_gyoto_photon_8h" local="no">GyotoPhoton.h</includedby>
+    <includedby refid="_gyoto_scenery_8h" local="no">GyotoScenery.h</includedby>
+    <includedby refid="_gyoto_screen_8h" local="no">GyotoScreen.h</includedby>
+    <includedby refid="_gyoto_spectrometer_8h" local="no">GyotoSpectrometer.h</includedby>
+    <includedby refid="_gyoto_spectrum_8h" local="yes">GyotoSpectrum.h</includedby>
+    <incdepgraph>
+      <node id="6">
+        <label>float.h</label>
+      </node>
+      <node id="4">
+        <label>GyotoUtils.h</label>
+        <link refid="_gyoto_utils_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>GyotoSmartPointer.h</label>
+        <link refid="_gyoto_smart_pointer_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>GyotoObject.h</label>
+        <link refid="_gyoto_object_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>stddef.h</label>
+      </node>
+      <node id="5">
+        <label>GyotoDefs.h</label>
+        <link refid="_gyoto_defs_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>pthread.h</label>
+      </node>
+      <node id="13">
+        <label>typeinfo</label>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+      <node id="2">
+        <label>GyotoConfig.h</label>
+        <link refid="_gyoto_config_8h"/>
+      </node>
+      <node id="12">
+        <label>iostream</label>
+      </node>
+      <node id="10">
+        <label>GyotoError.h</label>
+        <link refid="_gyoto_error_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="28">
+        <label>GyotoRotStar3_1.h</label>
+        <link refid="_gyoto_rot_star3__1_8h"/>
+      </node>
+      <node id="45">
+        <label>GyotoThinDiskPL.h</label>
+        <link refid="_gyoto_thin_disk_p_l_8h"/>
+      </node>
+      <node id="48">
+        <label>GyotoUniformSphere.h</label>
+        <link refid="_gyoto_uniform_sphere_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>GyotoPatternDisk.h</label>
+        <link refid="_gyoto_pattern_disk_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>GyotoPatternDiskBB.h</label>
+        <link refid="_gyoto_pattern_disk_b_b_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>GyotoFlaredDiskSynchrotron.h</label>
+        <link refid="_gyoto_flared_disk_synchrotron_8h"/>
+      </node>
+      <node id="34">
+        <label>GyotoPython.h</label>
+        <link refid="_gyoto_python_8h"/>
+      </node>
+      <node id="57">
+        <label>GyotoComplexSpectrometer.h</label>
+        <link refid="_gyoto_complex_spectrometer_8h"/>
+      </node>
+      <node id="51">
+        <label>GyotoJet.h</label>
+        <link refid="_gyoto_jet_8h"/>
+      </node>
+      <node id="10">
+        <label>GyotoFixedStar.h</label>
+        <link refid="_gyoto_fixed_star_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>GyotoBlob.h</label>
+        <link refid="_gyoto_blob_8h"/>
+      </node>
+      <node id="59">
+        <label>GyotoSpectrum.h</label>
+        <link refid="_gyoto_spectrum_8h"/>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>GyotoUniformSpectrometer.h</label>
+        <link refid="_gyoto_uniform_spectrometer_8h"/>
+      </node>
+      <node id="62">
+        <label>GyotoKappaDistributionSynchrotronSpectrum.h</label>
+        <link refid="_gyoto_kappa_distribution_synchrotron_spectrum_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>GyotoThermalBremsstrahlungSpectrum.h</label>
+        <link refid="_gyoto_thermal_bremsstrahlung_spectrum_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>GyotoThinDiskProfile.h</label>
+        <link refid="_gyoto_thin_disk_profile_8h"/>
+      </node>
+      <node id="52">
+        <label>GyotoPolishDoughnut.h</label>
+        <link refid="_gyoto_polish_doughnut_8h"/>
+      </node>
+      <node id="37">
+        <label>GyotoDirectionalDisk.h</label>
+        <link refid="_gyoto_directional_disk_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>GyotoPowerLawSynchrotronSpectrum.h</label>
+        <link refid="_gyoto_power_law_synchrotron_spectrum_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>GyotoMinkowski.h</label>
+        <link refid="_gyoto_minkowski_8h"/>
+      </node>
+      <node id="11">
+        <label>GyotoFreeStar.h</label>
+        <link refid="_gyoto_free_star_8h_source"/>
+      </node>
+      <node id="16">
+        <label>GyotoOscilTorus.h</label>
+        <link refid="_gyoto_oscil_torus_8h"/>
+      </node>
+      <node id="1">
+        <label>GyotoObject.h</label>
+        <link refid="_gyoto_object_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>GyotoRezzollaZhidenko.h</label>
+        <link refid="_gyoto_rezzolla_zhidenko_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>GyotoKerrKS.h</label>
+        <link refid="_gyoto_kerr_k_s_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>GyotoThermalSynchrotronSpectrum.h</label>
+        <link refid="_gyoto_thermal_synchrotron_spectrum_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>GyotoStandardAstrobj.h</label>
+        <link refid="_gyoto_standard_astrobj_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>GyotoSpectrometer.h</label>
+        <link refid="_gyoto_spectrometer_8h"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>GyotoMetric.h</label>
+        <link refid="_gyoto_metric_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>GyotoStarTrace.h</label>
+        <link refid="_gyoto_star_trace_8h"/>
+      </node>
+      <node id="5">
+        <label>GyotoDeformedTorus.h</label>
+        <link refid="_gyoto_deformed_torus_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>GyotoNeutronStarAnalyticEmission.h</label>
+        <link refid="_gyoto_neutron_star_analytic_emission_8h"/>
+      </node>
+      <node id="31">
+        <label>GyotoWorldline.h</label>
+        <link refid="_gyoto_worldline_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>GyotoKerrBL.h</label>
+        <link refid="_gyoto_kerr_b_l_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>GyotoThinDiskIronLine.h</label>
+        <link refid="_gyoto_thin_disk_iron_line_8h"/>
+      </node>
+      <node id="47">
+        <label>GyotoXillverReflection.h</label>
+        <link refid="_gyoto_xillver_reflection_8h"/>
+      </node>
+      <node id="22">
+        <label>GyotoNeutronStarModelAtmosphere.h</label>
+        <link refid="_gyoto_neutron_star_model_atmosphere_8h"/>
+      </node>
+      <node id="36">
+        <label>GyotoThinDisk.h</label>
+        <link refid="_gyoto_thin_disk_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>GyotoDynamicalDisk3D.h</label>
+        <link refid="_gyoto_dynamical_disk3_d_8h"/>
+      </node>
+      <node id="38">
+        <label>GyotoPageThorneDisk.h</label>
+        <link refid="_gyoto_page_thorne_disk_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>GyotoPlasmoid.h</label>
+        <link refid="_gyoto_plasmoid_8h"/>
+      </node>
+      <node id="13">
+        <label>GyotoInflateStar.h</label>
+        <link refid="_gyoto_inflate_star_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>GyotoChernSimons.h</label>
+        <link refid="_gyoto_chern_simons_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>GyotoThinDiskGridIntensity.h</label>
+        <link refid="_gyoto_thin_disk_grid_intensity_8h"/>
+      </node>
+      <node id="24">
+        <label>GyotoFactory.h</label>
+        <link refid="_gyoto_factory_8h"/>
+      </node>
+      <node id="55">
+        <label>GyotoTorus.h</label>
+        <link refid="_gyoto_torus_8h"/>
+      </node>
+      <node id="66">
+        <label>GyotoPowerLawSpectrum.h</label>
+        <link refid="_gyoto_power_law_spectrum_8h"/>
+      </node>
+      <node id="19">
+        <label>GyotoNumericalMetricLorene.h</label>
+        <link refid="_gyoto_numerical_metric_lorene_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>GyotoComplexAstrobj.h</label>
+        <link refid="_gyoto_complex_astrobj_8h"/>
+      </node>
+      <node id="25">
+        <label>GyotoScenery.h</label>
+        <link refid="_gyoto_scenery_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>GyotoEquatorialHotSpot.h</label>
+        <link refid="_gyoto_equatorial_hot_spot_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>GyotoAstrobj.h</label>
+        <link refid="_gyoto_astrobj_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>GyotoComplexMetric.h</label>
+        <link refid="_gyoto_complex_metric_8h_source"/>
+      </node>
+      <node id="41">
+        <label>GyotoDynamicalDisk.h</label>
+        <link refid="_gyoto_dynamical_disk_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>GyotoSphericalAccretion.h</label>
+        <link refid="_gyoto_spherical_accretion_8h"/>
+      </node>
+      <node id="30">
+        <label>GyotoScreen.h</label>
+        <link refid="_gyoto_screen_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Gyoto.h</label>
+        <link refid="_gyoto_8h"/>
+      </node>
+      <node id="20">
+        <label>GyotoNeutronStar.h</label>
+        <link refid="_gyoto_neutron_star_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>GyotoSchwarzschildHarmonic.h</label>
+        <link refid="_gyoto_schwarzschild_harmonic_8h"/>
+      </node>
+      <node id="60">
+        <label>GyotoBlackBodySpectrum.h</label>
+        <link refid="_gyoto_black_body_spectrum_8h"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>GyotoStar.h</label>
+        <link refid="_gyoto_star_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>GyotoDynamicalDiskBolometric.h</label>
+        <link refid="_gyoto_dynamical_disk_bolometric_8h"/>
+      </node>
+      <node id="23">
+        <label>GyotoPhoton.h</label>
+        <link refid="_gyoto_photon_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>GyotoShift.h</label>
+        <link refid="_gyoto_shift_8h"/>
+      </node>
+      <node id="54">
+        <label>GyotoThickDisk.h</label>
+        <link refid="_gyoto_thick_disk_8h"/>
+      </node>
+      <node id="12">
+        <label>GyotoHayward.h</label>
+        <link refid="_gyoto_hayward_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_gyoto_1_1_object" prot="public">Gyoto::Object</innerclass>
+    <innernamespace refid="namespace_gyoto">Gyoto</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_gyoto_object_8h_1af1ddb642d51d8f768b9f9ec64c3f5ab2" prot="public" static="no">
+        <name>GYOTO_OBJECT_ACCESSORS_STRING</name>
+        <param><defname>method</defname></param>
+        <initializer>  virtual void method(std::string const&amp;);				\
+  virtual std::string method() const;</initializer>
+        <briefdescription>
+<para>Declare a pair of accessors to string member in a class declaration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The accessors must also be defined in the .C file</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the accessors. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="47" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoObject.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_object_8h_1aa001974b9ed7a36300e4b4e003d0491b" prot="public" static="no">
+        <name>GYOTO_OBJECT_ACCESSORS</name>
+        <param><defname>type</defname></param>
+        <param><defname>method</defname></param>
+        <initializer>  virtual void method(type);						\
+  virtual type method() const;</initializer>
+        <briefdescription>
+<para>Declare a pair of accessors to scalar member in a class declaration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The accessors must also be defined in the .C file, which can be done using <ref refid="_gyoto_property_8h_1a988f660aa95584c1ce360cefee775a49" kindref="member">GYOTO_PROPERTY_ACCESSORS</ref></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data type of the memebr beeing accessed. Any scalar type (double, long, size_t, SmartPointer&lt;Metric::Generic&gt; etc). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the accessors. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="60" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoObject.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_object_8h_1a81a17d29a5cdd84b65b37066f9fd8e21" prot="public" static="no">
+        <name>GYOTO_OBJECT_ACCESSORS_UNIT</name>
+        <param><defname>method</defname></param>
+        <initializer>  <ref refid="_gyoto_object_8h_1aa001974b9ed7a36300e4b4e003d0491b" kindref="member">GYOTO_OBJECT_ACCESSORS</ref>(double, method)				\
+  virtual void method(double, std::string const &amp;);			\
+  virtual double method(std::string const &amp;) const;</initializer>
+        <briefdescription>
+<para>Declare a quadruplet of accessors to double member that supports unit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The accessors must also be defined in the .C file.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the accessors. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="70" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoObject.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" prot="public" static="no">
+        <name>GYOTO_OBJECT</name>
+        <initializer>  static Property const  properties[];			\
+  virtual Property const * getProperties() const;	\
+  static const std::string builtinPluginValue;		\
+  virtual void plugins(std::vector&lt;std::string&gt; const &amp; plugname);	\
+  virtual std::vector&lt;std::string&gt; plugins() const</initializer>
+        <briefdescription>
+<para>Declare class::properties and class::getProperties() </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Any derived class that does define Properties (i.e. the macro <ref refid="_gyoto_property_8h_1add8e16ed1e17ab2683b08cc330b341d4" kindref="member">GYOTO_PROPERTY_START()</ref> is called somewhere in the .C file) must call the <ref refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" kindref="member">GYOTO_OBJECT</ref> macro in a &quot;public:&quot; section of the class declaration. Else, the property list is inherited from the direct parent, and calling <ref refid="_gyoto_property_8h_1add8e16ed1e17ab2683b08cc330b341d4" kindref="member">GYOTO_PROPERTY_START()</ref> in the .C file leads to a compile-time error. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="84" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoObject.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_gyoto_object_8h_1a6806b7f836d51dbe45cdf7bd60377a40" prot="public" static="no">
+        <name>GYOTO_OBJECT_THREAD_SAFETY</name>
+        <initializer>  virtual bool isThreadSafe() const</initializer>
+        <briefdescription>
+<para>Declare virtual bool isThreadSafe() const. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use this to declare that the object is not (or not always) thread safe. The corresponding definition of isThreadSafe() must exist. If the object is always thread unsafe (e.g. Lorene Metrics of Python based objects), you can simply use GYOTO_PROPERTY_THREAD_SAFETY in the corresponding .C file. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="99" column="9" bodyfile="/home/junichi/Gyoto/include/GyotoObject.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Introspectable objects. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>Copyright<sp/>2014-2016<sp/>Thibaut<sp/>Paumard</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>Gyoto.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"></highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"></highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>Gyoto.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__GyotoObject_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__GyotoObject_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_gyoto_config_8h" kindref="compound">GyotoConfig.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_gyoto_smart_pointer_8h" kindref="compound">GyotoSmartPointer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_gyoto" kindref="compound">Gyoto</ref><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Object;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Property;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Value;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">FactoryMessenger;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="_gyoto_object_8h_1af1ddb642d51d8f768b9f9ec64c3f5ab2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GYOTO_OBJECT_ACCESSORS_STRING(method)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"><sp/><sp/>virtual<sp/>void<sp/>method(std::string<sp/>const&amp;);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"><sp/><sp/>virtual<sp/>std::string<sp/>method()<sp/>const;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="_gyoto_object_8h_1aa001974b9ed7a36300e4b4e003d0491b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GYOTO_OBJECT_ACCESSORS(type,<sp/>method)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"><sp/><sp/>virtual<sp/>void<sp/>method(type);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"><sp/><sp/>virtual<sp/>type<sp/>method()<sp/>const;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="_gyoto_object_8h_1a81a17d29a5cdd84b65b37066f9fd8e21" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GYOTO_OBJECT_ACCESSORS_UNIT(method)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"><sp/><sp/>GYOTO_OBJECT_ACCESSORS(double,<sp/>method)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"><sp/><sp/>virtual<sp/>void<sp/>method(double,<sp/>std::string<sp/>const<sp/>&amp;);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"><sp/><sp/>virtual<sp/>double<sp/>method(std::string<sp/>const<sp/>&amp;)<sp/>const;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GYOTO_OBJECT<sp/>\</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"><sp/><sp/>static<sp/>Property<sp/>const<sp/><sp/>properties[];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor"><sp/><sp/>virtual<sp/>Property<sp/>const<sp/>*<sp/>getProperties()<sp/>const;<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor"><sp/><sp/>static<sp/>const<sp/>std::string<sp/>builtinPluginValue;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="88"><highlight class="preprocessor"><sp/><sp/>virtual<sp/>void<sp/>plugins(std::vector&lt;std::string&gt;<sp/>const<sp/>&amp;<sp/>plugname);<sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="89"><highlight class="preprocessor"><sp/><sp/>virtual<sp/>std::vector&lt;std::string&gt;<sp/>plugins()<sp/>const</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="_gyoto_object_8h_1a6806b7f836d51dbe45cdf7bd60377a40" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GYOTO_OBJECT_THREAD_SAFETY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="100"><highlight class="preprocessor"><sp/><sp/>virtual<sp/>bool<sp/>isThreadSafe()<sp/>const</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="class_gyoto_1_1_object" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_object" kindref="compound">Gyoto::Object</ref></highlight></codeline>
+<codeline lineno="152"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="class_gyoto_1_1_object_1ac48ad88e3ef229ba0d0fe68a94a7118f" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="class_gyoto_1_1_object_1ac48ad88e3ef229ba0d0fe68a94a7118f" kindref="member">kind_</ref>;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172" refid="class_gyoto_1_1_object_1a01832761cd5f0a12319e3e24ce9a9fba" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;std::string&gt;<sp/><ref refid="class_gyoto_1_1_object_1a01832761cd5f0a12319e3e24ce9a9fba" kindref="member">plugins_</ref>;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197" refid="class_gyoto_1_1_object_1a06ea95dc396053466cdd63d419d1688c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_object_1a06ea95dc396053466cdd63d419d1688c" kindref="member">isThreadSafe</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200" refid="class_gyoto_1_1_object_1afe00718a056ffc6293705c03f588088c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" kindref="member">GYOTO_OBJECT</ref>;</highlight></codeline>
+<codeline lineno="225" refid="class_gyoto_1_1_object_1a5173d279a53bbc9850771e344d6b79b0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_object_1a5173d279a53bbc9850771e344d6b79b0" kindref="member">Object</ref><sp/>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;<ref refid="class_gyoto_1_1_object_1a9f46de678c67e9050cf3a8b9677e1d73" kindref="member">kind</ref>)<sp/>;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228" refid="class_gyoto_1_1_object_1a5834e83ca1482a379c7ddefb1919457f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_object_1a5834e83ca1482a379c7ddefb1919457f" kindref="member">Object</ref><sp/>()<sp/>;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231" refid="class_gyoto_1_1_object_1a1fbd53bedaf8d18f67b12ec0660b8aa7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_object_1a1fbd53bedaf8d18f67b12ec0660b8aa7" kindref="member">Object</ref><sp/>(<ref refid="class_gyoto_1_1_object" kindref="compound">Object</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;orig)<sp/>;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234" refid="class_gyoto_1_1_object_1ab6f302f93bfd1f07ae2a6a48b3c74932" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_object_1ab6f302f93bfd1f07ae2a6a48b3c74932" kindref="member">~Object</ref>();</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237" refid="class_gyoto_1_1_object_1a58c4ecdaae1873dc6912e164b61826e0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_object_1a58c4ecdaae1873dc6912e164b61826e0" kindref="member">set</ref>(<ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;p,<sp/><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref><sp/>val);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240" refid="class_gyoto_1_1_object_1aa063e0df7c2e4b22207a784c76c6681f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_object_1aa063e0df7c2e4b22207a784c76c6681f" kindref="member">set</ref>(<ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;p,<sp/><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref><sp/>val,<sp/>std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;unit);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243" refid="class_gyoto_1_1_object_1aba6d35c5bbf814912ed84549109e117a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_object_1aba6d35c5bbf814912ed84549109e117a" kindref="member">set</ref>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;pname,<sp/><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref><sp/>val);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246" refid="class_gyoto_1_1_object_1abed03e16a8013699534b802e06751ef8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_object_1abed03e16a8013699534b802e06751ef8" kindref="member">set</ref>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;pname,<sp/><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref><sp/>val,<sp/>std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;unit);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249" refid="class_gyoto_1_1_object_1a8232112e660216a61caa15fab27b889f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref><sp/><ref refid="class_gyoto_1_1_object_1a8232112e660216a61caa15fab27b889f" kindref="member">get</ref>(<ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;p)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252" refid="class_gyoto_1_1_object_1ad61a061d2073c841e9911be0395d4494" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref><sp/><ref refid="class_gyoto_1_1_object_1ad61a061d2073c841e9911be0395d4494" kindref="member">get</ref>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;pname)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255" refid="class_gyoto_1_1_object_1ad4189c2c103030e9d91ee0f29ebcf13d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref><sp/><ref refid="class_gyoto_1_1_object_1ad4189c2c103030e9d91ee0f29ebcf13d" kindref="member">get</ref>(<ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;p,<sp/>std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;unit)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258" refid="class_gyoto_1_1_object_1a99544282b6c383b8570a5bc51bed1ecf" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref><sp/><ref refid="class_gyoto_1_1_object_1a99544282b6c383b8570a5bc51bed1ecf" kindref="member">get</ref>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;pname,<sp/>std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;unit)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267" refid="class_gyoto_1_1_object_1a424ef3538c714adfafad7eda249e0d58" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*<sp/><ref refid="class_gyoto_1_1_object_1a424ef3538c714adfafad7eda249e0d58" kindref="member">property</ref>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>pname)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>GYOTO_USE_XERCES</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298" refid="class_gyoto_1_1_object_1a11892ef308d6f40add51eaea653a394b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_object_1a11892ef308d6f40add51eaea653a394b" kindref="member">fillProperty</ref>(<ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">Gyoto::FactoryMessenger</ref><sp/>*fmp,</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;p)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316" refid="class_gyoto_1_1_object_1a0ffc3f84b4c2372d639eb848605fb1f3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_object_1a0ffc3f84b4c2372d639eb848605fb1f3" kindref="member">fillElement</ref>(<ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">Gyoto::FactoryMessenger</ref><sp/>*fmp)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="355" refid="class_gyoto_1_1_object_1aa0a8b119e7aa95b21be081f8c97e1626" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_object_1aa0a8b119e7aa95b21be081f8c97e1626" kindref="member">setParameters</ref>(<ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">Gyoto::FactoryMessenger</ref><sp/>*fmp)<sp/>;</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="390" refid="class_gyoto_1_1_object_1a45969ac469cf6979037229c2741b226b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_object_1a45969ac469cf6979037229c2741b226b" kindref="member">setParameter</ref>(std::string<sp/>name,</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>content,</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>unit);</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"></highlight></codeline>
+<codeline lineno="426" refid="class_gyoto_1_1_object_1a43fe041144add66155668ca88a99fd98" refkind="member"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_object_1a43fe041144add66155668ca88a99fd98" kindref="member">setParameter</ref>(<ref refid="class_gyoto_1_1_property" kindref="compound">Gyoto::Property</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;p,</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;name,</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;content,</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;unit);</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"></highlight></codeline>
+<codeline lineno="437" refid="class_gyoto_1_1_object_1a741ba678188d7d167ff2e3bb13dd924f" refkind="member"><highlight class="normal"><sp/><sp/><sp/>std::string<sp/><ref refid="class_gyoto_1_1_object_1a741ba678188d7d167ff2e3bb13dd924f" kindref="member">describeProperty</ref>(<ref refid="class_gyoto_1_1_property" kindref="compound">Gyoto::Property</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;p)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"></highlight></codeline>
+<codeline lineno="444" refid="class_gyoto_1_1_object_1a13843618d84c49d47bd37ddfa31160c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_object_1a13843618d84c49d47bd37ddfa31160c5" kindref="member">help</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"></highlight></codeline>
+<codeline lineno="446"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="453" refid="class_gyoto_1_1_object_1aae3b80667884c6620c4796a1b8ef74e5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_object_1aae3b80667884c6620c4796a1b8ef74e5" kindref="member">kind</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string);<sp/></highlight></codeline>
+<codeline lineno="454"><highlight class="normal"></highlight></codeline>
+<codeline lineno="455"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="456" refid="class_gyoto_1_1_object_1a9f46de678c67e9050cf3a8b9677e1d73" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_gyoto_1_1_object_1a9f46de678c67e9050cf3a8b9677e1d73" kindref="member">kind</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/></highlight></codeline>
+<codeline lineno="457"><highlight class="normal"></highlight></codeline>
+<codeline lineno="458"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"></highlight></codeline>
+<codeline lineno="460"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/junichi/Gyoto/include/GyotoObject.h"/>
+  </compounddef>
+</doxygen>

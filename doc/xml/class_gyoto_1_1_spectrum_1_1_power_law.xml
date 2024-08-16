@@ -1,0 +1,1422 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_gyoto_1_1_spectrum_1_1_power_law" kind="class" language="C++" prot="public">
+    <compoundname>Gyoto::Spectrum::PowerLaw</compoundname>
+    <basecompoundref refid="class_gyoto_1_1_spectrum_1_1_generic" prot="public" virt="non-virtual">Gyoto::Spectrum::Generic</basecompoundref>
+    <includes refid="_gyoto_power_law_spectrum_8h" local="no">GyotoPowerLawSpectrum.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_gyoto_1_1_spectrum_1_1_power_law_1af85c8eb0435d6edd8c57961897de24ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class Gyoto::SmartPointer&lt; Gyoto::Spectrum::PowerLaw &gt;</definition>
+        <argsstring></argsstring>
+        <name>Gyoto::SmartPointer&lt; Gyoto::Spectrum::PowerLaw &gt;</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_spectrum_1_1_power_law" kindref="compound">Gyoto::Spectrum::PowerLaw</ref> &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoPowerLawSpectrum.h" line="1" column="0" bodyfile="/home/junichi/Gyoto/include/GyotoPowerLawSpectrum.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_spectrum_1_1_power_law_1a54a641b45a9130572567f4a80fd8147e" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::Spectrum::PowerLaw::constant_</definition>
+        <argsstring></argsstring>
+        <name>constant_</name>
+        <briefdescription>
+<para>I_nu=constant_*nu^exponent_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoPowerLawSpectrum.h" line="56" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoPowerLawSpectrum.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_spectrum_1_1_power_law_1a47c059245fe42d72cf6e3471d6c23af1" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::Spectrum::PowerLaw::exponent_</definition>
+        <argsstring></argsstring>
+        <name>exponent_</name>
+        <briefdescription>
+<para>I_nu=constant_*nu^exponent_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoPowerLawSpectrum.h" line="57" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoPowerLawSpectrum.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_spectrum_1_1_power_law_1a9213a73197be95374c502f3849df0310" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::Spectrum::PowerLaw::minfreq_</definition>
+        <argsstring></argsstring>
+        <name>minfreq_</name>
+        <briefdescription>
+<para>Lower-frequency cutoff (emits at nu&gt;=minfreq_) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoPowerLawSpectrum.h" line="58" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoPowerLawSpectrum.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_spectrum_1_1_power_law_1a199b89986586ee6a6e1e2d561c95c03c" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gyoto::Spectrum::PowerLaw::maxfreq_</definition>
+        <argsstring></argsstring>
+        <name>maxfreq_</name>
+        <briefdescription>
+<para>Upper-frequency cutoff (emits at nu&lt;=maxfreq_) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoPowerLawSpectrum.h" line="59" column="10" bodyfile="/home/junichi/Gyoto/include/GyotoPowerLawSpectrum.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_object_1ac48ad88e3ef229ba0d0fe68a94a7118f" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gyoto::Object::kind_</definition>
+        <argsstring></argsstring>
+        <name>kind_</name>
+        <briefdescription>
+<para>The &quot;kind&quot; that is output in the XML entity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>E.g. for an <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref>, <ref refid="class_gyoto_1_1_object_1a0ffc3f84b4c2372d639eb848605fb1f3" kindref="member">fillElement()</ref> will ensure <programlisting><codeline><highlight class="normal">&lt;Astrobj<sp/>kind=&quot;kind_&quot;<sp/>...&gt;...&lt;/Astrobj&gt;</highlight></codeline>
+</programlisting> is written. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="162" column="15" bodyfile="/home/junichi/Gyoto/include/GyotoObject.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_object_1a01832761cd5f0a12319e3e24ce9a9fba" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; Gyoto::Object::plugins_</definition>
+        <argsstring></argsstring>
+        <name>plugins_</name>
+        <briefdescription>
+<para>The plug-ins that needs to be loaded to access this instance&apos;s class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>E.g. for an <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref>, <ref refid="class_gyoto_1_1_object_1a0ffc3f84b4c2372d639eb848605fb1f3" kindref="member">fillElement()</ref> will ensure <programlisting><codeline><highlight class="normal">&lt;Astrobj<sp/>...<sp/>plugin=&quot;plugins_&quot;&gt;...&lt;/Astrobj&gt;</highlight></codeline>
+</programlisting> is written. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="172" column="15" bodyfile="/home/junichi/Gyoto/include/GyotoObject.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_spectrum_1_1_power_law_1a83e090895be8749d2f9612967c314631" prot="public" static="yes" mutable="no">
+        <type><ref refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" kindref="member">GYOTO_OBJECT</ref> <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const</type>
+        <definition>GYOTO_OBJECT Property const Gyoto::Spectrum::PowerLaw::properties[]</definition>
+        <argsstring>[]</argsstring>
+        <name>properties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoPowerLawSpectrum.h" line="62" column="42" bodyfile="/home/junichi/Gyoto/include/GyotoPowerLawSpectrum.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gyoto_1_1_spectrum_1_1_power_law_1ac90e9834fc4c5ffd7f57734aa75f1939" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const  *</type>
+        <definition>virtual Property const* Gyoto::Spectrum::PowerLaw::getProperties</definition>
+        <argsstring>() const</argsstring>
+        <name>getProperties</name>
+        <reimplements refid="class_gyoto_1_1_spectrum_1_1_generic_1af54a57e8ab3c283962e50c3712d77226">getProperties</reimplements>
+        <briefdescription>
+<para>Get list of properties. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is declared automatically by the <ref refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" kindref="member">GYOTO_OBJECT</ref> macro and defined automatically by the <ref refid="_gyoto_property_8h_1a1356435ea7ee0e18d07201a80e034dcc" kindref="member">GYOTO_PROPERTY_END</ref> macro. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoPowerLawSpectrum.h" line="62" column="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_spectrum_1_1_power_law_1a8fe521a43cf400e95632e26f0c0731c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Spectrum::PowerLaw::PowerLaw</definition>
+        <argsstring>()</argsstring>
+        <name>PowerLaw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoPowerLawSpectrum.h" line="64" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_spectrum_1_1_power_law_1a4a4f39ee8d560986c8b7d2b5a9e6bb10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gyoto::Spectrum::PowerLaw::PowerLaw</definition>
+        <argsstring>(double exponent, double constant=1.)</argsstring>
+        <name>PowerLaw</name>
+        <param>
+          <type>double</type>
+          <declname>exponent</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>constant</declname>
+          <defval>1.</defval>
+        </param>
+        <briefdescription>
+<para>Constructor setting exponent_ and optionally constant_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoPowerLawSpectrum.h" line="69" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_spectrum_1_1_power_law_1a6226dd84cc783c62a57b703c9da719c1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_gyoto_1_1_spectrum_1_1_power_law" kindref="compound">PowerLaw</ref> *</type>
+        <definition>virtual PowerLaw* Gyoto::Spectrum::PowerLaw::clone</definition>
+        <argsstring>() const</argsstring>
+        <name>clone</name>
+        <reimplements refid="class_gyoto_1_1_spectrum_1_1_generic_1a07e9560ffed9eddd470a6204df5977a0">clone</reimplements>
+        <briefdescription>
+<para>Cloner. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoPowerLawSpectrum.h" line="71" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_spectrum_1_1_power_law_1a3db66fb00ae0d6db4c505c8d0fc104b4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Spectrum::PowerLaw::constant</definition>
+        <argsstring>() const</argsstring>
+        <name>constant</name>
+        <briefdescription>
+<para>Get constant_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoPowerLawSpectrum.h" line="73" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_spectrum_1_1_power_law_1a7359df350a63186c6b559e0d3176ebc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Spectrum::PowerLaw::constant</definition>
+        <argsstring>(double)</argsstring>
+        <name>constant</name>
+        <param>
+          <type>double</type>
+        </param>
+        <briefdescription>
+<para>Set constant_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoPowerLawSpectrum.h" line="74" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_spectrum_1_1_power_law_1a817faa6d1adfbefc6ffcc888285402dc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::Spectrum::PowerLaw::exponent</definition>
+        <argsstring>() const</argsstring>
+        <name>exponent</name>
+        <briefdescription>
+<para>Get exponent_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoPowerLawSpectrum.h" line="75" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_spectrum_1_1_power_law_1adeff8c34f8569086bd7ea556a1a18b83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Spectrum::PowerLaw::exponent</definition>
+        <argsstring>(double)</argsstring>
+        <name>exponent</name>
+        <param>
+          <type>double</type>
+        </param>
+        <briefdescription>
+<para>Set exponent_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoPowerLawSpectrum.h" line="76" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_spectrum_1_1_power_law_1aff13901e1371386d03a6d01f40fa837b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Gyoto::Spectrum::PowerLaw::cutoff</definition>
+        <argsstring>(std::string const &amp;unit) const</argsstring>
+        <name>cutoff</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Get cutoffs, specifying unit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoPowerLawSpectrum.h" line="77" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_spectrum_1_1_power_law_1a639efcb9521d9acd4cd8c8681c7018cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Spectrum::PowerLaw::cutoff</definition>
+        <argsstring>(std::vector&lt; double &gt; const &amp;v, std::string const &amp;unit)</argsstring>
+        <name>cutoff</name>
+        <param>
+          <type>std::vector&lt; double &gt; const &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Set cutoffs, specifying unit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoPowerLawSpectrum.h" line="78" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_spectrum_1_1_power_law_1acd2ccf0857a12dab5b6e2483c197191b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Gyoto::Spectrum::PowerLaw::cutoff</definition>
+        <argsstring>() const</argsstring>
+        <name>cutoff</name>
+        <briefdescription>
+<para>Get cutoffs, in Hz. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoPowerLawSpectrum.h" line="79" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_spectrum_1_1_power_law_1ad494f908da7590eca94643aec4183324" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Spectrum::PowerLaw::cutoff</definition>
+        <argsstring>(std::vector&lt; double &gt; const &amp;v)</argsstring>
+        <name>cutoff</name>
+        <param>
+          <type>std::vector&lt; double &gt; const &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Set cutoffs, in Hz. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoPowerLawSpectrum.h" line="80" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_spectrum_1_1_power_law_1ad359e8a3103249203010234e0d858a64" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double Gyoto::Spectrum::PowerLaw::operator()</definition>
+        <argsstring>(double nu) const</argsstring>
+        <name>operator()</name>
+        <reimplements refid="class_gyoto_1_1_spectrum_1_1_generic_1a69b437909754d1ff25e1e8772803dc64">operator()</reimplements>
+        <param>
+          <type>double</type>
+          <declname>nu</declname>
+        </param>
+        <briefdescription>
+<para>I_nu = mySpectrum(nu), nu in Hz. Assumes optically thick regime. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoPowerLawSpectrum.h" line="83" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_spectrum_1_1_generic_1ac264d95ff1d31397c854e3245bfef193" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double Gyoto::Spectrum::Generic::operator()</definition>
+        <argsstring>(double nu, double opacity, double ds) const</argsstring>
+        <name>operator()</name>
+        <reimplementedby refid="class_gyoto_1_1_spectrum_1_1_python_1afd16da4e4d099cd074e8f31d79afefd4">operator()</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_spectrum_1_1_kappa_distribution_synchrotron_1a48dd87d1705b1bda95f3ff4cbeab1f3e">operator()</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_spectrum_1_1_power_law_synchrotron_1ab70286c19583a74c46a9770874860978">operator()</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_spectrum_1_1_thermal_bremsstrahlung_1a9d8c036af026f8af447927b92e1ffe11">operator()</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_spectrum_1_1_thermal_synchrotron_1ae48f4585e57ff1a35403db7041f17c9e">operator()</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>nu</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>opacity</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>ds</declname>
+        </param>
+        <briefdescription>
+<para>I_nu in optically thin regime. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_gyoto_1_1_spectrum_1_1_generic" kindref="compound">Generic</ref> implementation assumes emissivity = opacity.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frequency in Hz </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>opacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>such that opacity*ds=optical thickness. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>in geometrical units </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSpectrum.h" line="160" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_spectrum_1_1_generic_1aeb97e5a99a17c14a18569195e0bf0592" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double Gyoto::Spectrum::Generic::integrate</definition>
+        <argsstring>(double nu1, double nu2)</argsstring>
+        <name>integrate</name>
+        <reimplementedby refid="class_gyoto_1_1_spectrum_1_1_python_1af5a00c71fbf4c9dfb3af77fa8966456f">integrate</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>nu1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>nu2</declname>
+        </param>
+        <briefdescription>
+<para>Integrate optically thick I_nu. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="class_gyoto_1_1_spectrum_1_1_generic_1a69b437909754d1ff25e1e8772803dc64" kindref="member">operator()(double nu) const</ref></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nu1</parametername>
+<parametername>nu2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>boundaries for the integration </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>I, the integral of I_nu between nu1 and nu2 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSpectrum.h" line="171" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_spectrum_1_1_generic_1a8be482d8edd773bc893ab167d0bc7473" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double Gyoto::Spectrum::Generic::integrate</definition>
+        <argsstring>(double nu1, double nu2, const Spectrum::Generic *opacity, double ds)</argsstring>
+        <name>integrate</name>
+        <param>
+          <type>double</type>
+          <declname>nu1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>nu2</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_gyoto_1_1_spectrum_1_1_generic" kindref="compound">Spectrum::Generic</ref> *</type>
+          <declname>opacity</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>ds</declname>
+        </param>
+        <briefdescription>
+<para>Integrate optically thin I_nu. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="class_gyoto_1_1_spectrum_1_1_generic_1ac264d95ff1d31397c854e3245bfef193" kindref="member">operator()(double nu, double opacity, double ds) const</ref></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nu1</parametername>
+<parametername>nu2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>boundaries for the integration </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>opacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the frequency-dependent opacity law given as a pointer to a <ref refid="class_gyoto_1_1_spectrum_1_1_generic" kindref="compound">Gyoto::Spectrum::Generic</ref> sub-class instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element length for spatial integration </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>I, the integral of I_nu between nu1 and nu2 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSpectrum.h" line="184" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_smart_pointee_1a9ec09c51fd18dde7c13ef3b03fac1fad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::SmartPointee::incRefCount</definition>
+        <argsstring>()</argsstring>
+        <name>incRefCount</name>
+        <briefdescription>
+<para>Increment the reference counter. Warning: Don&apos;t mess with the counter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="96" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_smart_pointee_1a22a67609fb4690ee8ec0e95e4060e387" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gyoto::SmartPointee::decRefCount</definition>
+        <argsstring>()</argsstring>
+        <name>decRefCount</name>
+        <briefdescription>
+<para>Decrement the reference counter and return current value. Warning: Don&apos;t mess with the counter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="97" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_smart_pointee_1a9a9cb35cd161bf19ce652f76e0a5bec0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gyoto::SmartPointee::getRefCount</definition>
+        <argsstring>()</argsstring>
+        <name>getRefCount</name>
+        <briefdescription>
+<para>Get the current number of references. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="98" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a06ea95dc396053466cdd63d419d1688c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Gyoto::Object::isThreadSafe</definition>
+        <argsstring>() const</argsstring>
+        <name>isThreadSafe</name>
+        <briefdescription>
+<para>Whether this class is thread-safe. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Return True if this object is thread-safe, i.e. if an instance and its clone can be used in parallel threads (in the context of Scenery::raytrace()). Known objects which are not thread-safe include Lorene metrics and everything from the <ref refid="namespace_gyoto_1_1_python" kindref="compound">Python</ref> plug-in.</para>
+<para>The default implementation considers that the class itself is thread safe and recurses into the declared properties to check whether they are safe too. Classes that abide to the Object/Property paradigm and are themselves thread-safe have nothing special to do.</para>
+<para>Objects that clone children in their copy constructor that are not declared as properties must take these children into account.</para>
+<para>Classes that are never thread-safe must declare it. It acn be easily done using GYOTO_OBJECT_THREAD_SAFETY in the class declaration and GYOTO_PROPERTY_THREAD_UNSAFE in the class definition. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="197" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a58c4ecdaae1873dc6912e164b61826e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::set</definition>
+        <argsstring>(Property const &amp;p, Value val)</argsstring>
+        <name>set</name>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab3aa615a6b576b663f9ee524831280c8">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab3aa615a6b576b663f9ee524831280c8">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab3aa615a6b576b663f9ee524831280c8">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab3aa615a6b576b663f9ee524831280c8">set</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="237" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1aa063e0df7c2e4b22207a784c76c6681f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::set</definition>
+        <argsstring>(Property const &amp;p, Value val, std::string const &amp;unit)</argsstring>
+        <name>set</name>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab601136e5837e6bd99c4bf3b0beee718">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab601136e5837e6bd99c4bf3b0beee718">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab601136e5837e6bd99c4bf3b0beee718">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab601136e5837e6bd99c4bf3b0beee718">set</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Set <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> (expressed in unit) of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="240" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1aba6d35c5bbf814912ed84549109e117a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::set</definition>
+        <argsstring>(std::string const &amp;pname, Value val)</argsstring>
+        <name>set</name>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ad4aff23562b0ae6a36e05741eb631c82">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ad4aff23562b0ae6a36e05741eb631c82">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ad4aff23562b0ae6a36e05741eb631c82">set</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ad4aff23562b0ae6a36e05741eb631c82">set</reimplementedby>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>pname</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="243" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1abed03e16a8013699534b802e06751ef8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::set</definition>
+        <argsstring>(std::string const &amp;pname, Value val, std::string const &amp;unit)</argsstring>
+        <name>set</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>pname</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Set <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> (expressed in unit) of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="246" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a8232112e660216a61caa15fab27b889f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+        <definition>virtual Value Gyoto::Object::get</definition>
+        <argsstring>(Property const &amp;p) const</argsstring>
+        <name>get</name>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1abeaf3c1bd632fda3a48118d30105c871">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1abeaf3c1bd632fda3a48118d30105c871">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1abeaf3c1bd632fda3a48118d30105c871">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1abeaf3c1bd632fda3a48118d30105c871">get</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Get <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="249" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1ad61a061d2073c841e9911be0395d4494" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+        <definition>virtual Value Gyoto::Object::get</definition>
+        <argsstring>(std::string const &amp;pname) const</argsstring>
+        <name>get</name>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1aa91e924b2c7c3e58764f8aee6b174926">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1aa91e924b2c7c3e58764f8aee6b174926">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1aa91e924b2c7c3e58764f8aee6b174926">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1aa91e924b2c7c3e58764f8aee6b174926">get</reimplementedby>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>pname</declname>
+        </param>
+        <briefdescription>
+<para>Get <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="252" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1ad4189c2c103030e9d91ee0f29ebcf13d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+        <definition>virtual Value Gyoto::Object::get</definition>
+        <argsstring>(Property const &amp;p, std::string const &amp;unit) const</argsstring>
+        <name>get</name>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a042952734a5d4bd00b73a4c03cc23af4">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a042952734a5d4bd00b73a4c03cc23af4">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a042952734a5d4bd00b73a4c03cc23af4">get</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a042952734a5d4bd00b73a4c03cc23af4">get</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Get <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>, converted to unit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="255" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a99544282b6c383b8570a5bc51bed1ecf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref></type>
+        <definition>virtual Value Gyoto::Object::get</definition>
+        <argsstring>(std::string const &amp;pname, std::string const &amp;unit) const</argsstring>
+        <name>get</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>pname</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Get <ref refid="class_gyoto_1_1_value" kindref="compound">Value</ref> of a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>, converted to unit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="258" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a424ef3538c714adfafad7eda249e0d58" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const  *</type>
+        <definition>Property const* Gyoto::Object::property</definition>
+        <argsstring>(std::string const pname) const</argsstring>
+        <name>property</name>
+        <param>
+          <type>std::string const</type>
+          <declname>pname</declname>
+        </param>
+        <briefdescription>
+<para>Find property by name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Look into the <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> list for a <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> whose <emphasis>name</emphasis> (or <emphasis>name_false</emphasis>, for a boolean <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref>) is <emphasis>pname</emphasis>. Return a const pointer to the first such property found, or NULL if none is found. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="267" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a11892ef308d6f40add51eaea653a394b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::fillProperty</definition>
+        <argsstring>(Gyoto::FactoryMessenger *fmp, Property const &amp;p) const</argsstring>
+        <name>fillProperty</name>
+        <reimplementedby refid="class_gyoto_1_1_scenery_1a9bc2f2025deb97a71f21f2be5c0f5022">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_directional_disk_1a42a558bc44010a73986909dd9a2fdd41">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_disk3_d_1a160d18feeb44b24f396c1001abec7bd6">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_dynamical_disk_1abbc14f98531888e96547665a8a6a20ca">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_equatorial_hot_spot_1a5acba2e137e389070bb5f7c71ea31ed5">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_neutron_star_model_atmosphere_1a65604453c31dac828adeaeb7c35ca23d">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_pattern_disk_1acc548bda88d62932275e8d0fcd630ca9">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_polish_doughnut_1acbe2c229f702905204ea0d822b94e17c">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_screen_1a50f80add154ec088fc9509ba22ef0032">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_shift_1a234a2d08bb7918e1bc62e4a710a4df77">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_star_1a152074fdddb29950936d3193d3aea55d">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_spectrometer_1_1_uniform_1af5ccaceb5c188a7a0ea11791885919bc">fillProperty</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_xillver_reflection_1a9e8bc6375f3c981042b74d99ee7adf91">fillProperty</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">Gyoto::FactoryMessenger</ref> *</type>
+          <declname>fmp</declname>
+        </param>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Output a single <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> to XML. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The base implementation decides what to do based on the <emphasis>p.type</emphasis>. The format matches how <ref refid="class_gyoto_1_1_object_1aa0a8b119e7aa95b21be081f8c97e1626" kindref="member">setParameters()</ref> an <ref refid="class_gyoto_1_1_object_1a45969ac469cf6979037229c2741b226b" kindref="member">setParameter()</ref> would interpret the XML descition.</para>
+<para>Overriding this method should be avoided, but makes sense in some cases (for instance <ref refid="class_gyoto_1_1_screen_1a50f80add154ec088fc9509ba22ef0032" kindref="member">Screen::fillProperty()</ref> selects a different unit for <emphasis>Distance</emphasis> based on its magnitude, so that stellar sizes are expressed in solar radii while smaller sizes can be expressed in meters and larger sizes in parsecs).</para>
+<para>Overriding implementation should fall-back on calling the implementation in the direct parent class: <programlisting><codeline><highlight class="normal">class<sp/>A:<sp/>public<sp/>Object<sp/>{};</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>B:<sp/>public<sp/>A<sp/>{<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>using<sp/>B::setParameter;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>virtual<sp/>void<sp/>fillProperty(Gyoto::FactoryMessenger<sp/>*fmp,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Property<sp/>const<sp/>&amp;p)<sp/>const<sp/>;</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal">void<sp/>B::fillProperty(Gyoto::FactoryMessenger<sp/>*fmp,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Property<sp/>const<sp/>&amp;p)<sp/>const<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>if<sp/>(name==&quot;Duff&quot;)<sp/>fmp-&gt;doSomething();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>else<sp/>A::fillProperty(fmp,<sp/>p);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="298" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a0ffc3f84b4c2372d639eb848605fb1f3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::fillElement</definition>
+        <argsstring>(Gyoto::FactoryMessenger *fmp) const</argsstring>
+        <name>fillElement</name>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_complex_1a88d6f38c5fa5401a860291fbb21526d5">fillElement</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_complex_1ada5f1fb56b87c56ff64113a49c76cca0">fillElement</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_spectrometer_1_1_complex_1a0d73e5fd77b0e920af44894abfc96a99">fillElement</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_scenery_1a63501e86c47ea6b67e0c564c706a72f1">fillElement</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a7524ab9c2d51d32f7de7177df5b544a1">fillElement</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a7524ab9c2d51d32f7de7177df5b544a1">fillElement</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a7524ab9c2d51d32f7de7177df5b544a1">fillElement</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a7524ab9c2d51d32f7de7177df5b544a1">fillElement</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">Gyoto::FactoryMessenger</ref> *</type>
+          <declname>fmp</declname>
+        </param>
+        <briefdescription>
+<para>Fill the XML element for this <ref refid="class_gyoto_1_1_object" kindref="compound">Object</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The base implementation simply calls <ref refid="class_gyoto_1_1_object_1a11892ef308d6f40add51eaea653a394b" kindref="member">fillProperty()</ref> for each <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> defined for the <ref refid="class_gyoto_1_1_object" kindref="compound">Object</ref>.</para>
+<para>Derived classes should avoid overriding <ref refid="class_gyoto_1_1_object_1a0ffc3f84b4c2372d639eb848605fb1f3" kindref="member">fillElement()</ref>. It may make sense occasionally, e.g. to make sure that the metric is output first.</para>
+<para>To customize how a given <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> is rendered, it is better to override <ref refid="class_gyoto_1_1_object_1a11892ef308d6f40add51eaea653a394b" kindref="member">fillProperty()</ref>.</para>
+<para>If this method is overridden, the implementation should in general call <ref refid="class_gyoto_1_1_object_1a0ffc3f84b4c2372d639eb848605fb1f3" kindref="member">fillElement()</ref> on the direct base. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="316" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1aa0a8b119e7aa95b21be081f8c97e1626" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::setParameters</definition>
+        <argsstring>(Gyoto::FactoryMessenger *fmp)</argsstring>
+        <name>setParameters</name>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_generic_1a1872b827525ccb1fdedb614474992a6a">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_complex_1a635b0ea47d78c02a999d932eec8b16c5">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_complex_1a5607f9166dc2c1a0a7bd61cde6a71c57">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_spectrometer_1_1_complex_1a008340295dbb21fbddfa6ad7612da80e">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_equatorial_hot_spot_1a931ca188ae49a0d8e9764a151edd3553">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_photon_1a7a6664a5de91b1c59ba1b57d54ba1dd9">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_shift_1a81a5f0f4f32f5be884a4445f1d1d5b17">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_star_1ad1ad60d3ce8861dfa8626ca908e5789e">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_spectrometer_1_1_uniform_1aaca1850f712a089a6c5e0188aec0e5a4">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_oscil_torus_1a0e4df99b42b3d3722d6ea39972d1421d">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a84ea2cab6209f1ed0de3a73223c6a5e8">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a84ea2cab6209f1ed0de3a73223c6a5e8">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a84ea2cab6209f1ed0de3a73223c6a5e8">setParameters</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1a84ea2cab6209f1ed0de3a73223c6a5e8">setParameters</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">Gyoto::FactoryMessenger</ref> *</type>
+          <declname>fmp</declname>
+        </param>
+        <briefdescription>
+<para>Main loop for parsing Properties from XML description. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim> This function queries the FactoryMessenger for elements to parse,
+ and tries to matche each element to a Property to set it
+ accordingly.
+
+ Any class that tries to be buildable from XML must supply a
+ subcontractor (for base classes such as Metric, Astrobj, Spectrum
+ and Spectrometer, it is done as a template that must be
+ specialized for each class).
+
+ This subcontractor typically looks somewhat like this:
+</verbatim> <programlisting><codeline><highlight class="normal">SmartPointer&lt;Metric::Generic&gt;</highlight></codeline>
+<codeline><highlight class="normal">Gyoto::Metric::MyKind::Subcontractor(FactoryMessenger*<sp/>fmp)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>SmartPointer&lt;MyKind&gt;<sp/>gg<sp/>=<sp/>new<sp/>MyKind();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>gg<sp/>-&gt;<sp/>setParameters(fmp);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>return<sp/>gg;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> <verbatim> Although this is discouraged, it is possible to override the
+ following functions to customize how XML entities are parsed:
+   - setParameters() if low-level access to the
+     FactoryMessenger is required;
+   - setParameter(std::string name,
+                  std::string content,
+                  std::string unit)
+     to interpret an entity that does not match a Property
+     (e.g. alternative name);
+   - setParameter(Gyoto::Property const &amp;p,
+                  std::string const &amp;name,
+                  std::string const &amp;content,
+                  std::string const &amp;unit)
+     to change how a Property is interpreted.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="355" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a45969ac469cf6979037229c2741b226b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int Gyoto::Object::setParameter</definition>
+        <argsstring>(std::string name, std::string content, std::string unit)</argsstring>
+        <name>setParameter</name>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_equatorial_hot_spot_1a0c6f1aee4a478c5ef695348d64eae2d4">setParameter</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_kerr_k_s_1a4c9d3a51c5d1478908516a0b96a42135">setParameter</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_star_1a628aa18277af464450896efd63206527">setParameter</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab4fd3efea9c85b8f8c1aaafa2597dfa4">setParameter</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab4fd3efea9c85b8f8c1aaafa2597dfa4">setParameter</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab4fd3efea9c85b8f8c1aaafa2597dfa4">setParameter</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_python_1_1_object_1ab4fd3efea9c85b8f8c1aaafa2597dfa4">setParameter</reimplementedby>
+        <reimplementedby refid="class_gyoto_1_1_metric_1_1_rot_star3__1_1ac2fbf2bb5796e3d7c7eb80dccfe20af7">setParameter</reimplementedby>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>content</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Set parameter by name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is used when parsing an XML description, if no <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> of this <emphasis>name</emphasis> is found. Overriding implementation should fall-back on calling the direct&apos;s parent implementation:</para>
+<para><programlisting><codeline><highlight class="normal">class<sp/>A:<sp/>public<sp/>Object<sp/>{};</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>B:<sp/>public<sp/>A<sp/>{<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>using<sp/>B::setParameter;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>virtual<sp/>int<sp/>setParameter(std::string<sp/>name,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>content,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>unit);</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal">int<sp/>B::setParameter(std::string<sp/>name,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>content,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>unit)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>if<sp/>(name==&quot;Duff&quot;)<sp/>doSomething(content,<sp/>unit);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>else<sp/>return<sp/>A::setParameter(name,<sp/>content,<sp/>unit);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>return<sp/>0;<sp/><sp/>//<sp/>name<sp/>was<sp/>known</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>XML name of the parameter (XML entity). This may have a path component, e.g. &quot;Astrobj::Radius&quot;, in which case a property named &quot;Astrobj&quot; will be sought in the current object, and setParameter will be called recusrively on this <ref refid="namespace_gyoto_1_1_astrobj" kindref="compound">Astrobj</ref> with Radius as name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string representation of the value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string representation of the unit </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if this parameter is known, 1 if it is not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="390" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a43fe041144add66155668ca88a99fd98" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::setParameter</definition>
+        <argsstring>(Gyoto::Property const &amp;p, std::string const &amp;name, std::string const &amp;content, std::string const &amp;unit)</argsstring>
+        <name>setParameter</name>
+        <reimplementedby refid="class_gyoto_1_1_astrobj_1_1_polish_doughnut_1a13a8a59bd3738f5739db0550dbb42003">setParameter</reimplementedby>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Gyoto::Property</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>content</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Set parameter by <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> (and name) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is used when parsing an XML description, if <ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> (<emphasis>p</emphasis>) of this <emphasis>name</emphasis> is found (i.e. either <emphasis>p.name</emphasis> or <emphasis>p.name_false</emphasis> is equal to <emphasis>name</emphasis>). Implementation should fall-back on calling the direct&apos;s parent implementation:</para>
+<para><programlisting><codeline><highlight class="normal">class<sp/>A:<sp/>public<sp/>Object<sp/>{};</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>B:<sp/>public<sp/>A<sp/>{<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>using<sp/>B::setParameter;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>virtual<sp/>void<sp/>setParameter(Gyoto::Property<sp/>const<sp/>&amp;p,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>content,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>unit);</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal">void<sp/>B::setParameter(Gyoto::Property<sp/>const<sp/>&amp;p,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>content,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>unit)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>if<sp/>(name==&quot;Duff&quot;)<sp/>doSomething(content,<sp/>unit);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>else<sp/>A::setParameter(p,<sp/>name,<sp/>content,<sp/>unit);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref> that matches <emphasis>name</emphasis> (<emphasis>p.name</emphasis> == <emphasis>name</emphasis> or <emphasis>p.name_false</emphasis> == <emphasis>name</emphasis>) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>XML name of the parameter (XML entity) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string representation of the value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string representation of the unit </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="426" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a741ba678188d7d167ff2e3bb13dd924f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Gyoto::Object::describeProperty</definition>
+        <argsstring>(Gyoto::Property const &amp;p) const</argsstring>
+        <name>describeProperty</name>
+        <param>
+          <type><ref refid="class_gyoto_1_1_property" kindref="compound">Gyoto::Property</ref> const &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Format desrciption for a property. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a string containing the name(s) and type of the property, as well as whether it supports unit. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="437" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a13843618d84c49d47bd37ddfa31160c5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::Object::help</definition>
+        <argsstring>() const</argsstring>
+        <name>help</name>
+        <briefdescription>
+<para>Print (to stdout) some help on this class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Describe all properties that this instance supports. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="444" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gyoto_1_1_object_1a9f46de678c67e9050cf3a8b9677e1d73" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string Gyoto::Object::kind</definition>
+        <argsstring>() const</argsstring>
+        <name>kind</name>
+        <reimplementedby refid="class_gyoto_1_1_spectrometer_1_1_uniform_1af6c1082ac163e833fff9e934b417b194">kind</reimplementedby>
+        <briefdescription>
+<para>Get kind_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="456" column="23"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" prot="public" static="no">
+        <type><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt; <ref refid="class_gyoto_1_1_smart_pointee" kindref="compound">Gyoto::SmartPointee</ref> &gt;</type>
+        <definition>typedef Gyoto::SmartPointer&lt;Gyoto::SmartPointee&gt; Gyoto::SmartPointee::Subcontractor_t(Gyoto::FactoryMessenger *, std::vector&lt; std::string &gt; const &amp;)</definition>
+        <argsstring>(Gyoto::FactoryMessenger *, std::vector&lt; std::string &gt; const &amp;)</argsstring>
+        <name>Subcontractor_t</name>
+        <briefdescription>
+<para>A subcontractor builds an object upon order from the <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Various classes need to provide a subcontractor to be able to instantiate themselves upon order from the <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref>. A subcontractor is a function (often a static member function) which accepts a pointer to a <ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref> as unique parameter, communicates with the <ref refid="class_gyoto_1_1_factory" kindref="compound">Factory</ref> using this messenger to read an XML description of the object to build, and returns this objet. <ref refid="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" kindref="member">SmartPointee::Subcontractor_t</ref>* is just generic enough a typedef to cast to and from other subcontractor types: <ref refid="namespace_gyoto_1_1_astrobj_1aa53c7ada58c8c8f3799c3485b7d8f3bb" kindref="member">Astrobj::Subcontractor_t</ref>, <ref refid="namespace_gyoto_1_1_metric_1ad6b33a642cc94ad67855184d2adb95df" kindref="member">Metric::Subcontractor_t</ref>, <ref refid="namespace_gyoto_1_1_spectrum_1a163055eef14aee22dd8fa5188812d889" kindref="member">Spectrum::Subcontractor_t</ref>. A subcontractor needs to be registered using the relevant <ref refid="namespace_gyoto_1_1_astrobj_1abb6caf3023a51cb77b5f6793ac03b188" kindref="member">Register()</ref> function: <ref refid="namespace_gyoto_1_1_astrobj_1abb6caf3023a51cb77b5f6793ac03b188" kindref="member">Astrobj::Register()</ref>, <ref refid="namespace_gyoto_1_1_metric_1a602cba49b001e7470f3d439d1ab3e8f7" kindref="member">Metric::Register()</ref>, <ref refid="namespace_gyoto_1_1_spectrum_1a517874749d838d7121880e7d9d14c626" kindref="member">Spectrum::Register()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="114" column="5" bodyfile="/home/junichi/Gyoto/include/GyotoSmartPointer.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_gyoto_1_1_smart_pointee_1aaaf212a70fb1880b70e4d357e843cc85" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gyoto::SmartPointee::refCount</definition>
+        <argsstring></argsstring>
+        <name>refCount</name>
+        <briefdescription>
+<para>Reference counter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="83" column="7" bodyfile="/home/junichi/Gyoto/include/GyotoSmartPointer.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gyoto_1_1_smart_pointee_1abf1c1e431cdd4f08f13de581cccb6770" prot="private" static="no" mutable="no">
+        <type>pthread_mutex_t</type>
+        <definition>pthread_mutex_t Gyoto::SmartPointee::mutex_</definition>
+        <argsstring></argsstring>
+        <name>mutex_</name>
+        <briefdescription>
+<para>A mutex. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>When compiled with libpthread </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoSmartPointer.h" line="89" column="19" bodyfile="/home/junichi/Gyoto/include/GyotoSmartPointer.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_gyoto_1_1_object_1aae3b80667884c6620c4796a1b8ef74e5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Gyoto::Object::kind</definition>
+        <argsstring>(const std::string)</argsstring>
+        <name>kind</name>
+        <param>
+          <type>const std::string</type>
+        </param>
+        <briefdescription>
+<para>Set kind_. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_gyoto_1_1_object_1aae3b80667884c6620c4796a1b8ef74e5" kindref="member">kind(const std::string)</ref> is protected because, for most Objects, it should not be changed in runtime. Set kind_ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoObject.h" line="453" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>I_nu=constant_*nu^exponent_. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Light emitted by e.g. a Star.</para>
+<para>XML stanza: <programlisting><codeline><highlight class="normal">&lt;Spectrum<sp/>kind=&quot;PowerLaw&quot;&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&lt;Exponent&gt;<sp/>0.<sp/>&lt;/Exponent&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&lt;Constant&gt;<sp/>1.<sp/>&lt;/Constant&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;/Spectrum&gt;</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Gyoto::Spectrum::Generic</label>
+        <link refid="class_gyoto_1_1_spectrum_1_1_generic"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gyoto::Spectrum::PowerLaw</label>
+        <link refid="class_gyoto_1_1_spectrum_1_1_power_law"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Gyoto::Object</label>
+        <link refid="class_gyoto_1_1_object"/>
+      </node>
+      <node id="3">
+        <label>Gyoto::SmartPointee</label>
+        <link refid="class_gyoto_1_1_smart_pointee"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>Gyoto::Property</label>
+        <link refid="class_gyoto_1_1_property"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>getter_unit</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>getter</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>setter</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>setter_unit</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gyoto::Spectrum::Generic</label>
+        <link refid="class_gyoto_1_1_spectrum_1_1_generic"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>properties</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Astrobj::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="12">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Screen &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="8">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Spectrometer::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="1">
+        <label>Gyoto::Spectrum::PowerLaw</label>
+        <link refid="class_gyoto_1_1_spectrum_1_1_power_law"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>properties</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Gyoto::Object</label>
+        <link refid="class_gyoto_1_1_object"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>properties</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Metric::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="3">
+        <label>Gyoto::SmartPointee</label>
+        <link refid="class_gyoto_1_1_smart_pointee"/>
+      </node>
+      <node id="13">
+        <label>Gyoto::Property::setter_t</label>
+        <link refid="union_gyoto_1_1_property_1_1setter__t"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>set_spectrometer</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>set_metric</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>set_spectrum</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>set_astrobj</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>set_screen</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Gyoto::Property::setter_unit_t</label>
+        <link refid="union_gyoto_1_1_property_1_1setter__unit__t"/>
+      </node>
+      <node id="10">
+        <label>Gyoto::SmartPointer&lt; Gyoto::Spectrum::Generic &gt;</label>
+        <link refid="class_gyoto_1_1_smart_pointer"/>
+      </node>
+      <node id="6">
+        <label>Gyoto::Property::getter_unit_t</label>
+        <link refid="union_gyoto_1_1_property_1_1getter__unit__t"/>
+      </node>
+      <node id="7">
+        <label>Gyoto::Property::getter_t</label>
+        <link refid="union_gyoto_1_1_property_1_1getter__t"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>get_spectrometer</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>get_metric</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>get_spectrum</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>get_astrobj</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>get_screen</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/junichi/Gyoto/include/GyotoPowerLawSpectrum.h" line="53" column="1" bodyfile="/home/junichi/Gyoto/include/GyotoPowerLawSpectrum.h" bodystart="53" bodyend="85"/>
+    <listofallmembers>
+      <member refid="class_gyoto_1_1_spectrum_1_1_power_law_1a6226dd84cc783c62a57b703c9da719c1" prot="public" virt="virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>clone</name></member>
+      <member refid="class_gyoto_1_1_spectrum_1_1_power_law_1a3db66fb00ae0d6db4c505c8d0fc104b4" prot="public" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>constant</name></member>
+      <member refid="class_gyoto_1_1_spectrum_1_1_power_law_1a7359df350a63186c6b559e0d3176ebc0" prot="public" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>constant</name></member>
+      <member refid="class_gyoto_1_1_spectrum_1_1_power_law_1a54a641b45a9130572567f4a80fd8147e" prot="protected" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>constant_</name></member>
+      <member refid="class_gyoto_1_1_spectrum_1_1_power_law_1aff13901e1371386d03a6d01f40fa837b" prot="public" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>cutoff</name></member>
+      <member refid="class_gyoto_1_1_spectrum_1_1_power_law_1a639efcb9521d9acd4cd8c8681c7018cc" prot="public" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>cutoff</name></member>
+      <member refid="class_gyoto_1_1_spectrum_1_1_power_law_1acd2ccf0857a12dab5b6e2483c197191b" prot="public" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>cutoff</name></member>
+      <member refid="class_gyoto_1_1_spectrum_1_1_power_law_1ad494f908da7590eca94643aec4183324" prot="public" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>cutoff</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1a22a67609fb4690ee8ec0e95e4060e387" prot="public" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>decRefCount</name></member>
+      <member refid="class_gyoto_1_1_object_1a741ba678188d7d167ff2e3bb13dd924f" prot="public" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>describeProperty</name></member>
+      <member refid="class_gyoto_1_1_spectrum_1_1_power_law_1a817faa6d1adfbefc6ffcc888285402dc" prot="public" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>exponent</name></member>
+      <member refid="class_gyoto_1_1_spectrum_1_1_power_law_1adeff8c34f8569086bd7ea556a1a18b83" prot="public" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>exponent</name></member>
+      <member refid="class_gyoto_1_1_spectrum_1_1_power_law_1a47c059245fe42d72cf6e3471d6c23af1" prot="protected" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>exponent_</name></member>
+      <member refid="class_gyoto_1_1_object_1a0ffc3f84b4c2372d639eb848605fb1f3" prot="public" virt="virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>fillElement</name></member>
+      <member refid="class_gyoto_1_1_object_1a11892ef308d6f40add51eaea653a394b" prot="public" virt="virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>fillProperty</name></member>
+      <member refid="class_gyoto_1_1_spectrum_1_1_generic_1a8face11224ba5af8f58d722b129933ef" prot="public" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>Generic</name></member>
+      <member refid="class_gyoto_1_1_spectrum_1_1_generic_1a52e39bf310f5a7032b087cc6e4c00522" prot="public" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>Generic</name></member>
+      <member refid="class_gyoto_1_1_spectrum_1_1_generic_1a9212d9e852e788965ae704dc79c9d419" prot="public" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>Generic</name></member>
+      <member refid="class_gyoto_1_1_object_1a8232112e660216a61caa15fab27b889f" prot="public" virt="virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>get</name></member>
+      <member refid="class_gyoto_1_1_object_1ad61a061d2073c841e9911be0395d4494" prot="public" virt="virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>get</name></member>
+      <member refid="class_gyoto_1_1_object_1ad4189c2c103030e9d91ee0f29ebcf13d" prot="public" virt="virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>get</name></member>
+      <member refid="class_gyoto_1_1_object_1a99544282b6c383b8570a5bc51bed1ecf" prot="public" virt="virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>get</name></member>
+      <member refid="class_gyoto_1_1_spectrum_1_1_power_law_1ac90e9834fc4c5ffd7f57734aa75f1939" prot="public" virt="virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>getProperties</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1a9a9cb35cd161bf19ce652f76e0a5bec0" prot="public" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>getRefCount</name></member>
+      <member refid="class_gyoto_1_1_spectrum_1_1_power_law_1af85c8eb0435d6edd8c57961897de24ad" prot="public" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>Gyoto::SmartPointer&lt; Gyoto::Spectrum::PowerLaw &gt;</name></member>
+      <member refid="class_gyoto_1_1_object_1a13843618d84c49d47bd37ddfa31160c5" prot="public" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>help</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1a9ec09c51fd18dde7c13ef3b03fac1fad" prot="public" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>incRefCount</name></member>
+      <member refid="class_gyoto_1_1_spectrum_1_1_generic_1aeb97e5a99a17c14a18569195e0bf0592" prot="public" virt="virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>integrate</name></member>
+      <member refid="class_gyoto_1_1_spectrum_1_1_generic_1a8be482d8edd773bc893ab167d0bc7473" prot="public" virt="virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>integrate</name></member>
+      <member refid="class_gyoto_1_1_object_1a06ea95dc396053466cdd63d419d1688c" prot="public" virt="virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>isThreadSafe</name></member>
+      <member refid="class_gyoto_1_1_object_1aae3b80667884c6620c4796a1b8ef74e5" prot="protected" virt="virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>kind</name></member>
+      <member refid="class_gyoto_1_1_object_1a9f46de678c67e9050cf3a8b9677e1d73" prot="public" virt="virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>kind</name></member>
+      <member refid="class_gyoto_1_1_object_1ac48ad88e3ef229ba0d0fe68a94a7118f" prot="protected" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>kind_</name></member>
+      <member refid="class_gyoto_1_1_spectrum_1_1_power_law_1a199b89986586ee6a6e1e2d561c95c03c" prot="protected" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>maxfreq_</name></member>
+      <member refid="class_gyoto_1_1_spectrum_1_1_power_law_1a9213a73197be95374c502f3849df0310" prot="protected" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>minfreq_</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1abf1c1e431cdd4f08f13de581cccb6770" prot="private" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>mutex_</name></member>
+      <member refid="class_gyoto_1_1_object_1a5173d279a53bbc9850771e344d6b79b0" prot="public" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>Object</name></member>
+      <member refid="class_gyoto_1_1_object_1a5834e83ca1482a379c7ddefb1919457f" prot="public" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>Object</name></member>
+      <member refid="class_gyoto_1_1_object_1a1fbd53bedaf8d18f67b12ec0660b8aa7" prot="public" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>Object</name></member>
+      <member refid="class_gyoto_1_1_spectrum_1_1_power_law_1ad359e8a3103249203010234e0d858a64" prot="public" virt="virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>operator()</name></member>
+      <member refid="class_gyoto_1_1_spectrum_1_1_generic_1ac264d95ff1d31397c854e3245bfef193" prot="public" virt="virtual" ambiguityscope="Gyoto::Spectrum::Generic::"><scope>Gyoto::Spectrum::PowerLaw</scope><name>operator()</name></member>
+      <member refid="class_gyoto_1_1_object_1a01832761cd5f0a12319e3e24ce9a9fba" prot="protected" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>plugins_</name></member>
+      <member refid="class_gyoto_1_1_spectrum_1_1_power_law_1a8fe521a43cf400e95632e26f0c0731c8" prot="public" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>PowerLaw</name></member>
+      <member refid="class_gyoto_1_1_spectrum_1_1_power_law_1a4a4f39ee8d560986c8b7d2b5a9e6bb10" prot="public" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>PowerLaw</name></member>
+      <member refid="class_gyoto_1_1_spectrum_1_1_power_law_1a83e090895be8749d2f9612967c314631" prot="public" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>properties</name></member>
+      <member refid="class_gyoto_1_1_object_1a424ef3538c714adfafad7eda249e0d58" prot="public" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>property</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1aaaf212a70fb1880b70e4d357e843cc85" prot="private" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>refCount</name></member>
+      <member refid="class_gyoto_1_1_object_1a58c4ecdaae1873dc6912e164b61826e0" prot="public" virt="virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>set</name></member>
+      <member refid="class_gyoto_1_1_object_1aa063e0df7c2e4b22207a784c76c6681f" prot="public" virt="virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>set</name></member>
+      <member refid="class_gyoto_1_1_object_1aba6d35c5bbf814912ed84549109e117a" prot="public" virt="virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>set</name></member>
+      <member refid="class_gyoto_1_1_object_1abed03e16a8013699534b802e06751ef8" prot="public" virt="virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>set</name></member>
+      <member refid="class_gyoto_1_1_object_1a45969ac469cf6979037229c2741b226b" prot="public" virt="virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>setParameter</name></member>
+      <member refid="class_gyoto_1_1_object_1a43fe041144add66155668ca88a99fd98" prot="public" virt="virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>setParameter</name></member>
+      <member refid="class_gyoto_1_1_object_1aa0a8b119e7aa95b21be081f8c97e1626" prot="public" virt="virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>setParameters</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1a7d212bcd7d3ac4147e18683c47ca910d" prot="public" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>SmartPointee</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1adc075b08ca5d3c0635bc97f843835f8a" prot="public" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>SmartPointee</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1afe17bea3c33e2187940cfdd5543c1d14" prot="public" virt="non-virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>Subcontractor_t</name></member>
+      <member refid="class_gyoto_1_1_spectrum_1_1_generic_1a19e465ca41db3faeed6ded1689c8500d" prot="public" virt="virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>~Generic</name></member>
+      <member refid="class_gyoto_1_1_object_1ab6f302f93bfd1f07ae2a6a48b3c74932" prot="public" virt="virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>~Object</name></member>
+      <member refid="class_gyoto_1_1_smart_pointee_1a4301d456d1d36ed7912d073b742c74e1" prot="public" virt="virtual"><scope>Gyoto::Spectrum::PowerLaw</scope><name>~SmartPointee</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

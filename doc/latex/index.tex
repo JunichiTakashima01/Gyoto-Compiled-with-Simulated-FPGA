@@ -1,0 +1,26 @@
+{\bfseries{\begin{center} General relativitY Orbit Tracer of Observatoire de Paris\end{center} }}
+
+\mbox{\hyperlink{index_download_sec}{Downloading and installing}} $\vert$ \mbox{\hyperlink{index_manual_sec}{User manual}} $\vert$ \mbox{\hyperlink{index_conditions_sec}{Conditions for use}}
+
+\mbox{\hyperlink{namespace_gyoto}{Gyoto}} aims at providing a framework for computing orbits and ray-\/traced images in General relativity. It consists of a library (libgyoto), utility programs, a plug-\/in for the Yorick programing language, and an extension for the Python 3 programing language. \mbox{\hyperlink{namespace_gyoto}{Gyoto}} is known to run under Linux and Mac OS X. Please do tell us if you manage to run \mbox{\hyperlink{namespace_gyoto}{Gyoto}} under a different OS. It should compile and run with moderate effort on most UNIX-\/like systems.
+
+\mbox{\hyperlink{namespace_gyoto}{Gyoto}} can be expanded with plug-\/ins providing custom \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Gyoto\+::\+Metric\+::\+Generic}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic}{Gyoto\+::\+Astrobj\+::\+Generic}} and \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_generic}{Gyoto\+::\+Spectrum\+::\+Generic}} classes, which describe respectively analytical or numerical metrics, astronomical objects, and spectral shapes for astronomical objects (see \mbox{\hyperlink{writing_plugins_page}{Writing plug-\/ins for Gyoto}}). Custom \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Gyoto\+::\+Metric\+::\+Generic}}, \mbox{\hyperlink{class_gyoto_1_1_astrobj_1_1_generic}{Gyoto\+::\+Astrobj\+::\+Generic}} and \mbox{\hyperlink{class_gyoto_1_1_spectrum_1_1_generic}{Gyoto\+::\+Spectrum\+::\+Generic}} classes can also be written in the \href{https://www.python.org/}{\texttt{ Python}} 3.\+x interpreted language using the {\ttfamily python} plug-\/in for \mbox{\hyperlink{namespace_gyoto}{Gyoto}}, see below. Beware that a Python implementation of a custom class will run significantly slower than the equivalent C++ implementation, but sometimes saving on development time is better than saving on computing time.
+
+The base distribution includes three plug-\/ins\+: the standard plug-\/in ({\ttfamily stdplug}), a plug-\/in for using \href{http://www.lorene.obspm.fr/}{\texttt{ LORENE}}-\/based numerical metrics ({\ttfamily lorene}) and a plug-\/in for writing custom astronomical objects or metrics in the \href{https://www.python.org/}{\texttt{ Python}} 3.\+x interpreted language ({\ttfamily python}).
+
+A graphical user interface for tracing stellar orbits is provided with the Yorick plug-\/in (see \mbox{\hyperlink{yorick_plugin_page}{Gyoto for Yorick}}).
+
+To visit the code {\bfseries{Picture Gallery}}\+: click \href{gallery/index.html}{\texttt{ here}}!
+
+\hypertarget{index_download_sec}{}\doxysection{Downloading and installing}\label{index_download_sec}
+Detailed information on installing \mbox{\hyperlink{namespace_gyoto}{Gyoto}} is available \href{http://github.com/gyoto/Gyoto/blob/master/INSTALL.Gyoto.md}{\texttt{ {\bfseries{here}}}}. The user manual below is also a valuable read.\hypertarget{index_manual_sec}{}\doxysection{User manual}\label{index_manual_sec}
+The user manual is available \href{GyotoManual.pdf}{\texttt{ {\bfseries{here}}}}.\hypertarget{index_conditions_sec}{}\doxysection{Conditions for use}\label{index_conditions_sec}
+We request that use of \mbox{\hyperlink{namespace_gyoto}{Gyoto}} in scientific publications be properly acknowledged. Please cite\+:
+
+F. H. Vincent, T. Paumard, E. Gourgoulhon \& G. Perrin\+: {\itshape GYOTO\+: a new general relativistic ray-\/tracing code}, Classical and Quantum Gravity {\bfseries{28}}, 225011 (2011) \mbox{[}\href{http://dx.doi.org/10.1088/0264-9381/28/22/225011}{\texttt{ published version}}\mbox{]} \mbox{[}\href{http://arxiv.org/abs/1109.4769}{\texttt{ preprint\+: ar\+Xiv\+:1109.\+4769}}\mbox{]}
+
+We also request that \mbox{\hyperlink{namespace_gyoto}{Gyoto}} modifications, extensions or plug-\/ins leading to a scientific publication be made public as free software reasonably fast (within one year after publication of the scientific paper), for instance by contributing it directly to the \mbox{\hyperlink{namespace_gyoto}{Gyoto}} code base. Contributors will be listed in the relevant source files as well as in the AUTHORS file in the package.
+
+\mbox{\hyperlink{namespace_gyoto}{Gyoto}} is Copyright 2011-\/2016 Thibaut Paumard, Fr\'{e}d\'{e}ric Vincent and Odele Straub.
+
+\mbox{\hyperlink{namespace_gyoto}{Gyoto}} is free software\+: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. 

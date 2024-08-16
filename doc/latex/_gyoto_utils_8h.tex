@@ -1,0 +1,68 @@
+\hypertarget{_gyoto_utils_8h}{}\doxysection{Gyoto\+Utils.\+h File Reference}
+\label{_gyoto_utils_8h}\index{GyotoUtils.h@{GyotoUtils.h}}
+
+
+GYOTO utilities.  
+
+
+{\ttfamily \#include \char`\"{}Gyoto\+Defs.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_gyoto}{Gyoto}}
+\begin{DoxyCompactList}\small\item\em Namespace for the \mbox{\hyperlink{namespace_gyoto}{Gyoto}} library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_gyoto_afea7d91793e2e0c2295d8f65f9c454f8}{Gyoto\+::debug}} (int mode)
+\begin{DoxyCompactList}\small\item\em Set debug mode. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespace_gyoto_a9d1bfee5ca60b39454ea45ecf8681fb3}{Gyoto\+::debug}} ()
+\begin{DoxyCompactList}\small\item\em Get debug mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_gyoto_ad49d57c2e3b086b864b2ba48ac06e68a}{Gyoto\+::verbose}} (int mode)
+\begin{DoxyCompactList}\small\item\em Set verbosity level. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespace_gyoto_a58e2cdf35ea2416f47e6984e8df8e141}{Gyoto\+::verbose}} ()
+\begin{DoxyCompactList}\small\item\em Get verbosity level. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_gyoto_a8e7339cd5c681172bd38ce3986f8225d}{Gyoto\+::convert}} (double $\ast$const x, const \mbox{\hyperlink{_gyoto_config_8h_a43b4547e12226fef871eed8afe191ad7}{std\+::size\+\_\+t}} nelem, const double mass\+\_\+sun, const double distance\+\_\+kpc, const std\+::string unit)
+\begin{DoxyCompactList}\small\item\em Convert lengths (deprecated) \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{namespace_gyoto_aa04c060e95a1f7e98280d5ee69323aab}{Gyoto\+::atof}} (const char $\ast$str)
+\begin{DoxyCompactList}\small\item\em Interpret C string as double. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_gyoto_aeafa1a5cc64ebccb9e4e8a2dd465b7d4}{Gyoto\+::help}} (std\+::string class\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Print help on class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_aaae2a1ecfc01007e161f8ea6b52bdf31}\label{namespace_gyoto_aaae2a1ecfc01007e161f8ea6b52bdf31}} 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{namespace_gyoto_aaae2a1ecfc01007e161f8ea6b52bdf31}{Gyoto\+::split}} (std\+::string const \&src, std\+::string const \&delim)
+\begin{DoxyCompactList}\small\item\em Split string. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{namespace_gyoto_a472dfd9f9d75418d3f76fe6cba80a041}{Gyoto\+::bessi0}} (double xx)
+\begin{DoxyCompactList}\small\item\em Bessel function computation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_a7954d841393865cf430915e02677fab2}\label{namespace_gyoto_a7954d841393865cf430915e02677fab2}} 
+double \mbox{\hyperlink{namespace_gyoto_a7954d841393865cf430915e02677fab2}{Gyoto\+::bessi1}} (double xx)
+\begin{DoxyCompactList}\small\item\em Modified Bessel function I\textsubscript{1} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_a777a2172c036b512aac389cfd04ee79c}\label{namespace_gyoto_a777a2172c036b512aac389cfd04ee79c}} 
+double \mbox{\hyperlink{namespace_gyoto_a777a2172c036b512aac389cfd04ee79c}{Gyoto\+::bessk0}} (double xx)
+\begin{DoxyCompactList}\small\item\em Modified Bessel function K\textsubscript{0} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_a436396b766b4bc64f056408ed0e16a2d}\label{namespace_gyoto_a436396b766b4bc64f056408ed0e16a2d}} 
+double \mbox{\hyperlink{namespace_gyoto_a436396b766b4bc64f056408ed0e16a2d}{Gyoto\+::bessk1}} (double xx)
+\begin{DoxyCompactList}\small\item\em Modified Bessel function K\textsubscript{1} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_aa6b5c805899e32ce1344a75743c66e2a}\label{namespace_gyoto_aa6b5c805899e32ce1344a75743c66e2a}} 
+double \mbox{\hyperlink{namespace_gyoto_aa6b5c805899e32ce1344a75743c66e2a}{Gyoto\+::bessk}} (int nn, double xx)
+\begin{DoxyCompactList}\small\item\em Modified Bessel function. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_a2d6e2d6901ac3aa654b4e50fcaa54bc0}\label{namespace_gyoto_a2d6e2d6901ac3aa654b4e50fcaa54bc0}} 
+double \mbox{\hyperlink{namespace_gyoto_a2d6e2d6901ac3aa654b4e50fcaa54bc0}{Gyoto\+::hypergeom}} (double kappa\+Index, double thetae)
+\begin{DoxyCompactList}\small\item\em Gauss hypergeometric 2F1 term for kappa-\/distribution synchrotron. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_aa846a4ba707e88e5f4b71a0c4a2cc885}\label{namespace_gyoto_aa846a4ba707e88e5f4b71a0c4a2cc885}} 
+void \mbox{\hyperlink{namespace_gyoto_aa846a4ba707e88e5f4b71a0c4a2cc885}{Gyoto\+::cartesian\+To\+Spherical}} (double const cpos\mbox{[}3\mbox{]}, double spos\mbox{[}3\mbox{]})
+\begin{DoxyCompactList}\small\item\em Tranform from Cartesian 3-\/position to spherical 3-\/position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_gyoto_a2f73866e3a2dea6955df5e106394347a}\label{namespace_gyoto_a2f73866e3a2dea6955df5e106394347a}} 
+void \mbox{\hyperlink{namespace_gyoto_a2f73866e3a2dea6955df5e106394347a}{Gyoto\+::spherical\+To\+Cartesian}} (double const spos\mbox{[}3\mbox{]}, double cpos\mbox{[}3\mbox{]})
+\begin{DoxyCompactList}\small\item\em Tranform from spherical 3-\/position to Cartesian 3-\/position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_gyoto_a1850657d69da90643b3da1243354eed7}{Gyoto\+::matrix4\+Invert}} (double ARGOUT\+\_\+\+ARRAY2\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, double const IN\+\_\+\+ARRAY2\mbox{[}4\mbox{]}\mbox{[}4\mbox{]})
+\begin{DoxyCompactList}\small\item\em Invert 4x4 matrix. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_gyoto_a57b7bb7171ade76737ee138a88f98602}{Gyoto\+::matrix4\+Circular\+Invert}} (double ARGOUT\+\_\+\+ARRAY2\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, double const IN\+\_\+\+ARRAY2\mbox{[}4\mbox{]}\mbox{[}4\mbox{]})
+\begin{DoxyCompactList}\small\item\em Invert 4x4 circular spacetime metric. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+GYOTO utilities. 
+
+Various utilities 

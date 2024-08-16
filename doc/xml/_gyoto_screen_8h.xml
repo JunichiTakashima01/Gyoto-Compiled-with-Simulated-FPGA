@@ -1,0 +1,859 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_gyoto_screen_8h" kind="file" language="C++">
+    <compoundname>GyotoScreen.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">string</includes>
+    <includes refid="_gyoto_defs_8h" local="no">GyotoDefs.h</includes>
+    <includes refid="_gyoto_utils_8h" local="no">GyotoUtils.h</includes>
+    <includes refid="_gyoto_smart_pointer_8h" local="no">GyotoSmartPointer.h</includes>
+    <includes refid="_gyoto_object_8h" local="no">GyotoObject.h</includes>
+    <includes refid="_gyoto_metric_8h" local="no">GyotoMetric.h</includes>
+    <includes refid="_gyoto_spectrometer_8h" local="no">GyotoSpectrometer.h</includes>
+    <includedby refid="_gyoto_photon_8h" local="no">GyotoPhoton.h</includedby>
+    <includedby refid="_gyoto_scenery_8h" local="no">GyotoScenery.h</includedby>
+    <includedby refid="_gyoto_worldline_8h" local="no">GyotoWorldline.h</includedby>
+    <includedby refid="_gyoto_python_8h" local="no">GyotoPython.h</includedby>
+    <incdepgraph>
+      <node id="18">
+        <label>iomanip</label>
+      </node>
+      <node id="7">
+        <label>float.h</label>
+      </node>
+      <node id="9">
+        <label>GyotoUtils.h</label>
+        <link refid="_gyoto_utils_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>eigen3/Eigen/Dense</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="10">
+        <label>GyotoSmartPointer.h</label>
+        <link refid="_gyoto_smart_pointer_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>GyotoObject.h</label>
+        <link refid="_gyoto_object_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>stddef.h</label>
+      </node>
+      <node id="3">
+        <label>fstream</label>
+      </node>
+      <node id="22">
+        <label>GyotoRegister.h</label>
+        <link refid="_gyoto_register_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>GyotoSpectrometer.h</label>
+        <link refid="_gyoto_spectrometer_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>GyotoMetric.h</label>
+        <link refid="_gyoto_metric_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>GyotoDefs.h</label>
+        <link refid="_gyoto_defs_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>pthread.h</label>
+      </node>
+      <node id="14">
+        <label>typeinfo</label>
+      </node>
+      <node id="8">
+        <label>vector</label>
+      </node>
+      <node id="6">
+        <label>GyotoConfig.h</label>
+        <link refid="_gyoto_config_8h"/>
+      </node>
+      <node id="20">
+        <label>sstream</label>
+      </node>
+      <node id="17">
+        <label>GyotoAstrobj.h</label>
+        <link refid="_gyoto_astrobj_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+      <node id="12">
+        <label>GyotoError.h</label>
+        <link refid="_gyoto_error_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>GyotoHooks.h</label>
+        <link refid="_gyoto_hooks_8h"/>
+      </node>
+      <node id="1">
+        <label>GyotoScreen.h</label>
+        <link refid="_gyoto_screen_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>GyotoConverters.h</label>
+        <link refid="_gyoto_converters_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="18">
+        <label>GyotoRotStar3_1.h</label>
+        <link refid="_gyoto_rot_star3__1_8h"/>
+      </node>
+      <node id="23">
+        <label>GyotoPython.h</label>
+        <link refid="_gyoto_python_8h"/>
+      </node>
+      <node id="20">
+        <label>GyotoBlob.h</label>
+        <link refid="_gyoto_blob_8h"/>
+      </node>
+      <node id="12">
+        <label>GyotoOscilTorus.h</label>
+        <link refid="_gyoto_oscil_torus_8h"/>
+      </node>
+      <node id="13">
+        <label>GyotoKerrKS.h</label>
+        <link refid="_gyoto_kerr_k_s_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>GyotoStarTrace.h</label>
+        <link refid="_gyoto_star_trace_8h"/>
+      </node>
+      <node id="11">
+        <label>GyotoDeformedTorus.h</label>
+        <link refid="_gyoto_deformed_torus_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>GyotoNeutronStarAnalyticEmission.h</label>
+        <link refid="_gyoto_neutron_star_analytic_emission_8h"/>
+      </node>
+      <node id="6">
+        <label>GyotoWorldline.h</label>
+        <link refid="_gyoto_worldline_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>GyotoKerrBL.h</label>
+        <link refid="_gyoto_kerr_b_l_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>GyotoNeutronStarModelAtmosphere.h</label>
+        <link refid="_gyoto_neutron_star_model_atmosphere_8h"/>
+      </node>
+      <node id="21">
+        <label>GyotoInflateStar.h</label>
+        <link refid="_gyoto_inflate_star_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>GyotoChernSimons.h</label>
+        <link refid="_gyoto_chern_simons_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>GyotoFactory.h</label>
+        <link refid="_gyoto_factory_8h"/>
+      </node>
+      <node id="14">
+        <label>GyotoNumericalMetricLorene.h</label>
+        <link refid="_gyoto_numerical_metric_lorene_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>GyotoScenery.h</label>
+        <link refid="_gyoto_scenery_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>GyotoEquatorialHotSpot.h</label>
+        <link refid="_gyoto_equatorial_hot_spot_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>GyotoScreen.h</label>
+        <link refid="_gyoto_screen_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Gyoto.h</label>
+        <link refid="_gyoto_8h"/>
+      </node>
+      <node id="15">
+        <label>GyotoNeutronStar.h</label>
+        <link refid="_gyoto_neutron_star_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>GyotoStar.h</label>
+        <link refid="_gyoto_star_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>GyotoPhoton.h</label>
+        <link refid="_gyoto_photon_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>GyotoHayward.h</label>
+        <link refid="_gyoto_hayward_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_g_y_o_t_o___a_r_r_a_y" prot="public">GYOTO_ARRAY</innerclass>
+    <innerclass refid="class_gyoto_1_1_screen" prot="public">Gyoto::Screen</innerclass>
+    <innerclass refid="class_gyoto_1_1_screen_1_1_coord1d_set" prot="public">Gyoto::Screen::Coord1dSet</innerclass>
+    <innerclass refid="class_gyoto_1_1_screen_1_1_coord2d_set" prot="public">Gyoto::Screen::Coord2dSet</innerclass>
+    <innerclass refid="class_gyoto_1_1_screen_1_1_grid" prot="public">Gyoto::Screen::Grid</innerclass>
+    <innerclass refid="class_gyoto_1_1_screen_1_1_bucket" prot="public">Gyoto::Screen::Bucket</innerclass>
+    <innerclass refid="class_gyoto_1_1_screen_1_1_empty" prot="public">Gyoto::Screen::Empty</innerclass>
+    <innerclass refid="class_gyoto_1_1_screen_1_1_range" prot="public">Gyoto::Screen::Range</innerclass>
+    <innerclass refid="class_gyoto_1_1_screen_1_1_indices" prot="public">Gyoto::Screen::Indices</innerclass>
+    <innerclass refid="class_gyoto_1_1_screen_1_1_angles" prot="public">Gyoto::Screen::Angles</innerclass>
+    <innerclass refid="class_gyoto_1_1_screen_1_1_repeat_angle" prot="public">Gyoto::Screen::RepeatAngle</innerclass>
+    <innernamespace refid="namespace_gyoto">Gyoto</innernamespace>
+    <briefdescription>
+<para>Description of the observer screen. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>Copyright<sp/>2011-2019<sp/>Thibaut<sp/>Paumard,<sp/>Frederic<sp/>Vincent</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>Gyoto.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/>Gyoto<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"></highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>Gyoto.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__GyotoScreen_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__GyotoScreen_H_<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined<sp/>HAVE_BOOST_ARRAY_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;boost/array.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>GYOTO_ARRAY<sp/>boost::array</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>if<sp/>defined<sp/>HAVE_MPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>include<sp/>&lt;boost/version.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>if<sp/>BOOST_VERSION<sp/>&gt;=<sp/>106400<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>include<sp/>&lt;boost/serialization/boost_array.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>include<sp/>&lt;boost/serialization/array_wrapper.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="class_g_y_o_t_o___a_r_r_a_y" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>sz&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_g_y_o_t_o___a_r_r_a_y" kindref="compound">GYOTO_ARRAY</ref><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>T<sp/>buf[sz];</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>T&amp;<sp/>operator[](</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>c)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>buf[c]<sp/>;<sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_gyoto" kindref="compound">Gyoto</ref><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Screen;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_defs_8h" kindref="compound">GyotoDefs.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_utils_8h" kindref="compound">GyotoUtils.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_smart_pointer_8h" kindref="compound">GyotoSmartPointer.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_object_8h" kindref="compound">GyotoObject.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_metric_8h" kindref="compound">GyotoMetric.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_gyoto_spectrometer_8h" kindref="compound">GyotoSpectrometer.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="class_gyoto_1_1_screen" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_screen" kindref="compound">Gyoto::Screen</ref></highlight></codeline>
+<codeline lineno="174"><highlight class="normal">:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_smart_pointee" kindref="compound">Gyoto::SmartPointee</ref>,</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_object" kindref="compound">Gyoto::Object</ref></highlight></codeline>
+<codeline lineno="176"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">Gyoto::SmartPointer</ref>&lt;<ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>::<ref refid="class_gyoto_1_1_screen" kindref="compound">Screen</ref>&gt;;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="180" refid="class_gyoto_1_1_screen_1a8ed940061d9e8c6e0e235d76412b0908" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_screen_1a8ed940061d9e8c6e0e235d76412b0908" kindref="member">tobs_</ref>;<sp/></highlight></codeline>
+<codeline lineno="181" refid="class_gyoto_1_1_screen_1a05676dadaa657bdc43c36b3e5dca58dc" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_screen_1a05676dadaa657bdc43c36b3e5dca58dc" kindref="member">fov_</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="182" refid="class_gyoto_1_1_screen_1a3bf1a87d30f464a041179bb24ff9d8a1" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_screen_1a3bf1a87d30f464a041179bb24ff9d8a1" kindref="member">azimuthal_fov_</ref>;<sp/></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>double<sp/>tmin_;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184" refid="class_gyoto_1_1_screen_1a1ad9755611f0442d1c9fe58a2998d133" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">size_t</ref><sp/><ref refid="class_gyoto_1_1_screen_1a1ad9755611f0442d1c9fe58a2998d133" kindref="member">npix_</ref>;<sp/></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189" refid="class_gyoto_1_1_screen_1ac3bf86898ecf9aac143b995d98c8df52" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/>*<sp/><ref refid="class_gyoto_1_1_screen_1ac3bf86898ecf9aac143b995d98c8df52" kindref="member">mask_</ref>;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197" refid="class_gyoto_1_1_screen_1a4992e92935ebc335973ca93957fcc648" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="class_gyoto_1_1_screen_1a4992e92935ebc335973ca93957fcc648" kindref="member">mask_filename_</ref>;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="class_gyoto_1_1_screen_1a30c30ba3daebc04ede4a1a7fd700543b" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_screen_1a30c30ba3daebc04ede4a1a7fd700543b" kindref="member">distance_</ref>;<sp/></highlight></codeline>
+<codeline lineno="200" refid="class_gyoto_1_1_screen_1ada4d6e039ed2e51d688c97421af91b96" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/><ref refid="class_gyoto_1_1_screen_1ada4d6e039ed2e51d688c97421af91b96" kindref="member">dmax_</ref>;<sp/></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/>enum<sp/>anglekind_e<sp/>{<sp/>equatorial_angles=0,<sp/>rectilinear=1,<sp/>spherical_angles=2};</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>anglekind_t;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205" refid="class_gyoto_1_1_screen_1a5fe8cfa532a7ff58970519cf25040710" refkind="member"><highlight class="normal"><sp/><sp/>anglekind_t<sp/><ref refid="class_gyoto_1_1_screen_1a5fe8cfa532a7ff58970519cf25040710" kindref="member">anglekind_</ref>;<sp/></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="212" refid="class_gyoto_1_1_screen_1a78512e2b290966a9324a63a18ccde5dc" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a78512e2b290966a9324a63a18ccde5dc" kindref="member">euler_</ref>[3];<sp/></highlight></codeline>
+<codeline lineno="213" refid="class_gyoto_1_1_screen_1a12c1dcc108221467b4610bd1e9d1bfd5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a12c1dcc108221467b4610bd1e9d1bfd5" kindref="member">ex_</ref>[3];<sp/></highlight></codeline>
+<codeline lineno="214" refid="class_gyoto_1_1_screen_1a23faaa0e30354203435ba5321fab87a3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a23faaa0e30354203435ba5321fab87a3" kindref="member">ey_</ref>[3];<sp/></highlight></codeline>
+<codeline lineno="215" refid="class_gyoto_1_1_screen_1a1301fa88db90b65e1c7076fced77dc93" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a1301fa88db90b65e1c7076fced77dc93" kindref="member">ez_</ref>[3];<sp/></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217" refid="class_gyoto_1_1_screen_1ab46edd61cb5363d03d906c02926696f5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1ab46edd61cb5363d03d906c02926696f5" kindref="member">fourvel_</ref>[4];<sp/></highlight></codeline>
+<codeline lineno="218" refid="class_gyoto_1_1_screen_1a879052ef3c52f2a84c42bcb1383a9ba0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a879052ef3c52f2a84c42bcb1383a9ba0" kindref="member">screen1_</ref>[4];<sp/></highlight></codeline>
+<codeline lineno="219" refid="class_gyoto_1_1_screen_1addcecd0b24324e73d880af9813ff55ae" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1addcecd0b24324e73d880af9813ff55ae" kindref="member">screen2_</ref>[4];<sp/></highlight></codeline>
+<codeline lineno="220" refid="class_gyoto_1_1_screen_1a10ce21458df390989b7b89621cd29fc7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a10ce21458df390989b7b89621cd29fc7" kindref="member">screen3_</ref>[4];<sp/></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222" refid="class_gyoto_1_1_screen_1abf6bd370ee528d28c5b33afc56a1cb4b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1abf6bd370ee528d28c5b33afc56a1cb4b" kindref="member">dangle1_</ref>;<sp/></highlight></codeline>
+<codeline lineno="223" refid="class_gyoto_1_1_screen_1aa20af9c764d367b86c6135cf402c226b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1aa20af9c764d367b86c6135cf402c226b" kindref="member">dangle2_</ref>;<sp/></highlight></codeline>
+<codeline lineno="224" refid="class_gyoto_1_1_screen_1a011767f8a5b9db586c12c01f31970556" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer&lt;Metric::Generic&gt;</ref><sp/><ref refid="class_gyoto_1_1_screen_1a011767f8a5b9db586c12c01f31970556" kindref="member">gg_</ref>;<sp/></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229" refid="class_gyoto_1_1_screen_1ad0e0a42a7b99e8d5f8d2eb9748dee978" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer&lt;Spectrometer::Generic&gt;</ref><sp/><ref refid="class_gyoto_1_1_screen_1ad0e0a42a7b99e8d5f8d2eb9748dee978" kindref="member">spectro_</ref>;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236" refid="class_gyoto_1_1_screen_1a02accc43491f2b87dc96f779f42a2a75" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a02accc43491f2b87dc96f779f42a2a75" kindref="member">freq_obs_</ref>;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242" refid="class_gyoto_1_1_screen_1a6a700fec56bcef3ca6088b1421259a2b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_defs_8h_1abdc37c8fde52ef588246ff7da367d65c" kindref="member">obskind_t</ref><sp/><ref refid="class_gyoto_1_1_screen_1a6a700fec56bcef3ca6088b1421259a2b" kindref="member">observerkind_</ref>;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="245" refid="class_gyoto_1_1_screen_1a636e5e881825a8835d4f962b9f0d1b47" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_gyoto_object_8h_1a750e7a43779f63bdb13111eaf0271203" kindref="member">GYOTO_OBJECT</ref>;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/>GYOTO_OBJECT_THREAD_SAFETY;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Constructors<sp/>-<sp/>Destructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>-------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250" refid="class_gyoto_1_1_screen_1a3e8ee3fae738eebcd30ec468effd446a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_screen_1a3e8ee3fae738eebcd30ec468effd446a" kindref="member">Screen</ref>()<sp/>;<sp/></highlight></codeline>
+<codeline lineno="251" refid="class_gyoto_1_1_screen_1a1d163cecc0ac373f5b7553e8b03e6366" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_screen_1a1d163cecc0ac373f5b7553e8b03e6366" kindref="member">Screen</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen" kindref="compound">Screen</ref>&amp;<sp/>)<sp/>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="252" refid="class_gyoto_1_1_screen_1a78863fb072cf8fee8db3014b26ef8907" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_screen" kindref="compound">Screen</ref><sp/>*<sp/><ref refid="class_gyoto_1_1_screen_1a78863fb072cf8fee8db3014b26ef8907" kindref="member">clone</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254" refid="class_gyoto_1_1_screen_1a25bf668b384b47043f5c802c9d7ea427" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a25bf668b384b47043f5c802c9d7ea427" kindref="member">~Screen</ref>()<sp/>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Mutators<sp/>/<sp/>assignment</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>---------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260" refid="class_gyoto_1_1_screen_1aac0b885b8967104ee65c494a88158f57" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1aac0b885b8967104ee65c494a88158f57" kindref="member">setProjection</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>paln,</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a5cb143136e6b5be8581038c1102cc114" kindref="member">inclination</ref>,</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a31dd1c28b3a455ceb8e8ff6e8dde4049" kindref="member">argument</ref>);</highlight></codeline>
+<codeline lineno="264" refid="class_gyoto_1_1_screen_1ad457be9c39ee196d2a252aaa29d96c69" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1ad457be9c39ee196d2a252aaa29d96c69" kindref="member">setProjection</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a4c49e20ef041790a0ba62cb8e8fda521" kindref="member">distance</ref>,</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>paln,</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a5cb143136e6b5be8581038c1102cc114" kindref="member">inclination</ref>,</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a31dd1c28b3a455ceb8e8ff6e8dde4049" kindref="member">argument</ref>);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273" refid="class_gyoto_1_1_screen_1ae1a1645e79ee8897fa8a95c12cabb98b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1ae1a1645e79ee8897fa8a95c12cabb98b" kindref="member">distance</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dist);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279" refid="class_gyoto_1_1_screen_1a7e57ddb7fae5b89ae7b59859b9b68ccb" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a7e57ddb7fae5b89ae7b59859b9b68ccb" kindref="member">dMax</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dist);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286" refid="class_gyoto_1_1_screen_1a980a3e6f7f81fdcf81aa9fd063a1cd27" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a980a3e6f7f81fdcf81aa9fd063a1cd27" kindref="member">distance</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dist,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;unit);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293" refid="class_gyoto_1_1_screen_1a76e6f8eafa8bc1a7e3d600b9aac28a4f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a76e6f8eafa8bc1a7e3d600b9aac28a4f" kindref="member">inclination</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300" refid="class_gyoto_1_1_screen_1a9cd7ecfd7426b2b2567ea1f65a5d9b9e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a9cd7ecfd7426b2b2567ea1f65a5d9b9e" kindref="member">inclination</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;unit);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302" refid="class_gyoto_1_1_screen_1a3533fce8d94b1678634e00d6c5e908e7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a3533fce8d94b1678634e00d6c5e908e7" kindref="member">PALN</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="304" refid="class_gyoto_1_1_screen_1a41d61e848badc884f04b9448072d93da" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a41d61e848badc884f04b9448072d93da" kindref="member">PALN</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;unit);</highlight></codeline>
+<codeline lineno="306" refid="class_gyoto_1_1_screen_1a520d6c146be00f52481bcbec17ec77d7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a520d6c146be00f52481bcbec17ec77d7" kindref="member">argument</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="308" refid="class_gyoto_1_1_screen_1a582d1c316a2d4c0fbf678b52426dc21c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a582d1c316a2d4c0fbf678b52426dc21c" kindref="member">argument</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;unit);</highlight></codeline>
+<codeline lineno="310" refid="class_gyoto_1_1_screen_1ac4655e7c8f5b30d0e66d917006c6f262" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1ac4655e7c8f5b30d0e66d917006c6f262" kindref="member">spectrometer</ref>(<ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer&lt;Spectrometer::Generic&gt;</ref><sp/>spectro);</highlight></codeline>
+<codeline lineno="312" refid="class_gyoto_1_1_screen_1aa04bcd493cf3cb4e48023f7fd52ef087" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer&lt;Spectrometer::Generic&gt;</ref><sp/><ref refid="class_gyoto_1_1_screen_1aa04bcd493cf3cb4e48023f7fd52ef087" kindref="member">spectrometer</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319" refid="class_gyoto_1_1_screen_1a631c6f6c831dfb1ed35a3f7d81079d09" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a631c6f6c831dfb1ed35a3f7d81079d09" kindref="member">freqObs</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>fo);</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328" refid="class_gyoto_1_1_screen_1a22d6664c292b69b2f0984a17592313a2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a22d6664c292b69b2f0984a17592313a2" kindref="member">freqObs</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>fo,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;unit);</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="333" refid="class_gyoto_1_1_screen_1a4a24c8f8b8fedf796630337c25be5b1c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a4a24c8f8b8fedf796630337c25be5b1c" kindref="member">freqObs</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340" refid="class_gyoto_1_1_screen_1a3f8d6737fe0a3a73fbad975eca93ca45" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a3f8d6737fe0a3a73fbad975eca93ca45" kindref="member">freqObs</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;unit)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="351" refid="class_gyoto_1_1_screen_1ac4738c59529e7a8ea0c5a0300866978e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1ac4738c59529e7a8ea0c5a0300866978e" kindref="member">setObserverPos</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pos[4]);</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>observerKind(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<ref refid="class_gyoto_1_1_object_1a9f46de678c67e9050cf3a8b9677e1d73" kindref="member">kind</ref>);</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/>std::string<sp/>observerKind()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="354" refid="class_gyoto_1_1_screen_1a6d64a13dc2178e2b12c70e31f56d3b81" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a6d64a13dc2178e2b12c70e31f56d3b81" kindref="member">setFourVel</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>coord[4]);</highlight></codeline>
+<codeline lineno="356" refid="class_gyoto_1_1_screen_1ad348a1f0eed557f45ba8ef885d150f18" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1ad348a1f0eed557f45ba8ef885d150f18" kindref="member">setScreen1</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>coord[4]);</highlight></codeline>
+<codeline lineno="358" refid="class_gyoto_1_1_screen_1a44a010e55ce14224f7bd3e254ff3a666" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a44a010e55ce14224f7bd3e254ff3a666" kindref="member">setScreen2</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>coord[4]);</highlight></codeline>
+<codeline lineno="360" refid="class_gyoto_1_1_screen_1aba397f13ceda3b3dd0139caf9f1ed29a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1aba397f13ceda3b3dd0139caf9f1ed29a" kindref="member">setScreen3</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>coord[4]);</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Accessors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>---------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight></codeline>
+<codeline lineno="370" refid="class_gyoto_1_1_screen_1a7a7a34bea4741958a822f58f2cd01e47" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a7a7a34bea4741958a822f58f2cd01e47" kindref="member">coordKind</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="376" refid="class_gyoto_1_1_screen_1a4c49e20ef041790a0ba62cb8e8fda521" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a4c49e20ef041790a0ba62cb8e8fda521" kindref="member">distance</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight></codeline>
+<codeline lineno="382" refid="class_gyoto_1_1_screen_1a5b304a11f3aefb290dd48d8ce39c83b7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a5b304a11f3aefb290dd48d8ce39c83b7" kindref="member">distance</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="383"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"></highlight></codeline>
+<codeline lineno="388" refid="class_gyoto_1_1_screen_1abbe7a679b861c54410b8460147d5b65d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1abbe7a679b861c54410b8460147d5b65d" kindref="member">dMax</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"></highlight></codeline>
+<codeline lineno="391"><highlight class="normal"></highlight></codeline>
+<codeline lineno="395" refid="class_gyoto_1_1_screen_1a5cb143136e6b5be8581038c1102cc114" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a5cb143136e6b5be8581038c1102cc114" kindref="member">inclination</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"></highlight></codeline>
+<codeline lineno="398"><highlight class="normal"></highlight></codeline>
+<codeline lineno="402" refid="class_gyoto_1_1_screen_1afe808b65f296506f8f6a5f6ce33d56b6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1afe808b65f296506f8f6a5f6ce33d56b6" kindref="member">inclination</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"></highlight></codeline>
+<codeline lineno="404" refid="class_gyoto_1_1_screen_1a80b4539f8503b202f1e5390d917efb35" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a80b4539f8503b202f1e5390d917efb35" kindref="member">PALN</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="405" refid="class_gyoto_1_1_screen_1a02df86989766df90d21648ff2ff2e598" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a02df86989766df90d21648ff2ff2e598" kindref="member">PALN</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="406" refid="class_gyoto_1_1_screen_1a31dd1c28b3a455ceb8e8ff6e8dde4049" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a31dd1c28b3a455ceb8e8ff6e8dde4049" kindref="member">argument</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="407" refid="class_gyoto_1_1_screen_1a704a91aa29ba29f117c5426425805c46" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a704a91aa29ba29f117c5426425805c46" kindref="member">argument</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="408"><highlight class="normal"></highlight></codeline>
+<codeline lineno="409" refid="class_gyoto_1_1_screen_1a1407419c822f724399206a4d242d58ff" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer&lt;Metric::Generic&gt;</ref><sp/><ref refid="class_gyoto_1_1_screen_1a1407419c822f724399206a4d242d58ff" kindref="member">metric</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/></highlight></codeline>
+<codeline lineno="410" refid="class_gyoto_1_1_screen_1ae3f6f58a48826f3aaa02416881052a67" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1ae3f6f58a48826f3aaa02416881052a67" kindref="member">metric</ref>(<ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer&lt;Metric::Generic&gt;</ref><sp/>gg);<sp/></highlight></codeline>
+<codeline lineno="411"><highlight class="normal"></highlight></codeline>
+<codeline lineno="413" refid="class_gyoto_1_1_screen_1a5dbc5df4fa324ac907a8ca1da41bc294" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a5dbc5df4fa324ac907a8ca1da41bc294" kindref="member">time</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"></highlight></codeline>
+<codeline lineno="416" refid="class_gyoto_1_1_screen_1a49cdd35ce8192c3239a8fd37ce70a3d5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a49cdd35ce8192c3239a8fd37ce70a3d5" kindref="member">time</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"></highlight></codeline>
+<codeline lineno="419" refid="class_gyoto_1_1_screen_1a5889ce87531078d37976ad6ae5141249" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a5889ce87531078d37976ad6ae5141249" kindref="member">time</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;);</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"></highlight></codeline>
+<codeline lineno="422" refid="class_gyoto_1_1_screen_1a79eb0a8b53104639b55a56d4118d29fd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a79eb0a8b53104639b55a56d4118d29fd" kindref="member">time</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"></highlight></codeline>
+<codeline lineno="425" refid="class_gyoto_1_1_screen_1a98c5dddc8210a162ebea3e24016defbd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a98c5dddc8210a162ebea3e24016defbd" kindref="member">fieldOfView</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"></highlight></codeline>
+<codeline lineno="428" refid="class_gyoto_1_1_screen_1aa209fe1f0d8743de6ea043dddfe68f82" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1aa209fe1f0d8743de6ea043dddfe68f82" kindref="member">fieldOfView</ref>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;unit)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"></highlight></codeline>
+<codeline lineno="431" refid="class_gyoto_1_1_screen_1a4225900cd8522dccd1a5fdbcbb880758" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a4225900cd8522dccd1a5fdbcbb880758" kindref="member">fieldOfView</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"></highlight></codeline>
+<codeline lineno="434" refid="class_gyoto_1_1_screen_1adf0b511778c832f3d19cf3222cb3a7f2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1adf0b511778c832f3d19cf3222cb3a7f2" kindref="member">fieldOfView</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;unit);</highlight></codeline>
+<codeline lineno="435"><highlight class="normal"></highlight></codeline>
+<codeline lineno="437" refid="class_gyoto_1_1_screen_1a16d474f38095d0e8572a5b72a5868e03" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a16d474f38095d0e8572a5b72a5868e03" kindref="member">azimuthalFieldOfView</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"></highlight></codeline>
+<codeline lineno="440" refid="class_gyoto_1_1_screen_1ab02ca170914a86f04a9499e34036c0b4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1ab02ca170914a86f04a9499e34036c0b4" kindref="member">azimuthalFieldOfView</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ff);</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"></highlight></codeline>
+<codeline lineno="443" refid="class_gyoto_1_1_screen_1ac39692312f15a033dc76dbecfe312f3b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1ac39692312f15a033dc76dbecfe312f3b" kindref="member">dangle1</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="445" refid="class_gyoto_1_1_screen_1a6c5f4cfd7f0c67bf1db6682a98ef85fc" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a6c5f4cfd7f0c67bf1db6682a98ef85fc" kindref="member">dangle1</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;unit);</highlight></codeline>
+<codeline lineno="447" refid="class_gyoto_1_1_screen_1aa5069262e8644cd8ea002b1d3c6ea848" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1aa5069262e8644cd8ea002b1d3c6ea848" kindref="member">dangle1</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="449" refid="class_gyoto_1_1_screen_1a208f6e53aaff96defa11e7321b47e258" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a208f6e53aaff96defa11e7321b47e258" kindref="member">dangle1</ref>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;unit)</highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="451" refid="class_gyoto_1_1_screen_1a66ad14d834a9a54120b0d55c07ea5371" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a66ad14d834a9a54120b0d55c07ea5371" kindref="member">dangle2</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="453" refid="class_gyoto_1_1_screen_1a823fede8d6c133e6059abe471ffd79bc" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a823fede8d6c133e6059abe471ffd79bc" kindref="member">dangle2</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;unit);</highlight></codeline>
+<codeline lineno="455" refid="class_gyoto_1_1_screen_1ad5a3d67902a86bdddeba0dda3064cf77" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1ad5a3d67902a86bdddeba0dda3064cf77" kindref="member">dangle2</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="457" refid="class_gyoto_1_1_screen_1ab42b28eb9de074ecd3b6488a61cb3552" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1ab42b28eb9de074ecd3b6488a61cb3552" kindref="member">dangle2</ref>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;unit)</highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"></highlight></codeline>
+<codeline lineno="460" refid="class_gyoto_1_1_screen_1abf443845495bb3c4a44bb42db8fbbf34" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1abf443845495bb3c4a44bb42db8fbbf34" kindref="member">anglekind</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1abf443845495bb3c4a44bb42db8fbbf34" kindref="member">anglekind</ref>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;);</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="class_gyoto_1_1_screen_1abf443845495bb3c4a44bb42db8fbbf34" kindref="member">anglekind</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"></highlight></codeline>
+<codeline lineno="465" refid="class_gyoto_1_1_screen_1aff7c6c6a235408bbaafff591d5fdf100" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1aff7c6c6a235408bbaafff591d5fdf100" kindref="member">resolution</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="467" refid="class_gyoto_1_1_screen_1aec5dbe603e61f05836e2dec202a96040" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1aec5dbe603e61f05836e2dec202a96040" kindref="member">resolution</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"></highlight></codeline>
+<codeline lineno="470"><highlight class="normal"></highlight></codeline>
+<codeline lineno="474" refid="class_gyoto_1_1_screen_1ae05314bd4dd6dd39d372f6abe4c695d8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1ae05314bd4dd6dd39d372f6abe4c695d8" kindref="member">mask</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>mm,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1aff7c6c6a235408bbaafff591d5fdf100" kindref="member">resolution</ref>=0);</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"></highlight></codeline>
+<codeline lineno="477" refid="class_gyoto_1_1_screen_1a329fda678b4d3df978741ab813f3df93" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*<sp/><ref refid="class_gyoto_1_1_screen_1a329fda678b4d3df978741ab813f3df93" kindref="member">mask</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>maskFile(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;fname);</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"><sp/><sp/>std::string<sp/>maskFile()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifdef<sp/>GYOTO_USE_CFITSIO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="481"><highlight class="normal"></highlight></codeline>
+<codeline lineno="483"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fitsReadMask(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;fname);</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"></highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fitsWriteMask(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;fname);</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="488"><highlight class="normal"></highlight></codeline>
+<codeline lineno="490"><highlight class="normal"></highlight></codeline>
+<codeline lineno="494" refid="class_gyoto_1_1_screen_1ab6a2c480414850b30659855936493140" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1ab6a2c480414850b30659855936493140" kindref="member">operator()</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"></highlight></codeline>
+<codeline lineno="496"><highlight class="normal"></highlight></codeline>
+<codeline lineno="498"><highlight class="normal"></highlight></codeline>
+<codeline lineno="509" refid="class_gyoto_1_1_screen_1a9668c6a836d0773248f9a3c0fa41ecf7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a9668c6a836d0773248f9a3c0fa41ecf7" kindref="member">getObserverPos</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dest[4])<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"></highlight></codeline>
+<codeline lineno="512"><highlight class="normal"></highlight></codeline>
+<codeline lineno="515" refid="class_gyoto_1_1_screen_1a91b9bc67e492948511a88b41f52da794" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a91b9bc67e492948511a88b41f52da794" kindref="member">getFourVel</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dest[4])<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"></highlight></codeline>
+<codeline lineno="517"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fourVel(std::vector&lt;double&gt;<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;);</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/>std::vector&lt;double&gt;<sp/>fourVel()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>screenVector1(std::vector&lt;double&gt;<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;);</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"><sp/><sp/>std::vector&lt;double&gt;<sp/>screenVector1()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="521"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>screenVector2(std::vector&lt;double&gt;<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;);</highlight></codeline>
+<codeline lineno="522"><highlight class="normal"><sp/><sp/>std::vector&lt;double&gt;<sp/>screenVector2()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="523"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>screenVector3(std::vector&lt;double&gt;<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;);</highlight></codeline>
+<codeline lineno="524"><highlight class="normal"><sp/><sp/>std::vector&lt;double&gt;<sp/>screenVector3()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"></highlight></codeline>
+<codeline lineno="527"><highlight class="normal"></highlight></codeline>
+<codeline lineno="530" refid="class_gyoto_1_1_screen_1a5e2e54d9c2fa7d1123c1229812736788" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a5e2e54d9c2fa7d1123c1229812736788" kindref="member">getScreen1</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dest[4])<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="531"><highlight class="normal"></highlight></codeline>
+<codeline lineno="533"><highlight class="normal"></highlight></codeline>
+<codeline lineno="536" refid="class_gyoto_1_1_screen_1a1ba625dd52784a24803e7aa26f32fc12" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a1ba625dd52784a24803e7aa26f32fc12" kindref="member">getScreen2</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dest[4])<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="537"><highlight class="normal"></highlight></codeline>
+<codeline lineno="539"><highlight class="normal"></highlight></codeline>
+<codeline lineno="542" refid="class_gyoto_1_1_screen_1a98afecb20824bbd141c2236198d68a22" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a98afecb20824bbd141c2236198d68a22" kindref="member">getScreen3</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dest[4])<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="543"><highlight class="normal"></highlight></codeline>
+<codeline lineno="545"><highlight class="normal"></highlight></codeline>
+<codeline lineno="557" refid="class_gyoto_1_1_screen_1a8de2b660ee2bb8f3aa706a529638daa3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a8de2b660ee2bb8f3aa706a529638daa3" kindref="member">getRayTriad</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y,</highlight></codeline>
+<codeline lineno="558"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dest[8],</highlight></codeline>
+<codeline lineno="559"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>compute_polar_basis=</highlight><highlight class="keyword">false</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Ephi[4]=NULL,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Etheta[4]=NULL)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="561"><highlight class="normal"></highlight></codeline>
+<codeline lineno="563"><highlight class="normal"></highlight></codeline>
+<codeline lineno="574" refid="class_gyoto_1_1_screen_1a5b4e7ce6c9731b530e4af289dc5e902d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a5b4e7ce6c9731b530e4af289dc5e902d" kindref="member">getRayTriad</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>j,</highlight></codeline>
+<codeline lineno="575"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dest[8],</highlight></codeline>
+<codeline lineno="576"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>compute_polar_basis=</highlight><highlight class="keyword">false</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="577"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Ephi[4]=NULL,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Etheta[4]=NULL)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="578"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="585" refid="class_gyoto_1_1_screen_1a77a079f922c02a64d8050eef15029dbb" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a77a079f922c02a64d8050eef15029dbb" kindref="member">coordToSky</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pos[4],<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dest[3],<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>geometrical=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="586"><highlight class="normal"></highlight></codeline>
+<codeline lineno="593" refid="class_gyoto_1_1_screen_1aa6e2f7ea7592507047318568b7282190" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1aa6e2f7ea7592507047318568b7282190" kindref="member">skyToCoord</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sky[3],<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dest[4],<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>geometrical=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="594"><highlight class="normal"></highlight></codeline>
+<codeline lineno="595" refid="class_gyoto_1_1_screen_1ad1c98038ca13ea2bbfa6b0908cc0eb2d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1ad1c98038ca13ea2bbfa6b0908cc0eb2d" kindref="member">coordToXYZ</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pos[4],<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dest[3])<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="597"><highlight class="normal"></highlight></codeline>
+<codeline lineno="598" refid="class_gyoto_1_1_screen_1af0257ec0a28ae5ebc2d6dfbe82ccd874" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1af0257ec0a28ae5ebc2d6dfbe82ccd874" kindref="member">computeBaseVectors</ref>()<sp/>;</highlight></codeline>
+<codeline lineno="600"></codeline>
+<codeline lineno="602"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>friend<sp/>std::ostream&amp;<sp/>operator&lt;&lt;(std::ostream&amp;<sp/>,<sp/>const<sp/>Screen&amp;<sp/>)<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="603" refid="class_gyoto_1_1_screen_1a9e77872fc01b8f58e270a1254acd5bc1" refkind="member"><highlight class="normal"><sp/><sp/>std::ostream&amp;<sp/><ref refid="class_gyoto_1_1_screen_1a9e77872fc01b8f58e270a1254acd5bc1" kindref="member">print</ref>(std::ostream&amp;)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;<sp/></highlight></codeline>
+<codeline lineno="604" refid="class_gyoto_1_1_screen_1a820e48cf8a982f699f9d769befcc8e54" refkind="member"><highlight class="normal"><sp/><sp/>std::ostream&amp;<sp/><ref refid="class_gyoto_1_1_screen_1a820e48cf8a982f699f9d769befcc8e54" kindref="member">printBaseVectors</ref>(std::ostream&amp;)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;<sp/></highlight></codeline>
+<codeline lineno="605"><highlight class="normal"></highlight></codeline>
+<codeline lineno="606"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>UDUNITS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="607"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifdef<sp/>HAVE_UDUNITS</highlight></codeline>
+<codeline lineno="609"><highlight class="normal"></highlight></codeline>
+<codeline lineno="617"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mapPixUnit();</highlight></codeline>
+<codeline lineno="618"><highlight class="normal"></highlight></codeline>
+<codeline lineno="620"><highlight class="normal"></highlight></codeline>
+<codeline lineno="623"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>unmapPixUnit();</highlight></codeline>
+<codeline lineno="624"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="625"><highlight class="normal"></highlight></codeline>
+<codeline lineno="626"><highlight class="normal"></highlight></codeline>
+<codeline lineno="627"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>GYOTO_USE_XERCES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="628"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="629" refid="class_gyoto_1_1_screen_1a50f80add154ec088fc9509ba22ef0032" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a50f80add154ec088fc9509ba22ef0032" kindref="member">fillProperty</ref>(<ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">Gyoto::FactoryMessenger</ref><sp/>*fmp,<sp/><ref refid="class_gyoto_1_1_property" kindref="compound">Property</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;p)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="630"><highlight class="normal"></highlight></codeline>
+<codeline lineno="632" refid="class_gyoto_1_1_screen_1aed37ff18e75ac7dd135de624db80428e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="class_gyoto_1_1_smart_pointer" kindref="compound">SmartPointer&lt;Screen&gt;</ref><sp/><ref refid="class_gyoto_1_1_screen_1aed37ff18e75ac7dd135de624db80428e" kindref="member">Subcontractor</ref>(<ref refid="class_gyoto_1_1_factory_messenger" kindref="compound">FactoryMessenger</ref>*<sp/>fmp);</highlight></codeline>
+<codeline lineno="633"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="634"><highlight class="normal"></highlight></codeline>
+<codeline lineno="636" refid="class_gyoto_1_1_screen_1a3d039508310efe3dcbf50204a3619b2f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a3d039508310efe3dcbf50204a3619b2f" kindref="member">CoordType_e</ref><sp/>{angle,<sp/>pixel};</highlight></codeline>
+<codeline lineno="637"><highlight class="normal"></highlight></codeline>
+<codeline lineno="639"><highlight class="normal"></highlight></codeline>
+<codeline lineno="646" refid="class_gyoto_1_1_screen_1_1_coord1d_set" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_screen_1_1_coord1d_set" kindref="compound">Coord1dSet</ref><sp/>{</highlight></codeline>
+<codeline lineno="647"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="649" refid="class_gyoto_1_1_screen_1_1_coord1d_set_1a1726f8ee2c39e25b3476b9e8cc257e1a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a3d039508310efe3dcbf50204a3619b2f" kindref="member">CoordType_e</ref><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord1d_set_1a1726f8ee2c39e25b3476b9e8cc257e1a" kindref="member">kind</ref>;</highlight></codeline>
+<codeline lineno="650"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="652" refid="class_gyoto_1_1_screen_1_1_coord1d_set_1aba29ec15bbbce1d87adb45c95f038277" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord1d_set_1aba29ec15bbbce1d87adb45c95f038277" kindref="member">Coord1dSet</ref>(<ref refid="class_gyoto_1_1_screen_1a3d039508310efe3dcbf50204a3619b2f" kindref="member">CoordType_e</ref><sp/>k);</highlight></codeline>
+<codeline lineno="654" refid="class_gyoto_1_1_screen_1_1_coord1d_set_1aec39e7f4e09beb31e586a8c1e36a76fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord1d_set_1aec39e7f4e09beb31e586a8c1e36a76fd" kindref="member">~Coord1dSet</ref>();</highlight></codeline>
+<codeline lineno="656" refid="class_gyoto_1_1_screen_1_1_coord1d_set_1a2bf82eac3458d79af3f21ebf005b87eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord1d_set_1a2bf82eac3458d79af3f21ebf005b87eb" kindref="member">begin</ref>()<sp/>=0;</highlight></codeline>
+<codeline lineno="658" refid="class_gyoto_1_1_screen_1_1_coord1d_set_1a7d823697b2cbf7ee12a7c18e50ca0fdc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord1d_set_1a7d823697b2cbf7ee12a7c18e50ca0fdc" kindref="member">valid</ref>()<sp/>=0;</highlight></codeline>
+<codeline lineno="660" refid="class_gyoto_1_1_screen_1_1_coord1d_set_1a7b1c70cecb3c9f3a09713f66a5dc6dbf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord1d_set_1a7b1c70cecb3c9f3a09713f66a5dc6dbf" kindref="member">size</ref>()=0;</highlight></codeline>
+<codeline lineno="662" refid="class_gyoto_1_1_screen_1_1_coord1d_set_1afa9b992fd12a2229ed6144184a6806df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord1d_set_1afa9b992fd12a2229ed6144184a6806df" kindref="member">operator*</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="664" refid="class_gyoto_1_1_screen_1_1_coord1d_set_1a9b3a6aef00f09e8f918616f75ba86089" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord1d_set_1a9b3a6aef00f09e8f918616f75ba86089" kindref="member">angle</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="666" refid="class_gyoto_1_1_screen_1_1_coord1d_set_1a4673770278cc88ccfd96b4330c87af73" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord1d_set" kindref="compound">Coord1dSet</ref>&amp;<sp/><ref refid="class_gyoto_1_1_screen_1_1_coord1d_set_1a4673770278cc88ccfd96b4330c87af73" kindref="member">operator++</ref>()=0;</highlight></codeline>
+<codeline lineno="668"><highlight class="normal"></highlight></codeline>
+<codeline lineno="673" refid="class_gyoto_1_1_screen_1_1_coord1d_set_1a4788421884ca4bbc0914910956b7f19a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord1d_set_1a4788421884ca4bbc0914910956b7f19a" kindref="member">index</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">=0;</highlight></codeline>
+<codeline lineno="674"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="675"><highlight class="normal"></highlight></codeline>
+<codeline lineno="677"><highlight class="normal"></highlight></codeline>
+<codeline lineno="682" refid="class_gyoto_1_1_screen_1_1_coord2d_set" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_screen_1_1_coord2d_set" kindref="compound">Coord2dSet</ref><sp/>{</highlight></codeline>
+<codeline lineno="683"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="685" refid="class_gyoto_1_1_screen_1_1_coord2d_set_1a5fef2cb615b4865456865223be1135a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1a3d039508310efe3dcbf50204a3619b2f" kindref="member">CoordType_e</ref><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord2d_set_1a5fef2cb615b4865456865223be1135a8" kindref="member">kind</ref>;</highlight></codeline>
+<codeline lineno="687" refid="class_gyoto_1_1_screen_1_1_coord2d_set_1ad131bea2ed826fd8b61ab91dcc98ba7a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord2d_set_1ad131bea2ed826fd8b61ab91dcc98ba7a" kindref="member">Coord2dSet</ref>(<ref refid="class_gyoto_1_1_screen_1a3d039508310efe3dcbf50204a3619b2f" kindref="member">CoordType_e</ref><sp/>k);</highlight></codeline>
+<codeline lineno="689" refid="class_gyoto_1_1_screen_1_1_coord2d_set_1a777072290050ff2f5d933833c856fe03" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord2d_set_1a777072290050ff2f5d933833c856fe03" kindref="member">~Coord2dSet</ref>();</highlight></codeline>
+<codeline lineno="691" refid="class_gyoto_1_1_screen_1_1_coord2d_set_1ae6c75ad6fdfc56e88e41d24534d946f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord2d_set" kindref="compound">Coord2dSet</ref>&amp;<sp/><ref refid="class_gyoto_1_1_screen_1_1_coord2d_set_1ae6c75ad6fdfc56e88e41d24534d946f7" kindref="member">operator++</ref>()<sp/><sp/><sp/><sp/>=0;</highlight></codeline>
+<codeline lineno="693" refid="class_gyoto_1_1_screen_1_1_coord2d_set_1a01d61c1cb181f7374b69e9a20cb3c2be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_g_y_o_t_o___a_r_r_a_y" kindref="compound">GYOTO_ARRAY&lt;size_t, 2&gt;</ref><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord2d_set_1a01d61c1cb181f7374b69e9a20cb3c2be" kindref="member">operator*  </ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="695" refid="class_gyoto_1_1_screen_1_1_coord2d_set_1a241fe7b6899f52499155e524166d6f45" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_g_y_o_t_o___a_r_r_a_y" kindref="compound">GYOTO_ARRAY&lt;double, 2&gt;</ref><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord2d_set_1a241fe7b6899f52499155e524166d6f45" kindref="member">angles</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="697" refid="class_gyoto_1_1_screen_1_1_coord2d_set_1a06d56607898b93ec74db40b70d1041f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord2d_set_1a06d56607898b93ec74db40b70d1041f4" kindref="member">begin</ref>()<sp/>=0;</highlight></codeline>
+<codeline lineno="699" refid="class_gyoto_1_1_screen_1_1_coord2d_set_1a677c4c21719a46baf92dac3e964d16bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord2d_set_1a677c4c21719a46baf92dac3e964d16bc" kindref="member">valid</ref>()<sp/>=0;</highlight></codeline>
+<codeline lineno="701" refid="class_gyoto_1_1_screen_1_1_coord2d_set_1a54bd96caa8859353b3213a6009735d33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord2d_set_1a54bd96caa8859353b3213a6009735d33" kindref="member">size</ref>()=0;</highlight></codeline>
+<codeline lineno="702"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="703"><highlight class="normal"></highlight></codeline>
+<codeline lineno="705" refid="class_gyoto_1_1_screen_1_1_grid" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_screen_1_1_grid" kindref="compound">Grid</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord2d_set" kindref="compound">Coord2dSet</ref><sp/>{</highlight></codeline>
+<codeline lineno="706"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="707"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="709" refid="class_gyoto_1_1_screen_1_1_grid_1aad7a63f3c5cefebd3ecd6d971f07aab1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="class_gyoto_1_1_screen_1_1_grid_1aad7a63f3c5cefebd3ecd6d971f07aab1" kindref="member">prefix_</ref>;</highlight></codeline>
+<codeline lineno="710"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord1d_set" kindref="compound">Coord1dSet</ref><sp/>&amp;iset_;</highlight></codeline>
+<codeline lineno="711"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord1d_set" kindref="compound">Coord1dSet</ref><sp/>&amp;jset_;</highlight></codeline>
+<codeline lineno="712"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="713"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gyoto_1_1_screen_1_1_grid" kindref="compound">Grid</ref>(<ref refid="class_gyoto_1_1_screen_1_1_coord1d_set" kindref="compound">Coord1dSet</ref><sp/>&amp;iset,<sp/><ref refid="class_gyoto_1_1_screen_1_1_coord1d_set" kindref="compound">Coord1dSet</ref><sp/>&amp;jset,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>p=NULL);</highlight></codeline>
+<codeline lineno="714"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_gyoto_1_1_screen_1_1_grid" kindref="compound">Grid</ref>();</highlight></codeline>
+<codeline lineno="715" refid="class_gyoto_1_1_screen_1_1_grid_1a8e2c2e9d3e18c2edd4ea8f2986134d40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord2d_set" kindref="compound">Coord2dSet</ref>&amp;<sp/><ref refid="class_gyoto_1_1_screen_1_1_grid_1a8e2c2e9d3e18c2edd4ea8f2986134d40" kindref="member">operator++</ref>();</highlight></codeline>
+<codeline lineno="716" refid="class_gyoto_1_1_screen_1_1_grid_1a755a4910a805bf9bf85885d786460536" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_g_y_o_t_o___a_r_r_a_y" kindref="compound">GYOTO_ARRAY&lt;size_t, 2&gt;</ref><sp/><ref refid="class_gyoto_1_1_screen_1_1_grid_1a755a4910a805bf9bf85885d786460536" kindref="member">operator*  </ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="717" refid="class_gyoto_1_1_screen_1_1_grid_1ad4bb45637efa28607c0fbc5056f6a8f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_grid_1ad4bb45637efa28607c0fbc5056f6a8f3" kindref="member">begin</ref>();</highlight></codeline>
+<codeline lineno="718" refid="class_gyoto_1_1_screen_1_1_grid_1a99388c48c1149589033d38d985aee6bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_grid_1a99388c48c1149589033d38d985aee6bf" kindref="member">valid</ref>();</highlight></codeline>
+<codeline lineno="719" refid="class_gyoto_1_1_screen_1_1_grid_1a170a08e2acd0eabd3e55252b8fb0e0af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_grid_1a170a08e2acd0eabd3e55252b8fb0e0af" kindref="member">size</ref>();</highlight></codeline>
+<codeline lineno="720"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="721"><highlight class="normal"></highlight></codeline>
+<codeline lineno="723"><highlight class="normal"></highlight></codeline>
+<codeline lineno="726" refid="class_gyoto_1_1_screen_1_1_bucket" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_screen_1_1_bucket" kindref="compound">Bucket</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord2d_set" kindref="compound">Coord2dSet</ref><sp/>{</highlight></codeline>
+<codeline lineno="727"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="728"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord1d_set" kindref="compound">Coord1dSet</ref><sp/>&amp;alpha_;</highlight></codeline>
+<codeline lineno="729"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord1d_set" kindref="compound">Coord1dSet</ref><sp/>&amp;delta_;</highlight></codeline>
+<codeline lineno="730"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="731"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gyoto_1_1_screen_1_1_bucket" kindref="compound">Bucket</ref>(<ref refid="class_gyoto_1_1_screen_1_1_coord1d_set" kindref="compound">Coord1dSet</ref><sp/>&amp;iset,<sp/><ref refid="class_gyoto_1_1_screen_1_1_coord1d_set" kindref="compound">Coord1dSet</ref><sp/>&amp;jset);</highlight></codeline>
+<codeline lineno="732" refid="class_gyoto_1_1_screen_1_1_bucket_1ade16399dc9ce85555dde26db7d42fcd6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord2d_set" kindref="compound">Coord2dSet</ref>&amp;<sp/><ref refid="class_gyoto_1_1_screen_1_1_bucket_1ade16399dc9ce85555dde26db7d42fcd6" kindref="member">operator++</ref>();</highlight></codeline>
+<codeline lineno="733" refid="class_gyoto_1_1_screen_1_1_bucket_1abe14909aea13679a63185e77aed280f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_g_y_o_t_o___a_r_r_a_y" kindref="compound">GYOTO_ARRAY&lt;double, 2&gt;</ref><sp/><ref refid="class_gyoto_1_1_screen_1_1_bucket_1abe14909aea13679a63185e77aed280f8" kindref="member">angles</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="734" refid="class_gyoto_1_1_screen_1_1_bucket_1a84d8d3a2e5cf69e4c0d8bce5afe5abf0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_g_y_o_t_o___a_r_r_a_y" kindref="compound">GYOTO_ARRAY&lt;size_t, 2&gt;</ref><sp/><ref refid="class_gyoto_1_1_screen_1_1_bucket_1a84d8d3a2e5cf69e4c0d8bce5afe5abf0" kindref="member">operator*</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="735" refid="class_gyoto_1_1_screen_1_1_bucket_1a8b6748bae0b5ce38ed37335123633ecf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_bucket_1a8b6748bae0b5ce38ed37335123633ecf" kindref="member">begin</ref>();</highlight></codeline>
+<codeline lineno="736" refid="class_gyoto_1_1_screen_1_1_bucket_1aebf5fff48553097cadfbf8c03ccdb7ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_bucket_1aebf5fff48553097cadfbf8c03ccdb7ea" kindref="member">valid</ref>();</highlight></codeline>
+<codeline lineno="737" refid="class_gyoto_1_1_screen_1_1_bucket_1a6041875091ed0c23cf8a482594d54c86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_bucket_1a6041875091ed0c23cf8a482594d54c86" kindref="member">size</ref>();</highlight></codeline>
+<codeline lineno="738"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="739"><highlight class="normal"></highlight></codeline>
+<codeline lineno="741" refid="class_gyoto_1_1_screen_1_1_empty" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_screen_1_1_empty" kindref="compound">Empty</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord2d_set" kindref="compound">Coord2dSet</ref><sp/>{</highlight></codeline>
+<codeline lineno="742"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="743"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gyoto_1_1_screen_1_1_empty" kindref="compound">Empty</ref>();</highlight></codeline>
+<codeline lineno="744" refid="class_gyoto_1_1_screen_1_1_empty_1ac71a368b7f2dd4b3ff0b1d6e8781013c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord2d_set" kindref="compound">Coord2dSet</ref>&amp;<sp/><ref refid="class_gyoto_1_1_screen_1_1_empty_1ac71a368b7f2dd4b3ff0b1d6e8781013c" kindref="member">operator++</ref>();</highlight></codeline>
+<codeline lineno="745" refid="class_gyoto_1_1_screen_1_1_empty_1a024f390428d66ea3d665a95d585db7dd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_empty_1a024f390428d66ea3d665a95d585db7dd" kindref="member">begin</ref>();</highlight></codeline>
+<codeline lineno="746" refid="class_gyoto_1_1_screen_1_1_empty_1af48ad2cdbfba2f50037e6ffb299791b3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_empty_1af48ad2cdbfba2f50037e6ffb299791b3" kindref="member">valid</ref>();</highlight></codeline>
+<codeline lineno="747" refid="class_gyoto_1_1_screen_1_1_empty_1ae330c68e2e1f21f72f766e9bc305574f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_empty_1ae330c68e2e1f21f72f766e9bc305574f" kindref="member">size</ref>();</highlight></codeline>
+<codeline lineno="748"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="749"><highlight class="normal"></highlight></codeline>
+<codeline lineno="751" refid="class_gyoto_1_1_screen_1_1_range" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_screen_1_1_range" kindref="compound">Range</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord1d_set" kindref="compound">Coord1dSet</ref><sp/>{</highlight></codeline>
+<codeline lineno="752"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="753"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>mi_,<sp/>ma_,<sp/>d_,<sp/>sz_;</highlight></codeline>
+<codeline lineno="754"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>cur_;</highlight></codeline>
+<codeline lineno="755"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="757" refid="class_gyoto_1_1_screen_1_1_range_1a00e31150510a0628301b7b0a084f6ddd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gyoto_1_1_screen_1_1_range_1a00e31150510a0628301b7b0a084f6ddd" kindref="member">Range</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>mi,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>ma,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>d);</highlight></codeline>
+<codeline lineno="758" refid="class_gyoto_1_1_screen_1_1_range_1a1950b31c1665d91b211d6e5a1d48fe6e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_range_1a1950b31c1665d91b211d6e5a1d48fe6e" kindref="member">begin</ref>();</highlight></codeline>
+<codeline lineno="759" refid="class_gyoto_1_1_screen_1_1_range_1a14f4b3f9f6e80612ddc0641b63c3207d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_range_1a14f4b3f9f6e80612ddc0641b63c3207d" kindref="member">valid</ref>();</highlight></codeline>
+<codeline lineno="760" refid="class_gyoto_1_1_screen_1_1_range_1a4392cab874a2917f56d33825a8a60960" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_range_1a4392cab874a2917f56d33825a8a60960" kindref="member">size</ref>();</highlight></codeline>
+<codeline lineno="761" refid="class_gyoto_1_1_screen_1_1_range_1ae422e8807f45572cb000f181d0e0954a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord1d_set" kindref="compound">Coord1dSet</ref>&amp;<sp/><ref refid="class_gyoto_1_1_screen_1_1_range_1ae422e8807f45572cb000f181d0e0954a" kindref="member">operator++</ref>();</highlight></codeline>
+<codeline lineno="762" refid="class_gyoto_1_1_screen_1_1_range_1a5535682dfa2c1eb3ad3ed120ce3d47b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_range_1a5535682dfa2c1eb3ad3ed120ce3d47b4" kindref="member">operator*</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="763" refid="class_gyoto_1_1_screen_1_1_range_1a15adf4d0b20888a70e3e0eed25b21851" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_range_1a15adf4d0b20888a70e3e0eed25b21851" kindref="member">index</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="764"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="765"><highlight class="normal"></highlight></codeline>
+<codeline lineno="767" refid="class_gyoto_1_1_screen_1_1_indices" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_screen_1_1_indices" kindref="compound">Indices</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord1d_set" kindref="compound">Coord1dSet</ref><sp/>{</highlight></codeline>
+<codeline lineno="768"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="769"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>*<sp/>indices_;</highlight></codeline>
+<codeline lineno="770"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sz_;</highlight></codeline>
+<codeline lineno="771"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i_;</highlight></codeline>
+<codeline lineno="772"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="773"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gyoto_1_1_screen_1_1_indices" kindref="compound">Indices</ref><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>buf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>sz);</highlight></codeline>
+<codeline lineno="774"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>~<ref refid="class_gyoto_1_1_screen_1_1_indices" kindref="compound">Indices</ref>();</highlight></codeline>
+<codeline lineno="775" refid="class_gyoto_1_1_screen_1_1_indices_1a923c175bb16c22df518c09ba4e0842fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_indices_1a923c175bb16c22df518c09ba4e0842fe" kindref="member">begin</ref>();</highlight></codeline>
+<codeline lineno="776" refid="class_gyoto_1_1_screen_1_1_indices_1a5dd9f09adef16b7f00567d27a31c5e3a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_indices_1a5dd9f09adef16b7f00567d27a31c5e3a" kindref="member">valid</ref>();</highlight></codeline>
+<codeline lineno="777" refid="class_gyoto_1_1_screen_1_1_indices_1a645b2ef656a896263aa239d85c4d5b0d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_indices_1a645b2ef656a896263aa239d85c4d5b0d" kindref="member">size</ref>();</highlight></codeline>
+<codeline lineno="778" refid="class_gyoto_1_1_screen_1_1_indices_1aceafb034d7a83af2500af9612bb9b678" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord1d_set" kindref="compound">Coord1dSet</ref>&amp;<sp/><ref refid="class_gyoto_1_1_screen_1_1_indices_1aceafb034d7a83af2500af9612bb9b678" kindref="member">operator++</ref>();</highlight></codeline>
+<codeline lineno="779" refid="class_gyoto_1_1_screen_1_1_indices_1af65883549a5f3faf4abea99ddd457e47" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_indices_1af65883549a5f3faf4abea99ddd457e47" kindref="member">operator*</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="780" refid="class_gyoto_1_1_screen_1_1_indices_1ae2c0b975c2e266f0e7d66a260c457485" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_indices_1ae2c0b975c2e266f0e7d66a260c457485" kindref="member">index</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="781"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="782"><highlight class="normal"></highlight></codeline>
+<codeline lineno="784" refid="class_gyoto_1_1_screen_1_1_angles" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_screen_1_1_angles" kindref="compound">Angles</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord1d_set" kindref="compound">Coord1dSet</ref><sp/>{</highlight></codeline>
+<codeline lineno="785"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="786"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<sp/>buf_;</highlight></codeline>
+<codeline lineno="787"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sz_;</highlight></codeline>
+<codeline lineno="788"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i_;</highlight></codeline>
+<codeline lineno="789"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="790"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gyoto_1_1_screen_1_1_angles" kindref="compound">Angles</ref><sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>buf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>sz);</highlight></codeline>
+<codeline lineno="791"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>~<ref refid="class_gyoto_1_1_screen_1_1_angles" kindref="compound">Angles</ref>();</highlight></codeline>
+<codeline lineno="792" refid="class_gyoto_1_1_screen_1_1_angles_1a4ba9094d47c7543b6872e19a72a59725" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_angles_1a4ba9094d47c7543b6872e19a72a59725" kindref="member">begin</ref>();</highlight></codeline>
+<codeline lineno="793" refid="class_gyoto_1_1_screen_1_1_angles_1afce50c5dc440e6ff34ad0d393873fd68" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_angles_1afce50c5dc440e6ff34ad0d393873fd68" kindref="member">valid</ref>();</highlight></codeline>
+<codeline lineno="794" refid="class_gyoto_1_1_screen_1_1_angles_1ae80abe1739bbe7b5e1e9ef133ddc9635" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_angles_1ae80abe1739bbe7b5e1e9ef133ddc9635" kindref="member">size</ref>();</highlight></codeline>
+<codeline lineno="795" refid="class_gyoto_1_1_screen_1_1_angles_1af14f72b3439b06de89e3edd4b3e2fba3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord1d_set" kindref="compound">Coord1dSet</ref>&amp;<sp/><ref refid="class_gyoto_1_1_screen_1_1_angles_1af14f72b3439b06de89e3edd4b3e2fba3" kindref="member">operator++</ref>();</highlight></codeline>
+<codeline lineno="796" refid="class_gyoto_1_1_screen_1_1_angles_1a8a744ee3545d1c7c06f1c9e91f5d983c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_angles_1a8a744ee3545d1c7c06f1c9e91f5d983c" kindref="member">angle</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="797" refid="class_gyoto_1_1_screen_1_1_angles_1a65844515b23df98cb7dac287faa6e1d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_angles_1a65844515b23df98cb7dac287faa6e1d6" kindref="member">index</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="798"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="799"><highlight class="normal"></highlight></codeline>
+<codeline lineno="801" refid="class_gyoto_1_1_screen_1_1_repeat_angle" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gyoto_1_1_screen_1_1_repeat_angle" kindref="compound">RepeatAngle</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord1d_set" kindref="compound">Coord1dSet</ref><sp/>{</highlight></codeline>
+<codeline lineno="802"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="803"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>val_;</highlight></codeline>
+<codeline lineno="804"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sz_;</highlight></codeline>
+<codeline lineno="805"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i_;</highlight></codeline>
+<codeline lineno="806"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="807"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gyoto_1_1_screen_1_1_repeat_angle" kindref="compound">RepeatAngle</ref><sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>sz);</highlight></codeline>
+<codeline lineno="808" refid="class_gyoto_1_1_screen_1_1_repeat_angle_1a92c95e94049645c11588af8ef2c61ce8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_repeat_angle_1a92c95e94049645c11588af8ef2c61ce8" kindref="member">begin</ref>();</highlight></codeline>
+<codeline lineno="809" refid="class_gyoto_1_1_screen_1_1_repeat_angle_1af3171d1131f881b88381fdd7572df1b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_repeat_angle_1af3171d1131f881b88381fdd7572df1b6" kindref="member">valid</ref>();</highlight></codeline>
+<codeline lineno="810" refid="class_gyoto_1_1_screen_1_1_repeat_angle_1ab3bd823340921d0ac1f7ad7e05e69cd2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_repeat_angle_1ab3bd823340921d0ac1f7ad7e05e69cd2" kindref="member">size</ref>();</highlight></codeline>
+<codeline lineno="811" refid="class_gyoto_1_1_screen_1_1_repeat_angle_1ac52d2c935093592d80b6c862c57bea83" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gyoto_1_1_screen_1_1_coord1d_set" kindref="compound">Coord1dSet</ref>&amp;<sp/><ref refid="class_gyoto_1_1_screen_1_1_repeat_angle_1ac52d2c935093592d80b6c862c57bea83" kindref="member">operator++</ref>();</highlight></codeline>
+<codeline lineno="812" refid="class_gyoto_1_1_screen_1_1_repeat_angle_1a3be0dc75c13772eee143a575fe184cd7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_repeat_angle_1a3be0dc75c13772eee143a575fe184cd7" kindref="member">angle</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="813" refid="class_gyoto_1_1_screen_1_1_repeat_angle_1a75ad2c681712dea72634e4eb9bf75d8b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_gyoto_1_1_screen_1_1_repeat_angle_1a75ad2c681712dea72634e4eb9bf75d8b" kindref="member">index</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="814"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="815"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="816"><highlight class="normal"></highlight></codeline>
+<codeline lineno="817"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/junichi/Gyoto/include/GyotoScreen.h"/>
+  </compounddef>
+</doxygen>

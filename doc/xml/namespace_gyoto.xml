@@ -1,0 +1,752 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespace_gyoto" kind="namespace" language="C++">
+    <compoundname>Gyoto</compoundname>
+    <innerclass refid="class_gyoto_1_1_error" prot="public">Gyoto::Error</innerclass>
+    <innerclass refid="class_gyoto_1_1_factory" prot="public">Gyoto::Factory</innerclass>
+    <innerclass refid="class_gyoto_1_1_factory_messenger" prot="public">Gyoto::FactoryMessenger</innerclass>
+    <innerclass refid="class_gyoto_1_1_fits_r_w" prot="public">Gyoto::FitsRW</innerclass>
+    <innerclass refid="class_gyoto_1_1_grid_data2_d" prot="public">Gyoto::GridData2D</innerclass>
+    <innerclass refid="class_gyoto_1_1_object" prot="public">Gyoto::Object</innerclass>
+    <innerclass refid="class_gyoto_1_1_photon" prot="public">Gyoto::Photon</innerclass>
+    <innerclass refid="class_gyoto_1_1_smart_pointer" prot="public">Gyoto::SmartPointer</innerclass>
+    <innerclass refid="class_gyoto_1_1_property" prot="public">Gyoto::Property</innerclass>
+    <innerclass refid="class_gyoto_1_1_scenery" prot="public">Gyoto::Scenery</innerclass>
+    <innerclass refid="class_gyoto_1_1_screen" prot="public">Gyoto::Screen</innerclass>
+    <innerclass refid="class_gyoto_1_1_smart_pointee" prot="public">Gyoto::SmartPointee</innerclass>
+    <innerclass refid="class_gyoto_1_1_value" prot="public">Gyoto::Value</innerclass>
+    <innerclass refid="class_gyoto_1_1_w_i_p" prot="public">Gyoto::WIP</innerclass>
+    <innerclass refid="class_gyoto_1_1_worldline" prot="public">Gyoto::Worldline</innerclass>
+    <innernamespace refid="namespace_gyoto_1_1_astrobj">Gyoto::Astrobj</innernamespace>
+    <innernamespace refid="namespace_gyoto_1_1_functor">Gyoto::Functor</innernamespace>
+    <innernamespace refid="namespace_gyoto_1_1_hook">Gyoto::Hook</innernamespace>
+    <innernamespace refid="namespace_gyoto_1_1_metric">Gyoto::Metric</innernamespace>
+    <innernamespace refid="namespace_gyoto_1_1_python">Gyoto::Python</innernamespace>
+    <innernamespace refid="namespace_gyoto_1_1_register">Gyoto::Register</innernamespace>
+    <innernamespace refid="namespace_gyoto_1_1_spectrometer">Gyoto::Spectrometer</innernamespace>
+    <innernamespace refid="namespace_gyoto_1_1_spectrum">Gyoto::Spectrum</innernamespace>
+    <innernamespace refid="namespace_gyoto_1_1_units">Gyoto::Units</innernamespace>
+      <sectiondef kind="user-defined">
+      <header>Observable quantities</header>
+      <description><para>Individual quantities are represented as a variable of this type. A combination of quantities is an ored list of Quantity_t, e.g.</para>
+<para><programlisting><codeline><highlight class="normal">GYOTO_QUANTITY_INTENSITY<sp/>|<sp/>GYOTO_QUANTITY_EMISSIONTIME</highlight></codeline>
+</programlisting></para>
+<para>To check wheter a given quantity is listed in a Quantity_t variable quant: <programlisting><codeline><highlight class="normal">if<sp/>(quant<sp/>&amp;<sp/>GYOTOQUANTITY_EMISSION)<sp/>...</highlight></codeline>
+</programlisting></para>
+<para>List of all possible Quantity_t individual values and the corresponding string (see <ref refid="class_gyoto_1_1_scenery" kindref="compound">Gyoto::Scenery</ref>) with corresponding XML name: </para>
+</description>
+      <memberdef kind="typedef" id="namespace_gyoto_1a009cbd7f025ce417907a5344a15a1463" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int Gyoto::Quantity_t</definition>
+        <argsstring></argsstring>
+        <name>Quantity_t</name>
+        <briefdescription>
+<para>Type for observabke quantities. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoDefs.h" line="76" column="24" bodyfile="/home/junichi/Gyoto/include/GyotoDefs.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Gyoto messages</header>
+      <description><para>Controling which messages are shown to the user</para>
+<para>The user should be able to choose which messages are shown to her. In <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref>, this is determined by a user-settable verbosity level (see <ref refid="namespace_gyoto_1ad49d57c2e3b086b864b2ba48ac06e68a" kindref="member">Gyoto::verbose()</ref>) and a user-settable debug mode (see <ref refid="namespace_gyoto_1afea7d91793e2e0c2295d8f65f9c454f8" kindref="member">Goyto::debug()</ref>).</para>
+<para>The following macros define various debug and verbosity level and provide short-cuts to display formatted messages only at a given verbosity level or in debug mode. </para>
+</description>
+      <memberdef kind="typedef" id="namespace_gyoto_1a92c5f4f1cf3a8d67fd199331af40ac39" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int Gyoto::Verbosity_t</definition>
+        <argsstring></argsstring>
+        <name>Verbosity_t</name>
+        <briefdescription>
+<para>Type for verbosity levels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoDefs.h" line="144" column="24" bodyfile="/home/junichi/Gyoto/include/GyotoDefs.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Coordinate system kind</header>
+      <description><para>GYOTO_COORDKIND_CARTESIAN or GYOTO_COORDKIND_SPHERICAL</para>
+<para>Every <ref refid="namespace_gyoto_1_1_metric" kindref="compound">Gyoto::Metric</ref> has a coordinate system kind. It can be used by functions which need to express coordinates always in spherical or always in Cartesian form, with trivial conversion between the two. </para>
+</description>
+      <memberdef kind="typedef" id="namespace_gyoto_1a5ffc549cbcfb3cb8f1307e130e1482c9" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int Gyoto::CoordKind_t</definition>
+        <argsstring></argsstring>
+        <name>CoordKind_t</name>
+        <briefdescription>
+<para>Type for coordinate system kinds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoDefs.h" line="374" column="24" bodyfile="/home/junichi/Gyoto/include/GyotoDefs.h" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespace_gyoto_1a57441caf7075eb0276b047f4d192f22c" prot="public" static="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>typedef std::vector&lt;double&gt; Gyoto::state_t</definition>
+        <argsstring></argsstring>
+        <name>state_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoDefs.h" line="50" column="23" bodyfile="/home/junichi/Gyoto/include/GyotoDefs.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_gyoto_1aa869193fe294f3badb84af224a83f3d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::throwError</definition>
+        <argsstring>(std::string)</argsstring>
+        <name>throwError</name>
+        <param>
+          <type>std::string</type>
+        </param>
+        <briefdescription>
+<para>Throw a <ref refid="class_gyoto_1_1_error" kindref="compound">Gyoto::Error</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Most code should use the GYOTO_ERROR macro instead </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoError.h" line="187" column="8" declfile="/home/junichi/Gyoto/include/GyotoError.h" declline="187" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1a56de702e8700e13df208c9fb2d1d7203" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* Gyoto::loadPlugin</definition>
+        <argsstring>(char const *const plugname, int nofail=0)</argsstring>
+        <name>loadPlugin</name>
+        <param>
+          <type>char const *const</type>
+          <declname>plugname</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nofail</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Load a plugin by name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Uses dlopen to load the file libgyoto-&lt;plugname&gt;.so, looks for the function __Gyoto&lt;plugname&gt;Init inside it and run it. Plug-ins must be located in the runtime link search path, or in GYOTO_PKGLIBDIR, or in GYOTO_PKGLIBDIR/GYOTO_SOVERS/.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">plugname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>C string Plug-in name.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nofail</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int Unless nofail evals to true, the inability to find a plug-in or to run the initialization function inside it throws an <ref refid="class_gyoto_1_1_error" kindref="compound">Gyoto::Error</ref>. If nofail is 2 or more, such conditions are silently ignored. If nofail is one, those conditions trigger a warning.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void* handle to the dlopen&apos;ed plug-in. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoRegister.h" line="88" column="9" declfile="/home/junichi/Gyoto/include/GyotoRegister.h" declline="88" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1af73e539074f9bb44e80e5f8cb625979c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gyoto::havePlugin</definition>
+        <argsstring>(std::string plugname)</argsstring>
+        <name>havePlugin</name>
+        <param>
+          <type>std::string</type>
+          <declname>plugname</declname>
+        </param>
+        <briefdescription>
+<para>Check whether a given plug-in has already been loaded. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">plugname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::string Plug-in name. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoRegister.h" line="95" column="8" declfile="/home/junichi/Gyoto/include/GyotoRegister.h" declline="95" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1a2855e9faa09ea310c38d7decf76c814a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::requirePlugin</definition>
+        <argsstring>(std::string plugname, int nofail=0)</argsstring>
+        <name>requirePlugin</name>
+        <param>
+          <type>std::string</type>
+          <declname>plugname</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nofail</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Load a plugin by name, only if not loaded yet. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">plugname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::string Plug-in name.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nofail</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int Unless nofail evals to true, the inability to find a plug-in or to run the initialization function inside it throws an <ref refid="class_gyoto_1_1_error" kindref="compound">Gyoto::Error</ref>. If nofail is 2 or more, such conditions are silently ignored. If nofail is one, those conditions trigger a warning. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoRegister.h" line="108" column="8" declfile="/home/junichi/Gyoto/include/GyotoRegister.h" declline="108" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1afea7d91793e2e0c2295d8f65f9c454f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::debug</definition>
+        <argsstring>(int mode)</argsstring>
+        <name>debug</name>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Set debug mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1 to turn on debug mode, 0 to turn it off. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoUtils.h" line="40" column="8" declfile="/home/junichi/Gyoto/include/GyotoUtils.h" declline="40" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1a9d1bfee5ca60b39454ea45ecf8681fb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gyoto::debug</definition>
+        <argsstring>()</argsstring>
+        <name>debug</name>
+        <briefdescription>
+<para>Get debug mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>&gt;=1 if debug mode is on, else 0. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoUtils.h" line="46" column="7" declfile="/home/junichi/Gyoto/include/GyotoUtils.h" declline="46" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1ad49d57c2e3b086b864b2ba48ac06e68a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::verbose</definition>
+        <argsstring>(int mode)</argsstring>
+        <name>verbose</name>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Set verbosity level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See standard verbosity levels defined in <ref refid="_gyoto_defs_8h" kindref="compound">GyotoDefs.h</ref>:</para>
+<para><itemizedlist>
+<listitem><para>GYOTO_DEFAULT_DEBUG_MODE</para>
+</listitem><listitem><para>GYOTO_QUIET_VERBOSITY</para>
+</listitem><listitem><para>GYOTO_SEVERE_VERBOSITY</para>
+</listitem><listitem><para>GYOTO_WARNING_VERBOSITY</para>
+</listitem><listitem><para>GYOTO_DEFAULT_VERBOSITY</para>
+</listitem><listitem><para>GYOTO_INFO_VERBOSITY</para>
+</listitem><listitem><para>GYOTO_DEBUG_VERBOSITY </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoUtils.h" line="60" column="8" declfile="/home/junichi/Gyoto/include/GyotoUtils.h" declline="60" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1a58e2cdf35ea2416f47e6984e8df8e141" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gyoto::verbose</definition>
+        <argsstring>()</argsstring>
+        <name>verbose</name>
+        <briefdescription>
+<para>Get verbosity level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="namespace_gyoto_1ad49d57c2e3b086b864b2ba48ac06e68a" kindref="member">verbose(int mode)</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoUtils.h" line="66" column="7" declfile="/home/junichi/Gyoto/include/GyotoUtils.h" declline="66" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1a8e7339cd5c681172bd38ce3986f8225d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::convert</definition>
+        <argsstring>(double *const x, const std::size_t nelem, const double mass_sun, const double distance_kpc, const std::string unit)</argsstring>
+        <name>convert</name>
+        <param>
+          <type>double *const</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const <ref refid="_gyoto_config_8h_1a43b4547e12226fef871eed8afe191ad7" kindref="member">std::size_t</ref></type>
+          <declname>nelem</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>mass_sun</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>distance_kpc</declname>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Convert lengths (deprecated) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000001"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Will be removed once it is not used anymore in <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> per se. Prefer <ref refid="namespace_gyoto_1_1_units" kindref="compound">Gyoto::Units</ref> framework.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lengths to convert, in geometrical units on input, in specified unit on output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nelem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of x array. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mass_sun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Black-hole mass in Solar masses. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">distance_kpc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Distance from observer in kiloparsecs. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of &quot;geometrical&quot;, &quot;m&quot;, &quot;km&quot;, &quot;sun radius&quot;, &quot;rad&quot;, &quot;degree&quot;, &quot;arcmin&quot;, &quot;arcsec&quot;, &quot;mas&quot;, &quot;uas&quot;. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoUtils.h" line="81" column="8" declfile="/home/junichi/Gyoto/include/GyotoUtils.h" declline="81" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1aa04c060e95a1f7e98280d5ee69323aab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::atof</definition>
+        <argsstring>(const char *str)</argsstring>
+        <name>atof</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Interpret C string as double. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Wrapper around <ref refid="namespace_gyoto_1aa04c060e95a1f7e98280d5ee69323aab" kindref="member">std::atof()</ref> that also interprets DBL_MIN, DBL_MAX, -DBL_MIN and -DBL_MAX.</para>
+<para>If str starts with &quot;(-)DBL_M&quot; and is not one of the four special values, then an error is thrown.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>C string to interpret </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double valu represented by str. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoUtils.h" line="96" column="10" declfile="/home/junichi/Gyoto/include/GyotoUtils.h" declline="96" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1aeafa1a5cc64ebccb9e4e8a2dd465b7d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::help</definition>
+        <argsstring>(std::string class_name)</argsstring>
+        <name>help</name>
+        <param>
+          <type>std::string</type>
+          <declname>class_name</declname>
+        </param>
+        <briefdescription>
+<para>Print help on class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">class_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>e.g. &quot;Gyoto::Screen&quot;, &quot;Gyoto::Astrobj::Torus&quot;. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoUtils.h" line="102" column="8" declfile="/home/junichi/Gyoto/include/GyotoUtils.h" declline="102" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1aaae2a1ecfc01007e161f8ea6b52bdf31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; Gyoto::split</definition>
+        <argsstring>(std::string const &amp;src, std::string const &amp;delim)</argsstring>
+        <name>split</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>delim</declname>
+        </param>
+        <briefdescription>
+<para>Split string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoUtils.h" line="105" column="15" declfile="/home/junichi/Gyoto/include/GyotoUtils.h" declline="105" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1a472dfd9f9d75418d3f76fe6cba80a041" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::bessi0</definition>
+        <argsstring>(double xx)</argsstring>
+        <name>bessi0</name>
+        <param>
+          <type>double</type>
+          <declname>xx</declname>
+        </param>
+        <briefdescription>
+<para>Bessel function computation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Modified Bessel function I<subscript>0</subscript> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoUtils.h" line="114" column="10" declfile="/home/junichi/Gyoto/include/GyotoUtils.h" declline="114" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1a7954d841393865cf430915e02677fab2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::bessi1</definition>
+        <argsstring>(double xx)</argsstring>
+        <name>bessi1</name>
+        <param>
+          <type>double</type>
+          <declname>xx</declname>
+        </param>
+        <briefdescription>
+<para>Modified Bessel function I<subscript>1</subscript> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoUtils.h" line="115" column="10" declfile="/home/junichi/Gyoto/include/GyotoUtils.h" declline="115" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1a777a2172c036b512aac389cfd04ee79c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::bessk0</definition>
+        <argsstring>(double xx)</argsstring>
+        <name>bessk0</name>
+        <param>
+          <type>double</type>
+          <declname>xx</declname>
+        </param>
+        <briefdescription>
+<para>Modified Bessel function K<subscript>0</subscript> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoUtils.h" line="116" column="10" declfile="/home/junichi/Gyoto/include/GyotoUtils.h" declline="116" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1a436396b766b4bc64f056408ed0e16a2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::bessk1</definition>
+        <argsstring>(double xx)</argsstring>
+        <name>bessk1</name>
+        <param>
+          <type>double</type>
+          <declname>xx</declname>
+        </param>
+        <briefdescription>
+<para>Modified Bessel function K<subscript>1</subscript> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoUtils.h" line="117" column="10" declfile="/home/junichi/Gyoto/include/GyotoUtils.h" declline="117" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1aa6b5c805899e32ce1344a75743c66e2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::bessk</definition>
+        <argsstring>(int nn, double xx)</argsstring>
+        <name>bessk</name>
+        <param>
+          <type>int</type>
+          <declname>nn</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>xx</declname>
+        </param>
+        <briefdescription>
+<para>Modified Bessel function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoUtils.h" line="118" column="10" declfile="/home/junichi/Gyoto/include/GyotoUtils.h" declline="118" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1a2d6e2d6901ac3aa654b4e50fcaa54bc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gyoto::hypergeom</definition>
+        <argsstring>(double kappaIndex, double thetae)</argsstring>
+        <name>hypergeom</name>
+        <param>
+          <type>double</type>
+          <declname>kappaIndex</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>thetae</declname>
+        </param>
+        <briefdescription>
+<para>Gauss hypergeometric 2F1 term for kappa-distribution synchrotron. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoUtils.h" line="120" column="10" declfile="/home/junichi/Gyoto/include/GyotoUtils.h" declline="120" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1aa846a4ba707e88e5f4b71a0c4a2cc885" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::cartesianToSpherical</definition>
+        <argsstring>(double const cpos[3], double spos[3])</argsstring>
+        <name>cartesianToSpherical</name>
+        <param>
+          <type>double const</type>
+          <declname>cpos</declname>
+          <array>[3]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>spos</declname>
+          <array>[3]</array>
+        </param>
+        <briefdescription>
+<para>Tranform from Cartesian 3-position to spherical 3-position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoUtils.h" line="123" column="8" declfile="/home/junichi/Gyoto/include/GyotoUtils.h" declline="123" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1a2f73866e3a2dea6955df5e106394347a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::sphericalToCartesian</definition>
+        <argsstring>(double const spos[3], double cpos[3])</argsstring>
+        <name>sphericalToCartesian</name>
+        <param>
+          <type>double const</type>
+          <declname>spos</declname>
+          <array>[3]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>cpos</declname>
+          <array>[3]</array>
+        </param>
+        <briefdescription>
+<para>Tranform from spherical 3-position to Cartesian 3-position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoUtils.h" line="125" column="8" declfile="/home/junichi/Gyoto/include/GyotoUtils.h" declline="125" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1a1850657d69da90643b3da1243354eed7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::matrix4Invert</definition>
+        <argsstring>(double ARGOUT_ARRAY2[4][4], double const IN_ARRAY2[4][4])</argsstring>
+        <name>matrix4Invert</name>
+        <param>
+          <type>double</type>
+          <declname>ARGOUT_ARRAY2</declname>
+          <array>[4][4]</array>
+        </param>
+        <param>
+          <type>double const</type>
+          <declname>IN_ARRAY2</declname>
+          <array>[4][4]</array>
+        </param>
+        <briefdescription>
+<para>Invert 4x4 matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">IN_ARRAY2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the 4×4 matrix to invert </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">ARGOUT_ARRAY2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the invert matrix of IN_ARRAY2 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoUtils.h" line="133" column="8" declfile="/home/junichi/Gyoto/include/GyotoUtils.h" declline="133" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_gyoto_1a57b7bb7171ade76737ee138a88f98602" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gyoto::matrix4CircularInvert</definition>
+        <argsstring>(double ARGOUT_ARRAY2[4][4], double const IN_ARRAY2[4][4])</argsstring>
+        <name>matrix4CircularInvert</name>
+        <param>
+          <type>double</type>
+          <declname>ARGOUT_ARRAY2</declname>
+          <array>[4][4]</array>
+        </param>
+        <param>
+          <type>double const</type>
+          <declname>IN_ARRAY2</declname>
+          <array>[4][4]</array>
+        </param>
+        <briefdescription>
+<para>Invert 4x4 circular spacetime metric. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A circular spacetime metric (in the right coordinate system)<itemizedlist>
+<listitem><para>is symmetrical (like all metric matrices);</para>
+</listitem><listitem><para>has only 6 non-zero element: the diagonal and the corners.</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">IN_ARRAY2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the 4×4 matrix to invert </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">ARGOUT_ARRAY2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the invert matrix of IN_ARRAY2 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/junichi/Gyoto/include/GyotoUtils.h" line="145" column="8" declfile="/home/junichi/Gyoto/include/GyotoUtils.h" declline="145" declcolumn="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Namespace for the <ref refid="namespace_gyoto" kindref="compound">Gyoto</ref> library. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/junichi/Gyoto/include/GyotoAstrobj.h" line="44" column="1"/>
+  </compounddef>
+</doxygen>

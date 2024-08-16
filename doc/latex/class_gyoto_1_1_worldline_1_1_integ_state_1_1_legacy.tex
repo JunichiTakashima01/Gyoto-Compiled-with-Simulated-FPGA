@@ -1,0 +1,304 @@
+\hypertarget{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy}{}\doxysection{Gyoto\+::Worldline\+::Integ\+State\+::Legacy Class Reference}
+\label{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy}\index{Gyoto::Worldline::IntegState::Legacy@{Gyoto::Worldline::IntegState::Legacy}}
+
+
+Obsolete\+: Home-\/brewed integrator.  
+
+
+
+
+{\ttfamily \#include $<$Gyoto\+Worldline.\+h$>$}
+
+Inheritance diagram for Gyoto\+::Worldline\+::Integ\+State\+::Legacy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_smart_pointee}{Gyoto\+::\+Smart\+Pointee}} $>$ \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}{Subcontractor\+\_\+t}}(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$, std\+::vector$<$ std\+::string $>$ const \&)
+\begin{DoxyCompactList}\small\item\em A subcontractor builds an object upon order from the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_ad69e1a14413367c815dd42a62b6a664d}\label{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_ad69e1a14413367c815dd42a62b6a664d}} 
+\mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_ad69e1a14413367c815dd42a62b6a664d}{Legacy}} (\mbox{\hyperlink{class_gyoto_1_1_worldline}{Worldline}} $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy}{Legacy}} $\ast$ \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_a9da98f282e9dfc6bc598dc431991f57d}{clone}} (\mbox{\hyperlink{class_gyoto_1_1_worldline}{Worldline}} $\ast$newparent) const
+\begin{DoxyCompactList}\small\item\em Deep copy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_a95a79ae3e773b737568b05e605df3d9c}{init}} (\mbox{\hyperlink{class_gyoto_1_1_worldline}{Worldline}} $\ast$line, const state\+\_\+t \&coord, const double \mbox{\hyperlink{class_gyoto_1_1_worldline_a219060b5733728636876cda64d1d524c}{delta}})
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_ab301be97824d28bf1f8c0f0b1ed3b43a}\label{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_ab301be97824d28bf1f8c0f0b1ed3b43a}} 
+virtual std\+::string \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_ab301be97824d28bf1f8c0f0b1ed3b43a}{kind}} ()
+\begin{DoxyCompactList}\small\item\em Return the integrator kind. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_a6a8582ff5dc03d550cf5259a78e51417}{next\+Step}} (state\+\_\+t \&coord, double \&tau, double h1max=1e6)
+\begin{DoxyCompactList}\small\item\em Make one step. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_a660e2f2f387a0ea04b619cdd3e8564a9}{do\+Step}} (state\+\_\+t const \&coordin, double step, state\+\_\+t \&coordout)
+\begin{DoxyCompactList}\small\item\em Make one step of exactly this size. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_ad89e14f105937314f77211fbf129265e}{init}} (\mbox{\hyperlink{class_gyoto_1_1_worldline}{Worldline}} $\ast$line, const state\+\_\+t \&coord, const double \mbox{\hyperlink{class_gyoto_1_1_worldline_a219060b5733728636876cda64d1d524c}{delta}})
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_a4ea0058a6ad6553a01bf12ec8600ef8b}\label{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_a4ea0058a6ad6553a01bf12ec8600ef8b}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_a4ea0058a6ad6553a01bf12ec8600ef8b}{init}} (\mbox{\hyperlink{class_gyoto_1_1_worldline}{Worldline}} $\ast$line, const double $\ast$coord, const double \mbox{\hyperlink{class_gyoto_1_1_worldline_a219060b5733728636876cda64d1d524c}{delta}})=delete
+\begin{DoxyCompactList}\small\item\em Obsolete, update your code. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_a086190858c7e26c85c161a4ef39f9b5a}{init}} ()
+\begin{DoxyCompactList}\small\item\em Cache whatever needs to be cached. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_a4ea0058a6ad6553a01bf12ec8600ef8b}\label{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_a4ea0058a6ad6553a01bf12ec8600ef8b}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_a4ea0058a6ad6553a01bf12ec8600ef8b}{init}} (\mbox{\hyperlink{class_gyoto_1_1_worldline}{Worldline}} $\ast$line, const double $\ast$coord, const double \mbox{\hyperlink{class_gyoto_1_1_worldline_a219060b5733728636876cda64d1d524c}{delta}})=delete
+\begin{DoxyCompactList}\small\item\em Obsolete, update your code. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_a895da680fb6ccdc12783d245c546de84}{check\+Norm}} (double coord\mbox{[}8\mbox{]})
+\begin{DoxyCompactList}\small\item\em Check norm. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_ab734cff7e08626e0a04142255fc6cd90}\label{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_ab734cff7e08626e0a04142255fc6cd90}} 
+void \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_ab734cff7e08626e0a04142255fc6cd90}{integ31}} (bool integ)
+\begin{DoxyCompactList}\small\item\em Defines the kind of geodesic equation to integrate (3+1, 4D) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_accfa54b735404d12e125a79c2b939b93}\label{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_accfa54b735404d12e125a79c2b939b93}} 
+bool {\bfseries integ31} () const
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_a3acf655c1fc5a009d950e2fe703dfc68}\label{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_a3acf655c1fc5a009d950e2fe703dfc68}} 
+virtual int \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_a3acf655c1fc5a009d950e2fe703dfc68}{next\+Step}} (double $\ast$coord, double h1max=\mbox{\hyperlink{_gyoto_defs_8h_a61e9f37f6e15229a442c03e3928c2ace}{GYOTO\+\_\+\+DEFAULT\+\_\+\+DELTA\+\_\+\+MAX}})=delete
+\begin{DoxyCompactList}\small\item\em Obsolete, update your code. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_ac52496bae61e40f3ac7a86b6dfe70410}\label{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_ac52496bae61e40f3ac7a86b6dfe70410}} 
+virtual void \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_ac52496bae61e40f3ac7a86b6dfe70410}{do\+Step}} (double const coordin\mbox{[}8\mbox{]}, double step, double coordout\mbox{[}8\mbox{]})=delete
+\begin{DoxyCompactList}\small\item\em Obsolete, update your code. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_a9ec09c51fd18dde7c13ef3b03fac1fad}\label{class_gyoto_1_1_smart_pointee_a9ec09c51fd18dde7c13ef3b03fac1fad}} 
+void \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_a9ec09c51fd18dde7c13ef3b03fac1fad}{inc\+Ref\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Increment the reference counter. Warning\+: Don\textquotesingle{}t mess with the counter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_a22a67609fb4690ee8ec0e95e4060e387}\label{class_gyoto_1_1_smart_pointee_a22a67609fb4690ee8ec0e95e4060e387}} 
+int \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_a22a67609fb4690ee8ec0e95e4060e387}{dec\+Ref\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Decrement the reference counter and return current value. Warning\+: Don\textquotesingle{}t mess with the counter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_a9a9cb35cd161bf19ce652f76e0a5bec0}\label{class_gyoto_1_1_smart_pointee_a9a9cb35cd161bf19ce652f76e0a5bec0}} 
+int \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_a9a9cb35cd161bf19ce652f76e0a5bec0}{get\+Ref\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Get the current number of references. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_gyoto_1_1_worldline}{Worldline}} $\ast$ \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_a57e9e3c1f31d6ae7a515747b0589fc98}{line\+\_\+}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_gyoto_1_1_worldline}{Worldline}} that we are integrating. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_a004fb7268dbb75bc233393fc6568af44}\label{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_a004fb7268dbb75bc233393fc6568af44}} 
+bool \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_a004fb7268dbb75bc233393fc6568af44}{integ\+\_\+31\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Whether to integrate the 3+1 equation of geodesics instead of the 4D one. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_a19448d508d0b3980a4067587e00f317d}\label{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_a19448d508d0b3980a4067587e00f317d}} 
+double \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_a19448d508d0b3980a4067587e00f317d}{delta\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Integration step (current in case of \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_a03137679ed079b378696edf7853d21eb}{adaptive\+\_\+}}). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_a03137679ed079b378696edf7853d21eb}\label{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_a03137679ed079b378696edf7853d21eb}} 
+bool \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_a03137679ed079b378696edf7853d21eb}{adaptive\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Whether to use an adaptive step. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_ad5b35f3774495cde108a9e3ec8cb7b97}\label{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_ad5b35f3774495cde108a9e3ec8cb7b97}} 
+bool \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_ad5b35f3774495cde108a9e3ec8cb7b97}{parallel\+\_\+transport\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Whether to parallel-\/transport base vectors. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_af415f5c1117a09164eccd4a199ae052b}\label{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_af415f5c1117a09164eccd4a199ae052b}} 
+double \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_af415f5c1117a09164eccd4a199ae052b}{norm\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Current norm of the 4-\/velocity. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_a9c61f5cd02866df7e907a7f42821c811}{normref\+\_\+}}
+\item 
+\mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$ \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Gyoto\+::\+Metric\+::\+Generic}} $>$ \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_a6773dd1c0cf82434d22c38056dcc9a78}{gg\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} in this end of the Universe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_a808403ad5304123133891861824a617a}\label{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_a808403ad5304123133891861824a617a}} 
+state\+\_\+t \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_a808403ad5304123133891861824a617a}{coord\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Previously determined coordinate. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_aaaf212a70fb1880b70e4d357e843cc85}\label{class_gyoto_1_1_smart_pointee_aaaf212a70fb1880b70e4d357e843cc85}} 
+int \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_aaaf212a70fb1880b70e4d357e843cc85}{ref\+Count}}
+\begin{DoxyCompactList}\small\item\em Reference counter. \end{DoxyCompactList}\item 
+pthread\+\_\+mutex\+\_\+t \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_abf1c1e431cdd4f08f13de581cccb6770}{mutex\+\_\+}}
+\begin{DoxyCompactList}\small\item\em A mutex. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_aae5a2d75cbf18420d8f186b0206618ee}\label{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_aae5a2d75cbf18420d8f186b0206618ee}} 
+class {\bfseries Gyoto\+::\+Smart\+Pointer$<$ Gyoto\+::\+Worldline\+::\+Integ\+State\+::\+Legacy $>$}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Obsolete\+: Home-\/brewed integrator. 
+
+Will be removed soon.
+
+The integrator used by this \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic}{Integ\+State\+::\+Generic}} implementation is actually implemented in \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic_abe3fd89e28cbcd6a584f24275001c2fa}{Metric\+::\+Generic\+::myrk4\+\_\+adaptive()}}. It does not use most of the tuning parameters \mbox{\hyperlink{class_gyoto_1_1_worldline}{Worldline}}, it uses the homonym parameters in \mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Metric\+::\+Generic}} instead. to use this integrator, pass \char`\"{}\+Legacy\char`\"{} to \mbox{\hyperlink{class_gyoto_1_1_worldline_a54639e84eece5634e492a70df2ba6f29}{Worldline\+::integrator}}(std\+::string type). 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}\label{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}} 
+\index{Gyoto::Worldline::IntegState::Legacy@{Gyoto::Worldline::IntegState::Legacy}!Subcontractor\_t@{Subcontractor\_t}}
+\index{Subcontractor\_t@{Subcontractor\_t}!Gyoto::Worldline::IntegState::Legacy@{Gyoto::Worldline::IntegState::Legacy}}
+\doxysubsubsection{\texorpdfstring{Subcontractor\_t}{Subcontractor\_t}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$\mbox{\hyperlink{class_gyoto_1_1_smart_pointee}{Gyoto\+::\+Smart\+Pointee}}$>$ Gyoto\+::\+Smart\+Pointee\+::\+Subcontractor\+\_\+t(\mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Gyoto\+::\+Factory\+Messenger}} $\ast$, std\+::vector$<$ std\+::string $>$ const \&)\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+A subcontractor builds an object upon order from the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}}. 
+
+Various classes need to provide a subcontractor to be able to instantiate themselves upon order from the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}}. A subcontractor is a function (often a static member function) which accepts a pointer to a \mbox{\hyperlink{class_gyoto_1_1_factory_messenger}{Factory\+Messenger}} as unique parameter, communicates with the \mbox{\hyperlink{class_gyoto_1_1_factory}{Factory}} using this messenger to read an XML description of the object to build, and returns this objet. \mbox{\hyperlink{class_gyoto_1_1_smart_pointee_afe17bea3c33e2187940cfdd5543c1d14}{Smart\+Pointee\+::\+Subcontractor\+\_\+t}}$\ast$ is just generic enough a typedef to cast to and from other subcontractor types\+: \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_aa53c7ada58c8c8f3799c3485b7d8f3bb}{Astrobj\+::\+Subcontractor\+\_\+t}}, \mbox{\hyperlink{namespace_gyoto_1_1_metric_ad6b33a642cc94ad67855184d2adb95df}{Metric\+::\+Subcontractor\+\_\+t}}, \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a163055eef14aee22dd8fa5188812d889}{Spectrum\+::\+Subcontractor\+\_\+t}}. A subcontractor needs to be registered using the relevant \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_abb6caf3023a51cb77b5f6793ac03b188}{Register()}} function\+: \mbox{\hyperlink{namespace_gyoto_1_1_astrobj_abb6caf3023a51cb77b5f6793ac03b188}{Astrobj\+::\+Register()}}, \mbox{\hyperlink{namespace_gyoto_1_1_metric_a602cba49b001e7470f3d439d1ab3e8f7}{Metric\+::\+Register()}}, \mbox{\hyperlink{namespace_gyoto_1_1_spectrum_a517874749d838d7121880e7d9d14c626}{Spectrum\+::\+Register()}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_a895da680fb6ccdc12783d245c546de84}\label{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_a895da680fb6ccdc12783d245c546de84}} 
+\index{Gyoto::Worldline::IntegState::Legacy@{Gyoto::Worldline::IntegState::Legacy}!checkNorm@{checkNorm}}
+\index{checkNorm@{checkNorm}!Gyoto::Worldline::IntegState::Legacy@{Gyoto::Worldline::IntegState::Legacy}}
+\doxysubsubsection{\texorpdfstring{checkNorm()}{checkNorm()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Worldline\+::\+Integ\+State\+::\+Generic\+::check\+Norm (\begin{DoxyParamCaption}\item[{double}]{coord\mbox{[}8\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Check norm. 
+
+Issue a warning using \mbox{\hyperlink{_gyoto_defs_8h_a718377bc0c336982042326bbc4ce6dc8}{GYOTO\+\_\+\+SEVERE}} if norm is drifting. \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_a6a8582ff5dc03d550cf5259a78e51417}{next\+Step()}} implementations should call it. \mbox{\Hypertarget{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_a9da98f282e9dfc6bc598dc431991f57d}\label{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_a9da98f282e9dfc6bc598dc431991f57d}} 
+\index{Gyoto::Worldline::IntegState::Legacy@{Gyoto::Worldline::IntegState::Legacy}!clone@{clone}}
+\index{clone@{clone}!Gyoto::Worldline::IntegState::Legacy@{Gyoto::Worldline::IntegState::Legacy}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy}{Legacy}}$\ast$ Gyoto\+::\+Worldline\+::\+Integ\+State\+::\+Legacy\+::clone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_worldline}{Worldline}} $\ast$}]{newparent }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deep copy. 
+
+Derived classes must implement it 
+
+Implements \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_a06f8617830511baa2ac862fa7ffeb8d5}{Gyoto\+::\+Worldline\+::\+Integ\+State\+::\+Generic}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_a660e2f2f387a0ea04b619cdd3e8564a9}\label{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_a660e2f2f387a0ea04b619cdd3e8564a9}} 
+\index{Gyoto::Worldline::IntegState::Legacy@{Gyoto::Worldline::IntegState::Legacy}!doStep@{doStep}}
+\index{doStep@{doStep}!Gyoto::Worldline::IntegState::Legacy@{Gyoto::Worldline::IntegState::Legacy}}
+\doxysubsubsection{\texorpdfstring{doStep()}{doStep()}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Worldline\+::\+Integ\+State\+::\+Legacy\+::do\+Step (\begin{DoxyParamCaption}\item[{state\+\_\+t const \&}]{coordin,  }\item[{double}]{step,  }\item[{state\+\_\+t \&}]{coordout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Make one step of exactly this size. 
+
+\mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_a660e2f2f387a0ea04b619cdd3e8564a9}{do\+Step()}} is meant to refine a computation made using \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_a6a8582ff5dc03d550cf5259a78e51417}{next\+Step()}}. In particular, there is no checking for norm conservation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em coordin} & current position-\/velocity; \\
+\hline
+\mbox{\texttt{ in}}  & {\em step} & exact step to use. \\
+\hline
+\mbox{\texttt{ out}}  & {\em coordout} & next position-\/velocity; \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_ac9cad0c9e6c5466b8fce5a7c012ee657}{Gyoto\+::\+Worldline\+::\+Integ\+State\+::\+Generic}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_a086190858c7e26c85c161a4ef39f9b5a}\label{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_a086190858c7e26c85c161a4ef39f9b5a}} 
+\index{Gyoto::Worldline::IntegState::Legacy@{Gyoto::Worldline::IntegState::Legacy}!init@{init}}
+\index{init@{init}!Gyoto::Worldline::IntegState::Legacy@{Gyoto::Worldline::IntegState::Legacy}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Worldline\+::\+Integ\+State\+::\+Generic\+::init\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Cache whatever needs to be cached. 
+
+This is called by all the methods in \mbox{\hyperlink{class_gyoto_1_1_worldline}{Worldline}} each time an member that could be cached in \mbox{\hyperlink{class_gyoto_1_1_worldline_a3edacdf2600826da936645fe00ad014e}{Worldline\+::state\+\_\+}} changes. Therefore, user code should normally not have to call it. 
+
+Reimplemented from \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_a086190858c7e26c85c161a4ef39f9b5a}{Gyoto\+::\+Worldline\+::\+Integ\+State\+::\+Generic}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_ad89e14f105937314f77211fbf129265e}\label{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_ad89e14f105937314f77211fbf129265e}} 
+\index{Gyoto::Worldline::IntegState::Legacy@{Gyoto::Worldline::IntegState::Legacy}!init@{init}}
+\index{init@{init}!Gyoto::Worldline::IntegState::Legacy@{Gyoto::Worldline::IntegState::Legacy}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily virtual void Gyoto\+::\+Worldline\+::\+Integ\+State\+::\+Generic\+::init\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & The \mbox{\hyperlink{class_gyoto_1_1_worldline}{Worldline}} that we are integrating. Sets\+: Worldline\+::line\+\_\+, Worldline\+::gg\+\_\+, \mbox{\hyperlink{class_gyoto_1_1_worldline_a94d491367025a7acf30301cc57c3db06}{Worldline\+::adaptive\+\_\+}}. \\
+\hline
+{\em coord} & Initial coordinate. \\
+\hline
+{\em delta} & Integration step. Sign determines direction. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_a086190858c7e26c85c161a4ef39f9b5a}{Gyoto\+::\+Worldline\+::\+Integ\+State\+::\+Generic}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_a95a79ae3e773b737568b05e605df3d9c}\label{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_a95a79ae3e773b737568b05e605df3d9c}} 
+\index{Gyoto::Worldline::IntegState::Legacy@{Gyoto::Worldline::IntegState::Legacy}!init@{init}}
+\index{init@{init}!Gyoto::Worldline::IntegState::Legacy@{Gyoto::Worldline::IntegState::Legacy}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Gyoto\+::\+Worldline\+::\+Integ\+State\+::\+Legacy\+::init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gyoto_1_1_worldline}{Worldline}} $\ast$}]{line,  }\item[{const state\+\_\+t \&}]{coord,  }\item[{const double}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & The \mbox{\hyperlink{class_gyoto_1_1_worldline}{Worldline}} that we are integrating. Sets\+: Worldline\+::line\+\_\+, Worldline\+::gg\+\_\+, \mbox{\hyperlink{class_gyoto_1_1_worldline_a94d491367025a7acf30301cc57c3db06}{Worldline\+::adaptive\+\_\+}}. \\
+\hline
+{\em coord} & Initial coordinate. \\
+\hline
+{\em delta} & Integration step. Sign determines direction. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_ad89e14f105937314f77211fbf129265e}{Gyoto\+::\+Worldline\+::\+Integ\+State\+::\+Generic}}.
+
+\mbox{\Hypertarget{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_a6a8582ff5dc03d550cf5259a78e51417}\label{class_gyoto_1_1_worldline_1_1_integ_state_1_1_legacy_a6a8582ff5dc03d550cf5259a78e51417}} 
+\index{Gyoto::Worldline::IntegState::Legacy@{Gyoto::Worldline::IntegState::Legacy}!nextStep@{nextStep}}
+\index{nextStep@{nextStep}!Gyoto::Worldline::IntegState::Legacy@{Gyoto::Worldline::IntegState::Legacy}}
+\doxysubsubsection{\texorpdfstring{nextStep()}{nextStep()}}
+{\footnotesize\ttfamily virtual int Gyoto\+::\+Worldline\+::\+Integ\+State\+::\+Legacy\+::next\+Step (\begin{DoxyParamCaption}\item[{state\+\_\+t \&}]{coord,  }\item[{double \&}]{tau,  }\item[{double}]{h1max = {\ttfamily 1e6} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Make one step. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em coord} & Next position-\/velocity; \\
+\hline
+\mbox{\texttt{ out}}  & {\em tau} & Next proper time or affine parameter \\
+\hline
+\mbox{\texttt{ in}}  & {\em h1max} & maximum step in case of adaptive integration \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_a6dbc9ed5fe9f4f29e618908244dc253e}{Gyoto\+::\+Worldline\+::\+Integ\+State\+::\+Generic}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_a6773dd1c0cf82434d22c38056dcc9a78}\label{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_a6773dd1c0cf82434d22c38056dcc9a78}} 
+\index{Gyoto::Worldline::IntegState::Legacy@{Gyoto::Worldline::IntegState::Legacy}!gg\_@{gg\_}}
+\index{gg\_@{gg\_}!Gyoto::Worldline::IntegState::Legacy@{Gyoto::Worldline::IntegState::Legacy}}
+\doxysubsubsection{\texorpdfstring{gg\_}{gg\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Gyoto\+::\+Smart\+Pointer}}$<$\mbox{\hyperlink{class_gyoto_1_1_metric_1_1_generic}{Gyoto\+::\+Metric\+::\+Generic}}$>$ Gyoto\+::\+Worldline\+::\+Integ\+State\+::\+Generic\+::gg\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+The \mbox{\hyperlink{namespace_gyoto_1_1_metric}{Metric}} in this end of the Universe. 
+
+Taken from Worldline\+::line\+\_\+, never updated. \mbox{\Hypertarget{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_a57e9e3c1f31d6ae7a515747b0589fc98}\label{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_a57e9e3c1f31d6ae7a515747b0589fc98}} 
+\index{Gyoto::Worldline::IntegState::Legacy@{Gyoto::Worldline::IntegState::Legacy}!line\_@{line\_}}
+\index{line\_@{line\_}!Gyoto::Worldline::IntegState::Legacy@{Gyoto::Worldline::IntegState::Legacy}}
+\doxysubsubsection{\texorpdfstring{line\_}{line\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gyoto_1_1_worldline}{Worldline}}$\ast$ Gyoto\+::\+Worldline\+::\+Integ\+State\+::\+Generic\+::line\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+\mbox{\hyperlink{class_gyoto_1_1_worldline}{Worldline}} that we are integrating. 
+
+Beware this is not a \mbox{\hyperlink{class_gyoto_1_1_smart_pointer}{Smart\+Pointer}}. Make sure line\+\_\+ still exists when calling nest\+Step(). \mbox{\Hypertarget{class_gyoto_1_1_smart_pointee_abf1c1e431cdd4f08f13de581cccb6770}\label{class_gyoto_1_1_smart_pointee_abf1c1e431cdd4f08f13de581cccb6770}} 
+\index{Gyoto::Worldline::IntegState::Legacy@{Gyoto::Worldline::IntegState::Legacy}!mutex\_@{mutex\_}}
+\index{mutex\_@{mutex\_}!Gyoto::Worldline::IntegState::Legacy@{Gyoto::Worldline::IntegState::Legacy}}
+\doxysubsubsection{\texorpdfstring{mutex\_}{mutex\_}}
+{\footnotesize\ttfamily pthread\+\_\+mutex\+\_\+t Gyoto\+::\+Smart\+Pointee\+::mutex\+\_\+\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+
+
+A mutex. 
+
+When compiled with libpthread \mbox{\Hypertarget{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_a9c61f5cd02866df7e907a7f42821c811}\label{class_gyoto_1_1_worldline_1_1_integ_state_1_1_generic_a9c61f5cd02866df7e907a7f42821c811}} 
+\index{Gyoto::Worldline::IntegState::Legacy@{Gyoto::Worldline::IntegState::Legacy}!normref\_@{normref\_}}
+\index{normref\_@{normref\_}!Gyoto::Worldline::IntegState::Legacy@{Gyoto::Worldline::IntegState::Legacy}}
+\doxysubsubsection{\texorpdfstring{normref\_}{normref\_}}
+{\footnotesize\ttfamily double Gyoto\+::\+Worldline\+::\+Integ\+State\+::\+Generic\+::normref\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Initial norm of the 4-\/velocity. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_gyoto_worldline_8h}{Gyoto\+Worldline.\+h}}\end{DoxyCompactItemize}
